@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.ssh",
+  "publisher": "atticus6",
+  "version": "0.0.1",
+  "name": "SSH Terminal",
+  "description": "Run remote commands and browse files over SSH/SFTP from DBX.",
+  "icon": "https://raw.githubusercontent.com/Atticus6/dbx-plugin-ssh/v0.0.1/assets/plugin.svg",
+  "tags": ["ssh", "sftp", "terminal", "remote", "tunnel"],
+  "permissions": ["host.events"],
+  "source": "https://github.com/Atticus6/dbx-plugin-ssh/tree/v0.0.1",
+  "homepage": "https://github.com/Atticus6/dbx-plugin-ssh",
+  "license": "MIT",
+  "releaseNotes": "Initial release: interactive terminal, exec console, SFTP browser, host metrics charts, listening ports, auto-persisted local port forwards.",
+  "localizations": {
+    "zh-CN": {
+      "name": "SSH 终端",
+      "description": "在 DBX 中通过 SSH/SFTP 执行远程命令、浏览文件。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/Atticus6/dbx-plugin-ssh/releases/download/v0.0.1/io.dbx.ssh-0.0.1-darwin-arm64.dbxp",
+      "sha256": "3872d7b5f962a9604a90f5149d48e1e6de6adfa9a56a3cc50eef8aabc717b472",
+      "size": 2176445
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/Atticus6/dbx-plugin-ssh/releases/download/v0.0.1/io.dbx.ssh-0.0.1-darwin-x64.dbxp",
+      "sha256": "f97dbd3b77c22db3f716f7422c9fd6c2d8201321468f54ad4ab895395d45e224",
+      "size": 2326496
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/Atticus6/dbx-plugin-ssh/releases/download/v0.0.1/io.dbx.ssh-0.0.1-linux-arm64.dbxp",
+      "sha256": "902632c8f61c3086775982a3c3011f44212ca77d4df9034cf2516ddbe45363b4",
+      "size": 2128626
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/Atticus6/dbx-plugin-ssh/releases/download/v0.0.1/io.dbx.ssh-0.0.1-linux-x64.dbxp",
+      "sha256": "b4e6dc9fe65ca79dd4d5ed08df4fa8cd426426b60e047f2078891bb30445d6f8",
+      "size": 2314616
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/Atticus6/dbx-plugin-ssh/releases/download/v0.0.1/io.dbx.ssh-0.0.1-windows-x64.dbxp",
+      "sha256": "5927307c3f1030bf98e88264f9ac3f7b03e67467191267fa6b616068785fbc41",
+      "size": 2357808
+    }
+  ]
+}
