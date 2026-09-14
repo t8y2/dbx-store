@@ -5,6 +5,11 @@
       "repository": "t8y2/dbx-plugin-s3",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "atticus6/dbx-plugin-ssh",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
