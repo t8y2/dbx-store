@@ -54,6 +54,7 @@ await writeFile(catalogPath, `${JSON.stringify(catalog, null, 2)}\n`);
 if (planCandidates) {
   console.log(JSON.stringify({ candidates: candidates.map((candidate) => ({
     id: candidate.id,
+    publisher: candidate.publisher,
     version: candidate.version,
     releaseNotes: candidate.releaseNotes ?? "",
     targets: candidate.targets,

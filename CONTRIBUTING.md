@@ -61,6 +61,7 @@ For a **new** plugin, `name`, `source`, and `license` are required; every other
 listing field is optional. Candidate rules:
 
 - `sha256` and `size` pin the exact unsigned candidate bytes; signing rejects any mismatch.
+- The unsigned package's `manifest.json` must declare the same `id`, `version`, and `publisher` as the candidate metadata; signing rejects any mismatch.
 - URLs must use HTTPS and must not reference `t8y2/dbx-store` releases (submit your own unsigned candidates, not already-signed artifacts).
 - A version that is already listed, or revoked, cannot be resubmitted.
 - `plugins/*.json` and `catalog/index.json` are never edited manually; the signing workflow generates them.

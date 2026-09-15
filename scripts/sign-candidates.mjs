@@ -49,6 +49,7 @@ for (const candidate of plan.candidates) {
     const manifest = JSON.parse(execFileSync("unzip", ["-p", candidatePath, "manifest.json"], { encoding: "utf8" }));
     if (manifest.id !== candidate.id) throw new Error(`Expected plugin ${candidate.id} in ${outputName}, got ${manifest.id}`);
     if (manifest.version !== candidate.version) throw new Error(`Expected version ${candidate.version} in ${outputName}, got ${manifest.version}`);
+    if (manifest.publisher !== candidate.publisher) throw new Error(`Expected publisher ${candidate.publisher} in ${outputName}, got ${manifest.publisher}`);
 
     const artifactUrl = `${artifactBaseUrl}/plugins/${candidate.id}/${candidate.version}/${outputName}`;
     execFileSync(

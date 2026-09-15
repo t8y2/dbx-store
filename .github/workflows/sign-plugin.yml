@@ -23,6 +23,10 @@ on:
         description: Expected plugin Manifest ID
         required: true
         type: string
+      publisher:
+        description: Expected submitting publisher id; must match the plugin Manifest publisher
+        required: true
+        type: string
       version:
         description: Expected plugin Manifest version
         required: true
@@ -73,6 +77,7 @@ jobs:
           CANDIDATE_SIZE: ${{ inputs.candidate-size }}
           OUTPUT_NAME: ${{ inputs.output-name }}
           PLUGIN_ID: ${{ inputs.plugin-id }}
+          PUBLISHER: ${{ inputs.publisher }}
           VERSION: ${{ inputs.version }}
           TARGET: ${{ inputs.target }}
         run: |
@@ -90,6 +95,10 @@ jobs:
           fi
           if [[ ! "$PLUGIN_ID" =~ ^[a-z0-9][a-z0-9._-]{0,127}$ ]]; then
             echo "::error::plugin-id is invalid"
+            exit 1
+          fi
+          if [[ ! "$PUBLISHER" =~ ^[a-z0-9][a-z0-9._-]{0,127}$ ]]; then
+            echo "::error::publisher is invalid"
             exit 1
           fi
           if [[ ! "$VERSION" =~ ^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(-[0-9A-Za-z.-]+)?(\+[0-9A-Za-z.-]+)?$ ]]; then
@@ -160,6 +169,7 @@ jobs:
         shell: bash
         env:
           EXPECTED_PLUGIN_ID: ${{ inputs.plugin-id }}
+          EXPECTED_PUBLISHER: ${{ inputs.publisher }}
           EXPECTED_VERSION: ${{ inputs.version }}
         run: |
           node <<'NODE'
@@ -168,6 +178,7 @@ jobs:
           if (entries.includes("signature.json")) throw new Error("Official signing accepts only unsigned candidates");
           const manifest = JSON.parse(childProcess.execFileSync("unzip", ["-p", "candidate.dbxp", "manifest.json"], { encoding: "utf8" }));
           if (manifest.id !== process.env.EXPECTED_PLUGIN_ID) throw new Error(`Expected plugin ${process.env.EXPECTED_PLUGIN_ID}, got ${manifest.id}`);
+          if (manifest.publisher !== process.env.EXPECTED_PUBLISHER) throw new Error(`Expected publisher ${process.env.EXPECTED_PUBLISHER}, got ${manifest.publisher}`);
           if (manifest.version !== process.env.EXPECTED_VERSION) throw new Error(`Expected version ${process.env.EXPECTED_VERSION}, got ${manifest.version}`);
           NODE
 
