@@ -1,0 +1,72 @@
+{
+  "id": "io.dbx.ldap",
+  "name": "LDAP Studio",
+  "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export.",
+  "publisher": "jinpy",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ldap/ldap-v0.1.67/assets/plugin.svg",
+  "tags": [
+    "ldap",
+    "directory",
+    "auth",
+    "enterprise"
+  ],
+  "permissions": [
+    "host.events",
+    "host.workbench"
+  ],
+  "source": "https://github.com/jinpy666/dbx-plugin-ldap/tree/ldap-v0.1.67",
+  "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
+  "license": "MIT",
+  "latestVersion": "0.1.67",
+  "versions": [
+    {
+      "version": "0.1.67",
+      "releasedAt": "2026-09-15T02:57:40.722Z",
+      "releaseNotes": "首个商店版本：LDAP 目录浏览与管理工作台。DN 树浏览、分页搜索与 RFC 4515 过滤器；条目查看、新增、编辑、重命名与删除；RootDSE/Schema 检查与 LDIF/CSV 导出；支持 anonymous、simple、Kerberos/GSSAPI、NTLM、DIGEST-MD5、SASL External 等认证矩阵与 LDAP/StartTLS/LDAPS；内置只读模式、Base DN 白名单、屏蔽属性和审计等安全护栏，支持粘贴 ldapsearch 命令一键导入搜索表单，并提供 MCP 工具面供 AI 客户端复用。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.67/io.dbx.ldap-0.1.67-darwin-arm64.dbxp",
+          "sha256": "1ccb509c82895cfa26c536289380fc95c47e9bc66488d3d4596958ab8fb560b5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5971857
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.67/io.dbx.ldap-0.1.67-darwin-x64.dbxp",
+          "sha256": "edcb3b38750a5a8322903898cfbb64107577688731098d51a481df143b9559f6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6289075
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.67/io.dbx.ldap-0.1.67-linux-arm64.dbxp",
+          "sha256": "de6ce310bb03976b52062ac3c1f9e81062b79145c93d2785a80c471e529af2ac",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5960021
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.67/io.dbx.ldap-0.1.67-linux-x64.dbxp",
+          "sha256": "1a07b9bcbf41172afd400ce451e53bd2e751e1f9655fde506cd05f6b58c0a3b2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6376757
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.67/io.dbx.ldap-0.1.67-windows-x64.dbxp",
+          "sha256": "721731288e4ac8191cf63c953bf95609ed95758f21b75709603a534897043deb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6428267
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "LDAP Studio",
+      "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
+    }
+  }
+}
