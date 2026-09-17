@@ -35,6 +35,11 @@
       "repository": "ragdollcb/waitWork",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "yaoxinghuo/dbx-dev-tools",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }

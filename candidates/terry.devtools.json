@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "terry.devtools",
+  "publisher": "terry",
+  "version": "0.3.3",
+  "name": "Dev Tools",
+  "description": "A collection of everyday developer utilities: password/QR/barcode/UUID generators, hash, Base64, JWT parser, RMB uppercase, URL codec and image ⇄ Base64.",
+  "icon": "https://raw.githubusercontent.com/yaoxinghuo/dbx-dev-tools/v0.3.3/assets/plugin.svg",
+  "tags": [
+    "devtools",
+    "utilities",
+    "encoding",
+    "generator"
+  ],
+  "permissions": [],
+  "source": "https://github.com/yaoxinghuo/dbx-dev-tools/tree/v0.3.3",
+  "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
+  "license": "MIT",
+  "releaseNotes": "Initial release: 10 pure-frontend workbench tools (password, QR code, barcode, hash, UUID, Base64, JWT parser, RMB uppercase, URL codec, image ⇄ Base64).",
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/yaoxinghuo/dbx-dev-tools/releases/download/v0.3.3/terry.devtools-0.3.3-universal.dbxp",
+      "sha256": "8a08b319a0bd88f0496e27e1797f939621abc60fcb89fe7ce0580d914ee4870d",
+      "size": 48431
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Dev Tools",
+      "description": "日常开发工具集合：密码/二维码/条码/UUID 生成、哈希计算、Base64、JWT 解析、人民币大写、URL 编解码、图片 ⇄ Base64。"
+    }
+  }
+}
