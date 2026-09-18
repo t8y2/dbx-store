@@ -40,6 +40,11 @@
       "repository": "yaoxinghuo/dbx-dev-tools",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "Abeautifulsnow/dbx-plugin-api-studio",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }

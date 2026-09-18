@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.api-studio",
+  "publisher": "runstone",
+  "version": "0.1.0",
+  "name": "API Studio",
+  "description": "Build, send, debug and manage API requests in DBX.",
+  "icon": "https://raw.githubusercontent.com/Abeautifulsnow/dbx-plugin-api-studio/main/assets/plugin.svg",
+  "tags": ["http", "rest", "api", "developer-tools"],
+  "permissions": [],
+  "source": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio",
+  "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio",
+  "license": "MIT",
+  "releaseNotes": "首个公开版本：在 DBX 内构建、发送、调试和管理 HTTP/REST 请求的工作台。支持 Query/Header/Auth（Bearer、Basic、API Key）/Body（JSON、urlencoded、multipart、text）全量编辑，cURL 导入导出，会话 Cookie Jar，变量与密钥遮蔽，中英双语界面。",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio/releases/download/v0.1.0/io.dbx.api-studio-0.1.0-darwin-arm64.dbxp",
+      "sha256": "986aafdbee6a6629cd258a639694721e417c37864e0b3014021b59fb6a09b9fe",
+      "size": 1779782
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio/releases/download/v0.1.0/io.dbx.api-studio-0.1.0-darwin-x64.dbxp",
+      "sha256": "7485ebc02feb6f0ed3292db00e74dd4ed21801c44440876f64112cc73bb1ad86",
+      "size": 1871165
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio/releases/download/v0.1.0/io.dbx.api-studio-0.1.0-linux-arm64.dbxp",
+      "sha256": "f40a9b62efa93b703b6d6de6a561a4dd5302f5035646b9972a53ad7e8fdb424a",
+      "size": 1869088
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio/releases/download/v0.1.0/io.dbx.api-studio-0.1.0-linux-x64.dbxp",
+      "sha256": "2468ba0737f11b5bb7c182e863822dc0a25756f0eba761c3e4e8dd993bdab538",
+      "size": 1949104
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio/releases/download/v0.1.0/io.dbx.api-studio-0.1.0-windows-x64.dbxp",
+      "sha256": "75bc257cc429cd5a0611b1bf3e073a9163937362e270d4dd926c2293143a3a55",
+      "size": 1938405
+    }
+  ]
+}
