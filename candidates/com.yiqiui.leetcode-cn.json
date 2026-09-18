@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "com.yiqiui.leetcode-cn",
+  "publisher": "yiqiui",
+  "version": "0.1.0",
+  "name": "LeetCode 刷题",
+  "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。",
+  "icon": "https://raw.githubusercontent.com/yiqiui/dbx-plugin-leetcode-cn/main/assets/plugin.svg",
+  "tags": [
+    "leetcode",
+    "algorithm",
+    "practice"
+  ],
+  "permissions": [
+    "host.binary",
+    "host.workbench"
+  ],
+  "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.1.0",
+  "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
+  "license": "Apache-2.0",
+  "releaseNotes": "Initial release: workbench + Rust sidecar (login/status/list/detail/run/submit; browser cookie auth).",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/releases/download/v0.1.0/com.yiqiui.leetcode-cn-0.1.0-darwin-arm64.dbxp",
+      "sha256": "469b86b7a7e7fe5dbf82ed1a47743cae18f47f5729ab93bee50f733fdbe7ac62",
+      "size": 1996664
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/releases/download/v0.1.0/com.yiqiui.leetcode-cn-0.1.0-linux-x64.dbxp",
+      "sha256": "bdd2c80a52df87e992b65181fc6fa0a0a8482be1fb713672a0f8cb07c248213f",
+      "size": 2269683
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/releases/download/v0.1.0/com.yiqiui.leetcode-cn-0.1.0-windows-x64.dbxp",
+      "sha256": "547edebf0fe6f505cb979a6fb4b8a61c81f828b916408241c403d27fb4d14729",
+      "size": 2065497
+    }
+  ]
+}
