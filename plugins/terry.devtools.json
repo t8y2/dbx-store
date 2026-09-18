@@ -1,10 +1,9 @@
 {
-  "schemaVersion": 1,
   "id": "terry.devtools",
-  "publisher": "terry",
-  "version": "0.3.3",
   "name": "Dev Tools",
   "description": "A collection of everyday developer utilities: password/QR/barcode/UUID generators, hash, Base64, JWT parser, RMB uppercase, URL codec and image ⇄ Base64.",
+  "publisher": "terry",
+  "verified": false,
   "icon": "https://raw.githubusercontent.com/yaoxinghuo/dbx-dev-tools/v0.3.3/assets/plugin.svg",
   "tags": [
     "devtools",
@@ -16,13 +15,21 @@
   "source": "https://github.com/yaoxinghuo/dbx-dev-tools/tree/v0.3.3",
   "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
   "license": "MIT",
-  "releaseNotes": "Initial release: 10 pure-frontend workbench tools (password, QR code, barcode, hash, UUID, Base64, JWT parser, RMB uppercase, URL codec, image ⇄ Base64).",
-  "targets": [
+  "latestVersion": "0.3.3",
+  "versions": [
     {
-      "target": "universal",
-      "url": "https://github.com/yaoxinghuo/dbx-dev-tools/releases/download/v0.3.3/terry.devtools-0.3.3-universal.dbxp",
-      "sha256": "8a08b319a0bd88f0496e27e1797f939621abc60fcb89fe7ce0580d914ee4870d",
-      "size": 48431
+      "version": "0.3.3",
+      "releasedAt": "2026-09-18T03:36:41.223Z",
+      "releaseNotes": "Initial release: 10 pure-frontend workbench tools (password, QR code, barcode, hash, UUID, Base64, JWT parser, RMB uppercase, URL codec, image ⇄ Base64).",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/terry.devtools/0.3.3/terry.devtools-0.3.3-universal.dbxp",
+          "sha256": "a07d3bdefa98873b783598e1364dcd6f7adbcbd022b002ea5f5df446e712bdae",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 49083
+        }
+      ]
     }
   ],
   "localizations": {

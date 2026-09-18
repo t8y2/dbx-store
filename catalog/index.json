@@ -1643,6 +1643,47 @@
           "description": "等一会工作，休息一下。本地 TXT 小说阅读、章节目录与自动保存。"
         }
       }
+    },
+    {
+      "id": "terry.devtools",
+      "name": "Dev Tools",
+      "description": "A collection of everyday developer utilities: password/QR/barcode/UUID generators, hash, Base64, JWT parser, RMB uppercase, URL codec and image ⇄ Base64.",
+      "publisher": "terry",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.3.3/icon.svg",
+      "tags": [
+        "devtools",
+        "utilities",
+        "encoding",
+        "generator"
+      ],
+      "permissions": [],
+      "source": "https://github.com/yaoxinghuo/dbx-dev-tools/tree/v0.3.3",
+      "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
+      "license": "MIT",
+      "latestVersion": "0.3.3",
+      "versions": [
+        {
+          "version": "0.3.3",
+          "releasedAt": "2026-09-18T03:36:41.223Z",
+          "releaseNotes": "Initial release: 10 pure-frontend workbench tools (password, QR code, barcode, hash, UUID, Base64, JWT parser, RMB uppercase, URL codec, image ⇄ Base64).",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/terry.devtools/0.3.3/terry.devtools-0.3.3-universal.dbxp",
+              "sha256": "a07d3bdefa98873b783598e1364dcd6f7adbcbd022b002ea5f5df446e712bdae",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 49083
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "Dev Tools",
+          "description": "日常开发工具集合：密码/二维码/条码/UUID 生成、哈希计算、Base64、JWT 解析、人民币大写、URL 编解码、图片 ⇄ Base64。"
+        }
+      }
     }
   ]
 }
