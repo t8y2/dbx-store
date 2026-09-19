@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "com.nintycat.shell",
+  "publisher": "nintycat",
+  "version": "0.5.0",
+  "name": "Shell",
+  "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files.",
+  "icon": "https://raw.githubusercontent.com/NintyCat/nintyshell/v0.5.0/assets/plugin.svg",
+  "tags": [
+    "terminal",
+    "ssh",
+    "sftp",
+    "shell"
+  ],
+  "permissions": [
+    "host.events",
+    "host.filesystem"
+  ],
+  "source": "https://github.com/NintyCat/nintyshell/tree/v0.5.0",
+  "homepage": "https://github.com/NintyCat/nintyshell",
+  "license": "MIT",
+  "releaseNotes": "Collapsible activity log in the file panel; drag-and-drop upload hardening; sidecar/manifest identity regression test. 文件面板操作记录可折叠；拖拽上传增强；Sidecar 身份与 manifest 同步由回归测试守护。",
+  "localizations": {
+    "zh-CN": {
+      "name": "Shell",
+      "description": "在 DBX 工作台中打开本地 Shell 与 SSH/SFTP 终端，执行命令并管理远程文件。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/NintyCat/nintyshell/releases/download/v0.5.0/com.nintycat.shell-0.5.0-darwin-arm64.dbxp",
+      "sha256": "9e81d84471cc8ab8d0b61db7eb1ed0785e517576536b7750b7e0edff28ac29ff",
+      "size": 3631731
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/NintyCat/nintyshell/releases/download/v0.5.0/com.nintycat.shell-0.5.0-darwin-x64.dbxp",
+      "sha256": "4154998d6ad3cd94c4e42e91c645729b2f6ebe60d3e770dcab2c04e7169bdc67",
+      "size": 3789105
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/NintyCat/nintyshell/releases/download/v0.5.0/com.nintycat.shell-0.5.0-linux-arm64.dbxp",
+      "sha256": "73e791775958202fb95919751395f6256c26dbbd70299921623d37bb487b6c80",
+      "size": 3627216
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/NintyCat/nintyshell/releases/download/v0.5.0/com.nintycat.shell-0.5.0-linux-x64.dbxp",
+      "sha256": "ff77eb7f846bc358a6579a3b16a3036e52106a3ebdbee9fa62ed5799165a3ac9",
+      "size": 3848471
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/NintyCat/nintyshell/releases/download/v0.5.0/com.nintycat.shell-0.5.0-windows-x64.dbxp",
+      "sha256": "17400fc6ddc9e3279bdaab4436b25f7038e44ad911bea2f2428350e213393db9",
+      "size": 3875987
+    }
+  ]
+}
