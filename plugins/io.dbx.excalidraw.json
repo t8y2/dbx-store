@@ -1,0 +1,69 @@
+{
+  "id": "io.dbx.excalidraw",
+  "name": "Excalidraw Studio",
+  "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX.",
+  "publisher": "runstone",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/Abeautifulsnow/dbx-plugin-excalidraw/v0.2.0/assets/plugin.svg",
+  "tags": [
+    "diagram",
+    "drawing",
+    "whiteboard",
+    "excalidraw"
+  ],
+  "permissions": [],
+  "source": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
+  "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
+  "license": "MIT",
+  "latestVersion": "0.2.0",
+  "versions": [
+    {
+      "version": "0.2.0",
+      "releasedAt": "2026-09-19T18:05:32.471Z",
+      "releaseNotes": "Initial development release: Excalidraw editor embed, local document persistence with autosave, .excalidraw import/export, offline fonts, DBX theme and locale integration.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.0/io.dbx.excalidraw-0.2.0-darwin-arm64.dbxp",
+          "sha256": "15545995b7c76beaf06fd4d4219dfab2022eaff7e919994a6f51b7b4071292f0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 17896756
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.0/io.dbx.excalidraw-0.2.0-darwin-x64.dbxp",
+          "sha256": "a10ed0fa497287e5a547da8b5230b69a68a3b10f7636f6a452fd661f55f18715",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 17982390
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.0/io.dbx.excalidraw-0.2.0-linux-arm64.dbxp",
+          "sha256": "37bf33857164c865281edc735125b4f013d847a84a9f5166ce4350ef95de64fe",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 17882331
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.0/io.dbx.excalidraw-0.2.0-linux-x64.dbxp",
+          "sha256": "d2517237e81dea25d798eb894ab9b047c67ef75e1af1551d97e76fb3d7d7b9a7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 17998396
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.0/io.dbx.excalidraw-0.2.0-windows-x64.dbxp",
+          "sha256": "a34d509caf6013ee79a38231972870417739dc14d89d91ba457bf6db10381289",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18061673
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Excalidraw Studio",
+      "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
+    }
+  }
+}
