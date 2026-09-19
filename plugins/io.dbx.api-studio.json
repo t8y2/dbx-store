@@ -1,0 +1,63 @@
+{
+  "id": "io.dbx.api-studio",
+  "name": "API Studio",
+  "description": "Build, send, debug and manage API requests in DBX.",
+  "publisher": "runstone",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/Abeautifulsnow/dbx-plugin-api-studio/main/assets/plugin.svg",
+  "tags": [
+    "http",
+    "rest",
+    "api",
+    "developer-tools"
+  ],
+  "permissions": [],
+  "source": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio",
+  "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio",
+  "license": "MIT",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-09-19T02:23:20.222Z",
+      "releaseNotes": "首个公开版本：在 DBX 内构建、发送、调试和管理 HTTP/REST 请求的工作台。支持 Query/Header/Auth（Bearer、Basic、API Key）/Body（JSON、urlencoded、multipart、text）全量编辑，cURL 导入导出，会话 Cookie Jar，变量与密钥遮蔽，中英双语界面。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-darwin-arm64.dbxp",
+          "sha256": "7c872bf555780b337ebf7aa295085df00887cce73e4b6ef0b273a7fa1595a5d3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1780384
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-darwin-x64.dbxp",
+          "sha256": "f9ae1821ed3ba771511761a50aa2f776608b813c51a3a62deacff362d6cb60c1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1871762
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-linux-arm64.dbxp",
+          "sha256": "f56be03977add25cf3e6227335353baa1d481ba4e6819db5004cbe7a0f5b9a73",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1869688
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-linux-x64.dbxp",
+          "sha256": "0d88f7a41f11eec62acf2a2af035b10a7cab3356d07eaca21d7c36f93af33841",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1949702
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-windows-x64.dbxp",
+          "sha256": "de32f2181675a67921804e790d405b5288959a7ffe228547369ecefe02044021",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1939009
+        }
+      ]
+    }
+  ]
+}
