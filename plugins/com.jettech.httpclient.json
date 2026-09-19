@@ -1,0 +1,71 @@
+{
+  "id": "com.jettech.httpclient",
+  "name": "HTTP Client",
+  "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses.",
+  "publisher": "jettech",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/renpengkai/dbx-plugin-http-client/0.1.1/assets/plugin.svg",
+  "tags": [
+    "http",
+    "api",
+    "debugging",
+    "network"
+  ],
+  "permissions": [
+    "host.events"
+  ],
+  "source": "https://github.com/renpengkai/dbx-plugin-http-client/tree/0.1.1",
+  "homepage": "https://github.com/renpengkai/dbx-plugin-http-client",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.1",
+  "versions": [
+    {
+      "version": "0.1.1",
+      "releasedAt": "2026-09-19T02:13:02.854Z",
+      "releaseNotes": "0.1.1：工作台请求方法、环境、Content-Type 三个选择框统一为扁平样式，明暗主题下视觉一致。其余能力 0.1.0 相同：8 种方法、四类请求体、三种认证、多标签页、集合/历史/环境变量、cURL 导入导出；响应侧提供跳转链路、耗时与 TTFB、JSON 高亮、响应头与 Cookie 视图。所有网络请求 protocol v1 委派 Go 原生 Sidecar。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.1/com.jettech.httpclient-0.1.1-darwin-arm64.dbxp",
+          "sha256": "e1fedb4f6653920f0d22e88f39a82af8beb1a4d77411f9b283afb7b6fb316aa6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4215336
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.1/com.jettech.httpclient-0.1.1-darwin-x64.dbxp",
+          "sha256": "0322e6833b1712f500f4a612039592bc8577b6dab52d3e60b6d5908cf52ab845",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4421486
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.1/com.jettech.httpclient-0.1.1-linux-arm64.dbxp",
+          "sha256": "71ce2263388c8eeba0f22ae2653866ea060199a52d63b39dfd8a90c2c33f7df4",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4201644
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.1/com.jettech.httpclient-0.1.1-linux-x64.dbxp",
+          "sha256": "658172ad7fd35b332845a1a135f41ece79ebe7419241425388b8df0cbac08e5a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4479058
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.1/com.jettech.httpclient-0.1.1-windows-x64.dbxp",
+          "sha256": "79443b91dae0dfde064a9e27bde125e48e6b6b69dde3b3b1e08766cafda9b1db",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4495610
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "HTTP 客户端",
+      "description": "类似 Postman 的 HTTP 接口调试作台构造请求、通过原生 Sidecar 发送并查看响应。"
+    }
+  }
+}

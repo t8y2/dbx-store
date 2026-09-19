@@ -1,0 +1,69 @@
+{
+  "id": "io.github.caichangqing1120.xxljob",
+  "name": "XXL-JOB",
+  "description": "Manage official XXL-JOB Admin 2.3.x and 3.4.x jobs, executors and logs in DBX.",
+  "publisher": "caichangqing1120",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/caichangqing1120/dbx-plugin-xxl-job/v0.1.1/assets/plugin.svg",
+  "tags": [
+    "xxl-job",
+    "scheduler",
+    "jobs"
+  ],
+  "permissions": [],
+  "source": "https://github.com/caichangqing1120/dbx-plugin-xxl-job/tree/v0.1.1",
+  "homepage": "https://github.com/caichangqing1120/dbx-plugin-xxl-job",
+  "license": "MIT",
+  "latestVersion": "0.1.1",
+  "versions": [
+    {
+      "version": "0.1.1",
+      "releasedAt": "2026-09-19T02:05:59.265Z",
+      "releaseNotes": "Align the default 3.4.x connection path with the official root deployment; clarify the 2.3.x path and retain custom paths.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/io.github.caichangqing1120.xxljob-0.1.1-darwin-arm64.dbxp",
+          "sha256": "948324b1e992838776626477a0e474a47090f4f7e95768fc35b54c696314f632",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4404204
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/io.github.caichangqing1120.xxljob-0.1.1-darwin-x64.dbxp",
+          "sha256": "35519785924aedd1c21d52f208919b2a5df093eb9bfa2b6a4f36ee41cf19b52c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4625565
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/io.github.caichangqing1120.xxljob-0.1.1-windows-arm64.dbxp",
+          "sha256": "499b5239c5f58b666c6c12fed05d617941bf8ad66f60ef53b4c7d6c7d66b92a8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4376954
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/io.github.caichangqing1120.xxljob-0.1.1-windows-x64.dbxp",
+          "sha256": "3a6fd3fa54bd10cc89acd6fe7985a58d2a140fcda69cf99bb8014fafb0940c4f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4694060
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/io.github.caichangqing1120.xxljob-0.1.1-linux-arm64.dbxp",
+          "sha256": "08288470b73e86fa7a9ead577baee43ef3246425e524bd3323fef5bfbf6711e4",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4378521
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/io.github.caichangqing1120.xxljob-0.1.1-linux-x64.dbxp",
+          "sha256": "9a9d760ab3061018cbd97012765b4efd60f2679b4d1efcba8fb3b48ac69cac64",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4662895
+        }
+      ]
+    }
+  ]
+}

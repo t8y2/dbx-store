@@ -1,0 +1,36 @@
+{
+  "id": "io.github.chnhjf.excelx",
+  "name": "ExcelX",
+  "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant.",
+  "publisher": "chnhjf",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/CHNHJF/dbx-plugin-excelx/v0.9.2/assets/plugin.svg",
+  "tags": [
+    "spreadsheet",
+    "sqlite",
+    "import",
+    "export",
+    "ai"
+  ],
+  "permissions": [],
+  "source": "https://github.com/CHNHJF/dbx-plugin-excelx/tree/v0.9.2",
+  "homepage": "https://github.com/CHNHJF/dbx-plugin-excelx",
+  "license": "Apache-2.0",
+  "latestVersion": "0.9.2",
+  "versions": [
+    {
+      "version": "0.9.2",
+      "releasedAt": "2026-09-19T02:00:48.631Z",
+      "releaseNotes": "Review fixes: exact i64 integer parsing (no f64 round-trip; i64 overflow stored as exact TEXT), leading-zero guard enforced at type inference so UI default plans inherit it, candidate scope reduced to windows-x64 until macOS/Linux file dialogs and DBX data-dir discovery are implemented and verified.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.chnhjf.excelx/0.9.2/io.github.chnhjf.excelx-0.9.2-windows-x64.dbxp",
+          "sha256": "c74bbcf286ef12ceb05ddfd51bbdad1a57c976ea5aab6534ab13568d258a57a7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2192663
+        }
+      ]
+    }
+  ]
+}
