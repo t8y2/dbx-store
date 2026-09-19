@@ -79,6 +79,58 @@
       }
     },
     {
+      "id": "com.yiqiui.leetcode-cn",
+      "name": "LeetCode 刷题",
+      "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。",
+      "publisher": "yiqiui",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.1.4/icon.svg",
+      "tags": [
+        "leetcode",
+        "algorithm",
+        "practice"
+      ],
+      "permissions": [
+        "host.binary",
+        "host.workbench",
+        "host.network:https://leetcode.cn"
+      ],
+      "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.1.4",
+      "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.4",
+      "versions": [
+        {
+          "version": "0.1.4",
+          "releasedAt": "2026-09-19T17:51:11.959Z",
+          "releaseNotes": "Manifest spec alignment (host.network + stdio-jsonl transport); calibrated GraphQL (problemsetQuestionList/translatedTitle/stats); difficulty+tag filters; favorite toggle + submission history (login-gated).",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.1.4/com.yiqiui.leetcode-cn-0.1.4-darwin-arm64.dbxp",
+              "sha256": "fd1d362405f3f0f3db391ca5abf2c35b3353f1c0ad2e6e24bb8f8b20b6a08ee0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1999401
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.1.4/com.yiqiui.leetcode-cn-0.1.4-linux-x64.dbxp",
+              "sha256": "b37211abeefd272f8e5d57e52d2d5400506c018043521eae14702313b7e7aafa",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2272543
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.1.4/com.yiqiui.leetcode-cn-0.1.4-windows-x64.dbxp",
+              "sha256": "52d6ea386fd69742d19c448a96ae7d528e11d4c42313becfc6d8b2daf391fa37",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2068518
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "io.dbx.api-studio",
       "name": "API Studio",
       "description": "Build, send, debug and manage API requests in DBX.",
@@ -646,7 +698,7 @@
       "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.86/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.88/icon.svg",
       "tags": [
         "ldap",
         "directory",
@@ -660,8 +712,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ldap",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
       "license": "MIT",
-      "latestVersion": "0.1.86",
+      "latestVersion": "0.1.88",
       "versions": [
+        {
+          "version": "0.1.88",
+          "releasedAt": "2026-09-19T17:57:10.991Z",
+          "releaseNotes": "首个商店版本：LDAP 目录浏览与管理工作台。DN 树浏览、分页搜索与 RFC 4515 过滤器；条目查看、新增、编辑、重命名与删除；RootDSE/Schema 检查与 LDIF/CSV 导出；支持 anonymous、simple、Kerberos/GSSAPI、NTLM、DIGEST-MD5、SASL External 等认证矩阵与 LDAP/StartTLS/LDAPS；内置只读模式、Base DN 白名单、屏蔽属性和审计等安全护栏，支持粘贴 ldapsearch 命令一键导入搜索表单，并提供 MCP 工具面供 AI 客户端复用。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.88/io.dbx.ldap-0.1.88-darwin-arm64.dbxp",
+              "sha256": "e7a387c19f1a89224b5498454daefcee7f163a6a78e6ec5322f4bd468a1478a1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6344865
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.88/io.dbx.ldap-0.1.88-darwin-x64.dbxp",
+              "sha256": "2fffc1af1068cd837404897b391d9e0c9143f23c730c0daad92d09e15af2a3cd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6663967
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.88/io.dbx.ldap-0.1.88-linux-arm64.dbxp",
+              "sha256": "155d1575814d8defff8b0dbff0bf14a82f60139f3890018e45a40a8f623c0c40",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6331741
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.88/io.dbx.ldap-0.1.88-linux-x64.dbxp",
+              "sha256": "4eab15c955eef2483ae03f743a7f5a90864b61baca26137241d4975974305fd4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6754410
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.88/io.dbx.ldap-0.1.88-windows-x64.dbxp",
+              "sha256": "349b7818c5a9496875408a199d03671a1393669927b468fd6a5575a9c2cdbda4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6803657
+            }
+          ]
+        },
         {
           "version": "0.1.86",
           "releasedAt": "2026-09-19T02:31:55.045Z",
@@ -879,6 +973,77 @@
           "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
         }
       }
+    },
+    {
+      "id": "io.dbx.nintyapi",
+      "name": "NintyAPI",
+      "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
+      "publisher": "nintycat",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/icon.svg",
+      "tags": [
+        "http",
+        "api",
+        "rest",
+        "testing",
+        "debug"
+      ],
+      "permissions": [],
+      "source": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
+      "homepage": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.7",
+      "versions": [
+        {
+          "version": "0.1.7",
+          "releasedAt": "2026-09-19T18:03:18.410Z",
+          "releaseNotes": "首个 NintyAPI 版本：接口集合管理、请求历史回放、cURL 导入导出、代码生成、可拖拽分栏与快捷右键菜单。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/io.dbx.nintyapi-0.1.7-darwin-arm64.dbxp",
+              "sha256": "2da3915dbca84f4489257c5627d50c92081dc80f8fa653a00a3cb99faea340ed",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5798663
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/io.dbx.nintyapi-0.1.7-darwin-x64.dbxp",
+              "sha256": "bf2a2187cb540572d9a9326a6f38c205e37db4ff9159463f1806ba45ea0862fd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6019470
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/io.dbx.nintyapi-0.1.7-linux-arm64.dbxp",
+              "sha256": "d9dfea7e93e934885abe734b3d889ff671ae7623ef6a7c4185f589d9c3952b25",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5797653
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/io.dbx.nintyapi-0.1.7-linux-x64.dbxp",
+              "sha256": "59c72b8a1963ce58feb5a320ef30104e7733955a36efc65a89609631b69f6091",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6095360
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/io.dbx.nintyapi-0.1.7-windows-arm64.dbxp",
+              "sha256": "d4ac4b7de5fa9c970bbf6b23f9df7c151d7c05257f1155816b0a59a8b52b17eb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5786602
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/io.dbx.nintyapi-0.1.7-windows-x64.dbxp",
+              "sha256": "8823fc5bf7552158d1ace503d6f802a767a9c5eb34af340b8c32a82c3079d5c8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6116353
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "io.dbx.ssh",
@@ -2130,7 +2295,7 @@
       "description": "A collection of everyday developer utilities: password/QR/barcode/UUID generators, hash, Base64, JWT parser, RMB uppercase, URL codec and image ⇄ Base64.",
       "publisher": "terry",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.3.3/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.4.2/icon.svg",
       "tags": [
         "devtools",
         "utilities",
@@ -2138,11 +2303,25 @@
         "generator"
       ],
       "permissions": [],
-      "source": "https://github.com/yaoxinghuo/dbx-dev-tools/tree/v0.3.3",
+      "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "license": "MIT",
-      "latestVersion": "0.3.3",
+      "latestVersion": "0.4.2",
       "versions": [
+        {
+          "version": "0.4.2",
+          "releasedAt": "2026-09-19T18:00:28.177Z",
+          "releaseNotes": "Initial release with 10 tools: password, QR code, barcode, hash, UUID, Base64, JWT parser, RMB uppercase, URL codec and image ⇄ Base64.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/terry.devtools/0.4.2/terry.devtools-0.4.2-universal.dbxp",
+              "sha256": "2877b840ab1ee5966fb0bf03048ab1fc30253f7053dd45149e7c40ba200c3ca6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 64069
+            }
+          ]
+        },
         {
           "version": "0.3.3",
           "releasedAt": "2026-09-18T03:36:41.223Z",

@@ -1,0 +1,71 @@
+{
+  "id": "io.dbx.nintyapi",
+  "name": "NintyAPI",
+  "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
+  "publisher": "nintycat",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/NintyCat/dbx-plugin-NintyAPI/v0.1.7/assets/plugin.svg",
+  "tags": [
+    "http",
+    "api",
+    "rest",
+    "testing",
+    "debug"
+  ],
+  "permissions": [],
+  "source": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
+  "homepage": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.7",
+  "versions": [
+    {
+      "version": "0.1.7",
+      "releasedAt": "2026-09-19T18:03:18.410Z",
+      "releaseNotes": "首个 NintyAPI 版本：接口集合管理、请求历史回放、cURL 导入导出、代码生成、可拖拽分栏与快捷右键菜单。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/io.dbx.nintyapi-0.1.7-darwin-arm64.dbxp",
+          "sha256": "2da3915dbca84f4489257c5627d50c92081dc80f8fa653a00a3cb99faea340ed",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5798663
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/io.dbx.nintyapi-0.1.7-darwin-x64.dbxp",
+          "sha256": "bf2a2187cb540572d9a9326a6f38c205e37db4ff9159463f1806ba45ea0862fd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6019470
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/io.dbx.nintyapi-0.1.7-linux-arm64.dbxp",
+          "sha256": "d9dfea7e93e934885abe734b3d889ff671ae7623ef6a7c4185f589d9c3952b25",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5797653
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/io.dbx.nintyapi-0.1.7-linux-x64.dbxp",
+          "sha256": "59c72b8a1963ce58feb5a320ef30104e7733955a36efc65a89609631b69f6091",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6095360
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/io.dbx.nintyapi-0.1.7-windows-arm64.dbxp",
+          "sha256": "d4ac4b7de5fa9c970bbf6b23f9df7c151d7c05257f1155816b0a59a8b52b17eb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5786602
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.7/io.dbx.nintyapi-0.1.7-windows-x64.dbxp",
+          "sha256": "8823fc5bf7552158d1ace503d6f802a767a9c5eb34af340b8c32a82c3079d5c8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6116353
+        }
+      ]
+    }
+  ]
+}

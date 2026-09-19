@@ -1,0 +1,52 @@
+{
+  "id": "com.yiqiui.leetcode-cn",
+  "name": "LeetCode 刷题",
+  "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。",
+  "publisher": "yiqiui",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/yiqiui/dbx-plugin-leetcode-cn/main/assets/plugin.svg",
+  "tags": [
+    "leetcode",
+    "algorithm",
+    "practice"
+  ],
+  "permissions": [
+    "host.binary",
+    "host.workbench",
+    "host.network:https://leetcode.cn"
+  ],
+  "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.1.4",
+  "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.4",
+  "versions": [
+    {
+      "version": "0.1.4",
+      "releasedAt": "2026-09-19T17:51:11.959Z",
+      "releaseNotes": "Manifest spec alignment (host.network + stdio-jsonl transport); calibrated GraphQL (problemsetQuestionList/translatedTitle/stats); difficulty+tag filters; favorite toggle + submission history (login-gated).",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.1.4/com.yiqiui.leetcode-cn-0.1.4-darwin-arm64.dbxp",
+          "sha256": "fd1d362405f3f0f3db391ca5abf2c35b3353f1c0ad2e6e24bb8f8b20b6a08ee0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1999401
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.1.4/com.yiqiui.leetcode-cn-0.1.4-linux-x64.dbxp",
+          "sha256": "b37211abeefd272f8e5d57e52d2d5400506c018043521eae14702313b7e7aafa",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2272543
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.1.4/com.yiqiui.leetcode-cn-0.1.4-windows-x64.dbxp",
+          "sha256": "52d6ea386fd69742d19c448a96ae7d528e11d4c42313becfc6d8b2daf391fa37",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2068518
+        }
+      ]
+    }
+  ]
+}
