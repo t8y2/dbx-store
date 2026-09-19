@@ -3,6 +3,8 @@ import { readFile } from "node:fs/promises";
 const catalog = JSON.parse(await readFile("catalog/index.json", "utf8"));
 
 for (const plugin of catalog.plugins) {
+  // Icons are optional; the client falls back to a default glyph when none is mirrored.
+  if (!plugin.icon) continue;
   const expectedPrefix = `https://dl.dbxio.com/plugins/${plugin.id}/${plugin.latestVersion}/icon.`;
   if (!plugin.icon.startsWith(expectedPrefix)) throw new Error(`Unexpected catalog icon URL for ${plugin.id}: ${plugin.icon}`);
   const extension = plugin.icon.slice(expectedPrefix.length);

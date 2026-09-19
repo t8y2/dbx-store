@@ -8,6 +8,140 @@
   },
   "plugins": [
     {
+      "id": "com.jettech.httpclient",
+      "name": "HTTP Client",
+      "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses.",
+      "publisher": "jettech",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.1/icon.svg",
+      "tags": [
+        "http",
+        "api",
+        "debugging",
+        "network"
+      ],
+      "permissions": [
+        "host.events"
+      ],
+      "source": "https://github.com/renpengkai/dbx-plugin-http-client/tree/0.1.1",
+      "homepage": "https://github.com/renpengkai/dbx-plugin-http-client",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.1",
+      "versions": [
+        {
+          "version": "0.1.1",
+          "releasedAt": "2026-09-19T02:13:02.854Z",
+          "releaseNotes": "0.1.1：工作台请求方法、环境、Content-Type 三个选择框统一为扁平样式，明暗主题下视觉一致。其余能力 0.1.0 相同：8 种方法、四类请求体、三种认证、多标签页、集合/历史/环境变量、cURL 导入导出；响应侧提供跳转链路、耗时与 TTFB、JSON 高亮、响应头与 Cookie 视图。所有网络请求 protocol v1 委派 Go 原生 Sidecar。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.1/com.jettech.httpclient-0.1.1-darwin-arm64.dbxp",
+              "sha256": "e1fedb4f6653920f0d22e88f39a82af8beb1a4d77411f9b283afb7b6fb316aa6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4215336
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.1/com.jettech.httpclient-0.1.1-darwin-x64.dbxp",
+              "sha256": "0322e6833b1712f500f4a612039592bc8577b6dab52d3e60b6d5908cf52ab845",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4421486
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.1/com.jettech.httpclient-0.1.1-linux-arm64.dbxp",
+              "sha256": "71ce2263388c8eeba0f22ae2653866ea060199a52d63b39dfd8a90c2c33f7df4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4201644
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.1/com.jettech.httpclient-0.1.1-linux-x64.dbxp",
+              "sha256": "658172ad7fd35b332845a1a135f41ece79ebe7419241425388b8df0cbac08e5a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4479058
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.1/com.jettech.httpclient-0.1.1-windows-x64.dbxp",
+              "sha256": "79443b91dae0dfde064a9e27bde125e48e6b6b69dde3b3b1e08766cafda9b1db",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4495610
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "HTTP 客户端",
+          "description": "类似 Postman 的 HTTP 接口调试作台构造请求、通过原生 Sidecar 发送并查看响应。"
+        }
+      }
+    },
+    {
+      "id": "io.dbx.api-studio",
+      "name": "API Studio",
+      "description": "Build, send, debug and manage API requests in DBX.",
+      "publisher": "runstone",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/icon.svg",
+      "tags": [
+        "http",
+        "rest",
+        "api",
+        "developer-tools"
+      ],
+      "permissions": [],
+      "source": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio",
+      "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio",
+      "license": "MIT",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-09-19T02:23:20.222Z",
+          "releaseNotes": "首个公开版本：在 DBX 内构建、发送、调试和管理 HTTP/REST 请求的工作台。支持 Query/Header/Auth（Bearer、Basic、API Key）/Body（JSON、urlencoded、multipart、text）全量编辑，cURL 导入导出，会话 Cookie Jar，变量与密钥遮蔽，中英双语界面。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-darwin-arm64.dbxp",
+              "sha256": "7c872bf555780b337ebf7aa295085df00887cce73e4b6ef0b273a7fa1595a5d3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1780384
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-darwin-x64.dbxp",
+              "sha256": "f9ae1821ed3ba771511761a50aa2f776608b813c51a3a62deacff362d6cb60c1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1871762
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-linux-arm64.dbxp",
+              "sha256": "f56be03977add25cf3e6227335353baa1d481ba4e6819db5004cbe7a0f5b9a73",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1869688
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-linux-x64.dbxp",
+              "sha256": "0d88f7a41f11eec62acf2a2af035b10a7cab3356d07eaca21d7c36f93af33841",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1949702
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-windows-x64.dbxp",
+              "sha256": "de32f2181675a67921804e790d405b5288959a7ffe228547369ecefe02044021",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1939009
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "io.dbx.files",
       "name": "Files Studio",
       "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
@@ -248,7 +382,7 @@
       "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.42/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.43/icon.svg",
       "tags": [
         "kafka",
         "streaming",
@@ -262,8 +396,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-kafka",
       "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
       "license": "MIT",
-      "latestVersion": "0.1.42",
+      "latestVersion": "0.1.43",
       "versions": [
+        {
+          "version": "0.1.43",
+          "releasedAt": "2026-09-19T02:29:15.755Z",
+          "releaseNotes": "修复深色主题下 Topic 侧栏不可读的问题：图标色随 color-scheme 自动翻转，核心颜色令牌改为实时跟随宿主主题（不再被内联快照冻结），并提升树行/星标对比度。消息查询新增「最近 N 条」Offset 策略并设为默认：原「最新」策略从日志末端只等待新消息，对没有持续流量的 topic 总是「已扫描 0 · 命中 0」，现在默认即可读到每个分区最新的历史记录。Fixed topics sidebar legibility in dark theme: icon hues follow color-scheme, core color tokens now track the host theme live instead of being frozen by an inline snapshot, and tree row/star contrast was raised. Messages query adds a recent-N offset strategy and defaults to it: the previous latest default only waited for new records and always scanned zero on idle topics; the new default surfaces the newest existing records per partition.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.43/io.dbx.kafka-0.1.43-darwin-arm64.dbxp",
+              "sha256": "728c58372a720dcdce3ace703137169939d86533eb7478eddedb47cf4d537a75",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13278750
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.43/io.dbx.kafka-0.1.43-darwin-x64.dbxp",
+              "sha256": "01624e4cb489d09249f26904961c8a6a1582f28042f20f34538fe7cce715886a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14086321
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.43/io.dbx.kafka-0.1.43-linux-arm64.dbxp",
+              "sha256": "c701746057fff8fc20db3573d1f1905cf81d00fb8f8d67a022edb449bb5f67d2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 12514338
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.43/io.dbx.kafka-0.1.43-linux-x64.dbxp",
+              "sha256": "36e15e8e5869e8d697d67f11fce84e0eb0655870d9828b46211c9fc9f153ac5c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13594616
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.43/io.dbx.kafka-0.1.43-windows-x64.dbxp",
+              "sha256": "173e57be78005c1a928bb1a3f4953e2b658e7643b2c9587d305fe698a3e092c9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13679122
+            }
+          ]
+        },
         {
           "version": "0.1.42",
           "releasedAt": "2026-09-17T13:39:20.651Z",
@@ -470,7 +646,7 @@
       "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.70/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.86/icon.svg",
       "tags": [
         "ldap",
         "directory",
@@ -484,8 +660,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ldap",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
       "license": "MIT",
-      "latestVersion": "0.1.70",
+      "latestVersion": "0.1.86",
       "versions": [
+        {
+          "version": "0.1.86",
+          "releasedAt": "2026-09-19T02:31:55.045Z",
+          "releaseNotes": "首个商店版本：LDAP 目录浏览与管理工作台。DN 树浏览、分页搜索与 RFC 4515 过滤器；条目查看、新增、编辑、重命名与删除；RootDSE/Schema 检查与 LDIF/CSV 导出；支持 anonymous、simple、Kerberos/GSSAPI、NTLM、DIGEST-MD5、SASL External 等认证矩阵与 LDAP/StartTLS/LDAPS；内置只读模式、Base DN 白名单、屏蔽属性和审计等安全护栏，支持粘贴 ldapsearch 命令一键导入搜索表单，并提供 MCP 工具面供 AI 客户端复用。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.86/io.dbx.ldap-0.1.86-darwin-arm64.dbxp",
+              "sha256": "c35c2d5a1cda9bfbad23c5fe6106a58d7efd515acd2dea8c4330792cd6cde342",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6343351
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.86/io.dbx.ldap-0.1.86-darwin-x64.dbxp",
+              "sha256": "57b67203cccb164b1171ed486f2576c2466d40aa25477dd27bc0ace3ff53d1c2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6662829
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.86/io.dbx.ldap-0.1.86-linux-arm64.dbxp",
+              "sha256": "9e48bb6625c71b6d12a532572f46428663d8d8fbea77d9f1fb9fdef3d306b2f0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6330214
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.86/io.dbx.ldap-0.1.86-linux-x64.dbxp",
+              "sha256": "55cb727e8d42f289baf1decaf265231b09872c19b6fdcdfa5f2dd389ac880a41",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6752584
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.86/io.dbx.ldap-0.1.86-windows-x64.dbxp",
+              "sha256": "098f27b00cbf9818928fac16b3ed6a215fd79cf53f1f8830dbf619066e401d28",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6801567
+            }
+          ]
+        },
         {
           "version": "0.1.70",
           "releasedAt": "2026-09-16T14:25:27.483Z",
@@ -668,7 +886,7 @@
       "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.4.77/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.4.79/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -684,8 +902,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.4.77",
+      "latestVersion": "0.4.79",
       "versions": [
+        {
+          "version": "0.4.79",
+          "releasedAt": "2026-09-19T02:34:24.473Z",
+          "releaseNotes": "First official store release: interactive SSH terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.4.79/io.dbx.ssh-0.4.79-darwin-arm64.dbxp",
+              "sha256": "1807775ebb5aee73ae1bbc12aa26dcf35df23457b5aa93deb565becb28d8ec6f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6201823
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.4.79/io.dbx.ssh-0.4.79-darwin-x64.dbxp",
+              "sha256": "2ea5430dabd45925bcf0bcdd99e5100201c8d6fe5549edde44d40fdc6d7a1626",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6590700
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.4.79/io.dbx.ssh-0.4.79-linux-arm64.dbxp",
+              "sha256": "494af043aaf2a343f059155cc68307c713f5c6e31a395e5258cca0982b9a57cd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6420439
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.4.79/io.dbx.ssh-0.4.79-linux-x64.dbxp",
+              "sha256": "9f06150a3c882c212ac12a710bb0f4347efe7cb9d131d5186d4599f58202aaa6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6688037
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.4.79/io.dbx.ssh-0.4.79-windows-x64.dbxp",
+              "sha256": "cc96909af81a7603ab3e77a08c151e5f30a4245a2873a5ed9ac63ca4f49bb9c4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6746368
+            }
+          ]
+        },
         {
           "version": "0.4.77",
           "releasedAt": "2026-09-17T07:45:18.773Z",
@@ -905,6 +1165,111 @@
       }
     },
     {
+      "id": "io.github.caichangqing1120.xxljob",
+      "name": "XXL-JOB",
+      "description": "Manage official XXL-JOB Admin 2.3.x and 3.4.x jobs, executors and logs in DBX.",
+      "publisher": "caichangqing1120",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/icon.svg",
+      "tags": [
+        "xxl-job",
+        "scheduler",
+        "jobs"
+      ],
+      "permissions": [],
+      "source": "https://github.com/caichangqing1120/dbx-plugin-xxl-job/tree/v0.1.1",
+      "homepage": "https://github.com/caichangqing1120/dbx-plugin-xxl-job",
+      "license": "MIT",
+      "latestVersion": "0.1.1",
+      "versions": [
+        {
+          "version": "0.1.1",
+          "releasedAt": "2026-09-19T02:05:59.265Z",
+          "releaseNotes": "Align the default 3.4.x connection path with the official root deployment; clarify the 2.3.x path and retain custom paths.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/io.github.caichangqing1120.xxljob-0.1.1-darwin-arm64.dbxp",
+              "sha256": "948324b1e992838776626477a0e474a47090f4f7e95768fc35b54c696314f632",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4404204
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/io.github.caichangqing1120.xxljob-0.1.1-darwin-x64.dbxp",
+              "sha256": "35519785924aedd1c21d52f208919b2a5df093eb9bfa2b6a4f36ee41cf19b52c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4625565
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/io.github.caichangqing1120.xxljob-0.1.1-linux-arm64.dbxp",
+              "sha256": "08288470b73e86fa7a9ead577baee43ef3246425e524bd3323fef5bfbf6711e4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4378521
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/io.github.caichangqing1120.xxljob-0.1.1-linux-x64.dbxp",
+              "sha256": "9a9d760ab3061018cbd97012765b4efd60f2679b4d1efcba8fb3b48ac69cac64",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4662895
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/io.github.caichangqing1120.xxljob-0.1.1-windows-arm64.dbxp",
+              "sha256": "499b5239c5f58b666c6c12fed05d617941bf8ad66f60ef53b4c7d6c7d66b92a8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4376954
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/io.github.caichangqing1120.xxljob-0.1.1-windows-x64.dbxp",
+              "sha256": "3a6fd3fa54bd10cc89acd6fe7985a58d2a140fcda69cf99bb8014fafb0940c4f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4694060
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "io.github.chnhjf.excelx",
+      "name": "ExcelX",
+      "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant.",
+      "publisher": "chnhjf",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.chnhjf.excelx/0.9.2/icon.svg",
+      "tags": [
+        "spreadsheet",
+        "sqlite",
+        "import",
+        "export",
+        "ai"
+      ],
+      "permissions": [],
+      "source": "https://github.com/CHNHJF/dbx-plugin-excelx/tree/v0.9.2",
+      "homepage": "https://github.com/CHNHJF/dbx-plugin-excelx",
+      "license": "Apache-2.0",
+      "latestVersion": "0.9.2",
+      "versions": [
+        {
+          "version": "0.9.2",
+          "releasedAt": "2026-09-19T02:00:48.631Z",
+          "releaseNotes": "Review fixes: exact i64 integer parsing (no f64 round-trip; i64 overflow stored as exact TEXT), leading-zero guard enforced at type inference so UI default plans inherit it, candidate scope reduced to windows-x64 until macOS/Linux file dialogs and DBX data-dir discovery are implemented and verified.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.chnhjf.excelx/0.9.2/io.github.chnhjf.excelx-0.9.2-windows-x64.dbxp",
+              "sha256": "c74bbcf286ef12ceb05ddfd51bbdad1a57c976ea5aab6534ab13568d258a57a7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2192663
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "io.github.mugongliu1.terminal",
       "name": "Embedded Terminal",
       "description": "Run an interactive local shell directly inside a DBX workbench.",
@@ -972,6 +1337,50 @@
         "zh-CN": {
           "name": "内嵌终端",
           "description": "直接在 DBX 工作台内运行本机交互式终端。"
+        }
+      }
+    },
+    {
+      "id": "io.github.summery-yk.portainer",
+      "name": "Portainer",
+      "description": "Browse Portainer environments, stacks and containers from DBX, inspect resource usage and read container logs.",
+      "publisher": "summery-yk",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.summery-yk.portainer/0.1.0/icon.svg",
+      "tags": [
+        "portainer",
+        "docker",
+        "container",
+        "stack",
+        "logs"
+      ],
+      "permissions": [
+        "host.workbench"
+      ],
+      "source": "https://github.com/summery-yk/dbx-plugin-portainer/tree/v0.1.0",
+      "homepage": "https://github.com/summery-yk/dbx-plugin-portainer",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-09-19T02:10:10.219Z",
+          "releaseNotes": "Initial release. Environment, stack and container browsing with health badges, database container discovery with ready-to-use DBX connection parameters, container logs (auto refresh, range, search, download, line selection) and resource statistics. Read-only: every Portainer request is a GET.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.summery-yk.portainer/0.1.0/io.github.summery-yk.portainer-0.1.0-windows-x64.dbxp",
+              "sha256": "15f4b7b4c7fdb2e06fb89dfac213bb698f6d3d5d7b796f371cb1c5f5ed000618",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5754809
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "Portainer",
+          "description": "在 DBX 中浏览 Portainer 的环境、堆栈与容器，查看资源占用并阅读容器日志。"
         }
       }
     },
