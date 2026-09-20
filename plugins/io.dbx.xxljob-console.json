@@ -1,0 +1,85 @@
+{
+  "id": "io.dbx.xxljob-console",
+  "name": "XXL-JOB Console",
+  "description": "Manage XXL-JOB reports, jobs, logs, executors and users in DBX.",
+  "publisher": "ezreal-byte",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-plugin-xxl-job-console/v0.3.1/assets/plugin.svg",
+  "tags": [
+    "xxl-job",
+    "scheduler",
+    "jobs"
+  ],
+  "permissions": [
+    "host.workbench"
+  ],
+  "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/tree/v0.3.1",
+  "homepage": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
+  "license": "MIT",
+  "latestVersion": "0.3.1",
+  "versions": [
+    {
+      "version": "0.3.1",
+      "releasedAt": "2026-09-20T07:39:55.756Z",
+      "releaseNotes": "Dense bordered tables, labeled actions, more-menu job operations, inherited DBX fonts, and a live-log demo executor.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/io.dbx.xxljob-console-0.3.1-darwin-arm64.dbxp",
+          "sha256": "dbc4d696f00c982f1e2fd2e33ea0132614d41b9f513d2cd90b1d5eac8dac405e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4632579
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/io.dbx.xxljob-console-0.3.1-darwin-x64.dbxp",
+          "sha256": "8b382cf2a24d387577d20d18889b447aa7d2a8edd58faca3d23c17017cc0f618",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4842283
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/io.dbx.xxljob-console-0.3.1-linux-arm64.dbxp",
+          "sha256": "e520096e17f7983706d9f839345648d737adb419b28009711d6653d928c34b19",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4588701
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/io.dbx.xxljob-console-0.3.1-linux-x64.dbxp",
+          "sha256": "5bb212ec82fc1dc77838e27ae1e0cfa5423ed31a4e0caaf7f42a6106d0774b42",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4880775
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/io.dbx.xxljob-console-0.3.1-windows-arm64.dbxp",
+          "sha256": "efa5d88d7bb93a2673c4ad44689e17c9699ea3c80d7d93f00604a984864157a8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4593438
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/io.dbx.xxljob-console-0.3.1-windows-x64.dbxp",
+          "sha256": "8cd32ac7437a97ff9f1ae287e0cc123f4ba39ea6bafd19b2d9c3cbd16e735d10",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4911795
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "XXL-JOB 控制台",
+      "description": "在 DBX 中管理 XXL-JOB 的报表、任务、日志、执行器和用户。"
+    },
+    "zh": {
+      "name": "XXL-JOB 控制台",
+      "description": "在 DBX 中管理 XXL-JOB 的报表、任务、日志、执行器和用户。"
+    },
+    "en": {
+      "name": "XXL-JOB Console",
+      "description": "Manage XXL-JOB reports, jobs, logs, executors and users in DBX."
+    }
+  }
+}

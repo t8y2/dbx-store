@@ -1,0 +1,80 @@
+{
+  "id": "com.nintycat.shell",
+  "name": "NintyShell",
+  "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files.",
+  "publisher": "nintycat",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/NintyCat/dbx-plugin-NintyShell/v0.6.0/assets/plugin.svg",
+  "tags": [
+    "terminal",
+    "ssh",
+    "sftp",
+    "shell"
+  ],
+  "permissions": [
+    "host.events",
+    "host.filesystem"
+  ],
+  "source": "https://github.com/NintyCat/dbx-plugin-NintyShell/tree/v0.6.0",
+  "homepage": "https://github.com/NintyCat/dbx-plugin-NintyShell",
+  "license": "MIT",
+  "latestVersion": "0.6.0",
+  "versions": [
+    {
+      "version": "0.6.0",
+      "releasedAt": "2026-09-20T09:15:45.472Z",
+      "releaseNotes": "Windows support for the Local Shell connection (platform-aware shell auto-selection; PowerShell invoked via -NoProfile -EncodedCommand with exit code and working directory reported through a BOM-less UTF-8 temp file, since fd 3 does not exist on Windows). Panic log moved out of /tmp into the plugin data directory with 0700/0600 permissions. Display name is now NintyShell.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.6.0/com.nintycat.shell-0.6.0-darwin-arm64.dbxp",
+          "sha256": "83b96b51690a10916e5e65981b235ce1dd1d4e674f715eabb3e151622bd74c80",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3636141
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.6.0/com.nintycat.shell-0.6.0-darwin-x64.dbxp",
+          "sha256": "f72ec1949af4772826e4f4f409595194f200d44fc5339913bc2e1703bab8367b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3796757
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.6.0/com.nintycat.shell-0.6.0-linux-arm64.dbxp",
+          "sha256": "7c5a2f9ffc0d7f8a7620cabd41b94e74a4358b8b55ef9e1bbcd4c24b91650e54",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3632204
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.6.0/com.nintycat.shell-0.6.0-linux-x64.dbxp",
+          "sha256": "875c88070db58c3c035cf7e684586836502227846859ddc93c8bd32000da3343",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3854660
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.6.0/com.nintycat.shell-0.6.0-windows-x64.dbxp",
+          "sha256": "6f34812fef3428a1065b0cb3a1601983d0f12c42370e9f67dfaa0605587db071",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3894620
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "description": "在 DBX 工作台中打开本地 Shell 与 SSH/SFTP 终端，执行命令并管理远程文件。",
+      "name": "NintyShell"
+    },
+    "zh": {
+      "name": "NintyShell",
+      "description": "在 DBX 工作台中打开本地 Shell 与 SSH/SFTP 终端，执行命令并管理远程文件。"
+    },
+    "en": {
+      "name": "NintyShell",
+      "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files."
+    }
+  }
+}

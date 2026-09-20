@@ -122,13 +122,13 @@
       "name": "Kubernetes 管理",
       "description": "在 DBX 中管理 Kubernetes 集群、工作负载和资源。"
     },
-    "en": {
-      "name": "Kubernetes Manager",
-      "description": "Manage Kubernetes clusters, workloads and resources from DBX."
-    },
     "zh": {
       "name": "Kubernetes 管理",
       "description": "在 DBX 中管理 Kubernetes 集群、工作负载和资源。"
+    },
+    "en": {
+      "name": "Kubernetes Manager",
+      "description": "Manage Kubernetes clusters, workloads and resources from DBX."
     }
   }
 }

@@ -55,13 +55,13 @@
       "name": "Portainer",
       "description": "在 DBX 中浏览 Portainer 的环境、堆栈与容器，查看资源占用并阅读容器日志，同时向 AI 客户端提供 MCP 工具。"
     },
-    "en": {
-      "name": "Portainer",
-      "description": "Browse Portainer environments, stacks and containers from DBX, inspect resource usage and read container logs, with MCP tools for AI clients."
-    },
     "zh": {
       "name": "Portainer",
       "description": "在 DBX 中浏览 Portainer 的环境、堆栈与容器，查看资源占用并阅读容器日志，同时向 AI 客户端提供 MCP 工具。"
+    },
+    "en": {
+      "name": "Portainer",
+      "description": "Browse Portainer environments, stacks and containers from DBX, inspect resource usage and read container logs, with MCP tools for AI clients."
     }
   }
 }

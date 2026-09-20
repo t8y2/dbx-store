@@ -8,6 +8,53 @@
   },
   "plugins": [
     {
+      "id": "ccllzz111.dbx-draw",
+      "name": "DBX Draw",
+      "description": "The draw.io diagram editor bundled inside the DBX sandbox, with offline editing and mathematical typesetting.",
+      "publisher": "ccllzz111",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/ccllzz111.dbx-draw/0.3.22/icon.svg",
+      "tags": [
+        "diagrams",
+        "drawio"
+      ],
+      "permissions": [],
+      "source": "https://github.com/ccllzz111/dbx-plugin-draw/tree/v0.3.22",
+      "homepage": "https://github.com/ccllzz111/dbx-plugin-draw",
+      "license": "Apache-2.0",
+      "latestVersion": "0.3.22",
+      "versions": [
+        {
+          "version": "0.3.22",
+          "releasedAt": "2026-09-20T09:08:45.775Z",
+          "releaseNotes": "Offline diagrams, mathematical typesetting, PNG/SVG exports and session recent files. See README for sandbox limitations.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/ccllzz111.dbx-draw/0.3.22/ccllzz111.dbx-draw-0.3.22-universal.dbxp",
+              "sha256": "6ea39d0f4f0e8581c8d59728f8d1cc24cdc7678c5805718e8047bfec44c5c6bf",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18713451
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "DBX Draw",
+          "description": "内嵌于 DBX 沙箱的 draw.io 图表编辑器，支持离线编辑与数学公式排版。"
+        },
+        "zh": {
+          "name": "DBX Draw",
+          "description": "内嵌于 DBX 沙箱的 draw.io 图表编辑器，支持离线编辑与数学公式排版。"
+        },
+        "en": {
+          "name": "DBX Draw",
+          "description": "The draw.io diagram editor bundled inside the DBX sandbox, with offline editing and mathematical typesetting."
+        }
+      }
+    },
+    {
       "id": "com.jettech.httpclient",
       "name": "HTTP Client",
       "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses.",
@@ -76,20 +123,100 @@
           "name": "HTTP 客户端",
           "description": "类似 Postman 的 HTTP 接口调试作台构造请求、通过原生 Sidecar 发送并查看响应。"
         },
-        "en": {
-          "name": "HTTP Client",
-          "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses."
-        },
         "zh": {
           "name": "HTTP 客户端",
           "description": "类似 Postman 的 HTTP 接口调试作台构造请求、通过原生 Sidecar 发送并查看响应。"
+        },
+        "en": {
+          "name": "HTTP Client",
+          "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses."
+        }
+      }
+    },
+    {
+      "id": "com.nintycat.shell",
+      "name": "NintyShell",
+      "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files.",
+      "publisher": "nintycat",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.6.0/icon.svg",
+      "tags": [
+        "terminal",
+        "ssh",
+        "sftp",
+        "shell"
+      ],
+      "permissions": [
+        "host.events",
+        "host.filesystem"
+      ],
+      "source": "https://github.com/NintyCat/dbx-plugin-NintyShell/tree/v0.6.0",
+      "homepage": "https://github.com/NintyCat/dbx-plugin-NintyShell",
+      "license": "MIT",
+      "latestVersion": "0.6.0",
+      "versions": [
+        {
+          "version": "0.6.0",
+          "releasedAt": "2026-09-20T09:15:45.472Z",
+          "releaseNotes": "Windows support for the Local Shell connection (platform-aware shell auto-selection; PowerShell invoked via -NoProfile -EncodedCommand with exit code and working directory reported through a BOM-less UTF-8 temp file, since fd 3 does not exist on Windows). Panic log moved out of /tmp into the plugin data directory with 0700/0600 permissions. Display name is now NintyShell.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.6.0/com.nintycat.shell-0.6.0-darwin-arm64.dbxp",
+              "sha256": "83b96b51690a10916e5e65981b235ce1dd1d4e674f715eabb3e151622bd74c80",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3636141
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.6.0/com.nintycat.shell-0.6.0-darwin-x64.dbxp",
+              "sha256": "f72ec1949af4772826e4f4f409595194f200d44fc5339913bc2e1703bab8367b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3796757
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.6.0/com.nintycat.shell-0.6.0-linux-arm64.dbxp",
+              "sha256": "7c5a2f9ffc0d7f8a7620cabd41b94e74a4358b8b55ef9e1bbcd4c24b91650e54",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3632204
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.6.0/com.nintycat.shell-0.6.0-linux-x64.dbxp",
+              "sha256": "875c88070db58c3c035cf7e684586836502227846859ddc93c8bd32000da3343",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3854660
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.6.0/com.nintycat.shell-0.6.0-windows-x64.dbxp",
+              "sha256": "6f34812fef3428a1065b0cb3a1601983d0f12c42370e9f67dfaa0605587db071",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3894620
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "description": "在 DBX 工作台中打开本地 Shell 与 SSH/SFTP 终端，执行命令并管理远程文件。",
+          "name": "NintyShell"
+        },
+        "zh": {
+          "name": "NintyShell",
+          "description": "在 DBX 工作台中打开本地 Shell 与 SSH/SFTP 终端，执行命令并管理远程文件。"
+        },
+        "en": {
+          "name": "NintyShell",
+          "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files."
         }
       }
     },
     {
       "id": "com.yiqiui.leetcode-cn",
       "name": "LeetCode Practice",
-      "description": "Log in to your LeetCode (leetcode.cn) account in the DBX Plugin Center, browse problems, view problem statements, choose a language, write code, and run or submit it for judging.",
+      "description": "Sign in to your LeetCode (leetcode.cn) account inside the DBX plugin center: browse the problem set, read statements, write code in your chosen language, then run or submit it for judging.",
       "publisher": "yiqiui",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.0/icon.svg",
@@ -168,7 +295,7 @@
       "localizations": {
         "en": {
           "name": "LeetCode Practice",
-          "description": "Log in to your LeetCode (leetcode.cn) account in the DBX Plugin Center, browse problems, view problem statements, choose a language, write code, and run or submit it for judging."
+          "description": "Sign in to your LeetCode (leetcode.cn) account inside the DBX plugin center: browse the problem set, read statements, write code in your chosen language, then run or submit it for judging."
         },
         "zh-CN": {
           "name": "LeetCode 刷题",
@@ -177,83 +304,6 @@
         "zh": {
           "name": "LeetCode 刷题",
           "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。"
-        }
-      }
-    },
-    {
-      "id": "io.dbx.api-studio",
-      "name": "API Studio",
-      "description": "Build, send, debug and manage API requests in DBX.",
-      "publisher": "runstone",
-      "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/icon.svg",
-      "tags": [
-        "http",
-        "rest",
-        "api",
-        "developer-tools"
-      ],
-      "permissions": [],
-      "source": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio",
-      "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-api-studio",
-      "license": "MIT",
-      "latestVersion": "0.1.0",
-      "versions": [
-        {
-          "version": "0.1.0",
-          "releasedAt": "2026-09-19T02:23:20.222Z",
-          "releaseNotes": "首个公开版本：在 DBX 内构建、发送、调试和管理 HTTP/REST 请求的工作台。支持 Query/Header/Auth（Bearer、Basic、API Key）/Body（JSON、urlencoded、multipart、text）全量编辑，cURL 导入导出，会话 Cookie Jar，变量与密钥遮蔽，中英双语界面。",
-          "artifacts": [
-            {
-              "target": "darwin-arm64",
-              "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-darwin-arm64.dbxp",
-              "sha256": "7c872bf555780b337ebf7aa295085df00887cce73e4b6ef0b273a7fa1595a5d3",
-              "signingKeyId": "dbx-store-release-2026",
-              "size": 1780384
-            },
-            {
-              "target": "darwin-x64",
-              "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-darwin-x64.dbxp",
-              "sha256": "f9ae1821ed3ba771511761a50aa2f776608b813c51a3a62deacff362d6cb60c1",
-              "signingKeyId": "dbx-store-release-2026",
-              "size": 1871762
-            },
-            {
-              "target": "linux-arm64",
-              "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-linux-arm64.dbxp",
-              "sha256": "f56be03977add25cf3e6227335353baa1d481ba4e6819db5004cbe7a0f5b9a73",
-              "signingKeyId": "dbx-store-release-2026",
-              "size": 1869688
-            },
-            {
-              "target": "linux-x64",
-              "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-linux-x64.dbxp",
-              "sha256": "0d88f7a41f11eec62acf2a2af035b10a7cab3356d07eaca21d7c36f93af33841",
-              "signingKeyId": "dbx-store-release-2026",
-              "size": 1949702
-            },
-            {
-              "target": "windows-x64",
-              "url": "https://dl.dbxio.com/plugins/io.dbx.api-studio/0.1.0/io.dbx.api-studio-0.1.0-windows-x64.dbxp",
-              "sha256": "de32f2181675a67921804e790d405b5288959a7ffe228547369ecefe02044021",
-              "signingKeyId": "dbx-store-release-2026",
-              "size": 1939009
-            }
-          ]
-        }
-      ],
-      "localizations": {
-        "zh-CN": {
-          "name": "API Studio",
-          "description": "在 DBX 中构建、发送、调试和管理 API 请求。"
-        },
-        "en": {
-          "name": "API Studio",
-          "description": "Build, send, debug and manage API requests in DBX."
-        },
-        "zh": {
-          "name": "API Studio",
-          "description": "在 DBX 中构建、发送、调试和管理 API 请求。"
         }
       }
     },
@@ -366,13 +416,13 @@
           "name": "Excalidraw Studio",
           "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
         },
-        "en": {
-          "name": "Excalidraw Studio",
-          "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX."
-        },
         "zh": {
           "name": "Excalidraw Studio",
           "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
+        },
+        "en": {
+          "name": "Excalidraw Studio",
+          "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX."
         }
       }
     },
@@ -574,13 +624,13 @@
           "name": "Files Studio",
           "description": "统一管理本地文件夹、S3 兼容存储、Azure Blob、Google Cloud Storage、华为 OBS、WebDAV、FTP、SFTP、SMB/CIFS 等 OpenDAL 服务的文件工作台：传输任务、归档与受控运维集中在一个界面。"
         },
-        "en": {
-          "name": "Files Studio",
-          "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services."
-        },
         "zh": {
           "name": "Files Studio",
           "description": "统一管理本地文件夹、S3 兼容存储、Azure Blob、Google Cloud Storage、华为 OBS、WebDAV、FTP、SFTP、SMB/CIFS 等 OpenDAL 服务的文件工作台：传输任务、归档与受控运维集中在一个界面。"
+        },
+        "en": {
+          "name": "Files Studio",
+          "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services."
         }
       }
     },
@@ -708,13 +758,13 @@
           "name": "Kubernetes 管理",
           "description": "在 DBX 中管理 Kubernetes 集群、工作负载和资源。"
         },
-        "en": {
-          "name": "Kubernetes Manager",
-          "description": "Manage Kubernetes clusters, workloads and resources from DBX."
-        },
         "zh": {
           "name": "Kubernetes 管理",
           "description": "在 DBX 中管理 Kubernetes 集群、工作负载和资源。"
+        },
+        "en": {
+          "name": "Kubernetes Manager",
+          "description": "Manage Kubernetes clusters, workloads and resources from DBX."
         }
       }
     },
@@ -724,7 +774,7 @@
       "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.44/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.45/icon.svg",
       "tags": [
         "kafka",
         "streaming",
@@ -738,8 +788,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-kafka",
       "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
       "license": "MIT",
-      "latestVersion": "0.1.44",
+      "latestVersion": "0.1.45",
       "versions": [
+        {
+          "version": "0.1.45",
+          "releasedAt": "2026-09-20T10:07:27.365Z",
+          "releaseNotes": "修复深色主题下 Topic 侧栏不可读的问题：图标色随 color-scheme 自动翻转，核心颜色令牌改为实时跟随宿主主题（不再被内联快照冻结），并提升树行/星标对比度。消息查询新增「最近 N 条」Offset 策略并设为默认：原「最新」策略从日志末端只等待新消息，对没有持续流量的 topic 总是「已扫描 0 · 命中 0」，现在默认即可读到每个分区最新的历史记录。Fixed topics sidebar legibility in dark theme: icon hues follow color-scheme, core color tokens now track the host theme live instead of being frozen by an inline snapshot, and tree row/star contrast was raised. Messages query adds a recent-N offset strategy and defaults to it: the previous latest default only waited for new records and always scanned zero on idle topics; the new default surfaces the newest existing records per partition.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.45/io.dbx.kafka-0.1.45-darwin-arm64.dbxp",
+              "sha256": "e077d614ac3ec6f6872d9706a636cc5f3100723faccd524e50d046c568effee4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13298583
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.45/io.dbx.kafka-0.1.45-darwin-x64.dbxp",
+              "sha256": "777d16b20cbc3163f969b8eb4bb470985ad3bfcaf4c0b75d642107c3e33fb758",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14104313
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.45/io.dbx.kafka-0.1.45-linux-arm64.dbxp",
+              "sha256": "0a60ace1a58ff9050099db9f780a0c573891c481a0a6cacf3b013e5ddf938720",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 12530879
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.45/io.dbx.kafka-0.1.45-linux-x64.dbxp",
+              "sha256": "f58e0559cbba0363aea0dc8daacf7b1685d5fdf96af0893be3a2f7029cfb8987",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13614041
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.45/io.dbx.kafka-0.1.45-windows-x64.dbxp",
+              "sha256": "068b261dadf687bf2ea7e2de75583d659fdcb06a136a50107bde197de945e234",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13695646
+            }
+          ]
+        },
         {
           "version": "0.1.44",
           "releasedAt": "2026-09-20T02:31:54.557Z",
@@ -1304,20 +1396,20 @@
           "name": "LDAP Studio",
           "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
         },
-        "en": {
-          "name": "LDAP Studio",
-          "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export."
-        },
         "zh": {
           "name": "LDAP Studio",
           "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
+        },
+        "en": {
+          "name": "LDAP Studio",
+          "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export."
         }
       }
     },
     {
       "id": "io.dbx.nintyapi",
       "name": "NintyAPI",
-      "description": "Debug HTTP APIs in DBX: collection tree, full request history with parameters and responses saved together, cURL conversion both ways, code generation, draggable panes, plus clipboard and context menu support.",
+      "description": "Debug HTTP APIs inside DBX: an API collection tree, full request history (parameters and responses retained), two-way cURL conversion, code generation, draggable split panes, and working clipboard and context menus.",
       "publisher": "nintycat",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.8/icon.png",
@@ -1436,7 +1528,7 @@
       "localizations": {
         "en": {
           "name": "NintyAPI",
-          "description": "Debug HTTP APIs in DBX: collection tree, full request history with parameters and responses saved together, cURL conversion both ways, code generation, draggable panes, plus clipboard and context menu support."
+          "description": "Debug HTTP APIs inside DBX: an API collection tree, full request history (parameters and responses retained), two-way cURL conversion, code generation, draggable split panes, and working clipboard and context menus."
         },
         "zh-CN": {
           "name": "NintyAPI",
@@ -1772,13 +1864,98 @@
           "name": "SSH Terminal",
           "description": "面向服务器运维的 SSH 终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
         },
-        "en": {
-          "name": "SSH Terminal",
-          "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations."
-        },
         "zh": {
           "name": "SSH Terminal",
           "description": "面向服务器运维的 SSH 终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
+        },
+        "en": {
+          "name": "SSH Terminal",
+          "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations."
+        }
+      }
+    },
+    {
+      "id": "io.dbx.xxljob-console",
+      "name": "XXL-JOB Console",
+      "description": "Manage XXL-JOB reports, jobs, logs, executors and users in DBX.",
+      "publisher": "ezreal-byte",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/icon.svg",
+      "tags": [
+        "xxl-job",
+        "scheduler",
+        "jobs"
+      ],
+      "permissions": [
+        "host.workbench"
+      ],
+      "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/tree/v0.3.1",
+      "homepage": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
+      "license": "MIT",
+      "latestVersion": "0.3.1",
+      "versions": [
+        {
+          "version": "0.3.1",
+          "releasedAt": "2026-09-20T07:39:55.756Z",
+          "releaseNotes": "Dense bordered tables, labeled actions, more-menu job operations, inherited DBX fonts, and a live-log demo executor.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/io.dbx.xxljob-console-0.3.1-darwin-arm64.dbxp",
+              "sha256": "dbc4d696f00c982f1e2fd2e33ea0132614d41b9f513d2cd90b1d5eac8dac405e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4632579
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/io.dbx.xxljob-console-0.3.1-darwin-x64.dbxp",
+              "sha256": "8b382cf2a24d387577d20d18889b447aa7d2a8edd58faca3d23c17017cc0f618",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4842283
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/io.dbx.xxljob-console-0.3.1-linux-arm64.dbxp",
+              "sha256": "e520096e17f7983706d9f839345648d737adb419b28009711d6653d928c34b19",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4588701
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/io.dbx.xxljob-console-0.3.1-linux-x64.dbxp",
+              "sha256": "5bb212ec82fc1dc77838e27ae1e0cfa5423ed31a4e0caaf7f42a6106d0774b42",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4880775
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/io.dbx.xxljob-console-0.3.1-windows-arm64.dbxp",
+              "sha256": "efa5d88d7bb93a2673c4ad44689e17c9699ea3c80d7d93f00604a984864157a8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4593438
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.1/io.dbx.xxljob-console-0.3.1-windows-x64.dbxp",
+              "sha256": "8cd32ac7437a97ff9f1ae287e0cc123f4ba39ea6bafd19b2d9c3cbd16e735d10",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4911795
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "XXL-JOB 控制台",
+          "description": "在 DBX 中管理 XXL-JOB 的报表、任务、日志、执行器和用户。"
+        },
+        "zh": {
+          "name": "XXL-JOB 控制台",
+          "description": "在 DBX 中管理 XXL-JOB 的报表、任务、日志、执行器和用户。"
+        },
+        "en": {
+          "name": "XXL-JOB Console",
+          "description": "Manage XXL-JOB reports, jobs, logs, executors and users in DBX."
         }
       }
     },
@@ -1853,15 +2030,15 @@
       "localizations": {
         "zh-CN": {
           "name": "XXL-JOB",
-          "description": "在 DBX 中管理官方 XXL-JOB Admin 2.3.x 和 3.4.x 的任务、执行器与日志。"
+          "description": "在 DBX 中管理官方 XXL-JOB Admin 2.3.x 与 3.4.x 的任务、执行器和日志。"
+        },
+        "zh": {
+          "name": "XXL-JOB",
+          "description": "在 DBX 中管理官方 XXL-JOB Admin 2.3.x 与 3.4.x 的任务、执行器和日志。"
         },
         "en": {
           "name": "XXL-JOB",
           "description": "Manage official XXL-JOB Admin 2.3.x and 3.4.x jobs, executors and logs in DBX."
-        },
-        "zh": {
-          "name": "XXL-JOB",
-          "description": "在 DBX 中管理官方 XXL-JOB Admin 2.3.x 和 3.4.x 的任务、执行器与日志。"
         }
       }
     },
@@ -1919,13 +2096,13 @@
           "name": "ExcelX",
           "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
         },
-        "en": {
-          "name": "ExcelX",
-          "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant."
-        },
         "zh": {
           "name": "ExcelX",
           "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
+        },
+        "en": {
+          "name": "ExcelX",
+          "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant."
         }
       }
     },
@@ -1996,13 +2173,13 @@
           "name": "TOTP",
           "description": "在 DBX 中管理 TOTP 账号并生成动态验证码。"
         },
-        "en": {
-          "name": "TOTP",
-          "description": "Manage TOTP accounts and generate one-time codes inside DBX."
-        },
         "zh": {
           "name": "TOTP",
           "description": "在 DBX 中管理 TOTP 账号并生成动态验证码。"
+        },
+        "en": {
+          "name": "TOTP",
+          "description": "Manage TOTP accounts and generate one-time codes inside DBX."
         }
       }
     },
@@ -2075,13 +2252,13 @@
           "name": "内嵌终端",
           "description": "直接在 DBX 工作台内运行本机交互式终端。"
         },
-        "en": {
-          "name": "Embedded Terminal",
-          "description": "Run an interactive local shell directly inside a DBX workbench."
-        },
         "zh": {
           "name": "内嵌终端",
           "description": "直接在 DBX 工作台内运行本机交互式终端。"
+        },
+        "en": {
+          "name": "Embedded Terminal",
+          "description": "Run an interactive local shell directly inside a DBX workbench."
         }
       }
     },
@@ -2142,13 +2319,13 @@
           "name": "Portainer",
           "description": "在 DBX 中浏览 Portainer 的环境、堆栈与容器，查看资源占用并阅读容器日志，同时向 AI 客户端提供 MCP 工具。"
         },
-        "en": {
-          "name": "Portainer",
-          "description": "Browse Portainer environments, stacks and containers from DBX, inspect resource usage and read container logs, with MCP tools for AI clients."
-        },
         "zh": {
           "name": "Portainer",
           "description": "在 DBX 中浏览 Portainer 的环境、堆栈与容器，查看资源占用并阅读容器日志，同时向 AI 客户端提供 MCP 工具。"
+        },
+        "en": {
+          "name": "Portainer",
+          "description": "Browse Portainer environments, stacks and containers from DBX, inspect resource usage and read container logs, with MCP tools for AI clients."
         }
       }
     },
@@ -2158,7 +2335,7 @@
       "description": "S3-compatible object storage plugin for DBX.",
       "publisher": "t8y2",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.14/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/icon.svg",
       "tags": [
         "storage",
         "s3",
@@ -2171,8 +2348,57 @@
       "source": "https://github.com/t8y2/dbx-plugin-s3/tree/v0.1.3",
       "homepage": "https://github.com/t8y2/dbx-plugin-s3",
       "license": "Proprietary",
-      "latestVersion": "0.1.14",
+      "latestVersion": "0.1.15",
       "versions": [
+        {
+          "version": "0.1.15",
+          "releasedAt": "2026-09-20T09:26:03.634Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/io.github.t8y2.s3-0.1.15-darwin-arm64.dbxp",
+              "sha256": "18ff09843ea3867489636330ca14dd090135919e66f2e43b2386d80ac0b5a4d2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6422667
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/io.github.t8y2.s3-0.1.15-darwin-x64.dbxp",
+              "sha256": "3fdba7e2b9599e1d22d87a165d81990ce14ab4b2f9b64896d1b54ffab314d782",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6772512
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/io.github.t8y2.s3-0.1.15-linux-arm64.dbxp",
+              "sha256": "36cd126407867d7ce8169178ab6e6a78d7a71ed98da9a4b1869eb471d5c3a493",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6339132
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/io.github.t8y2.s3-0.1.15-linux-x64.dbxp",
+              "sha256": "8ed3e3cbb261afb9b85684fdb1b8b6eebd19d78e9c580ba686ee1229dff3ac0a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6783144
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/io.github.t8y2.s3-0.1.15-windows-arm64.dbxp",
+              "sha256": "f05924546954dbefe603f98cfbaf915a96fb3246c73a30dffff1e66da55e6de9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6300699
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/io.github.t8y2.s3-0.1.15-windows-x64.dbxp",
+              "sha256": "c1c2d92c0fe2437cf36b9c488890d9c068f13a559f70df1d2acaab47039afe08",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6792231
+            }
+          ]
+        },
         {
           "version": "0.1.14",
           "releasedAt": "2026-09-19T20:39:11.087Z",
@@ -2865,33 +3091,82 @@
           "name": "S3 Browser",
           "description": "DBX 的 S3 兼容对象存储插件。"
         },
-        "en": {
-          "name": "S3 Browser",
-          "description": "S3-compatible object storage plugin for DBX."
-        },
         "zh": {
           "name": "S3 Browser",
           "description": "DBX 的 S3 兼容对象存储插件。"
+        },
+        "en": {
+          "name": "S3 Browser",
+          "description": "S3-compatible object storage plugin for DBX."
         }
       }
     },
     {
       "id": "monstercat.waitwork",
       "name": "Wait Work",
-      "description": "Take a break from work. Supports local TXT novel reading, chapter lists, reading settings, and auto-save, with the body text auto-collapsing when switching pages.",
+      "description": "Work a while, rest a while. Read local TXT, EPUB and MOBI books, or stream online books from custom sources — with chapter outlines, reading settings, autosave, and body text that folds away automatically when you switch pages.",
       "publisher": "monstercat",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.5.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/icon.svg",
       "tags": [
         "productivity",
         "reader"
       ],
       "permissions": [],
-      "source": "https://github.com/ragdollcb/waitWork/tree/87cec337fbb3990ce0246480ad7c77a9570d014c",
+      "source": "https://github.com/ragdollcb/waitWork/tree/v0.6.2",
       "homepage": "https://github.com/ragdollcb/waitWork",
       "license": "Apache-2.0",
-      "latestVersion": "0.5.2",
+      "latestVersion": "0.6.2",
       "versions": [
+        {
+          "version": "0.6.2",
+          "releasedAt": "2026-09-20T07:37:02.923Z",
+          "releaseNotes": "支持 TXT、EPUB、MOBI 本地阅读及自定义书源在线搜索、按章阅读与缓存；修复在线正文滚动回弹；大纲支持向上和向下滚动自动加载章节，向上加载保持可见位置，搜索结果也可继续加载。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/monstercat.waitwork-0.6.2-darwin-arm64.dbxp",
+              "sha256": "72b2e4b1852d662622632ec264490cb5c12a21d33cedea14532b64cd5a7e73ea",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5811640
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/monstercat.waitwork-0.6.2-darwin-x64.dbxp",
+              "sha256": "573433f447682c663ece44aa0c1931a43e911857c7ce03e4a15db168d59dee66",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6162178
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/monstercat.waitwork-0.6.2-linux-arm64.dbxp",
+              "sha256": "18a6feb10ac0206cc4436ba1811214ad1fdece86efbc35ee44b6749623db8077",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5539355
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/monstercat.waitwork-0.6.2-linux-x64.dbxp",
+              "sha256": "fb0a2ffde024f7f6dcf4de3901c8825016278217b25cdd76c7e3806c599d0051",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6005650
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/monstercat.waitwork-0.6.2-windows-arm64.dbxp",
+              "sha256": "1c9036020cad3ae718a9721da945218b8dfac91b3abcfbd3ef86e477ca2e12d5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5559616
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/monstercat.waitwork-0.6.2-windows-x64.dbxp",
+              "sha256": "c7657ceecd429c416e80427da2b16967d6c766e63534bf3ba749cf10c026fc30",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6059510
+            }
+          ]
+        },
         {
           "version": "0.5.2",
           "releasedAt": "2026-09-17T09:28:52.308Z",
@@ -2945,15 +3220,15 @@
       "localizations": {
         "zh-CN": {
           "name": "Wait Work",
-          "description": "等一会工作，休息一下。本地 TXT 小说阅读、章节目录与自动保存。"
-        },
-        "en": {
-          "name": "Wait Work",
-          "description": "Take a break from work. Supports local TXT novel reading, chapter lists, reading settings, and auto-save, with the body text auto-collapsing when switching pages."
+          "description": "等一会工作，休息一下。支持本地 TXT、EPUB、MOBI 与自定义书源在线阅读、章节目录、阅读设置和自动保存，切换页面自动收起正文。"
         },
         "zh": {
           "name": "Wait Work",
-          "description": "等一会工作，休息一下。本地 TXT 小说阅读、章节目录与自动保存。"
+          "description": "等一会工作，休息一下。支持本地 TXT、EPUB、MOBI 与自定义书源在线阅读、章节目录、阅读设置和自动保存，切换页面自动收起正文。"
+        },
+        "en": {
+          "name": "Wait Work",
+          "description": "Work a while, rest a while. Read local TXT, EPUB and MOBI books, or stream online books from custom sources — with chapter outlines, reading settings, autosave, and body text that folds away automatically when you switch pages."
         }
       }
     },
@@ -3030,13 +3305,13 @@
           "name": "Dev Tools",
           "description": "26 个日常开发工具，安装包不到 100KB——生成器（密码/二维码/条码/ID/占位文本）、编解码（Base64/URL/转义/图片）、安全（哈希/HMAC/JWT/AES）、文本工具（JSON/对比/大小写/行处理/乱码修复）等。纯前端、零权限。"
         },
-        "en": {
-          "name": "Dev Tools",
-          "description": "26 everyday developer utilities in a package under 100KB — generators (password/QR/barcode/ID/lorem), codecs (Base64/URL/escape/image), crypto (hash/HMAC/JWT/AES), text tools (JSON/diff/case/lines/mojibake) and more. Pure frontend, zero permissions."
-        },
         "zh": {
           "name": "Dev Tools",
           "description": "26 个日常开发工具，安装包不到 100KB——生成器（密码/二维码/条码/ID/占位文本）、编解码（Base64/URL/转义/图片）、安全（哈希/HMAC/JWT/AES）、文本工具（JSON/对比/大小写/行处理/乱码修复）等。纯前端、零权限。"
+        },
+        "en": {
+          "name": "Dev Tools",
+          "description": "26 everyday developer utilities in a package under 100KB — generators (password/QR/barcode/ID/lorem), codecs (Base64/URL/escape/image), crypto (hash/HMAC/JWT/AES), text tools (JSON/diff/case/lines/mojibake) and more. Pure frontend, zero permissions."
         }
       }
     }

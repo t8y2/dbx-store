@@ -1,19 +1,19 @@
 {
   "id": "monstercat.waitwork",
   "name": "Wait Work",
-  "description": "Take a break from work. Supports local TXT novel reading, chapter lists, reading settings, and auto-save, with the body text auto-collapsing when switching pages.",
+  "description": "Work a while, rest a while. Read local TXT, EPUB and MOBI books, or stream online books from custom sources — with chapter outlines, reading settings, autosave, and body text that folds away automatically when you switch pages.",
   "publisher": "monstercat",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/ragdollcb/waitWork/87cec337fbb3990ce0246480ad7c77a9570d014c/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/ragdollcb/waitWork/v0.6.2/assets/plugin.svg",
   "tags": [
     "productivity",
     "reader"
   ],
   "permissions": [],
-  "source": "https://github.com/ragdollcb/waitWork/tree/87cec337fbb3990ce0246480ad7c77a9570d014c",
+  "source": "https://github.com/ragdollcb/waitWork/tree/v0.6.2",
   "homepage": "https://github.com/ragdollcb/waitWork",
   "license": "Apache-2.0",
-  "latestVersion": "0.5.2",
+  "latestVersion": "0.6.2",
   "versions": [
     {
       "version": "0.5.2",
@@ -63,20 +63,69 @@
           "size": 2113152
         }
       ]
+    },
+    {
+      "version": "0.6.2",
+      "releasedAt": "2026-09-20T07:37:02.923Z",
+      "releaseNotes": "支持 TXT、EPUB、MOBI 本地阅读及自定义书源在线搜索、按章阅读与缓存；修复在线正文滚动回弹；大纲支持向上和向下滚动自动加载章节，向上加载保持可见位置，搜索结果也可继续加载。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/monstercat.waitwork-0.6.2-darwin-arm64.dbxp",
+          "sha256": "72b2e4b1852d662622632ec264490cb5c12a21d33cedea14532b64cd5a7e73ea",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5811640
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/monstercat.waitwork-0.6.2-darwin-x64.dbxp",
+          "sha256": "573433f447682c663ece44aa0c1931a43e911857c7ce03e4a15db168d59dee66",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6162178
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/monstercat.waitwork-0.6.2-linux-arm64.dbxp",
+          "sha256": "18a6feb10ac0206cc4436ba1811214ad1fdece86efbc35ee44b6749623db8077",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5539355
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/monstercat.waitwork-0.6.2-linux-x64.dbxp",
+          "sha256": "fb0a2ffde024f7f6dcf4de3901c8825016278217b25cdd76c7e3806c599d0051",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6005650
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/monstercat.waitwork-0.6.2-windows-arm64.dbxp",
+          "sha256": "1c9036020cad3ae718a9721da945218b8dfac91b3abcfbd3ef86e477ca2e12d5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5559616
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/monstercat.waitwork-0.6.2-windows-x64.dbxp",
+          "sha256": "c7657ceecd429c416e80427da2b16967d6c766e63534bf3ba749cf10c026fc30",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6059510
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "Wait Work",
-      "description": "等一会工作，休息一下。本地 TXT 小说阅读、章节目录与自动保存。"
-    },
-    "en": {
-      "name": "Wait Work",
-      "description": "Take a break from work. Supports local TXT novel reading, chapter lists, reading settings, and auto-save, with the body text auto-collapsing when switching pages."
+      "description": "等一会工作，休息一下。支持本地 TXT、EPUB、MOBI 与自定义书源在线阅读、章节目录、阅读设置和自动保存，切换页面自动收起正文。"
     },
     "zh": {
       "name": "Wait Work",
-      "description": "等一会工作，休息一下。本地 TXT 小说阅读、章节目录与自动保存。"
+      "description": "等一会工作，休息一下。支持本地 TXT、EPUB、MOBI 与自定义书源在线阅读、章节目录、阅读设置和自动保存，切换页面自动收起正文。"
+    },
+    "en": {
+      "name": "Wait Work",
+      "description": "Work a while, rest a while. Read local TXT, EPUB and MOBI books, or stream online books from custom sources — with chapter outlines, reading settings, autosave, and body text that folds away automatically when you switch pages."
     }
   }
 }

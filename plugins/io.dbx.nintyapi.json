@@ -1,7 +1,7 @@
 {
   "id": "io.dbx.nintyapi",
   "name": "NintyAPI",
-  "description": "Debug HTTP APIs in DBX: collection tree, full request history with parameters and responses saved together, cURL conversion both ways, code generation, draggable panes, plus clipboard and context menu support.",
+  "description": "Debug HTTP APIs inside DBX: an API collection tree, full request history (parameters and responses retained), two-way cURL conversion, code generation, draggable split panes, and working clipboard and context menus.",
   "publisher": "nintycat",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/NintyCat/dbx-plugin-NintyAPI/v0.1.8/assets/plugin.png",
@@ -120,7 +120,7 @@
   "localizations": {
     "en": {
       "name": "NintyAPI",
-      "description": "Debug HTTP APIs in DBX: collection tree, full request history with parameters and responses saved together, cURL conversion both ways, code generation, draggable panes, plus clipboard and context menu support."
+      "description": "Debug HTTP APIs inside DBX: an API collection tree, full request history (parameters and responses retained), two-way cURL conversion, code generation, draggable split panes, and working clipboard and context menus."
     },
     "zh-CN": {
       "name": "NintyAPI",

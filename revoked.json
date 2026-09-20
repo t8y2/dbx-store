@@ -1,5 +1,10 @@
 {
   "version": 1,
-  "pluginVersions": [],
+  "pluginVersions": [
+    {
+      "pluginId": "io.dbx.api-studio",
+      "version": "0.1.0"
+    }
+  ],
   "signingKeys": []
 }

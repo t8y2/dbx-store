@@ -17,7 +17,7 @@
   "source": "https://github.com/t8y2/dbx-plugin-s3/tree/v0.1.3",
   "homepage": "https://github.com/t8y2/dbx-plugin-s3",
   "license": "Proprietary",
-  "latestVersion": "0.1.14",
+  "latestVersion": "0.1.15",
   "versions": [
     {
       "version": "0.1.1",
@@ -704,6 +704,55 @@
           "size": 6788691
         }
       ]
+    },
+    {
+      "version": "0.1.15",
+      "releasedAt": "2026-09-20T09:26:03.634Z",
+      "releaseNotes": "",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/io.github.t8y2.s3-0.1.15-darwin-arm64.dbxp",
+          "sha256": "18ff09843ea3867489636330ca14dd090135919e66f2e43b2386d80ac0b5a4d2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6422667
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/io.github.t8y2.s3-0.1.15-darwin-x64.dbxp",
+          "sha256": "3fdba7e2b9599e1d22d87a165d81990ce14ab4b2f9b64896d1b54ffab314d782",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6772512
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/io.github.t8y2.s3-0.1.15-linux-arm64.dbxp",
+          "sha256": "36cd126407867d7ce8169178ab6e6a78d7a71ed98da9a4b1869eb471d5c3a493",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6339132
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/io.github.t8y2.s3-0.1.15-linux-x64.dbxp",
+          "sha256": "8ed3e3cbb261afb9b85684fdb1b8b6eebd19d78e9c580ba686ee1229dff3ac0a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6783144
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/io.github.t8y2.s3-0.1.15-windows-arm64.dbxp",
+          "sha256": "f05924546954dbefe603f98cfbaf915a96fb3246c73a30dffff1e66da55e6de9",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6300699
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/io.github.t8y2.s3-0.1.15-windows-x64.dbxp",
+          "sha256": "c1c2d92c0fe2437cf36b9c488890d9c068f13a559f70df1d2acaab47039afe08",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6792231
+        }
+      ]
     }
   ],
   "localizations": {
@@ -711,13 +760,13 @@
       "name": "S3 Browser",
       "description": "DBX 的 S3 兼容对象存储插件。"
     },
-    "en": {
-      "name": "S3 Browser",
-      "description": "S3-compatible object storage plugin for DBX."
-    },
     "zh": {
       "name": "S3 Browser",
       "description": "DBX 的 S3 兼容对象存储插件。"
+    },
+    "en": {
+      "name": "S3 Browser",
+      "description": "S3-compatible object storage plugin for DBX."
     }
   }
 }

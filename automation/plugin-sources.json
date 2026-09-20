@@ -49,7 +49,7 @@
     {
       "repository": "Abeautifulsnow/dbx-plugin-api-studio",
       "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
+      "autoUpdate": false
     },
     {
       "repository": "NintyCat/dbx-plugin-NintyAPI",
@@ -68,6 +68,11 @@
     },
     {
       "repository": "summery-yk/dbx-plugin-portainer",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "NintyCat/dbx-plugin-NintyShell",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
