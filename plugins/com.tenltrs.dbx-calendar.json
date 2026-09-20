@@ -1,21 +1,30 @@
 {
-  "schemaVersion": 1,
   "id": "com.tenltrs.dbx-calendar",
-  "publisher": "tenltrs",
-  "version": "0.1.1",
   "name": "Calendar Notes",
   "description": "A minimal month-view calendar for keeping day-by-day notes.",
+  "publisher": "tenltrs",
+  "verified": false,
   "icon": "https://raw.githubusercontent.com/tenltrs/dbx-calendar/refs/tags/v0.1.1/assets/icon.svg",
+  "tags": [],
   "permissions": [],
   "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.1",
   "homepage": "https://github.com/tenltrs/dbx-calendar",
   "license": "Apache-2.0",
-  "targets": [
+  "latestVersion": "0.1.1",
+  "versions": [
     {
-      "target": "universal",
-      "url": "https://github.com/t8y2/dbx-calendar/releases/download/v0.1.1-storefix.1/com.tenltrs.dbx-calendar-0.1.1-universal.dbxp",
-      "sha256": "e621f785d985064afc721dfa569bda65834a97e5229a2832459e3aedc582b45c",
-      "size": 30938
+      "version": "0.1.1",
+      "releasedAt": "2026-09-20T10:22:25.843Z",
+      "releaseNotes": "",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.1/com.tenltrs.dbx-calendar-0.1.1-universal.dbxp",
+          "sha256": "94e680ec0107032b4fdc3acaedbd9ccefbaf4d14402a216975add687ffdf65e6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 31652
+        }
+      ]
     }
   ],
   "localizations": {
