@@ -321,6 +321,14 @@
     "zh-CN": {
       "name": "SSH Terminal",
       "description": "面向服务器运维的 SSH 终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
+    },
+    "zh": {
+      "name": "SSH Terminal",
+      "description": "面向服务器运维的 SSH 终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
+    },
+    "en": {
+      "name": "SSH Terminal",
+      "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations."
     }
   }
 }

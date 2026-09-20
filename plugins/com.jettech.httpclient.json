@@ -66,6 +66,14 @@
     "zh-CN": {
       "name": "HTTP 客户端",
       "description": "类似 Postman 的 HTTP 接口调试作台构造请求、通过原生 Sidecar 发送并查看响应。"
+    },
+    "zh": {
+      "name": "HTTP 客户端",
+      "description": "类似 Postman 的 HTTP 接口调试作台构造请求、通过原生 Sidecar 发送并查看响应。"
+    },
+    "en": {
+      "name": "HTTP Client",
+      "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses."
     }
   }
 }

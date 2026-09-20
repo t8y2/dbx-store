@@ -1,7 +1,7 @@
 {
   "id": "io.dbx.nintyapi",
   "name": "NintyAPI",
-  "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
+  "description": "Debug HTTP APIs inside DBX: an API collection tree, full request history (parameters and responses retained), two-way cURL conversion, code generation, draggable split panes, and working clipboard and context menus.",
   "publisher": "nintycat",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/NintyCat/dbx-plugin-NintyAPI/v0.1.8/assets/plugin.png",
@@ -116,5 +116,19 @@
         }
       ]
     }
-  ]
+  ],
+  "localizations": {
+    "en": {
+      "name": "NintyAPI",
+      "description": "Debug HTTP APIs inside DBX: an API collection tree, full request history (parameters and responses retained), two-way cURL conversion, code generation, draggable split panes, and working clipboard and context menus."
+    },
+    "zh-CN": {
+      "name": "NintyAPI",
+      "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。"
+    },
+    "zh": {
+      "name": "NintyAPI",
+      "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。"
+    }
+  }
 }

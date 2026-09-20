@@ -29,5 +29,19 @@
         }
       ]
     }
-  ]
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "DBX Draw",
+      "description": "内嵌于 DBX 沙箱的 draw.io 图表编辑器，支持离线编辑与数学公式排版。"
+    },
+    "zh": {
+      "name": "DBX Draw",
+      "description": "内嵌于 DBX 沙箱的 draw.io 图表编辑器，支持离线编辑与数学公式排版。"
+    },
+    "en": {
+      "name": "DBX Draw",
+      "description": "The draw.io diagram editor bundled inside the DBX sandbox, with offline editing and mathematical typesetting."
+    }
+  }
 }

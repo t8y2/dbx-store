@@ -127,6 +127,17 @@ function validatePlugin(plugin, file, publishers, signingKeys, revoked) {
       assertExactKeys(localization, ["name", "description"], `${file}: localization '${locale}'`);
     }
   }
+  // Advisory only: bilingual coverage is a store-side quality bar, not a
+  // hard requirement — authors may submit single-language listings, so this
+  // warns instead of failing and points at the maintainer's /localize fill.
+  const listingLocales = plugin.localizations && typeof plugin.localizations === "object" && !Array.isArray(plugin.localizations) ? plugin.localizations : {};
+  const hasLocale = (locale) => Boolean(listingLocales[locale]?.description?.trim());
+  if (!hasLocale("zh-CN")) {
+    console.warn(`::warning file=plugins/${file}::${plugin.id}: missing zh-CN localization — comment /localize on the PR to auto-fill`);
+  }
+  if (/[\u3400-\u9fff\uf900-\ufaff]/.test(String(plugin.description)) && !hasLocale("en")) {
+    console.warn(`::warning file=plugins/${file}::${plugin.id}: Chinese base without an en localization — comment /localize on the PR to auto-fill`);
+  }
 }
 
 async function loadCandidates(plugins) {
