@@ -1,7 +1,7 @@
 {
   "id": "monstercat.waitwork",
   "name": "Wait Work",
-  "description": "等一会工作，休息一下。支持本地 TXT、EPUB、MOBI 与自定义书源在线阅读、章节目录、阅读设置和自动保存，切换页面自动收起正文。",
+  "description": "Work a while, rest a while. Read local TXT, EPUB and MOBI books, or stream online books from custom sources — with chapter outlines, reading settings, autosave, and body text that folds away automatically when you switch pages.",
   "publisher": "monstercat",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/ragdollcb/waitWork/v0.6.2/assets/plugin.svg",
@@ -118,6 +118,14 @@
     "zh-CN": {
       "name": "Wait Work",
       "description": "等一会工作，休息一下。支持本地 TXT、EPUB、MOBI 与自定义书源在线阅读、章节目录、阅读设置和自动保存，切换页面自动收起正文。"
+    },
+    "zh": {
+      "name": "Wait Work",
+      "description": "等一会工作，休息一下。支持本地 TXT、EPUB、MOBI 与自定义书源在线阅读、章节目录、阅读设置和自动保存，切换页面自动收起正文。"
+    },
+    "en": {
+      "name": "Wait Work",
+      "description": "Work a while, rest a while. Read local TXT, EPUB and MOBI books, or stream online books from custom sources — with chapter outlines, reading settings, autosave, and body text that folds away automatically when you switch pages."
     }
   }
 }

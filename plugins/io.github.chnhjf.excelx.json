@@ -51,6 +51,14 @@
     "zh-CN": {
       "name": "ExcelX",
       "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
+    },
+    "zh": {
+      "name": "ExcelX",
+      "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
+    },
+    "en": {
+      "name": "ExcelX",
+      "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant."
     }
   }
 }

@@ -64,6 +64,14 @@
     "zh-CN": {
       "name": "TOTP",
       "description": "在 DBX 中管理 TOTP 账号并生成动态验证码。"
+    },
+    "zh": {
+      "name": "TOTP",
+      "description": "在 DBX 中管理 TOTP 账号并生成动态验证码。"
+    },
+    "en": {
+      "name": "TOTP",
+      "description": "Manage TOTP accounts and generate one-time codes inside DBX."
     }
   }
 }

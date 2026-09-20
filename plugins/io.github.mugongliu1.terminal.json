@@ -66,6 +66,14 @@
     "zh-CN": {
       "name": "内嵌终端",
       "description": "直接在 DBX 工作台内运行本机交互式终端。"
+    },
+    "zh": {
+      "name": "内嵌终端",
+      "description": "直接在 DBX 工作台内运行本机交互式终端。"
+    },
+    "en": {
+      "name": "Embedded Terminal",
+      "description": "Run an interactive local shell directly inside a DBX workbench."
     }
   }
 }

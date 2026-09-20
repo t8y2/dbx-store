@@ -38,7 +38,21 @@
             }
           ]
         }
-      ]
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "DBX Draw",
+          "description": "内嵌于 DBX 沙箱的 draw.io 图表编辑器，支持离线编辑与数学公式排版。"
+        },
+        "zh": {
+          "name": "DBX Draw",
+          "description": "内嵌于 DBX 沙箱的 draw.io 图表编辑器，支持离线编辑与数学公式排版。"
+        },
+        "en": {
+          "name": "DBX Draw",
+          "description": "The draw.io diagram editor bundled inside the DBX sandbox, with offline editing and mathematical typesetting."
+        }
+      }
     },
     {
       "id": "com.jettech.httpclient",
@@ -108,6 +122,14 @@
         "zh-CN": {
           "name": "HTTP 客户端",
           "description": "类似 Postman 的 HTTP 接口调试作台构造请求、通过原生 Sidecar 发送并查看响应。"
+        },
+        "zh": {
+          "name": "HTTP 客户端",
+          "description": "类似 Postman 的 HTTP 接口调试作台构造请求、通过原生 Sidecar 发送并查看响应。"
+        },
+        "en": {
+          "name": "HTTP Client",
+          "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses."
         }
       }
     },
@@ -180,13 +202,21 @@
         "zh-CN": {
           "description": "在 DBX 工作台中打开本地 Shell 与 SSH/SFTP 终端，执行命令并管理远程文件。",
           "name": "NintyShell"
+        },
+        "zh": {
+          "name": "NintyShell",
+          "description": "在 DBX 工作台中打开本地 Shell 与 SSH/SFTP 终端，执行命令并管理远程文件。"
+        },
+        "en": {
+          "name": "NintyShell",
+          "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files."
         }
       }
     },
     {
       "id": "com.yiqiui.leetcode-cn",
-      "name": "LeetCode 刷题",
-      "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。",
+      "name": "LeetCode Practice",
+      "description": "Sign in to your LeetCode (leetcode.cn) account inside the DBX plugin center: browse the problem set, read statements, write code in your chosen language, then run or submit it for judging.",
       "publisher": "yiqiui",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.0/icon.svg",
@@ -261,7 +291,21 @@
             }
           ]
         }
-      ]
+      ],
+      "localizations": {
+        "en": {
+          "name": "LeetCode Practice",
+          "description": "Sign in to your LeetCode (leetcode.cn) account inside the DBX plugin center: browse the problem set, read statements, write code in your chosen language, then run or submit it for judging."
+        },
+        "zh-CN": {
+          "name": "LeetCode 刷题",
+          "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。"
+        },
+        "zh": {
+          "name": "LeetCode 刷题",
+          "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。"
+        }
+      }
     },
     {
       "id": "io.dbx.excalidraw",
@@ -371,6 +415,14 @@
         "zh-CN": {
           "name": "Excalidraw Studio",
           "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
+        },
+        "zh": {
+          "name": "Excalidraw Studio",
+          "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
+        },
+        "en": {
+          "name": "Excalidraw Studio",
+          "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX."
         }
       }
     },
@@ -571,6 +623,14 @@
         "zh-CN": {
           "name": "Files Studio",
           "description": "统一管理本地文件夹、S3 兼容存储、Azure Blob、Google Cloud Storage、华为 OBS、WebDAV、FTP、SFTP、SMB/CIFS 等 OpenDAL 服务的文件工作台：传输任务、归档与受控运维集中在一个界面。"
+        },
+        "zh": {
+          "name": "Files Studio",
+          "description": "统一管理本地文件夹、S3 兼容存储、Azure Blob、Google Cloud Storage、华为 OBS、WebDAV、FTP、SFTP、SMB/CIFS 等 OpenDAL 服务的文件工作台：传输任务、归档与受控运维集中在一个界面。"
+        },
+        "en": {
+          "name": "Files Studio",
+          "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services."
         }
       }
     },
@@ -697,6 +757,14 @@
         "zh-CN": {
           "name": "Kubernetes 管理",
           "description": "在 DBX 中管理 Kubernetes 集群、工作负载和资源。"
+        },
+        "zh": {
+          "name": "Kubernetes 管理",
+          "description": "在 DBX 中管理 Kubernetes 集群、工作负载和资源。"
+        },
+        "en": {
+          "name": "Kubernetes Manager",
+          "description": "Manage Kubernetes clusters, workloads and resources from DBX."
         }
       }
     },
@@ -1285,13 +1353,21 @@
         "zh-CN": {
           "name": "LDAP Studio",
           "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
+        },
+        "zh": {
+          "name": "LDAP Studio",
+          "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
+        },
+        "en": {
+          "name": "LDAP Studio",
+          "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export."
         }
       }
     },
     {
       "id": "io.dbx.nintyapi",
       "name": "NintyAPI",
-      "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
+      "description": "Debug HTTP APIs inside DBX: an API collection tree, full request history (parameters and responses retained), two-way cURL conversion, code generation, draggable split panes, and working clipboard and context menus.",
       "publisher": "nintycat",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.8/icon.png",
@@ -1406,7 +1482,21 @@
             }
           ]
         }
-      ]
+      ],
+      "localizations": {
+        "en": {
+          "name": "NintyAPI",
+          "description": "Debug HTTP APIs inside DBX: an API collection tree, full request history (parameters and responses retained), two-way cURL conversion, code generation, draggable split panes, and working clipboard and context menus."
+        },
+        "zh-CN": {
+          "name": "NintyAPI",
+          "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。"
+        },
+        "zh": {
+          "name": "NintyAPI",
+          "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。"
+        }
+      }
     },
     {
       "id": "io.dbx.ssh",
@@ -1731,6 +1821,14 @@
         "zh-CN": {
           "name": "SSH Terminal",
           "description": "面向服务器运维的 SSH 终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
+        },
+        "zh": {
+          "name": "SSH Terminal",
+          "description": "面向服务器运维的 SSH 终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
+        },
+        "en": {
+          "name": "SSH Terminal",
+          "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations."
         }
       }
     },
@@ -1803,7 +1901,21 @@
             }
           ]
         }
-      ]
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "XXL-JOB 控制台",
+          "description": "在 DBX 中管理 XXL-JOB 的报表、任务、日志、执行器和用户。"
+        },
+        "zh": {
+          "name": "XXL-JOB 控制台",
+          "description": "在 DBX 中管理 XXL-JOB 的报表、任务、日志、执行器和用户。"
+        },
+        "en": {
+          "name": "XXL-JOB Console",
+          "description": "Manage XXL-JOB reports, jobs, logs, executors and users in DBX."
+        }
+      }
     },
     {
       "id": "io.github.caichangqing1120.xxljob",
@@ -1872,7 +1984,21 @@
             }
           ]
         }
-      ]
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "XXL-JOB",
+          "description": "在 DBX 中管理官方 XXL-JOB Admin 2.3.x 与 3.4.x 的任务、执行器和日志。"
+        },
+        "zh": {
+          "name": "XXL-JOB",
+          "description": "在 DBX 中管理官方 XXL-JOB Admin 2.3.x 与 3.4.x 的任务、执行器和日志。"
+        },
+        "en": {
+          "name": "XXL-JOB",
+          "description": "Manage official XXL-JOB Admin 2.3.x and 3.4.x jobs, executors and logs in DBX."
+        }
+      }
     },
     {
       "id": "io.github.chnhjf.excelx",
@@ -1927,6 +2053,14 @@
         "zh-CN": {
           "name": "ExcelX",
           "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
+        },
+        "zh": {
+          "name": "ExcelX",
+          "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
+        },
+        "en": {
+          "name": "ExcelX",
+          "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant."
         }
       }
     },
@@ -1996,6 +2130,14 @@
         "zh-CN": {
           "name": "TOTP",
           "description": "在 DBX 中管理 TOTP 账号并生成动态验证码。"
+        },
+        "zh": {
+          "name": "TOTP",
+          "description": "在 DBX 中管理 TOTP 账号并生成动态验证码。"
+        },
+        "en": {
+          "name": "TOTP",
+          "description": "Manage TOTP accounts and generate one-time codes inside DBX."
         }
       }
     },
@@ -2067,6 +2209,14 @@
         "zh-CN": {
           "name": "内嵌终端",
           "description": "直接在 DBX 工作台内运行本机交互式终端。"
+        },
+        "zh": {
+          "name": "内嵌终端",
+          "description": "直接在 DBX 工作台内运行本机交互式终端。"
+        },
+        "en": {
+          "name": "Embedded Terminal",
+          "description": "Run an interactive local shell directly inside a DBX workbench."
         }
       }
     },
@@ -2126,6 +2276,14 @@
         "zh-CN": {
           "name": "Portainer",
           "description": "在 DBX 中浏览 Portainer 的环境、堆栈与容器，查看资源占用并阅读容器日志，同时向 AI 客户端提供 MCP 工具。"
+        },
+        "zh": {
+          "name": "Portainer",
+          "description": "在 DBX 中浏览 Portainer 的环境、堆栈与容器，查看资源占用并阅读容器日志，同时向 AI 客户端提供 MCP 工具。"
+        },
+        "en": {
+          "name": "Portainer",
+          "description": "Browse Portainer environments, stacks and containers from DBX, inspect resource usage and read container logs, with MCP tools for AI clients."
         }
       }
     },
@@ -2841,13 +2999,21 @@
         "zh-CN": {
           "name": "S3 Browser",
           "description": "DBX 的 S3 兼容对象存储插件。"
+        },
+        "zh": {
+          "name": "S3 Browser",
+          "description": "DBX 的 S3 兼容对象存储插件。"
+        },
+        "en": {
+          "name": "S3 Browser",
+          "description": "S3-compatible object storage plugin for DBX."
         }
       }
     },
     {
       "id": "monstercat.waitwork",
       "name": "Wait Work",
-      "description": "等一会工作，休息一下。支持本地 TXT、EPUB、MOBI 与自定义书源在线阅读、章节目录、阅读设置和自动保存，切换页面自动收起正文。",
+      "description": "Work a while, rest a while. Read local TXT, EPUB and MOBI books, or stream online books from custom sources — with chapter outlines, reading settings, autosave, and body text that folds away automatically when you switch pages.",
       "publisher": "monstercat",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/monstercat.waitwork/0.6.2/icon.svg",
@@ -2964,6 +3130,14 @@
         "zh-CN": {
           "name": "Wait Work",
           "description": "等一会工作，休息一下。支持本地 TXT、EPUB、MOBI 与自定义书源在线阅读、章节目录、阅读设置和自动保存，切换页面自动收起正文。"
+        },
+        "zh": {
+          "name": "Wait Work",
+          "description": "等一会工作，休息一下。支持本地 TXT、EPUB、MOBI 与自定义书源在线阅读、章节目录、阅读设置和自动保存，切换页面自动收起正文。"
+        },
+        "en": {
+          "name": "Wait Work",
+          "description": "Work a while, rest a while. Read local TXT, EPUB and MOBI books, or stream online books from custom sources — with chapter outlines, reading settings, autosave, and body text that folds away automatically when you switch pages."
         }
       }
     },
@@ -3039,6 +3213,14 @@
         "zh-CN": {
           "name": "Dev Tools",
           "description": "26 个日常开发工具，安装包不到 100KB——生成器（密码/二维码/条码/ID/占位文本）、编解码（Base64/URL/转义/图片）、安全（哈希/HMAC/JWT/AES）、文本工具（JSON/对比/大小写/行处理/乱码修复）等。纯前端、零权限。"
+        },
+        "zh": {
+          "name": "Dev Tools",
+          "description": "26 个日常开发工具，安装包不到 100KB——生成器（密码/二维码/条码/ID/占位文本）、编解码（Base64/URL/转义/图片）、安全（哈希/HMAC/JWT/AES）、文本工具（JSON/对比/大小写/行处理/乱码修复）等。纯前端、零权限。"
+        },
+        "en": {
+          "name": "Dev Tools",
+          "description": "26 everyday developer utilities in a package under 100KB — generators (password/QR/barcode/ID/lorem), codecs (Base64/URL/escape/image), crypto (hash/HMAC/JWT/AES), text tools (JSON/diff/case/lines/mojibake) and more. Pure frontend, zero permissions."
         }
       }
     }

@@ -67,6 +67,14 @@
     "zh-CN": {
       "description": "在 DBX 工作台中打开本地 Shell 与 SSH/SFTP 终端，执行命令并管理远程文件。",
       "name": "NintyShell"
+    },
+    "zh": {
+      "name": "NintyShell",
+      "description": "在 DBX 工作台中打开本地 Shell 与 SSH/SFTP 终端，执行命令并管理远程文件。"
+    },
+    "en": {
+      "name": "NintyShell",
+      "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files."
     }
   }
 }

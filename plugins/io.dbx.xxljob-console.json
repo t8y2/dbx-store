@@ -67,5 +67,19 @@
         }
       ]
     }
-  ]
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "XXL-JOB 控制台",
+      "description": "在 DBX 中管理 XXL-JOB 的报表、任务、日志、执行器和用户。"
+    },
+    "zh": {
+      "name": "XXL-JOB 控制台",
+      "description": "在 DBX 中管理 XXL-JOB 的报表、任务、日志、执行器和用户。"
+    },
+    "en": {
+      "name": "XXL-JOB Console",
+      "description": "Manage XXL-JOB reports, jobs, logs, executors and users in DBX."
+    }
+  }
 }
