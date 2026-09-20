@@ -1,0 +1,11 @@
+{
+  "name": "Calendar Notes",
+  "description": "A minimal month-view calendar for keeping day-by-day notes.",
+  "icon": "assets/icon.svg",
+  "tags": ["files", "storage"],
+  "permissions": ["host.workbench"],
+  "source": "https://github.com/example/dbx-plugin-files",
+  "homepage": "https://github.com/example/dbx-plugin-files",
+  "license": "Apache-2.0",
+  "releaseNotes": "Initial release."
+}
