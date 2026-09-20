@@ -1,0 +1,33 @@
+{
+  "id": "ccllzz111.dbx-draw",
+  "name": "DBX Draw",
+  "description": "The draw.io diagram editor bundled inside the DBX sandbox, with offline editing and mathematical typesetting.",
+  "publisher": "ccllzz111",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/ccllzz111/dbx-plugin-draw/v0.3.22/assets/plugin.svg",
+  "tags": [
+    "diagrams",
+    "drawio"
+  ],
+  "permissions": [],
+  "source": "https://github.com/ccllzz111/dbx-plugin-draw/tree/v0.3.22",
+  "homepage": "https://github.com/ccllzz111/dbx-plugin-draw",
+  "license": "Apache-2.0",
+  "latestVersion": "0.3.22",
+  "versions": [
+    {
+      "version": "0.3.22",
+      "releasedAt": "2026-09-20T09:08:45.775Z",
+      "releaseNotes": "Offline diagrams, mathematical typesetting, PNG/SVG exports and session recent files. See README for sandbox limitations.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/ccllzz111.dbx-draw/0.3.22/ccllzz111.dbx-draw-0.3.22-universal.dbxp",
+          "sha256": "6ea39d0f4f0e8581c8d59728f8d1cc24cdc7678c5805718e8047bfec44c5c6bf",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18713451
+        }
+      ]
+    }
+  ]
+}
