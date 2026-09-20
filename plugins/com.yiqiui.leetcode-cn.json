@@ -15,10 +15,10 @@
     "host.workbench",
     "host.network:https://leetcode.cn"
   ],
-  "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.1.4",
+  "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.2.0",
   "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.4",
+  "latestVersion": "0.2.0",
   "versions": [
     {
       "version": "0.1.4",
@@ -45,6 +45,34 @@
           "sha256": "52d6ea386fd69742d19c448a96ae7d528e11d4c42313becfc6d8b2daf391fa37",
           "signingKeyId": "dbx-store-release-2026",
           "size": 2068518
+        }
+      ]
+    },
+    {
+      "version": "0.2.0",
+      "releasedAt": "2026-09-20T04:21:01.638Z",
+      "releaseNotes": "免粘贴登录：插件启动一个受控 Chrome/Edge 打开力扣官方登录页，用户用账号密码/验证码登录后，插件通过 Chrome DevTools 协议读取已解密的会话 Cookie（绕开运行期文件锁与 App-Bound 加密），并采用 start+poll 拆分以规避主机 30s 单请求超时。修复登录校验字段（userStatus.isSignedIn）与题面字段归一化（题号/中文标题/中文题面）。新增昵称显示、分页（可切换每页数量）、题面/代码可拖动分隔与做题页全屏。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.0/com.yiqiui.leetcode-cn-0.2.0-darwin-arm64.dbxp",
+          "sha256": "3b2d904da3bd8b42525f7fcb4bdc06998b381b0030edcf8cf0f4274a5e7d2dcd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2118961
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.0/com.yiqiui.leetcode-cn-0.2.0-linux-x64.dbxp",
+          "sha256": "6bfff965a49153ce59bb1a01d19ceb7b57f2b743ab9c53a7d111c74ae07007bc",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2407309
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.0/com.yiqiui.leetcode-cn-0.2.0-windows-x64.dbxp",
+          "sha256": "475d6ab3da30296f7bb035a59b2b5ea9051809fbf8d0e0d9d778085c6b624491",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2215404
         }
       ]
     }
