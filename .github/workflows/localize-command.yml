@@ -122,9 +122,11 @@ jobs:
       - name: Validate and regenerate catalog
         working-directory: pr
         run: |
-          set -uo pipefail
-          node scripts/validate.mjs 2>&1 | tee validate.log
-          status=${PIPESTATUS[0]}
+          set +e
+          node scripts/validate.mjs > validate.log 2>&1
+          status=$?
+          set -e
+          cat validate.log
           if [ "$status" -ne 0 ] && grep -q "awaiting DBX Store signing" validate.log; then
             echo "Open-candidate signing gate reached (expected on candidate PRs); catalog regenerated."
             exit 0
