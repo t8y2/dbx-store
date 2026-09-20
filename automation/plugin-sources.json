@@ -75,6 +75,11 @@
       "repository": "NintyCat/dbx-plugin-NintyShell",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "tenltrs/dbx-calendar",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
