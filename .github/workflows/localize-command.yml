@@ -89,6 +89,18 @@ jobs:
           fetch-depth: 0
           path: pr
 
+      # The PR branch (often a fork based on an older main) may predate the
+      # fill script — always run the dispatcher's own copy from the default
+      # branch, same principle as the /sign gate running from main.
+      - name: Overlay fill script from the default branch
+        working-directory: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git fetch "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" main
+          git checkout FETCH_HEAD -- scripts/fill-missing-localizations.mjs
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -104,9 +116,20 @@ jobs:
           fi
           node scripts/fill-missing-localizations.mjs | tee fill.log
 
+      # validate regenerates catalog/index.json first, then intentionally
+      # fails while open candidates await signing — that gate is expected on
+      # candidate PRs and must not fail this workflow.
       - name: Validate and regenerate catalog
         working-directory: pr
-        run: node scripts/validate.mjs
+        run: |
+          set -uo pipefail
+          node scripts/validate.mjs 2>&1 | tee validate.log
+          status=${PIPESTATUS[0]}
+          if [ "$status" -ne 0 ] && grep -q "awaiting DBX Store signing" validate.log; then
+            echo "Open-candidate signing gate reached (expected on candidate PRs); catalog regenerated."
+            exit 0
+          fi
+          exit "$status"
 
       - name: Commit localization fill back to the pull request
         id: pushback
@@ -120,7 +143,7 @@ jobs:
           set -euo pipefail
           git config user.name "dbx-store-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add plugins catalog
+          git add plugins catalog candidates
           if git diff --cached --quiet; then
             echo "status=nothing-to-do" >> "$GITHUB_OUTPUT"
             exit 0
