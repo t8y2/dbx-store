@@ -4,7 +4,7 @@
   "description": "Manage XXL-JOB reports, jobs, logs, executors and users in DBX.",
   "publisher": "ezreal-byte",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-plugin-xxl-job-console/v0.3.1/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-plugin-xxl-job-console/v0.3.2/assets/plugin.svg",
   "tags": [
     "xxl-job",
     "scheduler",
@@ -13,10 +13,10 @@
   "permissions": [
     "host.workbench"
   ],
-  "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/tree/v0.3.1",
+  "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/tree/v0.3.2",
   "homepage": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
   "license": "MIT",
-  "latestVersion": "0.3.1",
+  "latestVersion": "0.3.2",
   "versions": [
     {
       "version": "0.3.1",
@@ -64,6 +64,55 @@
           "sha256": "8cd32ac7437a97ff9f1ae287e0cc123f4ba39ea6bafd19b2d9c3cbd16e735d10",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4911795
+        }
+      ]
+    },
+    {
+      "version": "0.3.2",
+      "releasedAt": "2026-09-20T15:51:44.661Z",
+      "releaseNotes": "Refine dense tables with row selection and labeled actions; add floating, expandable error messages and live Cron previews. Manual runs now use configured job parameters. Independent live-log tabs verify the selected log and follow new output automatically.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.2/io.dbx.xxljob-console-0.3.2-darwin-arm64.dbxp",
+          "sha256": "3407aae29e5b32f696d0f075b23b57ab41822049dc7721d1b3f3e176b6c71c8e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4635871
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.2/io.dbx.xxljob-console-0.3.2-darwin-x64.dbxp",
+          "sha256": "e4324d92bd455e0f25a49320e579fd9c9764f07f492f49dfb5bee498b72606d8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4847871
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.2/io.dbx.xxljob-console-0.3.2-windows-arm64.dbxp",
+          "sha256": "cb9ba0f1748b7855769ad831231c57de86ddc8198db304839d2a21b8b4a44140",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4598881
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.2/io.dbx.xxljob-console-0.3.2-windows-x64.dbxp",
+          "sha256": "eecaa2224141149c1f87806e06e95d54c14557d5d39d756deec37b59b961e4a0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4915467
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.2/io.dbx.xxljob-console-0.3.2-linux-arm64.dbxp",
+          "sha256": "e7c6ef6050a9e04a1d4130cbc9302b420de84632cae85d32c4906bac0564bc9b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4595049
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.2/io.dbx.xxljob-console-0.3.2-linux-x64.dbxp",
+          "sha256": "a8da717417dcffcd6b20139926edb604f948f89ebbc780bea1d628101988f9d1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4888109
         }
       ]
     }
