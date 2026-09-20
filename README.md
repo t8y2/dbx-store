@@ -40,6 +40,8 @@ Plugin source code and unsigned candidate Releases stay in the plugin author's r
 
 Plugin authors may publish GitHub Releases normally. The store synchronizer reads the author's public Release and `release-candidates.json`; that Release is the unsigned review input, not the official install artifact. After review, maintainers publish immutable signed artifacts to the store's object storage. The catalog stores the public artifact URL, SHA-256, size, and repository signature metadata.
 
+Marketplace listings are bilingual: an English base description plus per-locale `localizations` (see [CONTRIBUTING.md](CONTRIBUTING.md)). Chinese-locale clients show the `zh-CN` entry; every other locale falls back to the English base. Submissions without localizations are accepted — the store adds translated listing text before publishing.
+
 ## Where to submit
 
 - Plugin source changes and unsigned candidate Releases belong in the plugin's own source repository.

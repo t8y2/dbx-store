@@ -46,6 +46,12 @@ For a new version of an already-listed plugin, submit `candidates/<plugin-id>.js
   "homepage": "https://github.com/example/dbx-plugin",
   "license": "Apache-2.0",
   "releaseNotes": "Initial release.",
+  "localizations": {
+    "zh-CN": {
+      "name": "示例插件",
+      "description": "面向中文界面的一行描述。"
+    }
+  },
   "targets": [
     {
       "target": "darwin-arm64",
@@ -64,6 +70,7 @@ listing field is optional. Candidate rules:
 - The unsigned package's `manifest.json` must declare the same `id`, `version`, and `publisher` as the candidate metadata; signing rejects any mismatch.
 - URLs must use HTTPS and must not reference `t8y2/dbx-store` releases (submit your own unsigned candidates, not already-signed artifacts).
 - A version that is already listed, or revoked, cannot be resubmitted.
+- `localizations` (optional) carries per-locale `name`/`description` entries for the marketplace listing. The recommended shape is an English base `description` plus a `zh-CN` entry: Chinese-locale clients resolve the `zh-CN` entry and every other locale falls back to the base description. Submissions without localizations are accepted; the store adds translated listing text before publishing.
 - `plugins/*.json` and `catalog/index.json` are never edited manually; the signing workflow generates them.
 
 Do not include plugin source directories, `.dbxp` binaries, signing private keys, or tokens.

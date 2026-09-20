@@ -40,6 +40,8 @@ dbx-store/
 
 插件作者可以正常发布 GitHub Release。商店同步器会读取作者仓库的公开 Release 和 `release-candidates.json`；这个 Release 是未签名的审核输入，不是最终的官方安装包。审核通过后，维护者会把不可变的正式签名包发布到商店对象存储。Catalog 保存公开制品 URL、SHA-256、大小和仓库签名元数据。
 
+商店列表为中英双语：英文基础描述加按语言的 `localizations` 条目（见 [CONTRIBUTING.md](CONTRIBUTING.md)）。中文界面显示 `zh-CN` 条目，其他语言回退到英文基础描述。提交时未带 `localizations` 也可以——商店会在发布前自动补全列表翻译。
+
 ## 提交位置
 
 - 插件源码、测试和插件自身的未签名候选 Release：插件作者自己的源码仓库。
