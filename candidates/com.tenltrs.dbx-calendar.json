@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "com.tenltrs.dbx-calendar",
-  "publisher": "Tenltrs",
+  "publisher": "tenltrs",
   "version": "0.1.1",
   "name": "Calendar Notes",
   "description": "A minimal month-view calendar for keeping day-by-day notes.",
@@ -13,9 +13,9 @@
   "targets": [
     {
       "target": "universal",
-      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.1.1/com.tenltrs.dbx-calendar-0.1.1-universal.dbxp",
-      "sha256": "700ba22b6b589762b3346d89bfdfd3194f9263756e51bfc460de73c9ea62ef23",
-      "size": 31433
+      "url": "https://github.com/t8y2/dbx-calendar/releases/download/v0.1.1-storefix.1/com.tenltrs.dbx-calendar-0.1.1-universal.dbxp",
+      "sha256": "e621f785d985064afc721dfa569bda65834a97e5229a2832459e3aedc582b45c",
+      "size": 30938
     }
   ]
 }
