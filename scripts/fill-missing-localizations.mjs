@@ -25,7 +25,13 @@ import { fileURLToPath } from "node:url";
 //        DBX_LOCALIZE_BASE_URL (default: https://api.deepseek.com)
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const pluginsDirectory = path.join(root, "plugins");
+// Candidates are filled too: a first submission lives only in candidates/
+// until signing promotes it to plugins/, so localizations added there flow
+// through finalize-candidates.mjs into the published entry.
+const listingDirectories = [
+  path.join(root, "plugins"),
+  path.join(root, "candidates"),
+];
 const dryRun = process.argv.includes("--dry-run");
 const onlyIds = new Set(process.argv.slice(2).filter((arg) => !arg.startsWith("--")));
 
@@ -105,13 +111,7 @@ async function translate({ name, description }, targetLocale) {
   return { name: translatedName, description: translatedDescription };
 }
 
-const plan = [];
-const files = (await readdir(pluginsDirectory)).filter((file) => file.endsWith(".json")).sort();
-for (const file of files) {
-  const filePath = path.join(pluginsDirectory, file);
-  const plugin = JSON.parse(await readFile(filePath, "utf8"));
-  if (onlyIds.size > 0 && !onlyIds.has(plugin.id)) continue;
-
+async function fillListing(plugin) {
   const original = { name: plugin.name, description: plugin.description };
   const localizations = plugin.localizations || {};
   const baseZh = hasCJK(plugin.description);
@@ -163,10 +163,23 @@ for (const file of files) {
     actions.push("base -> English");
     changed = true;
   }
+  if (changed) plugin.localizations = localizations;
+  return { actions, changed };
+}
 
-  if (changed) {
-    plugin.localizations = localizations;
-    plan.push({ id: plugin.id, file, actions, plugin });
+const plan = [];
+for (const directory of listingDirectories) {
+  let names;
+  try {
+    names = (await readdir(directory)).filter((file) => file.endsWith(".json")).sort();
+  } catch {
+    continue; // candidates/ may not exist on every checkout
+  }
+  for (const file of names) {
+    const plugin = JSON.parse(await readFile(path.join(directory, file), "utf8"));
+    if (onlyIds.size > 0 && !onlyIds.has(plugin.id)) continue;
+    const { actions, changed } = await fillListing(plugin);
+    if (changed) plan.push({ id: plugin.id, directory, file, actions, plugin });
   }
 }
 
@@ -175,7 +188,7 @@ for (const item of plan) {
     console.log(`[dry-run] ${item.id}: ${item.actions.join(", ")}`);
   } else {
     await writeFile(
-      path.join(pluginsDirectory, item.file),
+      path.join(item.directory, item.file),
       `${JSON.stringify(item.plugin, null, 2)}\n`,
     );
     console.log(`filled ${item.id}: ${item.actions.join(", ")}`);
