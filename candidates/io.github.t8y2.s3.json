@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.t8y2.s3",
+  "publisher": "t8y2",
+  "version": "0.1.16",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/t8y2/dbx-plugin-s3/releases/download/v0.1.16/io.github.t8y2.s3-0.1.16-darwin-arm64.dbxp",
+      "sha256": "4db74d75ea7bab623c69c71b59ee4f5840578293a1e1b56dfb5613d0c66ae603",
+      "size": 6391572
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/t8y2/dbx-plugin-s3/releases/download/v0.1.16/io.github.t8y2.s3-0.1.16-darwin-x64.dbxp",
+      "sha256": "b4c58130ff0848562d95c8c64b3de3b3c2e5c1e08805a1e5f120525493484e5a",
+      "size": 6741411
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/t8y2/dbx-plugin-s3/releases/download/v0.1.16/io.github.t8y2.s3-0.1.16-linux-arm64.dbxp",
+      "sha256": "c5e115a4b28f2235bef24822bb7350e8f2b2f6127107a493950b461f0d2a5629",
+      "size": 6308031
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/t8y2/dbx-plugin-s3/releases/download/v0.1.16/io.github.t8y2.s3-0.1.16-linux-x64.dbxp",
+      "sha256": "9f64d5f2ad62f4dccb8b363124523e5c0dfc1ee5e0071655ef37b5059d29c8a3",
+      "size": 6752050
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/t8y2/dbx-plugin-s3/releases/download/v0.1.16/io.github.t8y2.s3-0.1.16-windows-arm64.dbxp",
+      "sha256": "4fab76dbd1fbb85a1fd4708a8c7b20d80b3046ebbbaff1e25bb8a683f451c3af",
+      "size": 6269596
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/t8y2/dbx-plugin-s3/releases/download/v0.1.16/io.github.t8y2.s3-0.1.16-windows-x64.dbxp",
+      "sha256": "78131b61e7d9c3b91605252d8801d0300e301122777dddaff689e64bfe04bad3",
+      "size": 6761134
+    }
+  ]
+}
