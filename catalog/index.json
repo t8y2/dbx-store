@@ -3260,16 +3260,16 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Dev Tools",
-          "description": "26 个日常开发工具，安装包不到 100KB——生成器（密码/二维码/条码/ID/占位文本）、编解码（Base64/URL/转义/图片）、安全（哈希/HMAC/JWT/AES）、文本工具（JSON/对比/大小写/行处理/乱码修复）等。纯前端、零权限。"
-        },
-        "zh": {
-          "name": "Dev Tools",
-          "description": "26 个日常开发工具，安装包不到 100KB——生成器（密码/二维码/条码/ID/占位文本）、编解码（Base64/URL/转义/图片）、安全（哈希/HMAC/JWT/AES）、文本工具（JSON/对比/大小写/行处理/乱码修复）等。纯前端、零权限。"
+          "name": "开发者工具",
+          "description": "包含 26 个日常开发者实用工具，打包体积不到 100KB，涵盖生成器（密码、二维码、条形码、ID、lorem）、编解码器（Base64、URL、转义、图片）、加密（hash、HMAC、JWT、AES）、文本工具（JSON、diff、大小写、行处理、mojibake）等。纯前端实现，无需任何权限。"
         },
         "en": {
           "name": "Dev Tools",
           "description": "26 everyday developer utilities in a package under 100KB — generators (password/QR/barcode/ID/lorem), codecs (Base64/URL/escape/image), crypto (hash/HMAC/JWT/AES), text tools (JSON/diff/case/lines/mojibake) and more. Pure frontend, zero permissions."
+        },
+        "zh": {
+          "name": "开发者工具",
+          "description": "包含 26 个日常开发者实用工具，打包体积不到 100KB，涵盖生成器（密码、二维码、条形码、ID、lorem）、编解码器（Base64、URL、转义、图片）、加密（hash、HMAC、JWT、AES）、文本工具（JSON、diff、大小写、行处理、mojibake）等。纯前端实现，无需任何权限。"
         }
       }
     }
