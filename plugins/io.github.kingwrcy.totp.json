@@ -1,0 +1,69 @@
+{
+  "id": "io.github.kingwrcy.totp",
+  "name": "TOTP",
+  "description": "Manage TOTP accounts and generate one-time codes inside DBX.",
+  "publisher": "kingwrcy",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/kingwrcy/dbx-totp/v0.2.0/assets/plugin.svg",
+  "tags": [
+    "totp",
+    "otp",
+    "authenticator",
+    "security"
+  ],
+  "permissions": [],
+  "source": "https://github.com/kingwrcy/dbx-totp/tree/v0.2.0",
+  "homepage": "https://github.com/kingwrcy/dbx-totp",
+  "license": "Apache-2.0",
+  "latestVersion": "0.2.0",
+  "versions": [
+    {
+      "version": "0.2.0",
+      "releasedAt": "2026-09-20T04:18:40.759Z",
+      "releaseNotes": "Initial release: import TOTP accounts, show codes, copy and delete.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.0/io.github.kingwrcy.totp-0.2.0-darwin-arm64.dbxp",
+          "sha256": "512c3a59b24c4dac072f0c728dc422e84f700656c304e73075f0e4b1fd405aca",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1844384
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.0/io.github.kingwrcy.totp-0.2.0-darwin-x64.dbxp",
+          "sha256": "ae9f266d0ce3a8de5c9a5bb2211ba1f6b9aae2fab0ca7e29aa323ce839cd4d63",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1933270
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.0/io.github.kingwrcy.totp-0.2.0-linux-arm64.dbxp",
+          "sha256": "db6d0068fcd7e15725123612ae84124b69fdfc323283d2e495e334afa27312c6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1831247
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.0/io.github.kingwrcy.totp-0.2.0-linux-x64.dbxp",
+          "sha256": "33d1403453b7c73368e8e5b96017de0674fe42b92f4c7893abd410b403f71acd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1949996
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.0/io.github.kingwrcy.totp-0.2.0-windows-x64.dbxp",
+          "sha256": "24db07a66b7af8330960102129b02f91e29c0d8d01b6baabdbbe515fd3b8ea6e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2013096
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "TOTP",
+      "description": "在 DBX 中管理 TOTP 账号并生成动态验证码。"
+    }
+  }
+}
