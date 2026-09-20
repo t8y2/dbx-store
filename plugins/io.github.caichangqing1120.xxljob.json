@@ -65,5 +65,19 @@
         }
       ]
     }
-  ]
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "XXL-JOB",
+      "description": "在 DBX 中管理官方 XXL-JOB Admin 2.3.x 和 3.4.x 的任务、执行器与日志。"
+    },
+    "en": {
+      "name": "XXL-JOB",
+      "description": "Manage official XXL-JOB Admin 2.3.x and 3.4.x jobs, executors and logs in DBX."
+    },
+    "zh": {
+      "name": "XXL-JOB",
+      "description": "在 DBX 中管理官方 XXL-JOB Admin 2.3.x 和 3.4.x 的任务、执行器与日志。"
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "monstercat.waitwork",
   "name": "Wait Work",
-  "description": "等一会工作，休息一下。支持本地 TXT 小说阅读、章节目录、阅读设置与自动保存，切换页面自动收起正文。",
+  "description": "Take a break from work. Supports local TXT novel reading, chapter lists, reading settings, and auto-save, with the body text auto-collapsing when switching pages.",
   "publisher": "monstercat",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/ragdollcb/waitWork/87cec337fbb3990ce0246480ad7c77a9570d014c/assets/plugin.svg",
@@ -67,6 +67,14 @@
   ],
   "localizations": {
     "zh-CN": {
+      "name": "Wait Work",
+      "description": "等一会工作，休息一下。本地 TXT 小说阅读、章节目录与自动保存。"
+    },
+    "en": {
+      "name": "Wait Work",
+      "description": "Take a break from work. Supports local TXT novel reading, chapter lists, reading settings, and auto-save, with the body text auto-collapsing when switching pages."
+    },
+    "zh": {
       "name": "Wait Work",
       "description": "等一会工作，休息一下。本地 TXT 小说阅读、章节目录与自动保存。"
     }

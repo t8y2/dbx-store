@@ -59,5 +59,19 @@
         }
       ]
     }
-  ]
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "API Studio",
+      "description": "在 DBX 中构建、发送、调试和管理 API 请求。"
+    },
+    "en": {
+      "name": "API Studio",
+      "description": "Build, send, debug and manage API requests in DBX."
+    },
+    "zh": {
+      "name": "API Studio",
+      "description": "在 DBX 中构建、发送、调试和管理 API 请求。"
+    }
+  }
 }

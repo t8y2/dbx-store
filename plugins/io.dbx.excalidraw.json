@@ -106,6 +106,14 @@
     "zh-CN": {
       "name": "Excalidraw Studio",
       "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
+    },
+    "en": {
+      "name": "Excalidraw Studio",
+      "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX."
+    },
+    "zh": {
+      "name": "Excalidraw Studio",
+      "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
     }
   }
 }

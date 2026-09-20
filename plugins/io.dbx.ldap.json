@@ -277,6 +277,14 @@
     "zh-CN": {
       "name": "LDAP Studio",
       "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
+    },
+    "en": {
+      "name": "LDAP Studio",
+      "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export."
+    },
+    "zh": {
+      "name": "LDAP Studio",
+      "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
     }
   }
 }

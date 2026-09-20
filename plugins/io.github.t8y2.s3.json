@@ -710,6 +710,14 @@
     "zh-CN": {
       "name": "S3 Browser",
       "description": "DBX 的 S3 兼容对象存储插件。"
+    },
+    "en": {
+      "name": "S3 Browser",
+      "description": "S3-compatible object storage plugin for DBX."
+    },
+    "zh": {
+      "name": "S3 Browser",
+      "description": "DBX 的 S3 兼容对象存储插件。"
     }
   }
 }
