@@ -60,6 +60,11 @@
       "repository": "Abeautifulsnow/dbx-plugin-excalidraw",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "kingwrcy/dbx-totp",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
