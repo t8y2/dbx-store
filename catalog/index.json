@@ -260,10 +260,10 @@
     {
       "id": "com.yiqiui.leetcode-cn",
       "name": "LeetCode Practice",
-      "description": "Sign in to your LeetCode (leetcode.cn) account inside the DBX plugin center: browse the problem set, read statements, write code in your chosen language, then run or submit it for judging.",
+      "description": "Sign in to your LeetCode (leetcode.cn) account in the DBX plugin center to browse the problem library, view problem statements, choose a language, write code, and run or submit for judging.",
       "publisher": "yiqiui",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.1/icon.svg",
       "tags": [
         "leetcode",
         "algorithm",
@@ -274,11 +274,39 @@
         "host.workbench",
         "host.network:https://leetcode.cn"
       ],
-      "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.2.0",
+      "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.2.1",
       "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.0",
+      "latestVersion": "0.2.1",
       "versions": [
+        {
+          "version": "0.2.1",
+          "releasedAt": "2026-09-20T10:58:35.159Z",
+          "releaseNotes": "0.2.1 修复两个 issue：#1 会员/内容为空的题目不再空白，改为明确提示 + 重试；#2 代码编辑器新增自实现语法高亮（按语言切换、行号、Tab/回车缩进）。延续 0.2.0：免粘贴浏览器登录（受控 Chrome/Edge + DevTools 取回，start+poll 规避 30s 超时）、isSignedIn 校验修复、题面字段归一化、昵称显示、分页、题面/代码可拖动分隔与做题页全屏。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.1/com.yiqiui.leetcode-cn-0.2.1-darwin-arm64.dbxp",
+              "sha256": "aec6c0597ce3b81f3936a67a69ec41ff08911ffa6b961434a4d096dd55db6092",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2122037
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.1/com.yiqiui.leetcode-cn-0.2.1-linux-x64.dbxp",
+              "sha256": "c1ae3a500bcce4406bf4fb6c166cb6463aea4c15bff7a922b5170ef6f834e1b2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2411035
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.1/com.yiqiui.leetcode-cn-0.2.1-windows-x64.dbxp",
+              "sha256": "b8493ad43f2dc8e443f3cc1447920396aef69e03efa993e05a47301425f5e878",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2218960
+            }
+          ]
+        },
         {
           "version": "0.2.0",
           "releasedAt": "2026-09-20T04:21:01.638Z",
@@ -339,7 +367,7 @@
       "localizations": {
         "en": {
           "name": "LeetCode Practice",
-          "description": "Sign in to your LeetCode (leetcode.cn) account inside the DBX plugin center: browse the problem set, read statements, write code in your chosen language, then run or submit it for judging."
+          "description": "Sign in to your LeetCode (leetcode.cn) account in the DBX plugin center to browse the problem library, view problem statements, choose a language, write code, and run or submit for judging."
         },
         "zh-CN": {
           "name": "LeetCode 刷题",
