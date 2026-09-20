@@ -1,0 +1,195 @@
+name: Localize plugin PR command
+
+# Maintainer-side localization fill, same trust model as /sign: the
+# dispatcher runs from the default branch (issue_comment events never use
+# the PR's merge ref), gated to the repository-key authority (t8y2), so a
+# candidate PR cannot invoke this on its own. It checks out the PR branch,
+# fills missing en/zh-CN localizations (deterministic mirrors in code, real
+# translations via the DeepSeek API using DBX_LOCALIZE_API_KEY), validates,
+# and commits the result back to the PR branch for the maintainer to review
+# in the same diff they were going to review anyway. Fork pushes fall back
+# to DBX_STORE_BOT_TOKEN, then to a patch artifact — identical to the
+# sign-plugin-pr.yml pushback ladder.
+
+on:
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      pr-number:
+        description: Pull request number whose branch should be localized
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: localize-pr-${{ github.event.issue.number || inputs.pr-number }}
+  cancel-in-progress: false
+
+jobs:
+  ack:
+    if: >-
+      github.event_name == 'issue_comment' &&
+      github.event.issue.pull_request != null &&
+      github.actor == 't8y2' &&
+      (github.event.comment.body == '/localize' || startsWith(github.event.comment.body, '/localize '))
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Acknowledge command
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+        run: gh api "repos/${GITHUB_REPOSITORY}/issues/comments/${COMMENT_ID}/reactions" -f content=eyes
+
+  localize:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.issue.pull_request != null &&
+      github.actor == 't8y2' &&
+      (github.event.comment.body == '/localize' || startsWith(github.event.comment.body, '/localize ')))
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      PR_NUMBER: ${{ github.event.issue.number || inputs.pr-number }}
+      DBX_LOCALIZE_MODEL: ${{ vars.DBX_LOCALIZE_MODEL || 'deepseek-flash' }}
+      DBX_LOCALIZE_BASE_URL: ${{ vars.DBX_LOCALIZE_BASE_URL || 'https://api.deepseek.com' }}
+      DBX_LOCALIZE_API_KEY: ${{ secrets.DBX_LOCALIZE_API_KEY }}
+    steps:
+      - name: Resolve pull request head
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json headRepositoryOwner,headRepository,headRefName,headRefOid > pr.json
+          node <<'NODE'
+          const fs = require("node:fs");
+          const pr = JSON.parse(fs.readFileSync("pr.json", "utf8"));
+          const outputs = {
+            head_repo: `${pr.headRepositoryOwner.login}/${pr.headRepository.name}`,
+            head_ref: pr.headRefName,
+            head_sha: pr.headRefOid,
+          };
+          for (const [key, value] of Object.entries(outputs)) {
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, `${key}=${value}\n`);
+          }
+          NODE
+
+      - name: Check out pull request branch
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ steps.pr.outputs.head_repo }}
+          ref: ${{ steps.pr.outputs.head_sha }}
+          fetch-depth: 0
+          path: pr
+
+      # The PR branch (often a fork based on an older main) may predate the
+      # fill script — always run the dispatcher's own copy from the default
+      # branch, same principle as the /sign gate running from main.
+      - name: Overlay fill script from the default branch
+        working-directory: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git fetch "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" main
+          git checkout FETCH_HEAD -- scripts/fill-missing-localizations.mjs
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fill missing localizations
+        id: fill
+        working-directory: pr
+        run: |
+          set -euo pipefail
+          if [ -z "$DBX_LOCALIZE_API_KEY" ]; then
+            echo "::error::Configure DBX_LOCALIZE_API_KEY as a repository secret"
+            exit 1
+          fi
+          node scripts/fill-missing-localizations.mjs | tee fill.log
+
+      # validate regenerates catalog/index.json first, then intentionally
+      # fails while open candidates await signing — that gate is expected on
+      # candidate PRs and must not fail this workflow.
+      - name: Validate and regenerate catalog
+        working-directory: pr
+        run: |
+          set +e
+          node scripts/validate.mjs > validate.log 2>&1
+          status=$?
+          set -e
+          cat validate.log
+          if [ "$status" -ne 0 ] && grep -q "awaiting DBX Store signing" validate.log; then
+            echo "Open-candidate signing gate reached (expected on candidate PRs); catalog regenerated."
+            exit 0
+          fi
+          exit "$status"
+
+      - name: Commit localization fill back to the pull request
+        id: pushback
+        working-directory: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BOT_TOKEN: ${{ secrets.DBX_STORE_BOT_TOKEN }}
+          HEAD_REPO: ${{ steps.pr.outputs.head_repo }}
+          HEAD_REF: ${{ steps.pr.outputs.head_ref }}
+        run: |
+          set -euo pipefail
+          git config user.name "dbx-store-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add plugins catalog candidates
+          if git diff --cached --quiet; then
+            echo "status=nothing-to-do" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -q -m "chore(store): fill missing plugin localizations for PR #${PR_NUMBER}"
+          push_status="pushed-github-token"
+          if ! git push origin "HEAD:${HEAD_REF}"; then
+            if [ -n "$BOT_TOKEN" ]; then
+              git push "https://x-access-token:${BOT_TOKEN}@github.com/${HEAD_REPO}.git" "HEAD:${HEAD_REF}" || push_status="push-failed"
+              [ "$push_status" = "push-failed" ] || push_status="pushed-bot-token"
+            else
+              push_status="push-failed"
+            fi
+          fi
+          echo "status=$push_status" >> "$GITHUB_OUTPUT"
+          if [ "$push_status" = "push-failed" ]; then
+            git format-patch --stdout "${{ steps.pr.outputs.head_sha }}..HEAD" > "$GITHUB_WORKSPACE/localization.patch" || true
+          fi
+
+      - name: Upload localization patch (fallback)
+        if: steps.pushback.outputs.status == 'push-failed'
+        uses: actions/upload-artifact@v4
+        with:
+          name: localization-patch-${{ env.PR_NUMBER }}
+          if-no-files-found: error
+          retention-days: 30
+          path: localization.patch
+
+      - name: Report on pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PUSH_STATUS: ${{ steps.pushback.outputs.status }}
+        run: |
+          set -euo pipefail
+          BODY_FILE="$RUNNER_TEMP/comment.md"
+          {
+            echo "### Localization fill"
+            echo '```'
+            cat pr/fill.log
+            echo '```'
+            case "$PUSH_STATUS" in
+              nothing-to-do) echo "No localization gaps — nothing changed." ;;
+              pushed-github-token|pushed-bot-token) echo "Filled entries were committed back to this pull request for review." ;;
+              push-failed) echo "Pushing back failed (fork without maintainer edits, or no DBX_STORE_BOT_TOKEN configured). Download the 'localization-patch' workflow artifact and apply it to this branch, then push manually." ;;
+            esac
+          } > "$BODY_FILE"
+          gh pr comment "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --body-file "$BODY_FILE"
