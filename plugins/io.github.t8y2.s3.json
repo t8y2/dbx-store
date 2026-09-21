@@ -17,7 +17,7 @@
   "source": "https://github.com/t8y2/dbx-plugin-s3/tree/v0.1.3",
   "homepage": "https://github.com/t8y2/dbx-plugin-s3",
   "license": "Proprietary",
-  "latestVersion": "0.1.17",
+  "latestVersion": "0.1.18",
   "versions": [
     {
       "version": "0.1.1",
@@ -849,6 +849,55 @@
           "sha256": "8087612489a30986536363812bd7d9556324490f2ec0e86c54be6725fcd924d0",
           "signingKeyId": "dbx-store-release-2026",
           "size": 6763470
+        }
+      ]
+    },
+    {
+      "version": "0.1.18",
+      "releasedAt": "2026-09-21T09:39:05.710Z",
+      "releaseNotes": "",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/io.github.t8y2.s3-0.1.18-darwin-arm64.dbxp",
+          "sha256": "3eea450db310ce39e1eaf2a2bbbcd9bc3256d9fe248d75f660a495a81f984bbb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6394418
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/io.github.t8y2.s3-0.1.18-darwin-x64.dbxp",
+          "sha256": "7d5b07aefec8a5d9522db2f793ee0fe3a2b7d3cc1e8a96e05d974dcfeaf5bd79",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6745309
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/io.github.t8y2.s3-0.1.18-linux-arm64.dbxp",
+          "sha256": "1fda78f8abcb9daf486ba86ed78f3253c1f83ece1be3f15c02e03353fbe1d38b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6309810
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/io.github.t8y2.s3-0.1.18-linux-x64.dbxp",
+          "sha256": "dd912aa269bff22b0b35a9f3e17bcd7587ef0cc1b95e971a9430c4f7dd71a8df",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6754811
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/io.github.t8y2.s3-0.1.18-windows-arm64.dbxp",
+          "sha256": "39a40e567c50ce055d91e5defeef3221c9093bfcab8d79557251acde0f6ce434",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6275063
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/io.github.t8y2.s3-0.1.18-windows-x64.dbxp",
+          "sha256": "835a0615a4a94c05756a4401cf220a45ceac46f7501a6beab7bc3b89b2ca9fa6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6765148
         }
       ]
     }
