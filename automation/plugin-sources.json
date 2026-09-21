@@ -80,6 +80,11 @@
       "repository": "tenltrs/dbx-calendar",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "aiLi0617/dbx-plugin-toolbox",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
