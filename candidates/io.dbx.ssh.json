@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.ssh",
+  "publisher": "jinpy",
+  "version": "0.5.0",
+  "name": "SSH Terminal",
+  "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ssh/ssh-v0.5.0/assets/plugin.svg",
+  "tags": [
+    "ssh",
+    "terminal",
+    "sftp",
+    "remote"
+  ],
+  "permissions": [
+    "host.events",
+    "host.binary",
+    "host.filesystem",
+    "host.workbench"
+  ],
+  "source": "https://github.com/jinpy666/dbx-plugin-ssh",
+  "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
+  "license": "MIT",
+  "releaseNotes": "First official store release: interactive SSH terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+  "localizations": {
+    "zh-CN": {
+      "name": "SSH Terminal",
+      "description": "面向服务器运维的 SSH 终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.5.0/io.dbx.ssh-0.5.0-darwin-arm64.dbxp",
+      "sha256": "5cda86ebf9b655d525025868a24c83171589b214a9f1273477871dcc1fabe7a8",
+      "size": 6454649
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.5.0/io.dbx.ssh-0.5.0-darwin-x64.dbxp",
+      "sha256": "030f0542261879a5b59af4504250ce959052632b497a3de834f7fc43972095d0",
+      "size": 6884269
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.5.0/io.dbx.ssh-0.5.0-linux-arm64.dbxp",
+      "sha256": "f719df7cc64e7a5b6b7f16a632908f2a79a6919a1f354e63afc223f1eb375959",
+      "size": 6724895
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.5.0/io.dbx.ssh-0.5.0-linux-x64.dbxp",
+      "sha256": "9db648c1e1e6b791446dae8440bbc2aaf61bc98b760e33375c41840cc915ca6d",
+      "size": 6963981
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.5.0/io.dbx.ssh-0.5.0-windows-x64.dbxp",
+      "sha256": "55b472a9e34645ccbe9d514f02ffbec44ccaaba4e49427936de9221a8a8e166c",
+      "size": 7056225
+    }
+  ]
+}
