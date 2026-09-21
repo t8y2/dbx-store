@@ -219,7 +219,7 @@
       "description": "A minimal month-view calendar for keeping day-by-day notes.",
       "publisher": "tenltrs",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.3/icon.svg",
       "tags": [
         "calendar",
         "memo",
@@ -228,11 +228,25 @@
         "to-do"
       ],
       "permissions": [],
-      "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.2",
+      "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.3",
       "homepage": "https://github.com/tenltrs/dbx-calendar",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.2",
+      "latestVersion": "0.1.3",
       "versions": [
+        {
+          "version": "0.1.3",
+          "releasedAt": "2026-09-21T03:30:23.181Z",
+          "releaseNotes": "Build a minimalist calendar and reminder tool.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.3/com.tenltrs.dbx-calendar-0.1.3-universal.dbxp",
+              "sha256": "dab88fffcb9aa3c75619074d8f880f343baedb3532ba04e5bf16ee7a364c589a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32146
+            }
+          ]
+        },
         {
           "version": "0.1.2",
           "releasedAt": "2026-09-20T15:52:51.616Z",
