@@ -4,7 +4,7 @@
   "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.45/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.47/assets/plugin.svg",
   "tags": [
     "kafka",
     "streaming",
@@ -18,7 +18,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-kafka",
   "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
   "license": "MIT",
-  "latestVersion": "0.1.45",
+  "latestVersion": "0.1.47",
   "versions": [
     {
       "version": "0.1.39",
@@ -311,6 +311,48 @@
           "sha256": "068b261dadf687bf2ea7e2de75583d659fdcb06a136a50107bde197de945e234",
           "signingKeyId": "dbx-store-release-2026",
           "size": 13695646
+        }
+      ]
+    },
+    {
+      "version": "0.1.47",
+      "releasedAt": "2026-09-21T03:32:57.351Z",
+      "releaseNotes": "修复深色主题下 Topic 侧栏不可读的问题：图标色随 color-scheme 自动翻转，核心颜色令牌改为实时跟随宿主主题（不再被内联快照冻结），并提升树行/星标对比度。消息查询新增「最近 N 条」Offset 策略并设为默认：原「最新」策略从日志末端只等待新消息，对没有持续流量的 topic 总是「已扫描 0 · 命中 0」，现在默认即可读到每个分区最新的历史记录。Fixed topics sidebar legibility in dark theme: icon hues follow color-scheme, core color tokens now track the host theme live instead of being frozen by an inline snapshot, and tree row/star contrast was raised. Messages query adds a recent-N offset strategy and defaults to it: the previous latest default only waited for new records and always scanned zero on idle topics; the new default surfaces the newest existing records per partition.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.47/io.dbx.kafka-0.1.47-darwin-arm64.dbxp",
+          "sha256": "d531e203c024e5b9be974e1ca462498c00443b7179a90d9529fc7b998e9512ed",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13299542
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.47/io.dbx.kafka-0.1.47-darwin-x64.dbxp",
+          "sha256": "77b6379f4e42569f087db39f3dca65633351624f403bf933fe7f8cbc03d1b0ce",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14105295
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.47/io.dbx.kafka-0.1.47-linux-arm64.dbxp",
+          "sha256": "1f56da35699f07b9c278275aa78c334de946c3179f9c4ef7749984ac4b3447ba",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 12531833
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.47/io.dbx.kafka-0.1.47-linux-x64.dbxp",
+          "sha256": "3ea699e9dd5affca281efa9522d034bc671eab75e78c810f0f8267d58a842df3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13614994
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.47/io.dbx.kafka-0.1.47-windows-x64.dbxp",
+          "sha256": "330d04d95aec599b13ec5bf8c879d242372dd14c016acb9a65960fa027dcb7c1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13696607
         }
       ]
     }
