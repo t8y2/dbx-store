@@ -18,44 +18,44 @@
   "latestVersion": "0.1.0",
   "versions": [
     {
-      "version": "0.1.0",
-      "releasedAt": "2026-09-20T16:45:24.337Z",
-      "releaseNotes": "首次发布，包含 38 个本地开发工具、图片处理、密码学工具和使用 Argon2id + AES-GCM 保护的加密密钥库。",
+      "version": "0.1.1",
+      "releasedAt": "2026-09-21T10:22:36Z",
+      "releaseNotes": "完善多语言界面与实时语言切换体验，新增韩语、土耳其语和阿塞拜疆语；补齐繁体中文文案；修复 macOS 原生保存对话框；优化表单焦点与深色主题样式。",
       "artifacts": [
         {
           "target": "darwin-arm64",
-          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.0/io.github.aili0617.toolbox-0.1.0-darwin-arm64.dbxp",
-          "sha256": "3bbbad9e8ab501ed2e6c68e27f39549f5d36f5614d33721f5128e2e86c38349c",
+          "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.1/io.github.aili0617.toolbox-0.1.1-darwin-arm64.dbxp",
+          "sha256": "b5d41196a6a0a927e5c74df4db3be5454c138b81e6abf1a8f7745ccdf4c1f171",
           "signingKeyId": "dbx-store-release-2026",
-          "size": 2253573
+          "size": 2402652
         },
         {
           "target": "darwin-x64",
-          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.0/io.github.aili0617.toolbox-0.1.0-darwin-x64.dbxp",
-          "sha256": "94e8fc2385f0202ecd6cad857dd4763b5a999a4f1c2d809b1a7d6c900a239dc8",
+          "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.1/io.github.aili0617.toolbox-0.1.1-darwin-x64.dbxp",
+          "sha256": "55eba26c88ec7b3b3f144644c3c76c318210136a14e7991d5b42ed4d71ea3a41",
           "signingKeyId": "dbx-store-release-2026",
-          "size": 2316714
+          "size": 2466482
         },
         {
           "target": "linux-arm64",
-          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.0/io.github.aili0617.toolbox-0.1.0-linux-arm64.dbxp",
-          "sha256": "130fa30b936f8098f6af6fc23f334640076d82a47201ecde7d7cafc6b059309a",
+          "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.1/io.github.aili0617.toolbox-0.1.1-linux-arm64.dbxp",
+          "sha256": "2a3611f1d876689518cd400094b411223d6c1ebc15bab71189787c31db379777",
           "signingKeyId": "dbx-store-release-2026",
-          "size": 3273115
+          "size": 3432399
         },
         {
           "target": "linux-x64",
-          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.0/io.github.aili0617.toolbox-0.1.0-linux-x64.dbxp",
-          "sha256": "decca2a7d063b77a4bfe3180bce61a6fd459ef3d98cd40cc4f0d1dc6f8bd7eeb",
+          "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.1/io.github.aili0617.toolbox-0.1.1-linux-x64.dbxp",
+          "sha256": "f2a4267e8fbf18c4d68250fd1d021d5436f5823ce7a3638086f19764822c0cb5",
           "signingKeyId": "dbx-store-release-2026",
-          "size": 3363848
+          "size": 3522397
         },
         {
           "target": "windows-x64",
-          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.0/io.github.aili0617.toolbox-0.1.0-windows-x64.dbxp",
-          "sha256": "4d15f7d5f37a237748af5755912f95802a88a7fda552334a7a2bfa38f1e4fb36",
+          "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.1/io.github.aili0617.toolbox-0.1.1-windows-x64.dbxp",
+          "sha256": "b6c50061d25bdbfd149d3d5501a406842f5a706e1f186e94829788ea8f343a6b",
           "signingKeyId": "dbx-store-release-2026",
-          "size": 2299932
+          "size": 2459275
         }
       ]
     }
@@ -64,6 +64,38 @@
     "zh-CN": {
       "name": "DBX 工具箱",
       "description": "一站式、注重隐私的本地开发工具箱，涵盖数据转换、编解码、格式化、文本与图片处理、实用生成器、密码学工具及加密密钥库；所有数据均在本机处理。"
+    },
+    "zh-TW": {
+      "name": "DBX 工具箱",
+      "description": "一站式、注重隱私的本機開發工具箱，涵蓋資料轉換、編解碼、格式化、文字與圖片處理、實用產生器、密碼學工具及加密金鑰庫；所有資料均在本機處理。"
+    },
+    "es": {
+      "name": "Herramientas DBX",
+      "description": "Una caja de herramientas local y centrada en la privacidad para desarrollo, con conversión de datos, codificación y decodificación, formato, procesamiento de texto e imágenes, generadores, criptografía y un almacén cifrado de claves; todos los datos se procesan localmente."
+    },
+    "it": {
+      "name": "Strumenti DBX",
+      "description": "Una raccolta completa di strumenti locali per sviluppatori, attenta alla privacy, con conversione dei dati, codifica e decodifica, formattazione, elaborazione di testo e immagini, generatori, crittografia e archivio cifrato delle chiavi; tutti i dati vengono elaborati in locale."
+    },
+    "ja": {
+      "name": "DBX ツールボックス",
+      "description": "データ変換、エンコード／デコード、整形、テキスト・画像処理、各種ジェネレーター、暗号化ツール、暗号化鍵保管庫を備えた、プライバシー重視のオールインワン開発ツールボックス。すべてのデータをローカルで処理します。"
+    },
+    "pt-BR": {
+      "name": "Ferramentas DBX",
+      "description": "Uma caixa de ferramentas local completa e focada em privacidade para desenvolvimento, com conversão de dados, codificação e decodificação, formatação, processamento de texto e imagens, geradores, criptografia e um cofre de chaves criptografado; todos os dados são processados localmente."
+    },
+    "ko": {
+      "name": "DBX 도구 상자",
+      "description": "데이터 변환, 인코딩, 서식 지정, 텍스트 및 이미지 처리, 암호화와 암호화된 키 보관함을 제공하는 로컬 개발 도구입니다."
+    },
+    "tr": {
+      "name": "DBX Araç Kutusu",
+      "description": "Veri dönüştürme, kodlama, biçimlendirme, metin ve görüntü işleme, şifreleme ve şifreli anahtar kasası için yerel geliştirici araçları."
+    },
+    "az": {
+      "name": "DBX Alətlər Qutusu",
+      "description": "Məlumat çevirmə, kodlaşdırma, formatlama, mətn və şəkil emalı, kriptoqrafiya və şifrəli açar anbarı üçün yerli tərtibatçı alətləri."
     }
   }
 }
