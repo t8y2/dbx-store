@@ -1,7 +1,7 @@
 {
   "id": "com.yiqiui.leetcode-cn",
-  "name": "LeetCode Practice",
-  "description": "Sign in to your LeetCode (leetcode.cn) account in the DBX plugin center to browse the problem library, view problem statements, choose a language, write code, and run or submit for judging.",
+  "name": "LeetCode 刷题",
+  "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。",
   "publisher": "yiqiui",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/yiqiui/dbx-plugin-leetcode-cn/main/assets/plugin.svg",
@@ -15,10 +15,10 @@
     "host.workbench",
     "host.network:https://leetcode.cn"
   ],
-  "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.2.1",
+  "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.2.2",
   "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
   "license": "Apache-2.0",
-  "latestVersion": "0.2.1",
+  "latestVersion": "0.2.2",
   "versions": [
     {
       "version": "0.1.4",
@@ -101,6 +101,34 @@
           "sha256": "b8493ad43f2dc8e443f3cc1447920396aef69e03efa993e05a47301425f5e878",
           "signingKeyId": "dbx-store-release-2026",
           "size": 2218960
+        }
+      ]
+    },
+    {
+      "version": "0.2.2",
+      "releasedAt": "2026-09-21T17:11:51.572Z",
+      "releaseNotes": "0.2.2 修复 issue #3：代理环境下登录检测超时——插件后端访问 leetcode.cn 现在尊重系统代理环境变量（HTTP_PROXY/HTTPS_PROXY/ALL_PROXY/NO_PROXY）并加了连接/读取超时；本机 Chrome DevTools 调用单独走无代理通道，避免代理劫持 127.0.0.1；前端登录轮询超时由 15s 放宽到 28s 且瞬时错误自动重试。延续 0.2.1（会员题兜底、编辑器语法高亮）与 0.2.0（免粘贴浏览器登录、分页、做题页全屏、昵称显示）。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.2/com.yiqiui.leetcode-cn-0.2.2-darwin-arm64.dbxp",
+          "sha256": "85b700ddf3d4fccb3604f27a267ef56921e6bb19829d952b684b0818641bc610",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2116180
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.2/com.yiqiui.leetcode-cn-0.2.2-linux-x64.dbxp",
+          "sha256": "e57665474eaa56cc3fe3e91302a93bfeea438aa50b35d47992d1cb153aa20004",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2403455
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.2/com.yiqiui.leetcode-cn-0.2.2-windows-x64.dbxp",
+          "sha256": "492361138f5898d6a1b466b3139df6a12c47fdbc1574db4600f55cea7dc926c4",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2210539
         }
       ]
     }

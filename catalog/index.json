@@ -332,11 +332,11 @@
     },
     {
       "id": "com.yiqiui.leetcode-cn",
-      "name": "LeetCode Practice",
-      "description": "Sign in to your LeetCode (leetcode.cn) account in the DBX plugin center to browse the problem library, view problem statements, choose a language, write code, and run or submit for judging.",
+      "name": "LeetCode 刷题",
+      "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。",
       "publisher": "yiqiui",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.2/icon.svg",
       "tags": [
         "leetcode",
         "algorithm",
@@ -347,11 +347,39 @@
         "host.workbench",
         "host.network:https://leetcode.cn"
       ],
-      "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.2.1",
+      "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.2.2",
       "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.1",
+      "latestVersion": "0.2.2",
       "versions": [
+        {
+          "version": "0.2.2",
+          "releasedAt": "2026-09-21T17:11:51.572Z",
+          "releaseNotes": "0.2.2 修复 issue #3：代理环境下登录检测超时——插件后端访问 leetcode.cn 现在尊重系统代理环境变量（HTTP_PROXY/HTTPS_PROXY/ALL_PROXY/NO_PROXY）并加了连接/读取超时；本机 Chrome DevTools 调用单独走无代理通道，避免代理劫持 127.0.0.1；前端登录轮询超时由 15s 放宽到 28s 且瞬时错误自动重试。延续 0.2.1（会员题兜底、编辑器语法高亮）与 0.2.0（免粘贴浏览器登录、分页、做题页全屏、昵称显示）。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.2/com.yiqiui.leetcode-cn-0.2.2-darwin-arm64.dbxp",
+              "sha256": "85b700ddf3d4fccb3604f27a267ef56921e6bb19829d952b684b0818641bc610",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2116180
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.2/com.yiqiui.leetcode-cn-0.2.2-linux-x64.dbxp",
+              "sha256": "e57665474eaa56cc3fe3e91302a93bfeea438aa50b35d47992d1cb153aa20004",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2403455
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.2.2/com.yiqiui.leetcode-cn-0.2.2-windows-x64.dbxp",
+              "sha256": "492361138f5898d6a1b466b3139df6a12c47fdbc1574db4600f55cea7dc926c4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2210539
+            }
+          ]
+        },
         {
           "version": "0.2.1",
           "releasedAt": "2026-09-20T10:58:35.159Z",
@@ -2432,18 +2460,67 @@
       "description": "Read-only PromQL editor, targets, alerts, rules and runtime status in a DBX workbench.",
       "publisher": "caichangqing1120",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.6/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/icon.svg",
       "tags": [
         "prometheus",
         "monitoring",
         "observability"
       ],
       "permissions": [],
-      "source": "https://github.com/caichangqing1120/dbx-plugin-prometheus/tree/v0.1.6",
+      "source": "https://github.com/caichangqing1120/dbx-plugin-prometheus/tree/v0.1.7",
       "homepage": "https://github.com/caichangqing1120/dbx-plugin-prometheus",
       "license": "MIT",
-      "latestVersion": "0.1.6",
+      "latestVersion": "0.1.7",
       "versions": [
+        {
+          "version": "0.1.7",
+          "releasedAt": "2026-09-21T17:15:52.273Z",
+          "releaseNotes": "优化采集目标、活动告警和规则筛选体验：新增可搜索下拉候选，支持鼠标与键盘选择具体项，并修复选择具体项后无法切回全部、规则候选无法点击的问题。候选列表最多展示 200 项，便于在大型 Prometheus 实例中快速定位。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-darwin-arm64.dbxp",
+              "sha256": "f6a5a46b1c37886bf5bdc210035de157aee8fdfb2d6afb19e3c2b84c37b9c205",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4494419
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-darwin-x64.dbxp",
+              "sha256": "3a22bf45a45ec735e0a87bab14037593611a5c5a70b2d10f7ffec416504df19c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4721100
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-linux-arm64.dbxp",
+              "sha256": "79bd7ff4776f768b0b443754889c58fa32330655def175afe9212609e3bd9530",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4472384
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-linux-x64.dbxp",
+              "sha256": "66d50f23d3aa8b5ee751a7eec921011315bed57673250a70fa924ac350f67d75",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4757059
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-windows-arm64.dbxp",
+              "sha256": "d13578458f30d0185ad09cfd1b5e9fa69e840372989c1f61f59cfa13d1abd848",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4466951
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-windows-x64.dbxp",
+              "sha256": "d0e9a73886c870621d277313020f191c9edb423c2bf8384fbc132f6a7fbcbd75",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4790015
+            }
+          ]
+        },
         {
           "version": "0.1.6",
           "releasedAt": "2026-09-20T15:57:23.928Z",
