@@ -3803,10 +3803,10 @@
     {
       "id": "terry.devtools",
       "name": "Dev Tools",
-      "description": "26 everyday developer utilities in a package under 100KB — generators (password/QR/barcode/ID/lorem), codecs (Base64/URL/escape/image), crypto (hash/HMAC/JWT/AES), text tools (JSON/diff/case/lines/mojibake) and more. Pure frontend, zero permissions.",
+      "description": "Sandboxed, offline, zero permissions — 40 tools at ~100KB: generators (password/QR/barcode/ID/RSA/TOTP/placeholder), codecs (Base64/Base58/URL/escape/punycode/data-URI), crypto (hash/HMAC/JWT/AES/certificate), text tools (JSON/diff/regex/lines/mojibake) and more.",
       "publisher": "terry",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.5.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.5.2/icon.svg",
       "tags": [
         "devtools",
         "utilities",
@@ -3823,8 +3823,22 @@
       "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "license": "MIT",
-      "latestVersion": "0.5.1",
+      "latestVersion": "0.5.2",
       "versions": [
+        {
+          "version": "0.5.2",
+          "releasedAt": "2026-09-21T04:44:44.781Z",
+          "releaseNotes": "40 tools: password/ID/lorem/QR/barcode/RSA/TOTP/placeholder generators, Base64/32/58/URL/escape/punycode/quoted-printable/data-URI/image codecs, image compressor, hash & HMAC & CRC32, JWT decode & sign, AES, certificate decoder, RMB uppercase, JSON formatter, text diff, regex tester, case/line/invisible-char/mojibake tools, timestamp & date calc & duration, cron expression, SQL IN builder, Unicode inspector, file size, number base, semver, IP calculator, color & contrast & CMYK, chmod.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/terry.devtools/0.5.2/terry.devtools-0.5.2-universal.dbxp",
+              "sha256": "df01d502b445a15092830df2049fd45cedee0091721db0a7fde2dcbd07640ca8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 120898
+            }
+          ]
+        },
         {
           "version": "0.5.1",
           "releasedAt": "2026-09-20T02:33:37.570Z",
@@ -3871,15 +3885,7 @@
       "localizations": {
         "zh-CN": {
           "name": "Dev Tools",
-          "description": "26 个日常开发工具，安装包不到 100KB——生成器（密码/二维码/条码/ID/占位文本）、编解码（Base64/URL/转义/图片）、安全（哈希/HMAC/JWT/AES）、文本工具（JSON/对比/大小写/行处理/乱码修复）等。纯前端、零权限。"
-        },
-        "zh": {
-          "name": "Dev Tools",
-          "description": "26 个日常开发工具，安装包不到 100KB——生成器（密码/二维码/条码/ID/占位文本）、编解码（Base64/URL/转义/图片）、安全（哈希/HMAC/JWT/AES）、文本工具（JSON/对比/大小写/行处理/乱码修复）等。纯前端、零权限。"
-        },
-        "en": {
-          "name": "Dev Tools",
-          "description": "26 everyday developer utilities in a package under 100KB — generators (password/QR/barcode/ID/lorem), codecs (Base64/URL/escape/image), crypto (hash/HMAC/JWT/AES), text tools (JSON/diff/case/lines/mojibake) and more. Pure frontend, zero permissions."
+          "description": "沙箱离线运行，零权限——40 个开发工具，约 100KB：生成器（密码/二维码/条码/ID/RSA 密钥/TOTP/占位图）、编解码（Base64/Base58/URL/转义/Punycode/Data URI）、安全（哈希/HMAC/JWT/AES/证书解析）、文本工具（JSON/对比/正则/行处理/乱码修复）等。"
         }
       }
     }
