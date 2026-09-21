@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "com.yiqiui.leetcode-cn",
+  "publisher": "yiqiui",
+  "version": "0.2.2",
+  "name": "LeetCode 刷题",
+  "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。",
+  "icon": "https://raw.githubusercontent.com/yiqiui/dbx-plugin-leetcode-cn/main/assets/plugin.svg",
+  "tags": [
+    "leetcode",
+    "algorithm",
+    "practice"
+  ],
+  "permissions": [
+    "host.binary",
+    "host.workbench",
+    "host.network:https://leetcode.cn"
+  ],
+  "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.2.2",
+  "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.2.2 修复 issue #3：代理环境下登录检测超时——插件后端访问 leetcode.cn 现在尊重系统代理环境变量（HTTP_PROXY/HTTPS_PROXY/ALL_PROXY/NO_PROXY）并加了连接/读取超时；本机 Chrome DevTools 调用单独走无代理通道，避免代理劫持 127.0.0.1；前端登录轮询超时由 15s 放宽到 28s 且瞬时错误自动重试。延续 0.2.1（会员题兜底、编辑器语法高亮）与 0.2.0（免粘贴浏览器登录、分页、做题页全屏、昵称显示）。",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/releases/download/v0.2.2/com.yiqiui.leetcode-cn-0.2.2-darwin-arm64.dbxp",
+      "sha256": "fbfedc5fb63a90a889950e74cb7c133611f3e86aa1f50233a1f7789dc30869eb",
+      "size": 2115597
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/releases/download/v0.2.2/com.yiqiui.leetcode-cn-0.2.2-linux-x64.dbxp",
+      "sha256": "f13e10f83d595d8228a7310365a4f98fbe039874c497f7b7d3bbf751deee34c2",
+      "size": 2402873
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/releases/download/v0.2.2/com.yiqiui.leetcode-cn-0.2.2-windows-x64.dbxp",
+      "sha256": "b254df79d722b6e885522298b45c2455d2c651de222fda79d37a506e8d581892",
+      "size": 2209951
+    }
+  ]
+}
