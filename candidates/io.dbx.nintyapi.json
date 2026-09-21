@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.nintyapi",
+  "publisher": "nintycat",
+  "version": "0.1.9",
+  "name": "NintyAPI",
+  "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、文件上传（form-data 多文件、拖拽或选择文件、分片流式发送）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
+  "icon": "https://raw.githubusercontent.com/NintyCat/dbx-plugin-NintyAPI/v0.1.9/assets/plugin.svg",
+  "tags": [
+    "http",
+    "api",
+    "rest",
+    "testing",
+    "debug"
+  ],
+  "permissions": [],
+  "source": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
+  "homepage": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.1.9：支持文件上传 —— form-data 的一行可装多个文件，发送时展开成多个同名 part；文件由系统对话框选择、直接拖入或填路径，按 512 KiB 分片流式传给后端再发出，单文件上限 64 MiB。浏览器「Copy as cURL」导出的 multipart 请求现在能还原成 form-data 行。请求体类型标签改用协议名（none / JSON / XML / raw / x-www-form-urlencoded / form-data / binary），悬停显示 Content-Type。",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyAPI/releases/download/v0.1.9/io.dbx.nintyapi-0.1.9-darwin-arm64.dbxp",
+      "sha256": "e83207fe386e5c371c2940c07ccad6184dd2845931653075f79743efd5d40eb8",
+      "size": 4638671
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyAPI/releases/download/v0.1.9/io.dbx.nintyapi-0.1.9-darwin-x64.dbxp",
+      "sha256": "0220198a295ce9bb1528a948009f2fdc98cbaacb28f30fdf2cd6a37a3b4b22b5",
+      "size": 4862658
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyAPI/releases/download/v0.1.9/io.dbx.nintyapi-0.1.9-linux-arm64.dbxp",
+      "sha256": "5c6f4d250871941dab00c5c2bed63627c4a8eb3306e9eca742c4ed61b830d54f",
+      "size": 4626312
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyAPI/releases/download/v0.1.9/io.dbx.nintyapi-0.1.9-linux-x64.dbxp",
+      "sha256": "da8446ddec32d61cdee243738b38fb560d084f8d85855546e044eaee7379dced",
+      "size": 4926232
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyAPI/releases/download/v0.1.9/io.dbx.nintyapi-0.1.9-windows-arm64.dbxp",
+      "sha256": "7c908066a87da3eb242f277d73925143328a1899da02211a7dac48e3d58695ce",
+      "size": 4618944
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyAPI/releases/download/v0.1.9/io.dbx.nintyapi-0.1.9-windows-x64.dbxp",
+      "sha256": "383671ab5b49cc824df8c2e21dcecf6d09d54ad896aa7162cc6e7b42c25c9b9e",
+      "size": 4952205
+    }
+  ]
+}
