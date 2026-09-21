@@ -122,6 +122,14 @@ function releaseAssetUrl(sourceRepository, releaseTag, artifactUrl) {
   assert(typeof artifactUrl === "string" && artifactUrl.length > 0, "Artifact URL is required");
   const parsed = new URL(artifactUrl, "https://artifact.invalid/");
   const fileName = path.posix.basename(parsed.pathname);
-  assert(fileName === parsed.pathname.slice(1) && /^[A-Za-z0-9._-]+\.dbxp$/.test(fileName), `Invalid candidate artifact '${artifactUrl}'`);
+  assert(/^[A-Za-z0-9._-]+\.dbxp$/.test(fileName), `Invalid candidate artifact '${artifactUrl}'`);
+  // Candidates may carry a bare artifact file name or the full GitHub
+  // download URL; accept the full form only when it points back at the same
+  // repository and release tag, so it cannot redirect catalog consumers.
+  if (fileName !== parsed.pathname.slice(1)) {
+    const expectedPrefix = `/${sourceRepository}/releases/download/${encodeURIComponent(releaseTag)}/`;
+    assert(parsed.protocol === "https:" && parsed.hostname === "github.com" && parsed.pathname.startsWith(expectedPrefix),
+      `Candidate artifact '${artifactUrl}' must be a file name or a same-release GitHub URL`);
+  }
   return `https://github.com/${sourceRepository}/releases/download/${encodeURIComponent(releaseTag)}/${encodeURIComponent(fileName)}`;
 }
