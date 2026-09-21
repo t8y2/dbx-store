@@ -219,7 +219,7 @@
       "description": "A minimal month-view calendar for keeping day-by-day notes.",
       "publisher": "tenltrs",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.3/icon.svg",
       "tags": [
         "calendar",
         "memo",
@@ -228,11 +228,25 @@
         "to-do"
       ],
       "permissions": [],
-      "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.2",
+      "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.3",
       "homepage": "https://github.com/tenltrs/dbx-calendar",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.2",
+      "latestVersion": "0.1.3",
       "versions": [
+        {
+          "version": "0.1.3",
+          "releasedAt": "2026-09-21T03:30:23.181Z",
+          "releaseNotes": "Build a minimalist calendar and reminder tool.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.3/com.tenltrs.dbx-calendar-0.1.3-universal.dbxp",
+              "sha256": "dab88fffcb9aa3c75619074d8f880f343baedb3532ba04e5bf16ee7a364c589a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32146
+            }
+          ]
+        },
         {
           "version": "0.1.2",
           "releasedAt": "2026-09-20T15:52:51.616Z",
@@ -2420,7 +2434,7 @@
       "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant.",
       "publisher": "chnhjf",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.chnhjf.excelx/0.9.3/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.chnhjf.excelx/0.9.7/icon.svg",
       "tags": [
         "spreadsheet",
         "sqlite",
@@ -2428,12 +2442,28 @@
         "export",
         "ai"
       ],
-      "permissions": [],
-      "source": "https://github.com/CHNHJF/dbx-plugin-excelx/tree/v0.9.3",
+      "permissions": [
+        "host.events"
+      ],
+      "source": "https://github.com/CHNHJF/dbx-plugin-excelx/tree/v0.9.7",
       "homepage": "https://github.com/CHNHJF/dbx-plugin-excelx",
       "license": "Apache-2.0",
-      "latestVersion": "0.9.3",
+      "latestVersion": "0.9.7",
       "versions": [
+        {
+          "version": "0.9.7",
+          "releasedAt": "2026-09-21T03:28:51.768Z",
+          "releaseNotes": "Experience and reliability release: real per-batch conversion progress; replace-or-copy prompt when re-converting (no more _2 pile-up); Chinese date formats; numeric xlsx export cells; column-aware AI question suggestions; async always-on-top file dialogs (fixes 120s timeout and lost dialogs); exact i64 parsing and inference-level leading-zero guard; 32,767-char cell truncation; export lock detection with guidance; PK duplicates reported with row numbers; hidden sheets labeled and excluded by default; wide-sheet preview cap.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.chnhjf.excelx/0.9.7/io.github.chnhjf.excelx-0.9.7-windows-x64.dbxp",
+              "sha256": "3a84a4b2815006fde72c644481eec91207bdd132467c7e828112babfb0bfdebf",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2357896
+            }
+          ]
+        },
         {
           "version": "0.9.3",
           "releasedAt": "2026-09-20T02:26:52.428Z",
@@ -2467,14 +2497,6 @@
         "zh-CN": {
           "name": "ExcelX",
           "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
-        },
-        "zh": {
-          "name": "ExcelX",
-          "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
-        },
-        "en": {
-          "name": "ExcelX",
-          "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant."
         }
       }
     },
@@ -2707,7 +2729,7 @@
       "description": "S3-compatible object storage plugin for DBX.",
       "publisher": "t8y2",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.15/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.16/icon.svg",
       "tags": [
         "storage",
         "s3",
@@ -2720,8 +2742,57 @@
       "source": "https://github.com/t8y2/dbx-plugin-s3/tree/v0.1.3",
       "homepage": "https://github.com/t8y2/dbx-plugin-s3",
       "license": "Proprietary",
-      "latestVersion": "0.1.15",
+      "latestVersion": "0.1.16",
       "versions": [
+        {
+          "version": "0.1.16",
+          "releasedAt": "2026-09-20T17:36:24.760Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.16/io.github.t8y2.s3-0.1.16-darwin-arm64.dbxp",
+              "sha256": "97509d29c44d3960c2ceaf90cdb3a55d3b5de68d767ecf42544ad9c67d5b9e53",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6392982
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.16/io.github.t8y2.s3-0.1.16-darwin-x64.dbxp",
+              "sha256": "4ec624955f6e52e417dacb91b9143b56b0da76fb2825633c0f40b0947d3a2b9f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6742818
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.16/io.github.t8y2.s3-0.1.16-linux-arm64.dbxp",
+              "sha256": "deb593126b013ea87ba193b68c6776749bdbc4028d5a7adce679637aa34ea24e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6309438
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.16/io.github.t8y2.s3-0.1.16-linux-x64.dbxp",
+              "sha256": "3184bfa62b7a77c5ed1246eb70c3ada4bb5674243442c702301a149d249a2f30",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6753455
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.16/io.github.t8y2.s3-0.1.16-windows-arm64.dbxp",
+              "sha256": "7314a42a956dd6e232d3b410717445682f2d1d6eb6a5f060d10dc70faae4570f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6271013
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.16/io.github.t8y2.s3-0.1.16-windows-x64.dbxp",
+              "sha256": "6408216ed36b2dfc8673716cd0575a7de6dd333971670fe1878f5c60187ba74f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6762548
+            }
+          ]
+        },
         {
           "version": "0.1.15",
           "releasedAt": "2026-09-20T09:26:03.634Z",

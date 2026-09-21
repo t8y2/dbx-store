@@ -4,7 +4,7 @@
   "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant.",
   "publisher": "chnhjf",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/CHNHJF/dbx-plugin-excelx/v0.9.3/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/CHNHJF/dbx-plugin-excelx/v0.9.7/assets/plugin.svg",
   "tags": [
     "spreadsheet",
     "sqlite",
@@ -12,11 +12,13 @@
     "export",
     "ai"
   ],
-  "permissions": [],
-  "source": "https://github.com/CHNHJF/dbx-plugin-excelx/tree/v0.9.3",
+  "permissions": [
+    "host.events"
+  ],
+  "source": "https://github.com/CHNHJF/dbx-plugin-excelx/tree/v0.9.7",
   "homepage": "https://github.com/CHNHJF/dbx-plugin-excelx",
   "license": "Apache-2.0",
-  "latestVersion": "0.9.3",
+  "latestVersion": "0.9.7",
   "versions": [
     {
       "version": "0.9.2",
@@ -45,20 +47,26 @@
           "size": 2192367
         }
       ]
+    },
+    {
+      "version": "0.9.7",
+      "releasedAt": "2026-09-21T03:28:51.768Z",
+      "releaseNotes": "Experience and reliability release: real per-batch conversion progress; replace-or-copy prompt when re-converting (no more _2 pile-up); Chinese date formats; numeric xlsx export cells; column-aware AI question suggestions; async always-on-top file dialogs (fixes 120s timeout and lost dialogs); exact i64 parsing and inference-level leading-zero guard; 32,767-char cell truncation; export lock detection with guidance; PK duplicates reported with row numbers; hidden sheets labeled and excluded by default; wide-sheet preview cap.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.chnhjf.excelx/0.9.7/io.github.chnhjf.excelx-0.9.7-windows-x64.dbxp",
+          "sha256": "3a84a4b2815006fde72c644481eec91207bdd132467c7e828112babfb0bfdebf",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2357896
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "ExcelX",
       "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
-    },
-    "zh": {
-      "name": "ExcelX",
-      "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
-    },
-    "en": {
-      "name": "ExcelX",
-      "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant."
     }
   }
 }
