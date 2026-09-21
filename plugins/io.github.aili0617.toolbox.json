@@ -4,7 +4,7 @@
   "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally.",
   "publisher": "aili0617",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/aiLi0617/dbx-plugin-toolbox/v0.1.0/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/aiLi0617/dbx-plugin-toolbox/v0.1.1/assets/plugin.svg",
   "tags": [
     "developer-tools",
     "utilities",
@@ -12,7 +12,7 @@
     "cryptography"
   ],
   "permissions": [],
-  "source": "https://github.com/aiLi0617/dbx-plugin-toolbox/tree/v0.1.0",
+  "source": "https://github.com/aiLi0617/dbx-plugin-toolbox/tree/v0.1.1",
   "homepage": "https://github.com/aiLi0617/dbx-plugin-toolbox",
   "license": "Apache-2.0",
   "latestVersion": "0.1.1",
@@ -26,35 +26,30 @@
           "target": "darwin-arm64",
           "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.1/io.github.aili0617.toolbox-0.1.1-darwin-arm64.dbxp",
           "sha256": "b5d41196a6a0a927e5c74df4db3be5454c138b81e6abf1a8f7745ccdf4c1f171",
-          "signingKeyId": "dbx-store-release-2026",
           "size": 2402652
         },
         {
           "target": "darwin-x64",
           "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.1/io.github.aili0617.toolbox-0.1.1-darwin-x64.dbxp",
           "sha256": "55eba26c88ec7b3b3f144644c3c76c318210136a14e7991d5b42ed4d71ea3a41",
-          "signingKeyId": "dbx-store-release-2026",
           "size": 2466482
         },
         {
           "target": "linux-arm64",
           "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.1/io.github.aili0617.toolbox-0.1.1-linux-arm64.dbxp",
           "sha256": "2a3611f1d876689518cd400094b411223d6c1ebc15bab71189787c31db379777",
-          "signingKeyId": "dbx-store-release-2026",
           "size": 3432399
         },
         {
           "target": "linux-x64",
           "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.1/io.github.aili0617.toolbox-0.1.1-linux-x64.dbxp",
           "sha256": "f2a4267e8fbf18c4d68250fd1d021d5436f5823ce7a3638086f19764822c0cb5",
-          "signingKeyId": "dbx-store-release-2026",
           "size": 3522397
         },
         {
           "target": "windows-x64",
           "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.1/io.github.aili0617.toolbox-0.1.1-windows-x64.dbxp",
           "sha256": "b6c50061d25bdbfd149d3d5501a406842f5a706e1f186e94829788ea8f343a6b",
-          "signingKeyId": "dbx-store-release-2026",
           "size": 2459275
         }
       ]
