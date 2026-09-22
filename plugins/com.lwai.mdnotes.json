@@ -1,0 +1,65 @@
+{
+  "id": "com.lwai.mdnotes",
+  "name": "MD Notes",
+  "description": "Markdown notes with a connection type: create an MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory from the connection configuration and can be browsed and edited as an mdnotes:// virtual file system.",
+  "publisher": "lwai",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/v0.7.1/assets/plugin.svg",
+  "tags": [
+    "md",
+    "notes",
+    "files",
+    "storage"
+  ],
+  "permissions": [
+    "host.filesystem"
+  ],
+  "source": "https://github.com/lukelwai/dbx-md-notes/tree/v0.7.1",
+  "homepage": "https://github.com/lukelwai/dbx-md-notes",
+  "license": "Apache-2.0",
+  "latestVersion": "0.7.1",
+  "versions": [
+    {
+      "version": "0.7.1",
+      "releasedAt": "2026-09-21T17:30:27.458Z",
+      "releaseNotes": "Initial release.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.7.1/com.lwai.mdnotes-0.7.1-darwin-arm64.dbxp",
+          "sha256": "ba1f9a98e17eff97449615fdc7addc85ca252846ce1cc84fe9818b809fe2654b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2252975
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.7.1/com.lwai.mdnotes-0.7.1-linux-x64.dbxp",
+          "sha256": "a0ebd4026a7135c9d54aedcf85e9c7719133e8886605019aa82fd9fe75a369e0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2335231
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.7.1/com.lwai.mdnotes-0.7.1-windows-x64.dbxp",
+          "sha256": "467218e5e15f307a21d51a38be8ff6143ed70231c50e9abb44d79f23289cbd84",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2393529
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "en": {
+      "name": "MD Notes",
+      "description": "Markdown notes with a connection type: create an MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory from the connection configuration and can be browsed and edited as an mdnotes:// virtual file system."
+    },
+    "zh-CN": {
+      "name": "MD 笔记",
+      "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。"
+    },
+    "zh": {
+      "name": "MD 笔记",
+      "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。"
+    }
+  }
+}

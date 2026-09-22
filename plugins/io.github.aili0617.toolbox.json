@@ -12,10 +12,10 @@
     "cryptography"
   ],
   "permissions": [],
-  "source": "https://github.com/aiLi0617/dbx-plugin-toolbox/tree/v0.1.0",
+  "source": "https://github.com/aiLi0617/dbx-plugin-toolbox/tree/v0.1.1",
   "homepage": "https://github.com/aiLi0617/dbx-plugin-toolbox",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.0",
+  "latestVersion": "0.1.1",
   "versions": [
     {
       "version": "0.1.0",
@@ -56,6 +56,48 @@
           "sha256": "4d15f7d5f37a237748af5755912f95802a88a7fda552334a7a2bfa38f1e4fb36",
           "signingKeyId": "dbx-store-release-2026",
           "size": 2299932
+        }
+      ]
+    },
+    {
+      "version": "0.1.1",
+      "releasedAt": "2026-09-21T17:26:57.433Z",
+      "releaseNotes": "",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.1/io.github.aili0617.toolbox-0.1.1-darwin-arm64.dbxp",
+          "sha256": "fe3d107879eec2631095df3f16a5b43d11bbf55430a36e223521f377336ba100",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2403388
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.1/io.github.aili0617.toolbox-0.1.1-darwin-x64.dbxp",
+          "sha256": "62df564e32ef316e2e12a4474cce0cd5310092a821105c74163d01ba1f90cdf4",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2467212
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.1/io.github.aili0617.toolbox-0.1.1-linux-arm64.dbxp",
+          "sha256": "5c9c42ecba398b07b52ec04f5296630d586ca84543ebd08c7f5a7a3ef793aaa1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3433134
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.1/io.github.aili0617.toolbox-0.1.1-linux-x64.dbxp",
+          "sha256": "2a3262883cba50031b7b262613288300f9a5a6f7cf910c0e4ea4ede78a4602a1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3523128
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.1/io.github.aili0617.toolbox-0.1.1-windows-x64.dbxp",
+          "sha256": "404fa67c91f1225be976bb868a51e4bbb8c71ae4645d489bfbfd4324a3ef3b97",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2460011
         }
       ]
     }

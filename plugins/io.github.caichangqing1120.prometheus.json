@@ -4,17 +4,17 @@
   "description": "Read-only PromQL editor, targets, alerts, rules and runtime status in a DBX workbench.",
   "publisher": "caichangqing1120",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/caichangqing1120/dbx-plugin-prometheus/v0.1.6/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/caichangqing1120/dbx-plugin-prometheus/v0.1.7/assets/plugin.svg",
   "tags": [
     "prometheus",
     "monitoring",
     "observability"
   ],
   "permissions": [],
-  "source": "https://github.com/caichangqing1120/dbx-plugin-prometheus/tree/v0.1.6",
+  "source": "https://github.com/caichangqing1120/dbx-plugin-prometheus/tree/v0.1.7",
   "homepage": "https://github.com/caichangqing1120/dbx-plugin-prometheus",
   "license": "MIT",
-  "latestVersion": "0.1.6",
+  "latestVersion": "0.1.7",
   "versions": [
     {
       "version": "0.1.6",
@@ -62,6 +62,55 @@
           "sha256": "032991a2f6208c93a95c48729816c904c6d6034acead28ade02aefacbe106f2a",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4788427
+        }
+      ]
+    },
+    {
+      "version": "0.1.7",
+      "releasedAt": "2026-09-21T17:15:52.273Z",
+      "releaseNotes": "优化采集目标、活动告警和规则筛选体验：新增可搜索下拉候选，支持鼠标与键盘选择具体项，并修复选择具体项后无法切回全部、规则候选无法点击的问题。候选列表最多展示 200 项，便于在大型 Prometheus 实例中快速定位。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-darwin-arm64.dbxp",
+          "sha256": "f6a5a46b1c37886bf5bdc210035de157aee8fdfb2d6afb19e3c2b84c37b9c205",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4494419
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-darwin-x64.dbxp",
+          "sha256": "3a22bf45a45ec735e0a87bab14037593611a5c5a70b2d10f7ffec416504df19c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4721100
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-windows-arm64.dbxp",
+          "sha256": "d13578458f30d0185ad09cfd1b5e9fa69e840372989c1f61f59cfa13d1abd848",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4466951
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-windows-x64.dbxp",
+          "sha256": "d0e9a73886c870621d277313020f191c9edb423c2bf8384fbc132f6a7fbcbd75",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4790015
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-linux-arm64.dbxp",
+          "sha256": "79bd7ff4776f768b0b443754889c58fa32330655def175afe9212609e3bd9530",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4472384
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/io.github.caichangqing1120.prometheus-0.1.7-linux-x64.dbxp",
+          "sha256": "66d50f23d3aa8b5ee751a7eec921011315bed57673250a70fa924ac350f67d75",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4757059
         }
       ]
     }
