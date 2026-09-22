@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.nintyapi",
+  "publisher": "nintycat",
+  "version": "0.1.12",
+  "name": "NintyAPI",
+  "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、文件上传（form-data 多文件、拖拽或选择文件、分片流式发送）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
+  "icon": "https://raw.githubusercontent.com/NintyCat/dbx-plugin-NintyAPI/v0.1.12/assets/plugin.svg",
+  "tags": [
+    "http",
+    "api",
+    "rest",
+    "testing",
+    "debug"
+  ],
+  "permissions": [],
+  "source": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
+  "homepage": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.1.12：字体跟随 DBX 的界面字体 —— 工作台不再自带字体，改用宿主下发的字体变量：请求行、方法选择、状态与耗时等标签，以及请求体、响应体、请求头表格、cURL 与代码块，全部跟随设置里的「界面字体」。换字体后立即生效，不用重开标签页。此前这些位置把字体写死在插件里，换设置时工作台大半不动。",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyAPI/releases/download/v0.1.12/io.dbx.nintyapi-0.1.12-darwin-arm64.dbxp",
+      "sha256": "8050e5af6c4eb70faa543edfcd2e8ca2a09ec7941ce57f7b6f1c7a9de22ccf29",
+      "size": 4638504
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyAPI/releases/download/v0.1.12/io.dbx.nintyapi-0.1.12-darwin-x64.dbxp",
+      "sha256": "87268ba8a5f9ca1ee894838f5309965a3ff1ccaee288615a88463b582e50bf40",
+      "size": 4862516
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyAPI/releases/download/v0.1.12/io.dbx.nintyapi-0.1.12-linux-arm64.dbxp",
+      "sha256": "7a6bb98a063531d945b050816cde2f115715374d91643746741e3b3b458050ab",
+      "size": 4626182
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyAPI/releases/download/v0.1.12/io.dbx.nintyapi-0.1.12-linux-x64.dbxp",
+      "sha256": "4dfe756e73a0eae5bbf2dc67693b2fcc2560dc8460add6a30e06ae438c6d9f2f",
+      "size": 4926143
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyAPI/releases/download/v0.1.12/io.dbx.nintyapi-0.1.12-windows-arm64.dbxp",
+      "sha256": "93705a372e7b7ce2441ed3592db5d5b0d1197e303d04f884ce64635686a43b4d",
+      "size": 4618815
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyAPI/releases/download/v0.1.12/io.dbx.nintyapi-0.1.12-windows-x64.dbxp",
+      "sha256": "e734f129c1ee03998506a5472bce399e0936412cd96a3c56dd4f32814875b0b5",
+      "size": 4952128
+    }
+  ]
+}
