@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "com.nintycat.shell",
+  "publisher": "nintycat",
+  "version": "0.8.2",
+  "name": "NintyShell",
+  "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files.",
+  "icon": "https://raw.githubusercontent.com/NintyCat/dbx-plugin-NintyShell/v0.8.2/assets/plugin.svg",
+  "tags": [
+    "terminal",
+    "ssh",
+    "sftp",
+    "shell"
+  ],
+  "permissions": [
+    "host.events",
+    "host.filesystem"
+  ],
+  "source": "https://github.com/NintyCat/dbx-plugin-NintyShell",
+  "homepage": "https://github.com/NintyCat/dbx-plugin-NintyShell",
+  "license": "MIT",
+  "releaseNotes": "Windows SSH linkage fix: cwd reports (OSC 7) from the remote shell were parsed with the client's Windows path rules and silently dropped, so the file panel never followed the terminal and remote path completion stayed in the home directory; SSH sessions now parse remote paths as POSIX. Windows Local Shell PTY fix: the local terminal now uses the go-pty ConPTY implementation, resolving black-screen/silent sessions that fell back to per-command mode on Windows 11 25H2; silent sessions now run automatic diagnostics into pty.log. Also includes Windows support for the Local Shell connection (auto-selected powershell.exe, command wrapper with exit-code and working-directory reporting) and platform-aware shell defaults; panic log moved from /tmp to the user cache directory with tightened permissions; collapsible activity log in the file panel.",
+  "localizations": {
+    "zh-CN": {
+      "name": "NintyShell",
+      "description": "在 DBX 工作台中打开本地 Shell 与 SSH/SFTP 终端，执行命令并管理远程文件。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyShell/releases/download/v0.8.2/com.nintycat.shell-0.8.2-darwin-arm64.dbxp",
+      "sha256": "99d0683e121b204d8fa163260750347483b682138bd5e35de9cb3d2079ffb774",
+      "size": 4179520
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyShell/releases/download/v0.8.2/com.nintycat.shell-0.8.2-darwin-x64.dbxp",
+      "sha256": "20f5ee17971ba7ab79b431a2555c416777c15debae1faf0b0dcebf9b027d4d9b",
+      "size": 4408918
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyShell/releases/download/v0.8.2/com.nintycat.shell-0.8.2-linux-arm64.dbxp",
+      "sha256": "1d676d2ef501808a2f0aab159f9ecf3a3dc68b48eba4c1c6a64cb80c62d72c15",
+      "size": 3973866
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyShell/releases/download/v0.8.2/com.nintycat.shell-0.8.2-linux-x64.dbxp",
+      "sha256": "8ae28b6570b1f2d27aabf403b2e430d6921322c6fb91915b8a991a7f82a2cbb3",
+      "size": 4293885
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/NintyCat/dbx-plugin-NintyShell/releases/download/v0.8.2/com.nintycat.shell-0.8.2-windows-x64.dbxp",
+      "sha256": "c9d8d5bf38c59a8180c9b7819dc704e9aac8ad95a1c23e09d0d7a06f8cefb674",
+      "size": 4569055
+    }
+  ]
+}
