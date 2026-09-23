@@ -2026,7 +2026,7 @@
       "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、文件上传（form-data 多文件、拖拽或选择文件、分片流式发送）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
       "publisher": "nintycat",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.9/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/icon.svg",
       "tags": [
         "http",
         "api",
@@ -2038,8 +2038,57 @@
       "source": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
       "homepage": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.9",
+      "latestVersion": "0.1.12",
       "versions": [
+        {
+          "version": "0.1.12",
+          "releasedAt": "2026-09-23T03:36:11.787Z",
+          "releaseNotes": "0.1.12：字体跟随 DBX 的界面字体 —— 工作台不再自带字体，改用宿主下发的字体变量：请求行、方法选择、状态与耗时等标签，以及请求体、响应体、请求头表格、cURL 与代码块，全部跟随设置里的「界面字体」。换字体后立即生效，不用重开标签页。此前这些位置把字体写死在插件里，换设置时工作台大半不动。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/io.dbx.nintyapi-0.1.12-darwin-arm64.dbxp",
+              "sha256": "fd0ae930ca7927334747a078fd8a7eda029a3409b2f73b2637254e768d024bb9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4639316
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/io.dbx.nintyapi-0.1.12-darwin-x64.dbxp",
+              "sha256": "4ae985ac29004a35a7a63c3ed37391cf3e4e647fe95488513271ddca1058127e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4863329
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/io.dbx.nintyapi-0.1.12-linux-arm64.dbxp",
+              "sha256": "75eecf4f021ed8c65ff73250c3af99ddad69802bfd885bec9258d10b8360232b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4626992
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/io.dbx.nintyapi-0.1.12-linux-x64.dbxp",
+              "sha256": "80af68a00d0154ab971b6f4195888cf4a1bd4150f6b6642c741e6d3ac7c7fac5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4926955
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/io.dbx.nintyapi-0.1.12-windows-arm64.dbxp",
+              "sha256": "daac1029860caa3557cbdd5942e6c9d6e28223484b445823c4b6c15f6238f85f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4619635
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/io.dbx.nintyapi-0.1.12-windows-x64.dbxp",
+              "sha256": "2de5be4cfb7a158c4b390109991721cc18a1981c0aa31ec53bd2e8cfea3b7fd3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4952942
+            }
+          ]
+        },
         {
           "version": "0.1.9",
           "releasedAt": "2026-09-21T04:52:22.296Z",
