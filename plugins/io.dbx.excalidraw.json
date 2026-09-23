@@ -4,18 +4,22 @@
   "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX.",
   "publisher": "runstone",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/Abeautifulsnow/dbx-plugin-excalidraw/v0.2.1/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/Abeautifulsnow/dbx-plugin-excalidraw/v0.2.3/assets/plugin.svg",
   "tags": [
     "diagram",
     "drawing",
     "whiteboard",
     "excalidraw"
   ],
-  "permissions": [],
+  "permissions": [
+    "host.workbench",
+    "host.filesystem",
+    "host.plans:read"
+  ],
   "source": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
   "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
   "license": "MIT",
-  "latestVersion": "0.2.1",
+  "latestVersion": "0.2.3",
   "versions": [
     {
       "version": "0.2.0",
@@ -100,20 +104,54 @@
           "size": 18073595
         }
       ]
+    },
+    {
+      "version": "0.2.3",
+      "releasedAt": "2026-09-23T03:41:40.061Z",
+      "releaseNotes": "Adds a host-native save dialog, deep links from the editor and the result view into DBX's own file manager, remembered UI preferences (result row count and home search), and hands the Excalidraw editor the host locale as-is so its own translations apply. Also corrects the store listing, which previously declared no permissions while the manifest required two. New in this line: a Plan-on-canvas action in the result view lays the query's estimated execution plan out as an annotatable Excalidraw tree (host plan API required; declares host.plans:read).",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/io.dbx.excalidraw-0.2.3-darwin-arm64.dbxp",
+          "sha256": "8eb03cc727edbfd89263b7f6e3edf977c9e33bd1ce3101ae657181a9f2566bb4",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 17984555
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/io.dbx.excalidraw-0.2.3-darwin-x64.dbxp",
+          "sha256": "755c8206d00b97c4bfa7f7aea988ee1ef8204dc97a0a84a8757f31af756af781",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18083031
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/io.dbx.excalidraw-0.2.3-linux-arm64.dbxp",
+          "sha256": "426e39b61ded934f7b4ff94c62ab7920db35863f587073f85ddbd4bf49cdb20e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 17973636
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/io.dbx.excalidraw-0.2.3-linux-x64.dbxp",
+          "sha256": "81cc7bb76e6c973b2db31a398aaca42561c57ff5aa12baa8dad51fa3b2541454",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18102639
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/io.dbx.excalidraw-0.2.3-windows-x64.dbxp",
+          "sha256": "447d1ddd78bbac0592019d166f8ca2e01efa028fe92f58bc638a006179871f44",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18163419
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "Excalidraw Studio",
       "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
-    },
-    "zh": {
-      "name": "Excalidraw Studio",
-      "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
-    },
-    "en": {
-      "name": "Excalidraw Studio",
-      "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX."
     }
   }
 }

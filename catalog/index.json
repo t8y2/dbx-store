@@ -277,7 +277,7 @@
       "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files.",
       "publisher": "nintycat",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.7.8/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.2/icon.svg",
       "tags": [
         "terminal",
         "ssh",
@@ -291,8 +291,50 @@
       "source": "https://github.com/NintyCat/dbx-plugin-NintyShell",
       "homepage": "https://github.com/NintyCat/dbx-plugin-NintyShell",
       "license": "MIT",
-      "latestVersion": "0.7.8",
+      "latestVersion": "0.8.2",
       "versions": [
+        {
+          "version": "0.8.2",
+          "releasedAt": "2026-09-23T03:45:54.502Z",
+          "releaseNotes": "Windows SSH linkage fix: cwd reports (OSC 7) from the remote shell were parsed with the client's Windows path rules and silently dropped, so the file panel never followed the terminal and remote path completion stayed in the home directory; SSH sessions now parse remote paths as POSIX. Windows Local Shell PTY fix: the local terminal now uses the go-pty ConPTY implementation, resolving black-screen/silent sessions that fell back to per-command mode on Windows 11 25H2; silent sessions now run automatic diagnostics into pty.log. Also includes Windows support for the Local Shell connection (auto-selected powershell.exe, command wrapper with exit-code and working-directory reporting) and platform-aware shell defaults; panic log moved from /tmp to the user cache directory with tightened permissions; collapsible activity log in the file panel.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.2/com.nintycat.shell-0.8.2-darwin-arm64.dbxp",
+              "sha256": "cebad9802b709d4485a8a23479a8d4c451f194ddcbc458afe7b63f78e08615f3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4180110
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.2/com.nintycat.shell-0.8.2-darwin-x64.dbxp",
+              "sha256": "6fa3e187a38f976f7942fe70b3258df0676133e00ca04ae963ee57139e1330d4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4409507
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.2/com.nintycat.shell-0.8.2-linux-arm64.dbxp",
+              "sha256": "991013fe0de2e0276fdc8042d5ec744fa007926cb002e868db18dad82badf854",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3974456
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.2/com.nintycat.shell-0.8.2-linux-x64.dbxp",
+              "sha256": "f5af598f525f485ac939000c8d500f20afb41c7d1769a36d01b540b1c689b550",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4294472
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.2/com.nintycat.shell-0.8.2-windows-x64.dbxp",
+              "sha256": "1644b2e05bc71ae57d91cf41a1b641fd684ce283f6ce66908159242fd87218f8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4569647
+            }
+          ]
+        },
         {
           "version": "0.7.8",
           "releasedAt": "2026-09-22T06:46:27.899Z",
@@ -726,19 +768,65 @@
       "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX.",
       "publisher": "runstone",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/icon.svg",
       "tags": [
         "diagram",
         "drawing",
         "whiteboard",
         "excalidraw"
       ],
-      "permissions": [],
+      "permissions": [
+        "host.workbench",
+        "host.filesystem",
+        "host.plans:read"
+      ],
       "source": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
       "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
       "license": "MIT",
-      "latestVersion": "0.2.1",
+      "latestVersion": "0.2.3",
       "versions": [
+        {
+          "version": "0.2.3",
+          "releasedAt": "2026-09-23T03:41:40.061Z",
+          "releaseNotes": "Adds a host-native save dialog, deep links from the editor and the result view into DBX's own file manager, remembered UI preferences (result row count and home search), and hands the Excalidraw editor the host locale as-is so its own translations apply. Also corrects the store listing, which previously declared no permissions while the manifest required two. New in this line: a Plan-on-canvas action in the result view lays the query's estimated execution plan out as an annotatable Excalidraw tree (host plan API required; declares host.plans:read).",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/io.dbx.excalidraw-0.2.3-darwin-arm64.dbxp",
+              "sha256": "8eb03cc727edbfd89263b7f6e3edf977c9e33bd1ce3101ae657181a9f2566bb4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 17984555
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/io.dbx.excalidraw-0.2.3-darwin-x64.dbxp",
+              "sha256": "755c8206d00b97c4bfa7f7aea988ee1ef8204dc97a0a84a8757f31af756af781",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18083031
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/io.dbx.excalidraw-0.2.3-linux-arm64.dbxp",
+              "sha256": "426e39b61ded934f7b4ff94c62ab7920db35863f587073f85ddbd4bf49cdb20e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 17973636
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/io.dbx.excalidraw-0.2.3-linux-x64.dbxp",
+              "sha256": "81cc7bb76e6c973b2db31a398aaca42561c57ff5aa12baa8dad51fa3b2541454",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18102639
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/io.dbx.excalidraw-0.2.3-windows-x64.dbxp",
+              "sha256": "447d1ddd78bbac0592019d166f8ca2e01efa028fe92f58bc638a006179871f44",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18163419
+            }
+          ]
+        },
         {
           "version": "0.2.1",
           "releasedAt": "2026-09-20T05:49:58.317Z",
@@ -828,14 +916,6 @@
         "zh-CN": {
           "name": "Excalidraw Studio",
           "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
-        },
-        "zh": {
-          "name": "Excalidraw Studio",
-          "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
-        },
-        "en": {
-          "name": "Excalidraw Studio",
-          "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX."
         }
       }
     },
@@ -845,7 +925,7 @@
       "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.69/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/icon.svg",
       "tags": [
         "files",
         "storage",
@@ -861,8 +941,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-files",
       "homepage": "https://github.com/jinpy666/dbx-plugin-files",
       "license": "MIT",
-      "latestVersion": "0.1.69",
+      "latestVersion": "0.1.70",
       "versions": [
+        {
+          "version": "0.1.70",
+          "releasedAt": "2026-09-23T03:32:38.358Z",
+          "releaseNotes": "新增 Google Cloud Storage、Azure Blob、华为 OBS，以及阿里云盘、Dropbox、Google Drive、Koofr、OneDrive、pCloud、Seafile、Yandex Disk 等 OpenDAL 云存储服务，并同步扩充连接表单契约与协议矩阵测试。Adds Google Cloud Storage, Azure Blob, Huawei OBS, plus Alibaba Drive, Dropbox, Google Drive, Koofr, OneDrive, pCloud, Seafile, and Yandex Disk, with expanded connection-form and protocol-matrix coverage.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/io.dbx.files-0.1.70-darwin-arm64.dbxp",
+              "sha256": "f5de22d1720a5870001405254b954d7dd9354745068a46d6f0d3612543e519cb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 39251744
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/io.dbx.files-0.1.70-darwin-x64.dbxp",
+              "sha256": "f6c140d46f4ebd711f962cf436eb109b34339e0a229385b603f56c3ca16a53b1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 41750244
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/io.dbx.files-0.1.70-linux-arm64.dbxp",
+              "sha256": "67d2aa31affe9de1ab35286bdc614d532cee248b40c077b9b780a23752b0bc00",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 35618967
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/io.dbx.files-0.1.70-linux-x64.dbxp",
+              "sha256": "e6e046d1ab5bac78dbd51ff8ef693e7fb1606df2c886cd4e7247fbced4e4387a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 38544765
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/io.dbx.files-0.1.70-windows-x64.dbxp",
+              "sha256": "e7354518ba295d994ab234afceef85682a53174955a0ae0887fa58ab52e9d1e6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 37899461
+            }
+          ]
+        },
         {
           "version": "0.1.69",
           "releasedAt": "2026-09-22T06:40:54.445Z",
@@ -1984,7 +2106,7 @@
       "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、文件上传（form-data 多文件、拖拽或选择文件、分片流式发送）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
       "publisher": "nintycat",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.9/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/icon.svg",
       "tags": [
         "http",
         "api",
@@ -1996,8 +2118,57 @@
       "source": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
       "homepage": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.9",
+      "latestVersion": "0.1.12",
       "versions": [
+        {
+          "version": "0.1.12",
+          "releasedAt": "2026-09-23T03:36:11.787Z",
+          "releaseNotes": "0.1.12：字体跟随 DBX 的界面字体 —— 工作台不再自带字体，改用宿主下发的字体变量：请求行、方法选择、状态与耗时等标签，以及请求体、响应体、请求头表格、cURL 与代码块，全部跟随设置里的「界面字体」。换字体后立即生效，不用重开标签页。此前这些位置把字体写死在插件里，换设置时工作台大半不动。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/io.dbx.nintyapi-0.1.12-darwin-arm64.dbxp",
+              "sha256": "fd0ae930ca7927334747a078fd8a7eda029a3409b2f73b2637254e768d024bb9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4639316
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/io.dbx.nintyapi-0.1.12-darwin-x64.dbxp",
+              "sha256": "4ae985ac29004a35a7a63c3ed37391cf3e4e647fe95488513271ddca1058127e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4863329
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/io.dbx.nintyapi-0.1.12-linux-arm64.dbxp",
+              "sha256": "75eecf4f021ed8c65ff73250c3af99ddad69802bfd885bec9258d10b8360232b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4626992
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/io.dbx.nintyapi-0.1.12-linux-x64.dbxp",
+              "sha256": "80af68a00d0154ab971b6f4195888cf4a1bd4150f6b6642c741e6d3ac7c7fac5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4926955
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/io.dbx.nintyapi-0.1.12-windows-arm64.dbxp",
+              "sha256": "daac1029860caa3557cbdd5942e6c9d6e28223484b445823c4b6c15f6238f85f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4619635
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.12/io.dbx.nintyapi-0.1.12-windows-x64.dbxp",
+              "sha256": "2de5be4cfb7a158c4b390109991721cc18a1981c0aa31ec53bd2e8cfea3b7fd3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4952942
+            }
+          ]
+        },
         {
           "version": "0.1.9",
           "releasedAt": "2026-09-21T04:52:22.296Z",
@@ -2167,7 +2338,7 @@
       "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.5.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.6.0/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -2183,8 +2354,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.5.0",
+      "latestVersion": "0.6.0",
       "versions": [
+        {
+          "version": "0.6.0",
+          "releasedAt": "2026-09-23T03:24:19.383Z",
+          "releaseNotes": "First official store release: interactive SSH terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.6.0/io.dbx.ssh-0.6.0-darwin-arm64.dbxp",
+              "sha256": "5442b597c01c3482756b8a25996bb3288e9a7187fcc7f7d32fb567b1f3ec8115",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6645390
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.6.0/io.dbx.ssh-0.6.0-darwin-x64.dbxp",
+              "sha256": "67383bad68126314fdc8f25ea9faf708db63bcfc5a7f6e7367c09f784e6f2e0f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7064917
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.6.0/io.dbx.ssh-0.6.0-linux-arm64.dbxp",
+              "sha256": "9081f33166590f37830a7c5513b7fc33da6cfebd809332ab38020296f2ad3f76",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6918194
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.6.0/io.dbx.ssh-0.6.0-linux-x64.dbxp",
+              "sha256": "8af685c1c152af8268e65e699edf1bae696fb132d3aee167e4ed8a5d61d55ec5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7162263
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.6.0/io.dbx.ssh-0.6.0-windows-x64.dbxp",
+              "sha256": "38ef724c73ba5f92d0a0e2924cd6bf58440aac0334c2172c008ad23d7998bf2f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7229738
+            }
+          ]
+        },
         {
           "version": "0.5.0",
           "releasedAt": "2026-09-21T17:20:28.636Z",
