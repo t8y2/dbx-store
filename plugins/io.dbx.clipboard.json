@@ -1,0 +1,70 @@
+{
+  "id": "io.dbx.clipboard",
+  "name": "Clipboard History",
+  "description": "Browse, search, and reuse local clipboard history (text, images, and file lists).",
+  "publisher": "alan",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/allran/dbx-plugin-clipboard/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "clipboard",
+    "productivity",
+    "workbench"
+  ],
+  "permissions": [
+    "host.events"
+  ],
+  "source": "https://github.com/allran/dbx-plugin-clipboard/tree/v0.1.0",
+  "homepage": "https://github.com/allran/dbx-plugin-clipboard",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-09-23T09:49:10.302Z",
+      "releaseNotes": "Initial release: clipboard history workbench with search, tabs, preview, and double-click copy.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.0/io.dbx.clipboard-0.1.0-darwin-arm64.dbxp",
+          "sha256": "1d168445678acf8611895e49f7c5821fc4c3aa1e69b313779429077fcfe8bd68",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 738773
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.0/io.dbx.clipboard-0.1.0-darwin-x64.dbxp",
+          "sha256": "849605dfc12ffa46bc105f6307354c4d8763a47815ad758b7a231201b5c82b51",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 790969
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.0/io.dbx.clipboard-0.1.0-linux-arm64.dbxp",
+          "sha256": "0d0eb28f186ddef7d3e89945b90b93353f0f3c7e6253d35a9cf9c5cc0d59ffdb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 689710
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.0/io.dbx.clipboard-0.1.0-linux-x64.dbxp",
+          "sha256": "a2658847c4462a4d5c8b8d0b712410c3e255f534571992cf2c1c95b9b1c6586e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 728037
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.0/io.dbx.clipboard-0.1.0-windows-x64.dbxp",
+          "sha256": "6b96b2915562a3157cb7ee08b613afcd30f6d84eafbaafe0019899b80f3d4f7a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 584389
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "剪贴板历史",
+      "description": "浏览、搜索并复用本机剪贴板记录（文本、图片、文件列表）。"
+    }
+  }
+}
