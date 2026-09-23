@@ -1,0 +1,79 @@
+{
+  "id": "com.yiqiui.otel",
+  "name": "OpenTelemetry",
+  "description": "Receive OTLP traces, metrics and logs, then browse span waterfalls and analyze them with SQL through DBX's built-in DuckDB.",
+  "publisher": "yiqiui",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/yiqiui/dbx-plugin-otel/v0.2.0/assets/plugin.svg",
+  "tags": [
+    "opentelemetry",
+    "otel",
+    "otlp",
+    "tracing",
+    "metrics",
+    "logs",
+    "observability",
+    "duckdb"
+  ],
+  "permissions": [
+    "host.events"
+  ],
+  "source": "https://github.com/yiqiui/dbx-plugin-otel/tree/v0.2.0",
+  "homepage": "https://github.com/yiqiui/dbx-plugin-otel",
+  "license": "Apache-2.0",
+  "latestVersion": "0.2.0",
+  "versions": [
+    {
+      "version": "0.2.0",
+      "releasedAt": "2026-09-23T03:56:41.900Z",
+      "releaseNotes": "Initial DBX Store submission.\n\n- OTLP/HTTP receiver (/v1/traces, /v1/metrics, /v1/logs) accepting application/x-protobuf and application/json, plus OTLP/gRPC on 4317 (set grpc_port to 0 for HTTP-only).\n- Telemetry is stored per day as JSONL for the plugin's own queries and as CSV so DuckDB can analyze it with SQL; the workbench generates ready-to-run queries with the real file paths filled in.\n- Workbench: receiver status with the actually bound endpoints, trace list with service/error/duration filters, span waterfall, metrics and logs, and an SQL analysis tab.\n- Result view renders any span-shaped query result as a waterfall.\n- Connection provider exposes listen host/port, gRPC port, retention days, autostart and an optional ingest token.\n- Preferred ports 4318/4317 fall back to ephemeral ports and the UI reports the real endpoint, since these are machine-wide resources often held by a local collector.\n- Tests cover decode/persist/aggregate, port fallback, token enforcement, retention, root-span resolution independent of export order, and end-to-end ingest through the official OpenTelemetry Go SDK over both transports.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.0/com.yiqiui.otel-0.2.0-darwin-arm64.dbxp",
+          "sha256": "faac6243ba5614679ff22f43781acd41f8e97ea40329faadd6622ea7b464e8f7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9107948
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.0/com.yiqiui.otel-0.2.0-darwin-x64.dbxp",
+          "sha256": "aab195480c2229d6134710e27808e6c6f5290b6925f5ee5d0847689e194c5288",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9657320
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.0/com.yiqiui.otel-0.2.0-linux-arm64.dbxp",
+          "sha256": "138f63f17eadc07758764ad1120c78d944d1aa4179eecc1def3e043cc660662f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 8666937
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.0/com.yiqiui.otel-0.2.0-linux-x64.dbxp",
+          "sha256": "1daf232e5b8cafa64e9d9d2ce3785090462097f37d156a5ef39423889ad75f69",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9399006
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.0/com.yiqiui.otel-0.2.0-windows-x64.dbxp",
+          "sha256": "53b063c87c1fa669fb9807558605c574f15501239337f8a0c6af1edbcca503ac",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9521653
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "OpenTelemetry 遥测",
+      "description": "接收 OTLP 链路、指标与日志，查看 span 瀑布图，并通过 DBX 内置 DuckDB 用 SQL 分析。"
+    },
+    "zh": {
+      "name": "OpenTelemetry 遥测",
+      "description": "接收 OTLP 链路、指标与日志，查看 span 瀑布图，并通过 DBX 内置 DuckDB 用 SQL 分析。"
+    }
+  }
+}
