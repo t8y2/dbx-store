@@ -1,24 +1,27 @@
 {
   "id": "com.yiqiui.leetcode-cn",
   "name": "LeetCode 刷题",
-  "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。",
+  "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，按官方分类与标签浏览题库、排序与筛选、收藏题目、查看每日一题与学习计划，并选择语言编写代码运行 / 提交判题。",
   "publisher": "yiqiui",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/yiqiui/dbx-plugin-leetcode-cn/main/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/yiqiui/dbx-plugin-leetcode-cn/v0.3.10/assets/plugin.svg",
   "tags": [
     "leetcode",
     "algorithm",
-    "practice"
+    "practice",
+    "problemset",
+    "favourites",
+    "study-plan"
   ],
   "permissions": [
     "host.binary",
-    "host.workbench",
-    "host.network:https://leetcode.cn"
+    "host.network:https://leetcode.cn",
+    "host.workbench"
   ],
-  "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.2.2",
+  "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.3.10",
   "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
   "license": "Apache-2.0",
-  "latestVersion": "0.2.2",
+  "latestVersion": "0.3.10",
   "versions": [
     {
       "version": "0.1.4",
@@ -131,20 +134,48 @@
           "size": 2210539
         }
       ]
+    },
+    {
+      "version": "0.3.10",
+      "releasedAt": "2026-09-23T12:14:18.853Z",
+      "releaseNotes": "0.3.10 — 题库筛选与力扣官网对齐，并修正收藏与头像。\n\n新增：官方分类页签（全部题目/算法/数据库/Shell/多线程/JavaScript/pandas）；79 个标签芯片带实时题数（计数取自 questionTopicTags，可多选、可展开收起）；难度与作答状态筛选；排序（题号/难度/通过率/出题频率/竞赛分 + 升降序，选择后按整份筛选结果排序而非当前页）；随机一题（在当前筛选与分类范围内）；每行收藏星标；我的收藏；每日一题与学习计划在插件内渲染；顶部显示力扣真实头像。\n\n修复：收藏此前调用的 REST 路径返回 HTML，导致点星星必然失败——现改用官方前端 bundle 中的 addQuestionToDefaultFavoriteV2 / removeQuestionFromFavoriteV2；标签栏把「展开」控件一起裁掉导致完整标签无法访问；请求在飞时丢弃点击（表现为按钮无反应）；todayRecord 返回数组、bookIds 为 JSON 字符串两处解析问题。\n\n说明：LeetBook 入口暂时隐藏（其书列表查询对匿名会话不可用）；服务端关键词搜索需要登录，未登录时界面会明确提示。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.10/com.yiqiui.leetcode-cn-0.3.10-darwin-arm64.dbxp",
+          "sha256": "8041caae32f7e184b37189195ed41c527fff52f6cf7bc771d7f4c1be4a711937",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2155582
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.10/com.yiqiui.leetcode-cn-0.3.10-linux-x64.dbxp",
+          "sha256": "3ccee32d565df881bd7aa681c75d311fb620250ffcfef5a93cdebf384f411b6d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2448797
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.10/com.yiqiui.leetcode-cn-0.3.10-windows-x64.dbxp",
+          "sha256": "c8c016f8c01d7122565a6214e94da0ee60c98aac212d2585c5afd606232e87e0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2259776
+        }
+      ]
     }
   ],
   "localizations": {
-    "en": {
-      "name": "LeetCode Practice",
-      "description": "Sign in to your LeetCode (leetcode.cn) account in the DBX plugin center to browse the problem library, view problem statements, choose a language, write code, and run or submit for judging."
-    },
     "zh-CN": {
       "name": "LeetCode 刷题",
-      "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。"
+      "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，按官方分类与标签浏览题库、排序与筛选、收藏题目、查看每日一题与学习计划，并选择语言编写代码运行 / 提交判题。"
     },
     "zh": {
       "name": "LeetCode 刷题",
-      "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，浏览题库、查看题面、选择语言编写代码并运行 / 提交判题。"
+      "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，按官方分类与标签浏览题库、排序与筛选、收藏题目、查看每日一题与学习计划，并选择语言编写代码运行 / 提交判题。"
+    },
+    "en": {
+      "name": "LeetCode Practice",
+      "description": "Sign in to leetcode.cn inside the DBX plugin center, browse the problemset with the official category tabs and topic tags, sort and filter, favourite questions, see the daily question and study plans, then write code and run or submit it."
     }
   }
 }
