@@ -845,7 +845,7 @@
       "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.69/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/icon.svg",
       "tags": [
         "files",
         "storage",
@@ -861,8 +861,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-files",
       "homepage": "https://github.com/jinpy666/dbx-plugin-files",
       "license": "MIT",
-      "latestVersion": "0.1.69",
+      "latestVersion": "0.1.70",
       "versions": [
+        {
+          "version": "0.1.70",
+          "releasedAt": "2026-09-23T03:32:38.358Z",
+          "releaseNotes": "新增 Google Cloud Storage、Azure Blob、华为 OBS，以及阿里云盘、Dropbox、Google Drive、Koofr、OneDrive、pCloud、Seafile、Yandex Disk 等 OpenDAL 云存储服务，并同步扩充连接表单契约与协议矩阵测试。Adds Google Cloud Storage, Azure Blob, Huawei OBS, plus Alibaba Drive, Dropbox, Google Drive, Koofr, OneDrive, pCloud, Seafile, and Yandex Disk, with expanded connection-form and protocol-matrix coverage.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/io.dbx.files-0.1.70-darwin-arm64.dbxp",
+              "sha256": "f5de22d1720a5870001405254b954d7dd9354745068a46d6f0d3612543e519cb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 39251744
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/io.dbx.files-0.1.70-darwin-x64.dbxp",
+              "sha256": "f6c140d46f4ebd711f962cf436eb109b34339e0a229385b603f56c3ca16a53b1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 41750244
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/io.dbx.files-0.1.70-linux-arm64.dbxp",
+              "sha256": "67d2aa31affe9de1ab35286bdc614d532cee248b40c077b9b780a23752b0bc00",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 35618967
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/io.dbx.files-0.1.70-linux-x64.dbxp",
+              "sha256": "e6e046d1ab5bac78dbd51ff8ef693e7fb1606df2c886cd4e7247fbced4e4387a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 38544765
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/io.dbx.files-0.1.70-windows-x64.dbxp",
+              "sha256": "e7354518ba295d994ab234afceef85682a53174955a0ae0887fa58ab52e9d1e6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 37899461
+            }
+          ]
+        },
         {
           "version": "0.1.69",
           "releasedAt": "2026-09-22T06:40:54.445Z",
