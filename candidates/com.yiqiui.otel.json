@@ -8,31 +8,31 @@
     {
       "target": "darwin-arm64",
       "url": "https://github.com/yiqiui/dbx-plugin-otel/releases/download/v0.2.2/com.yiqiui.otel-0.2.2-darwin-arm64.dbxp",
-      "sha256": "ef24d0bc9f2c0d94610d91d8341b0da8b3450728a41147661da091db6b27ebc8",
-      "size": 9109130
+      "sha256": "46f0734cf2e569a4d01d017c79d3c8bcda82f2337818354f176aee1176944946",
+      "size": 9109131
     },
     {
       "target": "darwin-x64",
       "url": "https://github.com/yiqiui/dbx-plugin-otel/releases/download/v0.2.2/com.yiqiui.otel-0.2.2-darwin-x64.dbxp",
-      "sha256": "2051b82096416bc0503afd5846a1592034f9410e0c2c33d03c79e30bfcf981ae",
-      "size": 9659148
+      "sha256": "221ce67dc298cc7f9421343701796ce424be42281eb0b2d9d2445776fe0f16ea",
+      "size": 9659145
     },
     {
       "target": "linux-arm64",
       "url": "https://github.com/yiqiui/dbx-plugin-otel/releases/download/v0.2.2/com.yiqiui.otel-0.2.2-linux-arm64.dbxp",
-      "sha256": "755fa901069efe1405e8ae2efdcee2eb1c2caf33f2a4646bc70650eb26750270",
-      "size": 8669143
+      "sha256": "3cc3e567cb67e324038d02295f30637c924702c81ef600efd29f64ba33544396",
+      "size": 8669142
     },
     {
       "target": "linux-x64",
       "url": "https://github.com/yiqiui/dbx-plugin-otel/releases/download/v0.2.2/com.yiqiui.otel-0.2.2-linux-x64.dbxp",
-      "sha256": "ec2fc843cb0efea75e1d82784830941cb01681a1925688cef3d257f9c7b0e6cf",
-      "size": 9399222
+      "sha256": "3e4fae95ce2a033de7a4f0cf7b3abda7e17c819a19b1c217d15541c210eff77e",
+      "size": 9399220
     },
     {
       "target": "windows-x64",
       "url": "https://github.com/yiqiui/dbx-plugin-otel/releases/download/v0.2.2/com.yiqiui.otel-0.2.2-windows-x64.dbxp",
-      "sha256": "179f4d47d4d7a0dd51d7614d329216a17c59d97eb7793936fd7690bcf0b2ce2a",
+      "sha256": "317bc089d3d4ad45a3cf67b6b20413c7d1fbf27e42d3ce902c6f4e0283b6428e",
       "size": 9522329
     }
   ]
