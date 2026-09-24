@@ -1147,7 +1147,7 @@
       "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.70/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.72/icon.svg",
       "tags": [
         "files",
         "storage",
@@ -1163,8 +1163,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-files",
       "homepage": "https://github.com/jinpy666/dbx-plugin-files",
       "license": "MIT",
-      "latestVersion": "0.1.70",
+      "latestVersion": "0.1.72",
       "versions": [
+        {
+          "version": "0.1.72",
+          "releasedAt": "2026-09-24T01:14:20.887Z",
+          "releaseNotes": "新增 Google Cloud Storage、Azure Blob、华为 OBS，以及阿里云盘、Dropbox、Google Drive、Koofr、OneDrive、pCloud、Seafile、Yandex Disk 等 OpenDAL 云存储服务，并同步扩充连接表单契约与协议矩阵测试。Adds Google Cloud Storage, Azure Blob, Huawei OBS, plus Alibaba Drive, Dropbox, Google Drive, Koofr, OneDrive, pCloud, Seafile, and Yandex Disk, with expanded connection-form and protocol-matrix coverage.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.72/io.dbx.files-0.1.72-darwin-arm64.dbxp",
+              "sha256": "395e213b5bfcb420125b15381dc5e2ff5256f891993973b39a06f1f0aab767fb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 39337287
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.72/io.dbx.files-0.1.72-darwin-x64.dbxp",
+              "sha256": "b367588dedd8d36fa704ef02fa25ea411e644ec44cf515e56b3484ceba797a4b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 41832027
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.72/io.dbx.files-0.1.72-linux-arm64.dbxp",
+              "sha256": "c7cba96596706aecb18cce832eadc8c37ad2ff0969da626cb4017ca01b7582e8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 35700066
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.72/io.dbx.files-0.1.72-linux-x64.dbxp",
+              "sha256": "f1f11672afc82fa1d20ae8e60e5749e4a79128828f15b6025ce9bfccddc2dffa",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 38636892
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.72/io.dbx.files-0.1.72-windows-x64.dbxp",
+              "sha256": "73344711b050fecdfa447b78eb92be9608cad8e558e981438cbd0163cf29ee6e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 37990529
+            }
+          ]
+        },
         {
           "version": "0.1.70",
           "releasedAt": "2026-09-23T03:32:38.358Z",
@@ -3104,7 +3146,7 @@
       "description": "Analyze DBX Estimated Plans with structured parsing, plan-tree visualization, deterministic findings, and hotspot detection.",
       "publisher": "0verme",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.0verme.plan-detective/0.6.5/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.0verme.plan-detective/0.6.6/icon.svg",
       "tags": [
         "database",
         "sql",
@@ -3117,8 +3159,22 @@
       "source": "https://github.com/0verme/dbx-plugin-plan-detective/tree/v0.5.4",
       "homepage": "https://github.com/0verme/dbx-plugin-plan-detective",
       "license": "Apache-2.0",
-      "latestVersion": "0.6.5",
+      "latestVersion": "0.6.6",
       "versions": [
+        {
+          "version": "0.6.6",
+          "releasedAt": "2026-09-24T01:07:25.949Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.0verme.plan-detective/0.6.6/io.github.0verme.plan-detective-0.6.6-universal.dbxp",
+              "sha256": "f3284a53cfa488a226e6124acba56c977d89a322d7624064fb7f691c3bc3c97f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 92382
+            }
+          ]
+        },
         {
           "version": "0.6.5",
           "releasedAt": "2026-09-23T09:56:09.962Z",
