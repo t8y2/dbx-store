@@ -762,7 +762,7 @@
       "description": "Receive OTLP traces, metrics and logs, then browse span waterfalls and analyze them with SQL through DBX's built-in DuckDB.",
       "publisher": "yiqiui",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.2/icon.svg",
       "tags": [
         "opentelemetry",
         "otel",
@@ -779,8 +779,50 @@
       "source": "https://github.com/yiqiui/dbx-plugin-otel/tree/v0.2.0",
       "homepage": "https://github.com/yiqiui/dbx-plugin-otel",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.1",
+      "latestVersion": "0.2.2",
       "versions": [
+        {
+          "version": "0.2.2",
+          "releasedAt": "2026-09-24T18:15:05.264Z",
+          "releaseNotes": "UI copy only — no behaviour change.\n\n- The workbench heading read \"OpenTelemetry 浏览器\". Contributors read that as a web browser and looked for an outbound browsing/fetching feature, which the plugin deliberately does not have: it only listens. The heading is now \"OpenTelemetry 遥测\"; the English heading was already just \"OpenTelemetry\".",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.2/com.yiqiui.otel-0.2.2-darwin-arm64.dbxp",
+              "sha256": "a54ff55c7fa317c279127c5c50a92c5b8887ecb58fd0aa6709ac09f3c0542bda",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9109714
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.2/com.yiqiui.otel-0.2.2-darwin-x64.dbxp",
+              "sha256": "13447ccf6699505a045585e76639e0130c3a82d4d168a56e769264bd1549fcf5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9659727
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.2/com.yiqiui.otel-0.2.2-linux-arm64.dbxp",
+              "sha256": "fd75b4c13f360fdd523ca239006100de05f0c24894eec695d5008316a8dab4e8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 8669723
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.2/com.yiqiui.otel-0.2.2-linux-x64.dbxp",
+              "sha256": "6967785a5e5d75ba9d893eb8162e385e2945691a164dc1301445feda88bc6904",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9399800
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.2/com.yiqiui.otel-0.2.2-windows-x64.dbxp",
+              "sha256": "da7cc619edc2a92a43152b39ed865f905bd5dce86a477d36b924434e5ee1be1e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9522915
+            }
+          ]
+        },
         {
           "version": "0.2.1",
           "releasedAt": "2026-09-24T04:12:51.636Z",
