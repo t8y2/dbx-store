@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.files",
+  "publisher": "jinpy",
+  "version": "0.1.75",
+  "name": "Files Studio",
+  "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-files/files-v0.1.75/assets/plugin.svg",
+  "tags": [
+    "files",
+    "storage",
+    "s3",
+    "transfer"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.events",
+    "host.binary",
+    "host.filesystem",
+    "host.storage"
+  ],
+  "source": "https://github.com/jinpy666/dbx-plugin-files",
+  "homepage": "https://github.com/jinpy666/dbx-plugin-files",
+  "license": "MIT",
+  "releaseNotes": "新增剪贴板粘贴上传（Finder/资源管理器复制文件 → Ctrl/Cmd+V 直传）与桌面端宿主级拖拽上传（全局放置提示 + 宿主文件桥读盘）；传输同名冲突策略三档可选（询问我 / 自动重命名 / 覆盖），上传与下载落盘统一生效，默认询问。Add clipboard paste upload (copy in Finder/Explorer, paste with Ctrl/Cmd+V) and host-level drag & drop upload with a global drop hint; a three-way transfer conflict policy (ask / auto-rename / overwrite) now covers both uploads and local download saves, asking by default.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Files Studio",
+      "description": "统一管理本地文件夹、S3 兼容存储、Azure Blob、Google Cloud Storage、华为 OBS、WebDAV、FTP、SFTP、SMB/CIFS 等 OpenDAL 服务的文件工作台：传输任务、归档与受控运维集中在一个界面。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.75/io.dbx.files-0.1.75-darwin-arm64.dbxp",
+      "sha256": "0cc699ac69ac64df76742acc9ec409e5d0fe491c6f2bfc1a09699aaefc7d52b6",
+      "size": 39361917
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.75/io.dbx.files-0.1.75-darwin-x64.dbxp",
+      "sha256": "7299dbc5852d2cd1bc4349123836039491b61df8b3ff9b5e0d84f9b2576c60a6",
+      "size": 41864581
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.75/io.dbx.files-0.1.75-linux-arm64.dbxp",
+      "sha256": "d0df59b7d8652447de7443dc459100f04894f20c1ca46213a4b2bf0ec2f8d61e",
+      "size": 35711509
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.75/io.dbx.files-0.1.75-linux-x64.dbxp",
+      "sha256": "524d8348c14561181977a29fb3c33ac7a673a26626b346d55c286411d6defe23",
+      "size": 38636507
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.75/io.dbx.files-0.1.75-windows-x64.dbxp",
+      "sha256": "99b131761332e9e5ba4e7c7109af839a882f99605abb94456118e9d54d9dc071",
+      "size": 38004991
+    }
+  ]
+}
