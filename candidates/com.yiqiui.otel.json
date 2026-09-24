@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "com.yiqiui.otel",
+  "publisher": "yiqiui",
+  "version": "0.2.2",
+  "releaseNotes": "UI copy only — no behaviour change.\n\n- The workbench heading read \"OpenTelemetry 浏览器\". Contributors read that as a web browser and looked for an outbound browsing/fetching feature, which the plugin deliberately does not have: it only listens. The heading is now \"OpenTelemetry 遥测\"; the English heading was already just \"OpenTelemetry\".",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/yiqiui/dbx-plugin-otel/releases/download/v0.2.2/com.yiqiui.otel-0.2.2-darwin-arm64.dbxp",
+      "sha256": "ef24d0bc9f2c0d94610d91d8341b0da8b3450728a41147661da091db6b27ebc8",
+      "size": 9109130
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/yiqiui/dbx-plugin-otel/releases/download/v0.2.2/com.yiqiui.otel-0.2.2-darwin-x64.dbxp",
+      "sha256": "2051b82096416bc0503afd5846a1592034f9410e0c2c33d03c79e30bfcf981ae",
+      "size": 9659148
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/yiqiui/dbx-plugin-otel/releases/download/v0.2.2/com.yiqiui.otel-0.2.2-linux-arm64.dbxp",
+      "sha256": "755fa901069efe1405e8ae2efdcee2eb1c2caf33f2a4646bc70650eb26750270",
+      "size": 8669143
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/yiqiui/dbx-plugin-otel/releases/download/v0.2.2/com.yiqiui.otel-0.2.2-linux-x64.dbxp",
+      "sha256": "ec2fc843cb0efea75e1d82784830941cb01681a1925688cef3d257f9c7b0e6cf",
+      "size": 9399222
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/yiqiui/dbx-plugin-otel/releases/download/v0.2.2/com.yiqiui.otel-0.2.2-windows-x64.dbxp",
+      "sha256": "179f4d47d4d7a0dd51d7614d329216a17c59d97eb7793936fd7690bcf0b2ce2a",
+      "size": 9522329
+    }
+  ]
+}
