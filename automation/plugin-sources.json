@@ -110,6 +110,11 @@
       "repository": "0verme/dbx-plugin-plan-detective",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "ma123456mai/dbx-cc-switch-plugin",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
