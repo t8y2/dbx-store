@@ -762,7 +762,7 @@
       "description": "Receive OTLP traces, metrics and logs, then browse span waterfalls and analyze them with SQL through DBX's built-in DuckDB.",
       "publisher": "yiqiui",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.1/icon.svg",
       "tags": [
         "opentelemetry",
         "otel",
@@ -779,8 +779,50 @@
       "source": "https://github.com/yiqiui/dbx-plugin-otel/tree/v0.2.0",
       "homepage": "https://github.com/yiqiui/dbx-plugin-otel",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.0",
+      "latestVersion": "0.2.1",
       "versions": [
+        {
+          "version": "0.2.1",
+          "releasedAt": "2026-09-24T04:12:51.636Z",
+          "releaseNotes": "Bugfix release: the workbench status card now reports the telemetry actually stored on disk.\n\n- The sidecar's per-process counters reset to zero on every restart, so the status card showed 0 spans / 0 metrics / 0 logs next to a data dir full of files and \"Start receiver\" looked like it had done nothing. Counts are now initialized from a recount of the persisted JSONL files.\n- Retention purge recomputes the affected signal counters from disk (including files written by a previous run) instead of leaving stale totals, and closes only the purged day's writer instead of every open writer of that signal.\n- Regression tests cover the restart recount, purge recount and the surviving current-day writer; the plugin was verified end-to-end against a real data directory (old build reported zeros, 0.2.1 reports the true persisted numbers) plus the smoke (21 checks) and end-to-end OTLP SDK suites (13 checks).",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.1/com.yiqiui.otel-0.2.1-darwin-arm64.dbxp",
+              "sha256": "06c5778e732eb3f0ca57ace44fd6a0259410201885344d6419f19b9bdad2dbbc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9109724
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.1/com.yiqiui.otel-0.2.1-darwin-x64.dbxp",
+              "sha256": "6997ee857bb3bc1a03fe9d692dbc9a55a796bc42592ac3cfc6af8a4d1a49055e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9659741
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.1/com.yiqiui.otel-0.2.1-linux-arm64.dbxp",
+              "sha256": "67d899ebc3e895a90e5c9ce26f6d849f768c09bb2e86d912127a8e06012c4cad",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 8669739
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.1/com.yiqiui.otel-0.2.1-linux-x64.dbxp",
+              "sha256": "8e01e397d7fe14940ee1043ca7d6238682709292f51a2e049e32281bc87a276e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9399809
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.1/com.yiqiui.otel-0.2.1-windows-x64.dbxp",
+              "sha256": "5edc89e907b10a5b1bb049759406e84c273f153c29693d186821ff593653e575",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9522932
+            }
+          ]
+        },
         {
           "version": "0.2.0",
           "releasedAt": "2026-09-23T03:56:41.900Z",
