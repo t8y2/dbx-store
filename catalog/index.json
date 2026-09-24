@@ -5014,10 +5014,10 @@
     {
       "id": "terry.devtools",
       "name": "Dev Tools",
-      "description": "Sandboxed, fully offline, one minimal permission (local UI storage only) — smaller and safer. 40+ tools in ~120KB: password/QR/barcode/ID generators, hash & HMAC, AES encryption, JWT, TOTP, RSA keys, certificate decoder, Base64/32/58, timestamp/duration/cron, CIDR subnetting, text diff, color & contrast, regex tester, mojibake fixer and more.",
+      "description": "Sandboxed, fully offline, one minimal permission (local UI storage only). 42 tools in ~150KB: password/QR/barcode/ID generators, hash & HMAC, AES encryption, JWT, TOTP, RSA keys, certificate decoder, Base64/32/58, timestamp/duration/timezone/cron, HTTP headers, CSS gradient & shadow, CIDR subnetting, text diff, color & contrast, regex tester, mojibake fixer and more.",
       "publisher": "terry",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.1/icon.svg",
       "tags": [
         "devtools",
         "utilities",
@@ -5036,8 +5036,22 @@
       "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "license": "MIT",
-      "latestVersion": "0.6.0",
+      "latestVersion": "0.6.1",
       "versions": [
+        {
+          "version": "0.6.1",
+          "releasedAt": "2026-09-24T01:19:07.178Z",
+          "releaseNotes": "Two new tools (42 total, ~150KB): HTTP helper (raw headers ⇄ JSON + status code/header reference) and a CSS generator (gradients, box-shadow, live preview). Time tool gains timezone conversion with bare-offset input (+8, UTC+8) and a local-zone shortcut; color gains harmony palettes; case converter gains URL slugs; ID generator gains deterministic UUID v5/v3. UI: 23 consolidated category chips capped at two rows, collapsible all-tools grids, privacy switch for recents, favorites empty-state card, persisted typewriter toggle, ⌘K/Ctrl+K search focus.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.1/terry.devtools-0.6.1-universal.dbxp",
+              "sha256": "06779e32537d7a6ef407d65f1cbd549ec42bd1d8248ffece1120d114d1f4b2a3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 146481
+            }
+          ]
+        },
         {
           "version": "0.6.0",
           "releasedAt": "2026-09-22T03:49:26.779Z",
@@ -5111,8 +5125,8 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Dev工具集",
-          "description": "沙箱离线运行，零联网、仅1项本地权限——更轻更安全。40+款开发工具仅 ~120KB：密码生成、哈希/HMAC、AES、JWT/TOTP、RSA/证书、多进制编解码、时间戳与 Cron、IP 子网、文本 Diff、颜色对比度、Unicode 检查、乱码修复、正则测试等一应俱全。"
+          "name": "Dev 工具集",
+          "description": "沙箱离线运行，零联网、仅1项本地权限。42 款开发工具仅 ~150KB：密码生成、哈希/HMAC、AES、JWT/TOTP、RSA/证书、多进制编解码、时间戳/时区与 Cron、HTTP 工具、CSS 生成器、IP 子网、文本 Diff、颜色与配色、Unicode 检查、乱码修复、正则测试等一应俱全。"
         }
       }
     }
