@@ -581,7 +581,7 @@
       "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，按官方分类与标签浏览题库、排序与筛选、收藏题目、查看每日一题与学习计划，并选择语言编写代码运行 / 提交判题。",
       "publisher": "yiqiui",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.10/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.11/icon.svg",
       "tags": [
         "leetcode",
         "algorithm",
@@ -598,8 +598,36 @@
       "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.3.10",
       "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
       "license": "Apache-2.0",
-      "latestVersion": "0.3.10",
+      "latestVersion": "0.3.11",
       "versions": [
+        {
+          "version": "0.3.11",
+          "releasedAt": "2026-09-24T18:24:48.302Z",
+          "releaseNotes": "Judge fixes, official-style result and history panels, and a format button.\n\n- Run and Submit were both broken against leetcode.cn. The code must be sent as typed_code (the plugin sent codedetail, so the server answered \"解答提交 POST 数据丢失\"), verdicts now poll /submissions/detail/<id>/check/ for runs and /v2/check/ for submissions, and state is PENDING / SUCCESS / FAILURE / REVOKED — waiting for the legacy \"Finished\" made every judge burn the whole poll budget and report a timeout even after the answer had already been accepted.\n- Result fields are mapped to what the check endpoints actually return (std_output / std_output_list, compare_result, total_correct, total_testcases, last_testcase, full_compile_error, full_runtime_error), so the verdict panel shows output instead of blanks.\n- Submission history fixed: submissionList declares offset and limit as non-null; omitting offset made the server answer \"发生未知错误，请联系管理员\".\n- UI: verdict card (status + 执行用时 / 内存消耗 / 通过用例 + 输入 / 输出 / 预期结果) and a history table laid out like the site; new 格式化 button using prettier for JavaScript and TypeScript, whitespace-only normalisation elsewhere (prettier has no parser for Go / Python / Java / C++ / Rust, and brace-depth re-indenting would corrupt indentation-significant languages).\n- Verified locally on a real signed-in session: run and submit return verdicts in seconds, the history table renders, formatting works.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.11/com.yiqiui.leetcode-cn-0.3.11-darwin-arm64.dbxp",
+              "sha256": "a1e50729cae421a2c41a1aa76b7f15486c3cea4adac5d71cc5d3ff5f2e7f9ae7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2550020
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.11/com.yiqiui.leetcode-cn-0.3.11-linux-x64.dbxp",
+              "sha256": "ea944e73d27e65081f263c7b6107f5acdef068e4298f3c2bd74fc85cc61cb2c7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2842136
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.11/com.yiqiui.leetcode-cn-0.3.11-windows-x64.dbxp",
+              "sha256": "87864039af112232c2f7870329fcb33090e1122cc4c8142e1e639e55f2806a93",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2654470
+            }
+          ]
+        },
         {
           "version": "0.3.10",
           "releasedAt": "2026-09-23T12:14:18.853Z",
@@ -762,7 +790,7 @@
       "description": "Receive OTLP traces, metrics and logs, then browse span waterfalls and analyze them with SQL through DBX's built-in DuckDB.",
       "publisher": "yiqiui",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.2/icon.svg",
       "tags": [
         "opentelemetry",
         "otel",
@@ -779,8 +807,50 @@
       "source": "https://github.com/yiqiui/dbx-plugin-otel/tree/v0.2.0",
       "homepage": "https://github.com/yiqiui/dbx-plugin-otel",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.1",
+      "latestVersion": "0.2.2",
       "versions": [
+        {
+          "version": "0.2.2",
+          "releasedAt": "2026-09-24T18:15:05.264Z",
+          "releaseNotes": "UI copy only — no behaviour change.\n\n- The workbench heading read \"OpenTelemetry 浏览器\". Contributors read that as a web browser and looked for an outbound browsing/fetching feature, which the plugin deliberately does not have: it only listens. The heading is now \"OpenTelemetry 遥测\"; the English heading was already just \"OpenTelemetry\".",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.2/com.yiqiui.otel-0.2.2-darwin-arm64.dbxp",
+              "sha256": "a54ff55c7fa317c279127c5c50a92c5b8887ecb58fd0aa6709ac09f3c0542bda",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9109714
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.2/com.yiqiui.otel-0.2.2-darwin-x64.dbxp",
+              "sha256": "13447ccf6699505a045585e76639e0130c3a82d4d168a56e769264bd1549fcf5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9659727
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.2/com.yiqiui.otel-0.2.2-linux-arm64.dbxp",
+              "sha256": "fd75b4c13f360fdd523ca239006100de05f0c24894eec695d5008316a8dab4e8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 8669723
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.2/com.yiqiui.otel-0.2.2-linux-x64.dbxp",
+              "sha256": "6967785a5e5d75ba9d893eb8162e385e2945691a164dc1301445feda88bc6904",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9399800
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.otel/0.2.2/com.yiqiui.otel-0.2.2-windows-x64.dbxp",
+              "sha256": "da7cc619edc2a92a43152b39ed865f905bd5dce86a477d36b924434e5ee1be1e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9522915
+            }
+          ]
+        },
         {
           "version": "0.2.1",
           "releasedAt": "2026-09-24T04:12:51.636Z",
@@ -1032,7 +1102,7 @@
       "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX.",
       "publisher": "runstone",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.0/icon.png",
       "tags": [
         "diagram",
         "drawing",
@@ -1040,15 +1110,58 @@
         "excalidraw"
       ],
       "permissions": [
-        "host.workbench",
+        "host.ai",
         "host.filesystem",
-        "host.plans:read"
+        "host.plans:read",
+        "host.workbench"
       ],
       "source": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
       "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
       "license": "MIT",
-      "latestVersion": "0.2.3",
+      "latestVersion": "0.3.0",
       "versions": [
+        {
+          "version": "0.3.0",
+          "releasedAt": "2026-09-24T18:20:56.735Z",
+          "releaseNotes": "Adds a host-native save dialog, deep links from the editor and the result view into DBX's own file manager, remembered UI preferences (result row count and home search), and hands the Excalidraw editor the host locale as-is so its own translations apply. Also corrects the store listing, which previously declared no permissions while the manifest required two. New in this line: a Plan-on-canvas action in the result view lays the query's estimated execution plan out as an annotatable Excalidraw tree (host plan API required; declares host.plans:read). New in 0.3.0: an Ask AI action hands the parsed plan to DBX's built-in AI panel as a one-way snapshot (declares host.ai), and plan warnings land on the canvas as a sticky note.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.0/io.dbx.excalidraw-0.3.0-darwin-arm64.dbxp",
+              "sha256": "a10d5a05b1cfa4358ddb1f7e80e2fcf7b668c9d4933d34a21ce317b5674744c2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18291846
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.0/io.dbx.excalidraw-0.3.0-darwin-x64.dbxp",
+              "sha256": "54c78338711ec777fcb01282ca63638e6b309baad50d34c262260c54d6aa1d7c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18390328
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.0/io.dbx.excalidraw-0.3.0-linux-arm64.dbxp",
+              "sha256": "84d3fa47b36b99e6596a636bed302c2a9d842edfe02b4a80ac8b5ba852876749",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18280921
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.0/io.dbx.excalidraw-0.3.0-linux-x64.dbxp",
+              "sha256": "8a66f90be8c466f4ffe21cb0efdf5b0fb272521db9f6e0a5b50666ba32218cdb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18409925
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.0/io.dbx.excalidraw-0.3.0-windows-x64.dbxp",
+              "sha256": "b65a8b05c2b5ba256d3ca1e41dfeff9df96fae1231d0269af8e7fc022fc38b3d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18470723
+            }
+          ]
+        },
         {
           "version": "0.2.3",
           "releasedAt": "2026-09-23T03:41:40.061Z",
