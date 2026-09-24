@@ -1,0 +1,70 @@
+{
+  "id": "io.github.yuwengueen.dbx-code-editor",
+  "name": "Code Editor",
+  "description": "Browse, search, and edit local project files inside DBX.",
+  "publisher": "yuwengueen",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/yuwenGueen/dbx-code-editor/v0.1.15/assets/plugin.svg",
+  "tags": [
+    "editor",
+    "files",
+    "developer-tools"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/yuwenGueen/dbx-code-editor/tree/v0.1.15",
+  "homepage": "https://github.com/yuwenGueen/dbx-code-editor",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.15",
+  "versions": [
+    {
+      "version": "0.1.15",
+      "releasedAt": "2026-09-24T01:28:40.949Z",
+      "releaseNotes": "Initial Code Editor release for macOS, Windows, and Linux: project explorer, multi-tab editing, saved temporary drafts, project search, syntax modes, encoding selection, and Markdown preview.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.15/io.github.yuwengueen.dbx-code-editor-0.1.15-darwin-arm64.dbxp",
+          "sha256": "53e27581c65d687eaa23465ee25fa2481636e8a52841a978879c795524c63ad1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3075335
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.15/io.github.yuwengueen.dbx-code-editor-0.1.15-darwin-x64.dbxp",
+          "sha256": "4e8d588a53bdb2908efe7170858c672f4c4fabc105a02f1682579740b2836d9e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3168693
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.15/io.github.yuwengueen.dbx-code-editor-0.1.15-linux-arm64.dbxp",
+          "sha256": "4aad60090642eee98fa1040dd221f130a78bf819adc3890f7a316026a5684f48",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3091469
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.15/io.github.yuwengueen.dbx-code-editor-0.1.15-linux-x64.dbxp",
+          "sha256": "ccd39468522bd1d87d1b66647e6f6e0920124f1a5ec8f917d192932a071ebb73",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3227601
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.15/io.github.yuwengueen.dbx-code-editor-0.1.15-windows-x64.dbxp",
+          "sha256": "1ce123565e870661a6b2da8466bf6186d743235304666f67ac7cc431e6df4026",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3269259
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Code Editor",
+      "description": "在 DBX 中浏览、搜索和编辑本地项目文件。"
+    }
+  }
+}
