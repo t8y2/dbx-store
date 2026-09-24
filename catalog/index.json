@@ -1074,7 +1074,7 @@
       "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX.",
       "publisher": "runstone",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.2.3/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.0/icon.png",
       "tags": [
         "diagram",
         "drawing",
@@ -1082,15 +1082,58 @@
         "excalidraw"
       ],
       "permissions": [
-        "host.workbench",
+        "host.ai",
         "host.filesystem",
-        "host.plans:read"
+        "host.plans:read",
+        "host.workbench"
       ],
       "source": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
       "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
       "license": "MIT",
-      "latestVersion": "0.2.3",
+      "latestVersion": "0.3.0",
       "versions": [
+        {
+          "version": "0.3.0",
+          "releasedAt": "2026-09-24T18:20:56.735Z",
+          "releaseNotes": "Adds a host-native save dialog, deep links from the editor and the result view into DBX's own file manager, remembered UI preferences (result row count and home search), and hands the Excalidraw editor the host locale as-is so its own translations apply. Also corrects the store listing, which previously declared no permissions while the manifest required two. New in this line: a Plan-on-canvas action in the result view lays the query's estimated execution plan out as an annotatable Excalidraw tree (host plan API required; declares host.plans:read). New in 0.3.0: an Ask AI action hands the parsed plan to DBX's built-in AI panel as a one-way snapshot (declares host.ai), and plan warnings land on the canvas as a sticky note.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.0/io.dbx.excalidraw-0.3.0-darwin-arm64.dbxp",
+              "sha256": "a10d5a05b1cfa4358ddb1f7e80e2fcf7b668c9d4933d34a21ce317b5674744c2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18291846
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.0/io.dbx.excalidraw-0.3.0-darwin-x64.dbxp",
+              "sha256": "54c78338711ec777fcb01282ca63638e6b309baad50d34c262260c54d6aa1d7c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18390328
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.0/io.dbx.excalidraw-0.3.0-linux-arm64.dbxp",
+              "sha256": "84d3fa47b36b99e6596a636bed302c2a9d842edfe02b4a80ac8b5ba852876749",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18280921
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.0/io.dbx.excalidraw-0.3.0-linux-x64.dbxp",
+              "sha256": "8a66f90be8c466f4ffe21cb0efdf5b0fb272521db9f6e0a5b50666ba32218cdb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18409925
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.0/io.dbx.excalidraw-0.3.0-windows-x64.dbxp",
+              "sha256": "b65a8b05c2b5ba256d3ca1e41dfeff9df96fae1231d0269af8e7fc022fc38b3d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18470723
+            }
+          ]
+        },
         {
           "version": "0.2.3",
           "releasedAt": "2026-09-23T03:41:40.061Z",
