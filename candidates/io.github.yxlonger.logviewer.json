@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "io.github.yxlonger.logviewer",
   "publisher": "yxlonger",
-  "version": "0.1.0-beta.2",
+  "version": "0.1.0",
   "name": "Log Viewer",
   "description": "View server .log files with keyword search, live tail and download.",
-  "icon": "https://github.com/yxlongery/dbx-logviewer/raw/v0.1.0-beta.2/assets/plugin.svg",
+  "icon": "https://github.com/yxlongery/dbx-logviewer/raw/v0.1.0/assets/plugin.svg",
   "tags": [
     "logs",
     "devops"
@@ -14,46 +14,46 @@
     "host.events",
     "host.storage"
   ],
-  "source": "https://github.com/yxlongery/dbx-logviewer/tree/v0.1.0-beta.2",
+  "source": "https://github.com/yxlongery/dbx-logviewer/tree/v0.1.0",
   "homepage": "https://github.com/yxlongery/dbx-logviewer",
   "license": "Apache-2.0",
-  "releaseNotes": "Remove unimplemented SSH mode, local directory only; legacy SSH payloads handled as local for compatibility.",
+  "releaseNotes": "First stable release: file cards, external linking, live tail, chunked download; Windows build fixed.",
   "localizations": {
     "zh-CN": {
-      "name": "\u65e5\u5fd7\u67e5\u770b\u5668",
-      "description": "\u67e5\u770b\u670d\u52a1\u5668 .log \u65e5\u5fd7\uff0c\u652f\u6301\u6eda\u52a8\u67e5\u8be2\u4e0e\u6a21\u7cca\u641c\u7d22"
+      "name": "日志查看器",
+      "description": "查看服务器 .log 日志，支持滚动查询与模糊搜索"
     }
   },
   "targets": [
     {
       "target": "darwin-arm64",
-      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0-beta.2/io.github.yxlonger.logviewer-0.1.0-beta.2-darwin-arm64.dbxp",
-      "sha256": "7d06a82dc7e5e4842cf5962d82064f2c523c684ec0fa1b28b10e17eb44e8e3ce",
-      "size": 278863
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0/io.github.yxlonger.logviewer-0.1.0-darwin-arm64.dbxp",
+      "sha256": "6f2494a98c33fc91eda38a96d60ddec525794c944fee03ba3f31403c1b13c3c6",
+      "size": 286896
     },
     {
       "target": "darwin-x64",
-      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0-beta.2/io.github.yxlonger.logviewer-0.1.0-beta.2-darwin-x64.dbxp",
-      "sha256": "cff35a517e3a2d3d6b94081969a1a11267487208a17f98613434ebc17ff5a6fe",
-      "size": 297001
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0/io.github.yxlonger.logviewer-0.1.0-darwin-x64.dbxp",
+      "sha256": "d921948f03591781b17e422ec9da1822c824330d4916eb1241c7cd924dbe0c9c",
+      "size": 306609
     },
     {
       "target": "linux-arm64",
-      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0-beta.2/io.github.yxlonger.logviewer-0.1.0-beta.2-linux-arm64.dbxp",
-      "sha256": "623321408002b443ef031a04a95d5b4c1d96bc8d97ae3c6e8a9e73fc3149f9f7",
-      "size": 303852
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0/io.github.yxlonger.logviewer-0.1.0-linux-arm64.dbxp",
+      "sha256": "83c3311c6e86cc7f23f9af5f55069dd1cf2af449c652d8d23c31bc8ee1f47ca3",
+      "size": 312492
     },
     {
       "target": "linux-x64",
-      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0-beta.2/io.github.yxlonger.logviewer-0.1.0-beta.2-linux-x64.dbxp",
-      "sha256": "bf5f489f60c74ccd461432949f8b935ba79db5a33ba17c172cff565d9b098ac2",
-      "size": 323272
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0/io.github.yxlonger.logviewer-0.1.0-linux-x64.dbxp",
+      "sha256": "3922a498b6fa36f6f1513f4fa60bc92dbb986ce74c317f59f3c82e60c9d9a003",
+      "size": 332810
     },
     {
       "target": "windows-x64",
-      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0-beta.2/io.github.yxlonger.logviewer-0.1.0-beta.2-windows-x64.dbxp",
-      "sha256": "c725e4c91a7dd1edcb1b6e700971f0cd927c63494e3536dc5ac00aaec22e98bb",
-      "size": 224114
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0/io.github.yxlonger.logviewer-0.1.0-windows-x64.dbxp",
+      "sha256": "a812599ba29f88d187aaee9eaf04af5a5b9005ca030dd4aee0b06712676c0558",
+      "size": 237091
     }
   ]
 }
