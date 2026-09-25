@@ -4,7 +4,7 @@
   "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、文件上传（form-data 多文件、拖拽或选择文件、分片流式发送）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
   "publisher": "nintycat",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/NintyCat/dbx-plugin-NintyAPI/v0.1.12/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/NintyCat/dbx-plugin-NintyAPI/v0.1.13/assets/plugin.svg",
   "tags": [
     "http",
     "api",
@@ -16,7 +16,7 @@
   "source": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
   "homepage": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.12",
+  "latestVersion": "0.1.13",
   "versions": [
     {
       "version": "0.1.7",
@@ -211,6 +211,55 @@
           "sha256": "2de5be4cfb7a158c4b390109991721cc18a1981c0aa31ec53bd2e8cfea3b7fd3",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4952942
+        }
+      ]
+    },
+    {
+      "version": "0.1.13",
+      "releasedAt": "2026-09-25T03:21:11.407Z",
+      "releaseNotes": "0.1.13：文件拖拽与选择在 DBX 桌面版工作台真正可用了。此前这两条路只在浏览器开发主机里生效——桌面端的系统级拖拽到不了沙箱页面，文件选择器也无法弹出。现在桌面端走宿主桥接：把文件从系统拖进工作台即自动附加（空请求体自动转为 form-data，multipart 追加到文件行，binary 填充二进制请求体，其他编码会明确提示），拖拽悬停时有放置提示；「选择文件」直接弹系统对话框。发送仍是 512 KiB 分片流式，同一行可重复发送，删除文件即归还句柄。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.13/io.dbx.nintyapi-0.1.13-darwin-arm64.dbxp",
+          "sha256": "61aa33bb7c7e86b8b54c1ceee1c4963e56b27537f937a2e6d86983409c27047b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4641178
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.13/io.dbx.nintyapi-0.1.13-darwin-x64.dbxp",
+          "sha256": "2a79c466b44c061b50410f50c8f7d60b95101a518a9a78966b512bdf2e81be08",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4865189
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.13/io.dbx.nintyapi-0.1.13-linux-arm64.dbxp",
+          "sha256": "5d5d3de00d8a5c490a99fa80ee81075461b8b537bf62e003b9293848828cd74a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4628856
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.13/io.dbx.nintyapi-0.1.13-linux-x64.dbxp",
+          "sha256": "4697bf3be5a4e885b1c7d6c093a4a81aaa9240f59ad06097405069fb29a9994d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4928816
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.13/io.dbx.nintyapi-0.1.13-windows-arm64.dbxp",
+          "sha256": "0bd235533a386f08f249194c1f01c1abc364cd7ac2d014e0d47040d65556c9c8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4621498
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.13/io.dbx.nintyapi-0.1.13-windows-x64.dbxp",
+          "sha256": "216a3ac16731f7af7f53702a9ed708b5fdec9e5ccf4e1681ad6601003a852116",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4954806
         }
       ]
     }
