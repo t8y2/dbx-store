@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "io.github.yxlonger.logviewer",
   "publisher": "yxlonger",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "Log Viewer",
   "description": "View server .log files with keyword search, live tail and download.",
-  "icon": "https://github.com/yxlongery/dbx-logviewer/raw/v0.1.0/assets/plugin.svg",
+  "icon": "https://github.com/yxlongery/dbx-logviewer/raw/v0.1.1/assets/plugin.svg",
   "tags": [
     "logs",
     "devops"
@@ -14,10 +14,10 @@
     "host.events",
     "host.storage"
   ],
-  "source": "https://github.com/yxlongery/dbx-logviewer/tree/v0.1.0",
+  "source": "https://github.com/yxlongery/dbx-logviewer/tree/v0.1.1",
   "homepage": "https://github.com/yxlongery/dbx-logviewer",
   "license": "Apache-2.0",
-  "releaseNotes": "First stable release: file cards, external linking, live tail, chunked download; Windows build fixed.",
+  "releaseNotes": "Directory drill-down replaces manual linking; UI-only hide replaces file delete; multi-root log directories.",
   "localizations": {
     "zh-CN": {
       "name": "日志查看器",
@@ -27,33 +27,33 @@
   "targets": [
     {
       "target": "darwin-arm64",
-      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0/io.github.yxlonger.logviewer-0.1.0-darwin-arm64.dbxp",
-      "sha256": "6f2494a98c33fc91eda38a96d60ddec525794c944fee03ba3f31403c1b13c3c6",
-      "size": 286896
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.1/io.github.yxlonger.logviewer-0.1.1-darwin-arm64.dbxp",
+      "sha256": "8d55b9bd88b3b291bc24aa6408a8f24ab7bc52e635187dacfee640ecbe47d952",
+      "size": 290597
     },
     {
       "target": "darwin-x64",
-      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0/io.github.yxlonger.logviewer-0.1.0-darwin-x64.dbxp",
-      "sha256": "d921948f03591781b17e422ec9da1822c824330d4916eb1241c7cd924dbe0c9c",
-      "size": 306609
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.1/io.github.yxlonger.logviewer-0.1.1-darwin-x64.dbxp",
+      "sha256": "7565496301058fb05f6cdc272de2fd58aab37f7ace0432820fcb5cd97ba13fa3",
+      "size": 309537
     },
     {
       "target": "linux-arm64",
-      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0/io.github.yxlonger.logviewer-0.1.0-linux-arm64.dbxp",
-      "sha256": "83c3311c6e86cc7f23f9af5f55069dd1cf2af449c652d8d23c31bc8ee1f47ca3",
-      "size": 312492
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.1/io.github.yxlonger.logviewer-0.1.1-linux-arm64.dbxp",
+      "sha256": "a6e1e8ea6861901080bf90da2a8238fc4487939c2b7b6669c75294fcd9fcd7b7",
+      "size": 315200
     },
     {
       "target": "linux-x64",
-      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0/io.github.yxlonger.logviewer-0.1.0-linux-x64.dbxp",
-      "sha256": "3922a498b6fa36f6f1513f4fa60bc92dbb986ce74c317f59f3c82e60c9d9a003",
-      "size": 332810
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.1/io.github.yxlonger.logviewer-0.1.1-linux-x64.dbxp",
+      "sha256": "ee976a926898ebc5d477c80a414dd1056aefc38527df70151e30d2c21a87b72a",
+      "size": 335873
     },
     {
       "target": "windows-x64",
-      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0/io.github.yxlonger.logviewer-0.1.0-windows-x64.dbxp",
-      "sha256": "a812599ba29f88d187aaee9eaf04af5a5b9005ca030dd4aee0b06712676c0558",
-      "size": 237091
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.1/io.github.yxlonger.logviewer-0.1.1-windows-x64.dbxp",
+      "sha256": "af6a27ec2176a4920c2a14d50eb77be4f06a72a8a9025fd8c2dd6b1bd92bc454",
+      "size": 239245
     }
   ]
 }
