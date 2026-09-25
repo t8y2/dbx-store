@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.yxlonger.logviewer",
+  "publisher": "yxlonger",
+  "version": "0.1.0-beta.1",
+  "name": "Log Viewer",
+  "description": "View server .log files with keyword search, live tail and download.",
+  "icon": "https://github.com/yxlongery/dbx-logviewer/raw/v0.1.0-beta.1/assets/plugin.svg",
+  "tags": [
+    "logs",
+    "devops"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage"
+  ],
+  "source": "https://github.com/yxlongery/dbx-logviewer/tree/v0.1.0-beta.1",
+  "homepage": "https://github.com/yxlongery/dbx-logviewer",
+  "license": "Apache-2.0",
+  "releaseNotes": "First beta: local directory mode with file list, keyword search, level/time filters, live tail and download. SSH mode not yet implemented.",
+  "localizations": {
+    "zh-CN": {
+      "name": "\u65e5\u5fd7\u67e5\u770b\u5668",
+      "description": "\u67e5\u770b\u670d\u52a1\u5668 .log \u65e5\u5fd7\uff0c\u652f\u6301\u6eda\u52a8\u67e5\u8be2\u4e0e\u6a21\u7cca\u641c\u7d22"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0-beta.1/io.github.yxlonger.logviewer-0.1.0-beta.1-darwin-arm64.dbxp",
+      "sha256": "2a0622aa67a5e8d014355beefeb3889a903174b51e8ee19a0eb6dff9434edd4d",
+      "size": 279706
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0-beta.1/io.github.yxlonger.logviewer-0.1.0-beta.1-darwin-x64.dbxp",
+      "sha256": "899c55bde6cd7c7a936205af342c124c6ddbb25040d69b16c7083fb1b113b8bf",
+      "size": 297940
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0-beta.1/io.github.yxlonger.logviewer-0.1.0-beta.1-linux-arm64.dbxp",
+      "sha256": "7f0afe46c4a40142154649c619a1f36288df96dc0c953532a44ea1ab12b09ff0",
+      "size": 304768
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0-beta.1/io.github.yxlonger.logviewer-0.1.0-beta.1-linux-x64.dbxp",
+      "sha256": "b50de98a9d47acc3c7adf0c54d0161742f1be26917f8f8ddfa65db7cff73edd4",
+      "size": 324278
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/yxlongery/dbx-logviewer/releases/download/v0.1.0-beta.1/io.github.yxlonger.logviewer-0.1.0-beta.1-windows-x64.dbxp",
+      "sha256": "97c4df27332f0618dce4328ebd0bbe6920a3a3f8909b4d9154483af8f8cfc36e",
+      "size": 225089
+    }
+  ]
+}
