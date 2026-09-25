@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.k8s",
+  "publisher": "eryajf",
+  "version": "0.1.5",
+  "icon": "https://raw.githubusercontent.com/eryajf/dbx-plugin-k8s/v0.1.5/assets/plugin.png",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/eryajf/dbx-plugin-k8s/releases/download/v0.1.5/io.dbx.k8s-0.1.5-darwin-arm64.dbxp",
+      "sha256": "f1b250d4878be2ef0bcf6364760c06a5f9b7e81e36004b71849eb0c8bed626e2",
+      "size": 32069024
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/eryajf/dbx-plugin-k8s/releases/download/v0.1.5/io.dbx.k8s-0.1.5-darwin-x64.dbxp",
+      "sha256": "7da6a99edf65249cc2c2d5915e8b16d960e46099a56914a42517b60654607483",
+      "size": 33632717
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/eryajf/dbx-plugin-k8s/releases/download/v0.1.5/io.dbx.k8s-0.1.5-linux-arm64.dbxp",
+      "sha256": "61923cd20dea2c68c7b4782da19b5932e6e022e5eda31ca5fac1ff81078460e0",
+      "size": 30239711
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/eryajf/dbx-plugin-k8s/releases/download/v0.1.5/io.dbx.k8s-0.1.5-linux-x64.dbxp",
+      "sha256": "88c60e206cd7be1044e51b78767edb97caab1656aa7e92da19e5d766acc94496",
+      "size": 32272860
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/eryajf/dbx-plugin-k8s/releases/download/v0.1.5/io.dbx.k8s-0.1.5-windows-arm64.dbxp",
+      "sha256": "1be09e1898c2c43d6ce886e3883966c361d775584dba31fca2c7dc987e42f2f8",
+      "size": 30298616
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/eryajf/dbx-plugin-k8s/releases/download/v0.1.5/io.dbx.k8s-0.1.5-windows-x64.dbxp",
+      "sha256": "1d425e8604f12c906472de89a6ad034e543b08018f5e3138fcd6e663387e4a82",
+      "size": 32577234
+    }
+  ],
+  "permissions": [
+    "host.events",
+    "host.workbench"
+  ]
+}
