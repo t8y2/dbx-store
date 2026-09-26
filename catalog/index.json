@@ -319,7 +319,7 @@
       "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files.",
       "publisher": "nintycat",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.4/icon.svg",
       "tags": [
         "terminal",
         "ssh",
@@ -333,8 +333,50 @@
       "source": "https://github.com/NintyCat/dbx-plugin-NintyShell",
       "homepage": "https://github.com/NintyCat/dbx-plugin-NintyShell",
       "license": "MIT",
-      "latestVersion": "0.8.2",
+      "latestVersion": "0.8.4",
       "versions": [
+        {
+          "version": "0.8.4",
+          "releasedAt": "2026-09-26T01:15:59.283Z",
+          "releaseNotes": "Windows SSH linkage fix: cwd reports (OSC 7) from the remote shell were parsed with the client's Windows path rules and silently dropped, so the file panel never followed the terminal and remote path completion stayed in the home directory; SSH sessions now parse remote paths as POSIX. Windows Local Shell PTY fix: the local terminal now uses the go-pty ConPTY implementation, resolving black-screen/silent sessions that fell back to per-command mode on Windows 11 25H2; silent sessions now run automatic diagnostics into pty.log. Also includes Windows support for the Local Shell connection (auto-selected powershell.exe, command wrapper with exit-code and working-directory reporting) and platform-aware shell defaults; panic log moved from /tmp to the user cache directory with tightened permissions; collapsible activity log in the file panel.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.4/com.nintycat.shell-0.8.4-darwin-arm64.dbxp",
+              "sha256": "02b9a6c4e0b43639fc48108cc2760c5397566d30a15825f8e648963daf11b52d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4246126
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.4/com.nintycat.shell-0.8.4-darwin-x64.dbxp",
+              "sha256": "63a582b09dc91d6cf127feee95b7b5816d1f34218ba11d7b959f37289ed892f3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4482990
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.4/com.nintycat.shell-0.8.4-linux-arm64.dbxp",
+              "sha256": "9b3c03ff7d5fdfc41b95354aa3174b68861ef6f84d93c0c81c98aef5dfc7129b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4036248
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.4/com.nintycat.shell-0.8.4-linux-x64.dbxp",
+              "sha256": "8122e2373f6a723b4d7fce44de36ce59c570c8f44419a148a025c7f1dcbb9ba2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4364695
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.nintycat.shell/0.8.4/com.nintycat.shell-0.8.4-windows-x64.dbxp",
+              "sha256": "10b5fa4c61b8bc5373ec4d12dfdc53552f0b4880abdd70946621cced72a27293",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4640371
+            }
+          ]
+        },
         {
           "version": "0.8.2",
           "releasedAt": "2026-09-23T03:45:54.502Z",
