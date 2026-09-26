@@ -5625,6 +5625,76 @@
       }
     },
     {
+      "id": "io.github.yxlonger.logviewer",
+      "name": "Log Viewer",
+      "description": "View server .log files with keyword search, live tail and download.",
+      "publisher": "yxlonger",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.1.6/icon.svg",
+      "tags": [
+        "logs",
+        "devops"
+      ],
+      "permissions": [
+        "host.events",
+        "host.storage"
+      ],
+      "source": "https://github.com/yxlongery/dbx-logviewer/tree/v0.1.6",
+      "homepage": "https://github.com/yxlongery/dbx-logviewer",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.6",
+      "versions": [
+        {
+          "version": "0.1.6",
+          "releasedAt": "2026-09-26T06:48:47.625Z",
+          "releaseNotes": "Hide without confirm dialog; sort/wrap quick toggles in log header; no-wrap uses pre with horizontal scroll.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.1.6/io.github.yxlonger.logviewer-0.1.6-darwin-arm64.dbxp",
+              "sha256": "8392377dd7ab554740a563df597f9c454c86e841a0a04e5f85ad64c63748bea8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 313962
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.1.6/io.github.yxlonger.logviewer-0.1.6-darwin-x64.dbxp",
+              "sha256": "a6e4255aad477531347bd2816aa419a5ce3798dd3bbe4cda4b7c3fb16756c559",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 333075
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.1.6/io.github.yxlonger.logviewer-0.1.6-linux-arm64.dbxp",
+              "sha256": "76cc8237d608eefc4245341f31aa08fc23b12b7f9882a07d82aa417075c678af",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 337566
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.1.6/io.github.yxlonger.logviewer-0.1.6-linux-x64.dbxp",
+              "sha256": "ddd752ea68d833515c33ec5dd8b803599c91684d05fd7d97e3bb480ed6f1725d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 357875
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.1.6/io.github.yxlonger.logviewer-0.1.6-windows-x64.dbxp",
+              "sha256": "e9d06d293736571cf5a02a784f9c540558c852b3d1e3e88de9bde61452658e05",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 263398
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "日志查看器",
+          "description": "查看服务器 .log 日志，支持滚动查询与模糊搜索"
+        }
+      }
+    },
+    {
       "id": "monstercat.waitwork",
       "name": "Wait Work",
       "description": "Work a while, rest a while. Read local TXT, EPUB and MOBI books or online books from custom sources, with chapter caching and autosave. Customize and save the SQL cover, result table and labels; reading folds away automatically when switching pages.",
