@@ -1896,7 +1896,7 @@
       "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.47/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.48/icon.svg",
       "tags": [
         "kafka",
         "streaming",
@@ -1905,13 +1905,56 @@
       ],
       "permissions": [
         "host.events",
+        "host.storage",
         "host.workbench"
       ],
       "source": "https://github.com/jinpy666/dbx-plugin-kafka",
       "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
       "license": "MIT",
-      "latestVersion": "0.1.47",
+      "latestVersion": "0.1.48",
       "versions": [
+        {
+          "version": "0.1.48",
+          "releasedAt": "2026-09-26T01:04:40.130Z",
+          "releaseNotes": "修复工作台状态在真机上不持久化的问题：DBX 沙箱 iframe 的 opaque origin 下 localStorage 直接抛错，原持久化静默失效；现在统一经 pluginStorage 适配器接入宿主 window.dbxPlugin.storage（Host API 1.2，capabilities.storage 探测，降级链：宿主桥 → 受控 localStorage → 内存，旧键一次性搬家），消息查询表单、树宽/折叠、内部 topic 显示、收藏 topic 与时区设置刷新后均保留。同步完成依赖升级：后端 twmb/franz-go 1.22.0、golang.org/x/net 0.59.0 等，前端 vue 3.5.43、ag-grid-community 36.2.0 等，工具链基线提升至 Go 1.26。Fixed workbench state not persisting on the desktop host: localStorage throws under the sandbox iframe's opaque origin, so the previous persistence silently failed; state now goes through a pluginStorage adapter backed by the host window.dbxPlugin.storage bridge (Host API 1.2, capabilities.storage detection, with guarded localStorage and in-memory fallbacks and one-shot legacy-key migration), keeping the messages form, tree width/collapse, internal-topic visibility, favorite topics and timezone across reloads. Dependencies were upgraded in lockstep: twmb/franz-go 1.22.0 and golang.org/x/net 0.59.0 on the backend, vue 3.5.43 and ag-grid-community 36.2.0 on the frontend, with the toolchain floor raised to Go 1.26.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.48/io.dbx.kafka-0.1.48-darwin-arm64.dbxp",
+              "sha256": "6bbb17c5961c38fbbe1d3744d69e1aa68626a68fef6895e48dccc154966dea20",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13862950
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.48/io.dbx.kafka-0.1.48-darwin-x64.dbxp",
+              "sha256": "d78bbd848741b810195e8ca8952d85e6f81000da9782ac90b00f51305ff1e979",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14726723
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.48/io.dbx.kafka-0.1.48-linux-arm64.dbxp",
+              "sha256": "c981d1925d6cc1549a764387146882e262395d325ed1ac3f62a8ff2c6ee1c9ef",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13065124
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.48/io.dbx.kafka-0.1.48-linux-x64.dbxp",
+              "sha256": "895b640705edc2758b4f31c90da9716a6a58235541a29105a8adf3432a681d24",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14214627
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.48/io.dbx.kafka-0.1.48-windows-x64.dbxp",
+              "sha256": "6db9f551bf6797fd1e743e95f066aa48f97e92e00df459b33abdee4282a75aab",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14298204
+            }
+          ]
+        },
         {
           "version": "0.1.47",
           "releasedAt": "2026-09-21T03:32:57.351Z",
@@ -2286,7 +2329,7 @@
       "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.89/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.90/icon.svg",
       "tags": [
         "ldap",
         "directory",
@@ -2295,13 +2338,56 @@
       ],
       "permissions": [
         "host.events",
+        "host.storage",
         "host.workbench"
       ],
       "source": "https://github.com/jinpy666/dbx-plugin-ldap",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
       "license": "MIT",
-      "latestVersion": "0.1.89",
+      "latestVersion": "0.1.90",
       "versions": [
+        {
+          "version": "0.1.90",
+          "releasedAt": "2026-09-26T00:59:04.072Z",
+          "releaseNotes": "首个商店版本：LDAP 目录浏览与管理工作台。DN 树浏览、分页搜索与 RFC 4515 过滤器；条目查看、新增、编辑、重命名与删除；RootDSE/Schema 检查与 LDIF/CSV 导出；支持 anonymous、simple、Kerberos/GSSAPI、NTLM、DIGEST-MD5、SASL External 等认证矩阵与 LDAP/StartTLS/LDAPS；内置只读模式、Base DN 白名单、屏蔽属性和审计等安全护栏，支持粘贴 ldapsearch 命令一键导入搜索表单，并提供 MCP 工具面供 AI 客户端复用。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.90/io.dbx.ldap-0.1.90-darwin-arm64.dbxp",
+              "sha256": "9d4a58a09b1484b04ff0497e3fd37936c647cdaab4707297d2ef2e11c57ffa37",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6452512
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.90/io.dbx.ldap-0.1.90-darwin-x64.dbxp",
+              "sha256": "2290897f8a1a73939859a050a313ccc8dc9cf0076d79566f58de92092f9d9202",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6776044
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.90/io.dbx.ldap-0.1.90-linux-arm64.dbxp",
+              "sha256": "99c96169522932ba0990c97b6a5c32e25ba240fe33bc92791e80ad705a91861e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6431437
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.90/io.dbx.ldap-0.1.90-linux-x64.dbxp",
+              "sha256": "46aeb9117fd641d412080ea85455eee00d507d4f6d87cef0e4a237289fa4da73",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6868029
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.90/io.dbx.ldap-0.1.90-windows-x64.dbxp",
+              "sha256": "a52a07b7dadd983151a4ea295c430a33c4ed44b12dcdc33edaa1e876c75434ae",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6915757
+            }
+          ]
+        },
         {
           "version": "0.1.89",
           "releasedAt": "2026-09-21T04:34:44.703Z",
