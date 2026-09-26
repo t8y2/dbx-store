@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.ldap",
+  "publisher": "jinpy",
+  "version": "0.1.92",
+  "name": "LDAP Studio",
+  "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export.",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ldap/ldap-v0.1.92/assets/plugin.svg",
+  "tags": [
+    "ldap",
+    "directory",
+    "auth",
+    "enterprise"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/jinpy666/dbx-plugin-ldap",
+  "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
+  "license": "MIT",
+  "releaseNotes": "安全加固版：读路径（搜索/取条目/对比/子计数）补齐裸控制字符 DN 防护；modifyDn 预检覆盖目标 DN 白名单（不再白烧确认令牌）；条目对比修复在途修改目标的过期结论、大值展示截断；UI 偏好水合超时降级（宿主桥挂起不再白屏）；持久化 map 段数上限防无限增长。注意：本版要求宿主 Host API ≥1.2（dbx ≥0.6.18），旧宿主会被兼容校验拒绝。",
+  "localizations": {
+    "zh-CN": {
+      "name": "LDAP Studio",
+      "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.92/io.dbx.ldap-0.1.92-darwin-arm64.dbxp",
+      "sha256": "b1555accaa7e33643788bf03a84e5c92b70ee0b83ab7b8223cdb211604d08373",
+      "size": 6457465
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.92/io.dbx.ldap-0.1.92-darwin-x64.dbxp",
+      "sha256": "dde0645f14c315247501018db38e1760a8a496fdda4b85df66e9c33a75dacaa8",
+      "size": 6784520
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.92/io.dbx.ldap-0.1.92-linux-arm64.dbxp",
+      "sha256": "8aff5cfae99e910699e9e27911d4a67cdc66715b78a45904f9039c7a7631e678",
+      "size": 6439574
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.92/io.dbx.ldap-0.1.92-linux-x64.dbxp",
+      "sha256": "2f04379a1e1ccd58733307bcc5345d754de6819e9db7a4b14c176baba4b4de72",
+      "size": 6871464
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.92/io.dbx.ldap-0.1.92-windows-x64.dbxp",
+      "sha256": "1d3d9e9142a0dd54ab82743eba52f04c458d26311bdc711e0cbc87ada9c3ea76",
+      "size": 6923753
+    }
+  ]
+}
