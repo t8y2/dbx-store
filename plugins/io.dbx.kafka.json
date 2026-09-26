@@ -4,7 +4,7 @@
   "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.48/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.49/assets/plugin.svg",
   "tags": [
     "kafka",
     "streaming",
@@ -19,7 +19,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-kafka",
   "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
   "license": "MIT",
-  "latestVersion": "0.1.48",
+  "latestVersion": "0.1.49",
   "versions": [
     {
       "version": "0.1.39",
@@ -396,6 +396,48 @@
           "sha256": "6db9f551bf6797fd1e743e95f066aa48f97e92e00df459b33abdee4282a75aab",
           "signingKeyId": "dbx-store-release-2026",
           "size": 14298204
+        }
+      ]
+    },
+    {
+      "version": "0.1.49",
+      "releasedAt": "2026-09-26T06:38:26.302Z",
+      "releaseNotes": "2026-09-26 安全审查修复批次：解压全分支 16MiB 上限（LimitReader 与 zstd max-memory）并给 valueText 补齐同规格 base64 截断，杜绝解压炸弹；修复消费池竞态（consumePoolPut 跳过 inUse 条目，并发同形状消费不再互杀）；LoadSettings 补 cursorTtlSecs/maxCursorSessions 持久化往返；regex 过滤命中预编译缓存；stream/start 预校验 decode/decompression 参数。Schema Registry 客户端接入连接 TLS 配置，skip-verify 连接在审计中留痕并修订三值契约注释；消费组删除新增输入组名确认（ensureGroupDeleteConfirm，前端七语），CSS 令牌语义化。打包链路改为源码现构建前端（ui/index.html 脱库），build.sh 支持 DBX_PREBUILT_UI=1 复用 CI 预置产物。Security review fixes: 16MiB cap on all decompress branches (LimitReader + zstd max-memory) with matching base64 truncation for valueText to defuse decompression bombs; consume-pool race fix (consumePoolPut skips inUse entries so concurrent same-shape consumes no longer evict each other); LoadSettings now round-trips cursorTtlSecs/maxCursorSessions; regex filter hits the precompiled cache; stream/start pre-validates decode/decompression params. The Schema Registry client now honors connection TLS settings, skip-verify connections are recorded in the audit trail, and group deletion gained a type-the-group-name confirmation (seven languages). Packaging now builds the frontend from source (ui/index.html de-vendored), and build.sh supports DBX_PREBUILT_UI=1 to reuse CI-built UI.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.49/io.dbx.kafka-0.1.49-darwin-arm64.dbxp",
+          "sha256": "7b6e02960c2b60c8736629e5873f90d159b380c239f38895b15172cbb2831bb7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13865810
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.49/io.dbx.kafka-0.1.49-darwin-x64.dbxp",
+          "sha256": "54ebff3528f7a85e6942d250518b3dab1d99e788fd2a444d691157897da92f10",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14731061
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.49/io.dbx.kafka-0.1.49-linux-arm64.dbxp",
+          "sha256": "c23ba5e2b4e4a958bd258e13ca877bfca46e7987debbef3139184c987700b945",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13066533
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.49/io.dbx.kafka-0.1.49-linux-x64.dbxp",
+          "sha256": "12d629482c35e176f973c7472093b974e03bc2d48e533cdbb0e77086e2543a67",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14220383
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.49/io.dbx.kafka-0.1.49-windows-x64.dbxp",
+          "sha256": "1eb941e7ed3df5f25ef257c22c43a9ca08c61adaa56c7f6249cfdfd32186cc69",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14303160
         }
       ]
     }
