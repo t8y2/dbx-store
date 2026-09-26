@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.kafka",
+  "publisher": "jinpy",
+  "version": "0.1.50",
+  "name": "Kafka Studio",
+  "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results.",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.50/assets/plugin.svg",
+  "tags": [
+    "kafka",
+    "streaming",
+    "messaging",
+    "schema-registry"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/jinpy666/dbx-plugin-kafka",
+  "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
+  "license": "MIT",
+  "releaseNotes": "2026-09-26/27 代码评审修复批次（2 高危 + 6 中危 + 6 低危全项）：digest 大扫描新增 64MiB 留存字节预算并跳过 valueBase64 通道（合法 maxScanRecords=100000 不再可能把 sidecar 打到 OOM），payload 新增 retentionTruncated 标记；消费池 release 路径字段写入收拢进池锁并新增 -race 并发压测；stdio 改有界增量读行（超限请求不再预缓冲整行）并加每请求 32 并发背压；整数参数严格解析（partition/partitionOffsets/timestampMs 拒绝小数与越界值，绝不静默折算）；Schema Registry 非 2xx 错误体 2KB 截断；消息过滤 key/value 通道免整串拷贝；前端解压全线 16MiB 上限（gzip 计数断流、zstd/snappy 帧头预检、lz4 输出后检），补齐后端防护的镜像缺口；presets 契约四方对齐；confirmToken 在随机源失败时拒绝签发而非回退可预测值；timestampMs=0 前后端同线拒绝。工程面新增方法契约机器守护：methodContract.json 单一事实源 + backend AST/实调 + frontend mock 三方测试（漂移注入演练验证有效）；shared/frontend 五文件补 vendored 来源戳并纳入 validate_repo 检查。Security review fixes (2 high, 6 medium, 6 low): digest scans now cap retained payloads at 64MiB and skip the valueBase64 channel (maxScanRecords=100000 can no longer OOM the sidecar), with a retentionTruncated flag; consume-pool release writes moved under the pool lock with a -race stress test; stdio now reads lines with a bounded accumulator (oversized requests are rejected without buffering the whole line) plus a 32-request concurrency backpressure; integer arguments reject fractional and out-of-range values; Schema Registry error bodies are truncated to 2KB; key/value filter channels match bytes without full copies; frontend decompression is capped at 16MiB across gzip/zstd/snappy/lz4; presets contract aligned on all four surfaces; confirmToken issuance fails hard when the random source fails; timestampMs=0 is rejected end to end. Engineering: a machine-enforced method contract (methodContract.json verified by backend AST/live-call and frontend mock tests, proven by drift injection), and vendored provenance headers on shared/frontend files checked by validate_repo.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Kafka Studio",
+      "description": "在一个工作台中管理 Apache Kafka：查看 topic 与分区、生产和消费消息、过滤与解码 payload、监控消费组 lag、管理 offset 和 ACL、流式消费并导出结果。"
+    },
+    "zh-TW": {
+      "name": "Kafka Studio",
+      "description": "DBX 的 Kafka 主控台外掛：topic 與分割區、訊息生產與消費（過濾/解碼）、消費組（lag 與 offset 重置）、ACL、串流消費與匯出。"
+    },
+    "en": {
+      "name": "Kafka Studio",
+      "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results."
+    },
+    "es": {
+      "name": "Kafka Studio",
+      "description": "Plugin de consola Kafka para DBX: topics y particiones, producción/consumo de mensajes con filtros y decodificación, grupos de consumidores con lag y reset de offsets, ACL, consumo en streaming y exportación."
+    },
+    "it": {
+      "name": "Kafka Studio",
+      "description": "Plugin console Kafka per DBX: topic e partizioni, produzione/consumo di messaggi con filtri e decodifica, gruppi di consumatori con lag e reset degli offset, ACL, consumo in streaming ed esportazione."
+    },
+    "ja": {
+      "name": "Kafka Studio",
+      "description": "DBX 用 Kafka コンソールプラグイン: トピックとパーティション、フィルタリング/デコード付きメッセージ送受信、コンシューマーグループ（ラグと offset リセット）、ACL、ストリーミング消費とエクスポート。"
+    },
+    "pt-BR": {
+      "name": "Kafka Studio",
+      "description": "Plugin de console Kafka para o DBX: tópicos e partições, produção/consumo de mensagens com filtros e decodificação, grupos de consumidores com lag e redefinição de offsets, ACLs, consumo em streaming e exportação."
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.50/io.dbx.kafka-0.1.50-darwin-arm64.dbxp",
+      "sha256": "6cf68627e6a304749bf800ebdd70d85cdf678008c5dc302c6eda4f9a1df03641",
+      "size": 13870377
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.50/io.dbx.kafka-0.1.50-darwin-x64.dbxp",
+      "sha256": "aeb9d4f24c1a63a369b6067d12728cab7f541ea9f5e5a4cc9dc8d8b36a63baf1",
+      "size": 14731500
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.50/io.dbx.kafka-0.1.50-linux-arm64.dbxp",
+      "sha256": "2a22b984ea67efbc3774887ed05e8da13d866b49f88a43a31230114cfe29502a",
+      "size": 13069367
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.50/io.dbx.kafka-0.1.50-linux-x64.dbxp",
+      "sha256": "b9daae9cba890202da46ba5b55c74a574aa63664aec4a060184dab37bc7efb9c",
+      "size": 14224679
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.50/io.dbx.kafka-0.1.50-windows-x64.dbxp",
+      "sha256": "348ab8d07c5fda9e84cd9cdf37b13e0c50161ec7fb595346b8780a30e3c0d3af",
+      "size": 14307336
+    }
+  ]
+}
