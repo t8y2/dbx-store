@@ -1344,7 +1344,7 @@
       "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.77/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.78/icon.svg",
       "tags": [
         "files",
         "storage",
@@ -1361,8 +1361,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-files",
       "homepage": "https://github.com/jinpy666/dbx-plugin-files",
       "license": "MIT",
-      "latestVersion": "0.1.77",
+      "latestVersion": "0.1.78",
       "versions": [
+        {
+          "version": "0.1.78",
+          "releasedAt": "2026-09-26T06:28:17.813Z",
+          "releaseNotes": "新增工具栏「上传文件夹」：走 webview 原生 webkitdirectory 选择器（web/docker 与桌面宿主同一路径），按相对路径还原目录结构落到 目标/<文件夹名>/；先建远端目录树（目录已存在=合并），再逐文件走统一上传泵；同名冲突策略按子目录分组生效（询问档带目录前缀、自动重命名在目录内让位）。目录结构与落盘内容均有集成测试覆盖。New toolbar action \"Upload folder\": a webview-native webkitdirectory picker (same path on web/docker and desktop hosts) that restores the directory structure under target/<folder>/, creates the remote directory tree first (existing dirs merge), then streams every file through the unified upload pump; the conflict policy applies per subdirectory (ask shows dir-prefixed names, rename de-dupes within each directory).",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.78/io.dbx.files-0.1.78-darwin-arm64.dbxp",
+              "sha256": "4fc412d1485e5267253a031b8dc63f335f0ce107005de68f1fee95e835a97c3f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 39351842
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.78/io.dbx.files-0.1.78-darwin-x64.dbxp",
+              "sha256": "55012d333cd69d05f4a99e8405a46eb24562f80a4db83c8ddf8ed710078d6ec8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 41842847
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.78/io.dbx.files-0.1.78-linux-arm64.dbxp",
+              "sha256": "777dd9b8f0ccb4ba3e598588505930917cc213791df01cb34e56d6fba27329e9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 35713536
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.78/io.dbx.files-0.1.78-linux-x64.dbxp",
+              "sha256": "a93d07cba884a9ce57b796f2c9784e6203798a1b43d1735178f67910acae0c6a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 38643006
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.78/io.dbx.files-0.1.78-windows-x64.dbxp",
+              "sha256": "43b25805b2d1fc448fa3126773af0b2d28dc6e24f8e218b7849ae4c24ff134e6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 38003055
+            }
+          ]
+        },
         {
           "version": "0.1.77",
           "releasedAt": "2026-09-24T18:31:21.041Z",
@@ -1988,7 +2030,7 @@
       "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.48/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.49/icon.svg",
       "tags": [
         "kafka",
         "streaming",
@@ -2003,8 +2045,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-kafka",
       "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
       "license": "MIT",
-      "latestVersion": "0.1.48",
+      "latestVersion": "0.1.49",
       "versions": [
+        {
+          "version": "0.1.49",
+          "releasedAt": "2026-09-26T06:38:26.302Z",
+          "releaseNotes": "2026-09-26 安全审查修复批次：解压全分支 16MiB 上限（LimitReader 与 zstd max-memory）并给 valueText 补齐同规格 base64 截断，杜绝解压炸弹；修复消费池竞态（consumePoolPut 跳过 inUse 条目，并发同形状消费不再互杀）；LoadSettings 补 cursorTtlSecs/maxCursorSessions 持久化往返；regex 过滤命中预编译缓存；stream/start 预校验 decode/decompression 参数。Schema Registry 客户端接入连接 TLS 配置，skip-verify 连接在审计中留痕并修订三值契约注释；消费组删除新增输入组名确认（ensureGroupDeleteConfirm，前端七语），CSS 令牌语义化。打包链路改为源码现构建前端（ui/index.html 脱库），build.sh 支持 DBX_PREBUILT_UI=1 复用 CI 预置产物。Security review fixes: 16MiB cap on all decompress branches (LimitReader + zstd max-memory) with matching base64 truncation for valueText to defuse decompression bombs; consume-pool race fix (consumePoolPut skips inUse entries so concurrent same-shape consumes no longer evict each other); LoadSettings now round-trips cursorTtlSecs/maxCursorSessions; regex filter hits the precompiled cache; stream/start pre-validates decode/decompression params. The Schema Registry client now honors connection TLS settings, skip-verify connections are recorded in the audit trail, and group deletion gained a type-the-group-name confirmation (seven languages). Packaging now builds the frontend from source (ui/index.html de-vendored), and build.sh supports DBX_PREBUILT_UI=1 to reuse CI-built UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.49/io.dbx.kafka-0.1.49-darwin-arm64.dbxp",
+              "sha256": "7b6e02960c2b60c8736629e5873f90d159b380c239f38895b15172cbb2831bb7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13865810
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.49/io.dbx.kafka-0.1.49-darwin-x64.dbxp",
+              "sha256": "54ebff3528f7a85e6942d250518b3dab1d99e788fd2a444d691157897da92f10",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14731061
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.49/io.dbx.kafka-0.1.49-linux-arm64.dbxp",
+              "sha256": "c23ba5e2b4e4a958bd258e13ca877bfca46e7987debbef3139184c987700b945",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13066533
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.49/io.dbx.kafka-0.1.49-linux-x64.dbxp",
+              "sha256": "12d629482c35e176f973c7472093b974e03bc2d48e533cdbb0e77086e2543a67",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14220383
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.49/io.dbx.kafka-0.1.49-windows-x64.dbxp",
+              "sha256": "1eb941e7ed3df5f25ef257c22c43a9ca08c61adaa56c7f6249cfdfd32186cc69",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14303160
+            }
+          ]
+        },
         {
           "version": "0.1.48",
           "releasedAt": "2026-09-26T01:04:40.130Z",
@@ -2421,7 +2505,7 @@
       "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.90/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.91/icon.svg",
       "tags": [
         "ldap",
         "directory",
@@ -2436,8 +2520,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ldap",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
       "license": "MIT",
-      "latestVersion": "0.1.90",
+      "latestVersion": "0.1.91",
       "versions": [
+        {
+          "version": "0.1.91",
+          "releasedAt": "2026-09-26T06:32:37.544Z",
+          "releaseNotes": "代码审查修复版：modifyDn newRDN/newSuperior 控制字符防护并同步 MCP 预检；搜索聚合 10 万防御上限与 MCP digest sizeLimit clamp；tls-insecure 审计回归 ok/denied/error 三值契约；语义色改用主题令牌；Disconnect/WithConn 竞态身份双检防 fd 泄漏等 9 项修复。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.91/io.dbx.ldap-0.1.91-darwin-arm64.dbxp",
+              "sha256": "a013de345e626d717ce7a9a744b492d0d84fe345a3335cc4145230f29b846bd3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6457594
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.91/io.dbx.ldap-0.1.91-darwin-x64.dbxp",
+              "sha256": "89c63f786fb8a2bb2c7bf830117819e9ad237634abc49b0d01e71a8d56f6be86",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6784234
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.91/io.dbx.ldap-0.1.91-linux-arm64.dbxp",
+              "sha256": "3b5f263e978913e7f0192d2cbe5438ce4bd424134f172612506d708229a2ca17",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6437085
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.91/io.dbx.ldap-0.1.91-linux-x64.dbxp",
+              "sha256": "8688dc4f3c6f21075056c6b7069fdd3fc3c9d0c23fe922b0bba386e0f3bae9be",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6871201
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.91/io.dbx.ldap-0.1.91-windows-x64.dbxp",
+              "sha256": "2fc4d3e54c9cbb304f29f220c77cbd8893ee7fe6eb1cf22d8fbc05c39c34ca66",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6919947
+            }
+          ]
+        },
         {
           "version": "0.1.90",
           "releasedAt": "2026-09-26T00:59:04.072Z",
