@@ -1,19 +1,24 @@
 {
   "id": "chatawesome.cn.json-pretty",
-  "name": "JSON Formatter",
-  "description": "Format, minify, fold, escape, import and export JSON. Pure frontend; all data stays on your machine.",
+  "name": "JSON 格式化",
+  "description": "格式化、压缩、折叠、转义、导入、导出 JSON，左侧工作区树可新建文件夹/JSON 文件。",
   "publisher": "acornlive",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/acornlive/dbx-plugin-json-pretty/refs/tags/v0.1.0/assets/json-pretty.svg",
+  "icon": "https://raw.githubusercontent.com/acornlive/dbx-plugin-json-pretty/v0.1.2/assets/json-pretty.svg",
   "tags": [
     "developer-tools",
-    "files"
+    "files",
+    "format",
+    "json"
   ],
-  "permissions": [],
-  "source": "https://github.com/acornlive/dbx-plugin-json-pretty/tree/v0.1.0",
+  "permissions": [
+    "host.clipboard:read",
+    "host.filesystem"
+  ],
+  "source": "https://github.com/acornlive/dbx-plugin-json-pretty",
   "homepage": "https://github.com/acornlive/dbx-plugin-json-pretty",
   "license": "MIT",
-  "latestVersion": "0.1.1",
+  "latestVersion": "0.1.2",
   "versions": [
     {
       "version": "0.1.1",
@@ -26,6 +31,48 @@
           "sha256": "7a5509ff30f6135d2a01dae2e1470f1ae7135bf33e5ec038b4fae6042ef81be5",
           "signingKeyId": "dbx-store-release-2026",
           "size": 18715
+        }
+      ]
+    },
+    {
+      "version": "0.1.2",
+      "releasedAt": "2026-09-26T16:29:03.558Z",
+      "releaseNotes": "大文件虚拟滚动、宿主剪贴板桥接、工作区侧栏文件树可自动保存导入和黏贴的json、支持拖拽文件解析",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/chatawesome.cn.json-pretty/0.1.2/chatawesome.cn.json-pretty-0.1.2-darwin-arm64.dbxp",
+          "sha256": "8f615a7f11d53882601f63d2e07689d2fa1eaae18f0f506a30c4d57d4744d6e6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2003061
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/chatawesome.cn.json-pretty/0.1.2/chatawesome.cn.json-pretty-0.1.2-darwin-x64.dbxp",
+          "sha256": "898eb2dc3851533b258fa4392bff0c0fc9f98e4a1380c35e0e76fa62f94a9dd2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2093880
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/chatawesome.cn.json-pretty/0.1.2/chatawesome.cn.json-pretty-0.1.2-linux-arm64.dbxp",
+          "sha256": "5d106fe6ab502f70c02147531f789802e20a5db207f6f56d16f3281125a0dd85",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2023569
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/chatawesome.cn.json-pretty/0.1.2/chatawesome.cn.json-pretty-0.1.2-linux-x64.dbxp",
+          "sha256": "bcd8a8fb2f3a47c8338e39aa2322dabf1682ce7e59ecd5410c1301579772998b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2146431
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/chatawesome.cn.json-pretty/0.1.2/chatawesome.cn.json-pretty-0.1.2-windows-x64.dbxp",
+          "sha256": "bbdda23b8147aed2f7e7d17294a327d6c9d5b76bca9c7bb59d4f03395e7541e0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2196285
         }
       ]
     }
