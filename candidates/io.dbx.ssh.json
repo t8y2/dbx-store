@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.ssh",
+  "publisher": "jinpy",
+  "version": "0.7.1-beta.1",
+  "name": "SSH Terminal",
+  "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ssh/ssh-v0.7.1-beta.1/assets/plugin.svg",
+  "tags": [
+    "ssh",
+    "terminal",
+    "sftp",
+    "remote"
+  ],
+  "permissions": [
+    "host.binary",
+    "host.clipboard:read",
+    "host.events",
+    "host.filesystem",
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/jinpy666/dbx-plugin-ssh",
+  "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
+  "license": "MIT",
+  "releaseNotes": "Beta of the 0.7.1 line: interactive MFA prompts and duplicated sessions; terminal now answers kitty keyboard/XTVERSION/DECRQM capability probes (claude code and neovim no longer freeze at startup); dock panels show a connect-error card with Reconnect instead of a blank panel; SFTP downloads save through the host saveFile bridge (#93). Adds the host.clipboard:read permission (consent-gated native clipboard read, DBX 0.6.23+).",
+  "localizations": {
+    "zh-CN": {
+      "name": "SSH Terminal",
+      "description": "面向服务器运维的 SSH 终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.7.1-beta.1/io.dbx.ssh-0.7.1-beta.1-darwin-arm64.dbxp",
+      "sha256": "1a18617bd737c0f204e84896050d6fa62db9c61c47964a37d932d45c6bde0fe6",
+      "size": 6845973
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.7.1-beta.1/io.dbx.ssh-0.7.1-beta.1-darwin-x64.dbxp",
+      "sha256": "3d2134c5d8f83a93e92a65a4cf57d644370114362c74d7be8b6be3fb3f75111b",
+      "size": 7263952
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.7.1-beta.1/io.dbx.ssh-0.7.1-beta.1-linux-arm64.dbxp",
+      "sha256": "e652064f3fcf870f327e4298043aa1c393bfa51813c93ba145ddbd04702374cc",
+      "size": 7147605
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.7.1-beta.1/io.dbx.ssh-0.7.1-beta.1-linux-x64.dbxp",
+      "sha256": "501bed12c2db2abbc11ba1ad96d9b8c8dcedb27460cebf39a3bf08f3f3ced857",
+      "size": 7391672
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ssh/releases/download/ssh-v0.7.1-beta.1/io.dbx.ssh-0.7.1-beta.1-windows-x64.dbxp",
+      "sha256": "5f19e62db44f3aa1aa99c4c21801e4f475d73364c2ca9cda39f6f9068620be6f",
+      "size": 7422976
+    }
+  ]
+}
