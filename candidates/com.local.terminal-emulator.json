@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "com.local.terminal-emulator",
+  "publisher": "yiqiui",
+  "version": "0.1.10",
+  "name": "Terminal Emulator",
+  "description": "A DBX workbench terminal emulator with multi-tab sessions, split panes, SSH/Telnet/Serial connections, SFTP file management, and a live system monitor.",
+  "icon": "https://github.com/yiqiui/terminal-emulator/releases/download/v0.1.10/icon.svg",
+  "tags": [
+    "terminal",
+    "ssh",
+    "telnet",
+    "serial",
+    "sftp"
+  ],
+  "permissions": [
+    "host.events",
+    "host.binary",
+    "host.workbench",
+    "host.storage"
+  ],
+  "source": "https://github.com/yiqiui/terminal-emulator/tree/v0.1.10",
+  "homepage": "https://github.com/yiqiui/terminal-emulator",
+  "license": "MIT",
+  "releaseNotes": "First store submission: multi-tab sessions with split panes, PowerShell/CMD/Bash/SSH/Telnet/Serial connections, SFTP file explorer, live system monitor, command palette, settings center, and DBX theme following.",
+  "localizations": {
+    "zh-CN": {
+      "name": "终端模拟器",
+      "description": "DBX 工作台内置终端：多标签分屏会话、SSH/Telnet/Serial 连接、SFTP 文件管理、系统监控、命令面板与主题跟随。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/yiqiui/terminal-emulator/releases/download/v0.1.10/com.local.terminal-emulator-0.1.10-windows-x64.dbxp",
+      "sha256": "58e00d8dd16d18ed88ff862131dedb4704a9e150ed5617b84ca9d2151aad64eb",
+      "size": 621095
+    }
+  ]
+}
