@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "chatawesome.cn.json-pretty",
+  "publisher": "acornlive",
+  "version": "0.1.2",
+  "name": "JSON 格式化",
+  "description": "格式化、压缩、折叠、转义、导入、导出 JSON，左侧工作区树可新建文件夹/JSON 文件。",
+  "icon": "https://raw.githubusercontent.com/acornlive/dbx-plugin-json-pretty/v0.1.2/assets/json-pretty.svg",
+  "tags": [
+    "developer-tools",
+    "files",
+    "format",
+    "json"
+  ],
+  "permissions": [
+    "host.clipboard:read",
+    "host.filesystem"
+  ],
+  "source": "https://github.com/acornlive/dbx-plugin-json-pretty",
+  "homepage": "https://github.com/acornlive/dbx-plugin-json-pretty",
+  "license": "MIT",
+  "releaseNotes": "大文件虚拟滚动、宿主剪贴板桥接、工作区侧栏文件树可自动保存导入和黏贴的json、支持拖拽文件解析",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/acornlive/dbx-plugin-json-pretty/releases/download/v0.1.2/chatawesome.cn.json-pretty-0.1.2-darwin-arm64.dbxp",
+      "sha256": "ed8ebed0ab378e22bb4365d9c2df9a5f85f8238de5fea33d19dd6165a09c6f9f",
+      "size": 2002065
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/acornlive/dbx-plugin-json-pretty/releases/download/v0.1.2/chatawesome.cn.json-pretty-0.1.2-darwin-x64.dbxp",
+      "sha256": "2f879a8274474f38b4d0b51d884ceb12201597062e50e52be16452cd5b9073cd",
+      "size": 2092887
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/acornlive/dbx-plugin-json-pretty/releases/download/v0.1.2/chatawesome.cn.json-pretty-0.1.2-linux-arm64.dbxp",
+      "sha256": "7e0cfde1832b0c1b1407c0ae4390e92bd56f4b502d02e8ab951380b63206ec61",
+      "size": 2022575
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/acornlive/dbx-plugin-json-pretty/releases/download/v0.1.2/chatawesome.cn.json-pretty-0.1.2-linux-x64.dbxp",
+      "sha256": "d48d97032c8518430a43728e20277a48c51fa8acab6bbe200fa27dffd5577d0e",
+      "size": 2145439
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/acornlive/dbx-plugin-json-pretty/releases/download/v0.1.2/chatawesome.cn.json-pretty-0.1.2-windows-x64.dbxp",
+      "sha256": "b608fda40e4ec945b5ae1d80bf2035de2addc15885fba94f8fc21843071405a2",
+      "size": 2195288
+    }
+  ]
+}
