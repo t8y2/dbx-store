@@ -4,7 +4,7 @@
   "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ldap/ldap-v0.1.89/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ldap/ldap-v0.1.91/assets/plugin.svg",
   "tags": [
     "ldap",
     "directory",
@@ -13,12 +13,13 @@
   ],
   "permissions": [
     "host.events",
+    "host.storage",
     "host.workbench"
   ],
   "source": "https://github.com/jinpy666/dbx-plugin-ldap",
   "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
   "license": "MIT",
-  "latestVersion": "0.1.89",
+  "latestVersion": "0.1.91",
   "versions": [
     {
       "version": "0.1.67",
@@ -311,6 +312,90 @@
           "sha256": "3696d898bc84090151c40f177320e8ee496b6cd7795abaaad109da495e2d581f",
           "signingKeyId": "dbx-store-release-2026",
           "size": 6913652
+        }
+      ]
+    },
+    {
+      "version": "0.1.90",
+      "releasedAt": "2026-09-26T00:59:04.072Z",
+      "releaseNotes": "首个商店版本：LDAP 目录浏览与管理工作台。DN 树浏览、分页搜索与 RFC 4515 过滤器；条目查看、新增、编辑、重命名与删除；RootDSE/Schema 检查与 LDIF/CSV 导出；支持 anonymous、simple、Kerberos/GSSAPI、NTLM、DIGEST-MD5、SASL External 等认证矩阵与 LDAP/StartTLS/LDAPS；内置只读模式、Base DN 白名单、屏蔽属性和审计等安全护栏，支持粘贴 ldapsearch 命令一键导入搜索表单，并提供 MCP 工具面供 AI 客户端复用。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.90/io.dbx.ldap-0.1.90-darwin-arm64.dbxp",
+          "sha256": "9d4a58a09b1484b04ff0497e3fd37936c647cdaab4707297d2ef2e11c57ffa37",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6452512
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.90/io.dbx.ldap-0.1.90-darwin-x64.dbxp",
+          "sha256": "2290897f8a1a73939859a050a313ccc8dc9cf0076d79566f58de92092f9d9202",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6776044
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.90/io.dbx.ldap-0.1.90-linux-arm64.dbxp",
+          "sha256": "99c96169522932ba0990c97b6a5c32e25ba240fe33bc92791e80ad705a91861e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6431437
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.90/io.dbx.ldap-0.1.90-linux-x64.dbxp",
+          "sha256": "46aeb9117fd641d412080ea85455eee00d507d4f6d87cef0e4a237289fa4da73",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6868029
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.90/io.dbx.ldap-0.1.90-windows-x64.dbxp",
+          "sha256": "a52a07b7dadd983151a4ea295c430a33c4ed44b12dcdc33edaa1e876c75434ae",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6915757
+        }
+      ]
+    },
+    {
+      "version": "0.1.91",
+      "releasedAt": "2026-09-26T06:32:37.544Z",
+      "releaseNotes": "代码审查修复版：modifyDn newRDN/newSuperior 控制字符防护并同步 MCP 预检；搜索聚合 10 万防御上限与 MCP digest sizeLimit clamp；tls-insecure 审计回归 ok/denied/error 三值契约；语义色改用主题令牌；Disconnect/WithConn 竞态身份双检防 fd 泄漏等 9 项修复。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.91/io.dbx.ldap-0.1.91-darwin-arm64.dbxp",
+          "sha256": "a013de345e626d717ce7a9a744b492d0d84fe345a3335cc4145230f29b846bd3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6457594
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.91/io.dbx.ldap-0.1.91-darwin-x64.dbxp",
+          "sha256": "89c63f786fb8a2bb2c7bf830117819e9ad237634abc49b0d01e71a8d56f6be86",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6784234
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.91/io.dbx.ldap-0.1.91-linux-arm64.dbxp",
+          "sha256": "3b5f263e978913e7f0192d2cbe5438ce4bd424134f172612506d708229a2ca17",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6437085
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.91/io.dbx.ldap-0.1.91-linux-x64.dbxp",
+          "sha256": "8688dc4f3c6f21075056c6b7069fdd3fc3c9d0c23fe922b0bba386e0f3bae9be",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6871201
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.91/io.dbx.ldap-0.1.91-windows-x64.dbxp",
+          "sha256": "2fc4d3e54c9cbb304f29f220c77cbd8893ee7fe6eb1cf22d8fbc05c39c34ca66",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6919947
         }
       ]
     }
