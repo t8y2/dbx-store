@@ -1,0 +1,73 @@
+{
+  "id": "com.astergaze.nats",
+  "name": "NATS",
+  "description": "Manage NATS servers: JetStream streams, consumers and messages, key-value buckets, object stores, services, publish, request-reply and live subscriptions.",
+  "publisher": "astergaze",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/astergaze-technologies/dbx-plugin-nats/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "nats",
+    "jetstream",
+    "messaging",
+    "streaming",
+    "key-value"
+  ],
+  "permissions": [
+    "host.events",
+    "host.filesystem"
+  ],
+  "source": "https://github.com/astergaze-technologies/dbx-plugin-nats/tree/v0.1.0",
+  "homepage": "https://github.com/astergaze-technologies/dbx-plugin-nats",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-09-26T06:43:34.511Z",
+      "releaseNotes": "Initial release.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.0/com.astergaze.nats-0.1.0-darwin-arm64.dbxp",
+          "sha256": "c2b6dcdd4eb793cbdc368e198da16707347aef21edddf87bb5fe2744bdb92cd7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5455927
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.0/com.astergaze.nats-0.1.0-darwin-x64.dbxp",
+          "sha256": "a1780e35732d43d7618ca79b6472e86841466a09f58b1713bfd80212e777e898",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5836248
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.0/com.astergaze.nats-0.1.0-linux-arm64.dbxp",
+          "sha256": "757d851913ca8a44fd8eeaea3db672f8dcfd56ed18700942f8f6ee4164782b81",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5218667
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.0/com.astergaze.nats-0.1.0-linux-x64.dbxp",
+          "sha256": "a44a4a6c3ca88b79b1d81ac54c0669e1bf5bd0b1f6d24588598745e41fd9af6b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5707105
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.0/com.astergaze.nats-0.1.0-windows-x64.dbxp",
+          "sha256": "7d34ca01a9863b031893ee5793fbeb30ca8888dd616f9d17a2c2d5f26a06b4de",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5680649
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "NATS",
+      "description": "管理 NATS 服务器：JetStream 流、消费者与消息、键值存储、对象存储、服务、发布、请求-响应和实时订阅。"
+    }
+  }
+}
