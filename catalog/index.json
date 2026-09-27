@@ -4773,21 +4773,71 @@
       "description": "S3-compatible object storage plugin for DBX.",
       "publisher": "t8y2",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.18/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.19/icon.svg",
       "tags": [
         "storage",
         "s3",
         "files"
       ],
       "permissions": [
-        "host.events",
-        "host.binary"
+        "host.binary",
+        "host.clipboard:read",
+        "host.events"
       ],
       "source": "https://github.com/t8y2/dbx-plugin-s3/tree/v0.1.3",
       "homepage": "https://github.com/t8y2/dbx-plugin-s3",
       "license": "Proprietary",
-      "latestVersion": "0.1.18",
+      "latestVersion": "0.1.19",
       "versions": [
+        {
+          "version": "0.1.19",
+          "releasedAt": "2026-09-27T02:32:39.382Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.19/io.github.t8y2.s3-0.1.19-darwin-arm64.dbxp",
+              "sha256": "4bd1014ece1a6f1217b6fd4ddbe014197c5091bf2be8512c889856dda8918768",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6412459
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.19/io.github.t8y2.s3-0.1.19-darwin-x64.dbxp",
+              "sha256": "a0f899502891bdf37300d1ec94579e9482495f1ca8e5ae305359c6178617609f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6762813
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.19/io.github.t8y2.s3-0.1.19-linux-arm64.dbxp",
+              "sha256": "157a5874493a0e089fd6bf0d65a23a41c08e801263a0d3b75d89103be642657a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6325392
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.19/io.github.t8y2.s3-0.1.19-linux-x64.dbxp",
+              "sha256": "dcdfa30336500f9dd723cc2d88850631e77b346c573610d4ad09a32fe4047fe4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6772482
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.19/io.github.t8y2.s3-0.1.19-windows-arm64.dbxp",
+              "sha256": "a7a7a44cd321932721ad7017dc4b9f68f5c1fadda8d51ee0fc60c866a41e4187",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6290243
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.19/io.github.t8y2.s3-0.1.19-windows-x64.dbxp",
+              "sha256": "26e15215cb428cf8d14b466544b93d0ee85f2b910a4fb0cbe5ebb99c43f5fd4a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6778983
+            }
+          ]
+        },
         {
           "version": "0.1.18",
           "releasedAt": "2026-09-21T09:39:05.710Z",
