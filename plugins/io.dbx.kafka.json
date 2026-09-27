@@ -4,7 +4,7 @@
   "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.49/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.51/assets/plugin.svg",
   "tags": [
     "kafka",
     "streaming",
@@ -19,7 +19,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-kafka",
   "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
   "license": "MIT",
-  "latestVersion": "0.1.49",
+  "latestVersion": "0.1.51",
   "versions": [
     {
       "version": "0.1.39",
@@ -438,6 +438,48 @@
           "sha256": "1eb941e7ed3df5f25ef257c22c43a9ca08c61adaa56c7f6249cfdfd32186cc69",
           "signingKeyId": "dbx-store-release-2026",
           "size": 14303160
+        }
+      ]
+    },
+    {
+      "version": "0.1.51",
+      "releasedAt": "2026-09-27T09:08:12.371Z",
+      "releaseNotes": "2026-09-26/27 代码评审修复批次（2 高危 + 6 中危 + 6 低危全项）：digest 大扫描新增 64MiB 留存字节预算并跳过 valueBase64 通道（合法 maxScanRecords=100000 不再可能把 sidecar 打到 OOM），payload 新增 retentionTruncated 标记；消费池 release 路径字段写入收拢进池锁并新增 -race 并发压测；stdio 改有界增量读行（超限请求不再预缓冲整行）并加每请求 32 并发背压；整数参数严格解析（partition/partitionOffsets/timestampMs 拒绝小数与越界值，绝不静默折算）；Schema Registry 非 2xx 错误体 2KB 截断；消息过滤 key/value 通道免整串拷贝；前端解压全线 16MiB 上限（gzip 计数断流、zstd/snappy 帧头预检、lz4 输出后检），补齐后端防护的镜像缺口；presets 契约四方对齐；confirmToken 在随机源失败时拒绝签发而非回退可预测值；timestampMs=0 前后端同线拒绝。工程面新增方法契约机器守护：methodContract.json 单一事实源 + backend AST/实调 + frontend mock 三方测试（漂移注入演练验证有效）；shared/frontend 五文件补 vendored 来源戳并纳入 validate_repo 检查。Security review fixes (2 high, 6 medium, 6 low): digest scans now cap retained payloads at 64MiB and skip the valueBase64 channel (maxScanRecords=100000 can no longer OOM the sidecar), with a retentionTruncated flag; consume-pool release writes moved under the pool lock with a -race stress test; stdio now reads lines with a bounded accumulator (oversized requests are rejected without buffering the whole line) plus a 32-request concurrency backpressure; integer arguments reject fractional and out-of-range values; Schema Registry error bodies are truncated to 2KB; key/value filter channels match bytes without full copies; frontend decompression is capped at 16MiB across gzip/zstd/snappy/lz4; presets contract aligned on all four surfaces; confirmToken issuance fails hard when the random source fails; timestampMs=0 is rejected end to end. Engineering: a machine-enforced method contract (methodContract.json verified by backend AST/live-call and frontend mock tests, proven by drift injection), and vendored provenance headers on shared/frontend files checked by validate_repo.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.51/io.dbx.kafka-0.1.51-darwin-arm64.dbxp",
+          "sha256": "6b43a55f000e5b9a62eb89b7a242fa95919a0d05018bdd307478771de45150b8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13871183
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.51/io.dbx.kafka-0.1.51-darwin-x64.dbxp",
+          "sha256": "68aa81d6638e5e1abaf74a122dad10000e7c34544f9d4df600b7e640450fa07c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14732302
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.51/io.dbx.kafka-0.1.51-linux-arm64.dbxp",
+          "sha256": "bb368e57ef1a08a89f2e40cc3edac9e19f6a68a53d681fce8e8840e840cd071d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13070169
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.51/io.dbx.kafka-0.1.51-linux-x64.dbxp",
+          "sha256": "6c60a73062a8fa8cec856b9284d8b2f5b50cb55210dcda1e69a629e85a8c052a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14225474
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.51/io.dbx.kafka-0.1.51-windows-x64.dbxp",
+          "sha256": "1b6bcaf1afe7ca9058f3c6774fd41df2779678d47f0d7346d199ae551b93323b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14308148
         }
       ]
     }
