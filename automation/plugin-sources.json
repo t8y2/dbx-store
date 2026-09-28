@@ -120,6 +120,11 @@
       "repository": "0verme/dbx-plugin-SchemaSeed",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "Zer0ON1/dbx-plugin-imrepo",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
