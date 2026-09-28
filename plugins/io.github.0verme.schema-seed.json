@@ -1,0 +1,43 @@
+{
+  "id": "io.github.0verme.schema-seed",
+  "name": "SchemaSeed",
+  "description": "Generate deterministic synthetic test data from the current DBX table schema for development, integration testing and functional validation, with preview and CSV / JSON / INSERT SQL export.",
+  "publisher": "0verme",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/0verme/dbx-plugin-SchemaSeed/v0.2.4/assets/plugin.svg",
+  "tags": [
+    "test-data",
+    "synthetic-data",
+    "data-generation",
+    "database"
+  ],
+  "permissions": [
+    "host.schema:read"
+  ],
+  "source": "https://github.com/0verme/dbx-plugin-SchemaSeed/tree/v0.2.4",
+  "homepage": "https://github.com/0verme/dbx-plugin-SchemaSeed",
+  "license": "Apache-2.0",
+  "latestVersion": "0.2.4",
+  "versions": [
+    {
+      "version": "0.2.4",
+      "releasedAt": "2026-09-26T16:42:36.104Z",
+      "releaseNotes": "First DBX Store release: generate deterministic synthetic test data from the current DBX table schema with preview and CSV / JSON / INSERT SQL export. This version saves exports through the DBX Host native save dialog and reports saved / cancelled / failed separately.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/io.github.0verme.schema-seed/0.2.4/io.github.0verme.schema-seed-0.2.4-universal.dbxp",
+          "sha256": "35b68952049b5cf0502f4c8675a5da068f2d8a83581e39f6691d92d7e7f41498",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 686405
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "SchemaSeed",
+      "description": "根据当前 DBX 表结构生成确定性的测试数据，支持预览与 CSV / JSON / INSERT SQL 导出，用于开发、联调与功能验证。"
+    }
+  }
+}

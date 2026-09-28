@@ -21,7 +21,7 @@
   "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.3.10",
   "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
   "license": "Apache-2.0",
-  "latestVersion": "0.3.10",
+  "latestVersion": "0.3.11",
   "versions": [
     {
       "version": "0.1.4",
@@ -160,6 +160,34 @@
           "sha256": "c8c016f8c01d7122565a6214e94da0ee60c98aac212d2585c5afd606232e87e0",
           "signingKeyId": "dbx-store-release-2026",
           "size": 2259776
+        }
+      ]
+    },
+    {
+      "version": "0.3.11",
+      "releasedAt": "2026-09-24T18:24:48.302Z",
+      "releaseNotes": "Judge fixes, official-style result and history panels, and a format button.\n\n- Run and Submit were both broken against leetcode.cn. The code must be sent as typed_code (the plugin sent codedetail, so the server answered \"解答提交 POST 数据丢失\"), verdicts now poll /submissions/detail/<id>/check/ for runs and /v2/check/ for submissions, and state is PENDING / SUCCESS / FAILURE / REVOKED — waiting for the legacy \"Finished\" made every judge burn the whole poll budget and report a timeout even after the answer had already been accepted.\n- Result fields are mapped to what the check endpoints actually return (std_output / std_output_list, compare_result, total_correct, total_testcases, last_testcase, full_compile_error, full_runtime_error), so the verdict panel shows output instead of blanks.\n- Submission history fixed: submissionList declares offset and limit as non-null; omitting offset made the server answer \"发生未知错误，请联系管理员\".\n- UI: verdict card (status + 执行用时 / 内存消耗 / 通过用例 + 输入 / 输出 / 预期结果) and a history table laid out like the site; new 格式化 button using prettier for JavaScript and TypeScript, whitespace-only normalisation elsewhere (prettier has no parser for Go / Python / Java / C++ / Rust, and brace-depth re-indenting would corrupt indentation-significant languages).\n- Verified locally on a real signed-in session: run and submit return verdicts in seconds, the history table renders, formatting works.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.11/com.yiqiui.leetcode-cn-0.3.11-darwin-arm64.dbxp",
+          "sha256": "a1e50729cae421a2c41a1aa76b7f15486c3cea4adac5d71cc5d3ff5f2e7f9ae7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2550020
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.11/com.yiqiui.leetcode-cn-0.3.11-linux-x64.dbxp",
+          "sha256": "ea944e73d27e65081f263c7b6107f5acdef068e4298f3c2bd74fc85cc61cb2c7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2842136
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.11/com.yiqiui.leetcode-cn-0.3.11-windows-x64.dbxp",
+          "sha256": "87864039af112232c2f7870329fcb33090e1122cc4c8142e1e639e55f2806a93",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2654470
         }
       ]
     }

@@ -54,6 +54,19 @@ const candidate = {
   })).sort((left, right) => left.target.localeCompare(right.target)),
 };
 
+// The release identity block is generated from the package manifest at build
+// time, so its permission list is authoritative. The hand-maintained
+// .dbx-store.json copy lags behind package changes and has produced
+// catalog/package permission mismatches that clients reject on update
+// (io.dbx.ssh 0.7.0, io.dbx.files 0.1.74). Legacy release tooling that omits
+// the field or emits it empty falls back to the metadata list.
+if (Array.isArray(identity.permissions) && identity.permissions.length > 0) {
+  for (const permission of identity.permissions) {
+    assert(typeof permission === "string" && permission.length > 0, `Invalid identity permission '${permission}'`);
+  }
+  candidate.permissions = [...new Set(identity.permissions)].sort();
+}
+
 const existingPlugin = await readOptionalJson(path.join("plugins", `${identity.id}.json`));
 if (!existingPlugin) {
   candidate.name ??= identity.name;
