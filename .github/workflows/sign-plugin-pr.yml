@@ -169,6 +169,53 @@ jobs:
           }
           '
 
+      - name: Verify candidate permissions match package manifests
+        working-directory: pr
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require("node:fs");
+          const os = require("node:os");
+          const path = require("node:path");
+          const { execFileSync } = require("node:child_process");
+          const plan = JSON.parse(fs.readFileSync(`${process.env.GITHUB_WORKSPACE}/plan.json`, "utf8"));
+          const mismatches = [];
+          for (const candidate of plan.candidates) {
+            const target = candidate.targets[0];
+            const dir = fs.mkdtempSync(path.join(os.tmpdir(), "permcheck-"));
+            try {
+              const file = path.join(dir, "artifact.dbxp");
+              execFileSync("curl", ["-fsSL", "--max-time", "300", "-o", file, target.url], { stdio: "inherit" });
+              execFileSync("unzip", ["-o", "-q", file, "manifest.json", "-d", dir]);
+              const manifest = JSON.parse(fs.readFileSync(path.join(dir, "manifest.json"), "utf8"));
+              const packagePermissions = JSON.stringify([...(manifest.permissions ?? [])].sort());
+              let candidatePermissions;
+              if (Array.isArray(candidate.permissions)) {
+                candidatePermissions = JSON.stringify([...candidate.permissions].sort());
+              } else {
+                // Version-only candidates omit listing fields; finalize keeps
+                // the published entry's permissions, so those are the catalog
+                // values clients will see and what the package must match.
+                let published = [];
+                try {
+                  published = JSON.parse(fs.readFileSync(path.join("plugins", `${candidate.id}.json`), "utf8")).permissions ?? [];
+                } catch {}
+                candidatePermissions = JSON.stringify([...published].sort());
+              }
+              if (packagePermissions !== candidatePermissions) {
+                mismatches.push(`${candidate.id}@${candidate.version}: package=${packagePermissions} candidate=${candidatePermissions}`);
+              }
+            } finally {
+              fs.rmSync(dir, { recursive: true, force: true });
+            }
+          }
+          if (mismatches.length > 0) {
+            console.error(`::error::Candidate permissions do not match the package manifests; clients reject such updates with a permission-mismatch error. Fix the candidate permissions (or the upstream store metadata) and re-run: ${mismatches.join("; ")}`);
+            process.exit(1);
+          }
+          console.log(`Permission check passed for ${plan.candidates.length} candidate(s).`);
+          NODE
+
       - name: Sign candidates
         working-directory: pr
         env:

@@ -20,3 +20,5 @@ jobs:
       - run: node scripts/validate.mjs
       - name: Verify generated catalog is committed
         run: git diff --exit-code -- catalog/index.json
+      - name: Test release sync failure isolation
+        run: node --test tests/*.test.mjs
