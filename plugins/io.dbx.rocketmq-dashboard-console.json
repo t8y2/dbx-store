@@ -1,0 +1,36 @@
+{
+  "id": "io.dbx.rocketmq-dashboard-console",
+  "name": "dbx-rocketmq-dashboard",
+  "description": "一个类似于 apache/rocketmq-dashboard 的 RocketMQ 驾驶舱，复刻其原生 UI 与业务交互，通过 Go 后端在 DBX 中管理集群、Topic、消费组、消息和 ACL。",
+  "publisher": "ezreal-byte",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-rocketmq-dashboard/v0.3.0/assets/rocketmq.svg",
+  "tags": [
+    "rocketmq",
+    "dashboard",
+    "message-queue"
+  ],
+  "permissions": [
+    "host.workbench"
+  ],
+  "source": "https://github.com/Ezreal-byte/dbx-rocketmq-dashboard/tree/v0.3.0",
+  "homepage": "https://github.com/Ezreal-byte/dbx-rocketmq-dashboard",
+  "license": "Apache-2.0",
+  "latestVersion": "0.3.0",
+  "versions": [
+    {
+      "version": "0.3.0",
+      "releasedAt": "2026-09-28T17:48:13.232Z",
+      "releaseNotes": "项目更名并采用 RocketMQ Logo；复用 Apache RocketMQ Dashboard 原生 Studio UI，移除 AI。新增自动构建和 4.9.7 / 5.3.3 集成测试。Windows x64；完整验收范围和已知限制见仓库测试报告。",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.rocketmq-dashboard-console/0.3.0/io.dbx.rocketmq-dashboard-console-0.3.0-windows-x64.dbxp",
+          "sha256": "e15959baa5f7facbe5dd412f15a4bec06db1ed9b14db28b098d4400552fa4972",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3991644
+        }
+      ]
+    }
+  ]
+}
