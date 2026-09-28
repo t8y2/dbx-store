@@ -122,6 +122,11 @@
       "autoUpdate": true
     },
     {
+      "repository": "Zer0ON1/dbx-plugin-imrepo",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
       "repository": "yuwenGueen/dbx-code-editor",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true

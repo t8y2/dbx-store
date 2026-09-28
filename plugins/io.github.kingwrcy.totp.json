@@ -4,7 +4,7 @@
   "description": "Manage TOTP accounts and generate one-time codes inside DBX.",
   "publisher": "kingwrcy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/kingwrcy/dbx-totp/v0.2.0/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/kingwrcy/dbx-totp/v0.2.2/assets/plugin.svg",
   "tags": [
     "totp",
     "otp",
@@ -12,10 +12,10 @@
     "security"
   ],
   "permissions": [],
-  "source": "https://github.com/kingwrcy/dbx-totp/tree/v0.2.0",
+  "source": "https://github.com/kingwrcy/dbx-totp",
   "homepage": "https://github.com/kingwrcy/dbx-totp",
   "license": "Apache-2.0",
-  "latestVersion": "0.2.0",
+  "latestVersion": "0.2.2",
   "versions": [
     {
       "version": "0.2.0",
@@ -58,20 +58,54 @@
           "size": 2013096
         }
       ]
+    },
+    {
+      "version": "0.2.2",
+      "releasedAt": "2026-09-28T12:56:25.015Z",
+      "releaseNotes": "v0.2.2：修复商店元数据格式，恢复自动同步流程。包含盾牌时钟图标、工具栏和命令面板入口，以及底部 Dock 横向紧凑布局。需要 DBX 0.6.21 或更高版本。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.2/io.github.kingwrcy.totp-0.2.2-darwin-arm64.dbxp",
+          "sha256": "1ac4735d77e29b600ce907f83de61154b079e8dd9261f93c20ea0026dcf490bd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1845003
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.2/io.github.kingwrcy.totp-0.2.2-darwin-x64.dbxp",
+          "sha256": "e1dfaa947c5fbc6b500f42f5d35b4a26b4188924d6d0f695f599e5181c9fc680",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1933889
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.2/io.github.kingwrcy.totp-0.2.2-linux-arm64.dbxp",
+          "sha256": "25bc62d1f41508050928117aa5738599bb3b6bc463472f6495db6928f08f8904",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1831870
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.2/io.github.kingwrcy.totp-0.2.2-linux-x64.dbxp",
+          "sha256": "c6a32eabe4323b7cd68d530de4a2abf4cb77f1d50b165ec76d306324fde85ac7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1950611
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.2/io.github.kingwrcy.totp-0.2.2-windows-x64.dbxp",
+          "sha256": "7e6eb29321530345fdef396f4261eaa77ca29d5e5cef8f1837ae150e15939cc7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2013710
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "TOTP",
       "description": "在 DBX 中管理 TOTP 账号并生成动态验证码。"
-    },
-    "zh": {
-      "name": "TOTP",
-      "description": "在 DBX 中管理 TOTP 账号并生成动态验证码。"
-    },
-    "en": {
-      "name": "TOTP",
-      "description": "Manage TOTP accounts and generate one-time codes inside DBX."
     }
   }
 }
