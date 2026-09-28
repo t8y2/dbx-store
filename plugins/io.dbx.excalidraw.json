@@ -4,7 +4,7 @@
   "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX.",
   "publisher": "runstone",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/Abeautifulsnow/dbx-plugin-excalidraw/v0.3.0/assets/plugin.png",
+  "icon": "https://raw.githubusercontent.com/Abeautifulsnow/dbx-plugin-excalidraw/v0.3.1/assets/plugin.png",
   "tags": [
     "diagram",
     "drawing",
@@ -13,6 +13,7 @@
   ],
   "permissions": [
     "host.ai",
+    "host.clipboard:read",
     "host.filesystem",
     "host.plans:read",
     "host.workbench"
@@ -20,7 +21,7 @@
   "source": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
   "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
   "license": "MIT",
-  "latestVersion": "0.3.0",
+  "latestVersion": "0.3.1",
   "versions": [
     {
       "version": "0.2.0",
@@ -187,6 +188,48 @@
           "sha256": "b65a8b05c2b5ba256d3ca1e41dfeff9df96fae1231d0269af8e7fc022fc38b3d",
           "signingKeyId": "dbx-store-release-2026",
           "size": 18470723
+        }
+      ]
+    },
+    {
+      "version": "0.3.1",
+      "releasedAt": "2026-09-28T17:31:34.951Z",
+      "releaseNotes": "Adds a host-native save dialog, deep links from the editor and the result view into DBX's own file manager, remembered UI preferences (result row count and home search), and hands the Excalidraw editor the host locale as-is so its own translations apply. Also corrects the store listing, which previously declared no permissions while the manifest required two. New in this line: a Plan-on-canvas action in the result view lays the query's estimated execution plan out as an annotatable Excalidraw tree (host plan API required; declares host.plans:read). New in 0.3.0: an Ask AI action hands the parsed plan to DBX's built-in AI panel as a one-way snapshot (declares host.ai), and plan warnings land on the canvas as a sticky note. New in 0.3.1: clipboard integration — the export menu can copy the scene as JSON, and the editor gains a Paste menu that drops a scene copied from another diagram, or a screenshot from the system clipboard, straight onto the canvas (screenshots are stored in the content-addressed asset store like any other image). Reading the clipboard asks once per session and requires the new host.clipboard:read permission; the paste menu hides itself on hosts without the capability.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.1/io.dbx.excalidraw-0.3.1-darwin-arm64.dbxp",
+          "sha256": "62e68c1e3e014a90dc038bfd319cad1b8658a124f4fe95102a000333e25e1ffd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18293929
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.1/io.dbx.excalidraw-0.3.1-darwin-x64.dbxp",
+          "sha256": "4cfd06c38cfd90b5903f73e6883f9a1e68a82b37a9786ff79731142ed4b2b408",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18392405
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.1/io.dbx.excalidraw-0.3.1-linux-arm64.dbxp",
+          "sha256": "6e2edba7121a64157c7d637b7ccfd7c1b0f9a04e9bdc879b0e04b79b47002cc5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18283001
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.1/io.dbx.excalidraw-0.3.1-linux-x64.dbxp",
+          "sha256": "42b62d385e1ccd2bdffe4e60187a61ef428677a730a1e8bdfca241918e03a560",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18412005
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.1/io.dbx.excalidraw-0.3.1-windows-x64.dbxp",
+          "sha256": "c1b4381e7d142ba0f85a856c3aff716e8658239e8d294920f26128028f0a0ed8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18472783
         }
       ]
     }
