@@ -4,7 +4,7 @@
   "description": "Browse, search, and edit local project files inside DBX.",
   "publisher": "yuwengueen",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/yuwenGueen/dbx-code-editor/v0.1.15/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/yuwenGueen/dbx-code-editor/v0.1.17/assets/plugin.svg",
   "tags": [
     "editor",
     "files",
@@ -13,10 +13,10 @@
   "permissions": [
     "host.storage"
   ],
-  "source": "https://github.com/yuwenGueen/dbx-code-editor/tree/v0.1.15",
+  "source": "https://github.com/yuwenGueen/dbx-code-editor/tree/v0.1.17",
   "homepage": "https://github.com/yuwenGueen/dbx-code-editor",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.15",
+  "latestVersion": "0.1.17",
   "versions": [
     {
       "version": "0.1.15",
@@ -57,6 +57,48 @@
           "sha256": "1ce123565e870661a6b2da8466bf6186d743235304666f67ac7cc431e6df4026",
           "signingKeyId": "dbx-store-release-2026",
           "size": 3269259
+        }
+      ]
+    },
+    {
+      "version": "0.1.17",
+      "releasedAt": "2026-09-28T13:10:45.216Z",
+      "releaseNotes": "v0.1.17\n- 新增 Word 导入：将 .docx 转为可恢复的临时 Markdown 草稿，支持标题、列表、表格、链接和图片预览；保存时一并导出图片资源。\n- 修复暗色模式下全选文字时选区过亮、语法高亮不清晰的问题。\n- 补齐常用 VS Code 快捷键，包括移动或复制行、注释、多光标、代码折叠、查找替换和跳转。\n- 新增版本更新说明：升级后首次打开会显示，也可以从帮助菜单或命令面板再次查看。\n- 修复 Windows 构建时更新日志换行符导致的校验失败，统一跨平台发布检查。\n\nEnglish\n- Import .docx documents as recoverable Markdown drafts with headings, lists, tables, links, and image previews. Export images alongside the saved Markdown file.\n- Improved selection contrast and syntax readability in dark mode.\n- Added familiar VS Code shortcuts for line editing, comments, multiple cursors, folding, find and replace, and navigation.\n- Added versioned What's New notes shown once after an update and available from the Help menu or command palette.\n- Fixed release-note validation for Windows line endings across platform builds.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.17/io.github.yuwengueen.dbx-code-editor-0.1.17-darwin-arm64.dbxp",
+          "sha256": "bf62b3983ceff2501809aaad06e2c8f2ce0aa35f5127299454db91c74681ce17",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4133501
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.17/io.github.yuwengueen.dbx-code-editor-0.1.17-darwin-x64.dbxp",
+          "sha256": "5bcee21009dae78045e7d04205095a0e2866a3d6c6af0f412686faf7ad6e6aa2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4275658
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.17/io.github.yuwengueen.dbx-code-editor-0.1.17-linux-arm64.dbxp",
+          "sha256": "be91cfc9dbb5ce6f3ebcac9a03162c0f53288eb0ec5cba6f705adcd357144329",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4130785
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.17/io.github.yuwengueen.dbx-code-editor-0.1.17-linux-x64.dbxp",
+          "sha256": "fc95a07da6670dbcd44090190ab268c614321dd65b2fdb1bd4031277f41d79e7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4331044
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.17/io.github.yuwengueen.dbx-code-editor-0.1.17-windows-x64.dbxp",
+          "sha256": "76f9a4ff3c8a50906d549a9d06edd061a0f3bd5bbabbb31e51bb4de04579eb04",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4339675
         }
       ]
     }
