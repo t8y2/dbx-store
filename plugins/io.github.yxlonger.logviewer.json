@@ -1,10 +1,10 @@
 {
   "id": "io.github.yxlonger.logviewer",
   "name": "Log Viewer",
-  "description": "View server .log files with keyword search, live tail and download.",
+  "description": "查看服务器 .log 日志，支持滚动查询、模糊搜索、实时监控、分块下载；0.2.0 新增 SSH 远端模式。",
   "publisher": "yxlonger",
   "verified": false,
-  "icon": "https://github.com/yxlongery/dbx-logviewer/raw/v0.1.6/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/yxlongery/dbx-logviewer/v0.2.0/assets/plugin.svg",
   "tags": [
     "logs",
     "devops"
@@ -13,10 +13,10 @@
     "host.events",
     "host.storage"
   ],
-  "source": "https://github.com/yxlongery/dbx-logviewer/tree/v0.1.6",
+  "source": "https://github.com/yxlongery/dbx-logviewer/tree/v0.2.0",
   "homepage": "https://github.com/yxlongery/dbx-logviewer",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.6",
+  "latestVersion": "0.2.0",
   "versions": [
     {
       "version": "0.1.6",
@@ -57,6 +57,48 @@
           "sha256": "e9d06d293736571cf5a02a784f9c540558c852b3d1e3e88de9bde61452658e05",
           "signingKeyId": "dbx-store-release-2026",
           "size": 263398
+        }
+      ]
+    },
+    {
+      "version": "0.2.0",
+      "releasedAt": "2026-09-28T13:13:05.292Z",
+      "releaseNotes": "SSH 远端模式（密码/密钥+口令认证，主机指纹严格校验，SFTP 会话复用）；文件/搜索卡片默认折叠带摘要，日志区占满视口；后端拆分为模块。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.0/io.github.yxlonger.logviewer-0.2.0-darwin-arm64.dbxp",
+          "sha256": "5475cb7564ce3e200e8bf81909ce38323423cd7cb71e0dccc9a2a5306c3e38f7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1548625
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.0/io.github.yxlonger.logviewer-0.2.0-darwin-x64.dbxp",
+          "sha256": "20f8029c7d1916adecf989ddbe073aa07605599f076d85d377072f560a3eba1e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1654028
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.0/io.github.yxlonger.logviewer-0.2.0-linux-arm64.dbxp",
+          "sha256": "91109c0071eab85f1380fd91804105f2d6e714740d1c8ccc57988ea46bba223c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1651840
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.0/io.github.yxlonger.logviewer-0.2.0-linux-x64.dbxp",
+          "sha256": "da9725d3d983b09087f9210046799b3127edb4f9fe36346d0fdeba242dfdc9ac",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1712574
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.0/io.github.yxlonger.logviewer-0.2.0-windows-x64.dbxp",
+          "sha256": "c007496e436c3aa90930c28b9dc64489c1fb3ee0bbfb4e6af3eb2247bdafe62e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1701221
         }
       ]
     }
