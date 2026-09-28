@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.excalidraw",
+  "publisher": "runstone",
+  "version": "0.3.1",
+  "name": "Excalidraw Studio",
+  "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX.",
+  "icon": "https://raw.githubusercontent.com/Abeautifulsnow/dbx-plugin-excalidraw/v0.3.1/assets/plugin.png",
+  "tags": [
+    "diagram",
+    "drawing",
+    "whiteboard",
+    "excalidraw"
+  ],
+  "permissions": [
+    "host.ai",
+    "host.clipboard:read",
+    "host.filesystem",
+    "host.plans:read",
+    "host.workbench"
+  ],
+  "source": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
+  "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
+  "license": "MIT",
+  "releaseNotes": "Adds a host-native save dialog, deep links from the editor and the result view into DBX's own file manager, remembered UI preferences (result row count and home search), and hands the Excalidraw editor the host locale as-is so its own translations apply. Also corrects the store listing, which previously declared no permissions while the manifest required two. New in this line: a Plan-on-canvas action in the result view lays the query's estimated execution plan out as an annotatable Excalidraw tree (host plan API required; declares host.plans:read). New in 0.3.0: an Ask AI action hands the parsed plan to DBX's built-in AI panel as a one-way snapshot (declares host.ai), and plan warnings land on the canvas as a sticky note. New in 0.3.1: clipboard integration — the export menu can copy the scene as JSON, and the editor gains a Paste menu that drops a scene copied from another diagram, or a screenshot from the system clipboard, straight onto the canvas (screenshots are stored in the content-addressed asset store like any other image). Reading the clipboard asks once per session and requires the new host.clipboard:read permission; the paste menu hides itself on hosts without the capability.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Excalidraw Studio",
+      "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw/releases/download/v0.3.1/io.dbx.excalidraw-0.3.1-darwin-arm64.dbxp",
+      "sha256": "a2c22da1139a821986cf68f68d1382f2bef88f0efb869abdca7c91eb0480e237",
+      "size": 18254961
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw/releases/download/v0.3.1/io.dbx.excalidraw-0.3.1-darwin-x64.dbxp",
+      "sha256": "162e7573deed95f18507b095d6726b02d9f0e6e60383ae88574e70d13d2c1bc1",
+      "size": 18353439
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw/releases/download/v0.3.1/io.dbx.excalidraw-0.3.1-linux-arm64.dbxp",
+      "sha256": "9acbfc450862c25881f7a57c57d7eed16ff4d6cbfaec1c68676847793923f5df",
+      "size": 18244035
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw/releases/download/v0.3.1/io.dbx.excalidraw-0.3.1-linux-x64.dbxp",
+      "sha256": "138c78ddd338ff6312a7ec4ceb798e91fa0b868302f87e67ac1b6485d2f7a760",
+      "size": 18373041
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw/releases/download/v0.3.1/io.dbx.excalidraw-0.3.1-windows-x64.dbxp",
+      "sha256": "f942af925ee37de6ca9b37f1088b554e2bab67d8e11b37b01544145aba6a73d7",
+      "size": 18433813
+    }
+  ]
+}
