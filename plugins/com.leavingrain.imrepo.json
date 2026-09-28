@@ -1,0 +1,78 @@
+{
+  "id": "com.leavingrain.imrepo",
+  "name": "IMREPO",
+  "description": "Browse, manage and inspect OCI / Harbor container registries from a single workbench: project and namespace navigation, tag rename and delete, per-layer size analysis, Trivy CVE reports, registry-wide charts and multi-arch breakdowns.",
+  "publisher": "leavingrain",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/Zer0ON1/dbx-plugin-imrepo/v0.1.2/assets/plugin.svg",
+  "tags": [
+    "registry",
+    "harbor",
+    "oci",
+    "docker",
+    "containers",
+    "devops"
+  ],
+  "permissions": [],
+  "source": "https://github.com/Zer0ON1/dbx-plugin-imrepo/tree/v0.1.2",
+  "homepage": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.2",
+  "versions": [
+    {
+      "version": "0.1.2",
+      "releasedAt": "2026-09-28T03:39:12.760Z",
+      "releaseNotes": "Docker Registry v2 projects (namespaces), registry overview charts, and one badge per architecture in the image views.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.2/com.leavingrain.imrepo-0.1.2-darwin-arm64.dbxp",
+          "sha256": "96beea3486735c58cc0e7e6bd5431348510b1d3b2861217543684784c7a05e67",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4550644
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.2/com.leavingrain.imrepo-0.1.2-darwin-x64.dbxp",
+          "sha256": "7987f39e5f77ce1128b1991d16130ec4876e03fa735e41b10904312c0ee9bf8f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4793268
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.2/com.leavingrain.imrepo-0.1.2-linux-arm64.dbxp",
+          "sha256": "aac01c0fb4b6fdff367bd5d111f3dab905dba3f44ec3a3d624d8b48ae41f7041",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4506612
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.2/com.leavingrain.imrepo-0.1.2-linux-x64.dbxp",
+          "sha256": "bbed9d99a99f6877726aa529810035fdd76ccd8bd5ddebb42fa124fa7b0a9180",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4829097
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.2/com.leavingrain.imrepo-0.1.2-windows-arm64.dbxp",
+          "sha256": "3795f9241536ef3354425f755fa3aed0efa6dcdef987c3432d5df36c378bbba1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4514157
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.2/com.leavingrain.imrepo-0.1.2-windows-x64.dbxp",
+          "sha256": "5209d8c8bf53f9f55ba2b417577be8cfe99a10620dae7313d19f79b4dc97c1f8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4869437
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "IMREPO",
+      "description": "在同一个工作台里浏览、管理和检查 OCI / Harbor 容器镜像仓库：项目与命名空间导航、Tag 重命名与删除、镜像层逐层解析、Trivy 漏洞报告、总览图表与多架构结构展示。"
+    }
+  }
+}
