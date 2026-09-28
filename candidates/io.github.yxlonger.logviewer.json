@@ -4,7 +4,7 @@
   "publisher": "yxlonger",
   "version": "0.2.0",
   "name": "Log Viewer",
-  "description": "View server .log files with keyword search, live tail and download.",
+  "description": "查看服务器 .log 日志，支持滚动查询、模糊搜索、实时监控、分块下载；0.2.0 新增 SSH 远端模式。",
   "icon": "https://raw.githubusercontent.com/yxlongery/dbx-logviewer/v0.2.0/assets/plugin.svg",
   "tags": [
     "logs",
@@ -17,7 +17,7 @@
   "source": "https://github.com/yxlongery/dbx-logviewer/tree/v0.2.0",
   "homepage": "https://github.com/yxlongery/dbx-logviewer",
   "license": "Apache-2.0",
-  "releaseNotes": "SSH remote mode (password/key with passphrase, strict host-key check, reusable SFTP session); collapsible file/search cards with summaries and viewport-height log area; backend split into modules.",
+  "releaseNotes": "SSH 远端模式（密码/密钥+口令认证，主机指纹严格校验，SFTP 会话复用）；文件/搜索卡片默认折叠带摘要，日志区占满视口；后端拆分为模块。",
   "localizations": {
     "zh-CN": {
       "name": "日志查看器",
