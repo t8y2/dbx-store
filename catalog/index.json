@@ -318,7 +318,7 @@
       "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses.",
       "publisher": "jettech",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.4/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/icon.svg",
       "tags": [
         "http",
         "api",
@@ -328,11 +328,53 @@
       "permissions": [
         "host.events"
       ],
-      "source": "https://github.com/renpengkai/dbx-plugin-http-client/tree/0.1.3",
+      "source": "https://github.com/renpengkai/dbx-plugin-http-client",
       "homepage": "https://github.com/renpengkai/dbx-plugin-http-client",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.4",
+      "latestVersion": "0.1.7",
       "versions": [
+        {
+          "version": "0.1.7",
+          "releasedAt": "2026-09-29T14:02:43.082Z",
+          "releaseNotes": "0.1.7：默认界面语言改为英语，并在宿主握手完成后跟随 DBX 的语言设置；补齐中英文文案键，避免部分提示硬编码中文。另含 0.1.4：可持久化自定义存储目录（连接表单文件夹选择器 / 设置面板均可配置，目录指示写入插件数据目录并在重启后读回）、请求标签页右键批量关闭，以及常用请求头空行与选项面板扁平下拉样式修正。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-darwin-arm64.dbxp",
+              "sha256": "4a4536fa0835809e69613f0a26e733a64a3be843ed6af7b3d7ac0568f23294e5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4252932
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-darwin-x64.dbxp",
+              "sha256": "fcfcdd3d33b4af7030b6af6f7e5f2aac9cf5ae09e939e835d4c97f088e13cef3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4461661
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-linux-arm64.dbxp",
+              "sha256": "f94c698a38e1409d514659f1371f67fae108ebf9d24f425775f9cc5755683cd5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4243741
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-linux-x64.dbxp",
+              "sha256": "7bffa390b8342104ceb60cf699e4936188aa05ad2948d64a299dac99ed4a2feb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4522946
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-windows-x64.dbxp",
+              "sha256": "aaffac50dc24ef061193365e1cf3893cc741bd3166e45f5e10dce6a65765b003",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4538632
+            }
+          ]
+        },
         {
           "version": "0.1.4",
           "releasedAt": "2026-09-23T12:20:12.641Z",
@@ -5202,7 +5244,7 @@
       "description": "Manage TOTP accounts and generate one-time codes inside DBX.",
       "publisher": "kingwrcy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/icon.svg",
       "tags": [
         "totp",
         "otp",
@@ -5213,8 +5255,50 @@
       "source": "https://github.com/kingwrcy/dbx-totp",
       "homepage": "https://github.com/kingwrcy/dbx-totp",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.2",
+      "latestVersion": "0.2.3",
       "versions": [
+        {
+          "version": "0.2.3",
+          "releasedAt": "2026-09-29T14:08:10.692Z",
+          "releaseNotes": "v0.2.3：修复后端与清单版本不一致导致的安装失败，并将验证器列表调整为居中紧凑布局。需要 DBX 0.6.21 或更高版本。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-darwin-arm64.dbxp",
+              "sha256": "65874cba4669c79cafcc609018b9be9389037ba6ef29274022969f1d8a4297da",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1845181
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-darwin-x64.dbxp",
+              "sha256": "132e5ed44d8ff770e61356464a13eb32515a006f71175db9c8f28b1a69cffd69",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1933637
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-linux-arm64.dbxp",
+              "sha256": "3b14cc0c2b1e201039f820064c11093808bdf955987033013c6daf3311a879f8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1831895
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-linux-x64.dbxp",
+              "sha256": "67d5ad3a52dc0ad6acb1c61d17459dcca59d5c5af11b622bd0d62aeb9de2df7f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1950810
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-windows-x64.dbxp",
+              "sha256": "98d5acd87dd8fc3af2d0b13a790d5960b47f8717e7869aad23e107e08c178b97",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2013812
+            }
+          ]
+        },
         {
           "version": "0.2.2",
           "releasedAt": "2026-09-28T12:56:25.015Z",
