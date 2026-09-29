@@ -318,7 +318,7 @@
       "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses.",
       "publisher": "jettech",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.4/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/icon.svg",
       "tags": [
         "http",
         "api",
@@ -328,11 +328,53 @@
       "permissions": [
         "host.events"
       ],
-      "source": "https://github.com/renpengkai/dbx-plugin-http-client/tree/0.1.3",
+      "source": "https://github.com/renpengkai/dbx-plugin-http-client",
       "homepage": "https://github.com/renpengkai/dbx-plugin-http-client",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.4",
+      "latestVersion": "0.1.7",
       "versions": [
+        {
+          "version": "0.1.7",
+          "releasedAt": "2026-09-29T14:02:43.082Z",
+          "releaseNotes": "0.1.7：默认界面语言改为英语，并在宿主握手完成后跟随 DBX 的语言设置；补齐中英文文案键，避免部分提示硬编码中文。另含 0.1.4：可持久化自定义存储目录（连接表单文件夹选择器 / 设置面板均可配置，目录指示写入插件数据目录并在重启后读回）、请求标签页右键批量关闭，以及常用请求头空行与选项面板扁平下拉样式修正。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-darwin-arm64.dbxp",
+              "sha256": "4a4536fa0835809e69613f0a26e733a64a3be843ed6af7b3d7ac0568f23294e5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4252932
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-darwin-x64.dbxp",
+              "sha256": "fcfcdd3d33b4af7030b6af6f7e5f2aac9cf5ae09e939e835d4c97f088e13cef3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4461661
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-linux-arm64.dbxp",
+              "sha256": "f94c698a38e1409d514659f1371f67fae108ebf9d24f425775f9cc5755683cd5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4243741
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-linux-x64.dbxp",
+              "sha256": "7bffa390b8342104ceb60cf699e4936188aa05ad2948d64a299dac99ed4a2feb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4522946
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-windows-x64.dbxp",
+              "sha256": "aaffac50dc24ef061193365e1cf3893cc741bd3166e45f5e10dce6a65765b003",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4538632
+            }
+          ]
+        },
         {
           "version": "0.1.4",
           "releasedAt": "2026-09-23T12:20:12.641Z",
