@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.yuwengueen.dbx-code-editor",
+  "publisher": "yuwengueen",
+  "version": "0.1.33",
+  "source": "https://github.com/yuwenGueen/dbx-code-editor/tree/v0.1.33",
+  "permissions": [
+    "host.storage",
+    "host.ai"
+  ],
+  "releaseNotes": "v0.1.33\n- AI 会话保存输入草稿、模型、模式、引用文件及修改提案，兼容旧聊天记录，恢复后应用仍校验磁盘修订。\n- AI 修改可在编辑区审查，显示行号和增删高亮，左右同步滚动。\n- 回复支持 Markdown、代码高亮与复制；宿主不支持 AI 或模型不可用时显示原因并禁用发送。\n\nEnglish\n- Persist AI drafts, model, mode, file references and proposals with legacy history compatibility and revision checks on restored edits.\n- Review AI proposals in the editor with line numbers, added/deleted lines and synchronized scrolling.\n- Render Markdown and highlighted copyable code; explain unavailable host/model capabilities and disable sending.",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/yuwenGueen/dbx-code-editor/releases/download/v0.1.33/io.github.yuwengueen.dbx-code-editor-0.1.33-darwin-arm64.dbxp",
+      "sha256": "62e5be7b6ccf43d9936df7cf02a5212a64f7a3fdc0ec9ecc68a92348ac416c1d",
+      "size": 4237588
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/yuwenGueen/dbx-code-editor/releases/download/v0.1.33/io.github.yuwengueen.dbx-code-editor-0.1.33-darwin-x64.dbxp",
+      "sha256": "b707a175b5b0f8c4437fce0ec5b6648914c5740743c97bb7de08be6fdbdbfb54",
+      "size": 4381692
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/yuwenGueen/dbx-code-editor/releases/download/v0.1.33/io.github.yuwengueen.dbx-code-editor-0.1.33-linux-arm64.dbxp",
+      "sha256": "cf123768438617d1d7ea43c4152cc20be226d692c1c58fb6b1f31f12781da895",
+      "size": 4232818
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/yuwenGueen/dbx-code-editor/releases/download/v0.1.33/io.github.yuwengueen.dbx-code-editor-0.1.33-linux-x64.dbxp",
+      "sha256": "137706e90b06c786338a474f29f0ed74c7d2d765f4132189a5a7188746193a54",
+      "size": 4437036
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/yuwenGueen/dbx-code-editor/releases/download/v0.1.33/io.github.yuwengueen.dbx-code-editor-0.1.33-windows-x64.dbxp",
+      "sha256": "ae761a8d735d35bdafd52729c6b08c7e0e334fddcfbfcdfbcbe295c0619c59fb",
+      "size": 4468252
+    }
+  ]
+}
