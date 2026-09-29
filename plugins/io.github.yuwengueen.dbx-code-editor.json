@@ -4,19 +4,20 @@
   "description": "Browse, search, and edit local project files inside DBX.",
   "publisher": "yuwengueen",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/yuwenGueen/dbx-code-editor/v0.1.17/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/yuwenGueen/dbx-code-editor/v0.1.33/assets/plugin.svg",
   "tags": [
     "editor",
     "files",
     "developer-tools"
   ],
   "permissions": [
+    "host.ai",
     "host.storage"
   ],
-  "source": "https://github.com/yuwenGueen/dbx-code-editor/tree/v0.1.17",
+  "source": "https://github.com/yuwenGueen/dbx-code-editor",
   "homepage": "https://github.com/yuwenGueen/dbx-code-editor",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.17",
+  "latestVersion": "0.1.33",
   "versions": [
     {
       "version": "0.1.15",
@@ -99,6 +100,48 @@
           "sha256": "76f9a4ff3c8a50906d549a9d06edd061a0f3bd5bbabbb31e51bb4de04579eb04",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4339675
+        }
+      ]
+    },
+    {
+      "version": "0.1.33",
+      "releasedAt": "2026-09-29T14:41:44.507Z",
+      "releaseNotes": "v0.1.33\n- AI 会话保存输入草稿、模型、模式、引用文件及修改提案，兼容旧聊天记录，恢复后应用仍校验磁盘修订。\n- AI 修改可在编辑区审查，显示行号和增删高亮，左右同步滚动。\n- 回复支持 Markdown、代码高亮与复制；宿主不支持 AI 或模型不可用时显示原因并禁用发送。\n\nEnglish\n- Persist AI drafts, model, mode, file references and proposals with legacy history compatibility and revision checks on restored edits.\n- Review AI proposals in the editor with line numbers, added/deleted lines and synchronized scrolling.\n- Render Markdown and highlighted copyable code; explain unavailable host/model capabilities and disable sending.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.33/io.github.yuwengueen.dbx-code-editor-0.1.33-darwin-arm64.dbxp",
+          "sha256": "2d5647f085bbab2ff07627adebff0dfa143ad21fa33520b68ca5fc47fbd52499",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4238329
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.33/io.github.yuwengueen.dbx-code-editor-0.1.33-darwin-x64.dbxp",
+          "sha256": "7fc28bec9aeae922612ab4dc6f8bfd9186b149450b65ed526129be82df99db50",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4382432
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.33/io.github.yuwengueen.dbx-code-editor-0.1.33-linux-arm64.dbxp",
+          "sha256": "4d20b60304a7a9ad61399e38904dd80af508909401f168b81fcc91c2bda77181",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4233560
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.33/io.github.yuwengueen.dbx-code-editor-0.1.33-linux-x64.dbxp",
+          "sha256": "026ee5a9ef3fee05dd5ebf077f222158b8f6e50391791f2088d88ffa4c80fdcd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4437775
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuwengueen.dbx-code-editor/0.1.33/io.github.yuwengueen.dbx-code-editor-0.1.33-windows-x64.dbxp",
+          "sha256": "83510f1f668a89c8a73a6bd4956feb8463d4c7ac7377827e34ad2aa1c3296ccc",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4468994
         }
       ]
     }
