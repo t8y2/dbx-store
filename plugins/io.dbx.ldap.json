@@ -4,7 +4,7 @@
   "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ldap/ldap-v0.1.93/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ldap/ldap-v0.1.94/assets/plugin.svg",
   "tags": [
     "ldap",
     "directory",
@@ -19,7 +19,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-ldap",
   "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
   "license": "MIT",
-  "latestVersion": "0.1.93",
+  "latestVersion": "0.1.94",
   "versions": [
     {
       "version": "0.1.67",
@@ -438,6 +438,48 @@
           "sha256": "4a2cc933685690c4bea8ccf4933251049f0a011dec79927b8a855e8a15f55c4a",
           "signingKeyId": "dbx-store-release-2026",
           "size": 6925532
+        }
+      ]
+    },
+    {
+      "version": "0.1.94",
+      "releasedAt": "2026-09-29T03:19:36.287Z",
+      "releaseNotes": "评审加固正式版：MCP stdio 传输边界加固（超长请求行边读边限、在途请求并发上限、确认令牌随机源不可用时拒绝签发），修复 mcp-settings 并发持久化竞态，审计记录落盘 Detail 警示原文，消除搜索会话锁级联阻塞；前端 LDIF 导入增加连接切换守卫与中断提示，工作集页签去重，修复三处事件监听器泄漏，树会话过期文案接入 i18n，连接面板时间格式跟随工作台语言。含 0.1.94-beta.1 全部改动。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.94/io.dbx.ldap-0.1.94-darwin-arm64.dbxp",
+          "sha256": "c95ccc9b0ee0f634f863ce5ab0bce2ff6ff8b8bddd50e50ff7fb6a112803d380",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6473224
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.94/io.dbx.ldap-0.1.94-darwin-x64.dbxp",
+          "sha256": "c4a2fff03d341b3985e4635db70493751909e27b33340afa0f22df9865c0d262",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6801552
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.94/io.dbx.ldap-0.1.94-linux-arm64.dbxp",
+          "sha256": "1a6decf09a1f5b16d61b7d6636845dd09f4b306e4a79c6716334b939088def54",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6458160
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.94/io.dbx.ldap-0.1.94-linux-x64.dbxp",
+          "sha256": "cb9a2397a291ad43bd20da01fbecc6df3f1a3f99154447eb6e4962d2a6f95fa5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6897483
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.94/io.dbx.ldap-0.1.94-windows-x64.dbxp",
+          "sha256": "482bd8734967ecb75163f6d727b1feb68b440a1ff1b23b9c8677ebd4b08e4667",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6941872
         }
       ]
     }
