@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "com.jettech.httpclient",
+  "publisher": "jettech",
+  "version": "0.1.7",
+  "name": "HTTP Client",
+  "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses.",
+  "icon": "https://raw.githubusercontent.com/renpengkai/dbx-plugin-http-client/0.1.7/assets/plugin.svg",
+  "tags": [
+    "http",
+    "api",
+    "debugging",
+    "network"
+  ],
+  "permissions": [
+    "host.events"
+  ],
+  "source": "https://github.com/renpengkai/dbx-plugin-http-client",
+  "homepage": "https://github.com/renpengkai/dbx-plugin-http-client",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.1.7：默认界面语言改为英语，并在宿主握手完成后跟随 DBX 的语言设置；补齐中英文文案键，避免部分提示硬编码中文。另含 0.1.4：可持久化自定义存储目录（连接表单文件夹选择器 / 设置面板均可配置，目录指示写入插件数据目录并在重启后读回）、请求标签页右键批量关闭，以及常用请求头空行与选项面板扁平下拉样式修正。",
+  "localizations": {
+    "zh-CN": {
+      "name": "HTTP 客户端",
+      "description": "类似 Postman 的 HTTP 接口调试工作台：构造请求、通过原生 Sidecar 发送并查看响应。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/renpengkai/dbx-plugin-http-client/releases/download/0.1.7/com.jettech.httpclient-0.1.7-darwin-arm64.dbxp",
+      "sha256": "89f88ebdc3a91af0b66e11cc0ebf81890c77e74f31d3ec4dafa24098c5691df2",
+      "size": 4251583
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/renpengkai/dbx-plugin-http-client/releases/download/0.1.7/com.jettech.httpclient-0.1.7-darwin-x64.dbxp",
+      "sha256": "52b46fdbd030f1decb8f99031cf2c622b6714d0a610864194277149382b4e008",
+      "size": 4460315
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/renpengkai/dbx-plugin-http-client/releases/download/0.1.7/com.jettech.httpclient-0.1.7-linux-arm64.dbxp",
+      "sha256": "8b2484d8b5f8eb9152335467ccac3448a27818d207528f7aa12f5b54017f4874",
+      "size": 4242394
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/renpengkai/dbx-plugin-http-client/releases/download/0.1.7/com.jettech.httpclient-0.1.7-linux-x64.dbxp",
+      "sha256": "ad5a74cd7882a16c57bf8d9bdb4ddb6d35606d49e932b5819c11b9a57ee25fb2",
+      "size": 4521601
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/renpengkai/dbx-plugin-http-client/releases/download/0.1.7/com.jettech.httpclient-0.1.7-windows-x64.dbxp",
+      "sha256": "cad7776e5702567af2e25674285157192f17a1a2ece9b8214bb10e57c1f2a9f6",
+      "size": 4537283
+    }
+  ]
+}
