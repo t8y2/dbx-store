@@ -4,7 +4,7 @@
   "description": "Manage TOTP accounts and generate one-time codes inside DBX.",
   "publisher": "kingwrcy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/kingwrcy/dbx-totp/v0.2.2/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/kingwrcy/dbx-totp/v0.2.3/assets/plugin.svg",
   "tags": [
     "totp",
     "otp",
@@ -15,7 +15,7 @@
   "source": "https://github.com/kingwrcy/dbx-totp",
   "homepage": "https://github.com/kingwrcy/dbx-totp",
   "license": "Apache-2.0",
-  "latestVersion": "0.2.2",
+  "latestVersion": "0.2.3",
   "versions": [
     {
       "version": "0.2.0",
@@ -98,6 +98,48 @@
           "sha256": "7e6eb29321530345fdef396f4261eaa77ca29d5e5cef8f1837ae150e15939cc7",
           "signingKeyId": "dbx-store-release-2026",
           "size": 2013710
+        }
+      ]
+    },
+    {
+      "version": "0.2.3",
+      "releasedAt": "2026-09-29T14:08:10.692Z",
+      "releaseNotes": "v0.2.3：修复后端与清单版本不一致导致的安装失败，并将验证器列表调整为居中紧凑布局。需要 DBX 0.6.21 或更高版本。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-darwin-arm64.dbxp",
+          "sha256": "65874cba4669c79cafcc609018b9be9389037ba6ef29274022969f1d8a4297da",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1845181
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-darwin-x64.dbxp",
+          "sha256": "132e5ed44d8ff770e61356464a13eb32515a006f71175db9c8f28b1a69cffd69",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1933637
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-linux-arm64.dbxp",
+          "sha256": "3b14cc0c2b1e201039f820064c11093808bdf955987033013c6daf3311a879f8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1831895
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-linux-x64.dbxp",
+          "sha256": "67d5ad3a52dc0ad6acb1c61d17459dcca59d5c5af11b622bd0d62aeb9de2df7f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1950810
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-windows-x64.dbxp",
+          "sha256": "98d5acd87dd8fc3af2d0b13a790d5960b47f8717e7869aad23e107e08c178b97",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2013812
         }
       ]
     }

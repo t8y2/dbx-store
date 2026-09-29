@@ -318,7 +318,7 @@
       "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses.",
       "publisher": "jettech",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.4/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/icon.svg",
       "tags": [
         "http",
         "api",
@@ -328,11 +328,53 @@
       "permissions": [
         "host.events"
       ],
-      "source": "https://github.com/renpengkai/dbx-plugin-http-client/tree/0.1.3",
+      "source": "https://github.com/renpengkai/dbx-plugin-http-client",
       "homepage": "https://github.com/renpengkai/dbx-plugin-http-client",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.4",
+      "latestVersion": "0.1.7",
       "versions": [
+        {
+          "version": "0.1.7",
+          "releasedAt": "2026-09-29T14:02:43.082Z",
+          "releaseNotes": "0.1.7：默认界面语言改为英语，并在宿主握手完成后跟随 DBX 的语言设置；补齐中英文文案键，避免部分提示硬编码中文。另含 0.1.4：可持久化自定义存储目录（连接表单文件夹选择器 / 设置面板均可配置，目录指示写入插件数据目录并在重启后读回）、请求标签页右键批量关闭，以及常用请求头空行与选项面板扁平下拉样式修正。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-darwin-arm64.dbxp",
+              "sha256": "4a4536fa0835809e69613f0a26e733a64a3be843ed6af7b3d7ac0568f23294e5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4252932
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-darwin-x64.dbxp",
+              "sha256": "fcfcdd3d33b4af7030b6af6f7e5f2aac9cf5ae09e939e835d4c97f088e13cef3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4461661
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-linux-arm64.dbxp",
+              "sha256": "f94c698a38e1409d514659f1371f67fae108ebf9d24f425775f9cc5755683cd5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4243741
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-linux-x64.dbxp",
+              "sha256": "7bffa390b8342104ceb60cf699e4936188aa05ad2948d64a299dac99ed4a2feb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4522946
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.1.7/com.jettech.httpclient-0.1.7-windows-x64.dbxp",
+              "sha256": "aaffac50dc24ef061193365e1cf3893cc741bd3166e45f5e10dce6a65765b003",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4538632
+            }
+          ]
+        },
         {
           "version": "0.1.4",
           "releasedAt": "2026-09-23T12:20:12.641Z",
@@ -473,7 +515,7 @@
       "description": "Browse, manage and inspect OCI / Harbor container registries from a single workbench: project and namespace navigation, tag rename and delete, per-layer size analysis, Trivy CVE reports, registry-wide charts and multi-arch breakdowns.",
       "publisher": "leavingrain",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.3/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.4/icon.svg",
       "tags": [
         "registry",
         "harbor",
@@ -486,8 +528,57 @@
       "source": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
       "homepage": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.3",
+      "latestVersion": "0.1.4",
       "versions": [
+        {
+          "version": "0.1.4",
+          "releasedAt": "2026-09-29T14:27:28.518Z",
+          "releaseNotes": "Docker Registry v2 projects (namespaces), registry overview charts, and one badge per architecture in the image views.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.4/com.leavingrain.imrepo-0.1.4-darwin-arm64.dbxp",
+              "sha256": "1f15368e46a98f9198b11fe34c504cd7cb36cac817f7037a7a6cf35c1e28a173",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4568496
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.4/com.leavingrain.imrepo-0.1.4-darwin-x64.dbxp",
+              "sha256": "29f025476aba0339030a1d9cd2808d9b20dad51e2baf5e7ceed910b309ea5fe4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4812449
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.4/com.leavingrain.imrepo-0.1.4-linux-arm64.dbxp",
+              "sha256": "6512ffd342cd35e49404f86d4cb868329b34956be85cc44bc3da2d0c5b76442a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4522374
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.4/com.leavingrain.imrepo-0.1.4-linux-x64.dbxp",
+              "sha256": "bd64d62c127b418dedc9b8fac9fcc8cb7d8736d5e74acc895571a5837e68dcbd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4846346
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.4/com.leavingrain.imrepo-0.1.4-windows-arm64.dbxp",
+              "sha256": "a276dccd9d06630bb147d942f064faf958720958dbfb7f3af6a1a16f0437c1c4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4527610
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.4/com.leavingrain.imrepo-0.1.4-windows-x64.dbxp",
+              "sha256": "4987f991410030c4379e50e04d6c762253d444cda9c087e1f30a1eaf67a13cc1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4886171
+            }
+          ]
+        },
         {
           "version": "0.1.3",
           "releasedAt": "2026-09-28T17:41:21.519Z",
@@ -5202,7 +5293,7 @@
       "description": "Manage TOTP accounts and generate one-time codes inside DBX.",
       "publisher": "kingwrcy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/icon.svg",
       "tags": [
         "totp",
         "otp",
@@ -5213,8 +5304,50 @@
       "source": "https://github.com/kingwrcy/dbx-totp",
       "homepage": "https://github.com/kingwrcy/dbx-totp",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.2",
+      "latestVersion": "0.2.3",
       "versions": [
+        {
+          "version": "0.2.3",
+          "releasedAt": "2026-09-29T14:08:10.692Z",
+          "releaseNotes": "v0.2.3：修复后端与清单版本不一致导致的安装失败，并将验证器列表调整为居中紧凑布局。需要 DBX 0.6.21 或更高版本。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-darwin-arm64.dbxp",
+              "sha256": "65874cba4669c79cafcc609018b9be9389037ba6ef29274022969f1d8a4297da",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1845181
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-darwin-x64.dbxp",
+              "sha256": "132e5ed44d8ff770e61356464a13eb32515a006f71175db9c8f28b1a69cffd69",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1933637
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-linux-arm64.dbxp",
+              "sha256": "3b14cc0c2b1e201039f820064c11093808bdf955987033013c6daf3311a879f8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1831895
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-linux-x64.dbxp",
+              "sha256": "67d5ad3a52dc0ad6acb1c61d17459dcca59d5c5af11b622bd0d62aeb9de2df7f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1950810
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kingwrcy.totp/0.2.3/io.github.kingwrcy.totp-0.2.3-windows-x64.dbxp",
+              "sha256": "98d5acd87dd8fc3af2d0b13a790d5960b47f8717e7869aad23e107e08c178b97",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2013812
+            }
+          ]
+        },
         {
           "version": "0.2.2",
           "releasedAt": "2026-09-28T12:56:25.015Z",
@@ -6575,10 +6708,10 @@
     {
       "id": "io.github.yxlonger.logviewer",
       "name": "Log Viewer",
-      "description": "查看服务器 .log 日志，支持滚动查询、模糊搜索、实时监控、分块下载；0.2.0 新增 SSH 远端模式。",
+      "description": "查看服务器 .log 日志，支持滚动查询、模糊搜索、实时监控、分块下载。",
       "publisher": "yxlonger",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.1/icon.svg",
       "tags": [
         "logs",
         "devops"
@@ -6587,11 +6720,53 @@
         "host.events",
         "host.storage"
       ],
-      "source": "https://github.com/yxlongery/dbx-logviewer/tree/v0.2.0",
+      "source": "https://github.com/yxlongery/dbx-logviewer/tree/v0.2.1",
       "homepage": "https://github.com/yxlongery/dbx-logviewer",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.0",
+      "latestVersion": "0.2.1",
       "versions": [
+        {
+          "version": "0.2.1",
+          "releasedAt": "2026-09-29T14:13:39.878Z",
+          "releaseNotes": "0.2.1：未填主机指纹直连（测试即信任，留空跳过校验；填了仍严格锁定，防中间人请填）；日志根目录支持 / 全盘并默认填充，单根自动下钻；连接表单精简。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.1/io.github.yxlonger.logviewer-0.2.1-darwin-arm64.dbxp",
+              "sha256": "d011f9391c7417a4fe5154db12958a7fc491a473e8fd8ce9f4355b93e10c2937",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1550066
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.1/io.github.yxlonger.logviewer-0.2.1-darwin-x64.dbxp",
+              "sha256": "7413deea6d04a14b6e1451eaaebd0c08b8e28c56acd975f3734c56ff7ad16a9e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1655253
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.1/io.github.yxlonger.logviewer-0.2.1-linux-arm64.dbxp",
+              "sha256": "0c0149e71e10ab6a273e080d02d3df142ebd6f3754bd837d5566c13f6b693cb5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1652495
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.1/io.github.yxlonger.logviewer-0.2.1-linux-x64.dbxp",
+              "sha256": "14c139d0687b31c3968e3cb21fc999228e6b2383c5059e1651fb94ab841159c6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1713751
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.1/io.github.yxlonger.logviewer-0.2.1-windows-x64.dbxp",
+              "sha256": "5a5e81dbff74aea243c9b70c8442ce2d8dc9de179b2e399f14a627db0da06dbc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1702321
+            }
+          ]
+        },
         {
           "version": "0.2.0",
           "releasedAt": "2026-09-28T13:13:05.292Z",
