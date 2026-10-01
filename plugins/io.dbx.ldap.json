@@ -1,10 +1,10 @@
 {
   "id": "io.dbx.ldap",
   "name": "LDAP Studio",
-  "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export.",
+  "description": "LDAP directory workbench for DBX: DN tree browsing, RFC 4515 search with saved presets, schema inspection, LDIF/CSV export, and guarded entry editing — enterprise auth from anonymous to Kerberos/GSSAPI, NTLM and DIGEST-MD5, over LDAP/StartTLS/LDAPS with mTLS, plus 8 MCP tools for AI automation.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ldap/ldap-v0.1.94/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ldap/ldap-v0.1.96/assets/plugin.svg",
   "tags": [
     "ldap",
     "directory",
@@ -19,7 +19,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-ldap",
   "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
   "license": "MIT",
-  "latestVersion": "0.1.94",
+  "latestVersion": "0.1.96",
   "versions": [
     {
       "version": "0.1.67",
@@ -482,12 +482,54 @@
           "size": 6941872
         }
       ]
+    },
+    {
+      "version": "0.1.96",
+      "releasedAt": "2026-10-01T01:14:14.620Z",
+      "releaseNotes": "objectGUID 正式版：AD 对象 GUID 恢复可读——后端默认拦截表移除 objectGUID（11 项 → 10 项，仍可在连接配置自定义），搜索结果表将 objectGUID 自动渲染为标准 UUID 格式，前后端测试钉死；结果区元信息条、状态徽标、分页按钮与 ag-grid 表格样式打磨（分隔线、图标化分页按钮、表头加重、等宽单元格、编辑器属性行卡片化）。含 0.1.95 全部改动。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.96/io.dbx.ldap-0.1.96-darwin-arm64.dbxp",
+          "sha256": "4a94c65cde7f820f4a13f33364e051636a0ea988aaa87adb1820a2d4309473f4",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6495687
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.96/io.dbx.ldap-0.1.96-darwin-x64.dbxp",
+          "sha256": "6c6dfa37b4ee4d7c3228a0da48b68d8497d7b57aa1246820c2a138422dd4e704",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6822954
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.96/io.dbx.ldap-0.1.96-linux-arm64.dbxp",
+          "sha256": "8ad0b751a7b4b51628bb1acad1d5d5f423eb1db3af2f090b2059a1ffb37944bb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6477772
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.96/io.dbx.ldap-0.1.96-linux-x64.dbxp",
+          "sha256": "9582e4124bd9283e809bb14540f5d706f131f03b9764fbf7161daf7bae25c53f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6915300
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.96/io.dbx.ldap-0.1.96-windows-x64.dbxp",
+          "sha256": "3cb9d04e9f71256a144d53de95bc51d6df11a2b4cc582482a14b9410527457ae",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6964727
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "LDAP Studio",
-      "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
+      "description": "DBX 的 LDAP 目录工作台：DN 树浏览、RFC 4515 搜索与保存预设、Schema 检查、LDIF/CSV 导出，以及受护栏保护的条目编辑——企业级认证从匿名到 Kerberos/GSSAPI、NTLM、DIGEST-MD5，支持 LDAP/StartTLS/LDAPS 与 mTLS，并提供 8 个 MCP 工具供 AI 自动化。"
     }
   }
 }
