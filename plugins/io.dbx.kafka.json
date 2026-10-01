@@ -1,10 +1,10 @@
 {
   "id": "io.dbx.kafka",
   "name": "Kafka Studio",
-  "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results.",
+  "description": "Operate Apache Kafka from one DBX workspace: inspect topics, brokers, and consumer lag; search, stream, and produce messages with multi-channel filters and payload decoding; manage offsets, ACLs, and Schema Registry. Read-only by default, with guarded writes and 11 MCP tools for AI automation.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.51/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.52/assets/plugin.svg",
   "tags": [
     "kafka",
     "streaming",
@@ -19,7 +19,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-kafka",
   "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
   "license": "MIT",
-  "latestVersion": "0.1.51",
+  "latestVersion": "0.1.52",
   "versions": [
     {
       "version": "0.1.39",
@@ -482,36 +482,78 @@
           "size": 14308148
         }
       ]
+    },
+    {
+      "version": "0.1.52",
+      "releasedAt": "2026-10-01T01:18:33.411Z",
+      "releaseNotes": "2026-09-26/27 代码评审修复批次（2 高危 + 6 中危 + 6 低危全项）：digest 大扫描新增 64MiB 留存字节预算并跳过 valueBase64 通道（合法 maxScanRecords=100000 不再可能把 sidecar 打到 OOM），payload 新增 retentionTruncated 标记；消费池 release 路径字段写入收拢进池锁并新增 -race 并发压测；stdio 改有界增量读行（超限请求不再预缓冲整行）并加每请求 32 并发背压；整数参数严格解析（partition/partitionOffsets/timestampMs 拒绝小数与越界值，绝不静默折算）；Schema Registry 非 2xx 错误体 2KB 截断；消息过滤 key/value 通道免整串拷贝；前端解压全线 16MiB 上限（gzip 计数断流、zstd/snappy 帧头预检、lz4 输出后检），补齐后端防护的镜像缺口；presets 契约四方对齐；confirmToken 在随机源失败时拒绝签发而非回退可预测值；timestampMs=0 前后端同线拒绝。工程面新增方法契约机器守护：methodContract.json 单一事实源 + backend AST/实调 + frontend mock 三方测试（漂移注入演练验证有效）；shared/frontend 五文件补 vendored 来源戳并纳入 validate_repo 检查。Security review fixes (2 high, 6 medium, 6 low): digest scans now cap retained payloads at 64MiB and skip the valueBase64 channel (maxScanRecords=100000 can no longer OOM the sidecar), with a retentionTruncated flag; consume-pool release writes moved under the pool lock with a -race stress test; stdio now reads lines with a bounded accumulator (oversized requests are rejected without buffering the whole line) plus a 32-request concurrency backpressure; integer arguments reject fractional and out-of-range values; Schema Registry error bodies are truncated to 2KB; key/value filter channels match bytes without full copies; frontend decompression is capped at 16MiB across gzip/zstd/snappy/lz4; presets contract aligned on all four surfaces; confirmToken issuance fails hard when the random source fails; timestampMs=0 is rejected end to end. Engineering: a machine-enforced method contract (methodContract.json verified by backend AST/live-call and frontend mock tests, proven by drift injection), and vendored provenance headers on shared/frontend files checked by validate_repo.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.52/io.dbx.kafka-0.1.52-darwin-arm64.dbxp",
+          "sha256": "fcc84e99a271d2a472f951b5b73a1ff0334eff5dc07025c3714cecde164b21e8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14320897
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.52/io.dbx.kafka-0.1.52-darwin-x64.dbxp",
+          "sha256": "9b705b15bf4127306a52752674fd5aaf30a0a7464f521470fccfaa3a0a2f4dd7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 15214892
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.52/io.dbx.kafka-0.1.52-linux-arm64.dbxp",
+          "sha256": "01a83aacb28cf43a2f7c03226665f76c5f34ae0696f8c09fb1a92ef3888af8fd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13500436
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.52/io.dbx.kafka-0.1.52-linux-x64.dbxp",
+          "sha256": "d4541dabfc4dc01fa6307178f082347c62cea91a8bceb8b85576696ece2b43da",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14711668
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.52/io.dbx.kafka-0.1.52-windows-x64.dbxp",
+          "sha256": "19b3cbb8b9d7e46180a7ae75a8feae4dd1424d318100a1d776a96d8e803e992f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14795703
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "Kafka Studio",
-      "description": "在一个工作台中管理 Apache Kafka：查看 topic 与分区、生产和消费消息、过滤与解码 payload、监控消费组 lag、管理 offset 和 ACL、流式消费并导出结果。"
+      "description": "在 DBX 工作台中运维 Apache Kafka：巡检 topic、broker 与消费组 lag，多通道过滤检索与流式消费消息并解码 payload，管理 offset、ACL 与 Schema Registry。默认只读、写操作受确认门保护，并内置 11 个 MCP 工具交给 AI 自动化。"
     },
     "zh-TW": {
       "name": "Kafka Studio",
-      "description": "DBX 的 Kafka 主控台外掛：topic 與分割區、訊息生產與消費（過濾/解碼）、消費組（lag 與 offset 重置）、ACL、串流消費與匯出。"
+      "description": "在 DBX 工作台維運 Apache Kafka：巡檢 topic、broker 與消費組 lag，以多通道過濾檢索與串流消費訊息並解碼 payload，管理 offset、ACL 與 Schema Registry。預設唯讀、寫入操作受確認閘保護，並內建 11 個 MCP 工具交給 AI 自動化。"
     },
     "en": {
       "name": "Kafka Studio",
-      "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results."
+      "description": "Operate Apache Kafka from one DBX workspace: inspect topics, brokers, and consumer lag; search, stream, and produce messages with multi-channel filters and payload decoding; manage offsets, ACLs, and Schema Registry. Read-only by default, with guarded writes and 11 MCP tools for AI automation."
     },
     "es": {
       "name": "Kafka Studio",
-      "description": "Plugin de consola Kafka para DBX: topics y particiones, producción/consumo de mensajes con filtros y decodificación, grupos de consumidores con lag y reset de offsets, ACL, consumo en streaming y exportación."
+      "description": "Opere Apache Kafka desde un único espacio de trabajo de DBX: inspeccione topics, brokers y el lag de los grupos de consumo; busque, consuma en streaming y produzca mensajes con filtros multicanal y decodificación de payloads; gestione offsets, ACL y Schema Registry. Solo lectura por defecto, escrituras con confirmación y 11 herramientas MCP para automatizar con IA."
     },
     "it": {
       "name": "Kafka Studio",
-      "description": "Plugin console Kafka per DBX: topic e partizioni, produzione/consumo di messaggi con filtri e decodifica, gruppi di consumatori con lag e reset degli offset, ACL, consumo in streaming ed esportazione."
+      "description": "Gestisci Apache Kafka da un unico workspace DBX: ispeziona topic, broker e lag dei gruppi di consumatori; cerca, consuma in streaming e produce messaggi con filtri multicanale e decodifica dei payload; gestisci offset, ACL e Schema Registry. Sola lettura per impostazione predefinita, scritture con conferma e 11 strumenti MCP per l'automazione con l'IA."
     },
     "ja": {
       "name": "Kafka Studio",
-      "description": "DBX 用 Kafka コンソールプラグイン: トピックとパーティション、フィルタリング/デコード付きメッセージ送受信、コンシューマーグループ（ラグと offset リセット）、ACL、ストリーミング消費とエクスポート。"
+      "description": "DBX のワークスペースで Apache Kafka を運用：トピック・ブローカー・コンシューマーラグの巡検、マルチチャネルフィルタによるメッセージ検索、ストリーミング消費とプロデュース、payload のデコード、offset・ACL・Schema Registry の管理。デフォルトは読み取り専用、書き込みは確認ゲートで保護し、AI 自動化のための 11 個の MCP ツールを内蔵。"
     },
     "pt-BR": {
       "name": "Kafka Studio",
-      "description": "Plugin de console Kafka para o DBX: tópicos e partições, produção/consumo de mensagens com filtros e decodificação, grupos de consumidores com lag e redefinição de offsets, ACLs, consumo em streaming e exportação."
+      "description": "Opere o Apache Kafka a partir de um único workspace do DBX: inspecione tópicos, brokers e o lag dos grupos de consumidores; pesquise, consuma em streaming e produza mensagens com filtros multicanal e decodificação de payloads; gerencie offsets, ACLs e Schema Registry. Somente leitura por padrão, gravações com confirmação e 11 ferramentas MCP para automação com IA."
     }
   }
 }
