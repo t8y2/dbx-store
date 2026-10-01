@@ -4161,11 +4161,11 @@
     },
     {
       "id": "io.dbx.ssh",
-      "name": "SSH Terminal",
-      "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
+      "name": "Terminal",
+      "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.1/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -4173,17 +4173,60 @@
         "remote"
       ],
       "permissions": [
-        "host.events",
         "host.binary",
+        "host.clipboard:read",
+        "host.events",
         "host.filesystem",
-        "host.workbench",
-        "host.storage"
+        "host.storage",
+        "host.workbench"
       ],
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.7.0",
+      "latestVersion": "0.7.1",
       "versions": [
+        {
+          "version": "0.7.1",
+          "releasedAt": "2026-10-01T00:56:34.033Z",
+          "releaseNotes": "First official store release: interactive terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.1/io.dbx.ssh-0.7.1-darwin-arm64.dbxp",
+              "sha256": "d23ee804717c4b36c90071976ec65788265e685069513fe9e80bf33f13300f86",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15385358
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.1/io.dbx.ssh-0.7.1-darwin-x64.dbxp",
+              "sha256": "f0a9f55e9dac93d19173202d44fd6c9e4cc2bd2f12a9e56e3835cd7559ea9f2a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16025187
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.1/io.dbx.ssh-0.7.1-linux-arm64.dbxp",
+              "sha256": "2a6faa452e1595678d2a209faad4cda6b23c7331ba38855babcc18e3b13cf943",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16613119
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.1/io.dbx.ssh-0.7.1-linux-x64.dbxp",
+              "sha256": "cfa45b6d8dc2b41f1623a4324d54da114c7684d867e5f1c829dae5e8b18707c3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 17095008
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.1/io.dbx.ssh-0.7.1-windows-x64.dbxp",
+              "sha256": "1ef5adbc50e25731840e1c06c60a6b4c3d38bf2bba79835eedfe7e3bf8236653",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14822240
+            }
+          ]
+        },
         {
           "version": "0.7.0",
           "releasedAt": "2026-09-24T02:40:56.958Z",
@@ -4607,8 +4650,12 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "SSH Terminal",
-          "description": "面向服务器运维的 SSH 终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
+          "name": "终端",
+          "description": "面向服务器运维的终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
+        },
+        "zh-TW": {
+          "name": "終端",
+          "description": "為 DBX 提供終端、SFTP 檔案傳輸與受控遠端維運工作流程。"
         }
       }
     },
