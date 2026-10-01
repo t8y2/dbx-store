@@ -130,6 +130,11 @@
       "repository": "yuwenGueen/dbx-code-editor",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "yiqiui/dbx-plugin-leetcode-cn",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
