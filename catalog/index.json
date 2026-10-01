@@ -1927,7 +1927,7 @@
       "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.83/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.86/icon.svg",
       "tags": [
         "files",
         "storage",
@@ -1944,8 +1944,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-files",
       "homepage": "https://github.com/jinpy666/dbx-plugin-files",
       "license": "MIT",
-      "latestVersion": "0.1.83",
+      "latestVersion": "0.1.86",
       "versions": [
+        {
+          "version": "0.1.86",
+          "releasedAt": "2026-10-01T01:02:10.905Z",
+          "releaseNotes": "新增工具栏「上传文件夹」：走 webview 原生 webkitdirectory 选择器（web/docker 与桌面宿主同一路径），按相对路径还原目录结构落到 目标/<文件夹名>/；先建远端目录树（目录已存在=合并），再逐文件走统一上传泵；同名冲突策略按子目录分组生效（询问档带目录前缀、自动重命名在目录内让位）。目录结构与落盘内容均有集成测试覆盖。New toolbar action \"Upload folder\": a webview-native webkitdirectory picker (same path on web/docker and desktop hosts) that restores the directory structure under target/<folder>/, creates the remote directory tree first (existing dirs merge), then streams every file through the unified upload pump; the conflict policy applies per subdirectory (ask shows dir-prefixed names, rename de-dupes within each directory).",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.86/io.dbx.files-0.1.86-darwin-arm64.dbxp",
+              "sha256": "1300ebbd8f3066e045e88e2335714ac9dcd8a3b48b2edcf985f0e24a8244cbb9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 39365914
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.86/io.dbx.files-0.1.86-darwin-x64.dbxp",
+              "sha256": "aee50d75b5f83039070dd7a24781d13c2bd5941c01965915508c3d55504dabc4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 41857668
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.86/io.dbx.files-0.1.86-linux-arm64.dbxp",
+              "sha256": "bb7ef1ddff579d3eed0f7b042e5802daaa4acf1bd9b62af640a7129ae6cfcbd1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 35731381
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.86/io.dbx.files-0.1.86-linux-x64.dbxp",
+              "sha256": "201aa474304e34d9e5ce7c943b97ab572f8df51a2a686d7b17044f771e1c29d1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 38660117
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.86/io.dbx.files-0.1.86-windows-x64.dbxp",
+              "sha256": "536ef177669c6958033f5ba0c470c408f5caab61f404e43514eb07878827e6e7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 38013567
+            }
+          ]
+        },
         {
           "version": "0.1.83",
           "releasedAt": "2026-09-29T03:13:44.340Z",
@@ -3352,10 +3394,10 @@
     {
       "id": "io.dbx.ldap",
       "name": "LDAP Studio",
-      "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export.",
+      "description": "LDAP directory workbench for DBX: DN tree browsing, RFC 4515 search with saved presets, schema inspection, LDIF/CSV export, and guarded entry editing — enterprise auth from anonymous to Kerberos/GSSAPI, NTLM and DIGEST-MD5, over LDAP/StartTLS/LDAPS with mTLS, plus 8 MCP tools for AI automation.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.94/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.96/icon.svg",
       "tags": [
         "ldap",
         "directory",
@@ -3370,8 +3412,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ldap",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
       "license": "MIT",
-      "latestVersion": "0.1.94",
+      "latestVersion": "0.1.96",
       "versions": [
+        {
+          "version": "0.1.96",
+          "releasedAt": "2026-10-01T01:14:14.620Z",
+          "releaseNotes": "objectGUID 正式版：AD 对象 GUID 恢复可读——后端默认拦截表移除 objectGUID（11 项 → 10 项，仍可在连接配置自定义），搜索结果表将 objectGUID 自动渲染为标准 UUID 格式，前后端测试钉死；结果区元信息条、状态徽标、分页按钮与 ag-grid 表格样式打磨（分隔线、图标化分页按钮、表头加重、等宽单元格、编辑器属性行卡片化）。含 0.1.95 全部改动。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.96/io.dbx.ldap-0.1.96-darwin-arm64.dbxp",
+              "sha256": "4a94c65cde7f820f4a13f33364e051636a0ea988aaa87adb1820a2d4309473f4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6495687
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.96/io.dbx.ldap-0.1.96-darwin-x64.dbxp",
+              "sha256": "6c6dfa37b4ee4d7c3228a0da48b68d8497d7b57aa1246820c2a138422dd4e704",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6822954
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.96/io.dbx.ldap-0.1.96-linux-arm64.dbxp",
+              "sha256": "8ad0b751a7b4b51628bb1acad1d5d5f423eb1db3af2f090b2059a1ffb37944bb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6477772
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.96/io.dbx.ldap-0.1.96-linux-x64.dbxp",
+              "sha256": "9582e4124bd9283e809bb14540f5d706f131f03b9764fbf7161daf7bae25c53f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6915300
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.96/io.dbx.ldap-0.1.96-windows-x64.dbxp",
+              "sha256": "3cb9d04e9f71256a144d53de95bc51d6df11a2b4cc582482a14b9410527457ae",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6964727
+            }
+          ]
+        },
         {
           "version": "0.1.94",
           "releasedAt": "2026-09-29T03:19:36.287Z",
@@ -3838,7 +3922,7 @@
       "localizations": {
         "zh-CN": {
           "name": "LDAP Studio",
-          "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
+          "description": "DBX 的 LDAP 目录工作台：DN 树浏览、RFC 4515 搜索与保存预设、Schema 检查、LDIF/CSV 导出，以及受护栏保护的条目编辑——企业级认证从匿名到 Kerberos/GSSAPI、NTLM、DIGEST-MD5，支持 LDAP/StartTLS/LDAPS 与 mTLS，并提供 8 个 MCP 工具供 AI 自动化。"
         }
       }
     },
@@ -4161,11 +4245,11 @@
     },
     {
       "id": "io.dbx.ssh",
-      "name": "SSH Terminal",
-      "description": "A secure SSH terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
+      "name": "Terminal",
+      "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.1/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -4173,17 +4257,60 @@
         "remote"
       ],
       "permissions": [
-        "host.events",
         "host.binary",
+        "host.clipboard:read",
+        "host.events",
         "host.filesystem",
-        "host.workbench",
-        "host.storage"
+        "host.storage",
+        "host.workbench"
       ],
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.7.0",
+      "latestVersion": "0.7.1",
       "versions": [
+        {
+          "version": "0.7.1",
+          "releasedAt": "2026-10-01T00:56:34.033Z",
+          "releaseNotes": "First official store release: interactive terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.1/io.dbx.ssh-0.7.1-darwin-arm64.dbxp",
+              "sha256": "d23ee804717c4b36c90071976ec65788265e685069513fe9e80bf33f13300f86",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15385358
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.1/io.dbx.ssh-0.7.1-darwin-x64.dbxp",
+              "sha256": "f0a9f55e9dac93d19173202d44fd6c9e4cc2bd2f12a9e56e3835cd7559ea9f2a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16025187
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.1/io.dbx.ssh-0.7.1-linux-arm64.dbxp",
+              "sha256": "2a6faa452e1595678d2a209faad4cda6b23c7331ba38855babcc18e3b13cf943",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16613119
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.1/io.dbx.ssh-0.7.1-linux-x64.dbxp",
+              "sha256": "cfa45b6d8dc2b41f1623a4324d54da114c7684d867e5f1c829dae5e8b18707c3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 17095008
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.1/io.dbx.ssh-0.7.1-windows-x64.dbxp",
+              "sha256": "1ef5adbc50e25731840e1c06c60a6b4c3d38bf2bba79835eedfe7e3bf8236653",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14822240
+            }
+          ]
+        },
         {
           "version": "0.7.0",
           "releasedAt": "2026-09-24T02:40:56.958Z",
@@ -4607,8 +4734,12 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "SSH Terminal",
-          "description": "面向服务器运维的 SSH 终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
+          "name": "终端",
+          "description": "面向服务器运维的终端：交互式会话、SFTP 文件传输、远程命令和受控运维操作集中在一个界面。"
+        },
+        "zh-TW": {
+          "name": "終端",
+          "description": "為 DBX 提供終端、SFTP 檔案傳輸與受控遠端維運工作流程。"
         }
       }
     },
