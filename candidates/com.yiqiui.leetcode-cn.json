@@ -7,8 +7,8 @@
     {
       "target": "windows-x64",
       "url": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/releases/download/v0.3.12/com.yiqiui.leetcode-cn-0.3.12-windows-x64.dbxp",
-      "sha256": "3d27932a4a40ae07a2bfe8633628480f71b397d6f54fe5fe7e690978947f9a4f",
-      "size": 2655401
+      "sha256": "9d8ad1d1366b74060edfbb31bb378b08dd2a08247125c40ca3a7f2af89e4f8eb",
+      "size": 2655484
     }
   ]
 }
