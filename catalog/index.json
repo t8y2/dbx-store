@@ -1163,7 +1163,7 @@
       "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，按官方分类与标签浏览题库、排序与筛选、收藏题目、查看每日一题与学习计划，并选择语言编写代码运行 / 提交判题。",
       "publisher": "yiqiui",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.11/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.12/icon.svg",
       "tags": [
         "leetcode",
         "algorithm",
@@ -1180,8 +1180,22 @@
       "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.3.10",
       "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
       "license": "Apache-2.0",
-      "latestVersion": "0.3.11",
+      "latestVersion": "0.3.12",
       "versions": [
+        {
+          "version": "0.3.12",
+          "releasedAt": "2026-10-01T09:57:33.575Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.12/com.yiqiui.leetcode-cn-0.3.12-windows-x64.dbxp",
+              "sha256": "0dc9f035ddd6c1d8f33868bf766bd052f08bfd06d98cfe7f4960ee8d9ae9847c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2656070
+            }
+          ]
+        },
         {
           "version": "0.3.11",
           "releasedAt": "2026-09-24T18:24:48.302Z",

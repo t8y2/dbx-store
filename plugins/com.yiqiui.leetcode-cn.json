@@ -21,7 +21,7 @@
   "source": "https://github.com/yiqiui/dbx-plugin-leetcode-cn/tree/v0.3.10",
   "homepage": "https://github.com/yiqiui/dbx-plugin-leetcode-cn",
   "license": "Apache-2.0",
-  "latestVersion": "0.3.11",
+  "latestVersion": "0.3.12",
   "versions": [
     {
       "version": "0.1.4",
@@ -188,6 +188,20 @@
           "sha256": "87864039af112232c2f7870329fcb33090e1122cc4c8142e1e639e55f2806a93",
           "signingKeyId": "dbx-store-release-2026",
           "size": 2654470
+        }
+      ]
+    },
+    {
+      "version": "0.3.12",
+      "releasedAt": "2026-10-01T09:57:33.575Z",
+      "releaseNotes": "",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.12/com.yiqiui.leetcode-cn-0.3.12-windows-x64.dbxp",
+          "sha256": "0dc9f035ddd6c1d8f33868bf766bd052f08bfd06d98cfe7f4960ee8d9ae9847c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2656070
         }
       ]
     }
