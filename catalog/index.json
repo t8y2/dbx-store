@@ -4347,7 +4347,7 @@
       "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.3/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -4355,6 +4355,7 @@
         "remote"
       ],
       "permissions": [
+        "host.ai",
         "host.binary",
         "host.clipboard:read",
         "host.events",
@@ -4365,8 +4366,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.7.2",
+      "latestVersion": "0.7.3",
       "versions": [
+        {
+          "version": "0.7.3",
+          "releasedAt": "2026-10-03T08:06:18.416Z",
+          "releaseNotes": "First official store release: interactive terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.3/io.dbx.ssh-0.7.3-darwin-arm64.dbxp",
+              "sha256": "dbb6d73fd77f4ffb114dd1ba2e8c95f5d8f2d018f30c9d7cc4c3620b533b55d8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15437684
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.3/io.dbx.ssh-0.7.3-darwin-x64.dbxp",
+              "sha256": "711bfa49d5e78be099ec72dbbe8072c75d44a4e479e28599eec32526a9fb5e44",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16069796
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.3/io.dbx.ssh-0.7.3-linux-arm64.dbxp",
+              "sha256": "4f5ecbf1ec3418a4eb38dcedb3a22c72e8bd3ae229afc7133d81ab6e402acf80",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16605765
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.3/io.dbx.ssh-0.7.3-linux-x64.dbxp",
+              "sha256": "bd0d35b28f7d6e24fddae377baffbb85a71c6cd4450b264266dba07a4e6dd993",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 17104011
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.3/io.dbx.ssh-0.7.3-windows-x64.dbxp",
+              "sha256": "0c5936d9a2acb1d5c63c07b940dce2810ff23dcdb478b32c9f011390c1fd0b11",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14826822
+            }
+          ]
+        },
         {
           "version": "0.7.2",
           "releasedAt": "2026-10-01T07:10:16.887Z",
