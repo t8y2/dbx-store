@@ -5867,6 +5867,85 @@
       }
     },
     {
+      "id": "io.github.kute.mysql-mock-data",
+      "name": "MySQL Mock Data",
+      "description": "Generate and preview MySQL mock INSERT SQL from table schemas and sampled existing rows, with a built-in generator or installation and usage guidance for external CLI tools.",
+      "publisher": "kute",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.kute.mysql-mock-data/0.0.5/icon.svg",
+      "tags": [
+        "mysql",
+        "test-data",
+        "mock-data",
+        "data-generation"
+      ],
+      "permissions": [
+        "host.data:read",
+        "host.workbench"
+      ],
+      "source": "https://github.com/kute/dbx-plugin-data-generate/tree/v0.0.5",
+      "homepage": "https://github.com/kute/dbx-plugin-data-generate",
+      "license": "Apache-2.0",
+      "latestVersion": "0.0.5",
+      "versions": [
+        {
+          "version": "0.0.5",
+          "releasedAt": "2026-10-03T11:40:35.572Z",
+          "releaseNotes": "Initial Marketplace candidate. Generates MySQL mock INSERT SQL from table metadata and samples of existing rows. External generator selections provide installation and command-line usage guidance; the plugin does not execute external CLIs or write rows to the database.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kute.mysql-mock-data/0.0.5/io.github.kute.mysql-mock-data-0.0.5-darwin-arm64.dbxp",
+              "sha256": "9e90ac6020132796f023dda4ebc5c64b291336948f1e23311dce153a8f0927cf",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 624141
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kute.mysql-mock-data/0.0.5/io.github.kute.mysql-mock-data-0.0.5-darwin-x64.dbxp",
+              "sha256": "e68464a01d2e23d8f95087e2f6102e2e883bb7f3ab1f2977cfc76ad105434982",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 635067
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kute.mysql-mock-data/0.0.5/io.github.kute.mysql-mock-data-0.0.5-linux-arm64.dbxp",
+              "sha256": "2e3b7ffb1b585f26bb20e1aa3a73388f538fafa56afd1e78d0974927ccf334e8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 658072
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kute.mysql-mock-data/0.0.5/io.github.kute.mysql-mock-data-0.0.5-linux-x64.dbxp",
+              "sha256": "40d2e6aefec33ead3729e2c888720e364c7c4b2ef5d68e9f2e95e0478ddc0e01",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 665562
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kute.mysql-mock-data/0.0.5/io.github.kute.mysql-mock-data-0.0.5-windows-arm64.dbxp",
+              "sha256": "99e270c1a5c6e6686f8c35ea5c78f3b0bb112e5e3a6a10224886efe8f2746f92",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 507207
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.kute.mysql-mock-data/0.0.5/io.github.kute.mysql-mock-data-0.0.5-windows-x64.dbxp",
+              "sha256": "89aa7c0c5db0207e442b8a3780b919e51b9a48276d79b8d98883fac135a20484",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 515673
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "MySQL Mock 数据生成",
+          "description": "根据 MySQL 表结构和已有数据生成、预览模拟 INSERT SQL；支持内置生成器，并提供外部 CLI 工具的安装和使用指引。"
+        }
+      }
+    },
+    {
       "id": "io.github.mugongliu1.terminal",
       "name": "Embedded Terminal",
       "description": "Run an interactive local shell directly inside a DBX workbench.",
