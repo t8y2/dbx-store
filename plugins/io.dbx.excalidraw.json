@@ -4,7 +4,7 @@
   "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX.",
   "publisher": "runstone",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/Abeautifulsnow/dbx-plugin-excalidraw/v0.3.1/assets/plugin.png",
+  "icon": "https://raw.githubusercontent.com/Abeautifulsnow/dbx-plugin-excalidraw/v0.3.2/assets/plugin.png",
   "tags": [
     "diagram",
     "drawing",
@@ -21,7 +21,7 @@
   "source": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
   "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
   "license": "MIT",
-  "latestVersion": "0.3.1",
+  "latestVersion": "0.3.2",
   "versions": [
     {
       "version": "0.2.0",
@@ -230,6 +230,48 @@
           "sha256": "c1b4381e7d142ba0f85a856c3aff716e8658239e8d294920f26128028f0a0ed8",
           "signingKeyId": "dbx-store-release-2026",
           "size": 18472783
+        }
+      ]
+    },
+    {
+      "version": "0.3.2",
+      "releasedAt": "2026-10-03T11:33:15.502Z",
+      "releaseNotes": "Adds a host-native save dialog, deep links from the editor and the result view into DBX's own file manager, remembered UI preferences (result row count and home search), and hands the Excalidraw editor the host locale as-is so its own translations apply. Also corrects the store listing, which previously declared no permissions while the manifest required two. New in this line: a Plan-on-canvas action in the result view lays the query's estimated execution plan out as an annotatable Excalidraw tree (host plan API required; declares host.plans:read). New in 0.3.0: an Ask AI action hands the parsed plan to DBX's built-in AI panel as a one-way snapshot (declares host.ai), and plan warnings land on the canvas as a sticky note. New in 0.3.1: clipboard integration — the export menu can copy the scene as JSON, and the editor gains a Paste menu that drops a scene copied from another diagram, or a screenshot from the system clipboard, straight onto the canvas (screenshots are stored in the content-addressed asset store like any other image). Reading the clipboard asks once per session and requires the new host.clipboard:read permission; the paste menu hides itself on hosts without the capability. New in 0.3.2: failure toasts across the home screen, editor and result view now append the underlying error detail (for example \"Connection is not open\"), so a problem is reportable without opening DevTools; error toasts stay up longer, and the save-status chip shows the cause on hover. Copying a scene whose JSON exceeds the host's 2 MiB bridge limit now fails with a clear pointer to export instead of a generic host rejection, measured over the exact request envelope so CJK content counts correctly. The result view also passes the tab's schema to the plan API (takes effect once the host supplies it), and the Ask-AI plan-context size check now measures UTF-8 bytes.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.2/io.dbx.excalidraw-0.3.2-darwin-arm64.dbxp",
+          "sha256": "436581c727898eba09ad06bc451820896518b2bbce6a8898a561cd8c02cc1edd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18294509
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.2/io.dbx.excalidraw-0.3.2-darwin-x64.dbxp",
+          "sha256": "da1a432c15360a91d5d98057999c1de97c5316e6f78cc71bd7bfcd206122142c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18392990
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.2/io.dbx.excalidraw-0.3.2-linux-arm64.dbxp",
+          "sha256": "0c27db713634b5ec426a6fc2dfd5e4273ac2c6038d9e7774055b21df0f9f27db",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18283587
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.2/io.dbx.excalidraw-0.3.2-linux-x64.dbxp",
+          "sha256": "e3b2e0e35e6408577ffde326512e166325438b4a0112062d3876e311e3259b1e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18412587
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.3.2/io.dbx.excalidraw-0.3.2-windows-x64.dbxp",
+          "sha256": "ac3408a37cb268d1808e00ef8c06dbffaf91fdd03a6c3278a54f50915311bb32",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18473370
         }
       ]
     }
