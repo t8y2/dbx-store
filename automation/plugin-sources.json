@@ -135,6 +135,11 @@
       "repository": "yiqiui/dbx-plugin-leetcode-cn",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "allran/dbx-plugin-clipboard",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
