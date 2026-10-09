@@ -4,7 +4,7 @@
   "description": "Generate deterministic synthetic test data from the current DBX table schema, with preview and CSV / JSON / INSERT SQL export.",
   "publisher": "0verme",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/0verme/dbx-plugin-SchemaSeed/v0.3.2/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/0verme/dbx-plugin-SchemaSeed/v0.3.3/assets/plugin.svg",
   "tags": [
     "test-data",
     "synthetic-data",
@@ -18,7 +18,7 @@
   "source": "https://github.com/0verme/dbx-plugin-SchemaSeed",
   "homepage": "https://github.com/0verme/dbx-plugin-SchemaSeed",
   "license": "Apache-2.0",
-  "latestVersion": "0.3.2",
+  "latestVersion": "0.3.3",
   "versions": [
     {
       "version": "0.2.4",
@@ -87,6 +87,20 @@
           "sha256": "c7f9383aa6d196af11f269d6e0e92709aa6055d8e9efafc1b84a30c4354fc090",
           "signingKeyId": "dbx-store-release-2026",
           "size": 845713
+        }
+      ]
+    },
+    {
+      "version": "0.3.3",
+      "releasedAt": "2026-10-09T07:28:45.219Z",
+      "releaseNotes": "",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/io.github.0verme.schema-seed/0.3.3/io.github.0verme.schema-seed-0.3.3-universal.dbxp",
+          "sha256": "91b23722aa2f0f30366072885d2db862420f2d0f08eef083d3beb0877ed87723",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 154733
         }
       ]
     }
