@@ -8074,7 +8074,7 @@
       "description": "Runs offline in a sandbox with zero network calls and just a single local permission. 44 developer utilities in under 200KB: an all-in-one toolkit covering crypto & security, encoding, text & regex, time & Cron, network & DevOps, and frontend assets — built for everyday development needs.",
       "publisher": "terry",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.3/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.4/icon.svg",
       "tags": [
         "devtools",
         "utilities",
@@ -8093,8 +8093,22 @@
       "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "license": "MIT",
-      "latestVersion": "0.6.3",
+      "latestVersion": "0.6.4",
       "versions": [
+        {
+          "version": "0.6.4",
+          "releasedAt": "2026-10-09T07:23:15.260Z",
+          "releaseNotes": "Bug fix: JSON formatter, JWT inspector and header converter no longer corrupt integers beyond 2^53-1 (e.g. snowflake IDs) — number literals round-trip exactly as written. New: collapsed icon rail opens floating panels — favorites (drag-reorderable), recents, and an all-tools grid with its own search box (autofocus, Enter jumps to the first hit). Home header shows the plugin version badge; typewriter pill adopts the accent color; star hover colors now match between sidebar and home.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.4/terry.devtools-0.6.4-universal.dbxp",
+              "sha256": "2b461015b4ec4ad373fac68f651575bcf5c926fe93458b41f7ef785c471b087f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 178671
+            }
+          ]
+        },
         {
           "version": "0.6.3",
           "releasedAt": "2026-10-01T07:21:01.906Z",
