@@ -2779,7 +2779,7 @@
       "description": "Manage Kubernetes clusters, workloads and resources from DBX.",
       "publisher": "eryajf",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.9/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.10/icon.png",
       "tags": [
         "kubernetes",
         "containers",
@@ -2793,8 +2793,57 @@
       "source": "https://github.com/eryajf/dbx-plugin-k8s/tree/82240b2d6d32c8fb8890a2a0415630a466d0faef",
       "homepage": "https://github.com/eryajf/dbx-plugin-k8s",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.9",
+      "latestVersion": "0.1.10",
       "versions": [
+        {
+          "version": "0.1.10",
+          "releasedAt": "2026-10-09T07:19:10.507Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.10/io.dbx.k8s-0.1.10-darwin-arm64.dbxp",
+              "sha256": "bc3521a659fa3d337a819cc008e60f6902ed4dd0307e2977e2588eaddb342a8f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32363473
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.10/io.dbx.k8s-0.1.10-darwin-x64.dbxp",
+              "sha256": "7b3d2cad1ffc0d50780a27a028fd0688b08bc2b4063443a3ca4d895ebef7aece",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 33948429
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.10/io.dbx.k8s-0.1.10-linux-arm64.dbxp",
+              "sha256": "cf8d55c68a9142ce22526dbf2cb95d517c959ecbc636db6141384e92476bddb0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 30514565
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.10/io.dbx.k8s-0.1.10-linux-x64.dbxp",
+              "sha256": "e2ec6616dcc36de4bf025beb5caf593effb9561a270499fe6090920f3412dba0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32569930
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.10/io.dbx.k8s-0.1.10-windows-arm64.dbxp",
+              "sha256": "1c33afbcc0ed3a2a56b1cdf0706a2cb7e4b9f3888f3f9220e57fc46f6d78f022",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 30585461
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.10/io.dbx.k8s-0.1.10-windows-x64.dbxp",
+              "sha256": "b9d81a04779c7bc7e5d2a045e91b862fbaf43c3d86467190c541ad560140592e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32880811
+            }
+          ]
+        },
         {
           "version": "0.1.9",
           "releasedAt": "2026-10-04T15:50:03.516Z",
@@ -4610,6 +4659,74 @@
         "zh": {
           "name": "NintyAPI",
           "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。"
+        }
+      }
+    },
+    {
+      "id": "io.dbx.password",
+      "name": "Password Manager",
+      "description": "Organize local passwords by group: create, search, and edit entries.",
+      "publisher": "alan",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.password/0.1.0/icon.svg",
+      "tags": [
+        "password",
+        "productivity",
+        "workbench"
+      ],
+      "permissions": [],
+      "source": "https://github.com/allran/dbx-plugin-password/tree/v0.1.0",
+      "homepage": "https://github.com/allran/dbx-plugin-password",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-10-09T07:13:15.402Z",
+          "releaseNotes": "Initial release: groups, searchable password list, detail view/edit, and random password generator.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.1.0/io.dbx.password-0.1.0-darwin-arm64.dbxp",
+              "sha256": "f43acbe97d0c92939da6a295a75ee98a7957b2e462974348360c96cd3297d650",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 298035
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.1.0/io.dbx.password-0.1.0-darwin-x64.dbxp",
+              "sha256": "1afdf6ec91629847d5ac0fcd2e0cc4141091454cab99cca2b23bda6a384a5e6f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 316238
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.1.0/io.dbx.password-0.1.0-linux-arm64.dbxp",
+              "sha256": "64be462da2308f8f531f3e433e5aa0184d942c577cef8d9a48be1b6ce4e5d110",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 318705
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.1.0/io.dbx.password-0.1.0-linux-x64.dbxp",
+              "sha256": "eeaeb0487ee750f6263bedadd975bb174303b108dad2cc81f06774e9caf4ea9d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 336178
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.1.0/io.dbx.password-0.1.0-windows-x64.dbxp",
+              "sha256": "32b6139a96364bee3d5257e021fe41f3676a49f841509bcd6b58d87acee981ca",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 238698
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "密码管理",
+          "description": "按分组管理本地密码：新建、搜索与编辑条目。"
         }
       }
     },
@@ -7957,7 +8074,7 @@
       "description": "Runs offline in a sandbox with zero network calls and just a single local permission. 44 developer utilities in under 200KB: an all-in-one toolkit covering crypto & security, encoding, text & regex, time & Cron, network & DevOps, and frontend assets — built for everyday development needs.",
       "publisher": "terry",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.3/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.4/icon.svg",
       "tags": [
         "devtools",
         "utilities",
@@ -7976,8 +8093,22 @@
       "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "license": "MIT",
-      "latestVersion": "0.6.3",
+      "latestVersion": "0.6.4",
       "versions": [
+        {
+          "version": "0.6.4",
+          "releasedAt": "2026-10-09T07:23:15.260Z",
+          "releaseNotes": "Bug fix: JSON formatter, JWT inspector and header converter no longer corrupt integers beyond 2^53-1 (e.g. snowflake IDs) — number literals round-trip exactly as written. New: collapsed icon rail opens floating panels — favorites (drag-reorderable), recents, and an all-tools grid with its own search box (autofocus, Enter jumps to the first hit). Home header shows the plugin version badge; typewriter pill adopts the accent color; star hover colors now match between sidebar and home.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.4/terry.devtools-0.6.4-universal.dbxp",
+              "sha256": "2b461015b4ec4ad373fac68f651575bcf5c926fe93458b41f7ef785c471b087f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 178671
+            }
+          ]
+        },
         {
           "version": "0.6.3",
           "releasedAt": "2026-10-01T07:21:01.906Z",
