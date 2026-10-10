@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "com.lwai.todo",
+  "publisher": "lwai",
+  "version": "0.1.5",
+  "name": "待办 Todo",
+  "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。",
+  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-todo/0.1.5/assets/plugin.svg",
+  "tags": ["todo", "task", "gtd", "productivity", "calendar"],
+  "permissions": [],
+  "source": "https://github.com/lukelwai/dbx-todo/tree/0.1.5",
+  "homepage": "https://github.com/lukelwai/dbx-todo",
+  "license": "Apache-2.0",
+  "releaseNotes": "Initial release",
+  "localizations": {
+    "zh-CN": {
+      "name": "待办 Todo",
+      "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.5/com.lwai.todo-0.1.5-darwin-arm64.dbxp",
+      "sha256": "28f1d0429030d27a6ba53cb41e99e2b0479314ed9f6156464407e1b792408be4",
+      "size": 5578973
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.5/com.lwai.todo-0.1.5-linux-x64.dbxp",
+      "sha256": "f2f2db5dfbb4e6731ee18802ab2059e2d42ca122a9ef4c481cedd1b9035203c6",
+      "size": 5629848
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.5/com.lwai.todo-0.1.5-windows-x64.dbxp",
+      "sha256": "714fced2f6d46902adde7465255b01cc34468c4c3853696ba6f026fc39fe4677",
+      "size": 5699916
+    }
+  ]
+}
