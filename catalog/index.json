@@ -8095,6 +8095,80 @@
       }
     },
     {
+      "id": "io.github.zaojiaoci.sql-guard",
+      "name": "DBX SQL Guard",
+      "description": "SQL risk review and approval trail for DBX.",
+      "publisher": "zaojiaoci",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.0/icon.svg",
+      "tags": [
+        "sql",
+        "security",
+        "audit",
+        "review"
+      ],
+      "permissions": [
+        "host.ai",
+        "host.plans:read",
+        "host.schema:read",
+        "host.storage"
+      ],
+      "source": "https://github.com/zaojiaoci/dbx-sql-guard/tree/v0.4.0",
+      "homepage": "https://github.com/zaojiaoci/dbx-sql-guard",
+      "license": "Apache-2.0",
+      "latestVersion": "0.4.0",
+      "versions": [
+        {
+          "version": "0.4.0",
+          "releasedAt": "2026-10-10T09:50:05.383Z",
+          "releaseNotes": "First store release. A Rust sidecar rates SQL statements offline (lexical risk engine with dialect-aware statement splitting and full-width punctuation detection) and writes an immutable hash-chained audit record to SQLite; a sandboxed workbench reviews, approves or rejects it and exports the trail as CSV. Opened from a table it reads that table's real column list and the optimizer's estimated row count from the host, so the large-scan finding is the database's own answer. Three MCP tools let the built-in DBX AI self-check before proposing destructive SQL. Advisory only: DBX has no pre-execution hook, so nothing here blocks a statement from running.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.0/io.github.zaojiaoci.sql-guard-0.4.0-darwin-arm64.dbxp",
+              "sha256": "3cd663ec4a7b9eeb60e2bba97f116a0f6c8181384d47749ce3f88059fb412a86",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1355357
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.0/io.github.zaojiaoci.sql-guard-0.4.0-darwin-x64.dbxp",
+              "sha256": "937e944feeb6f8f678ee70c048050715ad633312091bbce044d450d17ae36ebb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1439143
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.0/io.github.zaojiaoci.sql-guard-0.4.0-linux-arm64.dbxp",
+              "sha256": "be7e4e88991db1643d653311df158bc9ce6f6c9b6a3914a7212682012f9c9601",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1493668
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.0/io.github.zaojiaoci.sql-guard-0.4.0-linux-x64.dbxp",
+              "sha256": "b7b3155c4d840dfde3325c77f7863a0b8fa9b4bd197fae4936061e2125e395fc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1542766
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.0/io.github.zaojiaoci.sql-guard-0.4.0-windows-x64.dbxp",
+              "sha256": "6032cab71578cef570c1efb9d5e33899c878abdd5b921d29fe2521bf51a0bf14",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1356612
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "DBX SQL Guard",
+          "description": "为 DBX 提供 SQL 风险评审与审批留痕。"
+        }
+      }
+    },
+    {
       "id": "monstercat.waitwork",
       "name": "Wait Work",
       "description": "Work a while, rest a while. Read local TXT, EPUB and MOBI books or online books from custom sources, with chapter caching and autosave. Customize and save the SQL cover, result table and labels; reading folds away automatically when switching pages.",
