@@ -8,8 +8,10 @@
   "source": "https://github.com/zaojiaoci/dbx-sql-guard/tree/v0.4.0",
   "homepage": "https://github.com/zaojiaoci/dbx-sql-guard",
   "license": "Apache-2.0",
+  "icon": "https://raw.githubusercontent.com/zaojiaoci/dbx-sql-guard/v0.4.0/assets/plugin.svg",
+  "tags": ["sql", "security", "audit", "review"],
   "permissions": ["host.ai", "host.plans:read", "host.schema:read", "host.storage"],
-  "releaseNotes": "https://github.com/zaojiaoci/dbx-sql-guard/releases/tag/v0.4.0",
+  "releaseNotes": "First store release. A Rust sidecar rates SQL statements offline (lexical risk engine with dialect-aware statement splitting and full-width punctuation detection) and writes an immutable hash-chained audit record to SQLite; a sandboxed workbench reviews, approves or rejects it and exports the trail as CSV. Opened from a table it reads that table's real column list and the optimizer's estimated row count from the host, so the large-scan finding is the database's own answer. Three MCP tools let the built-in DBX AI self-check before proposing destructive SQL. Advisory only: DBX has no pre-execution hook, so nothing here blocks a statement from running.",
   "localizations": {
     "zh-CN": {
       "name": "DBX SQL Guard",

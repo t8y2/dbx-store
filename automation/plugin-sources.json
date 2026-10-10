@@ -140,6 +140,11 @@
       "repository": "allran/dbx-plugin-clipboard",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "zaojiaoci/dbx-sql-guard",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
