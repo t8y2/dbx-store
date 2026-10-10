@@ -21,19 +21,19 @@
   "targets": [
     {
       "target": "darwin-arm64",
-      "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.5/com.lwai.todo-0.1.5-darwin-arm64.dbxp",
+      "url": "https://github.com/lukelwai/dbx-todo/releases/download/0.1.5/com.lwai.todo-0.1.5-darwin-arm64.dbxp",
       "sha256": "28f1d0429030d27a6ba53cb41e99e2b0479314ed9f6156464407e1b792408be4",
       "size": 5578973
     },
     {
       "target": "linux-x64",
-      "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.5/com.lwai.todo-0.1.5-linux-x64.dbxp",
+      "url": "https://github.com/lukelwai/dbx-todo/releases/download/0.1.5/com.lwai.todo-0.1.5-linux-x64.dbxp",
       "sha256": "f2f2db5dfbb4e6731ee18802ab2059e2d42ca122a9ef4c481cedd1b9035203c6",
       "size": 5629848
     },
     {
       "target": "windows-x64",
-      "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.5/com.lwai.todo-0.1.5-windows-x64.dbxp",
+      "url": "https://github.com/lukelwai/dbx-todo/releases/download/0.1.5/com.lwai.todo-0.1.5-windows-x64.dbxp",
       "sha256": "714fced2f6d46902adde7465255b01cc34468c4c3853696ba6f026fc39fe4677",
       "size": 5699916
     }
