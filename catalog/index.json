@@ -5674,7 +5674,7 @@
       "description": "Generate deterministic synthetic test data from the current DBX table schema, with preview and CSV / JSON / INSERT SQL export.",
       "publisher": "0verme",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.0verme.schema-seed/0.3.3/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.0verme.schema-seed/0.3.5/icon.svg",
       "tags": [
         "test-data",
         "synthetic-data",
@@ -5688,8 +5688,22 @@
       "source": "https://github.com/0verme/dbx-plugin-SchemaSeed",
       "homepage": "https://github.com/0verme/dbx-plugin-SchemaSeed",
       "license": "Apache-2.0",
-      "latestVersion": "0.3.3",
+      "latestVersion": "0.3.5",
       "versions": [
+        {
+          "version": "0.3.5",
+          "releasedAt": "2026-10-10T06:13:19.568Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.0verme.schema-seed/0.3.5/io.github.0verme.schema-seed-0.3.5-universal.dbxp",
+              "sha256": "4d99095594b488725770bbd1379ec53ed2fb551a59a7b8faa58be2897ea10c6c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 178618
+            }
+          ]
+        },
         {
           "version": "0.3.3",
           "releasedAt": "2026-10-09T07:28:45.219Z",
@@ -5788,7 +5802,7 @@
       "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally.",
       "publisher": "aili0617",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.2/icon.svg",
       "tags": [
         "developer-tools",
         "utilities",
@@ -5796,11 +5810,53 @@
         "cryptography"
       ],
       "permissions": [],
-      "source": "https://github.com/aiLi0617/dbx-plugin-toolbox/tree/v0.1.1",
+      "source": "https://github.com/aiLi0617/dbx-plugin-toolbox",
       "homepage": "https://github.com/aiLi0617/dbx-plugin-toolbox",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-10-10T06:08:09.067Z",
+          "releaseNotes": "首次发布，包含 38 个本地开发工具、图片处理、密码学工具和使用 Argon2id + AES-GCM 保护的加密密钥库。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.2/io.github.aili0617.toolbox-0.1.2-darwin-arm64.dbxp",
+              "sha256": "e06007ca6c9dbeda65429eddcf29d74c65454c659c1e658a6aea2fd89ef16fcf",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2550726
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.2/io.github.aili0617.toolbox-0.1.2-darwin-x64.dbxp",
+              "sha256": "0ce8ebb51014051fa52de1fcaa80e11a33ec83bfa884f3dda85bc3029cd56720",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2619602
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.2/io.github.aili0617.toolbox-0.1.2-linux-arm64.dbxp",
+              "sha256": "933aefd93e7d7e2c98dd5c4ac0353323f192c7a7e45c61f467b1181d948b033d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3572701
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.2/io.github.aili0617.toolbox-0.1.2-linux-x64.dbxp",
+              "sha256": "ed9ffec5e4f417aec62903fd2803545e0028cb7275e2e73f200cb3f7608f63e8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3673783
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.2/io.github.aili0617.toolbox-0.1.2-windows-x64.dbxp",
+              "sha256": "fa4fe08c0cd78d0fa239931e48b2cd9d228001d3a56ddc7c6ef1277f79c922e5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2608998
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-09-21T17:26:57.433Z",
@@ -5890,6 +5946,38 @@
         "zh-CN": {
           "name": "DBX 工具箱",
           "description": "一站式、注重隐私的本地开发工具箱，涵盖数据转换、编解码、格式化、文本与图片处理、实用生成器、密码学工具及加密密钥库；所有数据均在本机处理。"
+        },
+        "zh-TW": {
+          "name": "DBX 工具箱",
+          "description": "一站式、注重隱私的本機開發工具箱，涵蓋資料轉換、編解碼、格式化、文字與圖片處理、實用產生器、密碼學工具及加密金鑰庫；所有資料均在本機處理。"
+        },
+        "es": {
+          "name": "Herramientas DBX",
+          "description": "Una caja de herramientas local y centrada en la privacidad para desarrollo, con conversión de datos, codificación y decodificación, formato, procesamiento de texto e imágenes, generadores, criptografía y un almacén cifrado de claves; todos los datos se procesan localmente."
+        },
+        "it": {
+          "name": "Strumenti DBX",
+          "description": "Una raccolta completa di strumenti locali per sviluppatori, attenta alla privacy, con conversione dei dati, codifica e decodifica, formattazione, elaborazione di testo e immagini, generatori, crittografia e archivio cifrato delle chiavi; tutti i dati vengono elaborati in locale."
+        },
+        "ja": {
+          "name": "DBX ツールボックス",
+          "description": "データ変換、エンコード／デコード、整形、テキスト・画像処理、各種ジェネレーター、暗号化ツール、暗号化鍵保管庫を備えた、プライバシー重視のオールインワン開発ツールボックス。すべてのデータをローカルで処理します。"
+        },
+        "pt-BR": {
+          "name": "Ferramentas DBX",
+          "description": "Uma caixa de ferramentas local completa e focada em privacidade para desenvolvimento, com conversão de dados, codificação e decodificação, formatação, processamento de texto e imagens, geradores, criptografia e um cofre de chaves criptografado; todos os dados são processados localmente."
+        },
+        "ko": {
+          "name": "DBX 도구 상자",
+          "description": "데이터 변환, 인코딩, 서식 지정, 텍스트 및 이미지 처리, 암호화와 암호화된 키 보관함을 제공하는 로컬 개발 도구입니다."
+        },
+        "tr": {
+          "name": "DBX Araç Kutusu",
+          "description": "Veri dönüştürme, kodlama, biçimlendirme, metin ve görüntü işleme, şifreleme ve şifreli anahtar kasası için yerel geliştirici araçları."
+        },
+        "az": {
+          "name": "DBX Alətlər Qutusu",
+          "description": "Məlumat çevirmə, kodlaşdırma, formatlama, mətn və şəkil emalı, kriptoqrafiya və şifrəli açar anbarı üçün yerli tərtibatçı alətləri."
         }
       }
     },
