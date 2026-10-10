@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "com.object.browser",
+  "publisher": "huangqiang",
+  "version": "0.4.0",
+  "name": "Object Storage",
+  "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview, and multi-select batch delete/download.",
+  "icon": "https://raw.githubusercontent.com/huangqiang008/dbx-object-storage/main/assets/plugin.svg",
+  "tags": ["storage", "oss", "s3", "minio", "object-storage", "browser"],
+  "permissions": ["host.workbench", "host.storage", "host.events", "host.filesystem"],
+  "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v0.4.0",
+  "homepage": "https://github.com/huangqiang008/dbx-object-storage",
+  "license": "MIT",
+  "releaseNotes": "First generic release: StorageDriver abstraction (Aliyun OSS native + S3-compatible via minio-go), large-directory pagination, chunked upload, presigned sharing, file preview (image/video/audio/pdf/text/code/markdown), multi-select batch delete/download.",
+  "localizations": {
+    "zh-CN": {
+      "name": "对象存储",
+      "description": "通用对象存储浏览器：支持阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）。大目录服务端分页、分片上传、预签名分享、文件预览、多选批量删除/下载。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/huangqiang008/dbx-object-storage/releases/download/v0.4.0/com.object.browser-0.4.0-windows-x64.dbxp",
+      "sha256": "190240846bdaec42b471f83440ce6421acbc59bbdb56f998364c3333b8840312",
+      "size": 7625688
+    }
+  ]
+}
