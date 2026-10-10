@@ -903,6 +903,62 @@
       }
     },
     {
+      "id": "com.lwai.todo",
+      "name": "待办 Todo",
+      "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。",
+      "publisher": "lwai",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.5/icon.svg",
+      "tags": [
+        "todo",
+        "task",
+        "gtd",
+        "productivity",
+        "calendar"
+      ],
+      "permissions": [],
+      "source": "https://github.com/lukelwai/dbx-todo/tree/0.1.5",
+      "homepage": "https://github.com/lukelwai/dbx-todo",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.5",
+      "versions": [
+        {
+          "version": "0.1.5",
+          "releasedAt": "2026-10-10T09:18:26.074Z",
+          "releaseNotes": "Initial release",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.5/com.lwai.todo-0.1.5-darwin-arm64.dbxp",
+              "sha256": "c8b0d3ae6fb488f47803b1272699847e51f141600ddb3920b886b19f0894092f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5579727
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.5/com.lwai.todo-0.1.5-linux-x64.dbxp",
+              "sha256": "c1fadce405c1cb44c6c73962914cecbad4c19b1973297fc8b413f4ece6ef3e1e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5630601
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.5/com.lwai.todo-0.1.5-windows-x64.dbxp",
+              "sha256": "4b49a88ff5efb1f9f05b8219cbc454405fbfe73970d2a7dc3352f8593d187b1c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5700675
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "待办 Todo",
+          "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。"
+        }
+      }
+    },
+    {
       "id": "com.nintycat.shell",
       "name": "NintyShell",
       "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files.",
