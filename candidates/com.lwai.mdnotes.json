@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "com.lwai.mdnotes",
+  "publisher": "lwai",
+  "version": "0.8.6",
+  "name": "AI.MD 笔记",
+  "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。内置 AI 助手（右侧常驻栏），可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型对笔记做分析、润色、续写与问答。",
+  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/0.8.6/assets/plugin.svg",
+  "tags": [
+    "md",
+    "notes",
+    "files",
+    "storage",
+    "ai"
+  ],
+  "permissions": [
+    "host.filesystem"
+  ],
+  "source": "https://github.com/lukelwai/dbx-md-notes",
+  "homepage": "https://github.com/lukelwai/dbx-md-notes",
+  "license": "Apache-2.0",
+  "releaseNotes": "工具栏瘦身：「插入 SQL 块」和「AI 助手」常驻，导出 / 备份 / 恢复 / 为表新建笔记收进「更多」下拉 —— 窄窗口下不再被挤成两行；点空白处或按 Esc 收起，点任一项执行后自动收起。所有动作的 id 与行为都没变，只是换了位置。",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/lukelwai/dbx-md-notes/releases/download/0.8.6/com.lwai.mdnotes-0.8.6-darwin-arm64.dbxp",
+      "sha256": "685723ce7b5d5dff2d622cd85aaf219962e3cbfe5d56a9de512e5f00681afb92",
+      "size": 5023724
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/lukelwai/dbx-md-notes/releases/download/0.8.6/com.lwai.mdnotes-0.8.6-linux-x64.dbxp",
+      "sha256": "e00a248b5ad5578d7d73bc73eb61be2d0fc81c683882aa9167ce01a0ca3e7e9c",
+      "size": 5195017
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/lukelwai/dbx-md-notes/releases/download/0.8.6/com.lwai.mdnotes-0.8.6-windows-x64.dbxp",
+      "sha256": "a323f285795b2dfd8047417144a4d88a1cb7c93907118af96404335b57ea637f",
+      "size": 5257273
+    }
+  ]
+}
