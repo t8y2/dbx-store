@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.zaojiaoci.sql-guard",
+  "publisher": "zaojiaoci",
+  "version": "0.4.1",
+  "name": "DBX SQL Guard",
+  "description": "SQL risk review and approval trail for DBX.",
+  "icon": "https://raw.githubusercontent.com/zaojiaoci/dbx-sql-guard/v0.4.1/assets/plugin.svg",
+  "tags": [
+    "sql",
+    "security",
+    "audit",
+    "review"
+  ],
+  "source": "https://github.com/zaojiaoci/dbx-sql-guard/tree/v0.4.1",
+  "homepage": "https://github.com/zaojiaoci/dbx-sql-guard",
+  "license": "Apache-2.0",
+  "releaseNotes": "Screen-copy release: the engine, the SQLite store, the hash chain, the CSV export, the rule set and the declared permissions are unchanged, so installing it does not re-ask for consent. The audit database's path moved off the review header — the screen people screenshot — to under the audit list, folded to ~, with the absolute path one hover or one *Copy full path* away; guard/ping gained a display form and no MCP tool result may carry the file location. The host card is renamed to *Connection metadata & estimated rows* and lost its developer-only paragraph, and the AI progress line now says only *Generating…*. Requires DBX >= 0.6.38. Advisory only: DBX has no pre-execution hook, so nothing here blocks a statement from running. Verified with 106 Rust tests and five jsdom harnesses driving the real sidecar, run again against the packaged binary.",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/zaojiaoci/dbx-sql-guard/releases/download/v0.4.1/io.github.zaojiaoci.sql-guard-0.4.1-darwin-arm64.dbxp",
+      "sha256": "e98b2a1c751fca474de7f3567f7b1eb95bfc5cc77ba583d65123f7b6ec2cf421",
+      "size": 1356271
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/zaojiaoci/dbx-sql-guard/releases/download/v0.4.1/io.github.zaojiaoci.sql-guard-0.4.1-darwin-x64.dbxp",
+      "sha256": "bd0165cbb94333ecdf4ef29e7b0b8fc2d145dbd4bf44c67049858300b8ebced4",
+      "size": 1441128
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/zaojiaoci/dbx-sql-guard/releases/download/v0.4.1/io.github.zaojiaoci.sql-guard-0.4.1-linux-arm64.dbxp",
+      "sha256": "df543c9e7bfb19951e7699c3f8abd78a4939aad55071ea817b96cb8dd2fc53ba",
+      "size": 1495436
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/zaojiaoci/dbx-sql-guard/releases/download/v0.4.1/io.github.zaojiaoci.sql-guard-0.4.1-linux-x64.dbxp",
+      "sha256": "45d2e675af896a039ecba81110e17973cea539882a2989c11b5134f3aaf8701f",
+      "size": 1544502
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/zaojiaoci/dbx-sql-guard/releases/download/v0.4.1/io.github.zaojiaoci.sql-guard-0.4.1-windows-x64.dbxp",
+      "sha256": "46d11cea0a85d1c79c8e5a9f1755ec1bfce6bc544ecd359ff2b792510a9ce78f",
+      "size": 1357965
+    }
+  ],
+  "permissions": [
+    "host.ai",
+    "host.plans:read",
+    "host.schema:read",
+    "host.storage"
+  ]
+}
