@@ -2883,7 +2883,7 @@
       "description": "Manage Kubernetes clusters, workloads and resources from DBX.",
       "publisher": "eryajf",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.10/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.11/icon.png",
       "tags": [
         "kubernetes",
         "containers",
@@ -2897,8 +2897,57 @@
       "source": "https://github.com/eryajf/dbx-plugin-k8s/tree/82240b2d6d32c8fb8890a2a0415630a466d0faef",
       "homepage": "https://github.com/eryajf/dbx-plugin-k8s",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.10",
+      "latestVersion": "0.1.11",
       "versions": [
+        {
+          "version": "0.1.11",
+          "releasedAt": "2026-10-12T00:52:00.360Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.11/io.dbx.k8s-0.1.11-darwin-arm64.dbxp",
+              "sha256": "d80e0d2f14eca1fc46df7cd4b5439c2dfbf8118143538867fccdcf2fcb3c2599",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32371609
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.11/io.dbx.k8s-0.1.11-darwin-x64.dbxp",
+              "sha256": "fa414c4430780379c40511684c35739eeeeb612d14652fed8661bf5f55f878e1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 33959791
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.11/io.dbx.k8s-0.1.11-linux-arm64.dbxp",
+              "sha256": "73e277ebdc0f01a1d13eb913a1f41088ad013d3a610bc639c001ccd0f02061e2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 30525517
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.11/io.dbx.k8s-0.1.11-linux-x64.dbxp",
+              "sha256": "6eb81795f1b6020bb852f8f66c6640c61b7c6adf1d2915529318578b3727c820",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32578986
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.11/io.dbx.k8s-0.1.11-windows-arm64.dbxp",
+              "sha256": "9fb6e812387d88d30411e84d7c5ff9b396cf44186219a09fa83977f4944b9268",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 30597795
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.11/io.dbx.k8s-0.1.11-windows-x64.dbxp",
+              "sha256": "429f784c24e58f6faa9769aa6c6deba1ee13ec4bc886b7d1d5f9a3ed087f9a74",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32893117
+            }
+          ]
+        },
         {
           "version": "0.1.10",
           "releasedAt": "2026-10-09T07:19:10.507Z",
@@ -8100,7 +8149,7 @@
       "description": "SQL risk review and approval trail for DBX.",
       "publisher": "zaojiaoci",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.1/icon.svg",
       "tags": [
         "sql",
         "security",
@@ -8113,11 +8162,53 @@
         "host.schema:read",
         "host.storage"
       ],
-      "source": "https://github.com/zaojiaoci/dbx-sql-guard/tree/v0.4.0",
+      "source": "https://github.com/zaojiaoci/dbx-sql-guard/tree/v0.4.1",
       "homepage": "https://github.com/zaojiaoci/dbx-sql-guard",
       "license": "Apache-2.0",
-      "latestVersion": "0.4.0",
+      "latestVersion": "0.4.1",
       "versions": [
+        {
+          "version": "0.4.1",
+          "releasedAt": "2026-10-12T00:44:25.352Z",
+          "releaseNotes": "Screen-copy release: the engine, the SQLite store, the hash chain, the CSV export, the rule set and the declared permissions are unchanged, so installing it does not re-ask for consent. The audit database's path moved off the review header — the screen people screenshot — to under the audit list, folded to ~, with the absolute path one hover or one *Copy full path* away; guard/ping gained a display form and no MCP tool result may carry the file location. The host card is renamed to *Connection metadata & estimated rows* and lost its developer-only paragraph, and the AI progress line now says only *Generating…*. Requires DBX >= 0.6.38. Advisory only: DBX has no pre-execution hook, so nothing here blocks a statement from running. Verified with 106 Rust tests and five jsdom harnesses driving the real sidecar, run again against the packaged binary.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.1/io.github.zaojiaoci.sql-guard-0.4.1-darwin-arm64.dbxp",
+              "sha256": "61d457c724d8e019b03d5220c0ff520c4f83c208ad2fce104bcb1650eddda309",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1356860
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.1/io.github.zaojiaoci.sql-guard-0.4.1-darwin-x64.dbxp",
+              "sha256": "87695980e8ed6b753f3ba390d5cdc2e0eeebb8734ad18c70809a3b40b2e424da",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1441717
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.1/io.github.zaojiaoci.sql-guard-0.4.1-linux-arm64.dbxp",
+              "sha256": "6cead02d412abfa0fa14d28eee8169217c987719edb4b9c1099a4c9fd342132f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1496025
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.1/io.github.zaojiaoci.sql-guard-0.4.1-linux-x64.dbxp",
+              "sha256": "5a95e46d11f81b7fe2a60c621fca761939d0cbe23643a0c7fffc80c2a9e2f4fc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1545088
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.sql-guard/0.4.1/io.github.zaojiaoci.sql-guard-0.4.1-windows-x64.dbxp",
+              "sha256": "8780cd54644224871fa41a244211fcc54f54da6f375ace6d1420a52f34948824",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1358558
+            }
+          ]
+        },
         {
           "version": "0.4.0",
           "releasedAt": "2026-10-10T09:50:05.383Z",
