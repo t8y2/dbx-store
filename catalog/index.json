@@ -839,25 +839,54 @@
     },
     {
       "id": "com.lwai.mdnotes",
-      "name": "MD Notes",
-      "description": "Markdown notes with a connection type: create an MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory from the connection configuration and can be browsed and edited as an mdnotes:// virtual file system.",
+      "name": "AI.MD 笔记",
+      "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。内置 AI 助手（右侧常驻栏），可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型对笔记做分析、润色、续写与问答。",
       "publisher": "lwai",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.7.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.6/icon.svg",
       "tags": [
         "md",
         "notes",
         "files",
-        "storage"
+        "storage",
+        "ai"
       ],
       "permissions": [
         "host.filesystem"
       ],
-      "source": "https://github.com/lukelwai/dbx-md-notes/tree/v0.7.1",
+      "source": "https://github.com/lukelwai/dbx-md-notes",
       "homepage": "https://github.com/lukelwai/dbx-md-notes",
       "license": "Apache-2.0",
-      "latestVersion": "0.7.1",
+      "latestVersion": "0.8.6",
       "versions": [
+        {
+          "version": "0.8.6",
+          "releasedAt": "2026-10-12T07:22:24.322Z",
+          "releaseNotes": "工具栏瘦身：「插入 SQL 块」和「AI 助手」常驻，导出 / 备份 / 恢复 / 为表新建笔记收进「更多」下拉 —— 窄窗口下不再被挤成两行；点空白处或按 Esc 收起，点任一项执行后自动收起。所有动作的 id 与行为都没变，只是换了位置。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.6/com.lwai.mdnotes-0.8.6-darwin-arm64.dbxp",
+              "sha256": "f8853cbd1d40614edadd0d97aa18bb038bd40c87cf9ad61cb7a3b0cc5f925c46",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5024609
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.6/com.lwai.mdnotes-0.8.6-linux-x64.dbxp",
+              "sha256": "c5ce3394ab2a198df63c192ece66aea8d2e8a5294a77bb62ce284bedfaaff88e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5195898
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.6/com.lwai.mdnotes-0.8.6-windows-x64.dbxp",
+              "sha256": "cf7f8e03a64aac48cbcc0006059813549d2deb8cb227bbcdc5af3e9af41fdc9e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5258161
+            }
+          ]
+        },
         {
           "version": "0.7.1",
           "releasedAt": "2026-09-21T17:30:27.458Z",
