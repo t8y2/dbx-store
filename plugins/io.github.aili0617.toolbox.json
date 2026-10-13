@@ -4,7 +4,7 @@
   "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally.",
   "publisher": "aili0617",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/aiLi0617/dbx-plugin-toolbox/v0.1.3/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/aiLi0617/dbx-plugin-toolbox/v0.1.4/assets/plugin.svg",
   "tags": [
     "developer-tools",
     "utilities",
@@ -18,7 +18,7 @@
   "source": "https://github.com/aiLi0617/dbx-plugin-toolbox",
   "homepage": "https://github.com/aiLi0617/dbx-plugin-toolbox",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.3",
+  "latestVersion": "0.1.4",
   "versions": [
     {
       "version": "0.1.0",
@@ -185,6 +185,48 @@
           "sha256": "1537d7a2349d23708b57d5fb9fe3b3eea1ff6d854b5c871ac759882648489d7d",
           "signingKeyId": "dbx-store-release-2026",
           "size": 5092966
+        }
+      ]
+    },
+    {
+      "version": "0.1.4",
+      "releasedAt": "2026-10-13T05:13:57.024Z",
+      "releaseNotes": "0.1.4：空闲端口推荐改为独立探测，一次返回 5 个经系统绑定验证的 TCP/UDP 候选；修复 OCR 模型在发布包中的拉取与完整性校验；优化范围滑块进度、焦点状态及多处主题阴影样式。0.1.4: Makes free-port recommendations independent and returns five TCP/UDP candidates verified by system binding; fixes OCR model hydration and validation during release packaging; improves range-slider progress, focus states, and theme-aware shadow styling.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.4/io.github.aili0617.toolbox-0.1.4-darwin-arm64.dbxp",
+          "sha256": "a5421ecce7f08b255fd053cbec8711054125adbbe592a0094b7771229a91246e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 100029314
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.4/io.github.aili0617.toolbox-0.1.4-darwin-x64.dbxp",
+          "sha256": "5d6087c36340c3f0eb72cfb2f5048f1e97149c9e6b15e72d40254585d621d3e2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 99535403
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.4/io.github.aili0617.toolbox-0.1.4-linux-arm64.dbxp",
+          "sha256": "85216b774c612e93fa63059e53a7e60b7e73a49bdba0145b79585b0cf7a59147",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 100262899
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.4/io.github.aili0617.toolbox-0.1.4-linux-x64.dbxp",
+          "sha256": "261d3921eb33ab9f237e946c040d356967d95737a0c1589c321f5fd471c1fb3f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 100672584
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.4/io.github.aili0617.toolbox-0.1.4-windows-x64.dbxp",
+          "sha256": "c9d712bace4fbd5a36d8f9e9c918291a1716ed34908a26fc3f5f35ea90b2fa27",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 99726935
         }
       ]
     }

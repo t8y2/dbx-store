@@ -4,7 +4,7 @@
   "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-files/files-v0.1.89/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-files/files-v0.1.90/assets/plugin.svg",
   "tags": [
     "files",
     "storage",
@@ -21,7 +21,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-files",
   "homepage": "https://github.com/jinpy666/dbx-plugin-files",
   "license": "MIT",
-  "latestVersion": "0.1.89",
+  "latestVersion": "0.1.90",
   "versions": [
     {
       "version": "0.1.57",
@@ -734,6 +734,48 @@
           "sha256": "580c4c2cf850e6038811a828a33518a0a4f7cc2ff72be60c13e091016deeec6b",
           "signingKeyId": "dbx-store-release-2026",
           "size": 38350139
+        }
+      ]
+    },
+    {
+      "version": "0.1.90",
+      "releasedAt": "2026-10-13T05:05:57.734Z",
+      "releaseNotes": "新增工具栏「上传文件夹」：走 webview 原生 webkitdirectory 选择器（web/docker 与桌面宿主同一路径），按相对路径还原目录结构落到 目标/<文件夹名>/；先建远端目录树（目录已存在=合并），再逐文件走统一上传泵；同名冲突策略按子目录分组生效（询问档带目录前缀、自动重命名在目录内让位）。目录结构与落盘内容均有集成测试覆盖。New toolbar action \"Upload folder\": a webview-native webkitdirectory picker (same path on web/docker and desktop hosts) that restores the directory structure under target/<folder>/, creates the remote directory tree first (existing dirs merge), then streams every file through the unified upload pump; the conflict policy applies per subdirectory (ask shows dir-prefixed names, rename de-dupes within each directory).",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.90/io.dbx.files-0.1.90-darwin-arm64.dbxp",
+          "sha256": "2653c77ab5166b5ed026735fdd0ded976265c9b9477de9e0056e4eb676fff6c0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 39747540
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.90/io.dbx.files-0.1.90-darwin-x64.dbxp",
+          "sha256": "7ef5ba705d4b268b5fc712b695784d21df1faf027cf459cdcad951181a3a8862",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 42250605
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.90/io.dbx.files-0.1.90-linux-arm64.dbxp",
+          "sha256": "ef2f00ada3e7c50f24e1b732ebf07e9d64fb8d070a881aa977da70516d0bad2f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 36129267
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.90/io.dbx.files-0.1.90-linux-x64.dbxp",
+          "sha256": "801bfba7533057bdfa1df31f37849bf2b71a2b8f1f9025be2b8c21281d40ecca",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 39057737
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.90/io.dbx.files-0.1.90-windows-x64.dbxp",
+          "sha256": "a5222dc2353ed8b00bc518e138e3f9dc642e02d155bbb011d5bd7dee3eead243",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 38411183
         }
       ]
     }
