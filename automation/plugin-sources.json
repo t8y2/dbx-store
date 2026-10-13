@@ -145,6 +145,11 @@
       "repository": "zaojiaoci/dbx-sql-guard",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "lukelwai/dbx-todo",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
