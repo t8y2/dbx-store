@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "cc-switch",
+  "name": "AI Config Importer",
+  "description": "Import AI provider configurations from CC-SWITCH into DBX.",
+  "publisher": "ma123456mai",
+  "version": "0.1.4",
+  "permissions": [],
+  "icon": "https://raw.githubusercontent.com/ma123456mai/dbx-cc-switch-plugin/v0.1.4/assets/plugin.png",
+  "tags": [
+    "ai",
+    "configuration",
+    "cc-switch"
+  ],
+  "source": "https://github.com/ma123456mai/dbx-cc-switch-plugin/tree/v0.1.4",
+  "homepage": "https://github.com/ma123456mai/dbx-cc-switch-plugin",
+  "license": "Apache-2.0",
+  "releaseNotes": "Rename the plugin to AI Config Importer. Import AI provider configurations from CC-SWITCH into DBX.",
+  "localizations": {
+    "zh-CN": {
+      "name": "AI 配置导入",
+      "description": "从 CC-SWITCH 导入 AI 提供商配置到 DBX。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/ma123456mai/dbx-cc-switch-plugin/releases/download/v0.1.4/cc-switch-0.1.4-darwin-arm64.dbxp",
+      "sha256": "310db7cb8e16e0eacb396926f820ddfa126c12ddc99aa55762d7ab2fa14560a6",
+      "size": 1304865
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/ma123456mai/dbx-cc-switch-plugin/releases/download/v0.1.4/cc-switch-0.1.4-darwin-x64.dbxp",
+      "sha256": "211afccb2ac35aabe133c1ac416e1b439f783cd86d002142c2c59cd617b0b1be",
+      "size": 1377364
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/ma123456mai/dbx-cc-switch-plugin/releases/download/v0.1.4/cc-switch-0.1.4-linux-arm64.dbxp",
+      "sha256": "6d501e9187920cfc89200a450dd187b63a6a98fe1fe56ba83365f183422dd4f1",
+      "size": 1441436
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/ma123456mai/dbx-cc-switch-plugin/releases/download/v0.1.4/cc-switch-0.1.4-linux-x64.dbxp",
+      "sha256": "67e9a90ce6dc1d47827f782a0f3c9be71e1e527929ff8ee5093a211d9fedb526",
+      "size": 1475855
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/ma123456mai/dbx-cc-switch-plugin/releases/download/v0.1.4/cc-switch-0.1.4-windows-x64.dbxp",
+      "sha256": "11e943d403018204aa67dde0f049217b336b51782f04a63643c19420ea3e2d44",
+      "size": 1269864
+    }
+  ]
+}
