@@ -152,7 +152,7 @@
       "autoUpdate": true
     },
     {
-      "repository": "ma123456mai/dbx-cc-switch-plugin",
+      "repository": "ma123456mai/ai-config-importer",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     }
