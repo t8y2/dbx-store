@@ -13,10 +13,10 @@
   "permissions": [
     "host.workbench"
   ],
-  "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/tree/v0.3.2",
+  "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/tree/v0.3.3",
   "homepage": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
   "license": "MIT",
-  "latestVersion": "0.3.2",
+  "latestVersion": "0.3.3",
   "versions": [
     {
       "version": "0.3.1",
@@ -113,6 +113,55 @@
           "sha256": "a8da717417dcffcd6b20139926edb604f948f89ebbc780bea1d628101988f9d1",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4888109
+        }
+      ]
+    },
+    {
+      "version": "0.3.3",
+      "releasedAt": "2026-10-15T02:02:46.950Z",
+      "releaseNotes": "Fix HTTP 400 when listing executors on Admin 3.1.0 by sending required empty appname/title filters. Preserve unfiltered results, permission checks and both existing API profiles; this query fix does not establish full Admin 3.2.0 SSO compatibility. Emit plugin + artifacts release metadata for DBX Store scanning and add Windows/Linux CI with native package handshake checks.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.3/io.dbx.xxljob-console-0.3.3-darwin-arm64.dbxp",
+          "sha256": "7396dcb24f17d2896193377cd25154a99e584267cbb0f5b24a130d91c7fe96ac",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4635989
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.3/io.dbx.xxljob-console-0.3.3-darwin-x64.dbxp",
+          "sha256": "08dc4ac9716c52c793185ba1921715fb160d2d6a967114a58dda96912377d7e1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4848015
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.3/io.dbx.xxljob-console-0.3.3-linux-arm64.dbxp",
+          "sha256": "419672a46db81f9619287e0a91bc49e93dbfdef22ae9228c2ed8e070de85e6d0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4595334
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.3/io.dbx.xxljob-console-0.3.3-linux-x64.dbxp",
+          "sha256": "cf497f1f47cbcf1a2cc31ea1dd9efec4f1bbfa0a5d83aa8f1fec4393de96a729",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4888139
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.3/io.dbx.xxljob-console-0.3.3-windows-arm64.dbxp",
+          "sha256": "1d452b6ac9f3a9e2551ba803790865cb9bef268a6c24ed134ba91ce81bded7e4",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4599224
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.3/io.dbx.xxljob-console-0.3.3-windows-x64.dbxp",
+          "sha256": "4efd5aafdabdeace54cf717e5f70d24223b097270f0988fccd10b8ea240966b5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4915705
         }
       ]
     }
