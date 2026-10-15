@@ -6091,7 +6091,7 @@
       "description": "Analyze DBX Estimated Plans with structured parsing, plan-tree visualization, deterministic findings, and hotspot detection.",
       "publisher": "0verme",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.0verme.plan-detective/0.7.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.0verme.plan-detective/0.7.1/icon.svg",
       "tags": [
         "database",
         "sql",
@@ -6104,8 +6104,22 @@
       "source": "https://github.com/0verme/dbx-plugin-plan-detective/tree/v0.5.4",
       "homepage": "https://github.com/0verme/dbx-plugin-plan-detective",
       "license": "Apache-2.0",
-      "latestVersion": "0.7.0",
+      "latestVersion": "0.7.1",
       "versions": [
+        {
+          "version": "0.7.1",
+          "releasedAt": "2026-10-15T01:50:09.704Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.0verme.plan-detective/0.7.1/io.github.0verme.plan-detective-0.7.1-universal.dbxp",
+              "sha256": "48fd3fb511c2c5288d38ab4876e88e695988431c8866ed43089d411cdcab2991",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 108005
+            }
+          ]
+        },
         {
           "version": "0.7.0",
           "releasedAt": "2026-10-14T06:22:47.266Z",
