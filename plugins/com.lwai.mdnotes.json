@@ -4,7 +4,7 @@
   "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。内置 AI 助手（右侧常驻栏），可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型对笔记做分析、润色、续写与问答。",
   "publisher": "lwai",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/0.8.6/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/0.8.8/assets/plugin.svg",
   "tags": [
     "md",
     "notes",
@@ -18,7 +18,7 @@
   "source": "https://github.com/lukelwai/dbx-md-notes",
   "homepage": "https://github.com/lukelwai/dbx-md-notes",
   "license": "Apache-2.0",
-  "latestVersion": "0.8.6",
+  "latestVersion": "0.8.8",
   "versions": [
     {
       "version": "0.7.1",
@@ -73,6 +73,34 @@
           "sha256": "cf7f8e03a64aac48cbcc0006059813549d2deb8cb227bbcdc5af3e9af41fdc9e",
           "signingKeyId": "dbx-store-release-2026",
           "size": 5258161
+        }
+      ]
+    },
+    {
+      "version": "0.8.8",
+      "releasedAt": "2026-10-15T01:45:11.867Z",
+      "releaseNotes": "工具栏瘦身：「插入 SQL 块」和「AI 助手」常驻，导出 / 备份 / 恢复 / 为表新建笔记收进「更多」下拉 —— 窄窗口下不再被挤成两行；点空白处或按 Esc 收起，点任一项执行后自动收起。所有动作的 id 与行为都没变，只是换了位置。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.8/com.lwai.mdnotes-0.8.8-darwin-arm64.dbxp",
+          "sha256": "a7eb03762ab4b8a5cc48aa82d6c806c2913e15aa39b835f1d4bee33007d9492e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5218529
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.8/com.lwai.mdnotes-0.8.8-linux-x64.dbxp",
+          "sha256": "f08154969b6e91050dc626bbd4f412e611c6c7f1eef135e8770e89d920205866",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5394939
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.8/com.lwai.mdnotes-0.8.8-windows-x64.dbxp",
+          "sha256": "0cb3907cc2e328894be9f1d241d3714442c97ab960a2564ed771a3d39fda47e3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5459051
         }
       ]
     }
