@@ -4,7 +4,7 @@
   "description": "Browse, manage and inspect OCI / Harbor container registries from a single workbench: project and namespace navigation, tag rename and delete, per-layer size analysis, Trivy CVE reports, registry-wide charts and multi-arch breakdowns.",
   "publisher": "leavingrain",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/Zer0ON1/dbx-plugin-imrepo/v0.1.8/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/Zer0ON1/dbx-plugin-imrepo/v0.1.81/assets/plugin.svg",
   "tags": [
     "registry",
     "harbor",
@@ -17,7 +17,7 @@
   "source": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
   "homepage": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.8",
+  "latestVersion": "0.1.81",
   "versions": [
     {
       "version": "0.1.2",
@@ -261,6 +261,55 @@
           "sha256": "a415d66e195cc2ed2a08272f39733b63d5835f3410395545fa5a7dd46ed21157",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4934796
+        }
+      ]
+    },
+    {
+      "version": "0.1.81",
+      "releasedAt": "2026-10-15T02:08:20.796Z",
+      "releaseNotes": "Docker Registry v2 projects (namespaces), registry overview charts, and one badge per architecture in the image views.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.81/com.leavingrain.imrepo-0.1.81-darwin-arm64.dbxp",
+          "sha256": "5626fb8ab7801b9d59df26ce2449d710f86c1c162f4f0d5c302d58d01cd580f9",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4625317
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.81/com.leavingrain.imrepo-0.1.81-darwin-x64.dbxp",
+          "sha256": "cd0ec0b483c3fe6f0ac9b585258c9fdcf52e445ecceb8a01fde294fc858f5413",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4875177
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.81/com.leavingrain.imrepo-0.1.81-linux-arm64.dbxp",
+          "sha256": "665265a959d263ad1223545ca2282395b3ccaf111065f944bc132a135c46bc87",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4579765
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.81/com.leavingrain.imrepo-0.1.81-linux-x64.dbxp",
+          "sha256": "fe96671e75ebc1125dae42fdf51cc8865853cc46cb90e01250684e4b5cf9c8dc",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4910790
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.81/com.leavingrain.imrepo-0.1.81-windows-arm64.dbxp",
+          "sha256": "20274881c34b4ded29d7fea0a6a600ccce3783bc8e6bf6aae3e3f8306adfd156",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4587932
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.81/com.leavingrain.imrepo-0.1.81-windows-x64.dbxp",
+          "sha256": "eb188ffed535c9465881bc95750ce91ecb7bfa64c812d7b71a0ccb25f7c01da3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4947392
         }
       ]
     }
