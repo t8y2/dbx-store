@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.xxljob-console",
+  "publisher": "ezreal-byte",
+  "version": "0.4.0",
+  "name": "XXL-JOB Console",
+  "description": "Manage XXL-JOB tasks, logs and executors with DBX built-in AI and MCP, scoped permissions and confirmed operation previews.",
+  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-plugin-xxl-job-console/v0.4.0/assets/plugin.svg",
+  "tags": [
+    "xxl-job",
+    "scheduler",
+    "jobs",
+    "ai",
+    "mcp"
+  ],
+  "permissions": [
+    "host.ai",
+    "host.workbench"
+  ],
+  "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
+  "homepage": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
+  "license": "MIT",
+  "releaseNotes": "0.4.0 adds 22 tools for DBX built-in Agent and external MCP, default-off per-connection permissions, grouped and individual tool controls, and call history. Task and executor writes share expiring one-use previews, confirmation, conflict detection and read-only/account checks. Add task details, contextual AI entry points, bounded logs, saved/override run parameters, loading states and unknown-result handling. Requires DBX 0.6.43+ and Host API ^1.4.0; preserves existing connection identities and Admin 2.3.x/3.4.x profiles, including the 0.3.3 required executor filter fix.",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/releases/download/v0.4.0/io.dbx.xxljob-console-0.4.0-darwin-arm64.dbxp",
+      "sha256": "949a9500d0f869264cbfc03a219d18c0d0f60553fd7bfa21fa4ec5142904d40d",
+      "size": 4973530
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/releases/download/v0.4.0/io.dbx.xxljob-console-0.4.0-darwin-x64.dbxp",
+      "sha256": "e3ccf8c6eeebc6e011fb25970fe7712fc4e53d2a1ac15ac6acae9d6eba210e8e",
+      "size": 5208704
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/releases/download/v0.4.0/io.dbx.xxljob-console-0.4.0-linux-arm64.dbxp",
+      "sha256": "3390ac2b7c811b1076c8e6468e12011d5d77ff7f8f488c60fc34b886126df641",
+      "size": 4992509
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/releases/download/v0.4.0/io.dbx.xxljob-console-0.4.0-linux-x64.dbxp",
+      "sha256": "906fb5b5880833e25886453f12d3b0d0b3e6b31f55b5fc577e400554e4a76d7d",
+      "size": 5308908
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/releases/download/v0.4.0/io.dbx.xxljob-console-0.4.0-windows-arm64.dbxp",
+      "sha256": "07444d21f015bf5cb27da7c701236fdf810f6fe458f8b46ebffea46010621062",
+      "size": 5081976
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/releases/download/v0.4.0/io.dbx.xxljob-console-0.4.0-windows-x64.dbxp",
+      "sha256": "afd1a48ee55b302e1860a8d5b7ca9fba5bd116cd6e1ea93fb6ca447846d694ed",
+      "size": 5440967
+    }
+  ]
+}
