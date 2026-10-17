@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.icefoxs.aes-tools",
+  "publisher": "icefoxs",
+  "version": "0.1.1",
+  "name": "aes-tools",
+  "description": "AES-128-ECB encryption/decryption plugin based on the DBX platform, compatible with Hutool's default AES configuration. (AES-128-ECB is deterministic encryption and not semantically secure)",
+  "icon": "https://raw.githubusercontent.com/IceFoxs/dbx-plugin-aes-tools/v0.1.1/assets/plugin.svg",
+  "tags": [
+    "aes-tools"
+  ],
+  "permissions": [
+    "host.clipboard:read",
+    "host.workbench"
+  ],
+  "source": "https://github.com/IceFoxs/dbx-plugin-aes-tools/tree/v0.1.1",
+  "homepage": "https://github.com/IceFoxs/dbx-plugin-aes-tools",
+  "license": "MIT",
+  "releaseNotes": "Initial release",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/IceFoxs/dbx-plugin-aes-tools/releases/download/v0.1.1/io.github.icefoxs.aes-tools-0.1.1-darwin-arm64.dbxp",
+      "sha256": "427dc3b2a496512cba2e7ead2c34754893f3b86b10cdbce8ee91e4e56bd4fe9e",
+      "size": 1179831
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/IceFoxs/dbx-plugin-aes-tools/releases/download/v0.1.1/io.github.icefoxs.aes-tools-0.1.1-darwin-x64.dbxp",
+      "sha256": "e6f2e77ae0892086edf4962435ecc673f114259f4e9f6a7a5fb3841db5d10f63",
+      "size": 1254458
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/IceFoxs/dbx-plugin-aes-tools/releases/download//v0.1.1/io.github.icefoxs.aes-tools-0.1.1-linux-arm64.dbxp",
+      "sha256": "3bcaa540daa31dec82d8f252f9dd30f8bfbecbff4fda7859a8e52af85db9ed47",
+      "size": 1257840
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/IceFoxs/dbx-plugin-aes-tools/releases/download//v0.1.1/io.github.icefoxs.aes-tools-0.1.1-linux-x64.dbxp",
+      "sha256": "5e13e569285c53c0fe783f118ea79763525b035b5e6ec5e21a2bdff98f8954f6",
+      "size": 1320633
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/IceFoxs/dbx-plugin-aes-tools/releases/download//v0.1.1/io.github.icefoxs.aes-tools-0.1.1-windows-x64.dbxp",
+      "sha256": "aa55728444db86ccb380306e3a8f53e3300bc2cde23e5fa76458cd377bf2470f",
+      "size": 1209112
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "aes工具",
+      "description": "基于 DBX 平台的 AES-128-ECB 加解密插件，兼容 Hutool 默认 AES 配置。（AES-128-ECB 为确定性加密、非语义安全）"
+    },
+    "en": {
+      "name": "aes tools",
+      "description": "AES-128-ECB encryption/decryption plugin based on the DBX platform, compatible with Hutool's default AES configuration. (AES-128-ECB is deterministic encryption and not semantically secure)"
+    }
+  }
+}
