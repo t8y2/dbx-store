@@ -1,10 +1,10 @@
 {
   "id": "io.dbx.lolping.lite",
   "name": "lolPing Lite",
-  "description": "Desktop-wide ping and local emote wheels with native sound, offline emote packs and DBX-integrated settings.",
+  "description": "Native desktop ping and emote wheels with low memory use, local sound, offline packs and DBX-integrated settings.",
   "publisher": "ezreal-byte",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-lolping-plugin/v0.1.0/assets/plugin.png",
+  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-lolping-plugin/v0.2.1/assets/plugin.png",
   "tags": [
     "pings",
     "emotes",
@@ -15,10 +15,10 @@
     "host.events",
     "host.binary"
   ],
-  "source": "https://github.com/Ezreal-byte/dbx-lolping-plugin/tree/v0.1.0",
+  "source": "https://github.com/Ezreal-byte/dbx-lolping-plugin/tree/v0.2.1",
   "homepage": "https://github.com/Ezreal-byte/dbx-lolping-plugin",
   "license": "MIT",
-  "latestVersion": "0.1.0",
+  "latestVersion": "0.2.1",
   "versions": [
     {
       "version": "0.1.0",
@@ -40,12 +40,33 @@
           "size": 18349450
         }
       ]
+    },
+    {
+      "version": "0.2.1",
+      "releasedAt": "2026-10-17T02:12:38.796Z",
+      "releaseNotes": "Replace overlay WebViews with native Rust rendering. Bound scene buffers, image caches and streamed animation frames; decode audio off the input/render thread. Windows single-desktop samples were 39–52 MiB for the plugin process tree (excluding DBX and settings UI; not a worst-case guarantee). Preserve upstream C++ gestures and pause/capture behavior. Fix Windows gray overlay frames, improve wheel text with Inter, add a GitHub Release download button for the optional emote ZIP, and use the yellow question-mark icon. Existing settings/assets remain compatible. Riot game assets are excluded from the MIT code license.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.2.1/io.dbx.lolping.lite-0.2.1-darwin-arm64.dbxp",
+          "sha256": "7780608f9dc52f160350dc3ab5a21966608456318966a3b910eed127a0768d04",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18761036
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.2.1/io.dbx.lolping.lite-0.2.1-windows-x64.dbxp",
+          "sha256": "78cedb65a6a0a43ba2e9724a93ed27b6c353561652cb02b2e589826710122d98",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18888773
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "lolPing 轻量版",
-      "description": "全桌面信号与本地表情轮盘，支持原生音效、离线扩展包与 DBX 内设置。"
+      "description": "低内存原生桌面信号与表情轮盘，支持本地音效、离线扩展包和 DBX 内设置。"
     }
   }
 }

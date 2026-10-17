@@ -13,18 +13,60 @@
       "description": "Import AI provider configurations from CC-SWITCH or Magpie into DBX.",
       "publisher": "ma123456mai",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/cc-switch/0.1.5/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/cc-switch/0.2.10/icon.png",
       "tags": [
         "ai",
         "configuration",
         "cc-switch"
       ],
       "permissions": [],
-      "source": "https://github.com/ma123456mai/ai-config-importer/tree/v0.1.5",
+      "source": "https://github.com/ma123456mai/ai-config-importer/tree/v0.2.10",
       "homepage": "https://github.com/ma123456mai/ai-config-importer",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.5",
+      "latestVersion": "0.2.10",
       "versions": [
+        {
+          "version": "0.2.10",
+          "releasedAt": "2026-10-17T02:18:15.050Z",
+          "releaseNotes": "Hide source entries hidden in CC-SWITCH and Magpie. Import Magpie's live Codex model catalog with distinct model labels.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.10/cc-switch-0.2.10-darwin-arm64.dbxp",
+              "sha256": "332ce58d5e64f83716c29f56317b9b25c9cff486f18ac79559fd0bea251d76b7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1439787
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.10/cc-switch-0.2.10-darwin-x64.dbxp",
+              "sha256": "5dbb442b2f44160be7598262e765b831d7d4469b1983876df5935a9e14e1c071",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1516508
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.10/cc-switch-0.2.10-linux-arm64.dbxp",
+              "sha256": "4009478782b46d62fe3f80e9d9f57162c1fcd517d81840a144579ab676d1b931",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1578850
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.10/cc-switch-0.2.10-linux-x64.dbxp",
+              "sha256": "1d8d0bf4711e4f71eafa82960bcb961991f3f934714cfe24f63c636b35a88ba3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1617317
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.10/cc-switch-0.2.10-windows-x64.dbxp",
+              "sha256": "281bdf21efd12ad52ed881a53729b4fcc4c097da6334d7e60bd54c1cb0f42aba",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1417929
+            }
+          ]
+        },
         {
           "version": "0.1.5",
           "releasedAt": "2026-10-16T09:39:19.812Z",
@@ -3347,7 +3389,7 @@
       "description": "Manage Kubernetes clusters, workloads and resources from DBX.",
       "publisher": "eryajf",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.11/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.30/icon.png",
       "tags": [
         "kubernetes",
         "containers",
@@ -3361,8 +3403,57 @@
       "source": "https://github.com/eryajf/dbx-plugin-k8s/tree/82240b2d6d32c8fb8890a2a0415630a466d0faef",
       "homepage": "https://github.com/eryajf/dbx-plugin-k8s",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.11",
+      "latestVersion": "0.1.30",
       "versions": [
+        {
+          "version": "0.1.30",
+          "releasedAt": "2026-10-17T02:02:28.875Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.30/io.dbx.k8s-0.1.30-darwin-arm64.dbxp",
+              "sha256": "354f2e0d831044b29043ba6d00e53ef20013fd0b76da8f206b64df4b006bca07",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32371237
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.30/io.dbx.k8s-0.1.30-darwin-x64.dbxp",
+              "sha256": "55957f664b91d3bcaf2b1aa2ce9f4b3bc413bfcfa8e01a7e89a771585b64bd98",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 33962693
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.30/io.dbx.k8s-0.1.30-linux-arm64.dbxp",
+              "sha256": "6db8a89234c71875e0105c05e640221556298e338b9db6eda9cd4597556c2bc6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 30528102
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.30/io.dbx.k8s-0.1.30-linux-x64.dbxp",
+              "sha256": "8b3c9711041544b624e81a109662bd675932ad1c3cda04ea05c1dc4c9581c8b0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32580812
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.30/io.dbx.k8s-0.1.30-windows-arm64.dbxp",
+              "sha256": "62e119f4c6825cca94c5225c10f9ca823b70803d67a6f164600e2148368865e8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 30598124
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.30/io.dbx.k8s-0.1.30-windows-x64.dbxp",
+              "sha256": "6478caf9916f15d44acc15296a88311388dd26af2ddb4463abbfef4bb7335b0c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32896905
+            }
+          ]
+        },
         {
           "version": "0.1.11",
           "releasedAt": "2026-10-12T00:52:00.360Z",
@@ -5043,10 +5134,10 @@
     {
       "id": "io.dbx.lolping.lite",
       "name": "lolPing Lite",
-      "description": "Desktop-wide ping and local emote wheels with native sound, offline emote packs and DBX-integrated settings.",
+      "description": "Native desktop ping and emote wheels with low memory use, local sound, offline packs and DBX-integrated settings.",
       "publisher": "ezreal-byte",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.1.0/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.2.1/icon.png",
       "tags": [
         "pings",
         "emotes",
@@ -5057,11 +5148,32 @@
         "host.events",
         "host.binary"
       ],
-      "source": "https://github.com/Ezreal-byte/dbx-lolping-plugin/tree/v0.1.0",
+      "source": "https://github.com/Ezreal-byte/dbx-lolping-plugin/tree/v0.2.1",
       "homepage": "https://github.com/Ezreal-byte/dbx-lolping-plugin",
       "license": "MIT",
-      "latestVersion": "0.1.0",
+      "latestVersion": "0.2.1",
       "versions": [
+        {
+          "version": "0.2.1",
+          "releasedAt": "2026-10-17T02:12:38.796Z",
+          "releaseNotes": "Replace overlay WebViews with native Rust rendering. Bound scene buffers, image caches and streamed animation frames; decode audio off the input/render thread. Windows single-desktop samples were 39–52 MiB for the plugin process tree (excluding DBX and settings UI; not a worst-case guarantee). Preserve upstream C++ gestures and pause/capture behavior. Fix Windows gray overlay frames, improve wheel text with Inter, add a GitHub Release download button for the optional emote ZIP, and use the yellow question-mark icon. Existing settings/assets remain compatible. Riot game assets are excluded from the MIT code license.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.2.1/io.dbx.lolping.lite-0.2.1-darwin-arm64.dbxp",
+              "sha256": "7780608f9dc52f160350dc3ab5a21966608456318966a3b910eed127a0768d04",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18761036
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.2.1/io.dbx.lolping.lite-0.2.1-windows-x64.dbxp",
+              "sha256": "78cedb65a6a0a43ba2e9724a93ed27b6c353561652cb02b2e589826710122d98",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18888773
+            }
+          ]
+        },
         {
           "version": "0.1.0",
           "releasedAt": "2026-10-16T10:38:43.566Z",
@@ -5087,7 +5199,7 @@
       "localizations": {
         "zh-CN": {
           "name": "lolPing 轻量版",
-          "description": "全桌面信号与本地表情轮盘，支持原生音效、离线扩展包与 DBX 内设置。"
+          "description": "低内存原生桌面信号与表情轮盘，支持本地音效、离线扩展包和 DBX 内设置。"
         }
       }
     },
@@ -6190,23 +6302,75 @@
     {
       "id": "io.dbx.xxljob-console",
       "name": "XXL-JOB Console",
-      "description": "Manage XXL-JOB reports, jobs, logs, executors and users in DBX.",
+      "description": "Manage XXL-JOB tasks, logs and executors with DBX built-in AI and MCP, scoped permissions and confirmed operation previews.",
       "publisher": "ezreal-byte",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.3.3/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/icon.svg",
       "tags": [
         "xxl-job",
         "scheduler",
-        "jobs"
+        "jobs",
+        "ai",
+        "mcp"
       ],
       "permissions": [
+        "host.ai",
         "host.workbench"
       ],
-      "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/tree/v0.3.3",
+      "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
       "homepage": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
       "license": "MIT",
-      "latestVersion": "0.3.3",
+      "latestVersion": "0.4.0",
       "versions": [
+        {
+          "version": "0.4.0",
+          "releasedAt": "2026-10-17T02:07:22.662Z",
+          "releaseNotes": "0.4.0 adds 22 tools for DBX built-in Agent and external MCP, default-off per-connection permissions, grouped and individual tool controls, and call history. Task and executor writes share expiring one-use previews, confirmation, conflict detection and read-only/account checks. Add task details, contextual AI entry points, bounded logs, saved/override run parameters, loading states and unknown-result handling. Requires DBX 0.6.43+ and Host API ^1.4.0; preserves existing connection identities and Admin 2.3.x/3.4.x profiles, including the 0.3.3 required executor filter fix.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/io.dbx.xxljob-console-0.4.0-darwin-arm64.dbxp",
+              "sha256": "60633bc98ba75429bfbe3b74e658bfcf639569d5a7bafc7768c1675bded21d4b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4974728
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/io.dbx.xxljob-console-0.4.0-darwin-x64.dbxp",
+              "sha256": "3b2927ff1c9296e257ed561f25e02f6bca0ae317fa814a812c75bf1ab4e0e4fd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5209902
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/io.dbx.xxljob-console-0.4.0-linux-arm64.dbxp",
+              "sha256": "6a1d905b0020ed85ffbec0efb2be7dd552f53b9cb3a99dabeab954f3c9802809",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4993706
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/io.dbx.xxljob-console-0.4.0-linux-x64.dbxp",
+              "sha256": "d24d8d8d90e3f013c22271ccb661034ec262b4f54600788c54e6dcbbe31ae8b6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5310101
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/io.dbx.xxljob-console-0.4.0-windows-arm64.dbxp",
+              "sha256": "2094d13b14a4f0de5f96a741979ddb26c2ab8a74383be2b78cae66e8b049a949",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5083179
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/io.dbx.xxljob-console-0.4.0-windows-x64.dbxp",
+              "sha256": "39d30611d9593f9bd95845e618c88960c87dd8a9f0b463faefcbe977117fa032",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5442166
+            }
+          ]
+        },
         {
           "version": "0.3.3",
           "releasedAt": "2026-10-15T02:02:46.950Z",
