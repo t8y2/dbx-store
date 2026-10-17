@@ -175,6 +175,11 @@
       "repository": "ma123456mai/ai-config-importer",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "yuwenGueen/dbx-doudb",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
