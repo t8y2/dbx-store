@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.doudizhu",
+  "publisher": "ezreal-byte",
+  "version": "0.1.0",
+  "name": "Garden Dou Dizhu",
+  "description": "A three-player Dou Dizhu mini-game for your local LAN, with public/password rooms and animated characters. No hosted online service, online accounts, top-ups, payments or cash-out.",
+  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-doudizhu-plugin/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "game",
+    "lan",
+    "doudizhu",
+    "offline"
+  ],
+  "permissions": [
+    "host.events"
+  ],
+  "source": "https://github.com/Ezreal-byte/dbx-doudizhu-plugin/tree/v0.1.0",
+  "homepage": "https://github.com/Ezreal-byte/dbx-doudizhu-plugin",
+  "license": "Apache-2.0",
+  "releaseNotes": "Initial public release: local LAN three-player rooms, optional passwords, animated characters, offline voices and social effects. Includes no hosted Internet lobby, matchmaking, online account service, top-ups, payments, purchases, cash-out or real-money stakes. Room beans are non-transferable score counters without monetary value. Windows x64 and macOS 15.4+ Apple Silicon/Intel unsigned review candidates; DBX Store signs approved packages.",
+  "localizations": {
+    "zh-CN": {
+      "name": "田园斗地主",
+      "description": "本地局域网三人联机斗地主小游戏，支持公开房、密码房和动态角色互动；无公网在线服务、账号、充值、支付或提现。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/Ezreal-byte/dbx-doudizhu-plugin/releases/download/v0.1.0/io.dbx.doudizhu-0.1.0-windows-x64.dbxp",
+      "sha256": "325b7c86ce93a7c053732b8956361e9bc3a9c9906c81b8b029daa7343462988c",
+      "size": 24896361
+    },
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/Ezreal-byte/dbx-doudizhu-plugin/releases/download/v0.1.0/io.dbx.doudizhu-0.1.0-darwin-arm64.dbxp",
+      "sha256": "0e33809bf20eec5e09298b9f3f612cf4b7f76fe64301276e942d973418d6aabf",
+      "size": 24571593
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/Ezreal-byte/dbx-doudizhu-plugin/releases/download/v0.1.0/io.dbx.doudizhu-0.1.0-darwin-x64.dbxp",
+      "sha256": "ef02891d78abc30c1af33cf8b7853c95722671cc4bc4d26b3e32c51810a6f6b1",
+      "size": 24901132
+    }
+  ]
+}
