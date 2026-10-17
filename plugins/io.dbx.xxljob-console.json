@@ -1,22 +1,25 @@
 {
   "id": "io.dbx.xxljob-console",
   "name": "XXL-JOB Console",
-  "description": "Manage XXL-JOB reports, jobs, logs, executors and users in DBX.",
+  "description": "Manage XXL-JOB tasks, logs and executors with DBX built-in AI and MCP, scoped permissions and confirmed operation previews.",
   "publisher": "ezreal-byte",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-plugin-xxl-job-console/v0.3.2/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-plugin-xxl-job-console/v0.4.0/assets/plugin.svg",
   "tags": [
     "xxl-job",
     "scheduler",
-    "jobs"
+    "jobs",
+    "ai",
+    "mcp"
   ],
   "permissions": [
+    "host.ai",
     "host.workbench"
   ],
-  "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console/tree/v0.3.3",
+  "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
   "homepage": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
   "license": "MIT",
-  "latestVersion": "0.3.3",
+  "latestVersion": "0.4.0",
   "versions": [
     {
       "version": "0.3.1",
@@ -162,6 +165,55 @@
           "sha256": "4efd5aafdabdeace54cf717e5f70d24223b097270f0988fccd10b8ea240966b5",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4915705
+        }
+      ]
+    },
+    {
+      "version": "0.4.0",
+      "releasedAt": "2026-10-17T02:07:22.662Z",
+      "releaseNotes": "0.4.0 adds 22 tools for DBX built-in Agent and external MCP, default-off per-connection permissions, grouped and individual tool controls, and call history. Task and executor writes share expiring one-use previews, confirmation, conflict detection and read-only/account checks. Add task details, contextual AI entry points, bounded logs, saved/override run parameters, loading states and unknown-result handling. Requires DBX 0.6.43+ and Host API ^1.4.0; preserves existing connection identities and Admin 2.3.x/3.4.x profiles, including the 0.3.3 required executor filter fix.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/io.dbx.xxljob-console-0.4.0-darwin-arm64.dbxp",
+          "sha256": "60633bc98ba75429bfbe3b74e658bfcf639569d5a7bafc7768c1675bded21d4b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4974728
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/io.dbx.xxljob-console-0.4.0-darwin-x64.dbxp",
+          "sha256": "3b2927ff1c9296e257ed561f25e02f6bca0ae317fa814a812c75bf1ab4e0e4fd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5209902
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/io.dbx.xxljob-console-0.4.0-linux-arm64.dbxp",
+          "sha256": "6a1d905b0020ed85ffbec0efb2be7dd552f53b9cb3a99dabeab954f3c9802809",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4993706
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/io.dbx.xxljob-console-0.4.0-linux-x64.dbxp",
+          "sha256": "d24d8d8d90e3f013c22271ccb661034ec262b4f54600788c54e6dcbbe31ae8b6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5310101
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/io.dbx.xxljob-console-0.4.0-windows-arm64.dbxp",
+          "sha256": "2094d13b14a4f0de5f96a741979ddb26c2ab8a74383be2b78cae66e8b049a949",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5083179
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/io.dbx.xxljob-console-0.4.0-windows-x64.dbxp",
+          "sha256": "39d30611d9593f9bd95845e618c88960c87dd8a9f0b463faefcbe977117fa032",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5442166
         }
       ]
     }
