@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.lolping.lite",
+  "publisher": "ezreal-byte",
+  "version": "0.3.0",
+  "name": "lolPing Lite",
+  "description": "Send LOL pings and emotes over your desktop and other app windows, adapted from darrenprx/lolPing.",
+  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-lolping-plugin/v0.3.0/assets/plugin.png",
+  "tags": [
+    "pings",
+    "emotes",
+    "desktop",
+    "lolping"
+  ],
+  "permissions": [
+    "host.events",
+    "host.binary"
+  ],
+  "source": "https://github.com/Ezreal-byte/dbx-lolping-plugin/tree/v0.3.0",
+  "homepage": "https://github.com/Ezreal-byte/dbx-lolping-plugin",
+  "license": "MIT",
+  "releaseNotes": "Redesign settings with six horizontal categories, DBX theme colors and neutral buttons. Edit ping and emote wheels visually: select a direction, assign a resource and swap occupied slots; preview remains a separate action. Add emote search and retain image/audio imports and the offline pack download entry. Keep start, pause/resume and save status accessible, with responsive layouts and Chinese/English text. Only DBX plugin capabilities are shown; no autostart or tray settings. The overlay remains natively rendered; Windows now clears a remaining corner-clipping region after display, raise or geometry changes. Global gestures, the earlier screen-edge fix and existing user data remain compatible. Settings continue to use DBX's existing UI container; this update makes no new memory-reduction claim.",
+  "localizations": {
+    "zh-CN": {
+      "name": "lolPing 轻量版",
+      "description": "在桌面及其他软件窗口上打 LOL 信号和表情，基于 darrenprx/lolPing 改造。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/Ezreal-byte/dbx-lolping-plugin/releases/download/v0.3.0/io.dbx.lolping.lite-0.3.0-darwin-arm64.dbxp",
+      "sha256": "21a983a9bbcfaa7b9d50eef19d1e5cd48262851cd6f4ca8459e2b1f0869a1a4b",
+      "size": 18780556
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/Ezreal-byte/dbx-lolping-plugin/releases/download/v0.3.0/io.dbx.lolping.lite-0.3.0-windows-x64.dbxp",
+      "sha256": "cf76963abe5f496a0ddbf073c5e7604076ec11183cabfdfa6356a1f8bd95cbca",
+      "size": 18908849
+    }
+  ]
+}
