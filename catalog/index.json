@@ -8,6 +8,78 @@
   },
   "plugins": [
     {
+      "id": "alvinades98.pg-backup-restore",
+      "name": "PG Backup & Restore",
+      "description": "Back up and restore PostgreSQL databases with pg_dump / pg_restore / psql: custom, tar, directory and plain SQL dumps, saved connections, live log, optional full schema reset before restore.",
+      "publisher": "alvinades98",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.2.0/icon.png",
+      "tags": [
+        "postgresql",
+        "backup",
+        "restore",
+        "pg_dump",
+        "pg_restore"
+      ],
+      "permissions": [
+        "host.storage"
+      ],
+      "source": "https://github.com/alvinades98/dbx-pg-restore/tree/v0.2.0",
+      "homepage": "https://github.com/alvinades98/dbx-pg-restore",
+      "license": "Apache-2.0",
+      "latestVersion": "0.2.0",
+      "versions": [
+        {
+          "version": "0.2.0",
+          "releasedAt": "2026-10-18T00:52:18.795Z",
+          "releaseNotes": "Initial release: PostgreSQL backup (pg_dump) and restore (pg_restore/psql) workbench.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.2.0/alvinades98.pg-backup-restore-0.2.0-darwin-arm64.dbxp",
+              "sha256": "7240527091f25565fcd18bf2efe8df6afa06d9ca66efe8fb85acafa4c5daf3b5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 354990
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.2.0/alvinades98.pg-backup-restore-0.2.0-darwin-x64.dbxp",
+              "sha256": "4983b3e56dcea6eebaa513339be5cde1876c2608b501c9a4a93e9cecda6bde9e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 374052
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.2.0/alvinades98.pg-backup-restore-0.2.0-linux-arm64.dbxp",
+              "sha256": "daae22d99e1ef805d0d400ebbd82b87f1a0b77d4d4159a76d7794fdf50f133eb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 379251
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.2.0/alvinades98.pg-backup-restore-0.2.0-linux-x64.dbxp",
+              "sha256": "88873b17e79fe13a374d961b2ece92c54363f6b189eb4259713f974cc4032187",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 396691
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.2.0/alvinades98.pg-backup-restore-0.2.0-windows-x64.dbxp",
+              "sha256": "3220aff64e307146e4c7006dba4d90a89c1c23ae90ad3284e7d181b48cb8f422",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 321368
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "PG 备份与恢复",
+          "description": "使用 pg_dump / pg_restore / psql 备份和恢复 PostgreSQL 数据库，支持 custom、tar、目录和纯 SQL 格式。"
+        }
+      }
+    },
+    {
       "id": "cc-switch",
       "name": "AI Config Importer",
       "description": "Import AI provider configurations from CC-SWITCH or Magpie into DBX.",
@@ -2641,7 +2713,7 @@
       "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.90/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.91/icon.svg",
       "tags": [
         "files",
         "storage",
@@ -2658,8 +2730,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-files",
       "homepage": "https://github.com/jinpy666/dbx-plugin-files",
       "license": "MIT",
-      "latestVersion": "0.1.90",
+      "latestVersion": "0.1.91",
       "versions": [
+        {
+          "version": "0.1.91",
+          "releasedAt": "2026-10-18T00:47:41.800Z",
+          "releaseNotes": "新增工具栏「上传文件夹」：走 webview 原生 webkitdirectory 选择器（web/docker 与桌面宿主同一路径），按相对路径还原目录结构落到 目标/<文件夹名>/；先建远端目录树（目录已存在=合并），再逐文件走统一上传泵；同名冲突策略按子目录分组生效（询问档带目录前缀、自动重命名在目录内让位）。目录结构与落盘内容均有集成测试覆盖。New toolbar action \"Upload folder\": a webview-native webkitdirectory picker (same path on web/docker and desktop hosts) that restores the directory structure under target/<folder>/, creates the remote directory tree first (existing dirs merge), then streams every file through the unified upload pump; the conflict policy applies per subdirectory (ask shows dir-prefixed names, rename de-dupes within each directory).",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.91/io.dbx.files-0.1.91-darwin-arm64.dbxp",
+              "sha256": "163e36103e96a7f51cbf145c5470e1158e66d3af17265d8ea2022df6a2c8f4cf",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 39764845
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.91/io.dbx.files-0.1.91-darwin-x64.dbxp",
+              "sha256": "92798564031abf3f8b7dd2a7074ebf3f6eea4886a9d977c7b749574713597dee",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 42264852
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.91/io.dbx.files-0.1.91-linux-arm64.dbxp",
+              "sha256": "e785c09ccb5fcab2d87b581a7f00d09b1d6251146385dfeea674230f13cb8a05",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 36154579
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.91/io.dbx.files-0.1.91-linux-x64.dbxp",
+              "sha256": "ebc6a4e68400ec76fbc27924013b400bbfa216a2179092ff7d1180a29dca7890",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 39088880
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.91/io.dbx.files-0.1.91-windows-x64.dbxp",
+              "sha256": "8c9bf50d8dbd656b5d0a2389dce3a03f0dd4d8504fe475fa4875c2b136f8b614",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 38452866
+            }
+          ]
+        },
         {
           "version": "0.1.90",
           "releasedAt": "2026-10-13T05:05:57.734Z",
@@ -5178,7 +5292,7 @@
       "description": "Send LOL pings and emotes over your desktop and other app windows, adapted from darrenprx/lolPing.",
       "publisher": "ezreal-byte",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.2.2/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.3.0/icon.png",
       "tags": [
         "pings",
         "emotes",
@@ -5189,11 +5303,32 @@
         "host.events",
         "host.binary"
       ],
-      "source": "https://github.com/Ezreal-byte/dbx-lolping-plugin/tree/v0.2.2",
+      "source": "https://github.com/Ezreal-byte/dbx-lolping-plugin/tree/v0.3.0",
       "homepage": "https://github.com/Ezreal-byte/dbx-lolping-plugin",
       "license": "MIT",
-      "latestVersion": "0.2.2",
+      "latestVersion": "0.3.0",
       "versions": [
+        {
+          "version": "0.3.0",
+          "releasedAt": "2026-10-18T00:41:18.132Z",
+          "releaseNotes": "Redesign settings with six horizontal categories, DBX theme colors and neutral buttons. Edit ping and emote wheels visually: select a direction, assign a resource and swap occupied slots; preview remains a separate action. Add emote search and retain image/audio imports and the offline pack download entry. Keep start, pause/resume and save status accessible, with responsive layouts and Chinese/English text. Only DBX plugin capabilities are shown; no autostart or tray settings. The overlay remains natively rendered; Windows now clears a remaining corner-clipping region after display, raise or geometry changes. Global gestures, the earlier screen-edge fix and existing user data remain compatible. Settings continue to use DBX's existing UI container; this update makes no new memory-reduction claim.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.3.0/io.dbx.lolping.lite-0.3.0-darwin-arm64.dbxp",
+              "sha256": "4f1eab2ea0e1bf6e1f416860175603cf6b8ee4576c190a830b7da6d002d01d25",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18787400
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.3.0/io.dbx.lolping.lite-0.3.0-windows-x64.dbxp",
+              "sha256": "fbf540659a31270297d362fbd8a616fdfd551b1b0a36192aac0d544a4f717a67",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18915468
+            }
+          ]
+        },
         {
           "version": "0.2.2",
           "releasedAt": "2026-10-17T05:30:35.661Z",
@@ -5656,7 +5791,7 @@
       "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.6/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -5675,8 +5810,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.7.6",
+      "latestVersion": "0.7.7",
       "versions": [
+        {
+          "version": "0.7.7",
+          "releasedAt": "2026-10-18T00:36:30.098Z",
+          "releaseNotes": "First official store release: interactive terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/io.dbx.ssh-0.7.7-darwin-arm64.dbxp",
+              "sha256": "b0f80033b2e500ad0cc99ccea5615688a6aab5993a28b2da9c89daacf6fe9a46",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15614260
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/io.dbx.ssh-0.7.7-darwin-x64.dbxp",
+              "sha256": "54e94d0462ac0d36906470d976273267560783c498b4a3356eab03d0a20495f2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16263927
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/io.dbx.ssh-0.7.7-linux-arm64.dbxp",
+              "sha256": "f54daf2dfed09d44c08663254bcfb8d7b6e6d1d30b94e4377dade26f62b46bf3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16834677
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/io.dbx.ssh-0.7.7-linux-x64.dbxp",
+              "sha256": "1e28efe1addfa6e28d067b1846b6a0e3ead47fa0aa058d7c51fae45e3691e77d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 17320709
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/io.dbx.ssh-0.7.7-windows-x64.dbxp",
+              "sha256": "f09582c1b432f668eeb101fe03be4bed4605e4e1ca0acde10f4506140a700c93",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15064987
+            }
+          ]
+        },
         {
           "version": "0.7.6",
           "releasedAt": "2026-10-13T00:46:40.262Z",

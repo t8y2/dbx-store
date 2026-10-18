@@ -1,0 +1,72 @@
+{
+  "id": "alvinades98.pg-backup-restore",
+  "name": "PG Backup & Restore",
+  "description": "Back up and restore PostgreSQL databases with pg_dump / pg_restore / psql: custom, tar, directory and plain SQL dumps, saved connections, live log, optional full schema reset before restore.",
+  "publisher": "alvinades98",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/alvinades98/dbx-pg-restore/v0.2.0/assets/plugin.png",
+  "tags": [
+    "postgresql",
+    "backup",
+    "restore",
+    "pg_dump",
+    "pg_restore"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/alvinades98/dbx-pg-restore/tree/v0.2.0",
+  "homepage": "https://github.com/alvinades98/dbx-pg-restore",
+  "license": "Apache-2.0",
+  "latestVersion": "0.2.0",
+  "versions": [
+    {
+      "version": "0.2.0",
+      "releasedAt": "2026-10-18T00:52:18.795Z",
+      "releaseNotes": "Initial release: PostgreSQL backup (pg_dump) and restore (pg_restore/psql) workbench.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.2.0/alvinades98.pg-backup-restore-0.2.0-darwin-arm64.dbxp",
+          "sha256": "7240527091f25565fcd18bf2efe8df6afa06d9ca66efe8fb85acafa4c5daf3b5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 354990
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.2.0/alvinades98.pg-backup-restore-0.2.0-darwin-x64.dbxp",
+          "sha256": "4983b3e56dcea6eebaa513339be5cde1876c2608b501c9a4a93e9cecda6bde9e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 374052
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.2.0/alvinades98.pg-backup-restore-0.2.0-linux-arm64.dbxp",
+          "sha256": "daae22d99e1ef805d0d400ebbd82b87f1a0b77d4d4159a76d7794fdf50f133eb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 379251
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.2.0/alvinades98.pg-backup-restore-0.2.0-linux-x64.dbxp",
+          "sha256": "88873b17e79fe13a374d961b2ece92c54363f6b189eb4259713f974cc4032187",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 396691
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.2.0/alvinades98.pg-backup-restore-0.2.0-windows-x64.dbxp",
+          "sha256": "3220aff64e307146e4c7006dba4d90a89c1c23ae90ad3284e7d181b48cb8f422",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 321368
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "PG 备份与恢复",
+      "description": "使用 pg_dump / pg_restore / psql 备份和恢复 PostgreSQL 数据库，支持 custom、tar、目录和纯 SQL 格式。"
+    }
+  }
+}
