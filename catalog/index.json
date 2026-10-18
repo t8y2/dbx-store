@@ -5178,7 +5178,7 @@
       "description": "Send LOL pings and emotes over your desktop and other app windows, adapted from darrenprx/lolPing.",
       "publisher": "ezreal-byte",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.2.2/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.3.0/icon.png",
       "tags": [
         "pings",
         "emotes",
@@ -5189,11 +5189,32 @@
         "host.events",
         "host.binary"
       ],
-      "source": "https://github.com/Ezreal-byte/dbx-lolping-plugin/tree/v0.2.2",
+      "source": "https://github.com/Ezreal-byte/dbx-lolping-plugin/tree/v0.3.0",
       "homepage": "https://github.com/Ezreal-byte/dbx-lolping-plugin",
       "license": "MIT",
-      "latestVersion": "0.2.2",
+      "latestVersion": "0.3.0",
       "versions": [
+        {
+          "version": "0.3.0",
+          "releasedAt": "2026-10-18T00:41:18.132Z",
+          "releaseNotes": "Redesign settings with six horizontal categories, DBX theme colors and neutral buttons. Edit ping and emote wheels visually: select a direction, assign a resource and swap occupied slots; preview remains a separate action. Add emote search and retain image/audio imports and the offline pack download entry. Keep start, pause/resume and save status accessible, with responsive layouts and Chinese/English text. Only DBX plugin capabilities are shown; no autostart or tray settings. The overlay remains natively rendered; Windows now clears a remaining corner-clipping region after display, raise or geometry changes. Global gestures, the earlier screen-edge fix and existing user data remain compatible. Settings continue to use DBX's existing UI container; this update makes no new memory-reduction claim.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.3.0/io.dbx.lolping.lite-0.3.0-darwin-arm64.dbxp",
+              "sha256": "4f1eab2ea0e1bf6e1f416860175603cf6b8ee4576c190a830b7da6d002d01d25",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18787400
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.3.0/io.dbx.lolping.lite-0.3.0-windows-x64.dbxp",
+              "sha256": "fbf540659a31270297d362fbd8a616fdfd551b1b0a36192aac0d544a4f717a67",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18915468
+            }
+          ]
+        },
         {
           "version": "0.2.2",
           "releasedAt": "2026-10-17T05:30:35.661Z",
@@ -5656,7 +5677,7 @@
       "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.6/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -5675,8 +5696,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.7.6",
+      "latestVersion": "0.7.7",
       "versions": [
+        {
+          "version": "0.7.7",
+          "releasedAt": "2026-10-18T00:36:30.098Z",
+          "releaseNotes": "First official store release: interactive terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/io.dbx.ssh-0.7.7-darwin-arm64.dbxp",
+              "sha256": "b0f80033b2e500ad0cc99ccea5615688a6aab5993a28b2da9c89daacf6fe9a46",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15614260
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/io.dbx.ssh-0.7.7-darwin-x64.dbxp",
+              "sha256": "54e94d0462ac0d36906470d976273267560783c498b4a3356eab03d0a20495f2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16263927
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/io.dbx.ssh-0.7.7-linux-arm64.dbxp",
+              "sha256": "f54daf2dfed09d44c08663254bcfb8d7b6e6d1d30b94e4377dade26f62b46bf3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16834677
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/io.dbx.ssh-0.7.7-linux-x64.dbxp",
+              "sha256": "1e28efe1addfa6e28d067b1846b6a0e3ead47fa0aa058d7c51fae45e3691e77d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 17320709
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/io.dbx.ssh-0.7.7-windows-x64.dbxp",
+              "sha256": "f09582c1b432f668eeb101fe03be4bed4605e4e1ca0acde10f4506140a700c93",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15064987
+            }
+          ]
+        },
         {
           "version": "0.7.6",
           "releasedAt": "2026-10-13T00:46:40.262Z",
