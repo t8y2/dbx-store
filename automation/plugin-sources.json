@@ -185,6 +185,11 @@
       "repository": "alvinades98/dbx-pg-restore",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "IceFoxs/dbx-plugin-aes-tools",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }

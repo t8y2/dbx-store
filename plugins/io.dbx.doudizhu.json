@@ -1,0 +1,57 @@
+{
+  "id": "io.dbx.doudizhu",
+  "name": "Garden Dou Dizhu",
+  "description": "A three-player Dou Dizhu mini-game for your local LAN, with public/password rooms and animated characters. No hosted online service, online accounts, top-ups, payments or cash-out.",
+  "publisher": "ezreal-byte",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-doudizhu-plugin/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "game",
+    "lan",
+    "doudizhu",
+    "offline"
+  ],
+  "permissions": [
+    "host.events"
+  ],
+  "source": "https://github.com/Ezreal-byte/dbx-doudizhu-plugin/tree/v0.1.0",
+  "homepage": "https://github.com/Ezreal-byte/dbx-doudizhu-plugin",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-18T19:20:20.486Z",
+      "releaseNotes": "Initial public release: local LAN three-player rooms, optional passwords, animated characters, offline voices and social effects. Includes no hosted Internet lobby, matchmaking, online account service, top-ups, payments, purchases, cash-out or real-money stakes. Room beans are non-transferable score counters without monetary value. Windows x64 and macOS 15.4+ Apple Silicon/Intel unsigned review candidates; DBX Store signs approved packages.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.doudizhu/0.1.0/io.dbx.doudizhu-0.1.0-windows-x64.dbxp",
+          "sha256": "aca4c2310021d95480066a389893545a1cb7331fa89964d9ebe32b144ae9ca2b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 24962512
+        },
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.doudizhu/0.1.0/io.dbx.doudizhu-0.1.0-darwin-arm64.dbxp",
+          "sha256": "7bddfb485cddffad1fc686693e8f1910ed5fb9ac2e2ff932c8b6e4c4d1bc2c7d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 24637744
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.doudizhu/0.1.0/io.dbx.doudizhu-0.1.0-darwin-x64.dbxp",
+          "sha256": "bd314b389972533079771af0e74837df36550dab0dc69890fd23441dd083b4aa",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 24967279
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "田园斗地主",
+      "description": "本地局域网三人联机斗地主小游戏，支持公开房、密码房和动态角色互动；无公网在线服务、账号、充值、支付或提现。"
+    }
+  }
+}
