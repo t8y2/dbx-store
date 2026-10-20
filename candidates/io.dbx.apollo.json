@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.apollo",
+  "publisher": "zzhao5726",
+  "version": "1.0.0",
+  "name": "Apollo Config Workbench",
+  "description": "Manage Apollo apps, clusters, namespaces, configs, releases and gray releases",
+  "icon": "https://raw.githubusercontent.com/zzhao5726/dbx-apollo/b26cd0c1cdfc273ec3303ff1b0779cced13f8347/assets/plugin.svg",
+  "tags": [
+    "apollo",
+    "configuration"
+  ],
+  "permissions": [],
+  "source": "https://github.com/zzhao5726/dbx-apollo/tree/b26cd0c1cdfc273ec3303ff1b0779cced13f8347",
+  "homepage": "https://github.com/zzhao5726/dbx-apollo",
+  "license": "Apache-2.0",
+  "releaseNotes": "Initial release: Apollo configuration workbench with application, cluster and namespace management, configuration editing and import/export, releases, rollback and gray releases. Supports explicit 1.x/2.x and 3.x API selection; see source validation notes for live verification boundaries.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Apollo 配置工作台",
+      "description": "管理 Apollo 应用、集群、命名空间、配置、发布和灰度"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/zzhao5726/dbx-apollo/releases/download/v1.0.0/io.dbx.apollo-1.0.0-darwin-arm64-b26cd0c1cdfc.dbxp",
+      "sha256": "c74d9d717af8ae90dea12e8974626170549ccc8ad5e214b075a3eeb037d60d3a",
+      "size": 4173348
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/zzhao5726/dbx-apollo/releases/download/v1.0.0/io.dbx.apollo-1.0.0-darwin-x64-b26cd0c1cdfc.dbxp",
+      "sha256": "139e1b33db576e9fdcc6442d911b8e17846be2047d2670bd233df3ca594960f9",
+      "size": 4382325
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/zzhao5726/dbx-apollo/releases/download/v1.0.0/io.dbx.apollo-1.0.0-linux-arm64-b26cd0c1cdfc.dbxp",
+      "sha256": "4bfae295d8a6bbb5c668c1ae80e5fae836927785bf95b0c98c4140544e784276",
+      "size": 4166871
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/zzhao5726/dbx-apollo/releases/download/v1.0.0/io.dbx.apollo-1.0.0-linux-x64-b26cd0c1cdfc.dbxp",
+      "sha256": "86d33f99d0085966cb464539408623fea299a2fd31a6761a63aa4b23a2e0b677",
+      "size": 4446948
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/zzhao5726/dbx-apollo/releases/download/v1.0.0/io.dbx.apollo-1.0.0-windows-x64-b26cd0c1cdfc.dbxp",
+      "sha256": "2dbffba3c5df44f28f4b1b227f6a2b0f4d1cae02d1bd6f29047556f2553fb348",
+      "size": 4437802
+    }
+  ]
+}
