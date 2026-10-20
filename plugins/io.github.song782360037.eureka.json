@@ -1,0 +1,70 @@
+{
+  "id": "io.github.song782360037.eureka",
+  "name": "Eureka",
+  "description": "Eureka operations workbench: registry overview, clusters and changes, recent registration events, cross-region discovery, instance and AWS ASG management.",
+  "publisher": "song782360037",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/song782360037/dbx-plugin-eureka/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "eureka",
+    "service-discovery",
+    "microservices",
+    "spring-cloud",
+    "ops"
+  ],
+  "permissions": [],
+  "source": "https://github.com/song782360037/dbx-plugin-eureka/tree/v0.1.0",
+  "homepage": "https://github.com/song782360037/dbx-plugin-eureka",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-18T19:25:47.928Z",
+      "releaseNotes": "0.1.0：首个版本。提供运行概览、集群与变更、近期注册/注销日志、跨 Region 发现查询、实例状态与元数据管理、AWS ASG 状态管理；支持只读保护、Basic Auth/Bearer Token 与自定义 CA。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.eureka/0.1.0/io.github.song782360037.eureka-0.1.0-darwin-arm64.dbxp",
+          "sha256": "076bc93678fd35a52493b65298a77aa91284035c332bfd77f3415232a4969427",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5020027
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.eureka/0.1.0/io.github.song782360037.eureka-0.1.0-darwin-x64.dbxp",
+          "sha256": "72c8c94a25d8dd167ddcc64d1972c0a56ba5b87c9bbc5ad54c07100598554fed",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5336611
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.eureka/0.1.0/io.github.song782360037.eureka-0.1.0-linux-arm64.dbxp",
+          "sha256": "4a585d496423fa8f709f9a0e96d65cbac29d45e8870889b62b48a127a411b45b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4802820
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.eureka/0.1.0/io.github.song782360037.eureka-0.1.0-linux-x64.dbxp",
+          "sha256": "1b38c4ae47071ab3e2dd4b470df3457db59a75a6747774ea53a94f4ea6ec3584",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5225149
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.eureka/0.1.0/io.github.song782360037.eureka-0.1.0-windows-x64.dbxp",
+          "sha256": "e9d23104fc9002a1795260557faa447e9d9c5730b108e8699e2b0f1f2e8231fb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5221103
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Eureka",
+      "description": "Eureka 运维工作台：运行概览、集群与变更、近期注册注销日志、跨 Region 发现查询、实例及 AWS ASG 管理。"
+    }
+  }
+}

@@ -10,10 +10,10 @@
     {
       "id": "alvinades98.pg-backup-restore",
       "name": "PG Backup & Restore",
-      "description": "Back up and restore PostgreSQL databases with pg_dump / pg_restore / psql: custom, tar, directory and plain SQL dumps, saved connections, live log, optional full schema reset before restore.",
+      "description": "Back up and restore PostgreSQL databases with pg_dump / pg_restore / psql: custom, tar, directory and plain SQL dumps, schema/table selection, role backup, version checks, progress, backup history and an optional full schema reset before restore.",
       "publisher": "alvinades98",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.2.0/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.3.0/icon.png",
       "tags": [
         "postgresql",
         "backup",
@@ -24,11 +24,53 @@
       "permissions": [
         "host.storage"
       ],
-      "source": "https://github.com/alvinades98/dbx-pg-restore/tree/v0.2.0",
+      "source": "https://github.com/alvinades98/dbx-pg-restore",
       "homepage": "https://github.com/alvinades98/dbx-pg-restore",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.0",
+      "latestVersion": "0.3.0",
       "versions": [
+        {
+          "version": "0.3.0",
+          "releasedAt": "2026-10-18T19:14:52.749Z",
+          "releaseNotes": "Selective restore and backup (schemas, skip table data), client/server version check before every run, restore progress in percent, create missing roles, roles backup (pg_dumpall --globals-only), backup history, copy/save log, zstd/lz4/gzip compression levels, English/Indonesian/Chinese UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.3.0/alvinades98.pg-backup-restore-0.3.0-darwin-arm64.dbxp",
+              "sha256": "d76682c1a1ddff7e2204075b6e62989b6d22b330c1be040f5106cc357a811968",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 418195
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.3.0/alvinades98.pg-backup-restore-0.3.0-darwin-x64.dbxp",
+              "sha256": "a0fe92ee0b1e3499aca1fb6da70756b5155a4e82c24209878d6d6097527d71a2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 444895
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.3.0/alvinades98.pg-backup-restore-0.3.0-linux-arm64.dbxp",
+              "sha256": "e02d1a834fe76fb8572d4db714b9e3d62bfb0797d4a24669e78b463f6b02c988",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 445667
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.3.0/alvinades98.pg-backup-restore-0.3.0-linux-x64.dbxp",
+              "sha256": "fa6662d89db41b60ff94b246449f17bab83fbe761a07d4eb0a23867bd1b83fbf",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 470736
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.3.0/alvinades98.pg-backup-restore-0.3.0-windows-x64.dbxp",
+              "sha256": "53786b0f4a71538a872ad0514eaf960a455dd0630aab54b19f8399caa1fabbc7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 399983
+            }
+          ]
+        },
         {
           "version": "0.2.0",
           "releasedAt": "2026-10-18T00:52:18.795Z",
@@ -85,18 +127,60 @@
       "description": "Import AI provider configurations from CC-SWITCH or Magpie into DBX.",
       "publisher": "ma123456mai",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/cc-switch/0.2.10/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/cc-switch/0.2.11/icon.svg",
       "tags": [
         "ai",
         "configuration",
         "cc-switch"
       ],
       "permissions": [],
-      "source": "https://github.com/ma123456mai/ai-config-importer/tree/v0.2.10",
+      "source": "https://github.com/ma123456mai/ai-config-importer/tree/v0.2.11",
       "homepage": "https://github.com/ma123456mai/ai-config-importer",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.10",
+      "latestVersion": "0.2.11",
       "versions": [
+        {
+          "version": "0.2.11",
+          "releasedAt": "2026-10-19T10:09:01.921Z",
+          "releaseNotes": "Use Claude-style endpoint and model defaults for CC-SWITCH Codex profiles while requiring an API key.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.11/cc-switch-0.2.11-darwin-arm64.dbxp",
+              "sha256": "968ab3e068b3fe23bffee6f279293ea0549510153d42eda7efd3b56118edadc1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1207469
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.11/cc-switch-0.2.11-darwin-x64.dbxp",
+              "sha256": "95358326f68624abca310d76be77ea183b05d5955e9621e2c1a3b41289f3a3fc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1284125
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.11/cc-switch-0.2.11-linux-arm64.dbxp",
+              "sha256": "d039e93c698a52421cc154582640c16cc2c12e3e19d9041ab782b5fa8a97c7f6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1346438
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.11/cc-switch-0.2.11-linux-x64.dbxp",
+              "sha256": "eb0d17c3a4b98f202f930877ace297df592aff092ecab0d90763254e23d6e3b5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1384599
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.11/cc-switch-0.2.11-windows-x64.dbxp",
+              "sha256": "8d88fc250a44ec12a6ffc2d8c777c075f8259060bb6f2f65beb20e0a11c8231f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1185841
+            }
+          ]
+        },
         {
           "version": "0.2.10",
           "releasedAt": "2026-10-17T02:18:15.050Z",
@@ -1204,25 +1288,59 @@
     {
       "id": "com.lwai.mdnotes",
       "name": "AI.MD 笔记",
-      "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。内置 AI 助手（右侧常驻栏），可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型对笔记做分析、润色、续写与问答。",
+      "description": "Markdown 笔记：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记是真实 .md 文件，文件夹是真实子目录，也可作为 mdnotes:// 虚拟文件系统浏览。支持直接粘贴/拖入图片、导入已有 .md 与整个文件夹、导出与整库备份恢复；右侧常驻 AI 助手可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型做分析、润色、续写与问答。",
       "publisher": "lwai",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.8/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/icon.svg",
       "tags": [
         "md",
         "notes",
         "files",
-        "storage",
-        "ai"
+        "storage"
       ],
       "permissions": [
         "host.filesystem"
       ],
-      "source": "https://github.com/lukelwai/dbx-md-notes",
+      "source": "https://github.com/lukelwai/dbx-md-notes/tree/0.8.9",
       "homepage": "https://github.com/lukelwai/dbx-md-notes",
       "license": "Apache-2.0",
-      "latestVersion": "0.8.8",
+      "latestVersion": "0.8.9",
       "versions": [
+        {
+          "version": "0.8.9",
+          "releasedAt": "2026-10-19T10:03:32.911Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/com.lwai.mdnotes-0.8.9-darwin-arm64.dbxp",
+              "sha256": "6e64967c6ebd7e62055418f8b1da5bb5a4a211ea88571faa465be57e2965ba23",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5218533
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/com.lwai.mdnotes-0.8.9-darwin-x64.dbxp",
+              "sha256": "4597ef4bcca8867828950f823b8dacf534b066e8a32e8582c286256ff29fb0a7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5549254
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/com.lwai.mdnotes-0.8.9-linux-x64.dbxp",
+              "sha256": "2d06253bc0a7f781c0502778bf63bdbde0d7844fd1e8e858c9d8984ca771fa20",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5394944
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/com.lwai.mdnotes-0.8.9-windows-x64.dbxp",
+              "sha256": "06d2304f66c0a67d88cec3a351c6fff966d5b3e15c0afc93c0a55dfafb359bbd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5459057
+            }
+          ]
+        },
         {
           "version": "0.8.8",
           "releasedAt": "2026-10-15T01:45:11.867Z",
@@ -1309,17 +1427,9 @@
         }
       ],
       "localizations": {
-        "en": {
-          "name": "MD Notes",
-          "description": "Markdown notes with a connection type: create an MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory from the connection configuration and can be browsed and edited as an mdnotes:// virtual file system."
-        },
         "zh-CN": {
-          "name": "MD 笔记",
-          "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。"
-        },
-        "zh": {
-          "name": "MD 笔记",
-          "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。"
+          "name": "AI.MD 笔记",
+          "description": "Markdown 笔记：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记是真实 .md 文件，文件夹是真实子目录，也可作为 mdnotes:// 虚拟文件系统浏览。支持直接粘贴/拖入图片、导入已有 .md 与整个文件夹、导出与整库备份恢复；右侧常驻 AI 助手可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型做分析、润色、续写与问答。"
         }
       }
     },
@@ -1650,6 +1760,76 @@
         "zh-CN": {
           "name": "对象存储",
           "description": "通用对象存储浏览器：支持阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）。大目录服务端分页、分片上传、预签名分享、文件预览、多选批量删除/下载。"
+        }
+      }
+    },
+    {
+      "id": "com.pawsql.dbx",
+      "name": "PawSQL SQL Optimizer",
+      "description": "Paste SQL and get PawSQL optimization recommendations: rule violations, index DDLs, rewrites and a What-If validation report.",
+      "publisher": "pawsql",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.pawsql.dbx/1.0.0/icon.png",
+      "tags": [
+        "sql",
+        "optimization",
+        "database"
+      ],
+      "permissions": [
+        "host.events"
+      ],
+      "source": "https://github.com/PawSQL/dbx-plugin-pawsql/tree/v1.0.0",
+      "homepage": "https://github.com/PawSQL/dbx-plugin-pawsql",
+      "license": "Apache-2.0",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "releasedAt": "2026-10-19T10:34:28.057Z",
+          "releaseNotes": "1.0.0：首个版本。粘贴 SQL，选择数据库类型，即可获取 PawSQL 优化建议——规则违规、推荐索引、SQL 重写与 What-If 校验报告。支持匿名与账号登录两种模式，所有网络请求经 Go 原生 sidecar 完成。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.pawsql.dbx/1.0.0/com.pawsql.dbx-1.0.0-darwin-arm64.dbxp",
+              "sha256": "32fd22dbb1088428ca7a91c3ce48aca91eeaf5ab5e3268eabec21d4b7ba9d708",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4240630
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.pawsql.dbx/1.0.0/com.pawsql.dbx-1.0.0-darwin-x64.dbxp",
+              "sha256": "f4a114a516cb2ce95ab31579ac3eaa7e8cedf4673758a0e69810d08f1883cd4f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4451663
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.pawsql.dbx/1.0.0/com.pawsql.dbx-1.0.0-linux-arm64.dbxp",
+              "sha256": "b42e787b0f710335c3d296db9ddd3b295bae1ed158285fb4565f87c0bf9899d9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4241385
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.pawsql.dbx/1.0.0/com.pawsql.dbx-1.0.0-linux-x64.dbxp",
+              "sha256": "29723f42c9c8fbc755fb347218777a7ff137d167e476cd8d769f1e619543d949",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4523857
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.pawsql.dbx/1.0.0/com.pawsql.dbx-1.0.0-windows-x64.dbxp",
+              "sha256": "e0ab57ceb188129e894bed36c02645a1552623afafbe8cec19b353b9f1cede53",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4534890
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "PawSQL SQL 优化器",
+          "description": "粘贴 SQL，获取 PawSQL 优化建议：规则违规、推荐索引、SQL 重写与 What-If 校验报告。"
         }
       }
     },
@@ -2187,6 +2367,48 @@
       }
     },
     {
+      "id": "digitalzhao.mybatis_sql_dbx_plugin",
+      "name": "MyBatis SQL Generator",
+      "description": "Render directly executable SQL from MyBatis mapper XML and input parameters, producing Oracle / SQL Server dialect literals.",
+      "publisher": "digitalzhao",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/digitalzhao.mybatis_sql_dbx_plugin/0.1.0/icon.svg",
+      "tags": [
+        "sql",
+        "mybatis",
+        "database"
+      ],
+      "permissions": [
+        "host.storage"
+      ],
+      "source": "https://github.com/digitalzhao309-hash/mybatis_sql_dbx_plugin/tree/v0.1.0",
+      "homepage": "https://github.com/digitalzhao309-hash/mybatis_sql_dbx_plugin",
+      "license": "MIT",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-10-19T10:28:14.115Z",
+          "releaseNotes": "Initial release: render executable SQL from MyBatis mapper XML with Oracle / SQL Server dialect literals.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/digitalzhao.mybatis_sql_dbx_plugin/0.1.0/digitalzhao.mybatis_sql_dbx_plugin-0.1.0-windows-x64.dbxp",
+              "sha256": "f1b73b1c8aa15478f74b0fc2d107dee4fee5b1275a131f00def9da05ce950d00",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3488099
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "MyBatis SQL 生成器",
+          "description": "粘贴 MyBatis mapper XML 与入参，渲染出可直接执行的 SQL（支持 Oracle / SQL Server 方言字面量）。"
+        }
+      }
+    },
+    {
       "id": "io.dbx.clipboard",
       "name": "Clipboard History",
       "description": "Browse, search, and reuse local clipboard history (text, images, and file lists).",
@@ -2419,6 +2641,63 @@
         "zh": {
           "name": "Docker",
           "description": "Docker 管理工作台：容器、镜像、卷、网络、日志、文件、监控与 Compose；支持 DBX 内置 AI 和 MCP 查询及按连接授权的管理操作。"
+        }
+      }
+    },
+    {
+      "id": "io.dbx.doudizhu",
+      "name": "Garden Dou Dizhu",
+      "description": "A three-player Dou Dizhu mini-game for your local LAN, with public/password rooms and animated characters. No hosted online service, online accounts, top-ups, payments or cash-out.",
+      "publisher": "ezreal-byte",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.doudizhu/0.1.0/icon.svg",
+      "tags": [
+        "game",
+        "lan",
+        "doudizhu",
+        "offline"
+      ],
+      "permissions": [
+        "host.events"
+      ],
+      "source": "https://github.com/Ezreal-byte/dbx-doudizhu-plugin/tree/v0.1.0",
+      "homepage": "https://github.com/Ezreal-byte/dbx-doudizhu-plugin",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-10-18T19:20:20.486Z",
+          "releaseNotes": "Initial public release: local LAN three-player rooms, optional passwords, animated characters, offline voices and social effects. Includes no hosted Internet lobby, matchmaking, online account service, top-ups, payments, purchases, cash-out or real-money stakes. Room beans are non-transferable score counters without monetary value. Windows x64 and macOS 15.4+ Apple Silicon/Intel unsigned review candidates; DBX Store signs approved packages.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.doudizhu/0.1.0/io.dbx.doudizhu-0.1.0-darwin-arm64.dbxp",
+              "sha256": "7bddfb485cddffad1fc686693e8f1910ed5fb9ac2e2ff932c8b6e4c4d1bc2c7d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 24637744
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.doudizhu/0.1.0/io.dbx.doudizhu-0.1.0-darwin-x64.dbxp",
+              "sha256": "bd314b389972533079771af0e74837df36550dab0dc69890fd23441dd083b4aa",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 24967279
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.doudizhu/0.1.0/io.dbx.doudizhu-0.1.0-windows-x64.dbxp",
+              "sha256": "aca4c2310021d95480066a389893545a1cb7331fa89964d9ebe32b144ae9ca2b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 24962512
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "田园斗地主",
+          "description": "本地局域网三人联机斗地主小游戏，支持公开房、密码房和动态角色互动；无公网在线服务、账号、充值、支付或提现。"
         }
       }
     },
@@ -5791,7 +6070,7 @@
       "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.7/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.8/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -5810,8 +6089,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.7.7",
+      "latestVersion": "0.7.8",
       "versions": [
+        {
+          "version": "0.7.8",
+          "releasedAt": "2026-10-18T19:31:27.995Z",
+          "releaseNotes": "First official store release: interactive terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.8/io.dbx.ssh-0.7.8-darwin-arm64.dbxp",
+              "sha256": "38c8f1ae9989004605203608000814682f0a013753877aed2ecfae2e07972795",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15517221
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.8/io.dbx.ssh-0.7.8-darwin-x64.dbxp",
+              "sha256": "609eb2cdbf532eaaaf15551cd2368c8488b56d2b48bef5718b3d7f42ba195d18",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16167398
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.8/io.dbx.ssh-0.7.8-linux-arm64.dbxp",
+              "sha256": "3eb70680174412a1aeb7143ff240632aad435aad1b487659c7637d31f2f1af47",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16710559
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.8/io.dbx.ssh-0.7.8-linux-x64.dbxp",
+              "sha256": "bb43cb427d717759fc09f93a15de83a3dfc83c68b5da84a300184fd07ef9bb0f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 17193824
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.8/io.dbx.ssh-0.7.8-windows-x64.dbxp",
+              "sha256": "1a9b3e946779f74ee222abf1c56b2230a5aedf50997a702fa9b55b95fa8efe79",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14950326
+            }
+          ]
+        },
         {
           "version": "0.7.7",
           "releasedAt": "2026-10-18T00:36:30.098Z",
@@ -8034,6 +8355,147 @@
         "en": {
           "name": "Embedded Terminal",
           "description": "Run an interactive local shell directly inside a DBX workbench."
+        }
+      }
+    },
+    {
+      "id": "io.github.song782360037.alertmanage",
+      "name": "AlertManage",
+      "description": "Alertmanager operations workbench: alert triage, silences, notification routing, status and configuration.",
+      "publisher": "song782360037",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.song782360037.alertmanage/0.1.0/icon.svg",
+      "tags": [
+        "alertmanager",
+        "prometheus",
+        "alerts",
+        "silencing",
+        "monitoring",
+        "ops"
+      ],
+      "permissions": [],
+      "source": "https://github.com/song782360037/dbx-plugin-alertmanage/tree/v0.1.0",
+      "homepage": "https://github.com/song782360037/dbx-plugin-alertmanage",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-10-19T10:22:20.906Z",
+          "releaseNotes": "0.1.0: first release. Alert overview and filtering, silence creation/edit/expiry, notification routing and receivers, status/config views, and a connection-level management toggle.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.song782360037.alertmanage/0.1.0/io.github.song782360037.alertmanage-0.1.0-darwin-arm64.dbxp",
+              "sha256": "3e6ee59e56d5f92e3ebe44156200ae6e6082ddba63e81bee6716a20dbc74468f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5154995
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.song782360037.alertmanage/0.1.0/io.github.song782360037.alertmanage-0.1.0-darwin-x64.dbxp",
+              "sha256": "e60379b4ce1e6e1a15dac4fba3e7cf194974da11888af11bf0ea758296cc7483",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5494000
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.song782360037.alertmanage/0.1.0/io.github.song782360037.alertmanage-0.1.0-linux-arm64.dbxp",
+              "sha256": "a9fe6a7188d3e7b57dec100fedd544534d95f248718b70b8470aeb75ae867e6d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4933766
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.song782360037.alertmanage/0.1.0/io.github.song782360037.alertmanage-0.1.0-linux-x64.dbxp",
+              "sha256": "6bcab7b0090b079437a822b1ee92d20e2de864f2d1a4af0acc22431fcc38dd9b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5379067
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.song782360037.alertmanage/0.1.0/io.github.song782360037.alertmanage-0.1.0-windows-x64.dbxp",
+              "sha256": "8632d61bc68dc02e0a6110f5eb18cb7c067b8180d478d82edd8f5e5a4ed83225",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5376635
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "AlertManage",
+          "description": "Alertmanager 告警管理插件：告警查看与处理、静默规则、通知与路由、状态与配置。"
+        }
+      }
+    },
+    {
+      "id": "io.github.song782360037.eureka",
+      "name": "Eureka",
+      "description": "Eureka operations workbench: registry overview, clusters and changes, recent registration events, cross-region discovery, instance and AWS ASG management.",
+      "publisher": "song782360037",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.song782360037.eureka/0.1.0/icon.svg",
+      "tags": [
+        "eureka",
+        "service-discovery",
+        "microservices",
+        "spring-cloud",
+        "ops"
+      ],
+      "permissions": [],
+      "source": "https://github.com/song782360037/dbx-plugin-eureka/tree/v0.1.0",
+      "homepage": "https://github.com/song782360037/dbx-plugin-eureka",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-10-18T19:25:47.928Z",
+          "releaseNotes": "0.1.0：首个版本。提供运行概览、集群与变更、近期注册/注销日志、跨 Region 发现查询、实例状态与元数据管理、AWS ASG 状态管理；支持只读保护、Basic Auth/Bearer Token 与自定义 CA。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.song782360037.eureka/0.1.0/io.github.song782360037.eureka-0.1.0-darwin-arm64.dbxp",
+              "sha256": "076bc93678fd35a52493b65298a77aa91284035c332bfd77f3415232a4969427",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5020027
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.song782360037.eureka/0.1.0/io.github.song782360037.eureka-0.1.0-darwin-x64.dbxp",
+              "sha256": "72c8c94a25d8dd167ddcc64d1972c0a56ba5b87c9bbc5ad54c07100598554fed",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5336611
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.song782360037.eureka/0.1.0/io.github.song782360037.eureka-0.1.0-linux-arm64.dbxp",
+              "sha256": "4a585d496423fa8f709f9a0e96d65cbac29d45e8870889b62b48a127a411b45b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4802820
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.song782360037.eureka/0.1.0/io.github.song782360037.eureka-0.1.0-linux-x64.dbxp",
+              "sha256": "1b38c4ae47071ab3e2dd4b470df3457db59a75a6747774ea53a94f4ea6ec3584",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5225149
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.song782360037.eureka/0.1.0/io.github.song782360037.eureka-0.1.0-windows-x64.dbxp",
+              "sha256": "e9d23104fc9002a1795260557faa447e9d9c5730b108e8699e2b0f1f2e8231fb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5221103
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "Eureka",
+          "description": "Eureka 运维工作台：运行概览、集群与变更、近期注册注销日志、跨 Region 发现查询、实例及 AWS ASG 管理。"
         }
       }
     },

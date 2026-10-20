@@ -1,24 +1,23 @@
 {
   "id": "com.lwai.mdnotes",
   "name": "AI.MD 笔记",
-  "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。内置 AI 助手（右侧常驻栏），可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型对笔记做分析、润色、续写与问答。",
+  "description": "Markdown 笔记：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记是真实 .md 文件，文件夹是真实子目录，也可作为 mdnotes:// 虚拟文件系统浏览。支持直接粘贴/拖入图片、导入已有 .md 与整个文件夹、导出与整库备份恢复；右侧常驻 AI 助手可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型做分析、润色、续写与问答。",
   "publisher": "lwai",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/0.8.8/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/0.8.9/assets/plugin.svg",
   "tags": [
     "md",
     "notes",
     "files",
-    "storage",
-    "ai"
+    "storage"
   ],
   "permissions": [
     "host.filesystem"
   ],
-  "source": "https://github.com/lukelwai/dbx-md-notes",
+  "source": "https://github.com/lukelwai/dbx-md-notes/tree/0.8.9",
   "homepage": "https://github.com/lukelwai/dbx-md-notes",
   "license": "Apache-2.0",
-  "latestVersion": "0.8.8",
+  "latestVersion": "0.8.9",
   "versions": [
     {
       "version": "0.7.1",
@@ -103,20 +102,47 @@
           "size": 5459051
         }
       ]
+    },
+    {
+      "version": "0.8.9",
+      "releasedAt": "2026-10-19T10:03:32.911Z",
+      "releaseNotes": "",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/com.lwai.mdnotes-0.8.9-darwin-arm64.dbxp",
+          "sha256": "6e64967c6ebd7e62055418f8b1da5bb5a4a211ea88571faa465be57e2965ba23",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5218533
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/com.lwai.mdnotes-0.8.9-darwin-x64.dbxp",
+          "sha256": "4597ef4bcca8867828950f823b8dacf534b066e8a32e8582c286256ff29fb0a7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5549254
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/com.lwai.mdnotes-0.8.9-linux-x64.dbxp",
+          "sha256": "2d06253bc0a7f781c0502778bf63bdbde0d7844fd1e8e858c9d8984ca771fa20",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5394944
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/com.lwai.mdnotes-0.8.9-windows-x64.dbxp",
+          "sha256": "06d2304f66c0a67d88cec3a351c6fff966d5b3e15c0afc93c0a55dfafb359bbd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5459057
+        }
+      ]
     }
   ],
   "localizations": {
-    "en": {
-      "name": "MD Notes",
-      "description": "Markdown notes with a connection type: create an MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory from the connection configuration and can be browsed and edited as an mdnotes:// virtual file system."
-    },
     "zh-CN": {
-      "name": "MD 笔记",
-      "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。"
-    },
-    "zh": {
-      "name": "MD 笔记",
-      "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。"
+      "name": "AI.MD 笔记",
+      "description": "Markdown 笔记：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记是真实 .md 文件，文件夹是真实子目录，也可作为 mdnotes:// 虚拟文件系统浏览。支持直接粘贴/拖入图片、导入已有 .md 与整个文件夹、导出与整库备份恢复；右侧常驻 AI 助手可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型做分析、润色、续写与问答。"
     }
   }
 }

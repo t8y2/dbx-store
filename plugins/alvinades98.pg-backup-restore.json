@@ -1,10 +1,10 @@
 {
   "id": "alvinades98.pg-backup-restore",
   "name": "PG Backup & Restore",
-  "description": "Back up and restore PostgreSQL databases with pg_dump / pg_restore / psql: custom, tar, directory and plain SQL dumps, saved connections, live log, optional full schema reset before restore.",
+  "description": "Back up and restore PostgreSQL databases with pg_dump / pg_restore / psql: custom, tar, directory and plain SQL dumps, schema/table selection, role backup, version checks, progress, backup history and an optional full schema reset before restore.",
   "publisher": "alvinades98",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/alvinades98/dbx-pg-restore/v0.2.0/assets/plugin.png",
+  "icon": "https://raw.githubusercontent.com/alvinades98/dbx-pg-restore/v0.3.0/assets/plugin.png",
   "tags": [
     "postgresql",
     "backup",
@@ -15,10 +15,10 @@
   "permissions": [
     "host.storage"
   ],
-  "source": "https://github.com/alvinades98/dbx-pg-restore/tree/v0.2.0",
+  "source": "https://github.com/alvinades98/dbx-pg-restore",
   "homepage": "https://github.com/alvinades98/dbx-pg-restore",
   "license": "Apache-2.0",
-  "latestVersion": "0.2.0",
+  "latestVersion": "0.3.0",
   "versions": [
     {
       "version": "0.2.0",
@@ -59,6 +59,48 @@
           "sha256": "3220aff64e307146e4c7006dba4d90a89c1c23ae90ad3284e7d181b48cb8f422",
           "signingKeyId": "dbx-store-release-2026",
           "size": 321368
+        }
+      ]
+    },
+    {
+      "version": "0.3.0",
+      "releasedAt": "2026-10-18T19:14:52.749Z",
+      "releaseNotes": "Selective restore and backup (schemas, skip table data), client/server version check before every run, restore progress in percent, create missing roles, roles backup (pg_dumpall --globals-only), backup history, copy/save log, zstd/lz4/gzip compression levels, English/Indonesian/Chinese UI.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.3.0/alvinades98.pg-backup-restore-0.3.0-darwin-arm64.dbxp",
+          "sha256": "d76682c1a1ddff7e2204075b6e62989b6d22b330c1be040f5106cc357a811968",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 418195
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.3.0/alvinades98.pg-backup-restore-0.3.0-darwin-x64.dbxp",
+          "sha256": "a0fe92ee0b1e3499aca1fb6da70756b5155a4e82c24209878d6d6097527d71a2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 444895
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.3.0/alvinades98.pg-backup-restore-0.3.0-linux-arm64.dbxp",
+          "sha256": "e02d1a834fe76fb8572d4db714b9e3d62bfb0797d4a24669e78b463f6b02c988",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 445667
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.3.0/alvinades98.pg-backup-restore-0.3.0-linux-x64.dbxp",
+          "sha256": "fa6662d89db41b60ff94b246449f17bab83fbe761a07d4eb0a23867bd1b83fbf",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 470736
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.3.0/alvinades98.pg-backup-restore-0.3.0-windows-x64.dbxp",
+          "sha256": "53786b0f4a71538a872ad0514eaf960a455dd0630aab54b19f8399caa1fabbc7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 399983
         }
       ]
     }
