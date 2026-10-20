@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "com.anjun.jenkins",
+  "publisher": "anjun",
+  "version": "0.2.1",
+  "name": "Jenkins Console",
+  "description": "Manage Jenkins jobs, builds, console output, queue and nodes inside DBX, with stage view and MCP tools for AI clients.",
+  "icon": "https://raw.githubusercontent.com/nixing178/dbx-plugin-jenkins/v0.2.1/assets/plugin.svg",
+  "tags": ["jenkins", "ci", "cd", "build", "pipeline", "mcp"],
+  "permissions": ["host.workbench", "host.events"],
+  "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.2.1",
+  "homepage": "https://github.com/nixing178/dbx-plugin-jenkins",
+  "license": "Apache-2.0",
+  "releaseNotes": "First public release: jobs, builds and console output, queue and nodes, Jenkins Views grouping, pipeline stage view, job/view create, edit and delete, and 10 MCP tools.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Jenkins 管理台",
+      "description": "在 DBX 内管理 Jenkins 任务、构建、控制台日志、队列与节点，支持阶段视图与面向 AI 客户端的 MCP 工具。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-jenkins/releases/download/v0.2.1/com.anjun.jenkins-0.2.1-windows-x64.dbxp",
+      "sha256": "e684cd15f341e3ece374e02bbdacece3dc54bc4c9fe53017858d7713d6c8a8a7",
+      "size": 4720091
+    }
+  ]
+}
