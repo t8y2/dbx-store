@@ -1,10 +1,10 @@
 {
   "id": "terry.devtools",
   "name": "Dev Tools",
-  "description": "Runs offline in a sandbox with zero network calls and just a single local permission. 44 developer utilities in under 200KB: an all-in-one toolkit covering crypto & security, encoding, text & regex, time & Cron, network & DevOps, and frontend assets — built for everyday development needs.",
+  "description": "Runs offline in a sandbox with zero network calls and only 2 local permissions (UI state + tab title). 44 developer utilities in under 200KB: an all-in-one toolkit covering crypto & security, encoding, text & regex, time & Cron, network & DevOps, and frontend assets — built for everyday development needs.",
   "publisher": "terry",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/yaoxinghuo/dbx-dev-tools/v0.6.4/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/yaoxinghuo/dbx-dev-tools/v0.6.5/assets/plugin.svg",
   "tags": [
     "devtools",
     "utilities",
@@ -18,12 +18,13 @@
     "color"
   ],
   "permissions": [
-    "host.storage"
+    "host.storage",
+    "host.workbench"
   ],
   "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
   "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
   "license": "MIT",
-  "latestVersion": "0.6.4",
+  "latestVersion": "0.6.5",
   "versions": [
     {
       "version": "0.3.3",
@@ -150,12 +151,26 @@
           "size": 178671
         }
       ]
+    },
+    {
+      "version": "0.6.5",
+      "releasedAt": "2026-10-20T02:28:28.904Z",
+      "releaseNotes": "Bug fix: JSON formatter, JWT inspector and header converter no longer corrupt integers beyond 2^53-1 (e.g. snowflake IDs) — number literals round-trip exactly as written. New: collapsed icon rail opens floating panels — favorites (drag-reorderable), recents, and an all-tools grid with its own search box (autofocus, Enter jumps to the first hit). Home header shows the plugin version badge; typewriter pill adopts the accent color; star hover colors now match between sidebar and home.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.5/terry.devtools-0.6.5-universal.dbxp",
+          "sha256": "c2b7b913563092fc2969f87d6a7376328eed5e8fdc60feaf18f0a21b36ab93e5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 179232
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "Dev 工具集",
-      "description": "沙箱离线运行，零联网、仅1项本地权限。44 款开发工具小于 200KB：集安全加解密、编解码与转义、文本与正则排版、时间与 Cron 计算、网络与系统运维、前端图像与标识生成等全场景工具于一体，满足日常开发高频需求。"
+      "description": "沙箱离线运行，零联网、仅2项本地权限（界面状态、标签页标题）。44 款开发工具小于 200KB：集安全加解密、编解码与转义、文本与正则排版、时间与 Cron 计算、网络与系统运维、前端图像与标识生成等全场景工具于一体，满足日常开发高频需求。"
     }
   }
 }
