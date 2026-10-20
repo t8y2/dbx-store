@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.icefoxs.data-convert",
+  "publisher": "icefoxs",
+  "version": "0.1.0",
+  "name": "data-convert",
+  "description": "A DBX plugin providing seamless conversion among JSON, YAML, XML, and Properties formats. Built as a frontend-only universal package.",
+  "icon": "https://raw.githubusercontent.com/IceFoxs/dbx-plugin-data-convert/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "data-convert",
+    "json",
+    "yaml",
+    "xml",
+    "properties",
+    "formatter"
+  ],
+  "permissions": [
+    "host.clipboard:read",
+    "host.workbench"
+  ],
+  "source": "https://github.com/IceFoxs/dbx-plugin-data-convert",
+  "homepage": "https://github.com/IceFoxs/dbx-plugin-data-convert",
+  "license": "MIT",
+  "releaseNotes": "Initial release with multi-format conversion, mock data generation, and i18n support.",
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/IceFoxs/dbx-plugin-data-convert/releases/download/v0.1.0/io.github.icefoxs.data-convert-0.1.0-universal.dbxp",
+      "sha256": "11da96c0548a16e22761a36b219e67aaab64979b16887412f4afbf10a77c0146",
+      "size": 62572
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "数据转换",
+      "description": "一个 DBX 插件，提供 JSON、YAML、XML 和 Properties 格式之间的无缝转换。采用纯前端通用模板构建，无需原生后端。"
+    },
+    "en": {
+      "name": "data convert",
+      "description": "A DBX plugin providing seamless conversion among JSON, YAML, XML, and Properties formats. Built as a frontend-only universal package."
+    }
+  }
+}
