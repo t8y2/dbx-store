@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "cc-switch",
+  "publisher": "ma123456mai",
+  "version": "0.2.12",
+  "name": "AI Config Importer",
+  "description": "Import AI provider configurations from CC-SWITCH or Magpie into DBX.",
+  "icon": "https://raw.githubusercontent.com/ma123456mai/dbx-cc-switch-plugin/v0.2.12/assets/plugin.svg",
+  "tags": [
+    "ai",
+    "configuration",
+    "cc-switch"
+  ],
+  "permissions": [],
+  "source": "https://github.com/ma123456mai/ai-config-importer/tree/v0.2.12",
+  "homepage": "https://github.com/ma123456mai/ai-config-importer",
+  "license": "Apache-2.0",
+  "releaseNotes": "Use a consistent black mark on a white rounded-square background across DBX.",
+  "localizations": {
+    "zh-CN": {
+      "name": "AI 配置导入",
+      "description": "从 CC-SWITCH 或 Magpie 导入 AI 提供商配置到 DBX。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/ma123456mai/dbx-cc-switch-plugin/releases/download/v0.2.12/ai-config-importer-0.2.12-darwin-arm64.dbxp",
+      "sha256": "c339358126a3ac5fce536140003d79260a9183a7af86f1cd37e03f3365b8e975",
+      "size": 1206722
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/ma123456mai/dbx-cc-switch-plugin/releases/download/v0.2.12/ai-config-importer-0.2.12-darwin-x64.dbxp",
+      "sha256": "bb7470dad8a89828d14d32fb525c486d90551366adca3669b0599723284a155a",
+      "size": 1283546
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/ma123456mai/dbx-cc-switch-plugin/releases/download/v0.2.12/ai-config-importer-0.2.12-linux-arm64.dbxp",
+      "sha256": "9dc61ad2bb0a1708a11894a8ab07f38e7f9f288c8f0c2eede89cfe9a68e861e1",
+      "size": 1345862
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/ma123456mai/dbx-cc-switch-plugin/releases/download/v0.2.12/ai-config-importer-0.2.12-linux-x64.dbxp",
+      "sha256": "2b4c8302577115284388fbf53a76bcbc9a2604d578d35712d05582903c8f927b",
+      "size": 1384121
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/ma123456mai/dbx-cc-switch-plugin/releases/download/v0.2.12/ai-config-importer-0.2.12-windows-x64.dbxp",
+      "sha256": "32de96f01056d418f3d23889e4574a63c0ed1e1d2be66659887cede56ccd5462",
+      "size": 1185265
+    }
+  ]
+}
