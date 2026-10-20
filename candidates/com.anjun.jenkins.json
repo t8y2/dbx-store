@@ -22,8 +22,8 @@
     {
       "target": "windows-x64",
       "url": "https://github.com/nixing178/dbx-plugin-jenkins/releases/download/v0.2.1/com.anjun.jenkins-0.2.1-windows-x64.dbxp",
-      "sha256": "e684cd15f341e3ece374e02bbdacece3dc54bc4c9fe53017858d7713d6c8a8a7",
-      "size": 4720091
+      "sha256": "b597043dc5f5e84fee001c8d242fa1d21770447f1c6dbfc64fcc62dc3245655d",
+      "size": 4720089
     }
   ]
 }
