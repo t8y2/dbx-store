@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "com.dbx.wsl",
+  "publisher": "w89588",
+  "version": "0.1.0",
+  "name": "WSL Manager",
+  "description": "Visual manager for WSL distributions (wsl) and WSL containers (wslc) on Windows.",
+  "icon": "https://raw.githubusercontent.com/w89588/dbx-plugin-wsl/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "wsl",
+    "containers",
+    "windows",
+    "devops"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.events",
+    "host.storage"
+  ],
+  "source": "https://github.com/w89588/dbx-plugin-wsl/tree/v0.1.0",
+  "homepage": "https://github.com/w89588/dbx-plugin-wsl",
+  "license": "Apache-2.0",
+  "releaseNotes": "# WSL Manager v0.1.0\n\nInitial public release.\n\n## Highlights\n\n- **WSL distributions (`wsl`)**: list with live state/disk usage, start/stop, default distro, version switching, default user, sparse/compact/resize, export/import, unregister, distro info (OS release, kernel, disk, IP, `/etc/wsl.conf`), open terminal/Explorer, run commands inside a distro.\n- **WSL containers (`wslc`)**: container list/lifecycle, run, logs (follow), exec, live stats, prune; image list/pull/build/tag/save/load/remove/prune; volumes and networks management; live event stream.\n- **Registry credentials**: sign in/out to container registries (`docker login` equivalent) so private images and Docker Hub rate limits are handled; pull/build/run failures are classified and the UI offers a one-click \"go to sign in\" action with the registry prefilled.\n- **Command console**: run arbitrary `wsl` / `wslc` commands as argv (no shell), with stdout/stderr/exit code.\n- **Settings**: visual editors for `.wslconfig` and wslc `settings.yaml` with automatic backups.\n- UI: overview dashboard, dark/light theme, Chinese/English localization, task panel with live logs and cancellation.\n\n## Requirements\n\n- Windows 11 with WSL (`wsl --version` works; verified with WSL 3.0.3/3.0.4).\n- DBX desktop `>= 0.5.68` (verified on 0.6.49).\n- `wslc` is optional; without it the distribution pages still work.\n\n## Permissions\n\n`host.workbench`, `host.events`, `host.storage` — no network, filesystem, clipboard, data or AI permissions are requested. The native sidecar runs with the current user and only invokes `wsl.exe` / `wslc.exe`.\n\n## Install\n\n1. Download `com.dbx.wsl-0.1.0-windows-x64.dbxp` from this release.\n2. Open DBX → Plugin Center → install the local package (enable unsigned development packages if the store build is not signed yet).\n3. Open **WSL Manager** from the plugin shortcut / command palette.\n\n## Notes and limitations\n\n- Windows-only (`windows-x64`).\n- Registry credentials are stored by `wslc` on the local machine; the plugin never persists passwords and passes them to `wslc` over stdin.\n- `wslc` 3.0.3/3.0.4 has no command to list signed-in registries, so sign-in state is confirmed by pull results.\n- Export/import/build path fields require a Windows path (no native file picker yet).",
+  "localizations": {
+    "zh-CN": {
+      "name": "WSL 管理器",
+      "description": "在 DBX 中可视化管理 WSL 发行版（wsl）与 WSL 容器（wslc），支持注册表凭据与镜像管理。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/w89588/dbx-plugin-wsl/releases/download/v0.1.0/com.dbx.wsl-0.1.0-windows-x64.dbxp",
+      "sha256": "cabc5dd6d44f8b9555fe46683b7d2309b8f3feaafd85d5ef301548cf44e672f4",
+      "size": 3307021
+    }
+  ]
+}
