@@ -4,7 +4,7 @@
   "description": "A minimal month-view calendar for keeping day-by-day notes.",
   "publisher": "tenltrs",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/tenltrs/dbx-calendar/refs/tags/v0.1.5/assets/icon.svg",
+  "icon": "https://raw.githubusercontent.com/tenltrs/dbx-calendar/v0.1.7/assets/icon.svg",
   "tags": [
     "calendar",
     "memo",
@@ -13,10 +13,10 @@
     "to-do"
   ],
   "permissions": [],
-  "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.5",
-  "homepage": "https://github.com/tenltrs/dbx-calendar",
+  "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.7",
+  "homepage": "https://github.com/tenltrs/dbx-calendar/",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.5",
+  "latestVersion": "0.1.7",
   "versions": [
     {
       "version": "0.1.1",
@@ -85,6 +85,34 @@
           "sha256": "1d06ebb4cfd9f01f85a71b5a397fdb8928c3003adbc68470a46468a5c2e8df2c",
           "signingKeyId": "dbx-store-release-2026",
           "size": 2334891
+        }
+      ]
+    },
+    {
+      "version": "0.1.7",
+      "releasedAt": "2026-10-21T05:27:22.251Z",
+      "releaseNotes": "Find notes instantly with highlighted matches and jump straight to the matching date. Pick any year and month from the header instead of stepping through months. ",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.7/com.tenltrs.dbx-calendar-0.1.7-darwin-arm64.dbxp",
+          "sha256": "fb9c8cec323a0149a7c0a4221db198cf5f1832cdc78e8ddaa6943f9c13b2507e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2061001
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.7/com.tenltrs.dbx-calendar-0.1.7-darwin-x64.dbxp",
+          "sha256": "60517786c5813e42e3106e8569fab2885d555bc53b6adfff65ba76e42598d6e7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2131791
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.7/com.tenltrs.dbx-calendar-0.1.7-windows-x64.dbxp",
+          "sha256": "fc060b208e4b775ab1f3d91e8b3999bc92432d0204b0e0f7c0125ba5acc58c06",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2339162
         }
       ]
     }

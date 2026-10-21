@@ -127,18 +127,60 @@
       "description": "Import AI provider configurations from CC-SWITCH or Magpie into DBX.",
       "publisher": "ma123456mai",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/cc-switch/0.2.11/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/cc-switch/0.2.12/icon.svg",
       "tags": [
         "ai",
         "configuration",
         "cc-switch"
       ],
       "permissions": [],
-      "source": "https://github.com/ma123456mai/ai-config-importer/tree/v0.2.11",
+      "source": "https://github.com/ma123456mai/ai-config-importer/tree/v0.2.12",
       "homepage": "https://github.com/ma123456mai/ai-config-importer",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.11",
+      "latestVersion": "0.2.12",
       "versions": [
+        {
+          "version": "0.2.12",
+          "releasedAt": "2026-10-21T05:13:28.797Z",
+          "releaseNotes": "Use a consistent black mark on a white rounded-square background across DBX.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.12/cc-switch-0.2.12-darwin-arm64.dbxp",
+              "sha256": "a0eace421d4f1187c39fff7e2dea2f5e6546bd5079422082b324721b182a5ae2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1207249
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.12/cc-switch-0.2.12-darwin-x64.dbxp",
+              "sha256": "5d74f44aa499b4af31a6332aad3cf18103db6db42412bfb79a1739ace9725070",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1284072
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.12/cc-switch-0.2.12-linux-arm64.dbxp",
+              "sha256": "e0ce4f0f8df302126c35ef31889524eb57dc734cea66f885aa5c58c2006a65b5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1346389
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.12/cc-switch-0.2.12-linux-x64.dbxp",
+              "sha256": "8fba918cc52f7b2c506601f26c39bb92e930da950d797f2efe513d3d722b2dfa",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1384644
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.12/cc-switch-0.2.12-windows-x64.dbxp",
+              "sha256": "1d56c6fcf65386aa8a9fc7e2496337b6b271f74ddac912eef6a1c968191d1b3b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1185798
+            }
+          ]
+        },
         {
           "version": "0.2.11",
           "releasedAt": "2026-10-19T10:09:01.921Z",
@@ -1439,7 +1481,7 @@
       "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。",
       "publisher": "lwai",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.8/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.19/icon.svg",
       "tags": [
         "todo",
         "task",
@@ -1448,11 +1490,53 @@
         "calendar"
       ],
       "permissions": [],
-      "source": "https://github.com/lukelwai/dbx-todo/tree/0.1.8",
+      "source": "https://github.com/lukelwai/dbx-todo",
       "homepage": "https://github.com/lukelwai/dbx-todo",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.8",
+      "latestVersion": "0.1.19",
       "versions": [
+        {
+          "version": "0.1.19",
+          "releasedAt": "2026-10-21T05:07:53.275Z",
+          "releaseNotes": "Initial release.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.19/com.lwai.todo-0.1.19-darwin-arm64.dbxp",
+              "sha256": "fc08ac40d5f3781e9bc44d02409b3c540c6ead1b9ea26f60dc04f718aad63e80",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5599851
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.19/com.lwai.todo-0.1.19-darwin-x64.dbxp",
+              "sha256": "c2976eedfaa4a5706e7c51e7021788dbfb82646ef08d47278f922832224c791e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5799523
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.19/com.lwai.todo-0.1.19-linux-arm64.dbxp",
+              "sha256": "8b56733d030f2ed7f308d7f9bb507cdbdda630fb7a2577b5e886a6a49e8515da",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5288199
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.19/com.lwai.todo-0.1.19-linux-x64.dbxp",
+              "sha256": "feeec2c2d24aeb5d1d873fb51383e509eeb23567f62f6b032faec593938778de",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5649337
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.19/com.lwai.todo-0.1.19-windows-x64.dbxp",
+              "sha256": "c7df534f58f493920ae3a9189068889f2c5fc1d81c1dda5f53351edf6a443ce9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5719060
+            }
+          ]
+        },
         {
           "version": "0.1.8",
           "releasedAt": "2026-10-13T00:40:34.955Z",
@@ -1839,7 +1923,7 @@
       "description": "A minimal month-view calendar for keeping day-by-day notes.",
       "publisher": "tenltrs",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.5/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.7/icon.svg",
       "tags": [
         "calendar",
         "memo",
@@ -1848,11 +1932,39 @@
         "to-do"
       ],
       "permissions": [],
-      "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.5",
-      "homepage": "https://github.com/tenltrs/dbx-calendar",
+      "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.7",
+      "homepage": "https://github.com/tenltrs/dbx-calendar/",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.5",
+      "latestVersion": "0.1.7",
       "versions": [
+        {
+          "version": "0.1.7",
+          "releasedAt": "2026-10-21T05:27:22.251Z",
+          "releaseNotes": "Find notes instantly with highlighted matches and jump straight to the matching date. Pick any year and month from the header instead of stepping through months. ",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.7/com.tenltrs.dbx-calendar-0.1.7-darwin-arm64.dbxp",
+              "sha256": "fb9c8cec323a0149a7c0a4221db198cf5f1832cdc78e8ddaa6943f9c13b2507e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2061001
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.7/com.tenltrs.dbx-calendar-0.1.7-darwin-x64.dbxp",
+              "sha256": "60517786c5813e42e3106e8569fab2885d555bc53b6adfff65ba76e42598d6e7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2131791
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.1.7/com.tenltrs.dbx-calendar-0.1.7-windows-x64.dbxp",
+              "sha256": "fc060b208e4b775ab1f3d91e8b3999bc92432d0204b0e0f7c0125ba5acc58c06",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2339162
+            }
+          ]
+        },
         {
           "version": "0.1.5",
           "releasedAt": "2026-09-22T03:55:13.478Z",
@@ -3823,7 +3935,7 @@
       "description": "Manage Kubernetes clusters, workloads and resources from DBX.",
       "publisher": "eryajf",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.30/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.35/icon.png",
       "tags": [
         "kubernetes",
         "containers",
@@ -3837,8 +3949,57 @@
       "source": "https://github.com/eryajf/dbx-plugin-k8s/tree/82240b2d6d32c8fb8890a2a0415630a466d0faef",
       "homepage": "https://github.com/eryajf/dbx-plugin-k8s",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.30",
+      "latestVersion": "0.1.35",
       "versions": [
+        {
+          "version": "0.1.35",
+          "releasedAt": "2026-10-21T05:22:09.214Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.35/io.dbx.k8s-0.1.35-darwin-arm64.dbxp",
+              "sha256": "660cf7717b984728a910b20f8f1cb2db7450a69635e22e355b8d6ee834d98b67",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32431095
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.35/io.dbx.k8s-0.1.35-darwin-x64.dbxp",
+              "sha256": "30d17195eb4df7055c75a89a04be3a374f196df0c6137b367ed66abe0ed6a838",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 34023389
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.35/io.dbx.k8s-0.1.35-linux-arm64.dbxp",
+              "sha256": "e1dd5930225c8042ab8e63a69f15382b75055f721a57babb774b49f49466c03a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 30581471
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.35/io.dbx.k8s-0.1.35-linux-x64.dbxp",
+              "sha256": "d2d968b3fd70515ba5b351994522493fda97db24661115fd831449c789a92a3e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32643217
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.35/io.dbx.k8s-0.1.35-windows-arm64.dbxp",
+              "sha256": "a38b54fa3b189375fb390a7979d4486a9ffa3db56c3619f61abf2706f40ac24c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 30654421
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.35/io.dbx.k8s-0.1.35-windows-x64.dbxp",
+              "sha256": "f2b4c171726a661a7777e220e0a6bec96a17b5c1eb4ae020fa436cd36a1c520c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32955761
+            }
+          ]
+        },
         {
           "version": "0.1.30",
           "releasedAt": "2026-10-17T02:02:28.875Z",
