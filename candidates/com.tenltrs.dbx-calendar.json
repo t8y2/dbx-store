@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "com.tenltrs.dbx-calendar",
+  "publisher": "tenltrs",
+  "version": "0.1.8",
+  "name": "Calendar Notes",
+  "description": "A minimal month-view calendar for keeping day-by-day notes.",
+  "icon": "https://raw.githubusercontent.com/tenltrs/dbx-calendar/v0.1.8/assets/icon.svg",
+  "tags": [
+    "calendar",
+    "memo",
+    "notes",
+    "workflow",
+    "to-do"
+  ],
+  "permissions": [],
+  "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.8",
+  "homepage": "https://github.com/tenltrs/dbx-calendar/",
+  "license": "Apache-2.0",
+  "releaseNotes": "Refined date selection and month navigation for a smoother calendar workflow. A single click now highlights a date while double-click opens its note editor, the month picker stays aligned with the active year and month, and toolbar focus states after closing dialogs have been polished for consistency.",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.1.8/com.tenltrs.dbx-calendar-0.1.8-darwin-arm64.dbxp",
+      "sha256": "78c3975d5ad3bf57ba3b24fe891a9d67e61d5b12e4cb6f7962be0c86fbbfba74",
+      "size": 2059842
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.1.8/com.tenltrs.dbx-calendar-0.1.8-darwin-x64.dbxp",
+      "sha256": "27d4f3322d3b876073235448d309f6b5e8dc9874d623f1b289dfb51d5656cb20",
+      "size": 2130633
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.1.8/com.tenltrs.dbx-calendar-0.1.8-linux-arm64.dbxp",
+      "sha256": "aec8337c0f62591ec493287bab331696c139f0edfc209b8835cd578e36be7ef7",
+      "size": 2045728
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.1.8/com.tenltrs.dbx-calendar-0.1.8-linux-x64.dbxp",
+      "sha256": "dc5ac23e9d427f663f77e0caa747faefbea232201b18b9ba9ab9824c52077a06",
+      "size": 2146635
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.1.8/com.tenltrs.dbx-calendar-0.1.8-windows-arm64.dbxp",
+      "sha256": "c6e540d10d2809cfbb6885ce4c3c9e241335681e027eecae2010b3c1bbb2fd87",
+      "size": 2205139
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.1.8/com.tenltrs.dbx-calendar-0.1.8-windows-x64.dbxp",
+      "sha256": "2d5d66b045056dfb706197ebf55875b56aba938c37538417c1589c71d8c3f59a",
+      "size": 2337968
+    }
+  ]
+}
