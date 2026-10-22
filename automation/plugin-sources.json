@@ -195,6 +195,11 @@
       "repository": "IceFoxs/dbx-plugin-data-convert",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "zhengcan/dbx-notebook",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
