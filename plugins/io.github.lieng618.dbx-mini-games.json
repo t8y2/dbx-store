@@ -4,7 +4,7 @@
   "description": "A quiet online parlour for Chinese chess and Gomoku, with rooms, spectators, and match clocks.",
   "publisher": "lieng618",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/lieng618/dbx-mini-games/v0.3.1/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/lieng618/dbx-mini-games/v0.4.1/assets/plugin.svg",
   "tags": [
     "game",
     "chess",
@@ -15,10 +15,10 @@
   "permissions": [
     "host.network:https://1.92.64.227"
   ],
-  "source": "https://github.com/lieng618/dbx-mini-games/tree/v0.3.1",
+  "source": "https://github.com/lieng618/dbx-mini-games/tree/v0.4.1",
   "homepage": "https://github.com/lieng618/dbx-mini-games",
   "license": "Apache-2.0",
-  "latestVersion": "0.3.1",
+  "latestVersion": "0.4.1",
   "versions": [
     {
       "version": "0.3.1",
@@ -31,6 +31,20 @@
           "sha256": "04083336f8e576cd8b7a6d145b22b7fcae7207a1a0c219a750ea5a18c3f0bdf5",
           "signingKeyId": "dbx-store-release-2026",
           "size": 246753
+        }
+      ]
+    },
+    {
+      "version": "0.4.1",
+      "releasedAt": "2026-10-23T13:10:25.357Z",
+      "releaseNotes": "本次更新为中国象棋加入炮击吃子、将军升级和胜局裂印等动态特效，并优化上一手回放与悔棋反馈；同时修复 DBX 沙箱中昵称和密码输入无法正常提交的问题。",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/io.github.lieng618.dbx-mini-games/0.4.1/io.github.lieng618.dbx-mini-games-0.4.1-universal.dbxp",
+          "sha256": "6605f2c72662d9839dc506a4306af38326859509c6db196fb3b81d3f49ac6f19",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 260763
         }
       ]
     }
