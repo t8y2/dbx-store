@@ -1,26 +1,28 @@
 {
   "id": "io.github.icefoxs.data-convert",
-  "name": "data-convert",
-  "description": "A DBX plugin providing seamless conversion among JSON, YAML, XML, and Properties formats. Built as a frontend-only universal package.",
+  "name": "Data Converter",
+  "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models. Pure frontend, no backend, works offline.",
   "publisher": "icefoxs",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/IceFoxs/dbx-plugin-data-convert/v0.1.3/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/IceFoxs/dbx-plugin-data-convert/v0.1.5/assets/plugin.svg",
   "tags": [
     "data-convert",
     "json",
-    "yaml",
-    "xml",
-    "properties",
-    "formatter"
+    "sql",
+    "csv",
+    "base64",
+    "formatter",
+    "codegen",
+    "byte"
   ],
   "permissions": [
     "host.clipboard:read",
     "host.workbench"
   ],
-  "source": "https://github.com/IceFoxs/dbx-plugin-data-convert",
+  "source": "https://github.com/IceFoxs/dbx-plugin-data-convert/tree/v0.1.5",
   "homepage": "https://github.com/IceFoxs/dbx-plugin-data-convert",
   "license": "MIT",
-  "latestVersion": "0.1.3",
+  "latestVersion": "0.1.5",
   "versions": [
     {
       "version": "0.1.3",
@@ -35,16 +37,34 @@
           "size": 186105
         }
       ]
+    },
+    {
+      "version": "0.1.5",
+      "releasedAt": "2026-10-23T03:07:06.045Z",
+      "releaseNotes": "0.1.5 (update): a new Byte Converter page converts B / KB / MB / GB / TB / PB on the 1000 and 1024 scales side by side (1234567890 → 1.23 GB and 1.15 GiB), goes back from a human-readable value to an exact byte count, handles batches of sizes with a running total, and turns byte sequences (1f 8b 08, [0x1f, 0x8b], binary, xxd dumps) into hex dump / byte array / binary string. The Convert page now handles 13 formats in any source/target combination — TOML, INI, .env, CSV, TSV, query strings, HTTP headers, cookie strings and HTML tables join JSON / YAML / XML / Properties. A Query page runs JSONPath and jq-style expressions and validates against a JSON Schema draft-07 subset, an Escaping page converts both ways between URL / Base64 / HTML / JSON string / \\uXXXX / hex / SQL / regex, and Code Gen turns JSON or CREATE TABLE into TypeScript / Go / Java / Python models. All nine pages are translated into 14 languages, and everything runs locally: no network, no eval, with hard limits on size, rows and columns.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.1.5/io.github.icefoxs.data-convert-0.1.5-universal.dbxp",
+          "sha256": "31fbef42604f1bb33c46853bc0c52fd37cef4d455de0b9a4fe7b6835d5a075a4",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 404879
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "数据转换",
-      "description": "一个 DBX 插件，提供 JSON、YAML、XML 和 Properties 格式之间的无缝转换。采用纯前端通用模板构建，无需原生后端。"
+      "description": "在 DBX 工作台里一次转完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 种格式任意互转、JSONPath / jq 查询与 JSON Schema 校验（含从样例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正则 8 种转义互转、字节换算（B / KB / MB / GB / TB / PB，1000 与 1024 两套进制，精确值 ⇄ 人类可读，批量求和，以及 hex dump / 字节数组 / 二进制串）、批量文本生成 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 转 JSON，以及图片 ↔ Base64；「代码生成」页把一段 JSON 示例或一条 CREATE TABLE 直接变成 TypeScript / Go / Java / Python 模型。纯前端、无后端、可离线运行。"
+    },
+    "zh-TW": {
+      "name": "資料轉換",
+      "description": "在 DBX 工作台裡一次轉完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 種格式任意互轉、JSONPath / jq 查詢與 JSON Schema 校驗（含從範例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正則 8 種轉義互轉、位元組換算（B / KB / MB / GB / TB / PB，1000 與 1024 兩套進位，精確值 ⇄ 人類可讀，批次加總，以及 hex dump / 位元組陣列 / 二進位字串）、批次文字產生 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 轉 JSON，以及圖片 ↔ Base64；「程式碼產生」頁把一段 JSON 範例或一條 CREATE TABLE 直接變成 TypeScript / Go / Java / Python 模型。純前端、無後端、可離線執行。"
     },
     "en": {
-      "name": "data convert",
-      "description": "A DBX plugin providing seamless conversion among JSON, YAML, XML, and Properties formats. Built as a frontend-only universal package."
+      "name": "Data Converter",
+      "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models. Pure frontend, no backend, works offline."
     }
   }
 }
