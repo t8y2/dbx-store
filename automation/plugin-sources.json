@@ -107,6 +107,11 @@
       "autoUpdate": true
     },
     {
+      "repository": "caichangqing1120/dbx-plugin-apollo",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
       "repository": "0verme/dbx-plugin-plan-detective",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true

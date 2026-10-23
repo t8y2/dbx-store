@@ -1802,10 +1802,10 @@
     {
       "id": "com.object.browser",
       "name": "Object Storage",
-      "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview, and multi-select batch delete/download.",
+      "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), and multi-select batch delete / download.",
       "publisher": "huangqiang",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.object.browser/0.4.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.1.2/icon.svg",
       "tags": [
         "storage",
         "oss",
@@ -1820,11 +1820,32 @@
         "host.events",
         "host.filesystem"
       ],
-      "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v0.4.0",
+      "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.1.2",
       "homepage": "https://github.com/huangqiang008/dbx-object-storage",
       "license": "MIT",
-      "latestVersion": "0.4.0",
+      "latestVersion": "1.1.2",
       "versions": [
+        {
+          "version": "1.1.2",
+          "releasedAt": "2026-10-23T03:18:15.941Z",
+          "releaseNotes": "Fix public-read ACL: objects can now be reverted to private (previously stuck public because the Aliyun SDK does not expose object-level Grants, so the plugin now probes anonymous accessibility instead). Added a public-status badge and a toolbar toggle to scan and mark public-read objects. Connection presets for Alibaba Cloud OSS, Tencent COS, Huawei OBS, AWS S3, MinIO, Cloudflare R2, Wasabi and Backblaze B2.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.object.browser/1.1.2/com.object.browser-1.1.2-darwin-arm64.dbxp",
+              "sha256": "44085838d673264073f80b9f1abea07818c9b8ceaa7b4553b2723699824603a8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7751213
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.object.browser/1.1.2/com.object.browser-1.1.2-windows-x64.dbxp",
+              "sha256": "be4e49edc4a3a5355b44500fdbc22f6ab13632a5e45c9ad4a3bae327673be182",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 8143942
+            }
+          ]
+        },
         {
           "version": "0.4.0",
           "releasedAt": "2026-10-10T06:19:06.686Z",
@@ -1843,7 +1864,7 @@
       "localizations": {
         "zh-CN": {
           "name": "对象存储",
-          "description": "通用对象存储浏览器：支持阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）。大目录服务端分页、分片上传、预签名分享、文件预览、多选批量删除/下载。"
+          "description": "通用对象存储浏览器：支持阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）。大目录服务端分页、分片上传、预签名分享、文件预览（Office / 3D / HTML / Markdown）、多选批量删除 / 下载。"
         }
       }
     },
@@ -6307,7 +6328,7 @@
       "description": "一个类似于 apache/rocketmq-dashboard 的 RocketMQ 驾驶舱，复刻其原生 UI 与业务交互，通过 Go 后端在 DBX 中管理集群、Topic、消费组、消息和 ACL。",
       "publisher": "ezreal-byte",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.rocketmq-dashboard-console/0.3.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.rocketmq-dashboard-console/0.3.1/icon.svg",
       "tags": [
         "rocketmq",
         "dashboard",
@@ -6316,11 +6337,25 @@
       "permissions": [
         "host.workbench"
       ],
-      "source": "https://github.com/Ezreal-byte/dbx-rocketmq-dashboard/tree/v0.3.0",
+      "source": "https://github.com/Ezreal-byte/dbx-rocketmq-dashboard/tree/v0.3.1",
       "homepage": "https://github.com/Ezreal-byte/dbx-rocketmq-dashboard",
       "license": "Apache-2.0",
-      "latestVersion": "0.3.0",
+      "latestVersion": "0.3.1",
       "versions": [
+        {
+          "version": "0.3.1",
+          "releasedAt": "2026-10-23T03:16:56.117Z",
+          "releaseNotes": "修复 #1：Topic 总数正常但表格为空。统一资源返回的 instanceId 与原生 Studio 的连接名称标识，覆盖普通、SOCKS5 代理及连接名称为空的情况；新增五个 Topic 的分页可见性回归。",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.rocketmq-dashboard-console/0.3.1/io.dbx.rocketmq-dashboard-console-0.3.1-windows-x64.dbxp",
+              "sha256": "6717c663261f9492fcf526bfde96cda0f915181d6b13addcf4756e042f3e64cc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3991773
+            }
+          ]
+        },
         {
           "version": "0.3.0",
           "releasedAt": "2026-09-28T17:48:13.232Z",
@@ -7138,7 +7173,7 @@
       "description": "Manage XXL-JOB tasks, logs and executors with DBX built-in AI and MCP, scoped permissions and confirmed operation previews.",
       "publisher": "ezreal-byte",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.1/icon.svg",
       "tags": [
         "xxl-job",
         "scheduler",
@@ -7153,8 +7188,57 @@
       "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
       "homepage": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
       "license": "MIT",
-      "latestVersion": "0.4.0",
+      "latestVersion": "0.4.1",
       "versions": [
+        {
+          "version": "0.4.1",
+          "releasedAt": "2026-10-23T03:15:14.813Z",
+          "releaseNotes": "0.4.1 adds an explicit Admin 3.5.x profile with executor/job name mapping for filters, lists and writes, and fixes modern log snapshots with formatted timestamps. Executor updates preserve the latest access token without exposing it to UI/MCP and reject missing or malformed token data. Keeps the 0.4.0 AI/MCP tools, scoped permissions and preview confirmations; extends public UI/MCP safety regression to all three profiles. New connections still default to 3.4.x; select 3.5.x manually for Admin 3.5.0. Requires DBX 0.6.43+ and Host API ^1.4.0.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.1/io.dbx.xxljob-console-0.4.1-darwin-arm64.dbxp",
+              "sha256": "628638ee6ac4f4e547f510fbae24dcdc12451665f9f7b0b5352b1e9ff4efd088",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4977158
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.1/io.dbx.xxljob-console-0.4.1-darwin-x64.dbxp",
+              "sha256": "c757da9a7d28ec28007eca3fab81bfecf2085d7921f6c2e2a886d79ec8fa92ab",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5213539
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.1/io.dbx.xxljob-console-0.4.1-linux-arm64.dbxp",
+              "sha256": "d8c255afdc245e5e35fa20bed4bdc0e30001ae3f5d9023957bb66e1dab6d55ff",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4998080
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.1/io.dbx.xxljob-console-0.4.1-linux-x64.dbxp",
+              "sha256": "9376704c977649bc5b66f11b62cd517e9203226d3535e8313329c9e1dd995755",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5313113
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.1/io.dbx.xxljob-console-0.4.1-windows-arm64.dbxp",
+              "sha256": "8b327bbc31cf95b5f44a3f406e9b885b22a13d46791100ced4384d8c857d85ba",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5085694
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.1/io.dbx.xxljob-console-0.4.1-windows-x64.dbxp",
+              "sha256": "d37ccef95ed3b8d4b64ead4431f8f048cc1b134b0e33176d6de7625172e20df2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5445220
+            }
+          ]
+        },
         {
           "version": "0.4.0",
           "releasedAt": "2026-10-17T02:07:22.662Z",
@@ -8396,28 +8480,44 @@
     },
     {
       "id": "io.github.icefoxs.data-convert",
-      "name": "data-convert",
-      "description": "A DBX plugin providing seamless conversion among JSON, YAML, XML, and Properties formats. Built as a frontend-only universal package.",
+      "name": "Data Converter",
+      "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models. Pure frontend, no backend, works offline.",
       "publisher": "icefoxs",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.1.3/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.1.5/icon.svg",
       "tags": [
         "data-convert",
         "json",
-        "yaml",
-        "xml",
-        "properties",
-        "formatter"
+        "sql",
+        "csv",
+        "base64",
+        "formatter",
+        "codegen",
+        "byte"
       ],
       "permissions": [
         "host.clipboard:read",
         "host.workbench"
       ],
-      "source": "https://github.com/IceFoxs/dbx-plugin-data-convert",
+      "source": "https://github.com/IceFoxs/dbx-plugin-data-convert/tree/v0.1.5",
       "homepage": "https://github.com/IceFoxs/dbx-plugin-data-convert",
       "license": "MIT",
-      "latestVersion": "0.1.3",
+      "latestVersion": "0.1.5",
       "versions": [
+        {
+          "version": "0.1.5",
+          "releasedAt": "2026-10-23T03:07:06.045Z",
+          "releaseNotes": "0.1.5 (update): a new Byte Converter page converts B / KB / MB / GB / TB / PB on the 1000 and 1024 scales side by side (1234567890 → 1.23 GB and 1.15 GiB), goes back from a human-readable value to an exact byte count, handles batches of sizes with a running total, and turns byte sequences (1f 8b 08, [0x1f, 0x8b], binary, xxd dumps) into hex dump / byte array / binary string. The Convert page now handles 13 formats in any source/target combination — TOML, INI, .env, CSV, TSV, query strings, HTTP headers, cookie strings and HTML tables join JSON / YAML / XML / Properties. A Query page runs JSONPath and jq-style expressions and validates against a JSON Schema draft-07 subset, an Escaping page converts both ways between URL / Base64 / HTML / JSON string / \\uXXXX / hex / SQL / regex, and Code Gen turns JSON or CREATE TABLE into TypeScript / Go / Java / Python models. All nine pages are translated into 14 languages, and everything runs locally: no network, no eval, with hard limits on size, rows and columns.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.1.5/io.github.icefoxs.data-convert-0.1.5-universal.dbxp",
+              "sha256": "31fbef42604f1bb33c46853bc0c52fd37cef4d455de0b9a4fe7b6835d5a075a4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 404879
+            }
+          ]
+        },
         {
           "version": "0.1.3",
           "releasedAt": "2026-10-21T05:55:10.717Z",
@@ -8436,11 +8536,15 @@
       "localizations": {
         "zh-CN": {
           "name": "数据转换",
-          "description": "一个 DBX 插件，提供 JSON、YAML、XML 和 Properties 格式之间的无缝转换。采用纯前端通用模板构建，无需原生后端。"
+          "description": "在 DBX 工作台里一次转完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 种格式任意互转、JSONPath / jq 查询与 JSON Schema 校验（含从样例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正则 8 种转义互转、字节换算（B / KB / MB / GB / TB / PB，1000 与 1024 两套进制，精确值 ⇄ 人类可读，批量求和，以及 hex dump / 字节数组 / 二进制串）、批量文本生成 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 转 JSON，以及图片 ↔ Base64；「代码生成」页把一段 JSON 示例或一条 CREATE TABLE 直接变成 TypeScript / Go / Java / Python 模型。纯前端、无后端、可离线运行。"
+        },
+        "zh-TW": {
+          "name": "資料轉換",
+          "description": "在 DBX 工作台裡一次轉完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 種格式任意互轉、JSONPath / jq 查詢與 JSON Schema 校驗（含從範例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正則 8 種轉義互轉、位元組換算（B / KB / MB / GB / TB / PB，1000 與 1024 兩套進位，精確值 ⇄ 人類可讀，批次加總，以及 hex dump / 位元組陣列 / 二進位字串）、批次文字產生 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 轉 JSON，以及圖片 ↔ Base64；「程式碼產生」頁把一段 JSON 範例或一條 CREATE TABLE 直接變成 TypeScript / Go / Java / Python 模型。純前端、無後端、可離線執行。"
         },
         "en": {
-          "name": "data convert",
-          "description": "A DBX plugin providing seamless conversion among JSON, YAML, XML, and Properties formats. Built as a frontend-only universal package."
+          "name": "Data Converter",
+          "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models. Pure frontend, no backend, works offline."
         }
       }
     },
@@ -8790,6 +8894,80 @@
         "en": {
           "name": "Embedded Terminal",
           "description": "Run an interactive local shell directly inside a DBX workbench."
+        }
+      }
+    },
+    {
+      "id": "io.github.oncemisery.hertz-studio",
+      "name": "Hertz Studio Standard",
+      "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine.",
+      "publisher": "oncemisery",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.2.1/icon.svg",
+      "tags": [
+        "music",
+        "player",
+        "lyrics",
+        "audio",
+        "local-first"
+      ],
+      "permissions": [
+        "host.events",
+        "host.storage",
+        "host.workbench"
+      ],
+      "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.2.1",
+      "homepage": "https://github.com/onceMisery/hertz-studio",
+      "license": "MIT",
+      "latestVersion": "0.2.1",
+      "versions": [
+        {
+          "version": "0.2.1",
+          "releasedAt": "2026-10-23T01:57:30.798Z",
+          "releaseNotes": "## Hertz Studio Standard 插件 0.2.1\n\n本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单与逐字歌词、沉浸式 3D 舞台。\n独立形态与插件形态同一提交、同一前后端；插件形态自带 sidecar（`bin/dbx-plugin-hertz`，\nstdio JSON-RPC），**插件形态不开任何监听口**——HTTP + token 那一层只存在于独立二进制。\n\n本版相对 0.2.0：\n\n- **Standard 裁剪**：商业音乐平台协议与账号（网易云 / QQ / 酷狗 / 酷我 / 汽水 / 咪咕）\n  在 Standard 里不编译。保留本地与 WebDAV、Jamendo、ccMixter、公开播客；Jamendo 需自备\n  client_id。插件 ID 为 `io.github.oncemisery.hertz-studio`，数据目录与钥匙串服务按发行版隔离。\n- 逐字歌词情绪引擎：SDF 字形绘制、情绪场（经典诗节 / 3D 轨道 / GL 图集 / 华彩段）、\n  按歌词哈希作用域的手选情绪锁、可选的重音字强调。\n- 三维空间舞台：自由相机、粒子场与手绘叠加层、队列驱动的反应堆粒子、每个沉浸场景独立的\n  场与相机、WebGL 上下文丢失后自动重建、30+ 场景预览。\n- 播放生命周期：最后一个页面离场后 3 秒宽限暂停（关闭 DBX 工作台 surface 同样生效），\n  并新增服务退出入口。\n- 分源搜索共享入场额度与每源期限；搜索行为在全部皮肤与 DBX 形态下一致。\n- 界面默认皮肤改为星轨导航（orbit）并附带一次性迁移；移除浮光与潮汐两套皮肤。\n\n可选的云端歌词情绪分类默认关闭：需要用户显式同意并自行配置模型凭据；未配置时不产生\n任何云端调用，本机 Ollama 也只在用户显式配置回环地址后使用。\n\nRequires DBX >= 0.6.35。浮动胶囊窗口需要宿主支持 plugin floating surface；宿主没有该能力时\n自动退回页内最小化，功能不缺失。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.2.1/io.github.oncemisery.hertz-studio-0.2.1-darwin-arm64.dbxp",
+              "sha256": "9377812cff1eb2f8590ffb476c14f0bb7eb1e95e3657d91e5cca247969fead70",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 11192135
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.2.1/io.github.oncemisery.hertz-studio-0.2.1-darwin-x64.dbxp",
+              "sha256": "e0dfaccd977afd0655f37c527bea49950b676947e2895b2fd34dd61d588bfc6f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 12145719
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.2.1/io.github.oncemisery.hertz-studio-0.2.1-linux-arm64.dbxp",
+              "sha256": "5ff9f9edffb670fa116bce1b1de239c1273ced5cd7beccc9c55f2f160efe2356",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 12423404
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.2.1/io.github.oncemisery.hertz-studio-0.2.1-linux-x64.dbxp",
+              "sha256": "641b5b2550dcaa76563128a2a46375f93f57c20907d6f13e101f154d264648fc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 12915248
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.2.1/io.github.oncemisery.hertz-studio-0.2.1-windows-x64.dbxp",
+              "sha256": "6ded1ea272d46425ca0d22ff3194cf0ca298d9aa9cfec1af4da7fcdea3d5607a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 11269371
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "Hertz Studio Standard",
+          "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。"
         }
       }
     },
@@ -10618,10 +10796,10 @@
     {
       "id": "terry.devtools",
       "name": "Dev Tools",
-      "description": "Runs offline in a sandbox with zero network calls and only 2 local permissions (UI state + tab title). 44 developer utilities in under 200KB: an all-in-one toolkit covering crypto & security, encoding, text & regex, time & Cron, network & DevOps, and frontend assets — built for everyday development needs.",
+      "description": "Runs offline in a sandbox with zero network calls. 48 developer utilities in under 200KB: an all-in-one toolkit covering crypto & security, encoding, text & regex, time & Cron, network & DevOps, and frontend assets — built for everyday development needs.",
       "publisher": "terry",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.5/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.7/icon.svg",
       "tags": [
         "devtools",
         "utilities",
@@ -10641,8 +10819,22 @@
       "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "license": "MIT",
-      "latestVersion": "0.6.5",
+      "latestVersion": "0.6.7",
       "versions": [
+        {
+          "version": "0.6.7",
+          "releasedAt": "2026-10-23T03:12:12.329Z",
+          "releaseNotes": "新增：Nginx / XML / YAML 三个格式化工具（语法高亮、输出可另存为文件），首页「格式化」分类，搜索与分类筛选状态在返回首页后保留。修复：身份证工具「指定日期」改为定宽 YYYY-MM-DD 输入并内联校验。 | New: Nginx, XML and YAML formatters with syntax highlighting and save-to-file; a Formatter category; the home search query and category filter now persist when returning from a tool. Fix: CN ID Card exact-date input is a fixed-width YYYY-MM-DD field with inline validation.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.7/terry.devtools-0.6.7-universal.dbxp",
+              "sha256": "68d01f1f4b9f14d6f65f45e1031f587f7d8b28dbe746ead833fba380c88de694",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 189062
+            }
+          ]
+        },
         {
           "version": "0.6.5",
           "releasedAt": "2026-10-20T02:28:28.904Z",
@@ -10787,7 +10979,7 @@
       "localizations": {
         "zh-CN": {
           "name": "Dev 工具集",
-          "description": "沙箱离线运行，零联网、仅2项本地权限（界面状态、标签页标题）。44 款开发工具小于 200KB：集安全加解密、编解码与转义、文本与正则排版、时间与 Cron 计算、网络与系统运维、前端图像与标识生成等全场景工具于一体，满足日常开发高频需求。"
+          "description": "沙箱离线运行，零联网。48 款开发工具小于 200KB：集安全加解密、编解码与转义、文本与正则排版、时间与 Cron 计算、网络与系统运维、前端图像与标识生成等全场景工具于一体，满足日常开发高频需求。"
         }
       }
     }
