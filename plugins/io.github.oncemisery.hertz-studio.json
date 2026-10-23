@@ -1,0 +1,74 @@
+{
+  "id": "io.github.oncemisery.hertz-studio",
+  "name": "Hertz Studio Standard",
+  "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine.",
+  "publisher": "oncemisery",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/onceMisery/hertz-studio/hertz-plugin-standard-v0.2.1/plugin/assets/plugin.svg",
+  "tags": [
+    "music",
+    "player",
+    "lyrics",
+    "audio",
+    "local-first"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.2.1",
+  "homepage": "https://github.com/onceMisery/hertz-studio",
+  "license": "MIT",
+  "latestVersion": "0.2.1",
+  "versions": [
+    {
+      "version": "0.2.1",
+      "releasedAt": "2026-10-23T01:57:30.798Z",
+      "releaseNotes": "## Hertz Studio Standard 插件 0.2.1\n\n本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单与逐字歌词、沉浸式 3D 舞台。\n独立形态与插件形态同一提交、同一前后端；插件形态自带 sidecar（`bin/dbx-plugin-hertz`，\nstdio JSON-RPC），**插件形态不开任何监听口**——HTTP + token 那一层只存在于独立二进制。\n\n本版相对 0.2.0：\n\n- **Standard 裁剪**：商业音乐平台协议与账号（网易云 / QQ / 酷狗 / 酷我 / 汽水 / 咪咕）\n  在 Standard 里不编译。保留本地与 WebDAV、Jamendo、ccMixter、公开播客；Jamendo 需自备\n  client_id。插件 ID 为 `io.github.oncemisery.hertz-studio`，数据目录与钥匙串服务按发行版隔离。\n- 逐字歌词情绪引擎：SDF 字形绘制、情绪场（经典诗节 / 3D 轨道 / GL 图集 / 华彩段）、\n  按歌词哈希作用域的手选情绪锁、可选的重音字强调。\n- 三维空间舞台：自由相机、粒子场与手绘叠加层、队列驱动的反应堆粒子、每个沉浸场景独立的\n  场与相机、WebGL 上下文丢失后自动重建、30+ 场景预览。\n- 播放生命周期：最后一个页面离场后 3 秒宽限暂停（关闭 DBX 工作台 surface 同样生效），\n  并新增服务退出入口。\n- 分源搜索共享入场额度与每源期限；搜索行为在全部皮肤与 DBX 形态下一致。\n- 界面默认皮肤改为星轨导航（orbit）并附带一次性迁移；移除浮光与潮汐两套皮肤。\n\n可选的云端歌词情绪分类默认关闭：需要用户显式同意并自行配置模型凭据；未配置时不产生\n任何云端调用，本机 Ollama 也只在用户显式配置回环地址后使用。\n\nRequires DBX >= 0.6.35。浮动胶囊窗口需要宿主支持 plugin floating surface；宿主没有该能力时\n自动退回页内最小化，功能不缺失。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.2.1/io.github.oncemisery.hertz-studio-0.2.1-darwin-arm64.dbxp",
+          "sha256": "9377812cff1eb2f8590ffb476c14f0bb7eb1e95e3657d91e5cca247969fead70",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 11192135
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.2.1/io.github.oncemisery.hertz-studio-0.2.1-darwin-x64.dbxp",
+          "sha256": "e0dfaccd977afd0655f37c527bea49950b676947e2895b2fd34dd61d588bfc6f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 12145719
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.2.1/io.github.oncemisery.hertz-studio-0.2.1-linux-arm64.dbxp",
+          "sha256": "5ff9f9edffb670fa116bce1b1de239c1273ced5cd7beccc9c55f2f160efe2356",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 12423404
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.2.1/io.github.oncemisery.hertz-studio-0.2.1-linux-x64.dbxp",
+          "sha256": "641b5b2550dcaa76563128a2a46375f93f57c20907d6f13e101f154d264648fc",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 12915248
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.2.1/io.github.oncemisery.hertz-studio-0.2.1-windows-x64.dbxp",
+          "sha256": "6ded1ea272d46425ca0d22ff3194cf0ca298d9aa9cfec1af4da7fcdea3d5607a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 11269371
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Hertz Studio Standard",
+      "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。"
+    }
+  }
+}

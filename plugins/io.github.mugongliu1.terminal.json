@@ -4,7 +4,7 @@
   "description": "Run an interactive local shell directly inside a DBX workbench.",
   "publisher": "mugongliu1",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/mugongliu1/dbx-terminal-launcher/v0.2.4/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/mugongliu1/dbx-terminal-launcher/v0.2.6/assets/plugin.svg",
   "tags": [
     "terminal",
     "shell",
@@ -12,12 +12,13 @@
     "local"
   ],
   "permissions": [
-    "host.events"
+    "host.events",
+    "host.storage"
   ],
-  "source": "https://github.com/mugongliu1/dbx-terminal-launcher/tree/v0.2.4",
+  "source": "https://github.com/mugongliu1/dbx-terminal-launcher/tree/v0.2.6",
   "homepage": "https://github.com/mugongliu1/dbx-terminal-launcher",
   "license": "Apache-2.0",
-  "latestVersion": "0.2.4",
+  "latestVersion": "0.2.6",
   "versions": [
     {
       "version": "0.2.2",
@@ -100,6 +101,48 @@
           "sha256": "99b4ad80bdc0c949ee64d787126d2479bd974a7cea8aa0d69b928f516cff0b07",
           "signingKeyId": "dbx-store-release-2026",
           "size": 358117
+        }
+      ]
+    },
+    {
+      "version": "0.2.6",
+      "releasedAt": "2026-10-23T03:23:18.539Z",
+      "releaseNotes": "Add persistent terminal color customization, improve number contrast in light themes, and add an Open Terminal sidebar command. Requires DBX 0.5.68 or newer; host.storage stores terminal color preferences.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.mugongliu1.terminal/0.2.6/io.github.mugongliu1.terminal-0.2.6-darwin-arm64.dbxp",
+          "sha256": "b05ca2f834bc6b2a612db8985606434d7326809cfee68167871fc0f609281e18",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 416825
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.mugongliu1.terminal/0.2.6/io.github.mugongliu1.terminal-0.2.6-darwin-x64.dbxp",
+          "sha256": "bab1b638b08958ce0ccb6db338bd617a93e2284f2fc8f6979b5003095fdf227b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 438272
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.mugongliu1.terminal/0.2.6/io.github.mugongliu1.terminal-0.2.6-linux-arm64.dbxp",
+          "sha256": "0ce7910a21d7ed92bbabce7913485f528ec055f7ab01e49cc36d96af57e15148",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 447401
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.mugongliu1.terminal/0.2.6/io.github.mugongliu1.terminal-0.2.6-linux-x64.dbxp",
+          "sha256": "63437d72ee533835a1ef00db641be07b0b6968bec1e15fb3c37c8bda6227e52c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 468489
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.mugongliu1.terminal/0.2.6/io.github.mugongliu1.terminal-0.2.6-windows-x64.dbxp",
+          "sha256": "40afb1233117f0cf224b69888a3efbba77b3b177bf102bd37267c03a120fdcdd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 361507
         }
       ]
     }

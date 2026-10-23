@@ -1,0 +1,46 @@
+{
+  "id": "io.github.nixing178.jenkins",
+  "name": "Jenkins Console",
+  "description": "Manage Jenkins jobs, builds, console output, queue and nodes inside DBX, with stage view and MCP tools for AI clients.",
+  "publisher": "nixing178",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/nixing178/dbx-plugin-jenkins/v0.3.0/assets/plugin.svg",
+  "tags": [
+    "jenkins",
+    "ci",
+    "cd",
+    "build",
+    "pipeline",
+    "mcp"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.events"
+  ],
+  "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.3.0",
+  "homepage": "https://github.com/nixing178/dbx-plugin-jenkins",
+  "license": "Apache-2.0",
+  "latestVersion": "0.3.0",
+  "versions": [
+    {
+      "version": "0.3.0",
+      "releasedAt": "2026-10-23T03:28:55.182Z",
+      "releaseNotes": "First public release: jobs, builds and console output, queue and nodes, Jenkins Views grouping, pipeline stage view, job/view create, edit and delete, and 10 MCP tools.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.3.0/io.github.nixing178.jenkins-0.3.0-windows-x64.dbxp",
+          "sha256": "609cc8631db183018474103299241b9f0b8d688231f8d02abef458306b16b4e8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4721158
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Jenkins 管理台",
+      "description": "在 DBX 内管理 Jenkins 任务、构建、控制台日志、队列与节点，支持阶段视图与面向 AI 客户端的 MCP 工具。"
+    }
+  }
+}
