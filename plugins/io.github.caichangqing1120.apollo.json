@@ -1,10 +1,10 @@
 {
   "id": "io.github.caichangqing1120.apollo",
-  "name": "Apollo Config",
-  "description": "Preview: manage Apollo 2.x configuration with independently authored pages and password login. Full 1:1 parity is incomplete.",
+  "name": "Apollo Portal Console",
+  "description": "Manage Apollo 2.x configuration with independently authored pages and password login. Known visual parity gaps remain.",
   "publisher": "caichangqing1120",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/caichangqing1120/dbx-plugin-apollo/v0.1.2/assets/apollo.png",
+  "icon": "https://raw.githubusercontent.com/caichangqing1120/dbx-plugin-apollo/v0.1.3/assets/apollo.png",
   "tags": [
     "apollo",
     "configuration",
@@ -13,10 +13,10 @@
   "permissions": [
     "host.storage"
   ],
-  "source": "https://github.com/caichangqing1120/dbx-plugin-apollo/tree/v0.1.2",
+  "source": "https://github.com/caichangqing1120/dbx-plugin-apollo/tree/v0.1.3",
   "homepage": "https://github.com/caichangqing1120/dbx-plugin-apollo",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.2",
+  "latestVersion": "0.1.3",
   "versions": [
     {
       "version": "0.1.2",
@@ -59,12 +59,54 @@
           "size": 3003442
         }
       ]
+    },
+    {
+      "version": "0.1.3",
+      "releasedAt": "2026-10-23T13:03:01.519Z",
+      "releaseNotes": "0.1.3 stable: promotes the tested RC2 behavior without UI changes. Success feedback auto-dismisses after 5 seconds and successful editors close; app/Key search handles folded/text targets and multi-environment pagination. Retains measured menus, cluster rows and table repairs. Stable publication enables Store release discovery, not a full-parity claim: all-page/all-dialog 1:1 remains FAIL and native cold-start/file transfer/multi-account acceptance is incomplete. Author packages are unsigned inputs; official Store review, signing and merge remain required.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/io.github.caichangqing1120.apollo-0.1.3-darwin-arm64.dbxp",
+          "sha256": "2e6250a7e4bb4448fc8504b7ee4df61953807c33be2ed4bda559ff87aaccd7be",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2814769
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/io.github.caichangqing1120.apollo-0.1.3-darwin-x64.dbxp",
+          "sha256": "17f04f78cecea5849fc701739e71af7600df96db2193e8e0a8ffa67b5d5a5950",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3027281
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/io.github.caichangqing1120.apollo-0.1.3-linux-arm64.dbxp",
+          "sha256": "8c8821fc4c24a44d522dd6b361f21ddc345985e444a8f07acbab50575e657900",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2741781
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/io.github.caichangqing1120.apollo-0.1.3-linux-x64.dbxp",
+          "sha256": "defd90dc9a29c508f5a88dfea0fdc57a0d2aa5b5fe6fc598e610bb5d95a92561",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3003193
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/io.github.caichangqing1120.apollo-0.1.3-windows-x64.dbxp",
+          "sha256": "1dbd0bb32426cbb59c3548656e83cfce52dbb8fb954a9e2dde5af5b01ada0b17",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3044485
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
-      "name": "Apollo 配置中心",
-      "description": "预览版：独立编写 Apollo 2.x 管理页面，支持普通账号密码登录。全量页面及弹窗 1:1 对照尚未通过。"
+      "name": "Apollo Portal 控制台",
+      "description": "独立编写 Apollo 2.x 管理页面，支持普通账号密码登录。全量页面及弹窗 1:1 对照仍有差距。"
     }
   }
 }
