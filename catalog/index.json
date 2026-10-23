@@ -7642,7 +7642,7 @@
       "description": "Manage XXL-JOB tasks, logs and executors with DBX built-in AI and MCP, scoped permissions and confirmed operation previews.",
       "publisher": "ezreal-byte",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/icon.svg",
       "tags": [
         "xxl-job",
         "scheduler",
@@ -7657,8 +7657,57 @@
       "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
       "homepage": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
       "license": "MIT",
-      "latestVersion": "0.4.1",
+      "latestVersion": "0.4.2",
       "versions": [
+        {
+          "version": "0.4.2",
+          "releasedAt": "2026-10-23T12:55:50.021Z",
+          "releaseNotes": "0.4.2 adds the explicit Admin 2.2.x profile, verified against official 2.2.0. Adapts jobCron and Cron preview while sharing workbench, AI/MCP and preview-confirmed writes. Hides unsupported scheduling choices and rejects incompatible parameters before preview. Keeps 2.3.x/3.4.x/3.5.x, scoped permissions and executor token protection. Select 2.2.x and /xxl-job-admin for a stock 2.2.0 deployment. Requires DBX 0.6.43+ and Host API ^1.4.0.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/io.dbx.xxljob-console-0.4.2-darwin-arm64.dbxp",
+              "sha256": "9750de381ead319ac36086cfa322b6c0c1e9fd35272532fce779b491997dbdcc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4984485
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/io.dbx.xxljob-console-0.4.2-darwin-x64.dbxp",
+              "sha256": "19c08f5b62724b69022d86f4c6b5347c4a2c55ee22551600952fb844aa8eed65",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5218266
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/io.dbx.xxljob-console-0.4.2-linux-arm64.dbxp",
+              "sha256": "1c4cde66b3da639c863a740393d9595bb5cd1eb8feb4f53e32e05eb9a3f71b4f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5003525
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/io.dbx.xxljob-console-0.4.2-linux-x64.dbxp",
+              "sha256": "be32e5dc453a1e89820f4f10a6e14b190e0fe5c8046fa54bf37b63f71c7aab5b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5319089
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/io.dbx.xxljob-console-0.4.2-windows-arm64.dbxp",
+              "sha256": "48f9be1afb065adb53f6ca1460025dad9c9ccecb22a507f5d4c1ea5acaae4756",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5090309
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/io.dbx.xxljob-console-0.4.2-windows-x64.dbxp",
+              "sha256": "3aff2f4c45f154fbb9ddb0807bb96c91904c57c8319c9642e88ba28ec036c8c6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5450757
+            }
+          ]
+        },
         {
           "version": "0.4.1",
           "releasedAt": "2026-10-23T03:15:14.813Z",
