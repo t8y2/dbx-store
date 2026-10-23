@@ -796,7 +796,7 @@
       "description": "Open, inspect, edit, validate and export DBF tables (dBase III/IV/V, FoxPro, VFP), with built-in field dictionaries for Chinese exchange settlement files.",
       "publisher": "qingkong9579",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.6/icon.svg",
       "tags": [
         "dbf",
         "database",
@@ -812,11 +812,53 @@
         "host.filesystem",
         "host.storage"
       ],
-      "source": "https://github.com/qingkong9579/dbx.dbf/tree/v0.3.2",
+      "source": "https://github.com/qingkong9579/dbx.dbf/tree/v0.3.6",
       "homepage": "https://github.com/qingkong9579/dbx.dbf",
       "license": "MIT",
-      "latestVersion": "0.3.2",
+      "latestVersion": "0.3.6",
       "versions": [
+        {
+          "version": "0.3.6",
+          "releasedAt": "2026-10-23T13:05:53.347Z",
+          "releaseNotes": "0.3.6：字段释义支持任意 DBF 文件 + 列名大小写不敏感匹配，文件族未命中时回退到全量并集并标注「通用」。0.3.5：字段释义解耦为列名→中文名数据文件，新增字段释义导入/导出与自定义释义。0.3.4：校验细化为整数位/小数位/日期/控制字符等分类，交易市场代码显示中文值域，信息面板显示接口数据日期，新建表可选 dBase III/IV/V。0.3.3：新增手动更换编码重新打开（编码菜单、带预览的对话框、按文件记忆），修复自动识别回退 UTF-8 导致的乱码。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.6/com.dbx.dbf-0.3.6-darwin-arm64.dbxp",
+              "sha256": "3ef09c20350154c9af39e0d3e31d433a175c9af4f478268d52fe127cc80ee1db",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1748044
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.6/com.dbx.dbf-0.3.6-darwin-x64.dbxp",
+              "sha256": "4bb6ffe92ccccac681e4e2ab65b33a5c83b699e735992de16099b94ce0bcc826",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1818037
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.6/com.dbx.dbf-0.3.6-linux-arm64.dbxp",
+              "sha256": "4a8e822773386b60158549fa31240fb4050517c58aab1ca67a6139d4c691d9c5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1739609
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.6/com.dbx.dbf-0.3.6-linux-x64.dbxp",
+              "sha256": "63b7f6a9e35da208b2009c0936c4c01395c3fea6cf7dcd2aca8ca450093c26e7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1831960
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.6/com.dbx.dbf-0.3.6-windows-x64.dbxp",
+              "sha256": "5395b42671be75bbec9e9c5f928f6fecaee1bdea04f21c9146fc45ca33549df2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1901707
+            }
+          ]
+        },
         {
           "version": "0.3.2",
           "releasedAt": "2026-10-23T03:36:53.854Z",
@@ -937,6 +979,52 @@
         "zh-CN": {
           "name": "Ratel 摸鱼台",
           "description": "连接 Ratel 在线棋牌（斗地主 / 跑得快 / 德州 / 大众麻将 / 骗子酒馆）的摸鱼客户端：WebSocket/TCP 长连接、房间列表、按游戏自动切换的命令面板。"
+        }
+      }
+    },
+    {
+      "id": "com.dbx.wsl",
+      "name": "WSL Manager",
+      "description": "Visual manager for WSL distributions (wsl) and WSL containers (wslc) on Windows.",
+      "publisher": "w89588",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.1/icon.svg",
+      "tags": [
+        "wsl",
+        "containers",
+        "windows",
+        "devops"
+      ],
+      "permissions": [
+        "host.workbench",
+        "host.events",
+        "host.storage",
+        "host.binary"
+      ],
+      "source": "https://github.com/w89588/dbx-plugin-wsl/tree/v0.1.1",
+      "homepage": "https://github.com/w89588/dbx-plugin-wsl",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.1",
+      "versions": [
+        {
+          "version": "0.1.1",
+          "releasedAt": "2026-10-23T12:52:58.156Z",
+          "releaseNotes": "# WSL Manager v0.1.1\r\n\r\nPermission declaration fix for the DBX Store review. Adds `host.binary` to the package manifest and candidate metadata to disclose the existing native process execution capability. Runtime behavior is unchanged; v0.1.0 remains available unchanged.\r\n\r\n## Highlights\r\n\r\n- **WSL distributions (`wsl`)**: list with live state/disk usage, start/stop, default distro, version switching, default user, sparse/compact/resize, export/import, unregister, distro info (OS release, kernel, disk, IP, `/etc/wsl.conf`), open terminal/Explorer, run commands inside a distro.\r\n- **WSL containers (`wslc`)**: container list/lifecycle, run, logs (follow), exec, live stats, prune; image list/pull/build/tag/save/load/remove/prune; volumes and networks management; live event stream.\r\n- **Registry credentials**: sign in/out to container registries (`docker login` equivalent) so private images and Docker Hub rate limits are handled; pull/build/run failures are classified and the UI offers a one-click \"go to sign in\" action with the registry prefilled.\r\n- **Command console**: run arbitrary `wsl` / `wslc` commands as argv (no shell), with stdout/stderr/exit code.\r\n- **Settings**: visual editors for `.wslconfig` and wslc `settings.yaml` with automatic backups.\r\n- UI: overview dashboard, dark/light theme, Chinese/English localization, task panel with live logs and cancellation.\r\n\r\n## Requirements\r\n\r\n- Windows 11 with WSL (`wsl --version` works; verified with WSL 3.0.3/3.0.4).\r\n- DBX desktop `>= 0.5.68` (verified on 0.6.49).\r\n- `wslc` is optional; without it the distribution pages still work.\r\n\r\n## Permissions\r\n\r\n`host.workbench`, `host.events`, `host.storage`, `host.binary` — no network, filesystem, clipboard, data or AI permissions are requested. The native sidecar runs with the current user and invokes `wsl.exe` / `wslc.exe`, `wt.exe` (or `cmd.exe` as a terminal fallback), `explorer.exe`, and `taskkill` for process-tree cancellation.\r\n\r\n## Install\r\n\r\n1. Download `com.dbx.wsl-0.1.1-windows-x64.dbxp` from this release.\r\n2. Open DBX → Plugin Center → install the local package (enable unsigned development packages if the store build is not signed yet).\r\n3. Open **WSL Manager** from the plugin shortcut / command palette.\r\n\r\n## Notes and limitations\r\n\r\n- Windows-only (`windows-x64`).\r\n- Registry credentials are stored by `wslc` on the local machine; the plugin never persists passwords and passes them to `wslc` over stdin.\r\n- `wslc` 3.0.3/3.0.4 has no command to list signed-in registries, so sign-in state is confirmed by pull results.\r\n- Export/import/build path fields require a Windows path (no native file picker yet).",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.1/com.dbx.wsl-0.1.1-windows-x64.dbxp",
+              "sha256": "c4d0f42266527762ce6e81f93bd0adb801e5f917e7fa1893dcb1b169d8c0e184",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2737484
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "WSL 管理器",
+          "description": "在 DBX 中可视化管理 WSL 发行版（wsl）与 WSL 容器（wslc），支持注册表凭据与镜像管理。"
         }
       }
     },
@@ -1185,7 +1273,7 @@
       "description": "Browse, manage and inspect OCI / Harbor container registries from a single workbench: project and namespace navigation, tag rename and delete, per-layer size analysis, Trivy CVE reports, registry-wide charts and multi-arch breakdowns.",
       "publisher": "leavingrain",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/0.1.81/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.0/icon.svg",
       "tags": [
         "registry",
         "harbor",
@@ -1198,8 +1286,57 @@
       "source": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
       "homepage": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.81",
+      "latestVersion": "1.0.0",
       "versions": [
+        {
+          "version": "1.0.0",
+          "releasedAt": "2026-10-23T12:59:46.713Z",
+          "releaseNotes": "Docker Registry v2 projects (namespaces), registry overview charts, and one badge per architecture in the image views.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.0/com.leavingrain.imrepo-1.0.0-darwin-arm64.dbxp",
+              "sha256": "005e929363c99db564041ef6b544e8769fe8d93e636013c277f4b4fed3f835c6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4632683
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.0/com.leavingrain.imrepo-1.0.0-darwin-x64.dbxp",
+              "sha256": "8f8b280207abb931468b9d175b02997fdf5a0c079ab4e2b532baf4ac454a237e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4881848
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.0/com.leavingrain.imrepo-1.0.0-linux-arm64.dbxp",
+              "sha256": "f02291083fe680ccce296f1636299db16edb129cb5b52cd503b2de944e40b675",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4587285
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.0/com.leavingrain.imrepo-1.0.0-linux-x64.dbxp",
+              "sha256": "d5abcf84b76c8bc6c62dc6a73dd4816c4287a76f2eeb4def235f33712f392052",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4920455
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.0/com.leavingrain.imrepo-1.0.0-windows-arm64.dbxp",
+              "sha256": "a8612f3118bb967bca7112a47081cde1896ba036009e6379addd624f3ffd30cf",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4593753
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.0/com.leavingrain.imrepo-1.0.0-windows-x64.dbxp",
+              "sha256": "58728b0f6a38319c4fff1a63d20e18887b12ed1411fe33588af92bbe275c2641",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4955069
+            }
+          ]
+        },
         {
           "version": "0.1.81",
           "releasedAt": "2026-10-15T02:08:20.796Z",
@@ -7596,7 +7733,7 @@
       "description": "Manage XXL-JOB tasks, logs and executors with DBX built-in AI and MCP, scoped permissions and confirmed operation previews.",
       "publisher": "ezreal-byte",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/icon.svg",
       "tags": [
         "xxl-job",
         "scheduler",
@@ -7611,8 +7748,57 @@
       "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
       "homepage": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
       "license": "MIT",
-      "latestVersion": "0.4.1",
+      "latestVersion": "0.4.2",
       "versions": [
+        {
+          "version": "0.4.2",
+          "releasedAt": "2026-10-23T12:55:50.021Z",
+          "releaseNotes": "0.4.2 adds the explicit Admin 2.2.x profile, verified against official 2.2.0. Adapts jobCron and Cron preview while sharing workbench, AI/MCP and preview-confirmed writes. Hides unsupported scheduling choices and rejects incompatible parameters before preview. Keeps 2.3.x/3.4.x/3.5.x, scoped permissions and executor token protection. Select 2.2.x and /xxl-job-admin for a stock 2.2.0 deployment. Requires DBX 0.6.43+ and Host API ^1.4.0.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/io.dbx.xxljob-console-0.4.2-darwin-arm64.dbxp",
+              "sha256": "9750de381ead319ac36086cfa322b6c0c1e9fd35272532fce779b491997dbdcc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4984485
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/io.dbx.xxljob-console-0.4.2-darwin-x64.dbxp",
+              "sha256": "19c08f5b62724b69022d86f4c6b5347c4a2c55ee22551600952fb844aa8eed65",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5218266
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/io.dbx.xxljob-console-0.4.2-linux-arm64.dbxp",
+              "sha256": "1c4cde66b3da639c863a740393d9595bb5cd1eb8feb4f53e32e05eb9a3f71b4f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5003525
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/io.dbx.xxljob-console-0.4.2-linux-x64.dbxp",
+              "sha256": "be32e5dc453a1e89820f4f10a6e14b190e0fe5c8046fa54bf37b63f71c7aab5b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5319089
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/io.dbx.xxljob-console-0.4.2-windows-arm64.dbxp",
+              "sha256": "48f9be1afb065adb53f6ca1460025dad9c9ccecb22a507f5d4c1ea5acaae4756",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5090309
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.2/io.dbx.xxljob-console-0.4.2-windows-x64.dbxp",
+              "sha256": "3aff2f4c45f154fbb9ddb0807bb96c91904c57c8319c9642e88ba28ec036c8c6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5450757
+            }
+          ]
+        },
         {
           "version": "0.4.1",
           "releasedAt": "2026-10-23T03:15:14.813Z",
@@ -8445,11 +8631,11 @@
     },
     {
       "id": "io.github.caichangqing1120.apollo",
-      "name": "Apollo Config",
-      "description": "Preview: manage Apollo 2.x configuration with independently authored pages and password login. Full 1:1 parity is incomplete.",
+      "name": "Apollo Portal Console",
+      "description": "Manage Apollo 2.x configuration with independently authored pages and password login. Known visual parity gaps remain.",
       "publisher": "caichangqing1120",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.2/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/icon.png",
       "tags": [
         "apollo",
         "configuration",
@@ -8458,11 +8644,53 @@
       "permissions": [
         "host.storage"
       ],
-      "source": "https://github.com/caichangqing1120/dbx-plugin-apollo/tree/v0.1.2",
+      "source": "https://github.com/caichangqing1120/dbx-plugin-apollo/tree/v0.1.3",
       "homepage": "https://github.com/caichangqing1120/dbx-plugin-apollo",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.2",
+      "latestVersion": "0.1.3",
       "versions": [
+        {
+          "version": "0.1.3",
+          "releasedAt": "2026-10-23T13:03:01.519Z",
+          "releaseNotes": "0.1.3 stable: promotes the tested RC2 behavior without UI changes. Success feedback auto-dismisses after 5 seconds and successful editors close; app/Key search handles folded/text targets and multi-environment pagination. Retains measured menus, cluster rows and table repairs. Stable publication enables Store release discovery, not a full-parity claim: all-page/all-dialog 1:1 remains FAIL and native cold-start/file transfer/multi-account acceptance is incomplete. Author packages are unsigned inputs; official Store review, signing and merge remain required.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/io.github.caichangqing1120.apollo-0.1.3-darwin-arm64.dbxp",
+              "sha256": "2e6250a7e4bb4448fc8504b7ee4df61953807c33be2ed4bda559ff87aaccd7be",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2814769
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/io.github.caichangqing1120.apollo-0.1.3-darwin-x64.dbxp",
+              "sha256": "17f04f78cecea5849fc701739e71af7600df96db2193e8e0a8ffa67b5d5a5950",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3027281
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/io.github.caichangqing1120.apollo-0.1.3-linux-arm64.dbxp",
+              "sha256": "8c8821fc4c24a44d522dd6b361f21ddc345985e444a8f07acbab50575e657900",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2741781
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/io.github.caichangqing1120.apollo-0.1.3-linux-x64.dbxp",
+              "sha256": "defd90dc9a29c508f5a88dfea0fdc57a0d2aa5b5fe6fc598e610bb5d95a92561",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3003193
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/io.github.caichangqing1120.apollo-0.1.3-windows-x64.dbxp",
+              "sha256": "1dbd0bb32426cbb59c3548656e83cfce52dbb8fb954a9e2dde5af5b01ada0b17",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3044485
+            }
+          ]
+        },
         {
           "version": "0.1.2",
           "releasedAt": "2026-10-20T02:44:14.105Z",
@@ -8508,8 +8736,8 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Apollo 配置中心",
-          "description": "预览版：独立编写 Apollo 2.x 管理页面，支持普通账号密码登录。全量页面及弹窗 1:1 对照尚未通过。"
+          "name": "Apollo Portal 控制台",
+          "description": "独立编写 Apollo 2.x 管理页面，支持普通账号密码登录。全量页面及弹窗 1:1 对照仍有差距。"
         }
       }
     },
@@ -8725,6 +8953,71 @@
         "en": {
           "name": "XXL-JOB",
           "description": "Manage official XXL-JOB Admin 2.3.x and 3.4.x jobs, executors and logs in DBX."
+        }
+      }
+    },
+    {
+      "id": "io.github.caizong10.rdp",
+      "name": "RDP Remote Desktop",
+      "description": "Open Windows remote desktops inside DBX with a native Rust (IronRDP) sidecar.",
+      "publisher": "caizong10",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/icon.svg",
+      "tags": [
+        "rdp",
+        "remote-desktop",
+        "windows"
+      ],
+      "permissions": [
+        "host.workbench",
+        "host.events",
+        "host.binary"
+      ],
+      "source": "https://github.com/caizong10/dbx-plugin-rdp/tree/v0.2.4",
+      "homepage": "https://github.com/caizong10/dbx-plugin-rdp",
+      "license": "Apache-2.0",
+      "latestVersion": "0.2.4",
+      "versions": [
+        {
+          "version": "0.2.4",
+          "releasedAt": "2026-10-23T12:51:33.708Z",
+          "releaseNotes": "Initial submission. Connect to Windows remote desktops over RDP with a Rust (IronRDP) sidecar: live canvas rendering, keyboard/mouse input with shortcuts, bidirectional text clipboard, Chinese IME support, and automatic reconnect. Builds for windows-x64, linux-x64, darwin-x64 and darwin-arm64.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/io.github.caizong10.rdp-0.2.4-darwin-arm64.dbxp",
+              "sha256": "7b3226ae2877b0382639e5cd17ddfd62a6e23e2cd08eae9ab370776fa332f8e9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2972146
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/io.github.caizong10.rdp-0.2.4-darwin-x64.dbxp",
+              "sha256": "835c20be9bb2f382e20dcdca5e05ddfc949acb29bd57e00fb90810ee1ef9bb02",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3189838
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/io.github.caizong10.rdp-0.2.4-linux-x64.dbxp",
+              "sha256": "c2a07fae1851aadb4170d3ec96ac890d88c6853bfc4c9c02d8f6c6cea28e9014",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3314070
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/io.github.caizong10.rdp-0.2.4-windows-x64.dbxp",
+              "sha256": "f55b7c2f75f8622f5326605789f9cbb808a0b99fc41d2ed5edd08a9b96c52245",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3237096
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "RDP 远程桌面",
+          "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本剪贴板双向同步、中文输入法，以及断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
         }
       }
     },

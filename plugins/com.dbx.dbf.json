@@ -4,7 +4,7 @@
   "description": "Open, inspect, edit, validate and export DBF tables (dBase III/IV/V, FoxPro, VFP), with built-in field dictionaries for Chinese exchange settlement files.",
   "publisher": "qingkong9579",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/qingkong9579/dbx.dbf/v0.3.2/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/qingkong9579/dbx.dbf/v0.3.6/assets/plugin.svg",
   "tags": [
     "dbf",
     "database",
@@ -20,10 +20,10 @@
     "host.filesystem",
     "host.storage"
   ],
-  "source": "https://github.com/qingkong9579/dbx.dbf/tree/v0.3.2",
+  "source": "https://github.com/qingkong9579/dbx.dbf/tree/v0.3.6",
   "homepage": "https://github.com/qingkong9579/dbx.dbf",
   "license": "MIT",
-  "latestVersion": "0.3.2",
+  "latestVersion": "0.3.6",
   "versions": [
     {
       "version": "0.3.2",
@@ -64,6 +64,48 @@
           "sha256": "ca308d01b260459f670186ea29ad529ad0113cd5dd2b2338098ce82456ebc61e",
           "signingKeyId": "dbx-store-release-2026",
           "size": 1738456
+        }
+      ]
+    },
+    {
+      "version": "0.3.6",
+      "releasedAt": "2026-10-23T13:05:53.347Z",
+      "releaseNotes": "0.3.6：字段释义支持任意 DBF 文件 + 列名大小写不敏感匹配，文件族未命中时回退到全量并集并标注「通用」。0.3.5：字段释义解耦为列名→中文名数据文件，新增字段释义导入/导出与自定义释义。0.3.4：校验细化为整数位/小数位/日期/控制字符等分类，交易市场代码显示中文值域，信息面板显示接口数据日期，新建表可选 dBase III/IV/V。0.3.3：新增手动更换编码重新打开（编码菜单、带预览的对话框、按文件记忆），修复自动识别回退 UTF-8 导致的乱码。",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.6/com.dbx.dbf-0.3.6-windows-x64.dbxp",
+          "sha256": "5395b42671be75bbec9e9c5f928f6fecaee1bdea04f21c9146fc45ca33549df2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1901707
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.6/com.dbx.dbf-0.3.6-linux-x64.dbxp",
+          "sha256": "63b7f6a9e35da208b2009c0936c4c01395c3fea6cf7dcd2aca8ca450093c26e7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1831960
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.6/com.dbx.dbf-0.3.6-linux-arm64.dbxp",
+          "sha256": "4a8e822773386b60158549fa31240fb4050517c58aab1ca67a6139d4c691d9c5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1739609
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.6/com.dbx.dbf-0.3.6-darwin-x64.dbxp",
+          "sha256": "4bb6ffe92ccccac681e4e2ab65b33a5c83b699e735992de16099b94ce0bcc826",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1818037
+        },
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.6/com.dbx.dbf-0.3.6-darwin-arm64.dbxp",
+          "sha256": "3ef09c20350154c9af39e0d3e31d433a175c9af4f478268d52fe127cc80ee1db",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1748044
         }
       ]
     }
