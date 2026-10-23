@@ -1,0 +1,65 @@
+{
+  "id": "io.github.caizong10.rdp",
+  "name": "RDP Remote Desktop",
+  "description": "Open Windows remote desktops inside DBX with a native Rust (IronRDP) sidecar.",
+  "publisher": "caizong10",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/caizong10/dbx-plugin-rdp/v0.2.4/assets/plugin.svg",
+  "tags": [
+    "rdp",
+    "remote-desktop",
+    "windows"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.events",
+    "host.binary"
+  ],
+  "source": "https://github.com/caizong10/dbx-plugin-rdp/tree/v0.2.4",
+  "homepage": "https://github.com/caizong10/dbx-plugin-rdp",
+  "license": "Apache-2.0",
+  "latestVersion": "0.2.4",
+  "versions": [
+    {
+      "version": "0.2.4",
+      "releasedAt": "2026-10-23T12:51:33.708Z",
+      "releaseNotes": "Initial submission. Connect to Windows remote desktops over RDP with a Rust (IronRDP) sidecar: live canvas rendering, keyboard/mouse input with shortcuts, bidirectional text clipboard, Chinese IME support, and automatic reconnect. Builds for windows-x64, linux-x64, darwin-x64 and darwin-arm64.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/io.github.caizong10.rdp-0.2.4-windows-x64.dbxp",
+          "sha256": "f55b7c2f75f8622f5326605789f9cbb808a0b99fc41d2ed5edd08a9b96c52245",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3237096
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/io.github.caizong10.rdp-0.2.4-linux-x64.dbxp",
+          "sha256": "c2a07fae1851aadb4170d3ec96ac890d88c6853bfc4c9c02d8f6c6cea28e9014",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3314070
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/io.github.caizong10.rdp-0.2.4-darwin-x64.dbxp",
+          "sha256": "835c20be9bb2f382e20dcdca5e05ddfc949acb29bd57e00fb90810ee1ef9bb02",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3189838
+        },
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/io.github.caizong10.rdp-0.2.4-darwin-arm64.dbxp",
+          "sha256": "7b3226ae2877b0382639e5cd17ddfd62a6e23e2cd08eae9ab370776fa332f8e9",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2972146
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "RDP 远程桌面",
+      "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本剪贴板双向同步、中文输入法，以及断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
+    }
+  }
+}

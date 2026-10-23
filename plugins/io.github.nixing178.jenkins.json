@@ -20,7 +20,7 @@
   "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.3.0",
   "homepage": "https://github.com/nixing178/dbx-plugin-jenkins",
   "license": "Apache-2.0",
-  "latestVersion": "0.3.0",
+  "latestVersion": "0.7.5",
   "versions": [
     {
       "version": "0.3.0",
@@ -33,6 +33,20 @@
           "sha256": "609cc8631db183018474103299241b9f0b8d688231f8d02abef458306b16b4e8",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4721158
+        }
+      ]
+    },
+    {
+      "version": "0.7.5",
+      "releasedAt": "2026-10-23T09:10:03.979Z",
+      "releaseNotes": "Console log list with line numbers, ANSI colours, problems-only filter, search with match navigation, fullscreen and per-line copy. Adds a build executor panel and in-app confirmation dialogs for stop/cancel, and fixes log area clipping and scroll-to-bottom.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.7.5/io.github.nixing178.jenkins-0.7.5-windows-x64.dbxp",
+          "sha256": "e73f1529e6e844c80333c7895e7020c1b80daeb2b820dd4a0d4ea7838fbe937f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4962915
         }
       ]
     }
