@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.process",
+  "publisher": "alan",
+  "version": "0.1.0",
+  "name": "Process Manager",
+  "description": "Browse, search, and terminate local and remote OS processes.",
+  "icon": "https://raw.githubusercontent.com/allran/dbx-plugin-process/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "process",
+    "system",
+    "workbench"
+  ],
+  "permissions": [
+    "host.events",
+    "host.workbench"
+  ],
+  "source": "https://github.com/allran/dbx-plugin-process/tree/v0.1.0",
+  "homepage": "https://github.com/allran/dbx-plugin-process",
+  "license": "Apache-2.0",
+  "releaseNotes": "Initial release: local process list/search/kill with confirmation, ports and protected processes, remote SSH via DBX tunnel (password or private key).",
+  "localizations": {
+    "zh-CN": {
+      "name": "进程管理",
+      "description": "浏览、搜索并结束本机与远程主机上的操作系统进程。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/allran/dbx-plugin-process/releases/download/v0.1.0/io.dbx.process-0.1.0-darwin-arm64.dbxp",
+      "sha256": "1b1874f6cea240903481c5ec5737985533b22d4f23281f37de55a69a520f6959",
+      "size": 1422924
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/allran/dbx-plugin-process/releases/download/v0.1.0/io.dbx.process-0.1.0-darwin-x64.dbxp",
+      "sha256": "c8ec5f51e59efc7236da32c24935fc998fb7be19097c941ae1624bbbc4823a6d",
+      "size": 1530984
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/allran/dbx-plugin-process/releases/download/v0.1.0/io.dbx.process-0.1.0-linux-arm64.dbxp",
+      "sha256": "23588fb9cb3bd60eda6576040989ac53eda62aad69845870aad4305022978f2b",
+      "size": 1827660
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/allran/dbx-plugin-process/releases/download/v0.1.0/io.dbx.process-0.1.0-linux-x64.dbxp",
+      "sha256": "d9c032c720fe61e869f28689e7c2a5c7303409e9e95cb2454a69ef43572e7418",
+      "size": 1905838
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/allran/dbx-plugin-process/releases/download/v0.1.0/io.dbx.process-0.1.0-windows-x64.dbxp",
+      "sha256": "7ece1e8611afa316983486cfb09b8752b4f37a280d5e63025100627dbc91c232",
+      "size": 1868627
+    }
+  ]
+}
