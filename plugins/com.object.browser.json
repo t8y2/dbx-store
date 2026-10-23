@@ -1,10 +1,10 @@
 {
   "id": "com.object.browser",
   "name": "Object Storage",
-  "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview, and multi-select batch delete/download.",
+  "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), and multi-select batch delete / download.",
   "publisher": "huangqiang",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/huangqiang008/dbx-object-storage/v0.4.0/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/huangqiang008/dbx-object-storage/v1.1.2/assets/plugin.svg",
   "tags": [
     "storage",
     "oss",
@@ -19,10 +19,10 @@
     "host.events",
     "host.filesystem"
   ],
-  "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v0.4.0",
+  "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.1.2",
   "homepage": "https://github.com/huangqiang008/dbx-object-storage",
   "license": "MIT",
-  "latestVersion": "0.4.0",
+  "latestVersion": "1.1.2",
   "versions": [
     {
       "version": "0.4.0",
@@ -37,12 +37,33 @@
           "size": 7626439
         }
       ]
+    },
+    {
+      "version": "1.1.2",
+      "releasedAt": "2026-10-23T03:18:15.941Z",
+      "releaseNotes": "Fix public-read ACL: objects can now be reverted to private (previously stuck public because the Aliyun SDK does not expose object-level Grants, so the plugin now probes anonymous accessibility instead). Added a public-status badge and a toolbar toggle to scan and mark public-read objects. Connection presets for Alibaba Cloud OSS, Tencent COS, Huawei OBS, AWS S3, MinIO, Cloudflare R2, Wasabi and Backblaze B2.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.object.browser/1.1.2/com.object.browser-1.1.2-darwin-arm64.dbxp",
+          "sha256": "44085838d673264073f80b9f1abea07818c9b8ceaa7b4553b2723699824603a8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 7751213
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.object.browser/1.1.2/com.object.browser-1.1.2-windows-x64.dbxp",
+          "sha256": "be4e49edc4a3a5355b44500fdbc22f6ab13632a5e45c9ad4a3bae327673be182",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 8143942
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "对象存储",
-      "description": "通用对象存储浏览器：支持阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）。大目录服务端分页、分片上传、预签名分享、文件预览、多选批量删除/下载。"
+      "description": "通用对象存储浏览器：支持阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）。大目录服务端分页、分片上传、预签名分享、文件预览（Office / 3D / HTML / Markdown）、多选批量删除 / 下载。"
     }
   }
 }

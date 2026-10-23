@@ -1,0 +1,73 @@
+{
+  "id": "com.dbx.ratel",
+  "name": "Ratel 摸鱼台",
+  "description": "连接 Ratel 在线棋牌（斗地主 / 跑得快 / 德州 / 大众麻将 / 骗子酒馆）的摸鱼客户端：WebSocket/TCP 长连接、房间列表、按游戏自动切换的命令面板。",
+  "publisher": "dbx-ratel",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/mikodream/ratel-dbx/v0.1.3/assets/plugin.svg",
+  "tags": [
+    "game",
+    "websocket",
+    "lan",
+    "workbench"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/mikodream/ratel-dbx/tree/v0.1.3",
+  "homepage": "https://github.com/mikodream/ratel-dbx",
+  "license": "MIT",
+  "latestVersion": "0.1.3",
+  "versions": [
+    {
+      "version": "0.1.3",
+      "releasedAt": "2026-10-23T03:34:32.272Z",
+      "releaseNotes": "首个公开发布版本：声明 command + menus 贡献点，安装后可从侧边栏、工具栏和命令面板直接打开摸鱼台。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.ratel/0.1.3/com.dbx.ratel-0.1.3-darwin-arm64.dbxp",
+          "sha256": "6fb18d48e6d9aed55deedea9822a1b8b72da62119c71e0e45b5a2ebc132e6ae7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4071379
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.ratel/0.1.3/com.dbx.ratel-0.1.3-darwin-x64.dbxp",
+          "sha256": "d8d270a4c68634fecb486eed421f861e16baadf7b72528c77b70deed406675bb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4277110
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.ratel/0.1.3/com.dbx.ratel-0.1.3-linux-arm64.dbxp",
+          "sha256": "5e39ce4806eaf15cd2d45c495962578f0bc79fa8d75f4baa1cf49f93f5d0a901",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4030607
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.ratel/0.1.3/com.dbx.ratel-0.1.3-linux-x64.dbxp",
+          "sha256": "04b2ea7abaad3e9a9f2ac56a2845cb44ea69becac65219b15702062a36b87879",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4312713
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.ratel/0.1.3/com.dbx.ratel-0.1.3-windows-x64.dbxp",
+          "sha256": "5635cf94a79a0320280565a5c6f2019b25fb62b217a873e5d908328373f818e8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4344458
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Ratel 摸鱼台",
+      "description": "连接 Ratel 在线棋牌（斗地主 / 跑得快 / 德州 / 大众麻将 / 骗子酒馆）的摸鱼客户端：WebSocket/TCP 长连接、房间列表、按游戏自动切换的命令面板。"
+    }
+  }
+}

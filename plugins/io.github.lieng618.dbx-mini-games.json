@@ -1,0 +1,44 @@
+{
+  "id": "io.github.lieng618.dbx-mini-games",
+  "name": "DBX Mini Games",
+  "description": "A quiet online parlour for Chinese chess and Gomoku, with rooms, spectators, and match clocks.",
+  "publisher": "lieng618",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/lieng618/dbx-mini-games/v0.3.1/assets/plugin.svg",
+  "tags": [
+    "game",
+    "chess",
+    "gomoku",
+    "multiplayer",
+    "workbench"
+  ],
+  "permissions": [
+    "host.network:https://1.92.64.227"
+  ],
+  "source": "https://github.com/lieng618/dbx-mini-games/tree/v0.3.1",
+  "homepage": "https://github.com/lieng618/dbx-mini-games",
+  "license": "Apache-2.0",
+  "latestVersion": "0.3.1",
+  "versions": [
+    {
+      "version": "0.3.1",
+      "releasedAt": "2026-10-23T03:39:22.159Z",
+      "releaseNotes": "Initial public release with Chinese chess, Gomoku, rooms, spectators, match clocks, consent-based undo, rematches, and Chinese-ink presentation.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/io.github.lieng618.dbx-mini-games/0.3.1/io.github.lieng618.dbx-mini-games-0.3.1-universal.dbxp",
+          "sha256": "04083336f8e576cd8b7a6d145b22b7fcae7207a1a0c219a750ea5a18c3f0bdf5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 246753
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "棋牌小馆",
+      "description": "一间线上棋牌小馆：对弈中国象棋与五子棋，可开房、观战。"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "dev.maledb.mahjong",
+  "name": "MaLeDB · Mahjong",
+  "description": "Four-player Chinese Mahjong with local computer opponents, fan scoring, a celadon table, sounds, hints and saved games.",
+  "publisher": "yuwengueen",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/yuwenGueen/dbx-maledb/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "games",
+    "mahjong",
+    "offline"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/yuwenGueen/dbx-maledb/tree/v0.1.0",
+  "homepage": "https://github.com/yuwenGueen/dbx-maledb",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-23T03:43:53.606Z",
+      "releaseNotes": "Initial store candidate: one human and three local computer players, chi/peng/kong/hu, native fan scoring, flowers, hints, auto-play, sounds, pause and saved games. macOS Apple Silicon; Simplified Chinese UI. Fixed room rules are documented in the source README.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/dev.maledb.mahjong/0.1.0/dev.maledb.mahjong-0.1.0-darwin-arm64.dbxp",
+          "sha256": "91931a5d77d94fcfa861daa9dd3dfee600f9008a1f8edc1f26b187180146f571",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6489589
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "麻了DB",
+      "description": "写麻了？摸两张。青瓷牌桌、三位电脑牌友，支持吃碰杠胡、番型计分、音效动效、提示托管与本地续局。"
+    }
+  }
+}

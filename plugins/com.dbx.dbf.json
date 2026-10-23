@@ -1,0 +1,77 @@
+{
+  "id": "com.dbx.dbf",
+  "name": "DBF Studio",
+  "description": "Open, inspect, edit, validate and export DBF tables (dBase III/IV/V, FoxPro, VFP), with built-in field dictionaries for Chinese exchange settlement files.",
+  "publisher": "qingkong9579",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/qingkong9579/dbx.dbf/v0.3.2/assets/plugin.svg",
+  "tags": [
+    "dbf",
+    "database",
+    "table",
+    "securities",
+    "settlement",
+    "exchange-file",
+    "dcom",
+    "prop"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.filesystem",
+    "host.storage"
+  ],
+  "source": "https://github.com/qingkong9579/dbx.dbf/tree/v0.3.2",
+  "homepage": "https://github.com/qingkong9579/dbx.dbf",
+  "license": "MIT",
+  "latestVersion": "0.3.2",
+  "versions": [
+    {
+      "version": "0.3.2",
+      "releasedAt": "2026-10-23T03:36:53.854Z",
+      "releaseNotes": "0.3.2：全新插件图标（渐变徽章 + 数据表文档），插件中心、商店与工作台内统一展示；功能与 0.3.1 一致。",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.2/com.dbx.dbf-0.3.2-windows-x64.dbxp",
+          "sha256": "04a0ecdd644a8cf792cdd934154d52e4df18e2005a00d0b540d4ed2d9382946a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1892140
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.2/com.dbx.dbf-0.3.2-linux-x64.dbxp",
+          "sha256": "459f14a1a75bae610704f89c070ee8045daabd0e6852255e903f8fd10d64b650",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1822372
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.2/com.dbx.dbf-0.3.2-linux-arm64.dbxp",
+          "sha256": "c88ec2b50d1af49680771fb9e2096c26de9184e16b0f1f4f2825fd9494003ee9",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1730022
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.2/com.dbx.dbf-0.3.2-darwin-x64.dbxp",
+          "sha256": "2137d67703a7bcf4ecc99e56c81e2ad9320880b4875beecc033c38574f934050",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1808442
+        },
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.dbf/0.3.2/com.dbx.dbf-0.3.2-darwin-arm64.dbxp",
+          "sha256": "ca308d01b260459f670186ea29ad529ad0113cd5dd2b2338098ce82456ebc61e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1738456
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "DBF Studio",
+      "description": "打开、校验、编辑并导出 DBF 数据表（dBase III/IV/V、FoxPro、VFP），内置深市 D-COM、沪市 PROP 与上市公司版交换文件字段释义。"
+    }
+  }
+}
