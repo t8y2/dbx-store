@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "com.leavingrain.imrepo",
+  "publisher": "leavingrain",
+  "version": "1.0.0",
+  "name": "IMREPO",
+  "description": "Browse, manage and inspect OCI / Harbor container registries from a single workbench: project and namespace navigation, tag rename and delete, per-layer size analysis, Trivy CVE reports, registry-wide charts and multi-arch breakdowns.",
+  "icon": "https://raw.githubusercontent.com/Zer0ON1/dbx-plugin-imrepo/v1.0.0/assets/plugin.svg",
+  "tags": [
+    "registry",
+    "harbor",
+    "oci",
+    "docker",
+    "containers",
+    "devops"
+  ],
+  "permissions": [],
+  "source": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
+  "homepage": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
+  "license": "Apache-2.0",
+  "releaseNotes": "Docker Registry v2 projects (namespaces), registry overview charts, and one badge per architecture in the image views.",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/Zer0ON1/dbx-plugin-imrepo/releases/download/v1.0.0/com.leavingrain.imrepo-1.0.0-darwin-arm64.dbxp",
+      "sha256": "718c70b5868cfa6afb844e7e0b8d769c6d4b252a14cdef1e6d4496038c661ecd",
+      "size": 4630594
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/Zer0ON1/dbx-plugin-imrepo/releases/download/v1.0.0/com.leavingrain.imrepo-1.0.0-darwin-x64.dbxp",
+      "sha256": "8edc508f4ede7c871660c529e70bf3e383cdc1fb67712503e0a8227d5a1173a6",
+      "size": 4879759
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/Zer0ON1/dbx-plugin-imrepo/releases/download/v1.0.0/com.leavingrain.imrepo-1.0.0-linux-arm64.dbxp",
+      "sha256": "93c0e3df6fdfa7099805340637e59426fca729b1585b7d4d7d65f7a4c72d1471",
+      "size": 4585196
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/Zer0ON1/dbx-plugin-imrepo/releases/download/v1.0.0/com.leavingrain.imrepo-1.0.0-linux-x64.dbxp",
+      "sha256": "94ad165cf74c15d978bc92a4238e9e9f68fc13334f016d6cbcf07b13880061e5",
+      "size": 4918369
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/Zer0ON1/dbx-plugin-imrepo/releases/download/v1.0.0/com.leavingrain.imrepo-1.0.0-windows-arm64.dbxp",
+      "sha256": "ae009dba39837a2da73d0ae3539e88c5c5da047aa846feedb8a3e63a5b428389",
+      "size": 4591657
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/Zer0ON1/dbx-plugin-imrepo/releases/download/v1.0.0/com.leavingrain.imrepo-1.0.0-windows-x64.dbxp",
+      "sha256": "ec90a9c0b6c74c785ab4648901511673506a8c0ee63c83db3c5e3f74aad4555d",
+      "size": 4952979
+    }
+  ]
+}
