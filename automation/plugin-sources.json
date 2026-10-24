@@ -2,12 +2,12 @@
   "version": 1,
   "plugins": [
     {
-      "repository": "0verme/dbx-plugin-SchemaSeed",
+      "repository": "0verme/dbx-plugin-plan-detective",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
     {
-      "repository": "0verme/dbx-plugin-plan-detective",
+      "repository": "0verme/dbx-plugin-SchemaSeed",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
@@ -18,46 +18,6 @@
     },
     {
       "repository": "Abeautifulsnow/dbx-plugin-excalidraw",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "Ezreal-byte/dbx-docker-plugin",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "Ezreal-byte/dbx-plugin-xxl-job-console",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "Ezreal-byte/dbx-rocketmq-dashboard",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "IceFoxs/dbx-plugin-aes-tools",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "IceFoxs/dbx-plugin-data-convert",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "NintyCat/dbx-plugin-NintyAPI",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "NintyCat/dbx-plugin-NintyShell",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "Zer0ON1/dbx-plugin-imrepo",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
@@ -98,6 +58,31 @@
     },
     {
       "repository": "eryajf/dbx-plugin-k8s",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "Ezreal-byte/dbx-docker-plugin",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "Ezreal-byte/dbx-plugin-xxl-job-console",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "Ezreal-byte/dbx-rocketmq-dashboard",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "IceFoxs/dbx-plugin-aes-tools",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "IceFoxs/dbx-plugin-data-convert",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
@@ -157,6 +142,16 @@
       "autoUpdate": true
     },
     {
+      "repository": "NintyCat/dbx-plugin-NintyAPI",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "NintyCat/dbx-plugin-NintyShell",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
       "repository": "ragdollcb/waitWork",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
@@ -208,6 +203,11 @@
     },
     {
       "repository": "zaojiaoci/dbx-sql-guard",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "Zer0ON1/dbx-plugin-imrepo",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
