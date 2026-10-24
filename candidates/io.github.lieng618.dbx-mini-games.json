@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.lieng618.dbx-mini-games",
+  "publisher": "lieng618",
+  "version": "0.4.2",
+  "name": "DBX Mini Games",
+  "description": "A quiet online parlour for Chinese chess and Gomoku, with rooms, spectators, and match clocks.",
+  "icon": "https://raw.githubusercontent.com/lieng618/dbx-mini-games/v0.4.2/assets/plugin.svg",
+  "tags": [
+    "game",
+    "chess",
+    "gomoku",
+    "multiplayer",
+    "workbench"
+  ],
+  "permissions": [
+    "host.network:https://1.92.64.227"
+  ],
+  "source": "https://github.com/lieng618/dbx-mini-games/tree/v0.4.2",
+  "homepage": "https://github.com/lieng618/dbx-mini-games",
+  "license": "Apache-2.0",
+  "releaseNotes": "本次更新加入房间计分与确认换座，新增象棋关键棋子碎裂、五子棋动态特效和局内表情互动，并优化对局提示、音效和移动端布局。",
+  "localizations": {
+    "zh-CN": {
+      "name": "棋牌小馆",
+      "description": "一间线上棋牌小馆：对弈中国象棋与五子棋，可开房、观战。"
+    }
+  },
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/lieng618/dbx-mini-games/releases/download/v0.4.2/io.github.lieng618.dbx-mini-games-0.4.2-universal.dbxp",
+      "sha256": "189cc39c5f9ff502ba9aecd4907202537d34a52e13ebb5febd0e3609551f7786",
+      "size": 271744
+    }
+  ]
+}
