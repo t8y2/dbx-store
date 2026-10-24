@@ -1,0 +1,73 @@
+{
+  "id": "io.github.yuzhi.modbus",
+  "name": "Modbus TCP",
+  "description": "Read and write Modbus TCP registers on PLCs, gateways and remote IO couplers, with polling and guarded writes.",
+  "publisher": "yuzhi",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-modbus/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "modbus",
+    "modbus-tcp",
+    "plc",
+    "industrial",
+    "iot",
+    "scada"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/bobocha214/dbx-plugin-modbus",
+  "homepage": "https://github.com/bobocha214/dbx-plugin-modbus",
+  "license": "MIT",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-23T03:51:23.615Z",
+      "releaseNotes": "Initial release: Modbus TCP connection provider, register grid workbench with periodic polling, byte order and data type decoding, and guarded writes.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.1.0/io.github.yuzhi.modbus-0.1.0-darwin-arm64.dbxp",
+          "sha256": "dcb5da9280c150c0510b39a50e5fc046761cd4d7d0082bd9ba408a9559ed9707",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 316261
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.1.0/io.github.yuzhi.modbus-0.1.0-darwin-x64.dbxp",
+          "sha256": "da7c749eb20efb747eaf16f5814ee594210c5fa9611ee5a7335e022809582692",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 337564
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.1.0/io.github.yuzhi.modbus-0.1.0-linux-arm64.dbxp",
+          "sha256": "36dcc661d9938cf1e534e2a8ba1d8de7ce3abf1ee35e52fe6b2399de0b66ad35",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 339235
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.1.0/io.github.yuzhi.modbus-0.1.0-linux-x64.dbxp",
+          "sha256": "43e79856f7e5d0e0fa6f2b57e1e00b07b7aebd96e9360448f763af6b0d3bf62d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 360141
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.1.0/io.github.yuzhi.modbus-0.1.0-windows-x64.dbxp",
+          "sha256": "5e139c0803367f3f54366ec88b826ff90b02e24312414c95c068775b4d5a1501",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 261020
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Modbus TCP",
+      "description": "读写 PLC、网关和远程 IO 上的 Modbus TCP 寄存器，支持周期轮询与带二次确认的写入。"
+    }
+  }
+}

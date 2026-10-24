@@ -1,0 +1,73 @@
+{
+  "id": "io.github.yuzhi.opcua",
+  "name": "OPC UA",
+  "description": "Browse the OPC UA address space of PLCs and servers, then read and write node values.",
+  "publisher": "yuzhi",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-opcua/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "opcua",
+    "industrial",
+    "plc",
+    "iiot",
+    "automation"
+  ],
+  "permissions": [
+    "host.connections:read",
+    "host.workbench"
+  ],
+  "source": "https://github.com/bobocha214/dbx-plugin-opcua/tree/v0.1.0",
+  "homepage": "https://github.com/bobocha214/dbx-plugin-opcua",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-23T03:51:23.623Z",
+      "releaseNotes": "Initial release: connect to an OPC UA server, browse the address space, read node values, and write scalar values.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.1.0/io.github.yuzhi.opcua-0.1.0-darwin-arm64.dbxp",
+          "sha256": "b3d21aa278397461a16bc4058205cab38c1035cee088af00079b2b034edbba0d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2376329
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.1.0/io.github.yuzhi.opcua-0.1.0-darwin-x64.dbxp",
+          "sha256": "e3102ec13cbf0494290367b29dcbadcf14f958436f79abf3628e17276897f5f3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2501501
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.1.0/io.github.yuzhi.opcua-0.1.0-linux-arm64.dbxp",
+          "sha256": "0609c4323063acda97a7117a3015469a4a5a1ad28c0762aa45192d517dc6b15a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2512017
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.1.0/io.github.yuzhi.opcua-0.1.0-linux-x64.dbxp",
+          "sha256": "a81217535a5d2d320523c5020e6bb6c02acf8d794c3f575270ac569afc154e83",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2627570
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.1.0/io.github.yuzhi.opcua-0.1.0-windows-x64.dbxp",
+          "sha256": "fc883341f00fcfd4033aa686dcb582dd5750e4e921aa2a8de3a83c279744f2e9",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2640099
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "OPC UA",
+      "description": "连接 OPC UA 服务器 / PLC，浏览地址空间，读取与写入节点值，并可将点位加入监视列表持续观察与就地改写下发。"
+    }
+  }
+}

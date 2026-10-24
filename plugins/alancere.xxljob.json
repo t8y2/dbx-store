@@ -1,0 +1,72 @@
+{
+  "id": "alancere.xxljob",
+  "name": "XXL-JOB",
+  "description": "XXL-JOB distributed task scheduler console inside DBX: executor groups, job management, manual trigger, start/stop, scheduling logs, GLUE source, and trigger reports.",
+  "publisher": "alancere",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/Alancere/xxl-job-dbx-plugin/v1.0.4/assets/plugin.svg",
+  "tags": [
+    "xxl-job",
+    "scheduler",
+    "jobs",
+    "task-scheduler"
+  ],
+  "permissions": [
+    "host.events",
+    "host.workbench"
+  ],
+  "source": "https://github.com/Alancere/xxl-job-dbx-plugin/tree/v1.0.4",
+  "homepage": "https://github.com/Alancere/xxl-job-dbx-plugin",
+  "license": "Apache-2.0",
+  "latestVersion": "1.0.4",
+  "versions": [
+    {
+      "version": "1.0.4",
+      "releasedAt": "2026-10-23T03:46:29.778Z",
+      "releaseNotes": "Initial DBX Store listing: executor groups, job CRUD, manual trigger, start/stop, scheduling logs, GLUE source editing, and trigger reports for XXL-JOB Admin consoles.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/alancere.xxljob/1.0.4/alancere.xxljob-1.0.4-darwin-arm64.dbxp",
+          "sha256": "65d4990b1301f652098b89e99cd798925933043ea6784dbf51b6536bb68d42c1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2698305
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/alancere.xxljob/1.0.4/alancere.xxljob-1.0.4-darwin-x64.dbxp",
+          "sha256": "bb9ffd3a88e6bb635c7afd54805e435c1102f5f1b8f2722bca918a19b2c03353",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2917030
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/alancere.xxljob/1.0.4/alancere.xxljob-1.0.4-linux-arm64.dbxp",
+          "sha256": "85cce9235ab26461e57cfc57883dbac8c1b7a939b63dc83f2639d029b1be891c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2617156
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/alancere.xxljob/1.0.4/alancere.xxljob-1.0.4-linux-x64.dbxp",
+          "sha256": "b1bd1f88d42728d7d150925b1ac5e39cdd75420323a861d77966356f95f2cd9f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2885671
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/alancere.xxljob/1.0.4/alancere.xxljob-1.0.4-windows-x64.dbxp",
+          "sha256": "4a7f61fa87f3d1de3028de765c5bb6f9192679e3ff57f49b7506b8b580fbcff0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2937663
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "XXL-JOB 任务调度",
+      "description": "在 DBX 内管理 XXL-JOB 分布式任务调度：执行器分组、任务管理、手动触发、启停、调度日志、GLUE 源码与触发报表。"
+    }
+  }
+}

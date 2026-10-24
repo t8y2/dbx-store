@@ -2,107 +2,7 @@
   "version": 1,
   "plugins": [
     {
-      "repository": "t8y2/dbx-plugin-s3",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "jinpy666/dbx-plugin-ssh",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "jinpy666/dbx-plugin-files",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "jinpy666/dbx-plugin-ldap",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "jinpy666/dbx-plugin-kafka",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "eryajf/dbx-plugin-k8s",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "ragdollcb/waitWork",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "yaoxinghuo/dbx-dev-tools",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "renpengkai/dbx-plugin-http-client",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "Abeautifulsnow/dbx-plugin-api-studio",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": false
-    },
-    {
-      "repository": "NintyCat/dbx-plugin-NintyAPI",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "Abeautifulsnow/dbx-plugin-excalidraw",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "kingwrcy/dbx-totp",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "summery-yk/dbx-plugin-portainer",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "NintyCat/dbx-plugin-NintyShell",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "tenltrs/dbx-calendar",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "lukelwai/dbx-md-notes",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "aiLi0617/dbx-plugin-toolbox",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "acornlive/dbx-plugin-json-pretty",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "caichangqing1120/dbx-plugin-prometheus",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "caichangqing1120/dbx-plugin-xxl-job",
+      "repository": "0verme/dbx-plugin-SchemaSeed",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
@@ -112,47 +12,12 @@
       "autoUpdate": true
     },
     {
-      "repository": "yxlongery/dbx-logviewer",
+      "repository": "Abeautifulsnow/dbx-plugin-api-studio",
       "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
+      "autoUpdate": false
     },
     {
-      "repository": "0verme/dbx-plugin-SchemaSeed",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "Zer0ON1/dbx-plugin-imrepo",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "yuwenGueen/dbx-code-editor",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "yiqiui/dbx-plugin-leetcode-cn",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "allran/dbx-plugin-clipboard",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "zaojiaoci/dbx-sql-guard",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "lukelwai/dbx-todo",
-      "metadataPath": ".dbx-store.json",
-      "autoUpdate": true
-    },
-    {
-      "repository": "ma123456mai/dbx-cc-switch-plugin",
+      "repository": "Abeautifulsnow/dbx-plugin-excalidraw",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
@@ -172,12 +37,42 @@
       "autoUpdate": true
     },
     {
-      "repository": "ma123456mai/ai-config-importer",
+      "repository": "IceFoxs/dbx-plugin-aes-tools",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
     {
-      "repository": "yuwenGueen/dbx-doudb",
+      "repository": "IceFoxs/dbx-plugin-data-convert",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "NintyCat/dbx-plugin-NintyAPI",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "NintyCat/dbx-plugin-NintyShell",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "Zer0ON1/dbx-plugin-imrepo",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "acornlive/dbx-plugin-json-pretty",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "aiLi0617/dbx-plugin-toolbox",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "allran/dbx-plugin-clipboard",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
@@ -187,12 +82,132 @@
       "autoUpdate": true
     },
     {
-      "repository": "IceFoxs/dbx-plugin-aes-tools",
+      "repository": "caichangqing1120/dbx-plugin-apollo",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
     {
-      "repository": "IceFoxs/dbx-plugin-data-convert",
+      "repository": "caichangqing1120/dbx-plugin-prometheus",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "caichangqing1120/dbx-plugin-xxl-job",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "eryajf/dbx-plugin-k8s",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "jinpy666/dbx-plugin-files",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "jinpy666/dbx-plugin-kafka",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "jinpy666/dbx-plugin-ldap",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "jinpy666/dbx-plugin-ssh",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "kingwrcy/dbx-totp",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "lieng618/dbx-mini-games",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "lukelwai/dbx-md-notes",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "lukelwai/dbx-todo",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "ma123456mai/ai-config-importer",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "ma123456mai/dbx-cc-switch-plugin",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "mugongliu1/dbx-terminal-launcher",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "ragdollcb/waitWork",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "renpengkai/dbx-plugin-http-client",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "summery-yk/dbx-plugin-portainer",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "t8y2/dbx-plugin-s3",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "tenltrs/dbx-calendar",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "yaoxinghuo/dbx-dev-tools",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "yiqiui/dbx-plugin-leetcode-cn",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "yuwenGueen/dbx-code-editor",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "yuwenGueen/dbx-doudb",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "yxlongery/dbx-logviewer",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "zaojiaoci/dbx-sql-guard",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },

@@ -13,10 +13,10 @@
   "permissions": [
     "host.workbench"
   ],
-  "source": "https://github.com/Ezreal-byte/dbx-rocketmq-dashboard/tree/v0.3.0",
+  "source": "https://github.com/Ezreal-byte/dbx-rocketmq-dashboard/tree/v0.3.1",
   "homepage": "https://github.com/Ezreal-byte/dbx-rocketmq-dashboard",
   "license": "Apache-2.0",
-  "latestVersion": "0.3.0",
+  "latestVersion": "0.3.1",
   "versions": [
     {
       "version": "0.3.0",
@@ -29,6 +29,20 @@
           "sha256": "e15959baa5f7facbe5dd412f15a4bec06db1ed9b14db28b098d4400552fa4972",
           "signingKeyId": "dbx-store-release-2026",
           "size": 3991644
+        }
+      ]
+    },
+    {
+      "version": "0.3.1",
+      "releasedAt": "2026-10-23T03:16:56.117Z",
+      "releaseNotes": "修复 #1：Topic 总数正常但表格为空。统一资源返回的 instanceId 与原生 Studio 的连接名称标识，覆盖普通、SOCKS5 代理及连接名称为空的情况；新增五个 Topic 的分页可见性回归。",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.rocketmq-dashboard-console/0.3.1/io.dbx.rocketmq-dashboard-console-0.3.1-windows-x64.dbxp",
+          "sha256": "6717c663261f9492fcf526bfde96cda0f915181d6b13addcf4756e042f3e64cc",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3991773
         }
       ]
     }
