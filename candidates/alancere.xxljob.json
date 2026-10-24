@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "alancere.xxljob",
+  "publisher": "alancere",
+  "version": "1.1.0",
+  "releaseNotes": "Adds a Cron quick builder (unit tabs, every/range/interval/specify modes, next-run preview) to the job editor, and includes the 1.0.5 fixes: job stop toggle, executor-unreachable log hint, report refresh window, LICENSE in packages.",
+  "source": "https://github.com/Alancere/xxl-job-dbx-plugin/tree/v1.1.0",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/Alancere/xxl-job-dbx-plugin/releases/download/v1.1.0/alancere.xxljob-1.1.0-darwin-arm64.dbxp",
+      "sha256": "3eb14ec27d07f6d737b48a84181a3886428c08d7ea76889c486863acddf3b482",
+      "size": 2957537
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/Alancere/xxl-job-dbx-plugin/releases/download/v1.1.0/alancere.xxljob-1.1.0-darwin-x64.dbxp",
+      "sha256": "21afc9420422d1e0a77656447ee9c5a6285e61c7d07b5b0867b150e69505ea33",
+      "size": 3199223
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/Alancere/xxl-job-dbx-plugin/releases/download/v1.1.0/alancere.xxljob-1.1.0-linux-arm64.dbxp",
+      "sha256": "c428d0f3c5b2eb97624598703eb0d0449daf0999fbd0d1ee773419121956d71d",
+      "size": 2848262
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/Alancere/xxl-job-dbx-plugin/releases/download/v1.1.0/alancere.xxljob-1.1.0-linux-x64.dbxp",
+      "sha256": "ff1bd546d677160533b0f2f2b6087d86336b23c12ccb003ec2dca0bf99941131",
+      "size": 3144755
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/Alancere/xxl-job-dbx-plugin/releases/download/v1.1.0/alancere.xxljob-1.1.0-windows-x64.dbxp",
+      "sha256": "745251c1cea0cf13ff39ff68e544908d389932f940915a8e40e9131a6ed10879",
+      "size": 3229198
+    }
+  ]
+}
