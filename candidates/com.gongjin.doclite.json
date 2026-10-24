@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "com.gongjin.doclite",
+  "publisher": "gongjin",
+  "version": "0.1.8",
+  "name": "DocLite",
+  "description": "Convert Word, PDF, PowerPoint, Excel, CSV, EPUB and more into clean Markdown and structured Document Model JSON, with optional cloud OCR for scanned PDFs.",
+  "icon": "https://raw.githubusercontent.com/gh-gongjin/dbx-plugin-doclite/v0.1.8/assets/plugin.svg",
+  "tags": [
+    "documents",
+    "markdown",
+    "pdf",
+    "ocr",
+    "conversion",
+    "word"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage"
+  ],
+  "source": "https://github.com/gh-gongjin/dbx-plugin-doclite/tree/v0.1.8",
+  "homepage": "https://github.com/gh-gongjin/dbx-plugin-doclite",
+  "license": "MIT",
+  "releaseNotes": "首个商店版本：本地转换 Word / PDF / PPT / Excel / CSV / EPUB 等 24 种格式为 Markdown 与结构化 JSON；扫描版 PDF 可选接入 MinerU 官方 API 或百度 OCR，识别失败的原始文件可保留并直接重试。",
+  "localizations": {
+    "zh-CN": {
+      "name": "DocLite 文档转换",
+      "description": "把 Word、PDF、PPT、Excel、CSV、EPUB 等文档转换为干净的 Markdown 与结构化 JSON；扫描版 PDF 可选接入 MinerU 或百度 OCR。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/gh-gongjin/dbx-plugin-doclite/releases/download/v0.1.8/com.gongjin.doclite-0.1.8-windows-x64.dbxp",
+      "sha256": "fd8842fdf5eae9ebea16187db5cd609441a3e9991d143e41b03b81069be3854c",
+      "size": 46284144
+    }
+  ]
+}
