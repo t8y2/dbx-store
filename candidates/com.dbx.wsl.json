@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "com.dbx.wsl",
+  "publisher": "w89588",
+  "version": "0.1.2",
+  "source": "https://github.com/w89588/dbx-plugin-wsl/tree/v0.1.2",
+  "releaseNotes": "# WSL Manager v0.1.2\n\n## 新功能 / What's new\n\n- **空闲退出与保活**：从发行版页或设置页选择“保持发行版运行”、恢复 WSL 默认策略或分别自定义发行版 / WSL 2 虚拟机空闲超时。保活采用原生 `[general] instanceIdleTimeout=-1`，关闭终端或 DBX 后设置仍保留，不新增后台保活进程。\n- **配置保护与生效提示**：自动备份已有 `.wslconfig`，保留无关配置，检测外部修改冲突，阻止覆盖编辑器内未保存的修改。保存不自动关闭 WSL；界面提示用户在合适时机确认关闭、再启动发行版。\n- **源码与反馈**：侧栏和“设置 → 关于”直接访问本项目 GitHub 仓库与 Issues，提供 BUG / 功能建议表单和反馈指引，中英文可用。\n\nKeep distributions running after terminals close, restore WSL defaults, or configure separate distro and VM idle timeouts. Changes are backed up, stale writes are rejected, and shutdown requires an explicit confirmation. New source and feedback links open this repository and its GitHub Issue forms in the default browser.\n\n## 使用 / Usage\n\n发行版 → 空闲退出与保活 → 选择策略 → 保存 → 在合适时机关闭 WSL → 重新启动所需发行版。\n\nDistributions → Idle shutdown & keep-alive → choose a policy → save → shut down WSL when convenient → start the required distribution again.\n\n保活不是 Windows 防休眠，也不会登录自启。设置全局作用于当前 Windows 用户的发行版；虚拟机设置不适用于 WSL 1 或 wslc 容器。关闭操作会停止 WSL 工作负载；仅保存不会中断它们。建议使用当前 WSL 版本，参见[设置说明](https://github.com/w89588/dbx-plugin-wsl/blob/v0.1.2/docs/idle-policy.md)。\n\n## 安装与反馈 / Install and feedback\n\n下载 `com.dbx.wsl-0.1.2-windows-x64.dbxp`，在 DBX 插件中心安装。GitHub 资产是未签名候选包，安装时需允许未签名开发包；官方商店更新由维护者审核并签名。\n\n[源码仓库 / Source](https://github.com/w89588/dbx-plugin-wsl) · [BUG 与建议 / Issues](https://github.com/w89588/dbx-plugin-wsl/issues)\n\n## 权限 / Permissions\n\n仍为 `host.workbench`、`host.events`、`host.storage`、`host.binary`。原生 Sidecar 读写当前用户的 WSL 配置，已有文件先备份。用户点击链接后通过 `explorer.exe` 打开固定的项目 / 微软文档 HTTPS 地址；不接受任意 URL，不自动上传日志或创建 Issue。其他 WSL、wslc 与 Windows 辅助进程行为保持原有权限范围。\n\n## 验证 / Validation\n\nGo unit tests and `go vet`; manifest preflight; isolated sidecar RPC checks; browser interaction tests covering policy save, validation, unsaved-editor protection, cancelled shutdown, feedback links, Chinese/English, light/dark and narrow layouts. Tests do not shut down the user's WSL or change the user's live configuration.",
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/w89588/dbx-plugin-wsl/releases/download/v0.1.2/com.dbx.wsl-0.1.2-windows-x64.dbxp",
+      "sha256": "e6429e8506313ac4976b5b57154d34fd876daa293baf9b61d90b0c824a8da53c",
+      "size": 3429040
+    }
+  ]
+}
