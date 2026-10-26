@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "com.dbx.wsl",
+  "publisher": "w89588",
+  "version": "0.1.6",
+  "source": "https://github.com/w89588/dbx-plugin-wsl/tree/b32b3c17fa962b959fd9ae4efc8f481e2f5fd6a6",
+  "releaseNotes": "# WSL 管理器 v0.1.6\n\n本版本在 v0.1.5 的基础上新增备份恢复中心、诊断中心和资源配置助手，扩展 MCP 管理能力，并修复任务历史与资源订阅的稳定性问题。\n\n## 新增\n\n- **备份与恢复中心**：支持选择 Windows 备份目录、保存发行版备份记录和 SHA-256 校验；恢复前检查文件完整性，使用新名称、新目录导入并验证启动，避免覆盖原发行版。\n- **诊断中心**：检查 WSL/WSLC 工具、磁盘可用空间、指定本机端口及可选容器注册表连通性，提供检查依据与处理建议，支持复制脱敏报告。\n- **资源配置助手**：通过表单设置内存上限、CPU 数量和交换空间；支持恢复默认值、修改前后预览、配置备份和修订冲突检查。保存不会自动关闭 WSL，需重启后生效。\n- **MCP 工作流扩展**：管理接口由 73 个增加至 85 个，新增备份、诊断、资源配置和 PostgreSQL/Redis 环境模板接口。环境模板通过 RPC/MCP 使用，包含持久化卷、健康检查及同名冲突保护。\n\n## 改进与修复\n\n- `wsl_describe` 为关键工作流补充必填参数、取值范围、操作影响、完成条件和重试说明。\n- 修复多个任务完成时间相同时，历史任务淘汰顺序不稳定的问题。\n- 改用随机资源订阅标识，避免快速重建订阅时因时间戳重复发生标识冲突。\n- 修复读取带 UTF-8 BOM 的 `.wslconfig` 时丢失 BOM 的问题。\n\n## 兼容性\n\n移除 `DBX >=0.6.55` 的产品版本限制，保留 Host API 1 协议要求。当前安装包已通过 DBX 0.6.27 和 0.6.55 的官方清单解析及兼容性规则验证；0.6.26 不支持包内 MCP 声明。旧版桌面客户端的完整安装验收尚未完成，详见[兼容性说明](https://github.com/w89588/dbx-plugin-wsl/blob/v0.1.6/docs/compatibility.md)。\n\n**完整变更：** [v0.1.5...v0.1.6](https://github.com/w89588/dbx-plugin-wsl/compare/v0.1.5...v0.1.6)",
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/w89588/dbx-plugin-wsl/releases/download/v0.1.6/com.dbx.wsl-0.1.6-windows-x64.dbxp",
+      "sha256": "bb24e2cb456d4f7446fdd319df2af999fc5e61426a46c02f10224688ea3aec16",
+      "size": 5819295
+    }
+  ]
+}
