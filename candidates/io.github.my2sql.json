@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.my2sql",
+  "publisher": "cutemolly",
+  "version": "1.0.0",
+  "name": "my2sql Binlog Toolkit",
+  "description": "MySQL binlog viewer, SQL/rollback generator and flashback executor for DBX.",
+  "icon": "https://raw.githubusercontent.com/cutemolly/dbx-plugin-my2sql/v1.0.0/assets/plugin.svg",
+  "tags": [
+    "mysql",
+    "binlog",
+    "rollback",
+    "dba"
+  ],
+  "permissions": [
+    "host.connections:read",
+    "host.events",
+    "host.storage"
+  ],
+  "source": "https://github.com/cutemolly/dbx-plugin-my2sql/tree/v1.0.0",
+  "homepage": "https://github.com/cutemolly/dbx-plugin-my2sql",
+  "license": "MIT",
+  "releaseNotes": "Initial release: online (fake-replica) and offline binlog parsing, rollback/raw SQL and DML/big-transaction stats, and gated rollback execution.",
+  "localizations": {
+    "zh-CN": {
+      "name": "my2sql Binlog 工具",
+      "description": "MySQL binlog 查看、SQL/回滚生成与闪回执行工具。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/cutemolly/dbx-plugin-my2sql/releases/download/v1.0.0/io.github.my2sql-1.0.0-darwin-arm64.dbxp",
+      "sha256": "33ec980a1f064d24a6ad7060a51bb5616ef164c8a879ae00c5fe2156e8c1a291",
+      "size": 6269647
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/cutemolly/dbx-plugin-my2sql/releases/download/v1.0.0/io.github.my2sql-1.0.0-darwin-x64.dbxp",
+      "sha256": "e52372d8ef0be5234e0a893a85feb38fca73c1e748a784b076ac71bf8a2211f4",
+      "size": 6525180
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/cutemolly/dbx-plugin-my2sql/releases/download/v1.0.0/io.github.my2sql-1.0.0-linux-x64.dbxp",
+      "sha256": "410f55df91c5bb1e17571b453837356101ec520eb890a785a69f101dd8cb9810",
+      "size": 6543305
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/cutemolly/dbx-plugin-my2sql/releases/download/v1.0.0/io.github.my2sql-1.0.0-linux-arm64.dbxp",
+      "sha256": "072f9d918504ae4959c4f26ed55174307e97577747eb1139a0a0968f04938ed9",
+      "size": 6180522
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/cutemolly/dbx-plugin-my2sql/releases/download/v1.0.0/io.github.my2sql-1.0.0-windows-x64.dbxp",
+      "sha256": "ba0a0c451bab596b5d8b4d01ab1ec0eed0f6703d8cc30d99849cabc8a63f3062",
+      "size": 6644879
+    }
+  ]
+}
