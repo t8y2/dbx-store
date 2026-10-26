@@ -17,10 +17,10 @@
     "host.storage",
     "host.binary"
   ],
-  "source": "https://github.com/w89588/dbx-plugin-wsl/tree/v0.1.1",
+  "source": "https://github.com/w89588/dbx-plugin-wsl/tree/da9576b75704ad064ee4e6597ebc94ae57239740",
   "homepage": "https://github.com/w89588/dbx-plugin-wsl",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.1",
+  "latestVersion": "0.1.2",
   "versions": [
     {
       "version": "0.1.1",
@@ -33,6 +33,20 @@
           "sha256": "c4d0f42266527762ce6e81f93bd0adb801e5f917e7fa1893dcb1b169d8c0e184",
           "signingKeyId": "dbx-store-release-2026",
           "size": 2737484
+        }
+      ]
+    },
+    {
+      "version": "0.1.2",
+      "releasedAt": "2026-10-26T06:43:09.185Z",
+      "releaseNotes": "新增发行版空闲退出与保活策略；保存配置前备份并检测外部修改及未保存编辑冲突，保存不会自动关闭 WSL。修复默认浏览器打开项目链接及键盘焦点行为，简化反馈入口。仅支持 Windows x64；保活不阻止 Windows 休眠，也不在登录时自动启动 WSL。虚拟机设置不适用于 WSL 1 或 wslc 容器。",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.2/com.dbx.wsl-0.1.2-windows-x64.dbxp",
+          "sha256": "2092ddb19b1ee6776534e883f9a29feae1f370de396433e8bc44978cecc4277f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3449954
         }
       ]
     }
