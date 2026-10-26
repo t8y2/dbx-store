@@ -1,0 +1,44 @@
+{
+  "plugin": {
+    "id": "com.vyrnax.translation",
+    "name": "Translation 即时翻译",
+    "description": "Translation 即时翻译 —— 多引擎翻译插件：支持 OpenAI 兼容大模型、DeepL、百度、有道、阿里云与本地 CLI 代理，含流式输出、输入即译、引擎管理与翻译历史。所有网络请求由内置 Go 侧车发出（浏览器沙箱的 CSP 禁止前端直连外部端点，且 host.network 白名单最多 8 个固定 origin，无法满足用户自填端点）。API Key 经系统密钥库（Windows DPAPI / macOS Keychain / Linux secret-tool）加密后落盘到插件数据目录，不可用时降级为机器绑定 AES-256-GCM 并在界面明确警示。引擎配置、翻译历史与界面偏好统一存放在 <插件数据目录>/translation.db（SQLite），由侧车写入；前端运行在 opaque origin 沙箱中，不接触磁盘，也不使用 localStorage。",
+    "publisher": "vyrnax",
+    "version": "0.2.1",
+    "permissions": [
+      "host.events"
+    ]
+  },
+  "artifacts": [
+    {
+      "target": "darwin-arm64",
+      "url": "com.vyrnax.translation-0.2.1-darwin-arm64.dbxp",
+      "sha256": "15a89026fdd07b04bf495e46803eca6815fb6a6d7614d8f009f18029b71262dd",
+      "size": 4748621
+    },
+    {
+      "target": "darwin-x64",
+      "url": "com.vyrnax.translation-0.2.1-darwin-x64.dbxp",
+      "sha256": "df8282c7b678e42c91e5442157b6d2fe1efeaa5c23059ff41d05232d85061f9f",
+      "size": 5068168
+    },
+    {
+      "target": "linux-arm64",
+      "url": "com.vyrnax.translation-0.2.1-linux-arm64.dbxp",
+      "sha256": "3412c29d82a733ae8594f2030439e70bbe2a006409d2d29a2b92353f66683a4e",
+      "size": 4587365
+    },
+    {
+      "target": "linux-x64",
+      "url": "com.vyrnax.translation-0.2.1-linux-x64.dbxp",
+      "sha256": "73f7ceac0abfb88c0bedd71a9fb0959e102b08db7e4308bf35ba32e6306fda7f",
+      "size": 5007794
+    },
+    {
+      "target": "windows-x64",
+      "url": "com.vyrnax.translation-0.2.1-windows-x64.dbxp",
+      "sha256": "17d29aefed2e585a8c4a23d1458858e27dd5281e388082c82402afa43305ed3e",
+      "size": 5113462
+    }
+  ]
+}
