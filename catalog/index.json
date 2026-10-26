@@ -1073,28 +1073,46 @@
     {
       "id": "com.gongjin.doclite",
       "name": "DocLite",
-      "description": "Convert Word, PDF, PowerPoint, Excel, CSV, EPUB and more into clean Markdown and structured Document Model JSON, with optional cloud OCR for scanned PDFs.",
+      "description": "Convert Word, PDF, PowerPoint, Excel, CSV, EPUB and more into clean Markdown and structured Document Model JSON, and export Markdown or Word data dictionaries from databases already connected in DBX. Optional cloud OCR for scanned PDFs.",
       "publisher": "gongjin",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.gongjin.doclite/0.1.9/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.gongjin.doclite/0.1.12/icon.svg",
       "tags": [
         "documents",
         "markdown",
         "pdf",
         "ocr",
         "conversion",
-        "word"
+        "word",
+        "database",
+        "schema"
       ],
       "permissions": [
         "host.events",
         "host.binary",
-        "host.storage"
+        "host.storage",
+        "host.connections:read",
+        "host.data:read"
       ],
-      "source": "https://github.com/gh-gongjin/dbx-plugin-doclite/tree/v0.1.9",
+      "source": "https://github.com/gh-gongjin/dbx-plugin-doclite/tree/v0.1.12",
       "homepage": "https://github.com/gh-gongjin/dbx-plugin-doclite",
       "license": "MIT",
-      "latestVersion": "0.1.9",
+      "latestVersion": "0.1.12",
       "versions": [
+        {
+          "version": "0.1.12",
+          "releasedAt": "2026-10-26T06:40:18.649Z",
+          "releaseNotes": "新增数据字典：从 DBX 已连接数据库只读导出 MySQL / PostgreSQL / SQLite 表结构（含索引、外键、注释），支持库名与表名筛选，并可保存为 Markdown 或 Word（.docx）。Word 输出使用真实 Word 表格、跨页重复表头与 A4 版心。新增权限 host.connections:read 与 host.data:read，Host API 下限提高到 1.4.0。",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.gongjin.doclite/0.1.12/com.gongjin.doclite-0.1.12-windows-x64.dbxp",
+              "sha256": "0ebb7e510cccc6adeaa09500f480193dbd4f959df8d3f7bb5959630ed35ff3e9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 46305878
+            }
+          ]
+        },
         {
           "version": "0.1.9",
           "releasedAt": "2026-10-25T01:42:04.931Z",
@@ -1113,7 +1131,7 @@
       "localizations": {
         "zh-CN": {
           "name": "DocLite 文档转换",
-          "description": "把 Word、PDF、PPT、Excel、CSV、EPUB 等文档转换为干净的 Markdown 与结构化 JSON；扫描版 PDF 可选接入 MinerU 或百度 OCR。"
+          "description": "文档转换 + 数据字典：把 Word、PDF、PPT、Excel、CSV、EPUB 等文档转为 Markdown 与结构化 JSON，也可把 DBX 已连接数据库的表结构导出为 Markdown 或 Word；扫描版 PDF 可选接入 MinerU 或百度 OCR。"
         }
       }
     },
@@ -7014,12 +7032,84 @@
       }
     },
     {
+      "id": "io.dbx.process",
+      "name": "Process Manager",
+      "description": "Browse, search, and terminate local and remote OS processes.",
+      "publisher": "alan",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.process/0.1.1/icon.svg",
+      "tags": [
+        "process",
+        "system",
+        "workbench"
+      ],
+      "permissions": [
+        "host.binary",
+        "host.events",
+        "host.workbench"
+      ],
+      "source": "https://github.com/allran/dbx-plugin-process/tree/v0.1.1",
+      "homepage": "https://github.com/allran/dbx-plugin-process",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.1",
+      "versions": [
+        {
+          "version": "0.1.1",
+          "releasedAt": "2026-10-26T06:39:22.759Z",
+          "releaseNotes": "Declare host.binary for process kill, local helper spawn (lsof/plutil), and remote SSH command execution.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.process/0.1.1/io.dbx.process-0.1.1-darwin-arm64.dbxp",
+              "sha256": "038b0b691cb61f0aa093a0c1ad346fedd926bf434627ba6b2f90a078cef676ba",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1423620
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.process/0.1.1/io.dbx.process-0.1.1-darwin-x64.dbxp",
+              "sha256": "369be60e5dfe4d14259a276a02667504fb9addf02c8da29b7e590ef52311d1ea",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1531772
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.process/0.1.1/io.dbx.process-0.1.1-linux-arm64.dbxp",
+              "sha256": "cc6d634f067e15adf5e08c3360afdd1f3577a18cd2a3df93e15321789a11082e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1828354
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.process/0.1.1/io.dbx.process-0.1.1-linux-x64.dbxp",
+              "sha256": "d4f3de1bd39a0a0411b04aa6170639a220e5e57ffba81f72dd286f1a6dee1eea",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1906788
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.process/0.1.1/io.dbx.process-0.1.1-windows-x64.dbxp",
+              "sha256": "9d323aaf4eb89f126a85ab07d17466ffd87ad93d09ff9dfd84e126d8090729a2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1869597
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "进程管理",
+          "description": "浏览、搜索并结束本机与远程主机上的操作系统进程。"
+        }
+      }
+    },
+    {
       "id": "io.dbx.rocketmq-dashboard-console",
       "name": "dbx-rocketmq-dashboard",
       "description": "一个类似于 apache/rocketmq-dashboard 的 RocketMQ 驾驶舱，复刻其原生 UI 与业务交互，通过 Go 后端在 DBX 中管理集群、Topic、消费组、消息和 ACL。",
       "publisher": "ezreal-byte",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.rocketmq-dashboard-console/0.3.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.rocketmq-dashboard-console/0.3.2/icon.svg",
       "tags": [
         "rocketmq",
         "dashboard",
@@ -7028,11 +7118,25 @@
       "permissions": [
         "host.workbench"
       ],
-      "source": "https://github.com/Ezreal-byte/dbx-rocketmq-dashboard/tree/v0.3.1",
+      "source": "https://github.com/Ezreal-byte/dbx-rocketmq-dashboard/tree/v0.3.2",
       "homepage": "https://github.com/Ezreal-byte/dbx-rocketmq-dashboard",
       "license": "Apache-2.0",
-      "latestVersion": "0.3.1",
+      "latestVersion": "0.3.2",
       "versions": [
+        {
+          "version": "0.3.2",
+          "releasedAt": "2026-10-26T06:39:16.667Z",
+          "releaseNotes": "修复 #2：ACL 允许/拒绝误显示、通配符规则编辑及策略删除定位；增加来源 IP 白名单、用户 Secret Key 编辑与具体 Broker 错误反馈，保留已禁用用户状态。新增真实 RocketMQ 5.5.0 和 SOCKS5 ACL 回归。",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.rocketmq-dashboard-console/0.3.2/io.dbx.rocketmq-dashboard-console-0.3.2-windows-x64.dbxp",
+              "sha256": "43058ad5dfe4823e537921a49c1d73f50c0464921e2d901587b7f81aefa345a5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3998436
+            }
+          ]
+        },
         {
           "version": "0.3.1",
           "releasedAt": "2026-10-23T03:16:56.117Z",
@@ -9328,10 +9432,10 @@
     {
       "id": "io.github.icefoxs.data-convert",
       "name": "Data Converter",
-      "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG. Pure frontend, no backend, works offline.",
+      "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601 and relative) one value per line, with foldable results and copies that carry results only. A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG. Pure frontend, no backend, works offline.",
       "publisher": "icefoxs",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.1.6/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.1.7/icon.svg",
       "tags": [
         "data-convert",
         "json",
@@ -9340,17 +9444,32 @@
         "base64",
         "chart",
         "codegen",
-        "byte"
+        "byte",
+        "timestamp"
       ],
       "permissions": [
         "host.clipboard:read",
         "host.workbench"
       ],
-      "source": "https://github.com/IceFoxs/dbx-plugin-data-convert/tree/v0.1.6",
+      "source": "https://github.com/IceFoxs/dbx-plugin-data-convert/tree/v0.1.7",
       "homepage": "https://github.com/IceFoxs/dbx-plugin-data-convert",
       "license": "MIT",
-      "latestVersion": "0.1.6",
+      "latestVersion": "0.1.7",
       "versions": [
+        {
+          "version": "0.1.7",
+          "releasedAt": "2026-10-26T06:39:19.648Z",
+          "releaseNotes": "A new Time Converter page turns timestamps and dates into each other. Paste one value per line — 2020-01-01, 2020-01-01 00:00:00, 2020-01-01T00:00:00, 1577836800 or 1577836800000 — and every line is converted into the notations you enable. Five shortcut buttons — Now, Today start, Yesterday, Week start and Month start — append the matching moment as a new line in one click, truncated to the second. Seven toggles cover Unix seconds, Unix milliseconds, local time, local time with T, UTC, ISO 8601 and relative time; local and local-with-T are on by default, so the everyday 2020-01-01 00:00:00 <-> 2020-01-01T00:00:00 swap works out of the box. Results come as one card per line: the header folds it away, moving the caret to line N highlights card N, every value copies on click, and the Copy button writes results only — one output line per input line, fields joined by spaces, no index, no original value, no labels. Relative time stays for reading and never enters the copy. A batch caps at 2000 lines and a bad line is flagged on its own. All eleven pages are translated into 14 languages, and everything runs locally: no network, no eval.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.1.7/io.github.icefoxs.data-convert-0.1.7-universal.dbxp",
+              "sha256": "6510818979b329c61d963ce0a3e70273a5c03ef46b0a6a2c58743d9e73cdf739",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 854036
+            }
+          ]
+        },
         {
           "version": "0.1.6",
           "releasedAt": "2026-10-24T17:28:19.544Z",
@@ -9397,15 +9516,15 @@
       "localizations": {
         "zh-CN": {
           "name": "数据转换",
-          "description": "在 DBX 工作台里一次转完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 种格式任意互转、JSONPath / jq 查询与 JSON Schema 校验（含从样例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正则 8 种转义互转、字节换算（B / KB / MB / GB / TB / PB，1000 与 1024 两套进制，精确值 ⇄ 人类可读，批量求和，以及 hex dump / 字节数组 / 二进制串）、批量文本生成 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 转 JSON，以及图片 ↔ Base64；「代码生成」页把一段 JSON 示例或一条 CREATE TABLE 直接变成 TypeScript / Go / Java / Python 模型；「JSON 转图表」页把一段 ECharts option（或一组数字）直接画成图，默认 700 × 400、宽高可改，可导出 PNG / SVG。纯前端、无后端、可离线运行。"
+          "description": "在 DBX 工作台里一次转完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 种格式任意互转、JSONPath / jq 查询与 JSON Schema 校验（含从样例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正则 8 种转义互转、字节换算（B / KB / MB / GB / TB / PB，1000 与 1024 两套进制，精确值 ⇄ 人类可读，批量求和，以及 hex dump / 字节数组 / 二进制串）、批量文本生成 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 转 JSON，以及图片 ↔ Base64；「代码生成」页把一段 JSON 示例或一条 CREATE TABLE 直接变成 TypeScript / Go / Java / Python 模型；「JSON 转图表」页把一段 ECharts option（或一组数字）直接画成图，默认 700 × 400、宽高可改，可导出 PNG / SVG；「时间转换」页把时间戳与日期批量互转（本地时间 / `T` 分隔 / UTC / ISO 8601 / 相对时间任选，结果可折叠、可单个复制）。纯前端、无后端、可离线运行。"
         },
         "zh-TW": {
           "name": "資料轉換",
-          "description": "在 DBX 工作台裡一次轉完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 種格式任意互轉、JSONPath / jq 查詢與 JSON Schema 校驗（含從範例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正則 8 種轉義互轉、位元組換算（B / KB / MB / GB / TB / PB，1000 與 1024 兩套進位，精確值 ⇄ 人類可讀，批次加總，以及 hex dump / 位元組陣列 / 二進位字串）、批次文字產生 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 轉 JSON，以及圖片 ↔ Base64；「程式碼產生」頁把一段 JSON 範例或一條 CREATE TABLE 直接變成 TypeScript / Go / Java / Python 模型；「JSON 轉圖表」頁把一段 ECharts option（或一組數字）直接畫成圖，預設 700 × 400、寬高可改，可匯出 PNG / SVG。純前端、無後端、可離線執行。"
+          "description": "在 DBX 工作台裡一次轉完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 種格式任意互轉、JSONPath / jq 查詢與 JSON Schema 校驗（含從範例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正則 8 種轉義互轉、位元組換算（B / KB / MB / GB / TB / PB，1000 與 1024 兩套進位，精確值 ⇄ 人類可讀，批次加總，以及 hex dump / 位元組陣列 / 二進位字串）、批次文字產生 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 轉 JSON，以及圖片 ↔ Base64；「程式碼產生」頁把一段 JSON 範例或一條 CREATE TABLE 直接變成 TypeScript / Go / Java / Python 模型；「JSON 轉圖表」頁把一段 ECharts option（或一組數字）直接畫成圖，預設 700 × 400、寬高可改，可匯出 PNG / SVG；「時間轉換」頁把時間戳與日期批次互轉（本地時間 / `T` 分隔 / UTC / ISO 8601 / 相對時間任選，結果可摺疊、可單獨複製）。純前端、無後端、可離線執行。"
         },
         "en": {
           "name": "Data Converter",
-          "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG. Pure frontend, no backend, works offline."
+          "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height,, and a Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601, relative) one value per line with foldable results, exported as PNG or SVG. Pure frontend, no backend, works offline."
         }
       }
     },
@@ -12102,7 +12221,7 @@
       "description": "A lightweight dev toolset under 200KB — instant to use. Sandboxed and offline with zero network access. High-frequency tools for crypto, encoding, text, data conversion, formatting, time, networking and image generation; inputs and options are remembered and sync seamlessly across devices via DBX.",
       "publisher": "terry",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.8/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.9/icon.svg",
       "tags": [
         "devtools",
         "utilities",
@@ -12122,8 +12241,22 @@
       "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "license": "MIT",
-      "latestVersion": "0.6.8",
+      "latestVersion": "0.6.9",
       "versions": [
+        {
+          "version": "0.6.9",
+          "releasedAt": "2026-10-26T06:39:25.072Z",
+          "releaseNotes": "修复：部分机器首页工具网格只显示 2 列且右侧留白（布局回归问题）；页脚 GitHub 入口点击后没有复制提示——浮层在空间不足时改为显示在控件上方，沙箱内复制失败时直接展示链接。视觉：收藏星标与收藏空状态图标改用主题色。 | Fix: on some machines the home grid shrank to 2 columns with dead space on the right (layout regression); the footer GitHub link gave no copy feedback — the chip now flips above the control when space is tight and shows the URL itself when copying is unavailable in the sandbox. Visual: favorite stars and the favorites empty-state now use the theme color.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.9/terry.devtools-0.6.9-universal.dbxp",
+              "sha256": "9fc5b4606138f04662ecb9210be986bbd70d63343d35584dc587cad6920713d5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 190628
+            }
+          ]
+        },
         {
           "version": "0.6.8",
           "releasedAt": "2026-10-24T17:28:05.098Z",

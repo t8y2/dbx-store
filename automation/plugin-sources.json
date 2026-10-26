@@ -215,6 +215,11 @@
       "repository": "zhengcan/dbx-notebook",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "allran/dbx-plugin-process",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
