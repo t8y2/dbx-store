@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "com.dbx.wsl",
+  "publisher": "w89588",
+  "version": "0.1.2",
+  "permissions": [
+    "host.workbench",
+    "host.events",
+    "host.storage",
+    "host.binary"
+  ],
+  "source": "https://github.com/w89588/dbx-plugin-wsl/tree/da9576b75704ad064ee4e6597ebc94ae57239740",
+  "releaseNotes": "新增发行版空闲退出与保活策略；保存配置前备份并检测外部修改及未保存编辑冲突，保存不会自动关闭 WSL。修复默认浏览器打开项目链接及键盘焦点行为，简化反馈入口。仅支持 Windows x64；保活不阻止 Windows 休眠，也不在登录时自动启动 WSL。虚拟机设置不适用于 WSL 1 或 wslc 容器。",
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/w89588/dbx-plugin-wsl/releases/download/v0.1.2/com.dbx.wsl-0.1.2-windows-x64.dbxp",
+      "sha256": "3c74d8b27d8e1d3d94c7bf1213eb324b8967718c2877b5f786812faad0bf0ce6",
+      "size": 3449360
+    }
+  ]
+}
