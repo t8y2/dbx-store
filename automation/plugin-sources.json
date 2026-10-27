@@ -225,6 +225,11 @@
       "repository": "zhengcan/dbx-notebook",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "huangqiang008/dbx-object-storage",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
