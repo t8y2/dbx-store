@@ -4,7 +4,7 @@
   "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ssh/ssh-v0.7.8/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ssh/ssh-v0.7.10/assets/plugin.svg",
   "tags": [
     "ssh",
     "terminal",
@@ -23,7 +23,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-ssh",
   "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
   "license": "MIT",
-  "latestVersion": "0.7.8",
+  "latestVersion": "0.7.10",
   "versions": [
     {
       "version": "0.4.72",
@@ -778,6 +778,48 @@
           "sha256": "1a9b3e946779f74ee222abf1c56b2230a5aedf50997a702fa9b55b95fa8efe79",
           "signingKeyId": "dbx-store-release-2026",
           "size": 14950326
+        }
+      ]
+    },
+    {
+      "version": "0.7.10",
+      "releasedAt": "2026-10-27T02:16:26.065Z",
+      "releaseNotes": "Store releases jump from 0.7.8 straight to 0.7.10, so this update includes both lines. 0.7.9 brings the first phase of the adaptive SFTP transfer engine - a self-contained .dbxz (lzpack) archive mode with local-only compression and expansion, download prefetch plus bounded raw-write pipelining for better throughput on high-latency links, and a per-connection transfer performance model - along with the sudo PTY lane hang fix, multi-format SFTP previews (image, Office, PDF, media, spreadsheet, Markdown) streamed in 1 MiB slices with progress, cancel and resume, default-on Alt/Option word editing, and an issue sweep (#214, #216, #217, #218, #219, #220, #223, #224a, plus MCP SFTP errors carrying numeric status codes). 0.7.10 itself fixes saving MCP size limits (#241), turns the SFTP loading state into an overlay so switching directories or refreshing keeps the old rows and scroll position instead of jumping, and passes Ctrl+F through to the remote inside alternate-screen programs such as vim (local search stays on the configurable hotkey, default Ctrl+Shift+F). The scheduler/task-provider declaration remains withheld until the DBX host ships that capability.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.10/io.dbx.ssh-0.7.10-darwin-arm64.dbxp",
+          "sha256": "a2ba14fb3e54194a1b15934ad8fbd6222429f811317f703278fd731b65a59cb8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 19398400
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.10/io.dbx.ssh-0.7.10-darwin-x64.dbxp",
+          "sha256": "a19d59d56e5fd8de185566fcd719420d29da015e86c361b7c1a746e852eceab1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 20033630
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.10/io.dbx.ssh-0.7.10-linux-arm64.dbxp",
+          "sha256": "e27a86521b4705460bab49b31cc0743b767c7afccdc0c0148ad1b131fc23897c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 20622874
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.10/io.dbx.ssh-0.7.10-linux-x64.dbxp",
+          "sha256": "1268410810ad1324508157204afa4ed4af977a09e7538ea665cbdb5c31b04d07",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 21095387
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.10/io.dbx.ssh-0.7.10-windows-x64.dbxp",
+          "sha256": "a76cc5dae399a332bae558d38112b161b1a610b3038bc521209912529d77f54e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18809296
         }
       ]
     }

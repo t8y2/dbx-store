@@ -1072,7 +1072,7 @@
       "description": "Visual manager for WSL distributions (wsl) and WSL containers (wslc) on Windows.",
       "publisher": "w89588",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.3/icon.svg",
       "tags": [
         "wsl",
         "containers",
@@ -1085,11 +1085,25 @@
         "host.storage",
         "host.binary"
       ],
-      "source": "https://github.com/w89588/dbx-plugin-wsl/tree/da9576b75704ad064ee4e6597ebc94ae57239740",
+      "source": "https://github.com/w89588/dbx-plugin-wsl/tree/25fd71b01ccc7597ef3e3005b9f587efd6eb2d88",
       "homepage": "https://github.com/w89588/dbx-plugin-wsl",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.2",
+      "latestVersion": "0.1.3",
       "versions": [
+        {
+          "version": "0.1.3",
+          "releasedAt": "2026-10-27T02:10:27.389Z",
+          "releaseNotes": "# WSL 管理器 v0.1.3\r\n\r\n相较 v0.1.2，本版本新增外部 MCP 管理、备份恢复与诊断配置工作流，并改善资源实时更新、任务一致性和配置保存体验。\r\n\r\n## 新增功能\r\n\r\n- **外部 MCP 接入**：新增 `wsl_connections`、`wsl_describe`、`wsl_read`、`wsl_write` 四个工具，覆盖 85 个管理接口，包括发行版与容器生命周期、命令执行、文件读写、镜像、卷、网络、配置、注册表和任务。写操作遵循宿主/客户端授权；会访问网络或检测端口的 `diagnostics/run` 统一要求 `wsl_write`，只读入口拒绝所有参数组合。\r\n- **备份与恢复**：提供 Windows 原生目录选择器、备份记录和 SHA-256 校验。运行中的发行版需明确停止后备份；恢复仅导入到新名称、新目录，并启动新发行版验证 `/bin/sh` 可用。失败时保留新资源供排查，不删除原发行版。\r\n- **诊断中心**：检查 WSL/WSLC、磁盘空间、指定回环端口和可选注册表 HTTPS 连通性，生成可复制的脱敏报告与建议，不自动修复。\r\n- **资源配置助手**：预览并调整内存、CPU 和交换空间，保留其他配置、注释与换行；保存后需自行重启 WSL 生效。\r\n- **后台开发环境模板**：RPC/MCP 提供 PostgreSQL、Redis 模板，支持计划、创建及状态查询，使用回环端口、密码认证、命名卷和健康检查；不提供模板页面，不自动创建 DBX 数据库连接。\r\n\r\n## 体验与可靠性\r\n\r\n- 资源变化通过现有宿主事件桥持续推送，页面原位更新列表、状态和统计，保留焦点、滚动位置与草稿，避免周期性整页刷新；隐藏时暂停，重连后同步快照。\r\n- 补偿任务终态事件丢失和乱序，当前 Sidecar 保留最多 32 个已结束任务、最长 24 小时，避免任务历史无限增长。\r\n- 配置保存增加修订号冲突检查，外部修改时保留草稿并拒绝覆盖；保留备份及 BOM。\r\n\r\n## 兼容性与权限\r\n\r\n- 不设置 DBX 产品版本安装门槛，保留 Host API 1。官方历史清单解析器验证边界为 DBX 0.6.27；0.6.26 不识别 MCP 声明。该结果不代表已在所有历史 DBX 客户端完成安装验证。\r\n- 仍仅支持 Windows x64，四项宿主权限不变。原生 Sidecar 以当前用户权限调用 WSL/WSLC，可执行命令、读写文件和访问网络；目录选择器运行固定 PowerShell 脚本。注册表登录由 WSLC 保存凭据；模板创建使用临时凭据文件，异常终止可能遗留文件，容器配置可能包含凭据。\r\n\r\n## 构建与发布\r\n\r\n使用固定 Go 1.24.13 与插件 CLI 0.1.9，从干净的发布标签提交构建。发布校验要求包内 EXE 的 `vcs.revision` 等于标签提交、`vcs.modified=false`，并核对包身份、SHA-256 与大小。GitHub 资产为未签名候选包，官方商店签名由维护者完成。\r\n\r\n**完整变更：** [v0.1.2...v0.1.3](https://github.com/w89588/dbx-plugin-wsl/compare/v0.1.2...v0.1.3)",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.3/com.dbx.wsl-0.1.3-windows-x64.dbxp",
+              "sha256": "7ffb402068cad0605f41d1e5367f0b8bf50ba7e503d30b35b4732963337e88c6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5819775
+            }
+          ]
+        },
         {
           "version": "0.1.2",
           "releasedAt": "2026-10-26T06:43:09.185Z",
@@ -6980,21 +6994,147 @@
     {
       "id": "io.dbx.password",
       "name": "Password Manager",
-      "description": "Organize local passwords in nested groups: create, search, and edit entries.",
+      "description": "Organize local passwords in nested groups. Vault always AES-GCM encrypted; optional Argon2id master password.",
       "publisher": "alan",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.password/0.2.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.3/icon.svg",
       "tags": [
         "password",
         "productivity",
         "workbench"
       ],
       "permissions": [],
-      "source": "https://github.com/allran/dbx-plugin-password/tree/v0.2.0",
+      "source": "https://github.com/allran/dbx-plugin-password/tree/v0.3.3",
       "homepage": "https://github.com/allran/dbx-plugin-password",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.0",
+      "latestVersion": "0.3.3",
       "versions": [
+        {
+          "version": "0.3.3",
+          "releasedAt": "2026-10-27T06:14:39.545Z",
+          "releaseNotes": "v0.3.3: persist keeps unlocked Argon2 params (fixes silent rekey on save), AAD v4 binds m/t/p, KDF param bounds, Windows icacls via System32 absolute path.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.3/io.dbx.password-0.3.3-darwin-arm64.dbxp",
+              "sha256": "4b6cf9270fd11f67ebc936c33fbb163fb3787e0797155be9726cea6189f8675f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 377368
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.3/io.dbx.password-0.3.3-darwin-x64.dbxp",
+              "sha256": "d1c0259774b9cb4763f31ff5d2a921dd7930100e50b3d58e5757a18d59d8a05f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 414542
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.3/io.dbx.password-0.3.3-linux-arm64.dbxp",
+              "sha256": "3a457b6290ee90bc9ed390fd3dd2ee615a944527684105ae13c47a1f3f5ee9f3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 406143
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.3/io.dbx.password-0.3.3-linux-x64.dbxp",
+              "sha256": "fd908c81c35e4739824bd5ca63f4e68e814b69658982151793340b22dccf8286",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 436439
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.3/io.dbx.password-0.3.3-windows-x64.dbxp",
+              "sha256": "7350d2d04d2566f63f2611b72cfc05c0efc2c75b2141b85079dc11ad70fb6ffe",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 379625
+            }
+          ]
+        },
+        {
+          "version": "0.3.2",
+          "releasedAt": "2026-10-27T02:48:33.156Z",
+          "releaseNotes": "v0.3.2: Windows atomic replace (MoveFileEx), GCM AAD + Argon2 params in envelope (v3), zeroize keys, envelope validation, list redacts passwords (password/get for detail), i18n/clipboard UX.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.2/io.dbx.password-0.3.2-darwin-arm64.dbxp",
+              "sha256": "13733af7b22d867c6aa2282a388e0373fd6e018cd0f6bd0976288493da962f8d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 376927
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.2/io.dbx.password-0.3.2-darwin-x64.dbxp",
+              "sha256": "1b1e4c838c039161bf2ee0243c0bb828a602ef7367ccc2f8031edbab52a9db24",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 412983
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.2/io.dbx.password-0.3.2-linux-arm64.dbxp",
+              "sha256": "e98b39112350f676a4b90bbdb33196d236701cf54027fc62c8bc20a76f2b1846",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 404625
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.2/io.dbx.password-0.3.2-linux-x64.dbxp",
+              "sha256": "279438cdd9fc31ead35d55a07ad3966012147b0dbea2671c589cb514d98a95ab",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 434465
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.2/io.dbx.password-0.3.2-windows-x64.dbxp",
+              "sha256": "b72e8f39f6588a9c9553338a6cfe05f6084bd0bdf449534e89d3a2c0fefdec9b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 377531
+            }
+          ]
+        },
+        {
+          "version": "0.3.1",
+          "releasedAt": "2026-10-26T12:38:29.604Z",
+          "releaseNotes": "v0.3.1: fix vault.key write order (key before envelope), 0600 key permissions, skip rewriting key on every save, lock clears memory even if persist fails, migrate failures no longer silent.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.1/io.dbx.password-0.3.1-darwin-arm64.dbxp",
+              "sha256": "d064c5404d70b530b62609159bfb61b81d093a4824cd43929aec8681a51be7cd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 370400
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.1/io.dbx.password-0.3.1-darwin-x64.dbxp",
+              "sha256": "da0b04ad8efd2b0824a8a1d99fcbe84fcd5b7b457e9651be0d847ee735396b63",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 406335
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.1/io.dbx.password-0.3.1-linux-arm64.dbxp",
+              "sha256": "d3dadff8d23db47ece5960f986fe3a631e5292e799f8ecb3ecb97f77cf17c3ab",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 399736
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.1/io.dbx.password-0.3.1-linux-x64.dbxp",
+              "sha256": "06fd915f7b96d99e4c1d29b8fdff2c5541ff627bd188832289507153c5d91c28",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 427518
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.password/0.3.1/io.dbx.password-0.3.1-windows-x64.dbxp",
+              "sha256": "79e34ea538a9708b8837d06a5f95113722149d8a28ce7365e2ed4014ae045451",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 334552
+            }
+          ]
+        },
         {
           "version": "0.2.0",
           "releasedAt": "2026-10-24T17:22:44.480Z",
@@ -7083,7 +7223,7 @@
       "localizations": {
         "zh-CN": {
           "name": "密码管理",
-          "description": "按多层分组管理本地密码：新建、搜索与编辑条目。"
+          "description": "按多层分组管理本地密码；密码库始终加密，可选主密码解锁。"
         }
       }
     },
@@ -7229,7 +7369,7 @@
       "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.8/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.10/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -7248,8 +7388,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.7.8",
+      "latestVersion": "0.7.10",
       "versions": [
+        {
+          "version": "0.7.10",
+          "releasedAt": "2026-10-27T02:16:26.065Z",
+          "releaseNotes": "Store releases jump from 0.7.8 straight to 0.7.10, so this update includes both lines. 0.7.9 brings the first phase of the adaptive SFTP transfer engine - a self-contained .dbxz (lzpack) archive mode with local-only compression and expansion, download prefetch plus bounded raw-write pipelining for better throughput on high-latency links, and a per-connection transfer performance model - along with the sudo PTY lane hang fix, multi-format SFTP previews (image, Office, PDF, media, spreadsheet, Markdown) streamed in 1 MiB slices with progress, cancel and resume, default-on Alt/Option word editing, and an issue sweep (#214, #216, #217, #218, #219, #220, #223, #224a, plus MCP SFTP errors carrying numeric status codes). 0.7.10 itself fixes saving MCP size limits (#241), turns the SFTP loading state into an overlay so switching directories or refreshing keeps the old rows and scroll position instead of jumping, and passes Ctrl+F through to the remote inside alternate-screen programs such as vim (local search stays on the configurable hotkey, default Ctrl+Shift+F). The scheduler/task-provider declaration remains withheld until the DBX host ships that capability.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.10/io.dbx.ssh-0.7.10-darwin-arm64.dbxp",
+              "sha256": "a2ba14fb3e54194a1b15934ad8fbd6222429f811317f703278fd731b65a59cb8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 19398400
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.10/io.dbx.ssh-0.7.10-darwin-x64.dbxp",
+              "sha256": "a19d59d56e5fd8de185566fcd719420d29da015e86c361b7c1a746e852eceab1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 20033630
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.10/io.dbx.ssh-0.7.10-linux-arm64.dbxp",
+              "sha256": "e27a86521b4705460bab49b31cc0743b767c7afccdc0c0148ad1b131fc23897c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 20622874
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.10/io.dbx.ssh-0.7.10-linux-x64.dbxp",
+              "sha256": "1268410810ad1324508157204afa4ed4af977a09e7538ea665cbdb5c31b04d07",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 21095387
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.10/io.dbx.ssh-0.7.10-windows-x64.dbxp",
+              "sha256": "a76cc5dae399a332bae558d38112b161b1a610b3038bc521209912529d77f54e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18809296
+            }
+          ]
+        },
         {
           "version": "0.7.8",
           "releasedAt": "2026-10-18T19:31:27.995Z",
@@ -9448,6 +9630,47 @@
       }
     },
     {
+      "id": "io.github.chow-code.redis-bson-codec",
+      "name": "Redis BSON Codec",
+      "description": "Decode Redis BSON values into type-preserving Extended JSON, with an optional custom external-program codec.",
+      "publisher": "chow-code",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.chow-code.redis-bson-codec/0.1.0/icon.svg",
+      "tags": [
+        "redis",
+        "bson",
+        "codec",
+        "developer-tools"
+      ],
+      "permissions": [],
+      "source": "https://github.com/Chow-Code/dbx-bson-codec/tree/v0.1.0",
+      "homepage": "https://github.com/Chow-Code/dbx-bson-codec",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-10-27T06:55:23.168Z",
+          "releaseNotes": "Initial Windows x64 candidate: bundled BSON to Canonical Extended JSON, workbench reverse encoding and byte-level round-trip checks, plus an optional custom external-program codec. Requires a DBX build with redis-value-codec-v1 (confirmed in v0.6.55 and later source).",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.chow-code.redis-bson-codec/0.1.0/io.github.chow-code.redis-bson-codec-0.1.0-windows-x64.dbxp",
+              "sha256": "e68b842e9e0fdd5f428a7d34bd84cfc57b8ff6cfeaff0ce0b0831bbb68f30414",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1676151
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "Redis BSON 编解码",
+          "description": "将 Redis BSON 二进制解码为保留类型的 Extended JSON，并支持自定义外部程序。"
+        }
+      }
+    },
+    {
       "id": "io.github.icefoxs.aes-tools",
       "name": "aes-tools",
       "description": "AES-128-ECB encryption/decryption plugin based on the DBX platform, compatible with Hutool's default AES configuration. (AES-128-ECB is deterministic encryption and not semantically secure)",
@@ -9523,10 +9746,10 @@
     {
       "id": "io.github.icefoxs.data-convert",
       "name": "Data Converter",
-      "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601 and relative) one value per line, with foldable results and copies that carry results only. A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG. Pure frontend, no backend, works offline.",
+      "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601 and relative) one value per line, with foldable results and copies that carry results only. A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG, and a QR code page turns any text into a batch of codes (size, error correction, margin and colours adjustable, an icon in the middle, PNG or SVG export) or decodes pictures back into text. The navigation bar is yours to arrange: drag the eleven entries into your own order, pin the ones you use most (they are the last to fall into More when the window narrows), and keep the bar sticky; the setup is remembered along with the layout. Pure frontend, no backend, works offline.",
       "publisher": "icefoxs",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.1.7/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.1.8/icon.svg",
       "tags": [
         "data-convert",
         "json",
@@ -9535,18 +9758,34 @@
         "base64",
         "chart",
         "codegen",
+        "qrcode",
         "byte",
         "timestamp"
       ],
       "permissions": [
         "host.clipboard:read",
+        "host.storage",
         "host.workbench"
       ],
-      "source": "https://github.com/IceFoxs/dbx-plugin-data-convert/tree/v0.1.7",
+      "source": "https://github.com/IceFoxs/dbx-plugin-data-convert/tree/v0.1.8",
       "homepage": "https://github.com/IceFoxs/dbx-plugin-data-convert",
       "license": "MIT",
-      "latestVersion": "0.1.7",
+      "latestVersion": "0.1.8",
       "versions": [
+        {
+          "version": "0.1.8",
+          "releasedAt": "2026-10-27T02:17:45.624Z",
+          "releaseNotes": "Your navigation bar now fits the way you work: a sliders button in the top bar opens Navigation settings, where the eleven entries can be dragged (or nudged with arrows) into any order and the ones you reach for most can be pinned — pinned entries stay in front and are the last to fall into the More menu when the window narrows. Sticky navigation bar keeps the bar at the top while content scrolls, and in the left-hand column pinned entries stay glued to the top as the column scrolls. Everything is remembered across reloads and restarts through the host plugin storage, stored under its own versioned key so rolling back to an older build is safe and upgrading again keeps your setup; new entries are appended to the end automatically, no migration needed. Also fixed: the More menu no longer scrambles pinned and unpinned entries together, and dragging a row now works inside the workbench, where the host webview takes over native drag and drop — reordering runs on pointer events instead. Generate QR codes in batches, or read them back out of pictures. One line becomes one code — a column of links, ids or any short text turns into a wall of codes; switch the split to whole block and the line breaks stay inside a single code. Size, error correction, margin, foreground and background colours are all settings, and an icon can sit in the middle (uploading one pushes the error correction to H, the only level at which a code with a hole in the middle still decodes). Cards fold down to their number plus a preview, jump the cursor back to the line they came from, copy their own text or image, and a single export opens a small panel where format, size and file name are settled on the spot — the choice is remembered for the next card; double-clicking a code opens it full screen in a lightbox that stays sharp at any zoom; the whole batch exports as a single tiled PNG. The second tab decodes dropped images, pasted screenshots or a batch of files into text, line breaks included. Both engines ship offline and load as blob: URLs, and text is encoded as UTF-8, so Chinese content decodes correctly. Your navigation can now live on the left. A layout button at the far right of the top bar moves the eleven navigation entries into a vertical column (13rem wide) and hands the content area the same space back; click again to return to the top, which stays the default. On the left the top bar keeps only the brand, the language switcher and this button; the format-convert picker moves to the top of the column and expands inside it, pushing the entries down instead of floating over them. The vertical column fits every entry, so \"More\" no longer appears. Your choice is remembered across reloads and app restarts through the host plugin storage (the workbench sandbox has an opaque origin, so localStorage is not available there); when the host cannot store it, the plugin falls back to browser localStorage and then to window.name, which is the only channel that survives inside the dbx-plugin dev sandbox (localStorage, sessionStorage and cookies all throw there). A small fix rides along: navigation entries and the gaps between them are tighter, so all eleven still fit a 1440-wide window now that the button and the eleventh entry are there. All twelve pages stay translated into 14 languages, and everything still runs locally: no network, no eval.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.1.8/io.github.icefoxs.data-convert-0.1.8-universal.dbxp",
+              "sha256": "6f4fa369c09f1b4417ace28ab75c4495cb749243449e5acac8a5dd318722e81f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 986564
+            }
+          ]
+        },
         {
           "version": "0.1.7",
           "releasedAt": "2026-10-26T06:39:19.648Z",
@@ -9607,15 +9846,15 @@
       "localizations": {
         "zh-CN": {
           "name": "数据转换",
-          "description": "在 DBX 工作台里一次转完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 种格式任意互转、JSONPath / jq 查询与 JSON Schema 校验（含从样例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正则 8 种转义互转、字节换算（B / KB / MB / GB / TB / PB，1000 与 1024 两套进制，精确值 ⇄ 人类可读，批量求和，以及 hex dump / 字节数组 / 二进制串）、批量文本生成 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 转 JSON，以及图片 ↔ Base64；「代码生成」页把一段 JSON 示例或一条 CREATE TABLE 直接变成 TypeScript / Go / Java / Python 模型；「JSON 转图表」页把一段 ECharts option（或一组数字）直接画成图，默认 700 × 400、宽高可改，可导出 PNG / SVG；「时间转换」页把时间戳与日期批量互转（本地时间 / `T` 分隔 / UTC / ISO 8601 / 相对时间任选，结果可折叠、可单个复制）。纯前端、无后端、可离线运行。"
+          "description": "在 DBX 工作台里一次转完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 种格式任意互转、JSONPath / jq 查询与 JSON Schema 校验（含从样例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正则 8 种转义互转、字节换算（B / KB / MB / GB / TB / PB，1000 与 1024 两套进制，精确值 ⇄ 人类可读，批量求和，以及 hex dump / 字节数组 / 二进制串）、批量文本生成 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 转 JSON，以及图片 ↔ Base64；「代码生成」页把一段 JSON 示例或一条 CREATE TABLE 直接变成 TypeScript / Go / Java / Python 模型；「JSON 转图表」页把一段 ECharts option（或一组数字）直接画成图，默认 700 × 400、宽高可改，可导出 PNG / SVG；「时间转换」页把时间戳与日期批量互转（本地时间 / `T` 分隔 / UTC / ISO 8601 / 相对时间任选，结果可折叠、可单个复制）；「二维码转换」页把一段文本批量生成二维码（尺寸 / 纠错 / 边距 / 配色可调，中心可放图标，导出 PNG / SVG），也能把图片里的二维码解回文本。导航栏可以自己排：拖动调整十一个入口的顺序、把常用项置顶（窗口变窄时最后才被收进「更多」）、导航条吸顶，设置连同布局一起记住。纯前端、无后端、可离线运行。"
         },
         "zh-TW": {
           "name": "資料轉換",
-          "description": "在 DBX 工作台裡一次轉完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 種格式任意互轉、JSONPath / jq 查詢與 JSON Schema 校驗（含從範例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正則 8 種轉義互轉、位元組換算（B / KB / MB / GB / TB / PB，1000 與 1024 兩套進位，精確值 ⇄ 人類可讀，批次加總，以及 hex dump / 位元組陣列 / 二進位字串）、批次文字產生 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 轉 JSON，以及圖片 ↔ Base64；「程式碼產生」頁把一段 JSON 範例或一條 CREATE TABLE 直接變成 TypeScript / Go / Java / Python 模型；「JSON 轉圖表」頁把一段 ECharts option（或一組數字）直接畫成圖，預設 700 × 400、寬高可改，可匯出 PNG / SVG；「時間轉換」頁把時間戳與日期批次互轉（本地時間 / `T` 分隔 / UTC / ISO 8601 / 相對時間任選，結果可摺疊、可單獨複製）。純前端、無後端、可離線執行。"
+          "description": "在 DBX 工作台裡一次轉完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 種格式任意互轉、JSONPath / jq 查詢與 JSON Schema 校驗（含從範例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正則 8 種轉義互轉、位元組換算（B / KB / MB / GB / TB / PB，1000 與 1024 兩套進位，精確值 ⇄ 人類可讀，批次加總，以及 hex dump / 位元組陣列 / 二進位字串）、批次文字產生 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 轉 JSON，以及圖片 ↔ Base64；「程式碼產生」頁把一段 JSON 範例或一條 CREATE TABLE 直接變成 TypeScript / Go / Java / Python 模型；「JSON 轉圖表」頁把一段 ECharts option（或一組數字）直接畫成圖，預設 700 × 400、寬高可改，可匯出 PNG / SVG；「時間轉換」頁把時間戳與日期批次互轉（本地時間 / `T` 分隔 / UTC / ISO 8601 / 相對時間任選，結果可摺疊、可單獨複製）；「二維碼轉換」頁把一段文字批次產生二維碼（尺寸 / 糾錯 / 邊距 / 配色可調，中心可放圖示，匯出 PNG / SVG），也能把圖片裡的二維碼解回文字。導覽列可以自己排：拖曳調整十一個入口的順序、把常用項置頂（視窗變窄時最後才會被收進「更多」）、導覽列吸頂，設定連同版面一起記住。純前端、無後端、可離線執行。"
         },
         "en": {
           "name": "Data Converter",
-          "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height,, and a Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601, relative) one value per line with foldable results, exported as PNG or SVG. Pure frontend, no backend, works offline."
+          "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG. A Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601, relative) one value per line with foldable results. A QR code page turns any text into a batch of codes (size, error correction, margin and colours adjustable, an icon in the middle, PNG or SVG export) or decodes pictures back into text. The navigation bar is yours to arrange: drag the eleven entries into your own order, pin the ones you use most (they are the last to fall into More when the window narrows), and keep the bar sticky; the setup is remembered along with the layout. Pure frontend, no backend, works offline."
         }
       }
     },
@@ -10080,6 +10319,78 @@
         "en": {
           "name": "Embedded Terminal",
           "description": "Run an interactive local shell directly inside a DBX workbench."
+        }
+      }
+    },
+    {
+      "id": "io.github.my2sql",
+      "name": "my2sql Binlog Toolkit",
+      "description": "MySQL binlog viewer, SQL/rollback generator and flashback executor for DBX.",
+      "publisher": "cutemolly",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/icon.svg",
+      "tags": [
+        "mysql",
+        "binlog",
+        "rollback",
+        "dba"
+      ],
+      "permissions": [
+        "host.connections:read",
+        "host.events"
+      ],
+      "source": "https://github.com/cutemolly/dbx-plugin-my2sql/tree/v1.0.1",
+      "homepage": "https://github.com/cutemolly/dbx-plugin-my2sql",
+      "license": "MIT",
+      "latestVersion": "1.0.1",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "releasedAt": "2026-10-27T06:22:41.231Z",
+          "releaseNotes": "1.0.1: security review fixes (jobId path-traversal guard, UI HTML escaping, server-side one-shot execution confirmation), disclosure corrections, packaged LICENSE + third-party notices, per-connection TLS (off/require/verify), 0600 output files. Round 2 on the same tag: large output files are streamed instead of read whole (a multi-GB rollback script could abort the sidecar), manual stop keeps the generated files and statistics, history view with connection attribution plus per-job delete, panic isolation at the request/engine/exec boundaries, lazy output preview.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-darwin-arm64.dbxp",
+              "sha256": "bd4b625cf3b8e093fb08492337aadbbc8eefd7bdb89141ccdc0b9e9feb4a77e4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6370373
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-darwin-x64.dbxp",
+              "sha256": "3572136942d3576df74406c9bf84f61d0bc30caf617320f3aec963a7bd6b8a08",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6634217
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-linux-arm64.dbxp",
+              "sha256": "c7a0a46906478f9661e588dbce794b0a8b38836e459f3ed8ecbe99cebd99b8fe",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6291600
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-linux-x64.dbxp",
+              "sha256": "9d5c0fb7b6a14fc4f783b209c3516880b1a457ad54cfcc2a3f86b38472c0ac5c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6653858
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-windows-x64.dbxp",
+              "sha256": "7fadbd5e6d4e6be2987a48db555e936adb1cda145d632e68ad1c66e6c8386041",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6753576
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "my2sql Binlog 工具",
+          "description": "MySQL binlog 查看、SQL/回滚生成与闪回执行工具。"
         }
       }
     },

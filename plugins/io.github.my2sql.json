@@ -1,0 +1,72 @@
+{
+  "id": "io.github.my2sql",
+  "name": "my2sql Binlog Toolkit",
+  "description": "MySQL binlog viewer, SQL/rollback generator and flashback executor for DBX.",
+  "publisher": "cutemolly",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/cutemolly/dbx-plugin-my2sql/v1.0.1/assets/plugin.svg",
+  "tags": [
+    "mysql",
+    "binlog",
+    "rollback",
+    "dba"
+  ],
+  "permissions": [
+    "host.connections:read",
+    "host.events"
+  ],
+  "source": "https://github.com/cutemolly/dbx-plugin-my2sql/tree/v1.0.1",
+  "homepage": "https://github.com/cutemolly/dbx-plugin-my2sql",
+  "license": "MIT",
+  "latestVersion": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.1",
+      "releasedAt": "2026-10-27T06:22:41.231Z",
+      "releaseNotes": "1.0.1: security review fixes (jobId path-traversal guard, UI HTML escaping, server-side one-shot execution confirmation), disclosure corrections, packaged LICENSE + third-party notices, per-connection TLS (off/require/verify), 0600 output files. Round 2 on the same tag: large output files are streamed instead of read whole (a multi-GB rollback script could abort the sidecar), manual stop keeps the generated files and statistics, history view with connection attribution plus per-job delete, panic isolation at the request/engine/exec boundaries, lazy output preview.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-darwin-arm64.dbxp",
+          "sha256": "bd4b625cf3b8e093fb08492337aadbbc8eefd7bdb89141ccdc0b9e9feb4a77e4",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6370373
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-darwin-x64.dbxp",
+          "sha256": "3572136942d3576df74406c9bf84f61d0bc30caf617320f3aec963a7bd6b8a08",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6634217
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-linux-x64.dbxp",
+          "sha256": "9d5c0fb7b6a14fc4f783b209c3516880b1a457ad54cfcc2a3f86b38472c0ac5c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6653858
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-linux-arm64.dbxp",
+          "sha256": "c7a0a46906478f9661e588dbce794b0a8b38836e459f3ed8ecbe99cebd99b8fe",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6291600
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.my2sql/1.0.1/io.github.my2sql-1.0.1-windows-x64.dbxp",
+          "sha256": "7fadbd5e6d4e6be2987a48db555e936adb1cda145d632e68ad1c66e6c8386041",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6753576
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "my2sql Binlog 工具",
+      "description": "MySQL binlog 查看、SQL/回滚生成与闪回执行工具。"
+    }
+  }
+}

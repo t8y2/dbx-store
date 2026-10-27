@@ -1,10 +1,10 @@
 {
   "id": "io.github.icefoxs.data-convert",
   "name": "Data Converter",
-  "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601 and relative) one value per line, with foldable results and copies that carry results only. A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG. Pure frontend, no backend, works offline.",
+  "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601 and relative) one value per line, with foldable results and copies that carry results only. A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG, and a QR code page turns any text into a batch of codes (size, error correction, margin and colours adjustable, an icon in the middle, PNG or SVG export) or decodes pictures back into text. The navigation bar is yours to arrange: drag the eleven entries into your own order, pin the ones you use most (they are the last to fall into More when the window narrows), and keep the bar sticky; the setup is remembered along with the layout. Pure frontend, no backend, works offline.",
   "publisher": "icefoxs",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/IceFoxs/dbx-plugin-data-convert/v0.1.7/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/IceFoxs/dbx-plugin-data-convert/v0.1.8/assets/plugin.svg",
   "tags": [
     "data-convert",
     "json",
@@ -13,17 +13,19 @@
     "base64",
     "chart",
     "codegen",
+    "qrcode",
     "byte",
     "timestamp"
   ],
   "permissions": [
     "host.clipboard:read",
+    "host.storage",
     "host.workbench"
   ],
-  "source": "https://github.com/IceFoxs/dbx-plugin-data-convert/tree/v0.1.7",
+  "source": "https://github.com/IceFoxs/dbx-plugin-data-convert/tree/v0.1.8",
   "homepage": "https://github.com/IceFoxs/dbx-plugin-data-convert",
   "license": "MIT",
-  "latestVersion": "0.1.7",
+  "latestVersion": "0.1.8",
   "versions": [
     {
       "version": "0.1.3",
@@ -80,20 +82,34 @@
           "size": 854036
         }
       ]
+    },
+    {
+      "version": "0.1.8",
+      "releasedAt": "2026-10-27T02:17:45.624Z",
+      "releaseNotes": "Your navigation bar now fits the way you work: a sliders button in the top bar opens Navigation settings, where the eleven entries can be dragged (or nudged with arrows) into any order and the ones you reach for most can be pinned — pinned entries stay in front and are the last to fall into the More menu when the window narrows. Sticky navigation bar keeps the bar at the top while content scrolls, and in the left-hand column pinned entries stay glued to the top as the column scrolls. Everything is remembered across reloads and restarts through the host plugin storage, stored under its own versioned key so rolling back to an older build is safe and upgrading again keeps your setup; new entries are appended to the end automatically, no migration needed. Also fixed: the More menu no longer scrambles pinned and unpinned entries together, and dragging a row now works inside the workbench, where the host webview takes over native drag and drop — reordering runs on pointer events instead. Generate QR codes in batches, or read them back out of pictures. One line becomes one code — a column of links, ids or any short text turns into a wall of codes; switch the split to whole block and the line breaks stay inside a single code. Size, error correction, margin, foreground and background colours are all settings, and an icon can sit in the middle (uploading one pushes the error correction to H, the only level at which a code with a hole in the middle still decodes). Cards fold down to their number plus a preview, jump the cursor back to the line they came from, copy their own text or image, and a single export opens a small panel where format, size and file name are settled on the spot — the choice is remembered for the next card; double-clicking a code opens it full screen in a lightbox that stays sharp at any zoom; the whole batch exports as a single tiled PNG. The second tab decodes dropped images, pasted screenshots or a batch of files into text, line breaks included. Both engines ship offline and load as blob: URLs, and text is encoded as UTF-8, so Chinese content decodes correctly. Your navigation can now live on the left. A layout button at the far right of the top bar moves the eleven navigation entries into a vertical column (13rem wide) and hands the content area the same space back; click again to return to the top, which stays the default. On the left the top bar keeps only the brand, the language switcher and this button; the format-convert picker moves to the top of the column and expands inside it, pushing the entries down instead of floating over them. The vertical column fits every entry, so \"More\" no longer appears. Your choice is remembered across reloads and app restarts through the host plugin storage (the workbench sandbox has an opaque origin, so localStorage is not available there); when the host cannot store it, the plugin falls back to browser localStorage and then to window.name, which is the only channel that survives inside the dbx-plugin dev sandbox (localStorage, sessionStorage and cookies all throw there). A small fix rides along: navigation entries and the gaps between them are tighter, so all eleven still fit a 1440-wide window now that the button and the eleventh entry are there. All twelve pages stay translated into 14 languages, and everything still runs locally: no network, no eval.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.1.8/io.github.icefoxs.data-convert-0.1.8-universal.dbxp",
+          "sha256": "6f4fa369c09f1b4417ace28ab75c4495cb749243449e5acac8a5dd318722e81f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 986564
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "数据转换",
-      "description": "在 DBX 工作台里一次转完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 种格式任意互转、JSONPath / jq 查询与 JSON Schema 校验（含从样例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正则 8 种转义互转、字节换算（B / KB / MB / GB / TB / PB，1000 与 1024 两套进制，精确值 ⇄ 人类可读，批量求和，以及 hex dump / 字节数组 / 二进制串）、批量文本生成 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 转 JSON，以及图片 ↔ Base64；「代码生成」页把一段 JSON 示例或一条 CREATE TABLE 直接变成 TypeScript / Go / Java / Python 模型；「JSON 转图表」页把一段 ECharts option（或一组数字）直接画成图，默认 700 × 400、宽高可改，可导出 PNG / SVG；「时间转换」页把时间戳与日期批量互转（本地时间 / `T` 分隔 / UTC / ISO 8601 / 相对时间任选，结果可折叠、可单个复制）。纯前端、无后端、可离线运行。"
+      "description": "在 DBX 工作台里一次转完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 种格式任意互转、JSONPath / jq 查询与 JSON Schema 校验（含从样例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正则 8 种转义互转、字节换算（B / KB / MB / GB / TB / PB，1000 与 1024 两套进制，精确值 ⇄ 人类可读，批量求和，以及 hex dump / 字节数组 / 二进制串）、批量文本生成 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 转 JSON，以及图片 ↔ Base64；「代码生成」页把一段 JSON 示例或一条 CREATE TABLE 直接变成 TypeScript / Go / Java / Python 模型；「JSON 转图表」页把一段 ECharts option（或一组数字）直接画成图，默认 700 × 400、宽高可改，可导出 PNG / SVG；「时间转换」页把时间戳与日期批量互转（本地时间 / `T` 分隔 / UTC / ISO 8601 / 相对时间任选，结果可折叠、可单个复制）；「二维码转换」页把一段文本批量生成二维码（尺寸 / 纠错 / 边距 / 配色可调，中心可放图标，导出 PNG / SVG），也能把图片里的二维码解回文本。导航栏可以自己排：拖动调整十一个入口的顺序、把常用项置顶（窗口变窄时最后才被收进「更多」）、导航条吸顶，设置连同布局一起记住。纯前端、无后端、可离线运行。"
     },
     "zh-TW": {
       "name": "資料轉換",
-      "description": "在 DBX 工作台裡一次轉完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 種格式任意互轉、JSONPath / jq 查詢與 JSON Schema 校驗（含從範例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正則 8 種轉義互轉、位元組換算（B / KB / MB / GB / TB / PB，1000 與 1024 兩套進位，精確值 ⇄ 人類可讀，批次加總，以及 hex dump / 位元組陣列 / 二進位字串）、批次文字產生 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 轉 JSON，以及圖片 ↔ Base64；「程式碼產生」頁把一段 JSON 範例或一條 CREATE TABLE 直接變成 TypeScript / Go / Java / Python 模型；「JSON 轉圖表」頁把一段 ECharts option（或一組數字）直接畫成圖，預設 700 × 400、寬高可改，可匯出 PNG / SVG；「時間轉換」頁把時間戳與日期批次互轉（本地時間 / `T` 分隔 / UTC / ISO 8601 / 相對時間任選，結果可摺疊、可單獨複製）。純前端、無後端、可離線執行。"
+      "description": "在 DBX 工作台裡一次轉完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 種格式任意互轉、JSONPath / jq 查詢與 JSON Schema 校驗（含從範例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正則 8 種轉義互轉、位元組換算（B / KB / MB / GB / TB / PB，1000 與 1024 兩套進位，精確值 ⇄ 人類可讀，批次加總，以及 hex dump / 位元組陣列 / 二進位字串）、批次文字產生 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 轉 JSON，以及圖片 ↔ Base64；「程式碼產生」頁把一段 JSON 範例或一條 CREATE TABLE 直接變成 TypeScript / Go / Java / Python 模型；「JSON 轉圖表」頁把一段 ECharts option（或一組數字）直接畫成圖，預設 700 × 400、寬高可改，可匯出 PNG / SVG；「時間轉換」頁把時間戳與日期批次互轉（本地時間 / `T` 分隔 / UTC / ISO 8601 / 相對時間任選，結果可摺疊、可單獨複製）；「二維碼轉換」頁把一段文字批次產生二維碼（尺寸 / 糾錯 / 邊距 / 配色可調，中心可放圖示，匯出 PNG / SVG），也能把圖片裡的二維碼解回文字。導覽列可以自己排：拖曳調整十一個入口的順序、把常用項置頂（視窗變窄時最後才會被收進「更多」）、導覽列吸頂，設定連同版面一起記住。純前端、無後端、可離線執行。"
     },
     "en": {
       "name": "Data Converter",
-      "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height,, and a Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601, relative) one value per line with foldable results, exported as PNG or SVG. Pure frontend, no backend, works offline."
+      "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG. A Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601, relative) one value per line with foldable results. A QR code page turns any text into a batch of codes (size, error correction, margin and colours adjustable, an icon in the middle, PNG or SVG export) or decodes pictures back into text. The navigation bar is yours to arrange: drag the eleven entries into your own order, pin the ones you use most (they are the last to fall into More when the window narrows), and keep the bar sticky; the setup is remembered along with the layout. Pure frontend, no backend, works offline."
     }
   }
 }
