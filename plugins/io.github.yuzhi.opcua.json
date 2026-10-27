@@ -1,25 +1,26 @@
 {
   "id": "io.github.yuzhi.opcua",
   "name": "OPC UA",
-  "description": "Browse the OPC UA address space of PLCs and servers, then read and write node values.",
+  "description": "Browse the OPC UA address space of PLCs and servers, then read and write node values with data type aware decoding. Connects directly to the opc.tcp://host:port you enter (default 4840); server certificates are verified by default.",
   "publisher": "yuzhi",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-opcua/v0.1.0/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-opcua/v0.2.1/assets/plugin.svg",
   "tags": [
     "opcua",
-    "industrial",
+    "opc-ua",
     "plc",
-    "iiot",
-    "automation"
+    "industrial",
+    "iot",
+    "scada"
   ],
   "permissions": [
     "host.connections:read",
     "host.workbench"
   ],
-  "source": "https://github.com/bobocha214/dbx-plugin-opcua/tree/v0.1.0",
+  "source": "https://github.com/bobocha214/dbx-plugin-opcua/tree/v0.2.1",
   "homepage": "https://github.com/bobocha214/dbx-plugin-opcua",
-  "license": "Apache-2.0",
-  "latestVersion": "0.1.0",
+  "license": "MIT",
+  "latestVersion": "0.2.1",
   "versions": [
     {
       "version": "0.1.0",
@@ -62,12 +63,54 @@
           "size": 2640099
         }
       ]
+    },
+    {
+      "version": "0.2.1",
+      "releasedAt": "2026-10-27T16:18:07.155Z",
+      "releaseNotes": "v0.2.1 更新说明：\n- 修复插件不兼容报错：连接贡献点引用的 workbench 已更正为 io.github.yuzhi.opcua.workbench，加载时不再报 “references missing workbench”。\n- 连接表单中文化：「信任任意服务器证书（不安全）」开关的标签与说明已全部改为中文。\n- 安全：默认校验服务器证书；仅当用户在可信内网等环境主动勾选该开关时，才放行自签名 / 任意证书（用于连接自签 PLC）。\n- 许可证：安装包内已包含 LICENSE（MIT）与 THIRD-PARTY（MPL-2.0 第三方声明，因静态链接 async-opcua 0.19）。\n- 写入行为：在监视面板里直接改值，回车或失焦即下发到服务器，并回读比对。\n- 升级提示：从 0.1.0 升级无需重新添加连接；若曾安装早期 bobocha214 命名空间的包，请删除旧连接后重新添加（身份不同，连接不共享）。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.2.1/io.github.yuzhi.opcua-0.2.1-darwin-arm64.dbxp",
+          "sha256": "712f95a398ae0533df93e7348d7cfa2fe7f37e9ae1786a13e527b7637a13fd88",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2402445
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.2.1/io.github.yuzhi.opcua-0.2.1-darwin-x64.dbxp",
+          "sha256": "7e030eb75405afea60ba9b51f9a80a826f5fc1b4404f1fd24b262fe31b2c8e45",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2531132
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.2.1/io.github.yuzhi.opcua-0.2.1-linux-arm64.dbxp",
+          "sha256": "11fc3727a4e5b063b77488c95e42ef9980165aeb1cd29338a696f82dfdc09278",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2539428
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.2.1/io.github.yuzhi.opcua-0.2.1-linux-x64.dbxp",
+          "sha256": "ff8d3ca45eb2149e99010ae08e07b6f91434c340cbd6b1149703039b46d8beb8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2655770
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.2.1/io.github.yuzhi.opcua-0.2.1-windows-x64.dbxp",
+          "sha256": "c19b9719507dc5107d23ab1ee30711db00e96aebde3515a092337c00c859dcd1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2669389
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "OPC UA",
-      "description": "连接 OPC UA 服务器 / PLC，浏览地址空间，读取与写入节点值，并可将点位加入监视列表持续观察与就地改写下发。"
+      "description": "浏览 PLC 和 OPC UA 服务器的地址空间，按数据类型读取并写入节点值。"
     }
   }
 }
