@@ -1,44 +1,63 @@
 {
-  "plugin": {
-    "id": "com.vyrnax.translation",
-    "name": "Translation 即时翻译",
-    "description": "Translation 即时翻译 —— 多引擎翻译插件：支持 OpenAI 兼容大模型、DeepL、百度、有道、阿里云与本地 CLI 代理，含流式输出、输入即译、引擎管理与翻译历史。所有网络请求由内置 Go 侧车发出（浏览器沙箱的 CSP 禁止前端直连外部端点，且 host.network 白名单最多 8 个固定 origin，无法满足用户自填端点）。API Key 经系统密钥库（Windows DPAPI / macOS Keychain / Linux secret-tool）加密后落盘到插件数据目录，不可用时降级为机器绑定 AES-256-GCM 并在界面明确警示。引擎配置、翻译历史与界面偏好统一存放在 <插件数据目录>/translation.db（SQLite），由侧车写入；前端运行在 opaque origin 沙箱中，不接触磁盘，也不使用 localStorage。",
-    "publisher": "vyrnax",
-    "version": "0.2.1",
-    "permissions": [
-      "host.events"
-    ]
+  "schemaVersion": 1,
+  "id": "com.vyrnax.translation",
+  "publisher": "vyrnax",
+  "version": "0.2.2",
+  "name": "Translation 即时翻译",
+  "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 8 类引擎：OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。所有网络请求由内置 Go 侧车发出（浏览器沙箱的 CSP 禁止前端直连外部端点，且 host.network 白名单最多 8 个固定 origin，无法满足用户自填端点）；侧车会直连用户在引擎配置中填写的任意 HTTP/HTTPS 端点，翻译原文将发往用户所选引擎的第三方服务。本地 CLI 引擎以参数数组方式（不经 shell）执行用户配置的本机命令，凭据由该 CLI 自持，插件不接触。API Key 经系统密钥库（Windows DPAPI / macOS Keychain / Linux secret-tool）加密后落盘到插件数据目录，不可用时降级为机器绑定 AES-256-GCM 并在界面明确警示。引擎配置、翻译历史与界面偏好统一存放在 <插件数据目录>/translation.db（SQLite），由侧车写入；其中翻译历史（原文与译文）为明文保存，卸载插件后仍会保留，可在「历史」页随时清空；前端运行在 opaque origin 沙箱中，不接触磁盘，也不使用 localStorage。",
+  "icon": "https://raw.githubusercontent.com/vyrnax/dbx-plugin-translation/v0.2.2/assets/plugin.svg",
+  "tags": [
+    "translation",
+    "translate",
+    "instant-translation",
+    "i18n",
+    "llm",
+    "deepl",
+    "productivity"
+  ],
+  "permissions": [
+    "host.events"
+  ],
+  "source": "https://github.com/vyrnax/dbx-plugin-translation/tree/v0.2.2",
+  "homepage": "https://github.com/vyrnax/dbx-plugin-translation",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.2.2：商店上架整改 —— 新增 Apache-2.0 LICENSE；发布产物改由 GitHub Actions 从 tag 用固定 Go 工具链（1.21.13）真机构建，sidecar 内嵌 vcs.revision 可在公开仓库核验；候选元数据改为 DBX Store 扁平 schema 并使用 release 资产绝对 HTTPS 地址；listing 补全 8 类引擎清单，并披露原文发往所选第三方服务、明文 SQLite 历史落盘、localcli 参数化执行本机命令。",
+  "localizations": {
+    "en": {
+      "name": "Translation",
+      "description": "Translation — multi-engine translation plugin with 8 engine types: OpenAI-compatible LLMs (DeepSeek, Qwen, Zhipu, Kimi, Ollama, vLLM, …), local CLI proxies (claude / codex / custom), DeepL, Google, Baidu, Youdao, Alibaba Cloud and Tencent Cloud; with streaming output, translate-as-you-type, engine management and translation history. All HTTP requests are issued by the bundled Go sidecar (the browser sandbox CSP forbids direct calls, and the host.network allowlist cannot express user-supplied endpoints); the sidecar connects directly to whatever HTTP/HTTPS endpoint the user configures per engine, and the source text is sent to the third-party service of the chosen engine. The local CLI engine executes user-configured local commands via an argument array (never through a shell); credentials stay with that CLI and are never touched by the plugin. API keys are encrypted with the OS keychain (Windows DPAPI / macOS Keychain / Linux secret-tool) before being written to the plugin data directory, falling back to machine-bound AES-256-GCM with an explicit in-UI warning. Engine config, history and preferences live in <plugin-data>/translation.db (SQLite), written by the sidecar; translation history (source and target text) is stored in plaintext and survives uninstallation, and can be cleared at any time from the History tab; the frontend runs in an opaque-origin sandbox and never touches disk or localStorage."
+    }
   },
-  "artifacts": [
+  "targets": [
     {
       "target": "darwin-arm64",
-      "url": "com.vyrnax.translation-0.2.1-darwin-arm64.dbxp",
-      "sha256": "15a89026fdd07b04bf495e46803eca6815fb6a6d7614d8f009f18029b71262dd",
-      "size": 4748621
+      "url": "https://github.com/vyrnax/dbx-plugin-translation/releases/download/v0.2.2/com.vyrnax.translation-0.2.2-darwin-arm64.dbxp",
+      "sha256": "e407687d12a02475d2a6e6cd53b6f4c534ea039f82b4b69fc26a921ce5e700de",
+      "size": 4287215
     },
     {
       "target": "darwin-x64",
-      "url": "com.vyrnax.translation-0.2.1-darwin-x64.dbxp",
-      "sha256": "df8282c7b678e42c91e5442157b6d2fe1efeaa5c23059ff41d05232d85061f9f",
-      "size": 5068168
+      "url": "https://github.com/vyrnax/dbx-plugin-translation/releases/download/v0.2.2/com.vyrnax.translation-0.2.2-darwin-x64.dbxp",
+      "sha256": "11667379d59baca33a240d43e5e34e3a1754cddd470d62799e08ddf70d6afd3f",
+      "size": 4475085
     },
     {
       "target": "linux-arm64",
-      "url": "com.vyrnax.translation-0.2.1-linux-arm64.dbxp",
-      "sha256": "3412c29d82a733ae8594f2030439e70bbe2a006409d2d29a2b92353f66683a4e",
-      "size": 4587365
+      "url": "https://github.com/vyrnax/dbx-plugin-translation/releases/download/v0.2.2/com.vyrnax.translation-0.2.2-linux-arm64.dbxp",
+      "sha256": "6f9464df5ed10f3fb52c2a80dd9a07767d166e9d656054966c997a15619be02c",
+      "size": 3996039
     },
     {
       "target": "linux-x64",
-      "url": "com.vyrnax.translation-0.2.1-linux-x64.dbxp",
-      "sha256": "73f7ceac0abfb88c0bedd71a9fb0959e102b08db7e4308bf35ba32e6306fda7f",
-      "size": 5007794
+      "url": "https://github.com/vyrnax/dbx-plugin-translation/releases/download/v0.2.2/com.vyrnax.translation-0.2.2-linux-x64.dbxp",
+      "sha256": "83845ea08c248a117546e7607e63a683cfc1e9e7810ecdbd4c19b5815b4f492b",
+      "size": 4328571
     },
     {
       "target": "windows-x64",
-      "url": "com.vyrnax.translation-0.2.1-windows-x64.dbxp",
-      "sha256": "17d29aefed2e585a8c4a23d1458858e27dd5281e388082c82402afa43305ed3e",
-      "size": 5113462
+      "url": "https://github.com/vyrnax/dbx-plugin-translation/releases/download/v0.2.2/com.vyrnax.translation-0.2.2-windows-x64.dbxp",
+      "sha256": "181ff5025c9b87a93558dae5afcc5d4adaba87c30770bd9cf068c2c91abe4795",
+      "size": 4423834
     }
   ]
 }
