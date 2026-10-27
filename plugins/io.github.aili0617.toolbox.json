@@ -4,7 +4,7 @@
   "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally.",
   "publisher": "aili0617",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/aiLi0617/dbx-plugin-toolbox/v0.1.5/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/aiLi0617/dbx-plugin-toolbox/v0.1.6/assets/plugin.svg",
   "tags": [
     "developer-tools",
     "utilities",
@@ -18,7 +18,7 @@
   "source": "https://github.com/aiLi0617/dbx-plugin-toolbox",
   "homepage": "https://github.com/aiLi0617/dbx-plugin-toolbox",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.5",
+  "latestVersion": "0.1.6",
   "versions": [
     {
       "version": "0.1.0",
@@ -269,6 +269,48 @@
           "sha256": "32a124f55b48865ee65722b9ed617c3a1fa045c3eb97fb1a2613dd992287d191",
           "signingKeyId": "dbx-store-release-2026",
           "size": 6337612
+        }
+      ]
+    },
+    {
+      "version": "0.1.6",
+      "releasedAt": "2026-10-27T16:30:42.189Z",
+      "releaseNotes": "0.1.5：优化首页搜索、意图示例和多语言支持；改进密钥库布局、筛选、新建与主密码交互，修复用途保存与 XOR 默认用途；OCR 模型改为用户触发的分层按需下载，缩小安装包，并深化多项工具能力。0.1.5: Improves home search, intent examples, and localization; refines vault layout, filtering, key creation, and master-password workflows; fixes usage saving and XOR defaults; moves OCR models to user-triggered tiered downloads to reduce package size and expands tool capabilities.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.6/io.github.aili0617.toolbox-0.1.6-darwin-arm64.dbxp",
+          "sha256": "2fb7abe733fdcb152106714d59a79595b7a08f322da146996694038c8f79eebe",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9011135
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.6/io.github.aili0617.toolbox-0.1.6-darwin-x64.dbxp",
+          "sha256": "3e02c2db2e966f032db6b14e4c8dd4629ff684c1f720d9a7a43d26f0f2cf4a6b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9457191
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.6/io.github.aili0617.toolbox-0.1.6-linux-arm64.dbxp",
+          "sha256": "dd5cdee51f6198d34bce0f9a6ab1b9e20aa20a76a33278c03ac1a0ad202a95e2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 10068806
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.6/io.github.aili0617.toolbox-0.1.6-linux-x64.dbxp",
+          "sha256": "d537869f5cc82f35e6392a421ff24fc69828d8132cc056bdd38f6bdd894737ef",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 10543397
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.6/io.github.aili0617.toolbox-0.1.6-windows-x64.dbxp",
+          "sha256": "6ded5f9c22213f49eafd00521ca2f9453aafdd9ba5a05908d93cde9af35a0574",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9730911
         }
       ]
     }
