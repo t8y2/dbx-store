@@ -14,15 +14,15 @@
     "browser"
   ],
   "permissions": [
-    "host.workbench",
-    "host.storage",
     "host.events",
-    "host.filesystem"
+    "host.filesystem",
+    "host.storage",
+    "host.workbench"
   ],
   "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.1.2",
   "homepage": "https://github.com/huangqiang008/dbx-object-storage",
   "license": "MIT",
-  "latestVersion": "1.1.2",
+  "latestVersion": "1.2.0",
   "versions": [
     {
       "version": "0.4.0",
@@ -56,6 +56,27 @@
           "sha256": "be4e49edc4a3a5355b44500fdbc22f6ab13632a5e45c9ad4a3bae327673be182",
           "signingKeyId": "dbx-store-release-2026",
           "size": 8143942
+        }
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "releasedAt": "2026-10-27T16:23:48.903Z",
+      "releaseNotes": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, R2, COS...). Driver abstraction, large-directory pagination, chunked upload, presigned sharing, file preview, multi-select batch delete/download.\n\nDisclaimer: this is an independent third-party plugin. It is not affiliated with, endorsed, authorized or sponsored by any of the storage vendors named above; vendor and service names are used solely to indicate protocol compatibility and remain the property of their respective owners. Credentials are used only between your machine and your own storage service and are never sent to third parties; the Secret is stored in plaintext on this machine only if you explicitly opt in. Presigned links grant access to anyone holding them until they expire.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.object.browser/1.2.0/com.object.browser-1.2.0-darwin-arm64.dbxp",
+          "sha256": "4890b40a3e477d2dd0e0bdab16f8403f704fc0196fc41e53965d304c2440e9a1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 7884256
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.object.browser/1.2.0/com.object.browser-1.2.0-windows-x64.dbxp",
+          "sha256": "9ad140fe88bca2c9faa3fb216ab610279e8282d536353cfbacdbb175868eae88",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 8366194
         }
       ]
     }
