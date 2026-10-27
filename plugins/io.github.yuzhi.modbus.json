@@ -1,10 +1,10 @@
 {
   "id": "io.github.yuzhi.modbus",
   "name": "Modbus TCP",
-  "description": "Read and write Modbus TCP registers on PLCs, gateways and remote IO couplers, with polling and guarded writes.",
+  "description": "Read and write Modbus TCP registers on PLCs, gateways and remote IO couplers, connecting to the host and port you enter (502 by default). Devices and address ranges are configured inside the workbench, with polling and inline writes that only send on Enter.",
   "publisher": "yuzhi",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-modbus/v0.1.0/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-modbus/v0.2.1/assets/plugin.svg",
   "tags": [
     "modbus",
     "modbus-tcp",
@@ -19,7 +19,7 @@
   "source": "https://github.com/bobocha214/dbx-plugin-modbus",
   "homepage": "https://github.com/bobocha214/dbx-plugin-modbus",
   "license": "MIT",
-  "latestVersion": "0.1.0",
+  "latestVersion": "0.2.1",
   "versions": [
     {
       "version": "0.1.0",
@@ -62,12 +62,54 @@
           "size": 261020
         }
       ]
+    },
+    {
+      "version": "0.2.1",
+      "releasedAt": "2026-10-27T16:12:43.583Z",
+      "releaseNotes": "0.2.1 更新：写入只在按下回车时才下发，Esc 或点开别处即取消；新建连接只需填工作区名称，设备与地址范围都在工作台里配置，不建连接也能直接打开工作台；新建地址范围默认读取 10 个地址，改完定义立刻重新读取，不必再点读取或轮询；数据类型变宽会自动补读缺少的寄存器；改设备地址或超时会自动重连；安装包内置 MIT LICENSE。\n\n0.2.1 is a version update of this listing. Creating a connection asks only for a workspace name: devices are configured and connected inside the workbench, and a workbench opened with no connection still works. A new range reads ten addresses, editing its definition reads again on the spot, and a value is written only by pressing Enter in the cell - Esc or leaving the field cancels. The package now ships the MIT LICENSE.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.1/io.github.yuzhi.modbus-0.2.1-darwin-arm64.dbxp",
+          "sha256": "fbec7abeb56fefbb39410b8fe86431a86f031620194565ff97b1e1f04bb6effb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 319950
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.1/io.github.yuzhi.modbus-0.2.1-darwin-x64.dbxp",
+          "sha256": "3eca140e5131fcd53a18f356f60e0427d64578bdaa2581ec33e7c7e9cc41c100",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 341357
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.1/io.github.yuzhi.modbus-0.2.1-linux-arm64.dbxp",
+          "sha256": "b4f03653b5a632e00fff107c3800182114e9943f31fef1d2894ee7daaf876977",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 342789
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.1/io.github.yuzhi.modbus-0.2.1-linux-x64.dbxp",
+          "sha256": "544fd538946d6fcb0d3726dbd26de045c6fbc7b0ebef9c7cb15bc5dbb47bc954",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 363842
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.1/io.github.yuzhi.modbus-0.2.1-windows-x64.dbxp",
+          "sha256": "081b86ff29b2985e43ed50339be191577b99d8a7db9a98f47dc565cc03e1dada",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 264695
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "Modbus TCP",
-      "description": "读写 PLC、网关和远程 IO 上的 Modbus TCP 寄存器，支持周期轮询与带二次确认的写入。"
+      "description": "读写 PLC、网关与远程 IO 上的 Modbus TCP 寄存器，主动连接你填写的 host:port（默认 502）；设备与地址范围都在工作台里配置，支持周期轮询与双击内联写入（只有回车才会发送）。"
     }
   }
 }
