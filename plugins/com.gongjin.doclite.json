@@ -1,10 +1,10 @@
 {
   "id": "com.gongjin.doclite",
   "name": "DocLite",
-  "description": "Convert Word, PDF, PowerPoint, Excel, CSV, EPUB and more into clean Markdown and structured Document Model JSON, and export Markdown or Word data dictionaries from databases already connected in DBX. Optional cloud OCR for scanned PDFs.",
+  "description": "Convert Word, PDF, PowerPoint, Excel, CSV, EPUB and more into clean Markdown and structured Document Model JSON, save the result as a Word document, and export Markdown data dictionaries from databases already connected in DBX. Optional cloud OCR for scanned PDFs.",
   "publisher": "gongjin",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/gh-gongjin/dbx-plugin-doclite/v0.1.12/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/gh-gongjin/dbx-plugin-doclite/v0.1.14/assets/plugin.svg",
   "tags": [
     "documents",
     "markdown",
@@ -22,10 +22,10 @@
     "host.connections:read",
     "host.data:read"
   ],
-  "source": "https://github.com/gh-gongjin/dbx-plugin-doclite/tree/v0.1.12",
+  "source": "https://github.com/gh-gongjin/dbx-plugin-doclite/tree/v0.1.14",
   "homepage": "https://github.com/gh-gongjin/dbx-plugin-doclite",
   "license": "MIT",
-  "latestVersion": "0.1.12",
+  "latestVersion": "0.1.14",
   "versions": [
     {
       "version": "0.1.9",
@@ -54,12 +54,26 @@
           "size": 46305878
         }
       ]
+    },
+    {
+      "version": "0.1.14",
+      "releasedAt": "2026-10-27T16:59:05.737Z",
+      "releaseNotes": "通用 Word 导出：任何转换完成的文档都能另存为 .docx（不限 PDF，也不限数据字典），预览区提供「保存 Word」，队列提供「全部保存 Word」一次性写入所选文件夹，同名文件自动改名为 xxx-2.docx，不覆盖已有文件。\n\n新增「Word 版式」页签：直接用导出器实际消费的文档模型渲染，所见即所得；版式为估算，最终分页与换行以 Word 自身排版为准。\n\n图片不嵌入 .docx：转换管线不打包图片二进制，仅保留图注文字，导出的 Word 中不含 word/media 部件。\n\n数据字典新增 SQL Server / Oracle / 达梦 / ClickHouse 方言。\n\n兼容性说明：数据字典仍只读元数据，不执行任何 DML；插件运行时不联网，OCR 为可选且默认关闭，开启后仅向所选云端 OCR 服务发送需要识别的页面。",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.gongjin.doclite/0.1.14/com.gongjin.doclite-0.1.14-windows-x64.dbxp",
+          "sha256": "56d7865013dc5beb80628537a5564e616810a400d905cdc5005259334c0b07e7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 46315162
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "DocLite 文档转换",
-      "description": "文档转换 + 数据字典：把 Word、PDF、PPT、Excel、CSV、EPUB 等文档转为 Markdown 与结构化 JSON，也可把 DBX 已连接数据库的表结构导出为 Markdown 或 Word；扫描版 PDF 可选接入 MinerU 或百度 OCR。"
+      "description": "文档转换 + 数据字典：把 Word、PDF、PPT、Excel、CSV、EPUB 等文档转为 Markdown 与结构化 JSON，转换结果可另存为 Word 文档；也可从 DBX 已连接数据库只读导出表结构为 Markdown 或 Word；扫描版 PDF 可选接入 MinerU 或百度 OCR。"
     }
   }
 }

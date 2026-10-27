@@ -1,0 +1,44 @@
+{
+  "id": "io.dbx.busy-terminal",
+  "name": "Busy Terminal",
+  "description": "Fake busy terminal scenes in a workbench or floating desktop widget. Entertainment only — not a real shell.",
+  "publisher": "alan",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/allran/dbx-plugin-busy-terminal/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "terminal",
+    "fun",
+    "workbench",
+    "widget"
+  ],
+  "permissions": [
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/allran/dbx-plugin-busy-terminal/tree/v0.1.0",
+  "homepage": "https://github.com/allran/dbx-plugin-busy-terminal",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-27T16:50:55.891Z",
+      "releaseNotes": "Initial release: fake cargo/docker/sql/ansible/download/terraform scenes, settings drawer, optional floating widget, preference persistence.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.0/io.dbx.busy-terminal-0.1.0-universal.dbxp",
+          "sha256": "1b384f4936b28192de4d398042b8666e5e713c2a8e8b0f13074feab5debf5108",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 25953
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "忙碌终端",
+      "description": "在工作台或桌面浮动窗里播放假忙碌日志。仅供娱乐，不是真实终端。"
+    }
+  }
+}
