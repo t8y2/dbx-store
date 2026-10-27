@@ -1072,7 +1072,7 @@
       "description": "Visual manager for WSL distributions (wsl) and WSL containers (wslc) on Windows.",
       "publisher": "w89588",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.3/icon.svg",
       "tags": [
         "wsl",
         "containers",
@@ -1085,11 +1085,25 @@
         "host.storage",
         "host.binary"
       ],
-      "source": "https://github.com/w89588/dbx-plugin-wsl/tree/da9576b75704ad064ee4e6597ebc94ae57239740",
+      "source": "https://github.com/w89588/dbx-plugin-wsl/tree/25fd71b01ccc7597ef3e3005b9f587efd6eb2d88",
       "homepage": "https://github.com/w89588/dbx-plugin-wsl",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.2",
+      "latestVersion": "0.1.3",
       "versions": [
+        {
+          "version": "0.1.3",
+          "releasedAt": "2026-10-27T02:10:27.389Z",
+          "releaseNotes": "# WSL 管理器 v0.1.3\r\n\r\n相较 v0.1.2，本版本新增外部 MCP 管理、备份恢复与诊断配置工作流，并改善资源实时更新、任务一致性和配置保存体验。\r\n\r\n## 新增功能\r\n\r\n- **外部 MCP 接入**：新增 `wsl_connections`、`wsl_describe`、`wsl_read`、`wsl_write` 四个工具，覆盖 85 个管理接口，包括发行版与容器生命周期、命令执行、文件读写、镜像、卷、网络、配置、注册表和任务。写操作遵循宿主/客户端授权；会访问网络或检测端口的 `diagnostics/run` 统一要求 `wsl_write`，只读入口拒绝所有参数组合。\r\n- **备份与恢复**：提供 Windows 原生目录选择器、备份记录和 SHA-256 校验。运行中的发行版需明确停止后备份；恢复仅导入到新名称、新目录，并启动新发行版验证 `/bin/sh` 可用。失败时保留新资源供排查，不删除原发行版。\r\n- **诊断中心**：检查 WSL/WSLC、磁盘空间、指定回环端口和可选注册表 HTTPS 连通性，生成可复制的脱敏报告与建议，不自动修复。\r\n- **资源配置助手**：预览并调整内存、CPU 和交换空间，保留其他配置、注释与换行；保存后需自行重启 WSL 生效。\r\n- **后台开发环境模板**：RPC/MCP 提供 PostgreSQL、Redis 模板，支持计划、创建及状态查询，使用回环端口、密码认证、命名卷和健康检查；不提供模板页面，不自动创建 DBX 数据库连接。\r\n\r\n## 体验与可靠性\r\n\r\n- 资源变化通过现有宿主事件桥持续推送，页面原位更新列表、状态和统计，保留焦点、滚动位置与草稿，避免周期性整页刷新；隐藏时暂停，重连后同步快照。\r\n- 补偿任务终态事件丢失和乱序，当前 Sidecar 保留最多 32 个已结束任务、最长 24 小时，避免任务历史无限增长。\r\n- 配置保存增加修订号冲突检查，外部修改时保留草稿并拒绝覆盖；保留备份及 BOM。\r\n\r\n## 兼容性与权限\r\n\r\n- 不设置 DBX 产品版本安装门槛，保留 Host API 1。官方历史清单解析器验证边界为 DBX 0.6.27；0.6.26 不识别 MCP 声明。该结果不代表已在所有历史 DBX 客户端完成安装验证。\r\n- 仍仅支持 Windows x64，四项宿主权限不变。原生 Sidecar 以当前用户权限调用 WSL/WSLC，可执行命令、读写文件和访问网络；目录选择器运行固定 PowerShell 脚本。注册表登录由 WSLC 保存凭据；模板创建使用临时凭据文件，异常终止可能遗留文件，容器配置可能包含凭据。\r\n\r\n## 构建与发布\r\n\r\n使用固定 Go 1.24.13 与插件 CLI 0.1.9，从干净的发布标签提交构建。发布校验要求包内 EXE 的 `vcs.revision` 等于标签提交、`vcs.modified=false`，并核对包身份、SHA-256 与大小。GitHub 资产为未签名候选包，官方商店签名由维护者完成。\r\n\r\n**完整变更：** [v0.1.2...v0.1.3](https://github.com/w89588/dbx-plugin-wsl/compare/v0.1.2...v0.1.3)",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.3/com.dbx.wsl-0.1.3-windows-x64.dbxp",
+              "sha256": "7ffb402068cad0605f41d1e5367f0b8bf50ba7e503d30b35b4732963337e88c6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5819775
+            }
+          ]
+        },
         {
           "version": "0.1.2",
           "releasedAt": "2026-10-26T06:43:09.185Z",
