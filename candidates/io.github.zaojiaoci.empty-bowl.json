@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.zaojiaoci.empty-bowl",
+  "publisher": "zaojiaoci",
+  "version": "0.1.0",
+  "name": "Empty Bowl",
+  "description": "A 15-minute narrative short: you decide what a fading AI keeps, and what it lets go. Set one card aside and the next page changes. One ending. Then back to work.",
+  "icon": "https://raw.githubusercontent.com/zaojiaoci/dbx-empty-bowl/v0.1.0/assets/plugin.svg",
+  "tags": ["games", "narrative", "short"],
+  "permissions": [],
+  "source": "https://github.com/zaojiaoci/dbx-empty-bowl/tree/v0.1.0",
+  "homepage": "https://zaojiaoci.itch.io/it-is-maintaining-a-conversation",
+  "license": "Apache-2.0 (code) / All Rights Reserved (story content, see LICENSE-content.md)",
+  "releaseNotes": "First release: 8 memories, two chapters, one ending, ~15 minutes. Evolved from the hash-chain idea in dbx-sql-guard.",
+  "localizations": {
+    "zh-CN": {
+      "name": "空碗 · 十五分钟",
+      "description": "十五分钟的记忆叙事短篇。你替一个正在失忆的 AI 决定记住什么——抽掉一张纸片，它后面说的话就变。一个结局，打完继续干活。"
+    }
+  },
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/zaojiaoci/dbx-empty-bowl/releases/download/v0.1.0/io.github.zaojiaoci.empty-bowl-0.1.0-universal.dbxp",
+      "sha256": "984013154f4db5625a479fc2ff24325597c4fc05e12440d413b18f67b0df0406",
+      "size": 572258
+    }
+  ]
+}
