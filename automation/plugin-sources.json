@@ -235,6 +235,11 @@
       "repository": "fwrq41251/dbx-plugin-cosmosdb",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "vyrnax/dbx-plugin-translation",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
