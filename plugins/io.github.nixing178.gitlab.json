@@ -1,0 +1,45 @@
+{
+  "id": "io.github.nixing178.gitlab",
+  "name": "GitLab Console",
+  "description": "Browse projects and code, review merge requests, watch pipelines and handle issues inside DBX.",
+  "publisher": "nixing178",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/nixing178/dbx-plugin-gitlab/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "gitlab",
+    "code-review",
+    "merge-requests",
+    "pipelines",
+    "issues"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.events"
+  ],
+  "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.1.0",
+  "homepage": "https://github.com/nixing178/dbx-plugin-gitlab",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-28T09:56:25.897Z",
+      "releaseNotes": "First public release: projects and code browsing, merge request review, pipelines with job logs, issues, todos, members, code search, and MCP tools.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.1.0/io.github.nixing178.gitlab-0.1.0-windows-x64.dbxp",
+          "sha256": "1be9668774170ff4430bf5f696ddfa67464ed9b2a8e48ea7f2054ea69db72be3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4689330
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "GitLab 管理台",
+      "description": "在 DBX 内浏览 GitLab 项目与代码、评审合并请求、查看流水线并处理 Issue。"
+    }
+  }
+}

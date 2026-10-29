@@ -4,7 +4,7 @@
   "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ssh/ssh-v0.7.10/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ssh/ssh-v0.7.11/assets/plugin.svg",
   "tags": [
     "ssh",
     "terminal",
@@ -23,7 +23,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-ssh",
   "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
   "license": "MIT",
-  "latestVersion": "0.7.10",
+  "latestVersion": "0.7.11",
   "versions": [
     {
       "version": "0.4.72",
@@ -820,6 +820,48 @@
           "sha256": "a76cc5dae399a332bae558d38112b161b1a610b3038bc521209912529d77f54e",
           "signingKeyId": "dbx-store-release-2026",
           "size": 18809296
+        }
+      ]
+    },
+    {
+      "version": "0.7.11",
+      "releasedAt": "2026-10-28T15:13:49.086Z",
+      "releaseNotes": "Requires DBX 0.6.59+ (the new MCP tools/access declarations need that host version). SFTP and connection experience: file lists use proportional responsive columns with two-line names, POSIX symbolic permissions, and file-type detection that ignores URL query strings and fragments; the directory tree, quick paths and drag-and-drop upload share one visual hierarchy; renaming a connection updates its tab titles live and keeps multi-session numbering; when editing a connection invalidates an old session it is rebuilt from the newest config instead of being stranded on the failed reconnect, and the old terminal buffer is cleared first so login output does not pile up (deleting a connection still never reconnects). Also in this round: concurrent multi-stream acceleration for large SFTP downloads, saved port forwards re-enabled automatically after connecting, an automatic jump to the download directory once sz/ZMODEM completes, hardened read-only MCP permission checks with background task logs moved to the OS temp directory, and fixes for terminal path completion, the cache edit range, dynamic candidate scheduling and the file-preview scrollbar, plus the Windows native import dialog and Xshell GBK entry-name decoding. MCP now contributes exec and SFTP tools (ssh_exec, ssh_exec_sudo, ssh_multi_exec, ssh_run_bg, ssh_terminal_input, plus SFTP list/read/stat/download/upload/write), gated by the host's MCP settings and a read-only ceiling. The scheduler (task-provider) declaration stays withheld until DBX ships the capability.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.11/io.dbx.ssh-0.7.11-darwin-arm64.dbxp",
+          "sha256": "fe5b43037cd5877936f6e3f4e90accd444747af7988e2b745fb6b32def5114e7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 19433368
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.11/io.dbx.ssh-0.7.11-darwin-x64.dbxp",
+          "sha256": "fd78aa90436fd3dc1d656720e5fc0ea6cb334fd141b0f3ff7407685459a89894",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 20064766
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.11/io.dbx.ssh-0.7.11-linux-arm64.dbxp",
+          "sha256": "a6fcab6254929cf9ae25362f301626b15e2bbca4e66c63966afb99eb0050c344",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 20645136
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.11/io.dbx.ssh-0.7.11-linux-x64.dbxp",
+          "sha256": "6aa32872cb17f075bf9d393037c1b2ed62153691465b94797d513bd955f40b30",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 21124546
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.11/io.dbx.ssh-0.7.11-windows-x64.dbxp",
+          "sha256": "e4621b6a8a1edc5a0f1bebc588669ddde57f79903301795e64bef8976819d577",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18861222
         }
       ]
     }

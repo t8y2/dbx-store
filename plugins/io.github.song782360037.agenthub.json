@@ -1,0 +1,75 @@
+{
+  "id": "io.github.song782360037.agenthub",
+  "name": "Agent Hub",
+  "description": "Cross-agent local Skills and MCP manager: scan Claude Code, Codex, Qoder, Trae, WorkBuddy and Pi; install skills from GitHub or archives; manage MCP server configs.",
+  "publisher": "song782360037",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/song782360037/dbx-plugin-agenthub/v0.1.1/assets/plugin.svg",
+  "tags": [
+    "skills",
+    "mcp",
+    "agent",
+    "claude-code",
+    "codex",
+    "qoder",
+    "trae",
+    "workbuddy",
+    "pi",
+    "git"
+  ],
+  "permissions": [],
+  "source": "https://github.com/song782360037/dbx-plugin-agenthub/tree/v0.1.1",
+  "homepage": "https://github.com/song782360037/dbx-plugin-agenthub",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.1",
+  "versions": [
+    {
+      "version": "0.1.1",
+      "releasedAt": "2026-10-28T15:08:52.664Z",
+      "releaseNotes": "0.1.1: declares the read-only skills_list, skills_search and skills_get MCP tools for external clients; ships LICENSE and third-party OFL notice. Local skill inventory, GitHub/ZIP/local import, center library, multi-client sync, drift detection, update checks, and MCP server config management.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.agenthub/0.1.1/io.github.song782360037.agenthub-0.1.1-darwin-arm64.dbxp",
+          "sha256": "b3ce091a0b127f86da68fee75e06f8bf30bc57f9f0ccc226b79721839b03fa26",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5979773
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.agenthub/0.1.1/io.github.song782360037.agenthub-0.1.1-darwin-x64.dbxp",
+          "sha256": "97bd7ec7f044d62f0be1e86adaca9f84d9ffd75799758d751f34ca04ad72d739",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6376856
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.agenthub/0.1.1/io.github.song782360037.agenthub-0.1.1-linux-arm64.dbxp",
+          "sha256": "0ec29a4951fd9ff1c0c9123c1840a567e54655fdea7ed8cca0e33a99023231d1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5710495
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.agenthub/0.1.1/io.github.song782360037.agenthub-0.1.1-linux-x64.dbxp",
+          "sha256": "86668e9275cdb806e6a944e82549173a08bcc8463a9e617278a0e969c8df6223",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6231318
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.agenthub/0.1.1/io.github.song782360037.agenthub-0.1.1-windows-x64.dbxp",
+          "sha256": "a0d7ee2930f73298555175aca8c9600a6793eaee3a594d84a9cc779f85bb630e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6341704
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Agent Hub",
+      "description": "Agent 工具中心：扫描 Claude Code、Codex、Qoder、Trae、WorkBuddy、Pi，支持 Skills 导入、多端同步、漂移检测、更新检查和 MCP 配置管理。"
+    }
+  }
+}

@@ -4,7 +4,7 @@
   "description": "Browse, manage and inspect OCI / Harbor container registries from a single workbench: project and namespace navigation, tag rename and delete, per-layer size analysis, Trivy CVE reports, registry-wide charts and multi-arch breakdowns.",
   "publisher": "leavingrain",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/Zer0ON1/dbx-plugin-imrepo/v1.0.0/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/Zer0ON1/dbx-plugin-imrepo/v1.0.1/assets/plugin.svg",
   "tags": [
     "registry",
     "harbor",
@@ -17,7 +17,7 @@
   "source": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
   "homepage": "https://github.com/Zer0ON1/dbx-plugin-imrepo",
   "license": "Apache-2.0",
-  "latestVersion": "1.0.0",
+  "latestVersion": "1.0.1",
   "versions": [
     {
       "version": "0.1.2",
@@ -359,6 +359,55 @@
           "sha256": "58728b0f6a38319c4fff1a63d20e18887b12ed1411fe33588af92bbe275c2641",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4955069
+        }
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "releasedAt": "2026-10-28T09:49:12.774Z",
+      "releaseNotes": "Image archive upload and download: push a local docker save archive or OCI image layout (.tar/.tar.gz) straight into any registry-v2 / Harbor connection, and export any tag or digest as a Docker archive (docker load-ready) or OCI image layout (skopeo/podman-readable), gzip optional, with per-platform selection for multi-arch images and an all-platform OCI export. Uploads are chunked and the browser side streams straight to a host-chosen file (browser download fallback on web hosts). Also fixed: empty projects no longer break the sidebar, pull commands and copy buttons share one icon style with a copy confirmation, and Harbor audit logs gained a date-range filter. Known limit: archives around 140 MB / images around 410 MB were verified; larger images are not fully covered. Security note: the last connection password / CLI secret is cached base64-encoded (encoding, not encryption) in credentials.json under the plugin data directory; prefer least-privilege Harbor robot accounts or read-only tokens and delete the file when no longer needed.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.1/com.leavingrain.imrepo-1.0.1-darwin-arm64.dbxp",
+          "sha256": "3df0fcff513dd0c1fa2d30fee0e3ba06e4d8c0b67e653e1942cccbdf0dfe3da9",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4932295
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.1/com.leavingrain.imrepo-1.0.1-darwin-x64.dbxp",
+          "sha256": "cd250d4762de6e7996165aaa4aa809eed6a209f02d100200d7708b55496b3c4c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5196685
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.1/com.leavingrain.imrepo-1.0.1-linux-arm64.dbxp",
+          "sha256": "57b7aefc879797744c66ed5e0358702f46b78769021d52def3206fa47b83ca05",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4878982
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.1/com.leavingrain.imrepo-1.0.1-linux-x64.dbxp",
+          "sha256": "b6f523474ce914b67d552d3c538ab3fd617090962d5f34a574844456f2430b62",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5229877
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.1/com.leavingrain.imrepo-1.0.1-windows-arm64.dbxp",
+          "sha256": "a7257962ff52280511526860a040e010fcf6a52ced840beca22623dcc566f730",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4885138
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.1/com.leavingrain.imrepo-1.0.1-windows-x64.dbxp",
+          "sha256": "58618bb8adf24d162fd5cd5688a0fc21356f0258e393056eec6054a49c99d94d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5268911
         }
       ]
     }

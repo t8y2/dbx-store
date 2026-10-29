@@ -12,10 +12,10 @@
     "nosql"
   ],
   "permissions": [],
-  "source": "https://github.com/fwrq41251/dbx-plugin-cosmosdb/tree/v0.8.0",
+  "source": "https://github.com/fwrq41251/dbx-plugin-cosmosdb/tree/v0.16.0",
   "homepage": "https://github.com/fwrq41251/dbx-plugin-cosmosdb",
   "license": "MIT",
-  "latestVersion": "0.8.0",
+  "latestVersion": "0.16.0",
   "versions": [
     {
       "version": "0.8.0",
@@ -28,6 +28,20 @@
           "sha256": "57bbf41bdf601f81d9700bff85d6400a44c9a8a816d2de725f0cfac445b3c300",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4904530
+        }
+      ]
+    },
+    {
+      "version": "0.16.0",
+      "releasedAt": "2026-10-28T15:12:40.927Z",
+      "releaseNotes": "Requires DBX 0.6.59+. Adds read-only MCP tools compatible with MCP Server 0.4.134, searchable database/container selection with shared persistent location, query cancellation/status and selected SQL execution, improved table/JSON result tools and workbench layout. Existing defaults migrate automatically; enable MCP capabilities with a Read only ceiling. macOS ARM64 only.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.fwrq41251.cosmosdb/0.16.0/io.github.fwrq41251.cosmosdb-0.16.0-darwin-arm64.dbxp",
+          "sha256": "7fed054fc845225fc50490d63692d5f7697b18cf82cd768454e1616dc5b37bb3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4970141
         }
       ]
     }

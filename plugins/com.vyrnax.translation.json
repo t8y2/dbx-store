@@ -4,7 +4,7 @@
   "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 8 类引擎：OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。所有网络请求由内置 Go 侧车发出（浏览器沙箱的 CSP 禁止前端直连外部端点，且 host.network 白名单最多 8 个固定 origin，无法满足用户自填端点）；侧车会直连用户在引擎配置中填写的任意 HTTP/HTTPS 端点，翻译原文将发往用户所选引擎的第三方服务。本地 CLI 引擎以参数数组方式（不经 shell）执行用户配置的本机命令，凭据由该 CLI 自持，插件不接触。API Key 经系统密钥库（Windows DPAPI / macOS Keychain / Linux secret-tool）加密后落盘到插件数据目录，不可用时降级为机器绑定 AES-256-GCM 并在界面明确警示。引擎配置、翻译历史与界面偏好统一存放在 <插件数据目录>/translation.db（SQLite），由侧车写入；其中翻译历史（原文与译文）为明文保存，卸载插件后仍会保留，可在「历史」页随时清空；前端运行在 opaque origin 沙箱中，不接触磁盘，也不使用 localStorage。",
   "publisher": "vyrnax",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/vyrnax/dbx-plugin-translation/v0.2.2/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/vyrnax/dbx-plugin-translation/v0.2.3/assets/plugin.svg",
   "tags": [
     "translation",
     "translate",
@@ -17,10 +17,10 @@
   "permissions": [
     "host.events"
   ],
-  "source": "https://github.com/vyrnax/dbx-plugin-translation/tree/v0.2.2",
+  "source": "https://github.com/vyrnax/dbx-plugin-translation",
   "homepage": "https://github.com/vyrnax/dbx-plugin-translation",
   "license": "Apache-2.0",
-  "latestVersion": "0.2.2",
+  "latestVersion": "0.2.3",
   "versions": [
     {
       "version": "0.2.2",
@@ -61,6 +61,48 @@
           "sha256": "e9fd5750cf3947698b4f42bef901c54c5acdc44f4bc4054086d0b5c5fc70160b",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4425337
+        }
+      ]
+    },
+    {
+      "version": "0.2.3",
+      "releasedAt": "2026-10-28T15:12:52.127Z",
+      "releaseNotes": "0.2.3：引擎图标接入界面 —— 翻译页的引擎选择、新增引擎的类型选择与引擎列表都会显示各引擎 logo；插件图标换新设计并自动适配深浅主题。底部状态栏固定在窗口最底部，不再随页面内容上下移动。引擎列表支持拖拽排序（默认引擎始终排在第一位），翻译页会记住你上次选择的引擎。同时精简了引擎列表里信息量低的密钥指纹显示。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.3/com.vyrnax.translation-0.2.3-darwin-arm64.dbxp",
+          "sha256": "f7da3941d261b3f681841abce1cccee4de864c9a9de4547e79cf4cdaa331bf33",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4296690
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.3/com.vyrnax.translation-0.2.3-darwin-x64.dbxp",
+          "sha256": "ee88d0bbcef8d771cbc0d4000cf3d6bbeebfd0d6822804d81e690750d171d0a5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4483941
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.3/com.vyrnax.translation-0.2.3-linux-arm64.dbxp",
+          "sha256": "6954a050aec56ca541909455a10f0f33bfcbf4e7ea29138b163f6774eb503ccb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4004511
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.3/com.vyrnax.translation-0.2.3-linux-x64.dbxp",
+          "sha256": "539e089f7afbbdd6befaa3efc7c11e8f9aa47ab287c9a9bf995026b7fad2ec1d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4337320
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.3/com.vyrnax.translation-0.2.3-windows-x64.dbxp",
+          "sha256": "1e94aae2a0994eff071eed8e6c0c85b870e333573ba0c8dc3207429045328795",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4432328
         }
       ]
     }
