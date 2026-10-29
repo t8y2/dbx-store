@@ -1,0 +1,71 @@
+{
+  "id": "io.dbx.screenshot",
+  "name": "Screenshot",
+  "description": "Capture the screen and keep a local screenshot history in DBX. Saving can copy the image to the clipboard (overwrites current clipboard contents; toggle in settings).",
+  "publisher": "alan",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/allran/dbx-plugin-screenshot/v0.1.1/assets/plugin.svg",
+  "tags": [
+    "screenshot",
+    "productivity",
+    "workbench"
+  ],
+  "permissions": [
+    "host.binary",
+    "host.events"
+  ],
+  "source": "https://github.com/allran/dbx-plugin-screenshot/tree/v0.1.1",
+  "homepage": "https://github.com/allran/dbx-plugin-screenshot",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.1",
+  "versions": [
+    {
+      "version": "0.1.1",
+      "releasedAt": "2026-10-29T17:05:01.767Z",
+      "releaseNotes": "0.1.1: declare host.binary; Windows interactive region capture; package LICENSE; clean capture tmp on failure/clear; disclose default copy-to-clipboard overwrites the system clipboard.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/io.dbx.screenshot-0.1.1-darwin-arm64.dbxp",
+          "sha256": "3f9a4ab2cc71dcf528ff0b19d04a58d38a5cb515c1cfc6667a7f01440ee7b19d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 905710
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/io.dbx.screenshot-0.1.1-darwin-x64.dbxp",
+          "sha256": "70294fc9f93c96c8be3963670c7809b6e086f40eef893a7adddf405145ebe8d8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 964101
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/io.dbx.screenshot-0.1.1-linux-arm64.dbxp",
+          "sha256": "5819781c59cf47b340e3386d086b3da2568439210cb75d3f566473921ef14c6f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1879387
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/io.dbx.screenshot-0.1.1-linux-x64.dbxp",
+          "sha256": "12aed06547bd4c4effd2bb96ba7fd28154438cbbe5cbccc3f107cae707d7522f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1955629
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/io.dbx.screenshot-0.1.1-windows-x64.dbxp",
+          "sha256": "5e6899bc9591c555c2d44fac7f98e5f39e1a96f9e3e0f1099b93435d5dad6ccd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 765116
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "截图",
+      "description": "截取屏幕并在 DBX 中保存本机截图历史。保存后可复制到剪贴板（会覆盖当前剪贴板内容，可在设置中关闭）。"
+    }
+  }
+}

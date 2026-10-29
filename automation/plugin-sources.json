@@ -212,6 +212,11 @@
       "autoUpdate": true
     },
     {
+      "repository": "zaojiaoci/dbx-empty-bowl",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
       "repository": "zaojiaoci/dbx-sql-guard",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
@@ -238,6 +243,11 @@
     },
     {
       "repository": "vyrnax/dbx-plugin-translation",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "allran/dbx-plugin-screenshot",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     }

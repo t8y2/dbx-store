@@ -7709,6 +7709,77 @@
       ]
     },
     {
+      "id": "io.dbx.screenshot",
+      "name": "Screenshot",
+      "description": "Capture the screen and keep a local screenshot history in DBX. Saving can copy the image to the clipboard (overwrites current clipboard contents; toggle in settings).",
+      "publisher": "alan",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/icon.svg",
+      "tags": [
+        "screenshot",
+        "productivity",
+        "workbench"
+      ],
+      "permissions": [
+        "host.binary",
+        "host.events"
+      ],
+      "source": "https://github.com/allran/dbx-plugin-screenshot/tree/v0.1.1",
+      "homepage": "https://github.com/allran/dbx-plugin-screenshot",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.1",
+      "versions": [
+        {
+          "version": "0.1.1",
+          "releasedAt": "2026-10-29T17:05:01.767Z",
+          "releaseNotes": "0.1.1: declare host.binary; Windows interactive region capture; package LICENSE; clean capture tmp on failure/clear; disclose default copy-to-clipboard overwrites the system clipboard.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/io.dbx.screenshot-0.1.1-darwin-arm64.dbxp",
+              "sha256": "3f9a4ab2cc71dcf528ff0b19d04a58d38a5cb515c1cfc6667a7f01440ee7b19d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 905710
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/io.dbx.screenshot-0.1.1-darwin-x64.dbxp",
+              "sha256": "70294fc9f93c96c8be3963670c7809b6e086f40eef893a7adddf405145ebe8d8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 964101
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/io.dbx.screenshot-0.1.1-linux-arm64.dbxp",
+              "sha256": "5819781c59cf47b340e3386d086b3da2568439210cb75d3f566473921ef14c6f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1879387
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/io.dbx.screenshot-0.1.1-linux-x64.dbxp",
+              "sha256": "12aed06547bd4c4effd2bb96ba7fd28154438cbbe5cbccc3f107cae707d7522f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1955629
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/io.dbx.screenshot-0.1.1-windows-x64.dbxp",
+              "sha256": "5e6899bc9591c555c2d44fac7f98e5f39e1a96f9e3e0f1099b93435d5dad6ccd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 765116
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "截图",
+          "description": "截取屏幕并在 DBX 中保存本机截图历史。保存后可复制到剪贴板（会覆盖当前剪贴板内容，可在设置中关闭）。"
+        }
+      }
+    },
+    {
       "id": "io.dbx.ssh",
       "name": "Terminal",
       "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
@@ -9537,7 +9608,7 @@
       "description": "Manage Apollo 2.x configuration with independently authored pages and password login. Known visual parity gaps remain.",
       "publisher": "caichangqing1120",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.2.2/icon.png",
       "tags": [
         "apollo",
         "configuration",
@@ -9546,11 +9617,53 @@
       "permissions": [
         "host.storage"
       ],
-      "source": "https://github.com/caichangqing1120/dbx-plugin-apollo/tree/v0.1.3",
+      "source": "https://github.com/caichangqing1120/dbx-plugin-apollo/tree/v0.2.2",
       "homepage": "https://github.com/caichangqing1120/dbx-plugin-apollo",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.3",
+      "latestVersion": "0.2.2",
       "versions": [
+        {
+          "version": "0.2.2",
+          "releasedAt": "2026-10-29T17:13:56.547Z",
+          "releaseNotes": "0.2.2 is the first Store update since 0.1.3. It exposes five MCP tools over the existing Apollo service API: read (apollo_read, apollo_session), write (apollo_write) and full-access administration (apollo_admin, apollo_authorize_consumer), while keeping the existing secret redaction, read-only and explicit-confirmation guards; manifest permissions are unchanged (host.storage only) and upgrading grants no access. It also removes the unsupported mcpTools Store metadata field that blocked release import. UI behavior is unchanged. A matching updated DBX Desktop and standalone MCP are required.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.2.2/io.github.caichangqing1120.apollo-0.2.2-darwin-arm64.dbxp",
+              "sha256": "343f0ccc89d69a6252ce4bd44239e4ccb9682c383b83abdfe76a7fc5d3ea1853",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2940256
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.2.2/io.github.caichangqing1120.apollo-0.2.2-darwin-x64.dbxp",
+              "sha256": "2b6e6da03a60d2b658d5320d3acf4fa226adb111fdea3b9b5e8279af08ae1d2f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3163151
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.2.2/io.github.caichangqing1120.apollo-0.2.2-linux-arm64.dbxp",
+              "sha256": "c8fc0d1b452d9eca36a6b9663c149d88fc1444e029ad232d5b909b566da90da5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2860766
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.2.2/io.github.caichangqing1120.apollo-0.2.2-linux-x64.dbxp",
+              "sha256": "e6b53fc6fbe53c2afc1d418d515f161e01e82a11228b6a92eaa6ba1be481acdc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3135770
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.2.2/io.github.caichangqing1120.apollo-0.2.2-windows-x64.dbxp",
+              "sha256": "0a25444ea42328638d03d42c3e8e5e2e31b472296a9ad391e25cba45c1315abc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3177114
+            }
+          ]
+        },
         {
           "version": "0.1.3",
           "releasedAt": "2026-10-23T13:03:01.519Z",
@@ -9649,18 +9762,67 @@
       "description": "Read-only PromQL editor, targets, alerts, rules and runtime status in a DBX workbench.",
       "publisher": "caichangqing1120",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.1.7/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/icon.svg",
       "tags": [
         "prometheus",
         "monitoring",
         "observability"
       ],
       "permissions": [],
-      "source": "https://github.com/caichangqing1120/dbx-plugin-prometheus/tree/v0.1.7",
+      "source": "https://github.com/caichangqing1120/dbx-plugin-prometheus/tree/v0.2.2",
       "homepage": "https://github.com/caichangqing1120/dbx-plugin-prometheus",
       "license": "MIT",
-      "latestVersion": "0.1.7",
+      "latestVersion": "0.2.2",
       "versions": [
+        {
+          "version": "0.2.2",
+          "releasedAt": "2026-10-29T17:14:07.870Z",
+          "releaseNotes": "0.2.2 is the first Store update since 0.1.7. It exposes 15 read-only MCP tools over the existing Prometheus API (PromQL instant and range queries, metric/label discovery, targets and service discovery, alerts, rules, and runtime/TSDB/flags/config status) with explicit access declarations, host-bound lifecycle identity and redacted output; manifest permissions remain empty and upgrading grants no access. It also corrects the author release metadata so DBX Store can import the release, and removes the unsupported mcpTools field. UI and service behavior are unchanged. A matching updated DBX Desktop and standalone MCP are required.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/io.github.caichangqing1120.prometheus-0.2.2-darwin-arm64.dbxp",
+              "sha256": "3d006a90546f8142daf41271be3ae5aa6119b5eb706b572c625443348d162c71",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2881995
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/io.github.caichangqing1120.prometheus-0.2.2-darwin-x64.dbxp",
+              "sha256": "f6e39bccc2f494b9869154815374f98bcd1b7425f9a359c47f664246b6e2f179",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3121566
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/io.github.caichangqing1120.prometheus-0.2.2-linux-arm64.dbxp",
+              "sha256": "445472740c2ca0a6e582110eb18cb98adc37ee7f9d3af01cac6754a9c03195d9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2798073
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/io.github.caichangqing1120.prometheus-0.2.2-linux-x64.dbxp",
+              "sha256": "ee9e12f8da33d48d178f4b309897fbae159cb6aa10023b134c2f11b6e684a61d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3091266
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/io.github.caichangqing1120.prometheus-0.2.2-windows-arm64.dbxp",
+              "sha256": "fdc9c334b88417e2c111caffb8375cb309c068e76c0ad46d1d342f95a667e7c7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2811477
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/io.github.caichangqing1120.prometheus-0.2.2-windows-x64.dbxp",
+              "sha256": "5633cdcb65f5af47742e4957fd1f24f22becb02ad8d30c4aae7a6551bdba0db8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3135579
+            }
+          ]
+        },
         {
           "version": "0.1.7",
           "releasedAt": "2026-09-21T17:15:52.273Z",
@@ -9781,18 +9943,67 @@
       "description": "Manage official XXL-JOB Admin 2.3.x and 3.4.x jobs, executors and logs in DBX.",
       "publisher": "caichangqing1120",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/icon.svg",
       "tags": [
         "xxl-job",
         "scheduler",
         "jobs"
       ],
       "permissions": [],
-      "source": "https://github.com/caichangqing1120/dbx-plugin-xxl-job/tree/v0.1.1",
+      "source": "https://github.com/caichangqing1120/dbx-plugin-xxl-job/tree/v0.2.2",
       "homepage": "https://github.com/caichangqing1120/dbx-plugin-xxl-job",
       "license": "MIT",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.2.2",
       "versions": [
+        {
+          "version": "0.2.2",
+          "releasedAt": "2026-10-29T17:14:09.404Z",
+          "releaseNotes": "0.2.2 is the first Store update since 0.1.1. It exposes 13 lifecycle-bound MCP tools over the existing XXL-JOB Admin API: read (xxljob_info, xxljob_groups, xxljob_jobs, xxljob_jobs_by_group, xxljob_logs, xxljob_log_content), write (xxljob_start, xxljob_stop) and full-access administration (xxljob_trigger, xxljob_save_job, xxljob_remove_job, xxljob_save_group, xxljob_remove_group), keeping the existing confirmation and read-only guards; manifest permissions remain empty and upgrading grants no access. It also corrects the author release metadata so DBX Store can import the release, and removes the unsupported mcpTools field. UI behavior is unchanged. A matching updated DBX Desktop and standalone MCP are required.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/io.github.caichangqing1120.xxljob-0.2.2-darwin-arm64.dbxp",
+              "sha256": "35887e6e898fd9662d0a776166649f667f07cea58fde6ef5546000392229f892",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2752186
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/io.github.caichangqing1120.xxljob-0.2.2-darwin-x64.dbxp",
+              "sha256": "518ac1fd0de728623b22b0462df1a9c2c5feb7d65b4c4bceca6913b694c66e8e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2980023
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/io.github.caichangqing1120.xxljob-0.2.2-linux-arm64.dbxp",
+              "sha256": "77a59b906e83942865004cb8e2e3d79d4d85b20a5f7fe607a08183b0dc06b55e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2667426
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/io.github.caichangqing1120.xxljob-0.2.2-linux-x64.dbxp",
+              "sha256": "d11e972e8b336bcd32984db93ab349b70c82f7a9c18479ad2bc5ca61b8dbf966",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2949320
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/io.github.caichangqing1120.xxljob-0.2.2-windows-arm64.dbxp",
+              "sha256": "393cd76c1dadc795d3e4754e7a3afac43d806864a87ee4dc29a0b5d98a500f29",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2683356
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/io.github.caichangqing1120.xxljob-0.2.2-windows-x64.dbxp",
+              "sha256": "21f5a98dc88f09e2a7ee44d506d131b408abddd0266347b800b9794de33090e0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2995316
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-09-19T02:05:59.265Z",
@@ -13235,6 +13446,67 @@
         "zh-CN": {
           "name": "SQL Notebook",
           "description": "类似 Jupyter Notebook 的 DBX SQL 笔记本，文件为纯文本 .sqlnb（YAML）。"
+        }
+      }
+    },
+    {
+      "id": "io.github.zhhoceanfly.protoview",
+      "name": "ApiMan",
+      "description": "Browse Protobuf and debug gRPC / HTTP / SSE / WebSocket APIs inside DBX. Requires Node.js >= 18 on PATH (Go launcher runs runtime/sidecar.js via node; host.binary).",
+      "publisher": "zhhoceanfly",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.zhhoceanfly.protoview/0.1.1/icon.svg",
+      "tags": [
+        "protobuf",
+        "grpc",
+        "api",
+        "http",
+        "websocket"
+      ],
+      "permissions": [
+        "host.workbench",
+        "host.events",
+        "host.storage",
+        "host.binary"
+      ],
+      "source": "https://github.com/zhhOceanfly/ProtoView/tree/dbx-v0.1.1",
+      "homepage": "https://github.com/zhhOceanfly/ProtoView",
+      "license": "MIT",
+      "latestVersion": "0.1.1",
+      "versions": [
+        {
+          "version": "0.1.1",
+          "releasedAt": "2026-10-29T17:20:24.690Z",
+          "releaseNotes": "v0.1.1: publisher zhhoceanfly; host.binary; requires Node.js >= 18 on PATH; LICENSE + THIRD_PARTY_NOTICES.md for runtime/node_modules (@grpc/grpc-js Apache-2.0, @grpc/proto-loader Apache-2.0, protobufjs BSD-3-Clause). Sidecar fails with an actionable message if Node is missing or too old. Clean rebuild (vcs.modified=false); runGhz/openEditor use execFile without shell.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zhhoceanfly.protoview/0.1.1/io.github.zhhoceanfly.protoview-0.1.1-darwin-arm64.dbxp",
+              "sha256": "9c2b417b462b1012dd58aeb60b80bb7b1af89f93b184a79d25c8048da936b1e8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4372711
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zhhoceanfly.protoview/0.1.1/io.github.zhhoceanfly.protoview-0.1.1-linux-x64.dbxp",
+              "sha256": "73fc65a455b8e17c6403c0ca4273159b1caa076a1b259dc1ce1bdd498a4c7cc6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4481091
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.zhhoceanfly.protoview/0.1.1/io.github.zhhoceanfly.protoview-0.1.1-windows-x64.dbxp",
+              "sha256": "a65e15eb8a9d1413930be5af6780fc8fdc7c847baba3957b74b74932728c2916",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4549108
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "ApiMan",
+          "description": "在 DBX 中浏览 Protobuf，并用 gRPC / HTTP / SSE / WebSocket 调试接口。需要本机已安装 Node.js ≥ 18 且在 PATH 中。"
         }
       }
     },
