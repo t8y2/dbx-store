@@ -9537,7 +9537,7 @@
       "description": "Manage Apollo 2.x configuration with independently authored pages and password login. Known visual parity gaps remain.",
       "publisher": "caichangqing1120",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.1.3/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.2.2/icon.png",
       "tags": [
         "apollo",
         "configuration",
@@ -9546,11 +9546,53 @@
       "permissions": [
         "host.storage"
       ],
-      "source": "https://github.com/caichangqing1120/dbx-plugin-apollo/tree/v0.1.3",
+      "source": "https://github.com/caichangqing1120/dbx-plugin-apollo/tree/v0.2.2",
       "homepage": "https://github.com/caichangqing1120/dbx-plugin-apollo",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.3",
+      "latestVersion": "0.2.2",
       "versions": [
+        {
+          "version": "0.2.2",
+          "releasedAt": "2026-10-29T17:13:56.547Z",
+          "releaseNotes": "0.2.2 is the first Store update since 0.1.3. It exposes five MCP tools over the existing Apollo service API: read (apollo_read, apollo_session), write (apollo_write) and full-access administration (apollo_admin, apollo_authorize_consumer), while keeping the existing secret redaction, read-only and explicit-confirmation guards; manifest permissions are unchanged (host.storage only) and upgrading grants no access. It also removes the unsupported mcpTools Store metadata field that blocked release import. UI behavior is unchanged. A matching updated DBX Desktop and standalone MCP are required.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.2.2/io.github.caichangqing1120.apollo-0.2.2-darwin-arm64.dbxp",
+              "sha256": "343f0ccc89d69a6252ce4bd44239e4ccb9682c383b83abdfe76a7fc5d3ea1853",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2940256
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.2.2/io.github.caichangqing1120.apollo-0.2.2-darwin-x64.dbxp",
+              "sha256": "2b6e6da03a60d2b658d5320d3acf4fa226adb111fdea3b9b5e8279af08ae1d2f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3163151
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.2.2/io.github.caichangqing1120.apollo-0.2.2-linux-arm64.dbxp",
+              "sha256": "c8fc0d1b452d9eca36a6b9663c149d88fc1444e029ad232d5b909b566da90da5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2860766
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.2.2/io.github.caichangqing1120.apollo-0.2.2-linux-x64.dbxp",
+              "sha256": "e6b53fc6fbe53c2afc1d418d515f161e01e82a11228b6a92eaa6ba1be481acdc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3135770
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.apollo/0.2.2/io.github.caichangqing1120.apollo-0.2.2-windows-x64.dbxp",
+              "sha256": "0a25444ea42328638d03d42c3e8e5e2e31b472296a9ad391e25cba45c1315abc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3177114
+            }
+          ]
+        },
         {
           "version": "0.1.3",
           "releasedAt": "2026-10-23T13:03:01.519Z",
