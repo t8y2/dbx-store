@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.caichangqing1120.prometheus",
+  "publisher": "caichangqing1120",
+  "version": "0.2.1",
+  "name": "Prometheus",
+  "description": "Read-only PromQL editor, targets, alerts, rules and runtime status in a DBX workbench.",
+  "icon": "https://raw.githubusercontent.com/caichangqing1120/dbx-plugin-prometheus/v0.2.1/assets/plugin.svg",
+  "tags": [
+    "prometheus",
+    "monitoring",
+    "observability"
+  ],
+  "permissions": [],
+  "source": "https://github.com/caichangqing1120/dbx-plugin-prometheus",
+  "homepage": "https://github.com/caichangqing1120/dbx-plugin-prometheus",
+  "license": "MIT",
+  "releaseNotes": "Fix author release metadata for DBX Store synchronization in 0.2.1. All 15 read-only MCP tools, access declarations and user-controlled grants remain unchanged.",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/caichangqing1120/dbx-plugin-prometheus/releases/download/v0.2.1/io.github.caichangqing1120.prometheus-0.2.1-darwin-arm64.dbxp",
+      "sha256": "a8c88d03c0a2b68a3d48e2f2da088964e35c7bd88a360445616d40488ebf6417",
+      "size": 5501112
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/caichangqing1120/dbx-plugin-prometheus/releases/download/v0.2.1/io.github.caichangqing1120.prometheus-0.2.1-darwin-x64.dbxp",
+      "sha256": "4ff4da6ce7f610252e8cdacc8f748fa90f1a5b670186c082e8427b88ea84c9ab",
+      "size": 5887930
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/caichangqing1120/dbx-plugin-prometheus/releases/download/v0.2.1/io.github.caichangqing1120.prometheus-0.2.1-linux-arm64.dbxp",
+      "sha256": "bc93044ee6ffc1f711f4e47f2e8589e27d8ccc148d39f5913b099064d7f659d7",
+      "size": 5257764
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/caichangqing1120/dbx-plugin-prometheus/releases/download/v0.2.1/io.github.caichangqing1120.prometheus-0.2.1-linux-x64.dbxp",
+      "sha256": "dd31ade80e8969efa54f2cea9bd360d1b71649c7746e62780363be8fc8f4e31a",
+      "size": 5737287
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/caichangqing1120/dbx-plugin-prometheus/releases/download/v0.2.1/io.github.caichangqing1120.prometheus-0.2.1-windows-arm64.dbxp",
+      "sha256": "300231235549b418d577effbaa661769baef422cf356f0ff6031253a539abaf4",
+      "size": 5243880
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/caichangqing1120/dbx-plugin-prometheus/releases/download/v0.2.1/io.github.caichangqing1120.prometheus-0.2.1-windows-x64.dbxp",
+      "sha256": "b2090dfcf7ee4bc065f623a43a221d64a24eb3dd32439085b900acc7edd35ea9",
+      "size": 5752320
+    }
+  ]
+}
