@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "com.vyrnax.translation",
+  "publisher": "vyrnax",
+  "version": "0.2.4",
+  "name": "Translation 即时翻译",
+  "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 9 类引擎：开箱即用的免费翻译服务、OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。",
+  "tags": [
+    "translation",
+    "translate",
+    "instant-translation",
+    "i18n",
+    "llm",
+    "deepl",
+    "productivity"
+  ],
+  "icon": "https://raw.githubusercontent.com/vyrnax/dbx-plugin-translation/v0.2.4/assets/plugin.svg",
+  "permissions": [
+    "host.events"
+  ],
+  "source": "https://github.com/vyrnax/dbx-plugin-translation",
+  "homepage": "https://github.com/vyrnax/dbx-plugin-translation",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.2.4：\n1、新增内置「免费翻译服务」引擎\n2、引擎列表支持拖动排序\n3、「设为默认」不再插队\n4、翻译页下拉与列表同序\n5、下拉只列启用中的引擎\n6、首个官方引擎自动设为默认\n7、引擎名称增加长度上限\n8、修复下拉宽度锁死导致换行\n提示：用内置免费引擎时原文会发往该公益端点。",
+  "localizations": {
+    "en": {
+      "name": "Translation",
+      "description": "Translation — a multi-engine translation plugin with 9 engine types: an out-of-the-box free translation service (Bilibili's publicly deployed Index-Translate model, no signup and no API key), OpenAI-compatible LLMs (DeepSeek, Qwen, Zhipu, Kimi, Ollama, vLLM, …), local CLI proxies (claude / codex / custom), DeepL, Google, Baidu, Youdao, Alibaba Cloud and Tencent Cloud; with streaming output, translate-as-you-type, engine management and translation history."
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/vyrnax/dbx-plugin-translation/releases/download/v0.2.4/com.vyrnax.translation-0.2.4-darwin-arm64.dbxp",
+      "sha256": "4723d5824a90a5eeff588f015a0dbd13151bc15104c56b50a9c380eff1bea9ac",
+      "size": 4317613
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/vyrnax/dbx-plugin-translation/releases/download/v0.2.4/com.vyrnax.translation-0.2.4-darwin-x64.dbxp",
+      "sha256": "f74cd9b14f653ebd5544e24055d698627e5f6f9f7b261fa32d912433f08973a7",
+      "size": 4503726
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/vyrnax/dbx-plugin-translation/releases/download/v0.2.4/com.vyrnax.translation-0.2.4-linux-arm64.dbxp",
+      "sha256": "6e8f842841bb55ed78c77f0a1354956c93739e95748d289ee1cdccecbff0bf9a",
+      "size": 4021761
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/vyrnax/dbx-plugin-translation/releases/download/v0.2.4/com.vyrnax.translation-0.2.4-linux-x64.dbxp",
+      "sha256": "cd879b670fad35736bd00f7d1e62438a059c5b32e8c6cfe2ba814b68b2268c6a",
+      "size": 4356937
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/vyrnax/dbx-plugin-translation/releases/download/v0.2.4/com.vyrnax.translation-0.2.4-windows-x64.dbxp",
+      "sha256": "d1e1a8c02c66afec8ae40ceba5bd526d63d50d90493584182169a56181018795",
+      "size": 4451208
+    }
+  ]
+}
