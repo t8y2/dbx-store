@@ -1,0 +1,61 @@
+{
+  "id": "io.github.zhhoceanfly.protoview",
+  "name": "ApiMan",
+  "description": "Browse Protobuf and debug gRPC / HTTP / SSE / WebSocket APIs inside DBX. Requires Node.js >= 18 on PATH (Go launcher runs runtime/sidecar.js via node; host.binary).",
+  "publisher": "zhhoceanfly",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/zhhOceanfly/ProtoView/dbx-v0.1.1/packages/dbx-plugin/assets/plugin.svg",
+  "tags": [
+    "protobuf",
+    "grpc",
+    "api",
+    "http",
+    "websocket"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.events",
+    "host.storage",
+    "host.binary"
+  ],
+  "source": "https://github.com/zhhOceanfly/ProtoView/tree/dbx-v0.1.1",
+  "homepage": "https://github.com/zhhOceanfly/ProtoView",
+  "license": "MIT",
+  "latestVersion": "0.1.1",
+  "versions": [
+    {
+      "version": "0.1.1",
+      "releasedAt": "2026-10-29T17:20:24.690Z",
+      "releaseNotes": "v0.1.1: publisher zhhoceanfly; host.binary; requires Node.js >= 18 on PATH; LICENSE + THIRD_PARTY_NOTICES.md for runtime/node_modules (@grpc/grpc-js Apache-2.0, @grpc/proto-loader Apache-2.0, protobufjs BSD-3-Clause). Sidecar fails with an actionable message if Node is missing or too old. Clean rebuild (vcs.modified=false); runGhz/openEditor use execFile without shell.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.zhhoceanfly.protoview/0.1.1/io.github.zhhoceanfly.protoview-0.1.1-darwin-arm64.dbxp",
+          "sha256": "9c2b417b462b1012dd58aeb60b80bb7b1af89f93b184a79d25c8048da936b1e8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4372711
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.zhhoceanfly.protoview/0.1.1/io.github.zhhoceanfly.protoview-0.1.1-linux-x64.dbxp",
+          "sha256": "73fc65a455b8e17c6403c0ca4273159b1caa076a1b259dc1ce1bdd498a4c7cc6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4481091
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.zhhoceanfly.protoview/0.1.1/io.github.zhhoceanfly.protoview-0.1.1-windows-x64.dbxp",
+          "sha256": "a65e15eb8a9d1413930be5af6780fc8fdc7c847baba3957b74b74932728c2916",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4549108
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "ApiMan",
+      "description": "在 DBX 中浏览 Protobuf，并用 gRPC / HTTP / SSE / WebSocket 调试接口。需要本机已安装 Node.js ≥ 18 且在 PATH 中。"
+    }
+  }
+}
