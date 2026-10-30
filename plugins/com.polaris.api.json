@@ -1,0 +1,45 @@
+{
+  "id": "com.polaris.api",
+  "name": "polaris-api",
+  "description": "API asset library: import OpenAPI/Swagger and Postman Collections into a searchable catalog tree; browse method, path, parameters, request body and response schemas per endpoint; one-click cURL copy and Markdown export.",
+  "publisher": "misxzaiz",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/misxzaiz/polaris-api/v0.1.2/assets/plugin.svg",
+  "tags": [
+    "api",
+    "openapi",
+    "swagger",
+    "postman",
+    "documentation",
+    "debugging"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/misxzaiz/polaris-api",
+  "homepage": "https://github.com/misxzaiz/polaris-api",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.2",
+  "versions": [
+    {
+      "version": "0.1.2",
+      "releasedAt": "2026-10-30T05:18:30.723Z",
+      "releaseNotes": "Initial release: import OpenAPI/Swagger and Postman Collection v2.1 into a searchable endpoint catalog tree with per-endpoint parameter/body/schema browsing, cURL copy and Markdown export.\n\n0.1.1: declare host.storage (persistence previously failed silently in the sandbox), add LICENSE, fix manifest $schema branch.\n\n0.1.2: fix checksums.json top-level key hash → algorithm so the store signing packager recognizes the sha256 algorithm.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/com.polaris.api/0.1.2/com.polaris.api-0.1.2-universal.dbxp",
+          "sha256": "2fb762fd315a1f0927464acd35bfdba008fa4479126fbc1051eda5e1ee3fbf7e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 49679
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "polaris-api",
+      "description": "API 资产库：从 OpenAPI/Swagger 与 Postman Collection 导入接口，整理为可搜索的目录树；浏览每个接口的方法、路径、参数、请求体与响应 Schema，一键复制 cURL、导出 Markdown。"
+    }
+  }
+}
