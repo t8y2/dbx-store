@@ -14001,7 +14001,7 @@
       "description": "A lightweight dev toolset under 200KB — instant to use. Sandboxed and offline with zero network access. High-frequency tools for crypto, encoding, text, data conversion, formatting, time, networking and image generation; inputs and options are remembered and sync seamlessly across devices via DBX.",
       "publisher": "terry",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.9/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.10/icon.svg",
       "tags": [
         "devtools",
         "utilities",
@@ -14021,8 +14021,22 @@
       "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "license": "MIT",
-      "latestVersion": "0.6.9",
+      "latestVersion": "0.6.10",
       "versions": [
+        {
+          "version": "0.6.10",
+          "releasedAt": "2026-10-30T05:24:53.023Z",
+          "releaseNotes": "新增：Unicode 编解码面板——支持 \\uXXXX、\\u{4-6位}、\\u{X}、U+XXXX、HTML 实体（十/十六进制）六种格式互转，编码可忽略 ASCII 字符，解码自动识别全部格式；原「Unicode 检查」更名为「Unicode 编解码」，保留逐码位分析。 | New: Unicode encode/decode panel — six formats (\\uNNNN surrogate pairs, \\uNNNNNN wide, \\u{NNNNNN}, U+NNNN, HTML entities dec/hex) with a skip-ASCII toggle and an auto-detecting decoder; the former Unicode Inspector is now Unicode Codec, keeping the per-code-point breakdown.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.10/terry.devtools-0.6.10-universal.dbxp",
+              "sha256": "db47ae04e8c58e1d79dff7742fe2f5d8e1c23944ce87d4609e9fcbb88c3ad083",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 191900
+            }
+          ]
+        },
         {
           "version": "0.6.9",
           "releasedAt": "2026-10-26T06:39:25.072Z",
