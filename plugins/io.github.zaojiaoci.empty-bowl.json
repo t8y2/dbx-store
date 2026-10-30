@@ -4,17 +4,17 @@
   "description": "A 15-minute narrative short: you decide what a fading AI keeps, and what it lets go. Set one card aside and the next page changes. One ending. Then back to work.",
   "publisher": "zaojiaoci",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/zaojiaoci/dbx-empty-bowl/v0.1.0/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/zaojiaoci/dbx-empty-bowl/v0.1.1/assets/plugin.svg",
   "tags": [
     "games",
     "narrative",
     "short"
   ],
   "permissions": [],
-  "source": "https://github.com/zaojiaoci/dbx-empty-bowl/tree/v0.1.0",
+  "source": "https://github.com/zaojiaoci/dbx-empty-bowl/tree/v0.1.1",
   "homepage": "https://zaojiaoci.itch.io/it-is-maintaining-a-conversation",
   "license": "Apache-2.0 (code) / All Rights Reserved (story content, see LICENSE-content.md)",
-  "latestVersion": "0.1.0",
+  "latestVersion": "0.1.1",
   "versions": [
     {
       "version": "0.1.0",
@@ -27,6 +27,20 @@
           "sha256": "4c04ffe1b2f965fab8659c040df50eb0fa056be528ef04b0ba90078dfac497e6",
           "signingKeyId": "dbx-store-release-2026",
           "size": 572897
+        }
+      ]
+    },
+    {
+      "version": "0.1.1",
+      "releasedAt": "2026-10-30T05:24:56.189Z",
+      "releaseNotes": "License fixes only, no gameplay changes: the package now carries the full Apache-2.0 text in assets/LICENSE (GitHub previously saw NOASSERTION) and ships LICENSE-content.md as assets/LICENSE-content.md, so every on-package reference to it resolves.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/io.github.zaojiaoci.empty-bowl/0.1.1/io.github.zaojiaoci.empty-bowl-0.1.1-universal.dbxp",
+          "sha256": "43a8ecfb1b273681e9a1bbe05bfb47a1cdf31e75b24a6c9522dbb9c99ee6c909",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 577712
         }
       ]
     }
