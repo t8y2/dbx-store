@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "com.xiaomao49.sql-dojo",
+  "publisher": "xiaomao49",
+  "version": "0.3.1",
+  "name": "SQL Dojo",
+  "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 16 engine running locally. No server, no setup, works offline. Per-question hints and result-set based grading.",
+  "icon": "https://raw.githubusercontent.com/xiaomao49/dbx-sql-dojo/v0.3.1/assets/plugin.svg",
+  "tags": [
+    "sql",
+    "postgresql",
+    "learning",
+    "leetcode",
+    "practice"
+  ],
+  "permissions": [],
+  "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.3.1",
+  "homepage": "https://github.com/xiaomao49/dbx-sql-dojo",
+  "license": "MIT",
+  "releaseNotes": "LeetCode SQL 50 practice workbench backed by PostgreSQL 16 (PGlite, WebAssembly). Local-only: no database connection required. Question bank derived from the MIT-licensed Camio1945/leetcode-study-plan-top-sql-50 repository, converted to PostgreSQL and verified question by question.",
+  "localizations": {
+    "zh-CN": {
+      "name": "SQL 练习场",
+      "description": "在 DBX 里刷力扣 SQL 50 题。内置真正的 PostgreSQL 16 引擎，离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题。"
+    }
+  },
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/xiaomao49/dbx-sql-dojo/releases/download/v0.3.1/com.xiaomao49.sql-dojo-0.3.1-universal.dbxp",
+      "sha256": "d1efdbaa353f39f20e8870a8156801317c633f2dcc46b998d192cd5235652319",
+      "size": 5333516
+    }
+  ]
+}
