@@ -1,10 +1,10 @@
 {
   "id": "io.dbx.excalidraw",
   "name": "Excalidraw Studio",
-  "description": "A lightweight, local-first diagramming workspace powered by Excalidraw, embedded directly in DBX.",
+  "description": "A local-first Excalidraw workspace built into DBX: sketch diagrams and flowcharts, drop SQL result grids or estimated execution plans onto the canvas to annotate, and hand any canvas to the built-in AI panel; everything is stored as .excalidraw files on your machine.",
   "publisher": "runstone",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/Abeautifulsnow/dbx-plugin-excalidraw/v0.4.0/assets/plugin.png",
+  "icon": "https://raw.githubusercontent.com/Abeautifulsnow/dbx-plugin-excalidraw/v0.4.2/assets/plugin.png",
   "tags": [
     "diagram",
     "drawing",
@@ -21,7 +21,7 @@
   "source": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
   "homepage": "https://github.com/Abeautifulsnow/dbx-plugin-excalidraw",
   "license": "MIT",
-  "latestVersion": "0.4.0",
+  "latestVersion": "0.4.2",
   "versions": [
     {
       "version": "0.2.0",
@@ -316,12 +316,54 @@
           "size": 18474902
         }
       ]
+    },
+    {
+      "version": "0.4.2",
+      "releasedAt": "2026-10-31T10:59:42.796Z",
+      "releaseNotes": "Adds a host-native save dialog, deep links from the editor and the result view into DBX's own file manager, remembered UI preferences (result row count and home search), and hands the Excalidraw editor the host locale as-is so its own translations apply. Also corrects the store listing, which previously declared no permissions while the manifest required two. New in this line: a Plan-on-canvas action in the result view lays the query's estimated execution plan out as an annotatable Excalidraw tree (host plan API required; declares host.plans:read). New in 0.3.0: an Ask AI action hands the parsed plan to DBX's built-in AI panel as a one-way snapshot (declares host.ai), and plan warnings land on the canvas as a sticky note. New in 0.3.1: clipboard integration — the export menu can copy the scene as JSON, and the editor gains a Paste menu that drops a scene copied from another diagram, or a screenshot from the system clipboard, straight onto the canvas (screenshots are stored in the content-addressed asset store like any other image). Reading the clipboard asks once per session and requires the new host.clipboard:read permission; the paste menu hides itself on hosts without the capability. New in 0.3.2: failure toasts across the home screen, editor and result view now append the underlying error detail (for example \"Connection is not open\"), so a problem is reportable without opening DevTools; error toasts stay up longer, and the save-status chip shows the cause on hover. Copying a scene whose JSON exceeds the host's 2 MiB bridge limit now fails with a clear pointer to export instead of a generic host rejection, measured over the exact request envelope so CJK content counts correctly. The result view also passes the tab's schema to the plan API (takes effect once the host supplies it), and the Ask-AI plan-context size check now measures UTF-8 bytes. New in 0.4.0: the host tab now follows what the plugin is showing — the open document's name in the editor (dotted while anything is unsaved) and the query-derived name on result-view tabs, so tabs opened from different queries are told apart. The built-in AI panel also gains plugin suggestion chips that follow the view: result interpretation, visualization ideas and SQL review while a result set is on offer, plan interpretation once a plan is on the canvas, cleared on plain canvases, and re-asserted whenever a tab comes back to the front. Both features are capability-gated and declare no new permissions — hosts without them keep today's behavior. New in 0.4.1: fixes a 0.4.0 regression that rendered every plugin tab blank on hosts supporting the new tab-title capability. 0.4.1 also adds three result-view capabilities. Append to a canvas lays a second or further result set beside what a diagram already holds: the result view gains an Add-to-existing-canvas action that picks a target diagram, places the new grid to the right of the live content and top-aligned with it, numbers same-table titles, and shrinks rows honestly against the 2 MB scene limit (no new permissions). Result grids now lay out the host's full 500-row snapshot instead of capping at 200, by drawing each cell as a sparse Excalidraw element whose fields equal to restore() defaults are omitted - a restore-parity test pins that contract, and over-budget tables still trim honestly with the count shown. Send data to AI opens the built-in AI panel with the current result set as a one-way context snapshot (SQL plus display-ready cells, sampled to the 2 MiB context cap) without auto-sending, so interpretation, comparison or follow-up SQL are the user's call; the panel's suggestion chips now name that button when no snapshot is attached. New in 0.4.2: refreshes the store listing copy — the marketplace card now describes what the plugin actually does (result grids and execution plans laid onto an annotatable canvas, a one-click handoff to the built-in AI panel, diagrams stored locally as .excalidraw files) instead of a one-line tagline. No code changes beyond the version bump.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.4.2/io.dbx.excalidraw-0.4.2-darwin-arm64.dbxp",
+          "sha256": "ddbfbde4842ddaf4aca4ee088ef7c26146dd738da920fb075ac66cf76cdc741f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18299652
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.4.2/io.dbx.excalidraw-0.4.2-darwin-x64.dbxp",
+          "sha256": "fb309bc2cc97bfe54231ef0abed99b5e618c050028bad2cb8998becdf0cb1827",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18398144
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.4.2/io.dbx.excalidraw-0.4.2-linux-arm64.dbxp",
+          "sha256": "6ddd966f7a3013f5cfebe0658ac29091247e6bcc25a2a9fa1a319096d0609aa5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18288731
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.4.2/io.dbx.excalidraw-0.4.2-linux-x64.dbxp",
+          "sha256": "94893ef07dff5062edce15ede7e6a35cd4cee1633e323463996245c8fc9bac0d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18417735
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.excalidraw/0.4.2/io.dbx.excalidraw-0.4.2-windows-x64.dbxp",
+          "sha256": "73a0c719ab6b9ef97cd2fbcac9a8d7ae1263383280f1d6c6e1f414ab3475778a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18478529
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "Excalidraw Studio",
-      "description": "内嵌于 DBX 的轻量本地优先画图工作台，由 Excalidraw 驱动。"
+      "description": "内嵌于 DBX 的本地优先画图工作台：Excalidraw 画布与 SQL 工作流打通，结果集和执行计划可以直接铺到画布上批注，也能一键交给内置 AI 解读；图表以 .excalidraw 文件保存在本地。"
     }
   }
 }
