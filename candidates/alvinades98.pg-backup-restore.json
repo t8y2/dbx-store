@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "alvinades98.pg-backup-restore",
+  "publisher": "alvinades98",
+  "version": "0.4.1",
+  "name": "PG Backup & Restore",
+  "description": "Back up and restore PostgreSQL databases with pg_dump / pg_restore / psql: custom, tar, directory and plain SQL dumps, schema/table selection, role backup, version checks, progress, backup history and an optional full schema reset before restore.",
+  "icon": "https://raw.githubusercontent.com/alvinades98/dbx-pg-restore/v0.4.1/assets/plugin.png",
+  "tags": [
+    "postgresql",
+    "backup",
+    "restore",
+    "pg_dump",
+    "pg_restore"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/alvinades98/dbx-pg-restore",
+  "homepage": "https://github.com/alvinades98/dbx-pg-restore",
+  "license": "Apache-2.0",
+  "releaseNotes": "Windows: find pg_dump / pg_restore in C:\\Program Files\\PostgreSQL\\<version>\\bin when they are not on PATH, and no console window flashes. Errors are now also shown in the Output panel.",
+  "localizations": {
+    "zh-CN": {
+      "name": "PG 备份与恢复",
+      "description": "使用 pg_dump / pg_restore / psql 备份和恢复 PostgreSQL 数据库，支持 custom、tar、目录和纯 SQL 格式。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/alvinades98/dbx-pg-restore/releases/download/v0.4.1/alvinades98.pg-backup-restore-0.4.1-darwin-arm64.dbxp",
+      "sha256": "b13191b1aa3c89ffb05e527f86d661002efc7ff9ec79dd5fa2c58e69ba56dedc",
+      "size": 418919
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/alvinades98/dbx-pg-restore/releases/download/v0.4.1/alvinades98.pg-backup-restore-0.4.1-darwin-x64.dbxp",
+      "sha256": "d826dd6b751bdf32fbaeaab889f8f78a069a1149024d78a945345a37ba5c4fad",
+      "size": 445499
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/alvinades98/dbx-pg-restore/releases/download/v0.4.1/alvinades98.pg-backup-restore-0.4.1-linux-arm64.dbxp",
+      "sha256": "181420bfab15f55d7aa8833adfdc345ec1eaa0a1c9939a930ddc343efc7d682c",
+      "size": 446292
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/alvinades98/dbx-pg-restore/releases/download/v0.4.1/alvinades98.pg-backup-restore-0.4.1-linux-x64.dbxp",
+      "sha256": "c32dfcfa8639dd09e0d146aaf4a8722099bc733de2ef83179c677fc171cb3498",
+      "size": 471685
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/alvinades98/dbx-pg-restore/releases/download/v0.4.1/alvinades98.pg-backup-restore-0.4.1-windows-x64.dbxp",
+      "sha256": "454f8070e40a06caef1a846d9c8c995ee60a608051e641ca86eae1b111f072ff",
+      "size": 403303
+    }
+  ]
+}
