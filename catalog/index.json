@@ -11145,7 +11145,7 @@
       "description": "A quiet online parlour for Chinese chess and Gomoku, with rooms, spectators, and match clocks.",
       "publisher": "lieng618",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.lieng618.dbx-mini-games/0.4.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.lieng618.dbx-mini-games/0.4.3/icon.svg",
       "tags": [
         "game",
         "chess",
@@ -11156,11 +11156,25 @@
       "permissions": [
         "host.network:https://1.92.64.227"
       ],
-      "source": "https://github.com/lieng618/dbx-mini-games/tree/v0.4.2",
+      "source": "https://github.com/lieng618/dbx-mini-games/tree/v0.4.3",
       "homepage": "https://github.com/lieng618/dbx-mini-games",
       "license": "Apache-2.0",
-      "latestVersion": "0.4.2",
+      "latestVersion": "0.4.3",
       "versions": [
+        {
+          "version": "0.4.3",
+          "releasedAt": "2026-10-31T10:59:10.110Z",
+          "releaseNotes": "本次更新重做房间界面：大厅房间卡片、创建房间、设置与结算各自成面板；五子棋终局新增墨龙连线与落子特效，动态特效可一键关闭；象棋终局最后一手放慢到一秒，胜负看得更清；网络波动时改为显示「重连中」，不再弹出误报。",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.lieng618.dbx-mini-games/0.4.3/io.github.lieng618.dbx-mini-games-0.4.3-universal.dbxp",
+              "sha256": "15aa1a27c37959b320db93ed6b03694ac876d774cf9feaa2a5f76f32d244c6b5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 276385
+            }
+          ]
+        },
         {
           "version": "0.4.2",
           "releasedAt": "2026-10-24T17:28:13.937Z",
