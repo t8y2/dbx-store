@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "com.polaris.api",
+  "publisher": "misxzaiz",
+  "version": "0.2.0",
+  "name": "polaris-api",
+  "description": "API request client (sidecar): multi-tab, environment variables, cURL import/export, Params/Headers/Body editing; response views for table / object tree / path drill-down / field filtering. Requests are sent via a native Rust sidecar (reqwest) with no CORS / mixed-content / forbidden-header limits, equivalent to cURL.",
+  "icon": "https://raw.githubusercontent.com/misxzaiz/polaris-api/v0.2.0/assets/plugin.svg",
+  "tags": ["api", "http", "request", "curl", "debugging", "rest"],
+  "permissions": ["host.storage"],
+  "source": "https://github.com/misxzaiz/polaris-api/tree/v0.2.0",
+  "homepage": "https://github.com/misxzaiz/polaris-api",
+  "license": "Apache-2.0",
+  "releaseNotes": "Rebuild as a Rust sidecar HTTP client. v0.1.x was a universal frontend plugin positioned as an OpenAPI/Postman asset library — wrong direction, broken import modal (modalBg outside #root scope), mismatched styling, and cross-domain requests blocked by the sandbox CSP/CORS.\n\nv0.2.0 ports the relay-devkit api module to a Rust sidecar architecture: backend uses reqwest to send requests natively (no CORS/mixed-content/forbidden-header limits, equivalent to cURL); ui is a full HTTP client with multi-tab, env vars, cURL import/export, Params/Headers/Body editors, and response table/object-tree/path-drilldown/field-filter views.\n\nVerified: 44 smoke assertions, sidecar end-to-end (jsonplaceholder 200, httpbin POST with Cookie/Authorization forbidden headers preserved), browser integration (cancel button, cURL import, response views).",
+  "localizations": {
+    "zh-CN": {
+      "name": "polaris-api",
+      "description": "API 请求客户端（sidecar 版）：多 tab、环境变量、cURL 导入导出、Params/Headers/Body 编辑；响应支持表格 / 对象树 / 路径下钻 / 字段筛选。请求经原生 sidecar（reqwest）发送，无 CORS/混合内容/禁发头限制，等效 cURL。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/misxzaiz/polaris-api/releases/download/v0.2.0/com.polaris.api-0.2.0-darwin-arm64.dbxp",
+      "sha256": "7546f99a052fbf03ea8c8039e9fcb6b18c2b748189cfaa2518f2f5b3135366eb",
+      "size": 1389178
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/misxzaiz/polaris-api/releases/download/v0.2.0/com.polaris.api-0.2.0-darwin-x64.dbxp",
+      "sha256": "d05a7924052a255daa06909f8e58e32ed49332ca37614118efd390f4d87bd381",
+      "size": 1469050
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/misxzaiz/polaris-api/releases/download/v0.2.0/com.polaris.api-0.2.0-linux-arm64.dbxp",
+      "sha256": "287a90109add882bbe6d85d87cdb1510b8cbb8ea61ddad4e7e0c0b6299f68bdb",
+      "size": 1476578
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/misxzaiz/polaris-api/releases/download/v0.2.0/com.polaris.api-0.2.0-linux-x64.dbxp",
+      "sha256": "96b27e6bf84e59930ff7f0146147ff3bcff9a41605c97220b8575ed908cf66cd",
+      "size": 1544199
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/misxzaiz/polaris-api/releases/download/v0.2.0/com.polaris.api-0.2.0-windows-x64.dbxp",
+      "sha256": "30b95c605a0d6d6427a2b2c7f99c687411f98889781c3eeb8e45b8c5fe3f5a8a",
+      "size": 1504435
+    }
+  ]
+}
