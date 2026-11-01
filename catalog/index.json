@@ -11725,7 +11725,7 @@
       "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine.",
       "publisher": "oncemisery",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.1/icon.svg",
       "tags": [
         "music",
         "player",
@@ -11738,11 +11738,53 @@
         "host.storage",
         "host.workbench"
       ],
-      "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.0",
+      "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.1",
       "homepage": "https://github.com/onceMisery/hertz-studio",
       "license": "MIT",
-      "latestVersion": "0.3.0",
+      "latestVersion": "0.3.1",
       "versions": [
+        {
+          "version": "0.3.1",
+          "releasedAt": "2026-11-01T04:50:25Z",
+          "releaseNotes": "0.3.1：逐字歌词舞台改成连续弧线表演、活动字染色与换句星芒，三维舞台的歌词改用透明层不再盖住场景；局域网一起听的点播、头像与封面传输收口；星轨侧栏断点对齐 900px、主题前景对比度修正，队列存歌单即时回写。Standard 不编译商业音乐平台协议与账号，保留本地/WebDAV、Jamendo、ccMixter 与公开播客；桌面歌词/壁纸的原生组件不随本包分发，插件也不下载、不启动它。\n\n网络监听说明：插件默认不监听任何端口；仅当用户在“一起听”里主动开房且本机为房主时，sidecar 才在用户选定的那张本机网卡地址上绑定一个 TLS + WebSocket 端口（/v1/room，自签证书 + SHA-256 指纹钉扎，入房需邀请/审批），并在用户勾选“可被发现”时用 mDNS（_hertz-listen._tcp）广播房间元数据；独立二进制的 HTTP + token 层只绑 127.0.0.1。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.1/io.github.oncemisery.hertz-studio-0.3.1-darwin-arm64.dbxp",
+              "sha256": "f83e98c75c075bd24bdd959d98ae598d333593e679570320dd02b369df8289b4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13120264
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.1/io.github.oncemisery.hertz-studio-0.3.1-darwin-x64.dbxp",
+              "sha256": "a96705b2dcbe6cdcc9b21514f591adbc08319681f22562b4c725282d4034dff4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14202654
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.1/io.github.oncemisery.hertz-studio-0.3.1-linux-arm64.dbxp",
+              "sha256": "bae06efe2fd0a9363927118e9e91740a7568bb60168370bc5620064a442641e0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14706467
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.1/io.github.oncemisery.hertz-studio-0.3.1-linux-x64.dbxp",
+              "sha256": "a0ddf34a493147ee94a0c6d21fef1b62fb1ec853c5b418dd4d59fedba97ee37a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14976671
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.1/io.github.oncemisery.hertz-studio-0.3.1-windows-x64.dbxp",
+              "sha256": "f6d131752267487ff98c50377684e3846fabdc3dabe792b8a1da21fbba1bb5fa",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13173620
+            }
+          ]
+        },
         {
           "version": "0.3.0",
           "releasedAt": "2026-10-28T09:47:56.195Z",
