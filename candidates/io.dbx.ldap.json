@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.ldap",
+  "publisher": "jinpy",
+  "version": "0.1.100",
+  "name": "LDAP Studio",
+  "description": "LDAP directory workbench for DBX: DN tree browsing, RFC 4515 search with saved presets, schema inspection, LDIF/CSV export, and guarded entry editing — enterprise auth from anonymous to Kerberos/GSSAPI, NTLM and DIGEST-MD5, over LDAP/StartTLS/LDAPS with mTLS, plus 8 MCP tools for AI automation.",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ldap/ldap-v0.1.100/assets/plugin.svg",
+  "tags": [
+    "ldap",
+    "directory",
+    "auth",
+    "enterprise"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/jinpy666/dbx-plugin-ldap",
+  "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
+  "license": "MIT",
+  "releaseNotes": "LDAP Studio v0.1.100 正式版。相对 v0.1.99：断网/断链自愈看守（web/docker 部署）——online/offline 即时信号 + whoami 有界探测兜底、恢复动作单飞（有界 reopen → 刷新目录树 → 重解 Base DN）、全部调用 15s 页面看门狗与 searchNext 分页挂起死锁有界化、sidecar not-connected 七语指引与树根重试按钮；目录树瞬时根加载失败自动重试；三轮代码审查修复（tls_verify fail-closed、分页护栏、向导双击防重、批量移动冲突预检/进度中止等）；stdio MCP 兼容 2026-07-28 与 2024-11-05 协议修订版（initialize 版本协商、server/discover 能力发现、成功结果 resultType）。",
+  "localizations": {
+    "zh-CN": {
+      "name": "LDAP Studio",
+      "description": "DBX 的 LDAP 目录工作台：DN 树浏览、RFC 4515 搜索与保存预设、Schema 检查、LDIF/CSV 导出，以及受护栏保护的条目编辑——企业级认证从匿名到 Kerberos/GSSAPI、NTLM、DIGEST-MD5，支持 LDAP/StartTLS/LDAPS 与 mTLS，并提供 8 个 MCP 工具供 AI 自动化。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.100/io.dbx.ldap-0.1.100-darwin-arm64.dbxp",
+      "sha256": "901e3456376b5105a34a94382d8f8ddda88f509c2b9efba8619d6d2afd9c451e",
+      "size": 6522433
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.100/io.dbx.ldap-0.1.100-darwin-x64.dbxp",
+      "sha256": "c4a23312b06fb45b4c9acf1b9a2ad64b2f58e08fe9b21d76d1e8d5ce4aa7e7c9",
+      "size": 6853226
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.100/io.dbx.ldap-0.1.100-linux-arm64.dbxp",
+      "sha256": "da504869afb406f90c6efa76d293851aa21c3dad98ce0e9a748e87a53c8ffd7f",
+      "size": 6506989
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.100/io.dbx.ldap-0.1.100-linux-x64.dbxp",
+      "sha256": "b94b32d81cbb0d58cdf330ed344a2b6233a4e17b7e348781d141f187da5b8b86",
+      "size": 6947904
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-ldap/releases/download/ldap-v0.1.100/io.dbx.ldap-0.1.100-windows-x64.dbxp",
+      "sha256": "95cfe634336407bc9e83169aa9737345d2b6961fe803cf36b9af593977f9fafd",
+      "size": 6992918
+    }
+  ]
+}
