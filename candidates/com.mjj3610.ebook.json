@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "com.mjj3610.ebook",
+  "publisher": "mjj3610",
+  "version": "1.2.5",
+  "name": "E-book Reader",
+  "description": "Read 18 e-book formats — EPUB, PDF, TXT, MOBI, AZW3, DOCX, comics and more — with paged, double-page or scrolling layouts, text-to-speech, translation, highlights and notes. Books and notes are written to a real folder on your disk through a bundled native sidecar.",
+  "icon": "https://raw.githubusercontent.com/mjj3610/dbx-ebook/v1.2.5/assets/plugin.svg",
+  "tags": [
+    "ebook",
+    "reader",
+    "epub",
+    "pdf",
+    "workbench"
+  ],
+  "permissions": [],
+  "source": "https://github.com/mjj3610/dbx-ebook/tree/v1.2.5",
+  "homepage": "https://github.com/mjj3610/dbx-ebook",
+  "license": "GPL-3.0-or-later",
+  "releaseNotes": "18 book formats, paged/double-page/scrolling layouts, text-to-speech, translation, highlights and notes, real on-disk library via native sidecar, in-app folder picker. v1.2.2: visible previous/next page buttons in every paged layout, working double-page spread, swipe-to-turn on touch screens, and imported PDFs now keep the file name on disk instead of the stale embedded title. v1.2.3: PDFs whose embedded fonts cannot be mapped are detected automatically and re-rendered with system fonts, so Chinese text is readable instead of showing the wrong characters. v1.2.4: paged layouts no longer push the paper off-screen — text now paginates inside a fixed page while the sheet stays put, so single and double page both show complete, readable pages for TXT and every other text format; double page actually splits the screen in two; code and command lines are no longer stretched by justification; the page adds proper inner margins. v1.2.5: Chinese PDFs whose embedded fonts cannot be mapped now recover both the page text and the document metadata (title/author) instead of showing mojibake; detection samples several pages so files with a clean cover no longer slip through. Translation and WebDAV backup now go through the bundled native sidecar, because the host sandbox blocks page-level fetch — so any OpenAI-compatible endpoint or self-hosted WebDAV server works, not just a hard-coded allow-list. The folder picker gains a real address bar (paste D://Books and press Enter), an \"open in file manager\" button, and a narrow-panel layout that no longer truncates folder names to a single character. The .dbxp now ships LICENSE, THIRD-PARTY-NOTICES.md and every third-party licence text, and all book HTML is sanitised by one strict allow-list before it is mounted.",
+  "localizations": {
+    "zh-CN": {
+      "name": "电子书阅读器",
+      "description": "支持 EPUB、PDF、TXT、MOBI、AZW3、DOCX、漫画等 18 种格式，单页 / 双页 / 滚动三种排版，可听书、翻译、划线与记笔记；通过随包提供的原生后端把书籍与笔记真正写入本机磁盘目录。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/mjj3610/dbx-ebook/releases/download/v1.2.5/com.mjj3610.ebook-1.2.5-darwin-arm64.dbxp",
+      "sha256": "9eb5412efc10bfce458f8f82aef157f251eef78b96229ffa1c95adc86a192382",
+      "size": 6114605
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/mjj3610/dbx-ebook/releases/download/v1.2.5/com.mjj3610.ebook-1.2.5-darwin-x64.dbxp",
+      "sha256": "ce4da6ace42cb0bbf9cec82b4d3873c186960a736ed38cb79ed6871be2813d6a",
+      "size": 6321932
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/mjj3610/dbx-ebook/releases/download/v1.2.5/com.mjj3610.ebook-1.2.5-linux-arm64.dbxp",
+      "sha256": "9db41e69c291ae21076fc6b88ff47419c426b61d664dbbd8b035ac916c155fbb",
+      "size": 6104157
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/mjj3610/dbx-ebook/releases/download/v1.2.5/com.mjj3610.ebook-1.2.5-linux-x64.dbxp",
+      "sha256": "da0f40e39fa1a150b8490114c3eb40cdd107317a5820168086203959bfbc7753",
+      "size": 6387041
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/mjj3610/dbx-ebook/releases/download/v1.2.5/com.mjj3610.ebook-1.2.5-windows-x64.dbxp",
+      "sha256": "ef3ffa7f52ddf0baaaf2f889905bd6e20b64a6952369f3a2aa34b066e9cfd1e9",
+      "size": 6413894
+    }
+  ]
+}
