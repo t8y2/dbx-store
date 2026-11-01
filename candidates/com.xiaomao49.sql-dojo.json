@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "com.xiaomao49.sql-dojo",
   "publisher": "xiaomao49",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "name": "SQL Dojo",
-  "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 16 engine running locally. No server, no setup, works offline. Per-question hints and result-set based grading.",
-  "icon": "https://raw.githubusercontent.com/xiaomao49/dbx-sql-dojo/v0.3.1/assets/plugin.svg",
+  "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 18.6 engine (PGlite 0.5.13) running locally. No server, no setup, works offline. Per-question hints and result-set based grading.",
+  "icon": "https://raw.githubusercontent.com/xiaomao49/dbx-sql-dojo/v0.3.2/assets/plugin.svg",
   "tags": [
     "sql",
     "postgresql",
@@ -13,23 +13,25 @@
     "leetcode",
     "practice"
   ],
-  "permissions": [],
-  "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.3.1",
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.3.2",
   "homepage": "https://github.com/xiaomao49/dbx-sql-dojo",
   "license": "MIT",
-  "releaseNotes": "LeetCode SQL 50 practice workbench backed by PostgreSQL 16 (PGlite, WebAssembly). Local-only: no database connection required. Question bank derived from the MIT-licensed Camio1945/leetcode-study-plan-top-sql-50 repository, converted to PostgreSQL and verified question by question.",
+  "releaseNotes": "0.3.2: the bundled engine is PostgreSQL 18.6 (PGlite 0.5.13), not 16 — the workbench now shows the version the engine reports. Progress is stored through the host plugin storage (host.storage) instead of localStorage, which throws in the sandbox's opaque origin, with a visible session-only fallback. The package now ships LICENSE and THIRD_PARTY_NOTICES.md (PGlite Apache-2.0, PostgreSQL License, MIT question bank); engines.dbx is 0.6.19, the first host release with host.storage. A WebAssembly preflight explains in Chinese when the host sandbox blocks wasm. Local-only: no connection, no network.",
   "localizations": {
     "zh-CN": {
       "name": "SQL 练习场",
-      "description": "在 DBX 里刷力扣 SQL 50 题。内置真正的 PostgreSQL 16 引擎，离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题。"
+      "description": "在 DBX 里刷力扣 SQL 50 题。内置真正的 PostgreSQL 18.6 引擎（PGlite 0.5.13），离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题。"
     }
   },
   "targets": [
     {
       "target": "universal",
-      "url": "https://github.com/xiaomao49/dbx-sql-dojo/releases/download/v0.3.1/com.xiaomao49.sql-dojo-0.3.1-universal.dbxp",
-      "sha256": "d1efdbaa353f39f20e8870a8156801317c633f2dcc46b998d192cd5235652319",
-      "size": 5333516
+      "url": "https://github.com/xiaomao49/dbx-sql-dojo/releases/download/v0.3.2/com.xiaomao49.sql-dojo-0.3.2-universal.dbxp",
+      "sha256": "c97c99d69cbea61df0758e59976a6f7329c5f7d1569f99793e6741eb4faf03b7",
+      "size": 5342417
     }
   ]
 }
