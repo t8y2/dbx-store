@@ -6251,7 +6251,7 @@
       "description": "Operate Apache Kafka from one DBX workspace: inspect topics, brokers, and consumer lag; search, stream, and produce messages with multi-channel filters and payload decoding; manage offsets, ACLs, and Schema Registry. Read-only by default, with guarded writes and 11 MCP tools for AI automation.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.54/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/icon.svg",
       "tags": [
         "kafka",
         "streaming",
@@ -6266,8 +6266,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-kafka",
       "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
       "license": "MIT",
-      "latestVersion": "0.1.54",
+      "latestVersion": "0.1.55",
       "versions": [
+        {
+          "version": "0.1.55",
+          "releasedAt": "2026-11-02T02:58:49.555Z",
+          "releaseNotes": "Kafka Studio v0.1.55 正式版。相对 v0.1.54：断网/断链自愈看守（web/docker 部署）——online/offline 即时信号 + connections/statuses 有界探测兜底、恢复后自动重开连接并重拉集群状态、控制面调用 15s 页面超时、boot 恢复窗过半主动重开连接；暗色主题 topic 树行底色修复；stdio MCP 兼容 2026-07-28 与 2024-11-05 协议修订版（initialize 版本协商、server/discover 能力发现、成功结果 resultType）。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-darwin-arm64.dbxp",
+              "sha256": "7b30f50d4b357ef61eaa85860352816b00e3d544b0e904012dd5492abf86a0f3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14366871
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-darwin-x64.dbxp",
+              "sha256": "721282f51e8faf61b374ced30dbf4655eecb4dcb6e0589516bea9509c4da9f23",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15255115
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-linux-arm64.dbxp",
+              "sha256": "fda4666dcbaa1b1a626c1b57aa9ddd7744faee0ca88c0998dd36c7b0d6622cec",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13544671
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-linux-x64.dbxp",
+              "sha256": "b3952b3cb5b76798eac13d47b92249334b45cba0b66682a38edafd2fdc493f0d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14750854
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-windows-x64.dbxp",
+              "sha256": "0966bf6d7474a5df28d8f1518eb2ec6e3ee6c2f85ea9729873ba988596fdbf33",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14857302
+            }
+          ]
+        },
         {
           "version": "0.1.54",
           "releasedAt": "2026-10-12T07:28:25.238Z",
