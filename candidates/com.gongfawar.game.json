@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "com.gongfawar.game",
+  "publisher": "xingxi",
+  "version": "0.5.0",
+  "name": "AggressiveWar",
+  "description": "在 DBX 里征服了 SQL，为什么不来这里征服世界？27 个国家、随机地图、AI 对手，打开即见。",
+  "icon": "https://raw.githubusercontent.com/chenjie1024/DBX-AggressiveWar/v0.5.0/assets/icon.svg",
+  "tags": ["game", "strategy", "turn-based", "conquest", "lan"],
+  "permissions": ["host.storage"],
+  "source": "https://github.com/chenjie1024/DBX-AggressiveWar/tree/v0.5.0",
+  "homepage": "https://github.com/chenjie1024/DBX-AggressiveWar",
+  "license": "MIT",
+  "releaseNotes": "首个公开版本：27 国回合制征服、随机地图与 AI；伪装成 SQL 工作台（老板键 / 失焦自动切换）；本地局域网联机（内置中继 + 手机扫码加入）；存档自动保存。",
+  "localizations": {
+    "zh-CN": {
+      "name": "AggressiveWar",
+      "description": "在 DBX 里征服了 SQL，为什么不来这里征服世界？27 个国家、随机地图、AI 对手，打开即见。"
+    },
+    "en": {
+      "name": "AggressiveWar",
+      "description": "You've conquered SQL in DBX — why not conquer the world here? 27 nations, procedural maps, AI rivals."
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/chenjie1024/DBX-AggressiveWar/releases/download/v0.5.0/com.gongfawar.game-0.5.0-windows-x64.dbxp",
+      "sha256": "e093c043554a607fe3818bac930b67e9fa28b42cdc1a0abb8dc63adde16a4f45",
+      "size": 478337
+    }
+  ]
+}
