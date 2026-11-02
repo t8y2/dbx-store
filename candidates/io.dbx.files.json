@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.files",
+  "publisher": "jinpy",
+  "version": "0.1.92",
+  "name": "Files Studio",
+  "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-files/files-v0.1.92/assets/plugin.svg",
+  "tags": [
+    "files",
+    "storage",
+    "s3",
+    "transfer"
+  ],
+  "permissions": [
+    "host.binary",
+    "host.events",
+    "host.filesystem",
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/jinpy666/dbx-plugin-files",
+  "homepage": "https://github.com/jinpy666/dbx-plugin-files",
+  "license": "MIT",
+  "releaseNotes": "Files Studio v0.1.92 正式版。相对 v0.1.91：多选与批量下载增强（表头全选三态复选框、行点击 Ctrl/Shift 多选、空白区框选多选、下载选中项支持目录/混选）；预览头部文件类型图标与打开方式下拉；目录树侧栏超长名撑开修复并支持拖拽宽度；内置 rclone 引擎升级 v1.75.2-dbx.1（上游安全修复为主）；stdio MCP 兼容 2026-07-28 与 2024-11-05 协议修订版（initialize 版本协商、server/discover 能力发现、成功结果 resultType，并补齐 schedule_create 参数说明）。",
+  "localizations": {
+    "zh-CN": {
+      "name": "Files Studio",
+      "description": "统一管理本地文件夹、S3 兼容存储、Azure Blob、Google Cloud Storage、华为 OBS、WebDAV、FTP、SFTP、SMB/CIFS 等 OpenDAL 服务的文件工作台：传输任务、归档与受控运维集中在一个界面。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.92/io.dbx.files-0.1.92-darwin-arm64.dbxp",
+      "sha256": "abc68b71ac5a4be0e3ee5fc704579362e2c5d7f123f85ad62266ca2f09a6bdfd",
+      "size": 39884285
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.92/io.dbx.files-0.1.92-darwin-x64.dbxp",
+      "sha256": "aa16796e61db27bd5fac51ba3eb03759dfbb7b508f297c5a6411ec7e37d64beb",
+      "size": 42396641
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.92/io.dbx.files-0.1.92-linux-arm64.dbxp",
+      "sha256": "4f868634c962aeacb368cd5f2f00c99133c1d40269f5518d00610ea31e42907a",
+      "size": 36248017
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.92/io.dbx.files-0.1.92-linux-x64.dbxp",
+      "sha256": "93c19c11f08cb96cb674971788625744d80334338bbb24c2c0e42a3b1d2c5f08",
+      "size": 39192589
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-files/releases/download/files-v0.1.92/io.dbx.files-0.1.92-windows-x64.dbxp",
+      "sha256": "cb6554da14da6cd8a8693e9d972cea26f3e951db2a90c95428b5e289e07ad588",
+      "size": 38557003
+    }
+  ]
+}
