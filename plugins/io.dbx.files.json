@@ -4,7 +4,7 @@
   "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-files/files-v0.1.91/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-files/files-v0.1.92/assets/plugin.svg",
   "tags": [
     "files",
     "storage",
@@ -21,7 +21,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-files",
   "homepage": "https://github.com/jinpy666/dbx-plugin-files",
   "license": "MIT",
-  "latestVersion": "0.1.91",
+  "latestVersion": "0.1.92",
   "versions": [
     {
       "version": "0.1.57",
@@ -818,6 +818,48 @@
           "sha256": "8c9bf50d8dbd656b5d0a2389dce3a03f0dd4d8504fe475fa4875c2b136f8b614",
           "signingKeyId": "dbx-store-release-2026",
           "size": 38452866
+        }
+      ]
+    },
+    {
+      "version": "0.1.92",
+      "releasedAt": "2026-11-02T02:57:09.734Z",
+      "releaseNotes": "Files Studio v0.1.92 正式版。相对 v0.1.91：多选与批量下载增强（表头全选三态复选框、行点击 Ctrl/Shift 多选、空白区框选多选、下载选中项支持目录/混选）；预览头部文件类型图标与打开方式下拉；目录树侧栏超长名撑开修复并支持拖拽宽度；内置 rclone 引擎升级 v1.75.2-dbx.1（上游安全修复为主）；stdio MCP 兼容 2026-07-28 与 2024-11-05 协议修订版（initialize 版本协商、server/discover 能力发现、成功结果 resultType，并补齐 schedule_create 参数说明）。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-darwin-arm64.dbxp",
+          "sha256": "cae102b45d27cb8251943e8de09bbf122892f44bdbf2c642765f1d9f8d7212e1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 39884940
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-darwin-x64.dbxp",
+          "sha256": "896d6cd4551372a3a3f9af5ddf5ea9b994123bc6c8d118da5ce360ff60835b1f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 42397291
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-linux-arm64.dbxp",
+          "sha256": "83f00a636f04f79a0aa25303a188c7962d553a720a21333ecfc9c86535012a0c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 36248670
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-linux-x64.dbxp",
+          "sha256": "339dc35c23db3b2f9bcaa8c0fa1409de5bc67a4db9244855c2017d605e93bf61",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 39193237
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-windows-x64.dbxp",
+          "sha256": "324099c02843331e211b6377961f0e1ce90f26c77354d7de6efb23e5c7f693e7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 38557665
         }
       ]
     }
