@@ -17,10 +17,10 @@
     "host.storage",
     "host.binary"
   ],
-  "source": "https://github.com/w89588/dbx-plugin-wsl/tree/25fd71b01ccc7597ef3e3005b9f587efd6eb2d88",
+  "source": "https://github.com/w89588/dbx-plugin-wsl/tree/v0.1.4",
   "homepage": "https://github.com/w89588/dbx-plugin-wsl",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.3",
+  "latestVersion": "0.1.4",
   "versions": [
     {
       "version": "0.1.1",
@@ -61,6 +61,20 @@
           "sha256": "7ffb402068cad0605f41d1e5367f0b8bf50ba7e503d30b35b4732963337e88c6",
           "signingKeyId": "dbx-store-release-2026",
           "size": 5819775
+        }
+      ]
+    },
+    {
+      "version": "0.1.4",
+      "releasedAt": "2026-11-02T02:54:31.346Z",
+      "releaseNotes": "# WSL 管理器 v0.1.4\r\n\r\n本版本为外部 MCP 工具声明明确的访问级别，支持在 DBX 中按需授权。\r\n\r\n## 变更\r\n\r\n- `wsl_connections`、`wsl_describe`、`wsl_read` 声明为只读；新增 `wsl_manage`，通过白名单提供常规发行版和容器管理以及诊断；原 `wsl_write` 声明为完全权限，用于任意命令、删除、配置修改及任务取消等操作。\r\n- `wsl_describe` 返回各方法所需权限及推荐工具。查询发行版详情和 `wsl.conf` 可能启动发行版，现需读写权限；日志跟随、事件订阅和任务取消仍需完全权限。\r\n- 常规写入入口拒绝白名单之外的方法及可能被命令行解释为选项的目标名称；只读入口继续拒绝有副作用的操作。启停可能中断服务，诊断可能探测指定主机或端口，应先确认具体操作。\r\n\r\n## 兼容性与授权\r\n\r\n- 新增权限声明需要 **DBX 0.6.59 或更新版本**。桌面端与独立 MCP 服务应使用匹配版本；旧客户端调用 `wsl_write` 需要完全权限。\r\n- 在 DBX「设置 → MCP Server → 能力」中启用插件并按需选择授权上限、启用工具。资源权限和客户端限制仍然适用；高风险调用可按宿主设置要求人工确认。\r\n- 仅支持 Windows x64；宿主权限仍为 `host.workbench`、`host.events`、`host.storage` 和 `host.binary`。原生 Sidecar 以当前用户身份运行，可执行命令、访问文件和网络。凭据及诊断边界见 [MCP 指南](https://github.com/w89588/dbx-plugin-wsl/blob/v0.1.4/docs/mcp.md)。\r\n\r\n## 验证与发布\r\n\r\n使用 Go 1.24.13 和插件 CLI 0.1.9 从干净标签构建，检查包的身份、版本、VCS 信息、大小与 SHA-256。GitHub Release 资产为未签名候选包，官方商店版本需由维护者审核签名。未在真实 DBX 桌面端完成安装、授权界面及外部 MCP 端到端验证。\r\n\r\n**完整变更：** [v0.1.3...v0.1.4](https://github.com/w89588/dbx-plugin-wsl/compare/v0.1.3...v0.1.4)",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.4/com.dbx.wsl-0.1.4-windows-x64.dbxp",
+          "sha256": "83da2e350f7555494f64c65f4ca0ce3b9453cbec6bc707df9b6261e101efcb88",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5826864
         }
       ]
     }
