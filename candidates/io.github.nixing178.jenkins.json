@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.nixing178.jenkins",
+  "publisher": "nixing178",
+  "version": "0.11.2",
+  "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.11.2",
+  "releaseNotes": "Adds username and password sign-in as an alternative to API tokens: a new Authentication choice on the Jenkins connection (API token or username and password), password mode validated before contacting Jenkins, and a clearer 401 hint when the instance enforces two-factor authentication or token-only login.",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/nixing178/dbx-plugin-jenkins/releases/download/v0.11.2/io.github.nixing178.jenkins-0.11.2-darwin-arm64.dbxp",
+      "sha256": "ec55dc7cc925ba9119875956825b6b8ba15f42d16a6db3e39a2f68d2288d9e8d",
+      "size": 4840274
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-jenkins/releases/download/v0.11.2/io.github.nixing178.jenkins-0.11.2-darwin-x64.dbxp",
+      "sha256": "a15b00873c4edaf6dad2f45942ea62a1a8c1b61c4afe29c80450fd779883108c",
+      "size": 5082265
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/nixing178/dbx-plugin-jenkins/releases/download/v0.11.2/io.github.nixing178.jenkins-0.11.2-linux-arm64.dbxp",
+      "sha256": "830398d667010766761fd9af102949e9e68a3c32230e55563bc293015ec503fd",
+      "size": 4818121
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-jenkins/releases/download/v0.11.2/io.github.nixing178.jenkins-0.11.2-linux-x64.dbxp",
+      "sha256": "4f249380233633b8acdc5025715cab0aa3dc472ec1aacc5da91688fcec89774e",
+      "size": 5146288
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-jenkins/releases/download/v0.11.2/io.github.nixing178.jenkins-0.11.2-windows-x64.dbxp",
+      "sha256": "10d1062442f75f29ffa79f49dc5f3009e750ab6c9deccf45166440be1f14b3f1",
+      "size": 5184179
+    }
+  ]
+}
