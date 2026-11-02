@@ -4,7 +4,7 @@
   "description": "LDAP directory workbench for DBX: DN tree browsing, RFC 4515 search with saved presets, schema inspection, LDIF/CSV export, and guarded entry editing — enterprise auth from anonymous to Kerberos/GSSAPI, NTLM and DIGEST-MD5, over LDAP/StartTLS/LDAPS with mTLS, plus 8 MCP tools for AI automation.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ldap/ldap-v0.1.99/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-ldap/ldap-v0.1.100/assets/plugin.svg",
   "tags": [
     "ldap",
     "directory",
@@ -19,7 +19,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-ldap",
   "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
   "license": "MIT",
-  "latestVersion": "0.1.99",
+  "latestVersion": "0.1.100",
   "versions": [
     {
       "version": "0.1.67",
@@ -564,6 +564,48 @@
           "sha256": "7124d715199f554ef2c09872d2822c49607efd93b17ec3ba702890bb44c1d88c",
           "signingKeyId": "dbx-store-release-2026",
           "size": 6977124
+        }
+      ]
+    },
+    {
+      "version": "0.1.100",
+      "releasedAt": "2026-11-02T02:59:13.029Z",
+      "releaseNotes": "LDAP Studio v0.1.100 正式版。相对 v0.1.99：断网/断链自愈看守（web/docker 部署）——online/offline 即时信号 + whoami 有界探测兜底、恢复动作单飞（有界 reopen → 刷新目录树 → 重解 Base DN）、全部调用 15s 页面看门狗与 searchNext 分页挂起死锁有界化、sidecar not-connected 七语指引与树根重试按钮；目录树瞬时根加载失败自动重试；三轮代码审查修复（tls_verify fail-closed、分页护栏、向导双击防重、批量移动冲突预检/进度中止等）；stdio MCP 兼容 2026-07-28 与 2024-11-05 协议修订版（initialize 版本协商、server/discover 能力发现、成功结果 resultType）。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-darwin-arm64.dbxp",
+          "sha256": "60706959218328fcdc4cbb09b358d34ef33eb66850b2ae1af72619e192894faa",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6523082
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-darwin-x64.dbxp",
+          "sha256": "0671a264c36c6c1040dd5f1aeab7b628f7e46a139fcecbd165936b6ad277b7f8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6853874
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-linux-arm64.dbxp",
+          "sha256": "4aee4a3727916936d3ee73367d2f0f4a7dba4c0b9a1e4dd83f227332c0947b0d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6507637
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-linux-x64.dbxp",
+          "sha256": "4ca42c910de4157b95adc3cffaad6af6916fa36f4c511398caec2dda471b8fce",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6948551
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-windows-x64.dbxp",
+          "sha256": "7493914a85ddf732dc5844264bf45cce61513ff2d5e8ed773ed9993bbe502ee7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6993573
         }
       ]
     }
