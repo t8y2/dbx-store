@@ -4,7 +4,7 @@
   "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。",
   "publisher": "lwai",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-todo/0.1.19/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-todo/0.1.20/assets/plugin.svg",
   "tags": [
     "todo",
     "task",
@@ -16,7 +16,7 @@
   "source": "https://github.com/lukelwai/dbx-todo",
   "homepage": "https://github.com/lukelwai/dbx-todo",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.19",
+  "latestVersion": "0.1.20",
   "versions": [
     {
       "version": "0.1.5",
@@ -113,6 +113,48 @@
           "sha256": "c7df534f58f493920ae3a9189068889f2c5fc1d81c1dda5f53351edf6a443ce9",
           "signingKeyId": "dbx-store-release-2026",
           "size": 5719060
+        }
+      ]
+    },
+    {
+      "version": "0.1.20",
+      "releasedAt": "2026-11-02T12:14:39.832Z",
+      "releaseNotes": "修复记录模式无法滚动查看问题，重构列表模式和记录模式的查看方式增加分页。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-darwin-arm64.dbxp",
+          "sha256": "d26931c9f91b8eb3155f2f5f260693131df8f460d288f535d7bb49cd20b62f50",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5600653
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-darwin-x64.dbxp",
+          "sha256": "cd67ce457d173914948c4b68ef62766f1431a42d9c8dd62529b0d7f5174b3f3c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5800326
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-linux-arm64.dbxp",
+          "sha256": "84a80811e33007379978448e6604db7cdb006828428dfbf0f56fa7a3582c684c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5288997
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-linux-x64.dbxp",
+          "sha256": "e979ae0fa386a5494144ddee0f96ee2efe40af9649ced6b7d57d873dee6bbeb9",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5650138
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-windows-x64.dbxp",
+          "sha256": "9dc2af77381b5ab5d49accad5fe4f765d7c462d88565241fc3af52bf28675a55",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5719866
         }
       ]
     }
