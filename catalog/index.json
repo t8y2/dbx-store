@@ -4773,7 +4773,7 @@
       "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.91/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/icon.svg",
       "tags": [
         "files",
         "storage",
@@ -4790,8 +4790,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-files",
       "homepage": "https://github.com/jinpy666/dbx-plugin-files",
       "license": "MIT",
-      "latestVersion": "0.1.91",
+      "latestVersion": "0.1.92",
       "versions": [
+        {
+          "version": "0.1.92",
+          "releasedAt": "2026-11-02T03:06:11Z",
+          "releaseNotes": "Files Studio v0.1.92 正式版。相对 v0.1.91：多选与批量下载增强（表头全选三态复选框、行点击 Ctrl/Shift 多选、空白区框选多选、下载选中项支持目录/混选）；预览头部文件类型图标与打开方式下拉；目录树侧栏超长名撑开修复并支持拖拽宽度；内置 rclone 引擎升级 v1.75.2-dbx.1（上游安全修复为主）；stdio MCP 兼容 2026-07-28 与 2024-11-05 协议修订版（initialize 版本协商、server/discover 能力发现、成功结果 resultType，并补齐 schedule_create 参数说明）。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-darwin-arm64.dbxp",
+              "sha256": "cae102b45d27cb8251943e8de09bbf122892f44bdbf2c642765f1d9f8d7212e1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 39884940
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-darwin-x64.dbxp",
+              "sha256": "896d6cd4551372a3a3f9af5ddf5ea9b994123bc6c8d118da5ce360ff60835b1f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 42397291
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-linux-arm64.dbxp",
+              "sha256": "83f00a636f04f79a0aa25303a188c7962d553a720a21333ecfc9c86535012a0c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 36248670
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-linux-x64.dbxp",
+              "sha256": "339dc35c23db3b2f9bcaa8c0fa1409de5bc67a4db9244855c2017d605e93bf61",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 39193237
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-windows-x64.dbxp",
+              "sha256": "324099c02843331e211b6377961f0e1ce90f26c77354d7de6efb23e5c7f693e7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 38557665
+            }
+          ]
+        },
         {
           "version": "0.1.91",
           "releasedAt": "2026-10-18T00:47:41.800Z",
@@ -6251,7 +6293,7 @@
       "description": "Operate Apache Kafka from one DBX workspace: inspect topics, brokers, and consumer lag; search, stream, and produce messages with multi-channel filters and payload decoding; manage offsets, ACLs, and Schema Registry. Read-only by default, with guarded writes and 11 MCP tools for AI automation.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.54/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/icon.svg",
       "tags": [
         "kafka",
         "streaming",
@@ -6266,8 +6308,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-kafka",
       "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
       "license": "MIT",
-      "latestVersion": "0.1.54",
+      "latestVersion": "0.1.55",
       "versions": [
+        {
+          "version": "0.1.55",
+          "releasedAt": "2026-11-02T03:06:11Z",
+          "releaseNotes": "Kafka Studio v0.1.55 正式版。相对 v0.1.54：断网/断链自愈看守（web/docker 部署）——online/offline 即时信号 + connections/statuses 有界探测兜底、恢复后自动重开连接并重拉集群状态、控制面调用 15s 页面超时、boot 恢复窗过半主动重开连接；暗色主题 topic 树行底色修复；stdio MCP 兼容 2026-07-28 与 2024-11-05 协议修订版（initialize 版本协商、server/discover 能力发现、成功结果 resultType）。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-darwin-arm64.dbxp",
+              "sha256": "7b30f50d4b357ef61eaa85860352816b00e3d544b0e904012dd5492abf86a0f3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14366871
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-darwin-x64.dbxp",
+              "sha256": "721282f51e8faf61b374ced30dbf4655eecb4dcb6e0589516bea9509c4da9f23",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15255115
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-linux-arm64.dbxp",
+              "sha256": "fda4666dcbaa1b1a626c1b57aa9ddd7744faee0ca88c0998dd36c7b0d6622cec",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13544671
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-linux-x64.dbxp",
+              "sha256": "b3952b3cb5b76798eac13d47b92249334b45cba0b66682a38edafd2fdc493f0d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14750854
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-windows-x64.dbxp",
+              "sha256": "0966bf6d7474a5df28d8f1518eb2ec6e3ee6c2f85ea9729873ba988596fdbf33",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14857302
+            }
+          ]
+        },
         {
           "version": "0.1.54",
           "releasedAt": "2026-10-12T07:28:25.238Z",
@@ -6894,7 +6978,7 @@
       "description": "LDAP directory workbench for DBX: DN tree browsing, RFC 4515 search with saved presets, schema inspection, LDIF/CSV export, and guarded entry editing — enterprise auth from anonymous to Kerberos/GSSAPI, NTLM and DIGEST-MD5, over LDAP/StartTLS/LDAPS with mTLS, plus 8 MCP tools for AI automation.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.99/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/icon.svg",
       "tags": [
         "ldap",
         "directory",
@@ -6909,8 +6993,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ldap",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
       "license": "MIT",
-      "latestVersion": "0.1.99",
+      "latestVersion": "0.1.100",
       "versions": [
+        {
+          "version": "0.1.100",
+          "releasedAt": "2026-11-02T03:06:11Z",
+          "releaseNotes": "LDAP Studio v0.1.100 正式版。相对 v0.1.99：断网/断链自愈看守（web/docker 部署）——online/offline 即时信号 + whoami 有界探测兜底、恢复动作单飞（有界 reopen → 刷新目录树 → 重解 Base DN）、全部调用 15s 页面看门狗与 searchNext 分页挂起死锁有界化、sidecar not-connected 七语指引与树根重试按钮；目录树瞬时根加载失败自动重试；三轮代码审查修复（tls_verify fail-closed、分页护栏、向导双击防重、批量移动冲突预检/进度中止等）；stdio MCP 兼容 2026-07-28 与 2024-11-05 协议修订版（initialize 版本协商、server/discover 能力发现、成功结果 resultType）。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-darwin-arm64.dbxp",
+              "sha256": "60706959218328fcdc4cbb09b358d34ef33eb66850b2ae1af72619e192894faa",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6523082
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-darwin-x64.dbxp",
+              "sha256": "0671a264c36c6c1040dd5f1aeab7b628f7e46a139fcecbd165936b6ad277b7f8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6853874
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-linux-arm64.dbxp",
+              "sha256": "4aee4a3727916936d3ee73367d2f0f4a7dba4c0b9a1e4dd83f227332c0947b0d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6507637
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-linux-x64.dbxp",
+              "sha256": "4ca42c910de4157b95adc3cffaad6af6916fa36f4c511398caec2dda471b8fce",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6948551
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-windows-x64.dbxp",
+              "sha256": "7493914a85ddf732dc5844264bf45cce61513ff2d5e8ed773ed9993bbe502ee7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6993573
+            }
+          ]
+        },
         {
           "version": "0.1.99",
           "releasedAt": "2026-10-04T15:38:44.610Z",
