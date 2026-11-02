@@ -4,7 +4,7 @@
   "publisher": "nixing178",
   "version": "0.11.2",
   "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.11.2",
-  "releaseNotes": "Adds username and password sign-in as an alternative to API tokens: a new Authentication choice on the Jenkins connection (API token or username and password), password mode validated before contacting Jenkins, and a clearer 401 hint when the instance enforces two-factor authentication or token-only login.",
+  "releaseNotes": "Adds username and password sign-in as an alternative to API tokens: a new Authentication choice on the Jenkins connection (API token or username and password), password mode validated before contacting Jenkins, and a clearer 401 hint when the instance enforces two-factor authentication or token-only login. Also since 0.10.0: artifact downloads from the build detail page with per-file size, live progress and ETA, cancel, download-all and open-folder/copy-path (files are written by the sidecar with a 512 MiB cache and atomic replace), a configurable download directory, artifact archiving for freestyle jobs, full console log export streamed to disk instead of the 2 MB buffer, and a UI version badge; Active Choices parameters (static option list read from the job config.xml) render as checkbox groups or dropdowns with fallback to a text field; release builds now produce five targets (Windows x64, macOS Intel, macOS Apple Silicon, Linux x64, Linux ARM64). Connections without an authentication method keep using the API token. Password login does not work when Jenkins enforces 2FA, token-only login or SSO — use an API token instead.",
   "targets": [
     {
       "target": "darwin-arm64",
