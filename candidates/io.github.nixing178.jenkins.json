@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.nixing178.jenkins",
+  "publisher": "nixing178",
+  "version": "0.11.0",
+  "description": "Manage Jenkins jobs, builds, console output, queue and nodes inside DBX, with stage view, artifact downloads, archive configuration and MCP tools for AI clients.",
+  "icon": "https://raw.githubusercontent.com/nixing178/dbx-plugin-jenkins/v0.11.0/assets/plugin.svg",
+  "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.11.0",
+  "releaseNotes": "Artifact downloads with live progress, cancel, download-all and a configurable download directory; Archive the artifacts for freestyle jobs; full console log export not limited to the 2 MB buffer; UI version badge.",
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-jenkins/releases/download/v0.11.0/io.github.nixing178.jenkins-0.11.0-windows-x64.dbxp",
+      "sha256": "9edea4ca667b0c7b50d2353ac8ad761e93c8444e0a86dbeed108894e9fb34f62",
+      "size": 5175707
+    }
+  ]
+}
