@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "com.xiaomao49.sql-dojo",
+  "publisher": "xiaomao49",
+  "version": "0.4.4",
+  "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.4.4",
+  "releaseNotes": "0.4.4: question bank export (single bank or all), cancellable imports with per-question failure reasons, per-question SQL drafts, continuous list numbering with preserved scroll position, full PostgreSQL error detail/hint/position, screen-reader announcements and a keyboard-navigable question list, a 20000-row result cap, per-bank storage with automatic migration from the legacy single key, DML detection by result set with table and column comparison, and background engine startup. Local-only: no database connection, no network.",
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/xiaomao49/dbx-sql-dojo/releases/download/v0.4.4/com.xiaomao49.sql-dojo-0.4.4-universal.dbxp",
+      "sha256": "745e213349ad9d4579565ae380d44d80d5d174263fa3f7d647b39fc63557173e",
+      "size": 5350917
+    }
+  ]
+}
