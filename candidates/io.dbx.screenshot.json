@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.screenshot",
+  "publisher": "alan",
+  "version": "0.1.2",
+  "name": "Screenshot",
+  "description": "Capture the screen and keep a local screenshot history in DBX. Saving can copy the image to the clipboard (overwrites current clipboard contents; toggle in settings). On Linux, region capture needs gnome-screenshot, spectacle, or scrot on PATH.",
+  "icon": "https://raw.githubusercontent.com/allran/dbx-plugin-screenshot/v0.1.2/assets/plugin.svg",
+  "tags": [
+    "screenshot",
+    "productivity",
+    "workbench"
+  ],
+  "permissions": [
+    "host.binary",
+    "host.events"
+  ],
+  "source": "https://github.com/allran/dbx-plugin-screenshot/tree/v0.1.2",
+  "homepage": "https://github.com/allran/dbx-plugin-screenshot",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.1.2: multi-display picker; crop aspect ratios (free/16:9/4:3/1:1/custom) with in-bounds handles; fix crop undo losing the image; clearer Linux region-tool missing error; listing notes for Linux region CLI deps.",
+  "localizations": {
+    "zh-CN": {
+      "name": "\u622a\u56fe",
+      "description": "\u622a\u53d6\u5c4f\u5e55\u5e76\u5728 DBX \u4e2d\u4fdd\u5b58\u672c\u673a\u622a\u56fe\u5386\u53f2\u3002\u4fdd\u5b58\u540e\u53ef\u590d\u5236\u5230\u526a\u8d34\u677f\uff08\u4f1a\u8986\u76d6\u5f53\u524d\u526a\u8d34\u677f\u5185\u5bb9\uff0c\u53ef\u5728\u8bbe\u7f6e\u4e2d\u5173\u95ed\uff09\u3002Linux \u533a\u57df\u622a\u56fe\u9700\u7cfb\u7edf\u5df2\u5b89\u88c5 gnome-screenshot\u3001spectacle \u6216 scrot\u3002"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/allran/dbx-plugin-screenshot/releases/download/v0.1.2/io.dbx.screenshot-0.1.2-darwin-arm64.dbxp",
+      "sha256": "6129adbb93d6d14943fcb2ce1eaa4e1cf48603d08d01a17bf17bf0bbc8f3515b",
+      "size": 906981
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/allran/dbx-plugin-screenshot/releases/download/v0.1.2/io.dbx.screenshot-0.1.2-darwin-x64.dbxp",
+      "sha256": "d8a796cfa0923689ed458df548a37606a420200c27e2303f163034142a85a5c2",
+      "size": 965647
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/allran/dbx-plugin-screenshot/releases/download/v0.1.2/io.dbx.screenshot-0.1.2-linux-arm64.dbxp",
+      "sha256": "a6949707835473c19fa8b2455b84a54097a944eae9e1fafe98f3acf12a0eb0cc",
+      "size": 1880848
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/allran/dbx-plugin-screenshot/releases/download/v0.1.2/io.dbx.screenshot-0.1.2-linux-x64.dbxp",
+      "sha256": "bf75c650464487ec4c13ee785f2e0cf44f9c11b405be5a3f5d3ff3a17b3b6217",
+      "size": 1957071
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/allran/dbx-plugin-screenshot/releases/download/v0.1.2/io.dbx.screenshot-0.1.2-windows-x64.dbxp",
+      "sha256": "ac42a30e9957a0b9b2bf366fa06c7ab254a23e24814f0c3ea726d5b7c6bfea5b",
+      "size": 766655
+    }
+  ]
+}
