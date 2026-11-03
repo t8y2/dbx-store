@@ -2374,7 +2374,7 @@
       "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。",
       "publisher": "lwai",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.19/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/icon.svg",
       "tags": [
         "todo",
         "task",
@@ -2386,8 +2386,50 @@
       "source": "https://github.com/lukelwai/dbx-todo",
       "homepage": "https://github.com/lukelwai/dbx-todo",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.19",
+      "latestVersion": "0.1.20",
       "versions": [
+        {
+          "version": "0.1.20",
+          "releasedAt": "2026-11-02T12:14:39.832Z",
+          "releaseNotes": "修复记录模式无法滚动查看问题，重构列表模式和记录模式的查看方式增加分页。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-darwin-arm64.dbxp",
+              "sha256": "d26931c9f91b8eb3155f2f5f260693131df8f460d288f535d7bb49cd20b62f50",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5600653
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-darwin-x64.dbxp",
+              "sha256": "cd67ce457d173914948c4b68ef62766f1431a42d9c8dd62529b0d7f5174b3f3c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5800326
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-linux-arm64.dbxp",
+              "sha256": "84a80811e33007379978448e6604db7cdb006828428dfbf0f56fa7a3582c684c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5288997
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-linux-x64.dbxp",
+              "sha256": "e979ae0fa386a5494144ddee0f96ee2efe40af9649ced6b7d57d873dee6bbeb9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5650138
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-windows-x64.dbxp",
+              "sha256": "9dc2af77381b5ab5d49accad5fe4f765d7c462d88565241fc3af52bf28675a55",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5719866
+            }
+          ]
+        },
         {
           "version": "0.1.19",
           "releasedAt": "2026-10-21T05:07:53.275Z",
@@ -2500,7 +2542,7 @@
       "description": "Read 18 e-book formats — EPUB, PDF, TXT, MOBI, AZW3, DOCX, comics and more — with paged, double-page or scrolling layouts, text-to-speech, translation, highlights and notes. Books and notes are written to a real folder on your disk through a bundled native sidecar.",
       "publisher": "mjj3610",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.5/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.7/icon.svg",
       "tags": [
         "ebook",
         "reader",
@@ -2509,11 +2551,53 @@
         "workbench"
       ],
       "permissions": [],
-      "source": "https://github.com/mjj3610/dbx-ebook/tree/v1.2.5",
+      "source": "https://github.com/mjj3610/dbx-ebook/tree/v1.2.7",
       "homepage": "https://github.com/mjj3610/dbx-ebook",
       "license": "GPL-3.0-or-later",
-      "latestVersion": "1.2.5",
+      "latestVersion": "1.2.7",
       "versions": [
+        {
+          "version": "1.2.7",
+          "releasedAt": "2026-11-02T12:14:51.023Z",
+          "releaseNotes": "18 book formats, paged/double-page/scrolling layouts, text-to-speech, translation, highlights and notes, real on-disk library via native sidecar, in-app folder picker. v1.2.2: visible previous/next page buttons in every paged layout, working double-page spread, swipe-to-turn on touch screens, and imported PDFs now keep the file name on disk instead of the stale embedded title. v1.2.3: PDFs whose embedded fonts cannot be mapped are detected automatically and re-rendered with system fonts, so Chinese text is readable instead of showing the wrong characters. v1.2.4: paged layouts no longer push the paper off-screen — text now paginates inside a fixed page while the sheet stays put, so single and double page both show complete, readable pages for TXT and every other text format; double page actually splits the screen in two; code and command lines are no longer stretched by justification; the page adds proper inner margins. v1.2.5: Chinese PDFs whose embedded fonts cannot be mapped now recover both the page text and the document metadata (title/author) instead of showing mojibake; detection samples several pages so files with a clean cover no longer slip through. Translation and WebDAV backup now go through the bundled native sidecar, because the host sandbox blocks page-level fetch — so any OpenAI-compatible endpoint or self-hosted WebDAV server works, not just a hard-coded allow-list. The folder picker gains a real address bar (paste D://Books and press Enter), an \"open in file manager\" button, and a narrow-panel layout that no longer truncates folder names to a single character. The .dbxp now ships LICENSE, THIRD-PARTY-NOTICES.md and every third-party licence text, and all book HTML is sanitised by one strict allow-list before it is mounted. v1.2.6: selecting text in a PDF now works. The PDF text layer *is* the book container, so the old lookup (which searched for a child with that class) always came back empty: the selection toolbar never appeared, and neither highlights nor notes could be added to any PDF. Highlights also get their own style sheet for the transparent text layer, so the colour is actually visible over the rendered page, and saved highlights are redrawn when the document is reopened. v1.2.7: EPUB, TXT, FB2 and RTF get the same treatment. Their text lives in a Shadow DOM tree, and Chrome reports a selection made inside one as collapsed onto the host element, so the toolbar stayed hidden there as well. The reader now asks the shadow root for the real selection and takes the toolbar position from that same range, so selecting text works in every format.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.7/com.mjj3610.ebook-1.2.7-darwin-arm64.dbxp",
+              "sha256": "58695cb915098bb921bdaa4fbb8977d23498995d0aadbc60ba217983be4801bb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6116175
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.7/com.mjj3610.ebook-1.2.7-darwin-x64.dbxp",
+              "sha256": "852a8bcd02c2d894098a69231bbd276d58e995b42b8bc3bec7f16ad4f7db0767",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6323502
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.7/com.mjj3610.ebook-1.2.7-linux-arm64.dbxp",
+              "sha256": "206c9e0a44b0def624820ce2cbfa33ada2602669960cd7b3066edd6fd8e8d723",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6105729
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.7/com.mjj3610.ebook-1.2.7-linux-x64.dbxp",
+              "sha256": "55b87b8b1ec45e27c076785236e19e79dea091db4e4cb9feaedff096654d7593",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6388604
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.7/com.mjj3610.ebook-1.2.7-windows-x64.dbxp",
+              "sha256": "1340a0b17f1e93c961b7ceb0f5e8b87008fa62b2846b4ec946d5ac82cc9ad001",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6415474
+            }
+          ]
+        },
         {
           "version": "1.2.5",
           "releasedAt": "2026-11-01T16:37:34.100Z",
@@ -3438,6 +3522,50 @@
         "en": {
           "name": "Translation",
           "description": "Translation — a multi-engine translation plugin with 9 engine types: an out-of-the-box free translation service (Bilibili's publicly deployed Index-Translate model, no signup and no API key), OpenAI-compatible LLMs (DeepSeek, Qwen, Zhipu, Kimi, Ollama, vLLM, …), local CLI proxies (claude / codex / custom), DeepL, Google, Baidu, Youdao, Alibaba Cloud and Tencent Cloud; with streaming output, translate-as-you-type, engine management and translation history."
+        }
+      }
+    },
+    {
+      "id": "com.xiaomao49.sql-dojo",
+      "name": "SQL Dojo",
+      "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 18.6 engine (PGlite 0.5.13) running locally. No server, no setup, works offline. Per-question hints and result-set based grading.",
+      "publisher": "xiaomao49",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.3.2/icon.svg",
+      "tags": [
+        "sql",
+        "postgresql",
+        "learning",
+        "leetcode",
+        "practice"
+      ],
+      "permissions": [
+        "host.storage"
+      ],
+      "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.3.2",
+      "homepage": "https://github.com/xiaomao49/dbx-sql-dojo",
+      "license": "MIT",
+      "latestVersion": "0.3.2",
+      "versions": [
+        {
+          "version": "0.3.2",
+          "releasedAt": "2026-11-03T02:42:54.312Z",
+          "releaseNotes": "0.3.2: the bundled engine is PostgreSQL 18.6 (PGlite 0.5.13), not 16 — the workbench now shows the version the engine reports. Progress is stored through the host plugin storage (host.storage) instead of localStorage, which throws in the sandbox's opaque origin, with a visible session-only fallback. The package now ships LICENSE and THIRD_PARTY_NOTICES.md (PGlite Apache-2.0, PostgreSQL License, MIT question bank); engines.dbx is 0.6.19, the first host release with host.storage. A WebAssembly preflight explains in Chinese when the host sandbox blocks wasm. Local-only: no connection, no network.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.3.2/com.xiaomao49.sql-dojo-0.3.2-universal.dbxp",
+              "sha256": "69822a932d203db8a8e7376aef602b22510736020bbe5b3f98daf6e5026e48c5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5343581
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "SQL 练习场",
+          "description": "在 DBX 里刷力扣 SQL 50 题。内置真正的 PostgreSQL 18.6 引擎（PGlite 0.5.13），离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题。"
         }
       }
     },
@@ -11918,7 +12046,7 @@
       "description": "Manage Jenkins jobs, builds, console output, queue and nodes inside DBX, with stage view and MCP tools for AI clients.",
       "publisher": "nixing178",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.10.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.11.2/icon.svg",
       "tags": [
         "jenkins",
         "ci",
@@ -11931,11 +12059,53 @@
         "host.workbench",
         "host.events"
       ],
-      "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.3.0",
+      "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.11.2",
       "homepage": "https://github.com/nixing178/dbx-plugin-jenkins",
       "license": "Apache-2.0",
-      "latestVersion": "0.10.0",
+      "latestVersion": "0.11.2",
       "versions": [
+        {
+          "version": "0.11.2",
+          "releasedAt": "2026-11-02T12:08:14.315Z",
+          "releaseNotes": "Adds username and password sign-in as an alternative to API tokens: a new Authentication choice on the Jenkins connection (API token or username and password), password mode validated before contacting Jenkins, and a clearer 401 hint when the instance enforces two-factor authentication or token-only login. Also since 0.10.0: artifact downloads from the build detail page with per-file size, live progress and ETA, cancel, download-all and open-folder/copy-path (files are written by the sidecar with a 512 MiB cache and atomic replace), a configurable download directory, artifact archiving for freestyle jobs, full console log export streamed to disk instead of the 2 MB buffer, and a UI version badge; Active Choices parameters (static option list read from the job config.xml) render as checkbox groups or dropdowns with fallback to a text field; release builds now produce five targets (Windows x64, macOS Intel, macOS Apple Silicon, Linux x64, Linux ARM64). Connections without an authentication method keep using the API token. Password login does not work when Jenkins enforces 2FA, token-only login or SSO — use an API token instead.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.11.2/io.github.nixing178.jenkins-0.11.2-darwin-arm64.dbxp",
+              "sha256": "b6fd2df0b7f71d4080aa78f0d68ec6d944cb762758b2def57a1c80e4bc3b0c3a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4840928
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.11.2/io.github.nixing178.jenkins-0.11.2-darwin-x64.dbxp",
+              "sha256": "96b8dee84e11a130cce2af55c94b5e1e7b77ad2c9a582fd078a3daaeb7d98de7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5082915
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.11.2/io.github.nixing178.jenkins-0.11.2-linux-arm64.dbxp",
+              "sha256": "c5816f5dd402eeb8b6cfceedd04b068aa6a9544fe4cd30c180fde5d452499448",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4818774
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.11.2/io.github.nixing178.jenkins-0.11.2-linux-x64.dbxp",
+              "sha256": "38a2b4cebf8e47c78ce84ee8bcce7f38a948fb55e65d2e2d5f88b7dfe40ca548",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5146938
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.11.2/io.github.nixing178.jenkins-0.11.2-windows-x64.dbxp",
+              "sha256": "89803e5a6cc2491b89c48799bc92ac63eb45d80614b5f052ce8a2664bdb93446",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5184837
+            }
+          ]
+        },
         {
           "version": "0.10.0",
           "releasedAt": "2026-10-26T06:42:49.366Z",
@@ -14630,18 +14800,32 @@
       "description": "Paste MyBatis DEBUG logs and fill parameters back into SQL to get executable SQL.",
       "publisher": "sunsugary",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/mybatis-sql-fill/0.1.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/mybatis-sql-fill/0.1.3/icon.svg",
       "tags": [
         "mybatis",
         "sql",
         "log"
       ],
       "permissions": [],
-      "source": "https://github.com/sunsugary/dbx-plugin-mybatis-sql-fill/tree/v0.1.2",
+      "source": "https://github.com/sunsugary/dbx-plugin-mybatis-sql-fill/tree/v0.1.3",
       "homepage": "https://github.com/sunsugary/dbx-plugin-mybatis-sql-fill",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.2",
+      "latestVersion": "0.1.3",
       "versions": [
+        {
+          "version": "0.1.3",
+          "releasedAt": "2026-11-02T12:06:41.490Z",
+          "releaseNotes": "v0.1.3: drop engines.dbx floor so beta/prerelease DBX builds can install; compatibility is declared via engines.host_api only.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/mybatis-sql-fill/0.1.3/mybatis-sql-fill-0.1.3-universal.dbxp",
+              "sha256": "38243e64c0ef5a36abbec92377e1bf32ba4bb1a076dc5d0f3f14b23269a718b0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9956
+            }
+          ]
+        },
         {
           "version": "0.1.2",
           "releasedAt": "2026-10-14T06:31:22.303Z",
