@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "com.xingxi.game",
+  "publisher": "xingxi",
+  "version": "0.6.1",
+  "name": "AggressiveWar",
+  "description": "在 DBX 里征服了 SQL，为什么不来这里征服世界？27 个国家、随机地图、AI 对手，打开即见。局域网开房时会在本机监听端口（仅在你点「启动中继」后）。",
+  "icon": "https://raw.githubusercontent.com/chenjie1024/DBX-AggressiveWar/v0.6.1/assets/icon.svg",
+  "tags": ["game", "strategy", "turn-based", "conquest", "lan"],
+  "permissions": ["host.storage"],
+  "source": "https://github.com/chenjie1024/DBX-AggressiveWar/tree/v0.6.1",
+  "homepage": "https://github.com/chenjie1024/DBX-AggressiveWar",
+  "license": "MIT",
+  "releaseNotes": "0.6.1：伪装只在老板键下切换（修失焦闪烁与点一下就解锁）；SQL 编辑器软换行与光标对齐；联机消息积压改为断开重连、加入尝试限流；面板显示房间码；新图标。",
+  "localizations": {
+    "zh-CN": {
+      "name": "AggressiveWar",
+      "description": "在 DBX 里征服了 SQL，为什么不来这里征服世界？27 个国家、随机地图、AI 对手，打开即见。局域网开房时会在本机监听端口（仅在你点「启动中继」后）。"
+    },
+    "en": {
+      "name": "AggressiveWar",
+      "description": "You've conquered SQL in DBX — why not conquer the world here? 27 nations, procedural maps, AI rivals. Opening a LAN room listens on a local port (only after you press \"Start relay\")."
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/chenjie1024/DBX-AggressiveWar/releases/download/v0.6.1/com.xingxi.game-0.6.1-windows-x64.dbxp",
+      "sha256": "4d64ef9b8cfe16ec5b6d9b0fd9a03760468f967c9a0c9b93cfc6ea5127ea9834",
+      "size": 492551
+    }
+  ]
+}
