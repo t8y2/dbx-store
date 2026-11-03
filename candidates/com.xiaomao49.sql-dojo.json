@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "com.xiaomao49.sql-dojo",
+  "publisher": "xiaomao49",
+  "version": "0.4.3",
+  "name": "SQL Dojo",
+  "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 18.6 engine (PGlite 0.5.13) running locally. No server, no setup, works offline. Per-question hints, result-set based grading, and importable custom question banks validated by execution.",
+  "icon": "https://raw.githubusercontent.com/xiaomao49/dbx-sql-dojo/v0.4.3/assets/plugin.svg",
+  "tags": [
+    "sql",
+    "postgresql",
+    "learning",
+    "leetcode",
+    "practice"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.4.3",
+  "homepage": "https://github.com/xiaomao49/dbx-sql-dojo",
+  "license": "MIT",
+  "releaseNotes": "0.4.3: custom question banks. Download a template from Question Bank Management, write your own questions, and import them as a file or pasted JSON. Every question is executed against the local PostgreSQL engine on import; statements that fail or return no rows are rejected with a per-question reason. The header gains a Custom filter for imported questions, and an empty Custom category shows a short guide with a button to the bank manager. Switching categories now also switches the question shown on the right, and the interface copy has been rewritten in formal wording. Local-only: no database connection, no network.",
+  "localizations": {
+    "zh-CN": {
+      "name": "SQL 练习场",
+      "description": "在 DBX 里练习力扣高频 SQL 50 题。内置真正的 PostgreSQL 18.6 引擎（PGlite 0.5.13），离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题；支持导入自定义题库，导入前逐题实际执行验证。"
+    }
+  },
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/xiaomao49/dbx-sql-dojo/releases/download/v0.4.3/com.xiaomao49.sql-dojo-0.4.3-universal.dbxp",
+      "sha256": "d044d47b2de5a6cab2e503b732509a6cc7f550e096de633ce0f1ca1f63c13b1f",
+      "size": 5347277
+    }
+  ]
+}
