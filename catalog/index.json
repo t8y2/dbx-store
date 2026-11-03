@@ -8537,10 +8537,10 @@
     {
       "id": "io.dbx.screenshot",
       "name": "Screenshot",
-      "description": "Capture the screen and keep a local screenshot history in DBX. Saving can copy the image to the clipboard (overwrites current clipboard contents; toggle in settings).",
+      "description": "Capture the screen and keep a local screenshot history in DBX. Saving can copy the image to the clipboard (overwrites current clipboard contents; toggle in settings). On Linux, region capture needs gnome-screenshot, spectacle, or scrot on PATH.",
       "publisher": "alan",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/icon.svg",
       "tags": [
         "screenshot",
         "productivity",
@@ -8550,11 +8550,53 @@
         "host.binary",
         "host.events"
       ],
-      "source": "https://github.com/allran/dbx-plugin-screenshot/tree/v0.1.1",
+      "source": "https://github.com/allran/dbx-plugin-screenshot/tree/v0.1.2",
       "homepage": "https://github.com/allran/dbx-plugin-screenshot",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-11-03T14:44:03.582Z",
+          "releaseNotes": "0.1.2: multi-display picker; crop aspect ratios (free/16:9/4:3/1:1/custom) with in-bounds handles; fix crop undo losing the image; clearer Linux region-tool missing error; listing notes for Linux region CLI deps.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-darwin-arm64.dbxp",
+              "sha256": "d6400bc49102470884ddb07ce1f9fdad75060d20d0c22bba4952c17a79042a40",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 907770
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-darwin-x64.dbxp",
+              "sha256": "c92938bda1f3a8c1b7c6d00e755d4c1c1899bdf26789fa26379801eb9599772b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 966435
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-linux-arm64.dbxp",
+              "sha256": "21d51f7e65695894ba3088fb1fab6953a92b36dbe69aa7c74d16308469a70259",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1881638
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-linux-x64.dbxp",
+              "sha256": "022eb3290531117da1fc2f191deae07619d688e849f2ff745f86036e404cf862",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1957859
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-windows-x64.dbxp",
+              "sha256": "49dcf2bc939f92a89fd36ff396db52b7a61857e3b954b1f6206f703e06bb3958",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 767448
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-10-29T17:05:01.767Z",
@@ -8601,7 +8643,7 @@
       "localizations": {
         "zh-CN": {
           "name": "截图",
-          "description": "截取屏幕并在 DBX 中保存本机截图历史。保存后可复制到剪贴板（会覆盖当前剪贴板内容，可在设置中关闭）。"
+          "description": "截取屏幕并在 DBX 中保存本机截图历史。保存后可复制到剪贴板（会覆盖当前剪贴板内容，可在设置中关闭）。Linux 区域截图需系统已安装 gnome-screenshot、spectacle 或 scrot。"
         }
       }
     },
