@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "com.mjj3610.mail",
+  "publisher": "mjj3610",
+  "version": "0.1.3",
+  "name": "DBX Mail",
+  "description": "Local-first mail workbench: multiple IMAP accounts, cached conversations, a rich composer, offline outbox and attachments kept on disk.",
+  "icon": "https://raw.githubusercontent.com/mjj3610/dbx-mail/v0.1.3/assets/plugin.svg",
+  "tags": [
+    "mail",
+    "email",
+    "imap",
+    "smtp",
+    "workbench"
+  ],
+  "permissions": [],
+  "source": "https://github.com/mjj3610/dbx-mail/tree/v0.1.3",
+  "homepage": "https://github.com/mjj3610/dbx-mail",
+  "license": "GPL-3.0-or-later",
+  "releaseNotes": "Local-first multi-account mail workbench that runs as a DBX plugin: IMAP sync, conversation view, rich composer, attachments written to a real folder on disk and an offline outbox. Filesystem work (saving attachments, .eml import/export, folder browsing, raw message cache) is done by the bundled Rust sidecar, so the plugin page itself has no file or network access. v0.1.3: long messages scroll again — the workbench grid left its implicit row height to the content, so a tall body pushed the reader pane past the window and the scroll container had nothing to scroll (clientHeight equalled scrollHeight); the conversation list got the same fix for hundreds of threads. Page-level styles that newsletters ship (body{height:100%;overflow:hidden} around a fixed 700px table) are no longer applied to the message container, so wide mails are no longer clipped horizontally. Non-primary folders now sync: opening a folder that was never synced (uid validity 0) triggers a one-time sync, and the empty state plus the header refresh button sync only the folder you are looking at. Two sidebar folders with the same role no longer share a name, and the unread count follows the open folder. v0.1.0–v0.1.2: IMAP folder names are encoded as modified UTF-7 (RFC 3501) and an RFC 2971 ID is sent when the server advertises it, which fixes 163/126 answering SELECT with 'Unsafe Login'; remote images are blocked by default and fetched through the local sidecar as data URLs on request; mail <style> blocks are extracted and scoped to the message container so they cannot restyle the app; Tailwind preflight resets inside message bodies are undone element by element; dark mode strips hard-coded colours.",
+  "localizations": {
+    "zh-CN": {
+      "name": "DBX 邮件",
+      "description": "本地优先的多账户邮件工作台：IMAP 同步、会话归档、富文本撰写、附件与离线发件箱，邮件副本保存在本机。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/mjj3610/dbx-mail/releases/download/v0.1.3/com.mjj3610.mail-0.1.3-windows-x64.dbxp",
+      "sha256": "5421586440a1fc6cba13d5589dba6e3c39baa28027f1ef8e74081548e7ca0456",
+      "size": 2450391
+    }
+  ]
+}
