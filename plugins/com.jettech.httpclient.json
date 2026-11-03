@@ -1,23 +1,28 @@
 {
   "id": "com.jettech.httpclient",
   "name": "HTTP Client",
-  "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses.",
+  "description": "A Postman-style HTTP/gRPC workbench: compose requests, import OpenAPI, sync via WebDAV, and inspect responses through a native sidecar.",
   "publisher": "jettech",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/renpengkai/dbx-plugin-http-client/0.1.8/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/renpengkai/dbx-plugin-http-client/0.2.1/assets/plugin.svg",
   "tags": [
     "http",
+    "grpc",
+    "openapi",
+    "swagger",
+    "webdav",
     "api",
     "debugging",
     "network"
   ],
   "permissions": [
-    "host.events"
+    "host.events",
+    "host.workbench"
   ],
   "source": "https://github.com/renpengkai/dbx-plugin-http-client",
   "homepage": "https://github.com/renpengkai/dbx-plugin-http-client",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.8",
+  "latestVersion": "0.2.1",
   "versions": [
     {
       "version": "0.1.1",
@@ -228,12 +233,54 @@
           "size": 4544685
         }
       ]
+    },
+    {
+      "version": "0.2.1",
+      "releasedAt": "2026-10-30T10:08:53.100Z",
+      "releaseNotes": "0.2.1：修正 Manifest 兼容性（命令 ID 改为全小写 open-tab；菜单 group 改用 primary/secondary）。0.2.0：gRPC、OpenAPI/Swagger 导入、WebDAV 同步、Dock 快捷入口。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/com.jettech.httpclient-0.2.1-darwin-arm64.dbxp",
+          "sha256": "3f79dd170f297bfc7591a928da9c19a2bb8ea0599f4dd7439b9e99530a46894c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9478751
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/com.jettech.httpclient-0.2.1-darwin-x64.dbxp",
+          "sha256": "1f2bdf151c9d13c47c659cb70227fe21618430955e6225bec0fb7e70118a0fc6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9908650
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/com.jettech.httpclient-0.2.1-linux-arm64.dbxp",
+          "sha256": "811a042611fcf46f4951e27d29f9e72022197dfd61e6b5e621c0ac39e199f905",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9399501
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/com.jettech.httpclient-0.2.1-linux-x64.dbxp",
+          "sha256": "213941a93151f93f5999a391785266dd97fc0ff4434f65349bda88491d505a33",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 10003597
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/com.jettech.httpclient-0.2.1-windows-x64.dbxp",
+          "sha256": "3ad3d976348a5516ca66d6a4f35bcb45927aa8d1c26857ff4d68384a5f1368a5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 10147526
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "HTTP 客户端",
-      "description": "类似 Postman 的 HTTP 接口调试工作台：构造请求、通过原生 Sidecar 发送并查看响应。"
+      "description": "类似 Postman 的 HTTP/gRPC 接口调试工作台：构造请求、导入 OpenAPI、经 WebDAV 同步，并通过原生 Sidecar 发送并查看响应。"
     }
   }
 }

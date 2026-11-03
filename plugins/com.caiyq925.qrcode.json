@@ -1,0 +1,44 @@
+{
+  "id": "com.caiyq925.qrcode",
+  "name": "QR Code Generator",
+  "description": "Generate QR codes from text, Wi-Fi networks or contact cards, with custom colors, module shapes and a centered logo. Export PNG, copy to clipboard, and keep a history of recent codes.",
+  "publisher": "caiyq925",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/caiyq925-cell/dbx-plugin-qrcode/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "qrcode",
+    "utility",
+    "productivity",
+    "wifi",
+    "vcard"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/caiyq925-cell/dbx-plugin-qrcode/tree/v0.1.0",
+  "homepage": "https://github.com/caiyq925-cell/dbx-plugin-qrcode",
+  "license": "MIT",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-30T10:29:50.343Z",
+      "releaseNotes": "Initial release. / 首次发布。",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/com.caiyq925.qrcode/0.1.0/com.caiyq925.qrcode-0.1.0-universal.dbxp",
+          "sha256": "d468de49e56d50b21ad702804dcdd5e0b317df0ff10fcc266b13e550c2c67537",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 28215
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "二维码工具",
+      "description": "文本、Wi-Fi、名片一键生成二维码：自定义颜色、码点形状与中心 Logo，导出 PNG、复制到剪贴板，并保留历史记录。"
+    }
+  }
+}

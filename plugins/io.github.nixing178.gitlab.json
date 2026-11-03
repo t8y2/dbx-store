@@ -4,7 +4,7 @@
   "description": "Browse projects and code, review merge requests, watch pipelines and handle issues inside DBX.",
   "publisher": "nixing178",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/nixing178/dbx-plugin-gitlab/v0.1.0/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/nixing178/dbx-plugin-gitlab/v0.2.4/assets/plugin.svg",
   "tags": [
     "gitlab",
     "code-review",
@@ -14,12 +14,13 @@
   ],
   "permissions": [
     "host.workbench",
-    "host.events"
+    "host.events",
+    "host.storage"
   ],
-  "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.1.0",
+  "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.2.4",
   "homepage": "https://github.com/nixing178/dbx-plugin-gitlab",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.0",
+  "latestVersion": "0.2.4",
   "versions": [
     {
       "version": "0.1.0",
@@ -32,6 +33,20 @@
           "sha256": "1be9668774170ff4430bf5f696ddfa67464ed9b2a8e48ea7f2054ea69db72be3",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4689330
+        }
+      ]
+    },
+    {
+      "version": "0.2.4",
+      "releasedAt": "2026-10-30T10:23:08.648Z",
+      "releaseNotes": "Fix project navigation pin persistence across DBX workbench reloads.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.2.4/io.github.nixing178.gitlab-0.2.4-windows-x64.dbxp",
+          "sha256": "c4634d916e61a9595e77c0582318fffcb7f4eeef21514f26ed514e20bcbf9617",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4709945
         }
       ]
     }
