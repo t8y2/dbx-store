@@ -19,7 +19,7 @@
   "source": "https://github.com/lukelwai/dbx-md-notes",
   "homepage": "https://github.com/lukelwai/dbx-md-notes",
   "license": "Apache-2.0",
-  "releaseNotes": "1.增加自动索引功能，打开应用自动扫描归位未记录的md笔记。",
+  "releaseNotes": "增加自动索引功能：打开应用时自动扫描存储目录，把磁盘上已有但索引里没有的 .md 笔记登记进来（只增不删）。说明：本版的 linux-x64 安装包未能上传到 release，因此本次只发布 darwin-arm64、darwin-x64、linux-arm64 和 windows-x64；Linux x64 用户会继续停留在 0.8.10，等补传资产后的下一版再恢复。",
   "targets": [
     {
       "target": "darwin-arm64",
@@ -38,12 +38,6 @@
       "url": "https://github.com/lukelwai/dbx-md-notes/releases/download/0.8.11/com.lwai.mdnotes-0.8.11-linux-arm64.dbxp",
       "sha256": "87cba18e448c907ffc5b13085f3b8e3909218eb8a8c3ecac3265fc8aac37fc3c",
       "size": 4970882
-    },
-    {
-      "target": "linux-x64",
-      "url": "https://github.com/lukelwai/dbx-md-notes/releases/download/0.8.11/com.lwai.mdnotes-0.8.11-linux-x64.dbxp",
-      "sha256": "23d0f50dc444ce0b59e7e6a6c7455d97967fabf1c6e892c68082407c1ae83ff3",
-      "size": 5404886
     },
     {
       "target": "windows-x64",
