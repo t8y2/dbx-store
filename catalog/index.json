@@ -3528,10 +3528,10 @@
     {
       "id": "com.xiaomao49.sql-dojo",
       "name": "SQL Dojo",
-      "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 18.6 engine (PGlite 0.5.13) running locally. No server, no setup, works offline. Per-question hints and result-set based grading.",
+      "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 18.6 engine (PGlite 0.5.13) running locally. No server, no setup, works offline. Per-question hints, result-set based grading, and importable custom question banks validated by execution.",
       "publisher": "xiaomao49",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.3.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.4/icon.svg",
       "tags": [
         "sql",
         "postgresql",
@@ -3542,11 +3542,39 @@
       "permissions": [
         "host.storage"
       ],
-      "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.3.2",
+      "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.4.4",
       "homepage": "https://github.com/xiaomao49/dbx-sql-dojo",
       "license": "MIT",
-      "latestVersion": "0.3.2",
+      "latestVersion": "0.4.4",
       "versions": [
+        {
+          "version": "0.4.4",
+          "releasedAt": "2026-11-04T05:33:33.843Z",
+          "releaseNotes": "0.4.4: question bank export (single bank or all), cancellable imports with per-question failure reasons, per-question SQL drafts, continuous list numbering with preserved scroll position, full PostgreSQL error detail/hint/position, screen-reader announcements and a keyboard-navigable question list, a 20000-row result cap, per-bank storage with automatic migration from the legacy single key, DML detection by result set with table and column comparison, and background engine startup. Local-only: no database connection, no network.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.4/com.xiaomao49.sql-dojo-0.4.4-universal.dbxp",
+              "sha256": "0dbd2458cebfed876566321cc111d32f8a1296d5847d493016a80990c6e90e8a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5352086
+            }
+          ]
+        },
+        {
+          "version": "0.4.3",
+          "releasedAt": "2026-11-03T14:41:57.145Z",
+          "releaseNotes": "0.4.3: custom question banks. Download a template from Question Bank Management, write your own questions, and import them as a file or pasted JSON. Every question is executed against the local PostgreSQL engine on import; statements that fail or return no rows are rejected with a per-question reason. The header gains a Custom filter for imported questions, and an empty Custom category shows a short guide with a button to the bank manager. Switching categories now also switches the question shown on the right, and the interface copy has been rewritten in formal wording. Local-only: no database connection, no network.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.3/com.xiaomao49.sql-dojo-0.4.3-universal.dbxp",
+              "sha256": "353a5aa4b6d6f2cc0073484f031f03d9d33dedae39b77b6da7ac54bfd937855e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5348445
+            }
+          ]
+        },
         {
           "version": "0.3.2",
           "releasedAt": "2026-11-03T02:42:54.312Z",
@@ -3565,7 +3593,7 @@
       "localizations": {
         "zh-CN": {
           "name": "SQL 练习场",
-          "description": "在 DBX 里刷力扣 SQL 50 题。内置真正的 PostgreSQL 18.6 引擎（PGlite 0.5.13），离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题。"
+          "description": "在 DBX 里练习力扣高频 SQL 50 题。内置真正的 PostgreSQL 18.6 引擎（PGlite 0.5.13），离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题；支持导入自定义题库，导入前逐题实际执行验证。"
         }
       }
     },
@@ -3575,7 +3603,7 @@
       "description": "在 DBX 里征服了 SQL，为什么不来这里征服世界？27 个国家、随机地图、AI 对手，打开即见。局域网开房时会在本机监听端口（仅在你点「启动中继」后）。",
       "publisher": "xingxi",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.xingxi.game/0.5.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.xingxi.game/0.6.1/icon.svg",
       "tags": [
         "game",
         "strategy",
@@ -3586,11 +3614,25 @@
       "permissions": [
         "host.storage"
       ],
-      "source": "https://github.com/chenjie1024/DBX-AggressiveWar/tree/v0.5.2",
+      "source": "https://github.com/chenjie1024/DBX-AggressiveWar/tree/v0.6.1",
       "homepage": "https://github.com/chenjie1024/DBX-AggressiveWar",
       "license": "MIT",
-      "latestVersion": "0.5.2",
+      "latestVersion": "0.6.1",
       "versions": [
+        {
+          "version": "0.6.1",
+          "releasedAt": "2026-11-03T14:43:01.908Z",
+          "releaseNotes": "0.6.1：伪装只在老板键下切换（修「失焦闪一下又变回游戏」「点一下就解锁」，并移除设置里的「进入游戏」按钮和「切回 DBX 时也保持伪装」）；SQL 编辑器软换行 + 光标对齐；联机消息积压改为断开重连、加入尝试每分钟限 5 次；面板显示房间码；防火墙自检降级为参考值；sidecar 改名 dbx-plugin-xingxi-game、包内附 LICENSE；新图标。若装过旧 id com.gongfawar.game，请先卸载再装本版。",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.xingxi.game/0.6.1/com.xingxi.game-0.6.1-windows-x64.dbxp",
+              "sha256": "f99527e25b2fe51379e48a0aef9504cd8317e867bd9caa4b5de46871a944b347",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 493583
+            }
+          ]
+        },
         {
           "version": "0.5.2",
           "releasedAt": "2026-11-03T02:55:38.610Z",
@@ -8537,10 +8579,10 @@
     {
       "id": "io.dbx.screenshot",
       "name": "Screenshot",
-      "description": "Capture the screen and keep a local screenshot history in DBX. Saving can copy the image to the clipboard (overwrites current clipboard contents; toggle in settings).",
+      "description": "Capture the screen and keep a local screenshot history in DBX. Saving can copy the image to the clipboard (overwrites current clipboard contents; toggle in settings). On Linux, region capture needs gnome-screenshot, spectacle, or scrot on PATH.",
       "publisher": "alan",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/icon.svg",
       "tags": [
         "screenshot",
         "productivity",
@@ -8550,11 +8592,53 @@
         "host.binary",
         "host.events"
       ],
-      "source": "https://github.com/allran/dbx-plugin-screenshot/tree/v0.1.1",
+      "source": "https://github.com/allran/dbx-plugin-screenshot/tree/v0.1.2",
       "homepage": "https://github.com/allran/dbx-plugin-screenshot",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-11-03T14:44:03.582Z",
+          "releaseNotes": "0.1.2: multi-display picker; crop aspect ratios (free/16:9/4:3/1:1/custom) with in-bounds handles; fix crop undo losing the image; clearer Linux region-tool missing error; listing notes for Linux region CLI deps.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-darwin-arm64.dbxp",
+              "sha256": "d6400bc49102470884ddb07ce1f9fdad75060d20d0c22bba4952c17a79042a40",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 907770
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-darwin-x64.dbxp",
+              "sha256": "c92938bda1f3a8c1b7c6d00e755d4c1c1899bdf26789fa26379801eb9599772b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 966435
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-linux-arm64.dbxp",
+              "sha256": "21d51f7e65695894ba3088fb1fab6953a92b36dbe69aa7c74d16308469a70259",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1881638
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-linux-x64.dbxp",
+              "sha256": "022eb3290531117da1fc2f191deae07619d688e849f2ff745f86036e404cf862",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1957859
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-windows-x64.dbxp",
+              "sha256": "49dcf2bc939f92a89fd36ff396db52b7a61857e3b954b1f6206f703e06bb3958",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 767448
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-10-29T17:05:01.767Z",
@@ -8601,7 +8685,7 @@
       "localizations": {
         "zh-CN": {
           "name": "截图",
-          "description": "截取屏幕并在 DBX 中保存本机截图历史。保存后可复制到剪贴板（会覆盖当前剪贴板内容，可在设置中关闭）。"
+          "description": "截取屏幕并在 DBX 中保存本机截图历史。保存后可复制到剪贴板（会覆盖当前剪贴板内容，可在设置中关闭）。Linux 区域截图需系统已安装 gnome-screenshot、spectacle 或 scrot。"
         }
       }
     },
