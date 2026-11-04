@@ -2649,6 +2649,76 @@
       }
     },
     {
+      "id": "com.mjj3610.mail",
+      "name": "DBX Mail",
+      "description": "Local-first mail workbench: multiple IMAP accounts, cached conversations, a rich composer, offline outbox and attachments kept on disk.",
+      "publisher": "mjj3610",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.mjj3610.mail/0.1.5/icon.svg",
+      "tags": [
+        "mail",
+        "email",
+        "imap",
+        "smtp",
+        "workbench"
+      ],
+      "permissions": [],
+      "source": "https://github.com/mjj3610/dbx-mail/tree/v0.1.5",
+      "homepage": "https://github.com/mjj3610/dbx-mail",
+      "license": "GPL-3.0-or-later",
+      "latestVersion": "0.1.5",
+      "versions": [
+        {
+          "version": "0.1.5",
+          "releasedAt": "2026-11-04T05:45:57.998Z",
+          "releaseNotes": "Local-first multi-account mail workbench that runs as a DBX plugin: IMAP sync, conversation view, rich composer, attachments written to a real folder on disk and an offline outbox. Filesystem work (saving attachments, .eml import/export, folder browsing, raw message cache) is done by the bundled Rust sidecar, so the plugin page itself has no file or network access. v0.1.5: native packages for four more targets. The sidecar is a prebuilt Rust binary, so every target has to be compiled on its own machine; releases are now built by CI on each platform's own runner (windows-x64, linux-x64, linux-arm64, darwin-x64, darwin-arm64) and this catalogue entry lists all five. There are no functional changes — the sources are identical to 0.1.4 apart from the version string. v0.1.4 is a security and licensing release. Quoted reply/forward bodies are now sanitised before they reach the composer — previously a malicious HTML mail could run inline handlers through the reply quote, which could then call the sidecar API; draft bodies and the final innerHTML assignment go through the same allow-list, and quoting replaces remote images with a text placeholder. The image proxy now re-validates every redirect hop instead of only the first URL, and the blocked ranges cover 100.64/10, 240/4, 198.18/15 and IPv4-mapped IPv6. Remote images and CSS background urls are neutralised before the HTML is attached, so opening a message issues no request at all until you press 显示图片. On the licensing side, LICENSE is restored to the verbatim FSF text (copyright belongs in NOTICE), and THIRD-PARTY-NOTICES now lists every dependency licence — including CDLA-Permissive-2.0 for webpki-roots, Unicode-3.0 for the ICU4X crates and Zlib for zlib-rs — with full texts under licenses/. v0.1.3: long messages scroll again — the workbench grid left its implicit row height to the content, so a tall body pushed the reader pane past the window; page-level styles that newsletters ship are no longer applied to the message container, so wide mails are no longer clipped horizontally; non-primary folders sync on open, and the empty state plus the header refresh button sync only the folder you are looking at. v0.1.0–v0.1.2: IMAP folder names are encoded as modified UTF-7 (RFC 3501) and an RFC 2971 ID is sent when the server advertises it, which fixes 163/126 answering SELECT with 'Unsafe Login'; remote images are blocked by default and fetched through the local sidecar as data URLs on request; mail <style> blocks are extracted and scoped to the message container so they cannot restyle the app; Tailwind preflight resets inside message bodies are undone element by element; dark mode strips hard-coded colours.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.mail/0.1.5/com.mjj3610.mail-0.1.5-darwin-arm64.dbxp",
+              "sha256": "5cb8784bb4cb4ad382cf20c354adc0ae2ca0e12fade64566c4731ac39ee3a866",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2422267
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.mail/0.1.5/com.mjj3610.mail-0.1.5-darwin-x64.dbxp",
+              "sha256": "62180c0dbbf980b7f9e2fdc82f77e688b1834028801caa9d35f6229429c055a0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2556994
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.mail/0.1.5/com.mjj3610.mail-0.1.5-linux-arm64.dbxp",
+              "sha256": "1d2beed16febf49c6ef561d11dcc84110a7e52087a82ce400f3bb4e5a6a747e4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2625332
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.mail/0.1.5/com.mjj3610.mail-0.1.5-linux-x64.dbxp",
+              "sha256": "c806685e35f29fd29d9378d6c192558314f2d28954db37ac914a086a26d03eba",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2688314
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.mail/0.1.5/com.mjj3610.mail-0.1.5-windows-x64.dbxp",
+              "sha256": "d80f587bb0b379bafe33694d37adcd96c6e885608e4576d2129ac9e70ae2cca9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2459776
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "DBX 邮件",
+          "description": "本地优先的多账户邮件工作台：IMAP 同步、会话归档、富文本撰写、附件与离线发件箱，邮件副本保存在本机。"
+        }
+      }
+    },
+    {
       "id": "com.nintycat.shell",
       "name": "NintyShell",
       "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files.",
