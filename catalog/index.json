@@ -3531,7 +3531,7 @@
       "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 18.6 engine (PGlite 0.5.13) running locally. No server, no setup, works offline. Per-question hints, result-set based grading, and importable custom question banks validated by execution.",
       "publisher": "xiaomao49",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.3/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.4/icon.svg",
       "tags": [
         "sql",
         "postgresql",
@@ -3542,11 +3542,25 @@
       "permissions": [
         "host.storage"
       ],
-      "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.4.3",
+      "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.4.4",
       "homepage": "https://github.com/xiaomao49/dbx-sql-dojo",
       "license": "MIT",
-      "latestVersion": "0.4.3",
+      "latestVersion": "0.4.4",
       "versions": [
+        {
+          "version": "0.4.4",
+          "releasedAt": "2026-11-04T05:33:33.843Z",
+          "releaseNotes": "0.4.4: question bank export (single bank or all), cancellable imports with per-question failure reasons, per-question SQL drafts, continuous list numbering with preserved scroll position, full PostgreSQL error detail/hint/position, screen-reader announcements and a keyboard-navigable question list, a 20000-row result cap, per-bank storage with automatic migration from the legacy single key, DML detection by result set with table and column comparison, and background engine startup. Local-only: no database connection, no network.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.4/com.xiaomao49.sql-dojo-0.4.4-universal.dbxp",
+              "sha256": "0dbd2458cebfed876566321cc111d32f8a1296d5847d493016a80990c6e90e8a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5352086
+            }
+          ]
+        },
         {
           "version": "0.4.3",
           "releasedAt": "2026-11-03T14:41:57.145Z",
