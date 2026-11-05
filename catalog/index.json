@@ -3445,6 +3445,78 @@
       }
     },
     {
+      "id": "com.vyrnax.datasweep",
+      "name": "Minesweeper",
+      "description": "Minesweeper: a classic puzzle game.",
+      "publisher": "vyrnax",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/icon.svg",
+      "tags": [],
+      "permissions": [],
+      "source": "https://github.com/vyrnax/dbx-plugin-datasweep",
+      "homepage": "",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.1",
+      "versions": [
+        {
+          "version": "0.1.1",
+          "releasedAt": "2026-11-05T13:23:04.720Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/com.vyrnax.datasweep-0.1.1-darwin-arm64.dbxp",
+              "sha256": "f23bb61a9da907f3fd905ffb9e69bd68bca17c4ee744a1146788482722a83f36",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 349093
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/com.vyrnax.datasweep-0.1.1-darwin-x64.dbxp",
+              "sha256": "dade099daa7729660469f54c4bebf0a3fb54ec2c152cd47d6b23beb523eb8671",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 363702
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/com.vyrnax.datasweep-0.1.1-linux-arm64.dbxp",
+              "sha256": "6cce12f4b13d10109f44d99bf361a765b3bcf7b50717102c14e9cf98f4f915b4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 371503
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/com.vyrnax.datasweep-0.1.1-linux-x64.dbxp",
+              "sha256": "2028612960aded2eb91c0aac22d8b3c6e9bc3ac89b6c61c719499d0f647d0282",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 389331
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/com.vyrnax.datasweep-0.1.1-windows-x64.dbxp",
+              "sha256": "222392dd0df33290f693df886672a600727703d5406bea72e647cd43a941ed31",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 291030
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "en": {
+          "name": "Minesweeper",
+          "description": "Minesweeper: a classic puzzle game."
+        },
+        "zh-CN": {
+          "name": "扫雷",
+          "description": "扫雷-经典益智小游戏"
+        },
+        "zh": {
+          "name": "扫雷",
+          "description": "扫雷-经典益智小游戏"
+        }
+      }
+    },
+    {
       "id": "com.vyrnax.translation",
       "name": "Translation 即时翻译",
       "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 9 类引擎：开箱即用的免费翻译服务、OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。",
