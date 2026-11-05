@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "com.eyecare.dbx",
+  "publisher": "xyun2028",
+  "version": "0.1.8",
+  "name": "Eye眼",
+  "description": "Screen color temperature inside DBX: presets, scheduled day/night shifting, and 20-20-20 break reminders. It adjusts the display gamma table instead of overlaying a translucent tint, and works per monitor.",
+  "icon": "https://raw.githubusercontent.com/xyun2028/dbx-eyecare/v0.1.8/ui/icon.png",
+  "tags": [
+    "eyecare",
+    "color-temperature",
+    "gamma",
+    "health"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.events"
+  ],
+  "source": "https://github.com/xyun2028/dbx-eyecare/tree/v0.1.8",
+  "homepage": "https://github.com/xyun2028/dbx-eyecare",
+  "license": "MIT",
+  "releaseNotes": "支持 macOS 与 Linux，Intel、Apple Silicon、ARM64 都覆盖：Windows 走 GDI，macOS 走 CoreGraphics，Linux 走 X11/RandR。Wayland 会话下会明确说明不支持，不再让开关看起来生效了其实没改到屏幕。",
+  "localizations": {
+    "zh-CN": {
+      "name": "Eye眼",
+      "description": "在 DBX 里调屏幕色温：预设、按时段自动切换、20-20-20 休息提醒。直接改显示器的 Gamma 表，不盖半透明遮罩，多块屏可以各调各的。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/xyun2028/dbx-eyecare/releases/download/v0.1.8/com.eyecare.dbx-0.1.8-windows-x64.dbxp",
+      "sha256": "eb2afd208df7ce00c59e2de2d990f362633653717452e45380c72703bfb1bed6",
+      "size": 773623
+    }
+  ]
+}
