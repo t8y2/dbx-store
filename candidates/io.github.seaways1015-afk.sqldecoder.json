@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.seaways1015-afk.sqldecoder",
+  "publisher": "seaways1015-afk",
+  "version": "0.1.0",
+  "name": "SQL Decoder",
+  "description": "Decrypt encrypted columns in DBX result grids with rules you keep on this computer: AES, SM4, Base64, or your own script.",
+  "icon": "https://raw.githubusercontent.com/seaways1015-afk/dbx-plugin-sql-decoder/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "decrypt",
+    "encryption",
+    "aes",
+    "sm4",
+    "sql"
+  ],
+  "permissions": [],
+  "source": "https://github.com/seaways1015-afk/dbx-plugin-sql-decoder/tree/v0.1.0",
+  "homepage": "https://github.com/seaways1015-afk/dbx-plugin-sql-decoder",
+  "license": "Apache-2.0",
+  "releaseNotes": "Initial release.",
+  "localizations": {
+    "zh-CN": {
+      "name": "SQL 解码器",
+      "description": "按你保存在本机的规则，解密 DBX 结果表格里的加密字段：AES、SM4、Base64，或你自己的脚本。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/seaways1015-afk/dbx-plugin-sql-decoder/releases/download/v0.1.0/io.github.seaways1015-afk.sqldecoder-0.1.0-darwin-arm64.dbxp",
+      "sha256": "e2ee014c9cc3182f5fd65acf7c9c9a1409fe0a542446f5c703cdb082e44b4f0c",
+      "size": 2065857
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/seaways1015-afk/dbx-plugin-sql-decoder/releases/download/v0.1.0/io.github.seaways1015-afk.sqldecoder-0.1.0-darwin-x64.dbxp",
+      "sha256": "3ae6fb006d4234e70a959af8b972778ece63f931cb721cc3e29db87e8e94762b",
+      "size": 2161712
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/seaways1015-afk/dbx-plugin-sql-decoder/releases/download/v0.1.0/io.github.seaways1015-afk.sqldecoder-0.1.0-linux-arm64.dbxp",
+      "sha256": "11f4b3fcc31420c21cea383ebf0076531d53429178f8d306ccf5e0d18549377f",
+      "size": 2083306
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/seaways1015-afk/dbx-plugin-sql-decoder/releases/download/v0.1.0/io.github.seaways1015-afk.sqldecoder-0.1.0-linux-x64.dbxp",
+      "sha256": "320495a25c9682ac9a991acc8765e0adfe46831150fd957df284e63ff7ff0a91",
+      "size": 2212042
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/seaways1015-afk/dbx-plugin-sql-decoder/releases/download/v0.1.0/io.github.seaways1015-afk.sqldecoder-0.1.0-windows-x64.dbxp",
+      "sha256": "d50754110a81a2ce3a87e8d5ac7c46f4bd37bb71163a85beb45fe1b8fc67370f",
+      "size": 2273145
+    }
+  ]
+}
