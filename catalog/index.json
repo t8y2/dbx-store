@@ -4406,7 +4406,7 @@
       "description": "Browse, search, and reuse local clipboard history (text, images, and file lists).",
       "publisher": "alan",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/icon.svg",
       "tags": [
         "clipboard",
         "productivity",
@@ -4415,11 +4415,53 @@
       "permissions": [
         "host.events"
       ],
-      "source": "https://github.com/allran/dbx-plugin-clipboard/tree/v0.1.1",
+      "source": "https://github.com/allran/dbx-plugin-clipboard/tree/v0.1.2",
       "homepage": "https://github.com/allran/dbx-plugin-clipboard",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-11-05T12:39:08.593Z",
+          "releaseNotes": "性能与稳定性优化：列表缩略图懒加载、剪贴板变更探测与增量同步；修复清空后无法重新收录、持久化失败回滚，以及图片指纹去重等问题。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-darwin-arm64.dbxp",
+              "sha256": "37bf74220378461047410697739e19c44ab2c8f73292c3da4f6746279e63ebbe",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 755557
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-darwin-x64.dbxp",
+              "sha256": "5b43fe37e6ca8b4b71112025de6a621ac908ab0a2033e73567fadbee0db644e3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 803517
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-linux-arm64.dbxp",
+              "sha256": "ccef9a8b0f534c29372db11b7c6242a2a1a59530d3f7bebe25cadb5ebe492c22",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 704963
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-linux-x64.dbxp",
+              "sha256": "d79959c4eb9f25e28e30f8493f43be50bcde543d73618af55b20b60c51c086fd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 739648
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-windows-x64.dbxp",
+              "sha256": "3814880b9e7d758ce89097fb4771540fc25956bcfa908891249402f60aa71764",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 602470
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-10-08T02:26:31.345Z",
