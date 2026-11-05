@@ -51,14 +51,6 @@
     "zh-CN": {
       "name": "MyBatis SQL 生成器",
       "description": "粘贴 MyBatis mapper XML 与入参，渲染出可直接执行的 SQL（支持 Oracle / SQL Server 方言字面量）。"
-    },
-    "en": {
-      "name": "MyBatis SQL Generator",
-      "description": "Render directly executable SQL from MyBatis mapper XML and input parameters, producing Oracle / SQL Server dialect literals."
-    },
-    "zh": {
-      "name": "MyBatis SQL 生成器",
-      "description": "粘贴 MyBatis mapper XML 与入参，渲染出可直接执行的 SQL（支持 Oracle / SQL Server 方言字面量）。"
     }
   }
 }

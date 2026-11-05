@@ -107,14 +107,6 @@
     "zh-CN": {
       "name": "电子书阅读器",
       "description": "支持 EPUB、PDF、TXT、MOBI、AZW3、DOCX、漫画等 18 种格式，单页 / 双页 / 滚动三种排版，可听书、翻译、划线与记笔记；通过随包提供的原生后端把书籍与笔记真正写入本机磁盘目录。"
-    },
-    "en": {
-      "name": "E-book Reader",
-      "description": "Read 18 e-book formats — EPUB, PDF, TXT, MOBI, AZW3, DOCX, comics and more — with paged, double-page or scrolling layouts, text-to-speech, translation, highlights and notes. Books and notes are written to a real folder on your disk through a bundled native sidecar."
-    },
-    "zh": {
-      "name": "电子书阅读器",
-      "description": "支持 EPUB、PDF、TXT、MOBI、AZW3、DOCX、漫画等 18 种格式，单页 / 双页 / 滚动三种排版，可听书、翻译、划线与记笔记；通过随包提供的原生后端把书籍与笔记真正写入本机磁盘目录。"
     }
   }
 }

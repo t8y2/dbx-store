@@ -42,14 +42,6 @@
     "zh-CN": {
       "name": "终端模拟器",
       "description": "DBX 工作台内置终端：多标签分屏会话、SSH/Telnet/Serial 连接、SFTP 文件管理、系统监控、命令面板与主题跟随。"
-    },
-    "en": {
-      "name": "Terminal Emulator",
-      "description": "A DBX workbench terminal emulator with multi-tab sessions, split panes, SSH/Telnet/Serial connections, SFTP file management, and a live system monitor."
-    },
-    "zh": {
-      "name": "终端模拟器",
-      "description": "DBX 工作台内置终端：多标签分屏会话、SSH/Telnet/Serial 连接、SFTP 文件管理、系统监控、命令面板与主题跟随。"
     }
   }
 }

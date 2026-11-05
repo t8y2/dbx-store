@@ -114,14 +114,6 @@
     "zh-CN": {
       "name": "DBF Studio",
       "description": "打开、校验、编辑并导出 DBF 数据表（dBase III/IV/V、FoxPro、VFP），内置深市 D-COM、沪市 PROP 与上市公司版交换文件字段释义。"
-    },
-    "en": {
-      "name": "DBF Studio",
-      "description": "Open, inspect, edit, validate and export DBF tables (dBase III/IV/V, FoxPro, VFP), with built-in field dictionaries for Chinese exchange settlement files."
-    },
-    "zh": {
-      "name": "DBF Studio",
-      "description": "打开、校验、编辑并导出 DBF 数据表（dBase III/IV/V、FoxPro、VFP），内置深市 D-COM、沪市 PROP 与上市公司版交换文件字段释义。"
     }
   }
 }

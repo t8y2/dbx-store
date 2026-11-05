@@ -39,14 +39,6 @@
     "zh-CN": {
       "name": "二维码工具",
       "description": "文本、Wi-Fi、名片一键生成二维码：自定义颜色、码点形状与中心 Logo，导出 PNG、复制到剪贴板，并保留历史记录。"
-    },
-    "en": {
-      "name": "QR Code Generator",
-      "description": "Generate QR codes from text, Wi-Fi networks or contact cards, with custom colors, module shapes and a centered logo. Export PNG, copy to clipboard, and keep a history of recent codes."
-    },
-    "zh": {
-      "name": "二维码工具",
-      "description": "文本、Wi-Fi、名片一键生成二维码：自定义颜色、码点形状与中心 Logo，导出 PNG、复制到剪贴板，并保留历史记录。"
     }
   }
 }

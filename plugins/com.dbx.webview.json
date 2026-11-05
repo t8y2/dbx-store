@@ -1,7 +1,7 @@
 {
   "id": "com.dbx.webview",
   "name": "Browser",
-  "description": "A single workbench for three things: clean article reading, real-time browsing of 小红书 and 抖音, and offline novel reading—all inside DBX.",
+  "description": "一个工作台解决三件事：干净读文章、实时逛小红书抖音、离线看小说——全在 DBX 内完成。",
   "publisher": "xingxi",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/chenjie1024/DBX-Browser/v0.7.10/assets/plugin.svg",
@@ -52,14 +52,6 @@
   ],
   "localizations": {
     "zh-CN": {
-      "name": "Browser",
-      "description": "一个工作台解决三件事：干净读文章、实时逛小红书抖音、离线看小说——全在 DBX 内完成。"
-    },
-    "en": {
-      "name": "Browser",
-      "description": "A single workbench for three things: clean article reading, real-time browsing of 小红书 and 抖音, and offline novel reading—all inside DBX."
-    },
-    "zh": {
       "name": "Browser",
       "description": "一个工作台解决三件事：干净读文章、实时逛小红书抖音、离线看小说——全在 DBX 内完成。"
     }

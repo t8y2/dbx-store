@@ -118,14 +118,6 @@
         "zh-CN": {
           "name": "XXL-JOB 任务调度",
           "description": "在 DBX 内管理 XXL-JOB 分布式任务调度：执行器分组、任务管理、手动触发、启停、调度日志、GLUE 源码与触发报表。"
-        },
-        "en": {
-          "name": "XXL-JOB",
-          "description": "XXL-JOB distributed task scheduler console inside DBX: executor groups, job management, manual trigger, start/stop, scheduling logs, GLUE source, and trigger reports."
-        },
-        "zh": {
-          "name": "XXL-JOB 任务调度",
-          "description": "在 DBX 内管理 XXL-JOB 分布式任务调度：执行器分组、任务管理、手动触发、启停、调度日志、GLUE 源码与触发报表。"
         }
       }
     },
@@ -281,14 +273,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "PG 备份与恢复",
-          "description": "使用 pg_dump / pg_restore / psql 备份和恢复 PostgreSQL 数据库，支持 custom、tar、目录和纯 SQL 格式。"
-        },
-        "en": {
-          "name": "PG Backup & Restore",
-          "description": "Back up and restore PostgreSQL databases with pg_dump / pg_restore / psql: custom, tar, directory and plain SQL dumps, schema/table selection, role backup, version checks, progress, backup history and an optional full schema reset before restore."
-        },
-        "zh": {
           "name": "PG 备份与恢复",
           "description": "使用 pg_dump / pg_restore / psql 备份和恢复 PostgreSQL 数据库，支持 custom、tar、目录和纯 SQL 格式。"
         }
@@ -527,14 +511,6 @@
         "zh-CN": {
           "name": "AI 配置导入",
           "description": "从 CC-SWITCH 或 Magpie 导入 AI 提供商配置到 DBX。"
-        },
-        "en": {
-          "name": "AI Config Importer",
-          "description": "Import AI provider configurations from CC-SWITCH or Magpie into DBX."
-        },
-        "zh": {
-          "name": "AI 配置导入",
-          "description": "从 CC-SWITCH 或 Magpie 导入 AI 提供商配置到 DBX。"
         }
       }
     },
@@ -587,8 +563,8 @@
     },
     {
       "id": "chatawesome.cn.json-pretty",
-      "name": "JSON Formatter",
-      "description": "Format, minify, collapse, escape, import and export JSON, and use the workspace tree on the left to create folders and JSON files.",
+      "name": "JSON 格式化",
+      "description": "格式化、压缩、折叠、转义、导入、导出 JSON，左侧工作区树可新建文件夹/JSON 文件。",
       "publisher": "acornlive",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/chatawesome.cn.json-pretty/0.1.4/icon.svg",
@@ -752,14 +728,6 @@
         "zh-CN": {
           "name": "JSON 格式化工具",
           "description": "格式化、压缩、折叠、转义、导入、导出 JSON。纯前端、数据不出本机。"
-        },
-        "en": {
-          "name": "JSON Formatter",
-          "description": "Format, minify, collapse, escape, import and export JSON, and use the workspace tree on the left to create folders and JSON files."
-        },
-        "zh": {
-          "name": "JSON 格式化工具",
-          "description": "格式化、压缩、折叠、转义、导入、导出 JSON。纯前端、数据不出本机。"
         }
       }
     },
@@ -904,14 +872,6 @@
         "zh-CN": {
           "name": "NATS",
           "description": "管理 NATS 服务器：JetStream 流、消费者与消息、键值存储、对象存储、服务、发布、请求-响应和实时订阅。"
-        },
-        "en": {
-          "name": "NATS",
-          "description": "Manage NATS servers: JetStream streams, consumers and messages, key-value buckets, object stores, services, publish, request-reply and live subscriptions."
-        },
-        "zh": {
-          "name": "NATS",
-          "description": "管理 NATS 服务器：JetStream 流、消费者与消息、键值存储、对象存储、服务、发布、请求-响应和实时订阅。"
         }
       }
     },
@@ -954,14 +914,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "二维码工具",
-          "description": "文本、Wi-Fi、名片一键生成二维码：自定义颜色、码点形状与中心 Logo，导出 PNG、复制到剪贴板，并保留历史记录。"
-        },
-        "en": {
-          "name": "QR Code Generator",
-          "description": "Generate QR codes from text, Wi-Fi networks or contact cards, with custom colors, module shapes and a centered logo. Export PNG, copy to clipboard, and keep a history of recent codes."
-        },
-        "zh": {
           "name": "二维码工具",
           "description": "文本、Wi-Fi、名片一键生成二维码：自定义颜色、码点形状与中心 Logo，导出 PNG、复制到剪贴板，并保留历史记录。"
         }
@@ -1083,21 +1035,13 @@
         "zh-CN": {
           "name": "DBF Studio",
           "description": "打开、校验、编辑并导出 DBF 数据表（dBase III/IV/V、FoxPro、VFP），内置深市 D-COM、沪市 PROP 与上市公司版交换文件字段释义。"
-        },
-        "en": {
-          "name": "DBF Studio",
-          "description": "Open, inspect, edit, validate and export DBF tables (dBase III/IV/V, FoxPro, VFP), with built-in field dictionaries for Chinese exchange settlement files."
-        },
-        "zh": {
-          "name": "DBF Studio",
-          "description": "打开、校验、编辑并导出 DBF 数据表（dBase III/IV/V、FoxPro、VFP），内置深市 D-COM、沪市 PROP 与上市公司版交换文件字段释义。"
         }
       }
     },
     {
       "id": "com.dbx.ratel",
-      "name": "Ratel Slack-Off Console",
-      "description": "A slack-off client for Ratel online card games (Dou Dizhu / Pao De Kuai / Texas Hold'em / Mass Mahjong / Liar's Tavern), with WebSocket/TCP long connections, a room list, and a command panel that switches automatically by game.",
+      "name": "Ratel 摸鱼台",
+      "description": "连接 Ratel 在线棋牌（斗地主 / 跑得快 / 德州 / 大众麻将 / 骗子酒馆）的摸鱼客户端：WebSocket/TCP 长连接、房间列表、按游戏自动切换的命令面板。",
       "publisher": "dbx-ratel",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/com.dbx.ratel/0.1.4/icon.svg",
@@ -1206,21 +1150,13 @@
         "zh-CN": {
           "name": "Ratel 摸鱼台",
           "description": "连接 Ratel 在线棋牌（斗地主 / 跑得快 / 德州 / 大众麻将 / 骗子酒馆）的摸鱼客户端：WebSocket/TCP 长连接、房间列表、按游戏自动切换的命令面板。"
-        },
-        "en": {
-          "name": "Ratel Slack-Off Console",
-          "description": "A slack-off client for Ratel online card games (Dou Dizhu / Pao De Kuai / Texas Hold'em / Mass Mahjong / Liar's Tavern), with WebSocket/TCP long connections, a room list, and a command panel that switches automatically by game."
-        },
-        "zh": {
-          "name": "Ratel 摸鱼台",
-          "description": "连接 Ratel 在线棋牌（斗地主 / 跑得快 / 德州 / 大众麻将 / 骗子酒馆）的摸鱼客户端：WebSocket/TCP 长连接、房间列表、按游戏自动切换的命令面板。"
         }
       }
     },
     {
       "id": "com.dbx.webview",
       "name": "Browser",
-      "description": "A single workbench for three things: clean article reading, real-time browsing of 小红书 and 抖音, and offline novel reading—all inside DBX.",
+      "description": "一个工作台解决三件事：干净读文章、实时逛小红书抖音、离线看小说——全在 DBX 内完成。",
       "publisher": "xingxi",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/com.dbx.webview/0.7.10/icon.svg",
@@ -1271,14 +1207,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Browser",
-          "description": "一个工作台解决三件事：干净读文章、实时逛小红书抖音、离线看小说——全在 DBX 内完成。"
-        },
-        "en": {
-          "name": "Browser",
-          "description": "A single workbench for three things: clean article reading, real-time browsing of 小红书 and 抖音, and offline novel reading—all inside DBX."
-        },
-        "zh": {
           "name": "Browser",
           "description": "一个工作台解决三件事：干净读文章、实时逛小红书抖音、离线看小说——全在 DBX 内完成。"
         }
@@ -1369,14 +1297,6 @@
         "zh-CN": {
           "name": "WSL 管理器",
           "description": "在 DBX 中可视化管理 WSL 发行版（wsl）与 WSL 容器（wslc），支持注册表凭据与镜像管理。"
-        },
-        "en": {
-          "name": "WSL Manager",
-          "description": "Visual manager for WSL distributions (wsl) and WSL containers (wslc) on Windows."
-        },
-        "zh": {
-          "name": "WSL 管理器",
-          "description": "在 DBX 中可视化管理 WSL 发行版（wsl）与 WSL 容器（wslc），支持注册表凭据与镜像管理。"
         }
       }
     },
@@ -1456,14 +1376,6 @@
         "zh-CN": {
           "name": "DocLite 文档转换",
           "description": "文档转换 + 数据字典：把 Word、PDF、PPT、Excel、CSV、EPUB 等文档转为 Markdown 与结构化 JSON，转换结果可另存为 Word 文档；也可从 DBX 已连接数据库只读导出表结构为 Markdown 或 Word；扫描版 PDF 可选接入 MinerU 或百度 OCR。"
-        },
-        "en": {
-          "name": "DocLite",
-          "description": "Convert Word, PDF, PowerPoint, Excel, CSV, EPUB and more into clean Markdown and structured Document Model JSON, save the result as a Word document, and export Markdown data dictionaries from databases already connected in DBX. Optional cloud OCR for scanned PDFs."
-        },
-        "zh": {
-          "name": "DocLite 文档转换",
-          "description": "文档转换 + 数据字典：把 Word、PDF、PPT、Excel、CSV、EPUB 等文档转为 Markdown 与结构化 JSON，转换结果可另存为 Word 文档；也可从 DBX 已连接数据库只读导出表结构为 Markdown 或 Word；扫描版 PDF 可选接入 MinerU 或百度 OCR。"
         }
       }
     },
@@ -1506,14 +1418,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Markdown 编辑器",
-          "description": "所见即所得的 Markdown 编辑器，支持本地文件打开/保存、大纲、文件夹浏览、任务列表、表格与 HTML 导出。"
-        },
-        "en": {
-          "name": "Markdown",
-          "description": "A WYSIWYG Markdown editor for local files, powered by Typedown and Muya."
-        },
-        "zh": {
           "name": "Markdown 编辑器",
           "description": "所见即所得的 Markdown 编辑器，支持本地文件打开/保存、大纲、文件夹浏览、任务列表、表格与 HTML 导出。"
         }
@@ -1800,14 +1704,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "HTTP 客户端",
-          "description": "类似 Postman 的 HTTP/gRPC 接口调试工作台：构造请求、导入 OpenAPI、经 WebDAV 同步，并通过原生 Sidecar 发送并查看响应。"
-        },
-        "en": {
-          "name": "HTTP Client",
-          "description": "A Postman-style HTTP/gRPC workbench: compose requests, import OpenAPI, sync via WebDAV, and inspect responses through a native sidecar."
-        },
-        "zh": {
           "name": "HTTP 客户端",
           "description": "类似 Postman 的 HTTP/gRPC 接口调试工作台：构造请求、导入 OpenAPI、经 WebDAV 同步，并通过原生 Sidecar 发送并查看响应。"
         }
@@ -2231,14 +2127,6 @@
         "zh-CN": {
           "name": "IMREPO",
           "description": "在同一个工作台里浏览、管理和检查 OCI / Harbor 容器镜像仓库：项目与命名空间导航、Tag 重命名与删除、镜像层逐层解析、Trivy 漏洞报告、总览图表与多架构结构展示。"
-        },
-        "en": {
-          "name": "IMREPO",
-          "description": "Browse, manage and inspect OCI / Harbor container registries from a single workbench: project and namespace navigation, tag rename and delete, per-layer size analysis, Trivy CVE reports, registry-wide charts and multi-arch breakdowns."
-        },
-        "zh": {
-          "name": "IMREPO",
-          "description": "在同一个工作台里浏览、管理和检查 OCI / Harbor 容器镜像仓库：项目与命名空间导航、Tag 重命名与删除、镜像层逐层解析、Trivy 漏洞报告、总览图表与多架构结构展示。"
         }
       }
     },
@@ -2286,21 +2174,13 @@
         "zh-CN": {
           "name": "终端模拟器",
           "description": "DBX 工作台内置终端：多标签分屏会话、SSH/Telnet/Serial 连接、SFTP 文件管理、系统监控、命令面板与主题跟随。"
-        },
-        "en": {
-          "name": "Terminal Emulator",
-          "description": "A DBX workbench terminal emulator with multi-tab sessions, split panes, SSH/Telnet/Serial connections, SFTP file management, and a live system monitor."
-        },
-        "zh": {
-          "name": "终端模拟器",
-          "description": "DBX 工作台内置终端：多标签分屏会话、SSH/Telnet/Serial 连接、SFTP 文件管理、系统监控、命令面板与主题跟随。"
         }
       }
     },
     {
       "id": "com.lwai.mdnotes",
-      "name": "AI.MD Notes",
-      "description": "Markdown notes with a connection type: create an AI.MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory configured on the connection and can be browsed and edited as an mdnotes:// virtual filesystem. A built-in AI assistant in the persistent right sidebar can connect to any OpenAI-compatible / Anthropic / Ollama model to analyze, polish, continue and answer questions about notes.",
+      "name": "AI.MD 笔记",
+      "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。内置 AI 助手（右侧常驻栏），可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型对笔记做分析、润色、续写与问答。",
       "publisher": "lwai",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.11/icon.svg",
@@ -2520,21 +2400,13 @@
         "zh-CN": {
           "name": "AI.MD 笔记",
           "description": "Markdown 笔记：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记是真实 .md 文件，文件夹是真实子目录，也可作为 mdnotes:// 虚拟文件系统浏览。支持直接粘贴/拖入图片、导入已有 .md 与整个文件夹、导出与整库备份恢复；右侧常驻 AI 助手可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型做分析、润色、续写与问答。"
-        },
-        "en": {
-          "name": "AI.MD Notes",
-          "description": "Markdown notes with a connection type: create an AI.MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory configured on the connection and can be browsed and edited as an mdnotes:// virtual filesystem. A built-in AI assistant in the persistent right sidebar can connect to any OpenAI-compatible / Anthropic / Ollama model to analyze, polish, continue and answer questions about notes."
-        },
-        "zh": {
-          "name": "AI.MD 笔记",
-          "description": "Markdown 笔记：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记是真实 .md 文件，文件夹是真实子目录，也可作为 mdnotes:// 虚拟文件系统浏览。支持直接粘贴/拖入图片、导入已有 .md 与整个文件夹、导出与整库备份恢复；右侧常驻 AI 助手可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型做分析、润色、续写与问答。"
         }
       }
     },
     {
       "id": "com.lwai.todo",
-      "name": "Todo",
-      "description": "A lightweight Todo plugin for grouping and managing tasks, with priorities, start and end times, subtasks and milestones, completion progress bars, and list and calendar views.",
+      "name": "待办 Todo",
+      "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。",
       "publisher": "lwai",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/icon.svg",
@@ -2696,14 +2568,6 @@
         "zh-CN": {
           "name": "待办 Todo",
           "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。"
-        },
-        "en": {
-          "name": "Todo",
-          "description": "A lightweight Todo plugin for grouping and managing tasks, with priorities, start and end times, subtasks and milestones, completion progress bars, and list and calendar views."
-        },
-        "zh": {
-          "name": "待办 Todo",
-          "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。"
         }
       }
     },
@@ -2816,14 +2680,6 @@
         "zh-CN": {
           "name": "电子书阅读器",
           "description": "支持 EPUB、PDF、TXT、MOBI、AZW3、DOCX、漫画等 18 种格式，单页 / 双页 / 滚动三种排版，可听书、翻译、划线与记笔记；通过随包提供的原生后端把书籍与笔记真正写入本机磁盘目录。"
-        },
-        "en": {
-          "name": "E-book Reader",
-          "description": "Read 18 e-book formats — EPUB, PDF, TXT, MOBI, AZW3, DOCX, comics and more — with paged, double-page or scrolling layouts, text-to-speech, translation, highlights and notes. Books and notes are written to a real folder on your disk through a bundled native sidecar."
-        },
-        "zh": {
-          "name": "电子书阅读器",
-          "description": "支持 EPUB、PDF、TXT、MOBI、AZW3、DOCX、漫画等 18 种格式，单页 / 双页 / 滚动三种排版，可听书、翻译、划线与记笔记；通过随包提供的原生后端把书籍与笔记真正写入本机磁盘目录。"
         }
       }
     },
@@ -2892,14 +2748,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "DBX 邮件",
-          "description": "本地优先的多账户邮件工作台：IMAP 同步、会话归档、富文本撰写、附件与离线发件箱，邮件副本保存在本机。"
-        },
-        "en": {
-          "name": "DBX Mail",
-          "description": "Local-first mail workbench: multiple IMAP accounts, cached conversations, a rich composer, offline outbox and attachments kept on disk."
-        },
-        "zh": {
           "name": "DBX 邮件",
           "description": "本地优先的多账户邮件工作台：IMAP 同步、会话归档、富文本撰写、附件与离线发件箱，邮件副本保存在本机。"
         }
@@ -3100,24 +2948,16 @@
         "zh-CN": {
           "name": "NintyShell",
           "description": "在 DBX 工作台中打开本地 Shell 与 SSH/SFTP 终端，执行命令并管理远程文件。"
-        },
-        "en": {
-          "name": "NintyShell",
-          "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files."
-        },
-        "zh": {
-          "name": "NintyShell",
-          "description": "在 DBX 工作台中打开本地 Shell 与 SSH/SFTP 终端，执行命令并管理远程文件。"
         }
       }
     },
     {
       "id": "com.object.browser",
       "name": "Object Storage",
-      "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), and multi-select batch delete / download.",
+      "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), transfer task center with failed-download retry, and multi-select batch delete / download / copy / move.",
       "publisher": "huangqiang",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.2.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.4.0/icon.svg",
       "tags": [
         "storage",
         "oss",
@@ -3132,11 +2972,25 @@
         "host.storage",
         "host.workbench"
       ],
-      "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.1.2",
+      "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.4.0",
       "homepage": "https://github.com/huangqiang008/dbx-object-storage",
       "license": "MIT",
-      "latestVersion": "1.2.0",
+      "latestVersion": "1.4.0",
       "versions": [
+        {
+          "version": "1.4.0",
+          "releasedAt": "2026-11-05T12:44:28.819Z",
+          "releaseNotes": "传输任务中心：批量下载/上传/删除/移动/复制结果统一记录并落盘本机（跨重启留存），失败任务展开逐 key 错误明细，下载类失败项一键重试并复刻原始落盘位置；分页只加载部分时可「扫描全部并排序」（上限 2 万条）保证排序结果完整；连接表单对齐宿主「新建连接」风格（双 tab、9 厂商预设、胶囊开关）；键盘快捷键（↑/↓ 移动高亮、Shift 连选、Ctrl+C/X/V、空格预览）；路径书签与最近访问；预览失败时面板内直接下载兜底；新云朵应用图标；修复快捷图标新开标签页复刻其他标签页连接内容、详情弹窗遮挡元数据编辑器两个问题。",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.object.browser/1.4.0/com.object.browser-1.4.0-windows-x64.dbxp",
+              "sha256": "9e3c7bcda66b4d257cc520f85bb55ad7e15ac43d68e378ad699b196239b71826",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9727064
+            }
+          ]
+        },
         {
           "version": "1.2.0",
           "releasedAt": "2026-10-27T16:23:48.903Z",
@@ -3197,15 +3051,7 @@
       "localizations": {
         "zh-CN": {
           "name": "对象存储",
-          "description": "通用对象存储浏览器：支持阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）。大目录服务端分页、分片上传、预签名分享、文件预览（Office / 3D / HTML / Markdown）、多选批量删除 / 下载。"
-        },
-        "en": {
-          "name": "Object Storage",
-          "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), and multi-select batch delete / download."
-        },
-        "zh": {
-          "name": "对象存储",
-          "description": "通用对象存储浏览器：支持阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）。大目录服务端分页、分片上传、预签名分享、文件预览（Office / 3D / HTML / Markdown）、多选批量删除 / 下载。"
+          "description": "阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）通用对象存储浏览器。服务端分页 + 列表虚拟化、分片上传、预签名链接分享、文件预览（Office / 3D / HTML / Markdown）、传输任务中心（失败下载一键重试）、多选批量删除/下载/复制/移动。"
         }
       }
     },
@@ -3274,14 +3120,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "PawSQL SQL 优化器",
-          "description": "粘贴 SQL，获取 PawSQL 优化建议：规则违规、推荐索引、SQL 重写与 What-If 校验报告。"
-        },
-        "en": {
-          "name": "PawSQL SQL Optimizer",
-          "description": "Paste SQL and get PawSQL optimization recommendations: rule violations, index DDLs, rewrites and a What-If validation report."
-        },
-        "zh": {
           "name": "PawSQL SQL 优化器",
           "description": "粘贴 SQL，获取 PawSQL 优化建议：规则违规、推荐索引、SQL 重写与 What-If 校验报告。"
         }
@@ -3369,14 +3207,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "polaris-api",
-          "description": "API 请求客户端（sidecar 版）：多 tab、环境变量、cURL 导入导出、Params/Headers/Body 编辑；响应支持表格 / 对象树 / 路径下钻 / 字段筛选。请求经原生 sidecar（reqwest）发送，无 CORS/混合内容/禁发头限制，等效 cURL。"
-        },
-        "en": {
-          "name": "polaris-api",
-          "description": "API request client (sidecar): multi-tab, environment variables, cURL import/export, Params/Headers/Body editing; response views for table / object tree / path drill-down / field filtering. Requests are sent via a native Rust sidecar (reqwest) with no CORS / mixed-content / forbidden-header limits, equivalent to cURL."
-        },
-        "zh": {
           "name": "polaris-api",
           "description": "API 请求客户端（sidecar 版）：多 tab、环境变量、cURL 导入导出、Params/Headers/Body 编辑；响应支持表格 / 对象树 / 路径下钻 / 字段筛选。请求经原生 sidecar（reqwest）发送，无 CORS/混合内容/禁发头限制，等效 cURL。"
         }
@@ -3616,8 +3446,8 @@
     },
     {
       "id": "com.vyrnax.translation",
-      "name": "Translation",
-      "description": "Translation — a multi-engine translation plugin with 9 engine types: an out-of-the-box free translation service (Bilibili's publicly deployed Index-Translate model, no signup and no API key), OpenAI-compatible LLMs (DeepSeek, Qwen, Zhipu, Kimi, Ollama, vLLM, …), local CLI proxies (claude / codex / custom), DeepL, Google, Baidu, Youdao, Alibaba Cloud and Tencent Cloud; with streaming output, translate-as-you-type, engine management and translation history.",
+      "name": "Translation 即时翻译",
+      "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 9 类引擎：开箱即用的免费翻译服务、OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。",
       "publisher": "vyrnax",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.5/icon.svg",
@@ -3811,14 +3641,6 @@
         "en": {
           "name": "Translation",
           "description": "Translation — a multi-engine translation plugin with 9 engine types: an out-of-the-box free translation service (Bilibili's publicly deployed Index-Translate model, no signup and no API key), OpenAI-compatible LLMs (DeepSeek, Qwen, Zhipu, Kimi, Ollama, vLLM, …), local CLI proxies (claude / codex / custom), DeepL, Google, Baidu, Youdao, Alibaba Cloud and Tencent Cloud; with streaming output, translate-as-you-type, engine management and translation history."
-        },
-        "zh-CN": {
-          "name": "Translation 即时翻译",
-          "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 9 类引擎：开箱即用的免费翻译服务、OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。"
-        },
-        "zh": {
-          "name": "Translation 即时翻译",
-          "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 9 类引擎：开箱即用的免费翻译服务、OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。"
         }
       }
     },
@@ -3891,21 +3713,13 @@
         "zh-CN": {
           "name": "SQL 练习场",
           "description": "在 DBX 里练习力扣高频 SQL 50 题。内置真正的 PostgreSQL 18.6 引擎（PGlite 0.5.13），离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题；支持导入自定义题库，导入前逐题实际执行验证。"
-        },
-        "en": {
-          "name": "SQL Dojo",
-          "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 18.6 engine (PGlite 0.5.13) running locally. No server, no setup, works offline. Per-question hints, result-set based grading, and importable custom question banks validated by execution."
-        },
-        "zh": {
-          "name": "SQL 练习场",
-          "description": "在 DBX 里练习力扣高频 SQL 50 题。内置真正的 PostgreSQL 18.6 引擎（PGlite 0.5.13），离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题；支持导入自定义题库，导入前逐题实际执行验证。"
         }
       }
     },
     {
       "id": "com.xingxi.game",
       "name": "AggressiveWar",
-      "description": "You've conquered SQL in DBX — why not conquer the world here? 27 nations, procedural maps, AI rivals. Opening a LAN room listens on a local port (only after you press \"Start relay\").",
+      "description": "在 DBX 里征服了 SQL，为什么不来这里征服世界？27 个国家、随机地图、AI 对手，打开即见。局域网开房时会在本机监听端口（仅在你点「启动中继」后）。",
       "publisher": "xingxi",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/com.xingxi.game/0.6.1/icon.svg",
@@ -3961,17 +3775,13 @@
         "en": {
           "name": "AggressiveWar",
           "description": "You've conquered SQL in DBX — why not conquer the world here? 27 nations, procedural maps, AI rivals. Opening a LAN room listens on a local port (only after you press \"Start relay\")."
-        },
-        "zh": {
-          "name": "AggressiveWar",
-          "description": "在 DBX 里征服了 SQL，为什么不来这里征服世界？27 个国家、随机地图、AI 对手，打开即见。局域网开房时会在本机监听端口（仅在你点「启动中继」后）。"
         }
       }
     },
     {
       "id": "com.yiqiui.leetcode-cn",
-      "name": "LeetCode Practice",
-      "description": "Sign in to leetcode.cn inside the DBX plugin center, browse the problemset with the official category tabs and topic tags, sort and filter, favourite questions, see the daily question and study plans, then write code and run or submit it.",
+      "name": "LeetCode 刷题",
+      "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，按官方分类与标签浏览题库、排序与筛选、收藏题目、查看每日一题与学习计划，并选择语言编写代码运行 / 提交判题。",
       "publisher": "yiqiui",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/com.yiqiui.leetcode-cn/0.3.12/icon.svg",
@@ -4351,10 +4161,6 @@
         "zh": {
           "name": "OpenTelemetry 遥测",
           "description": "接收 OTLP 链路、指标与日志，查看 span 瀑布图，并通过 DBX 内置 DuckDB 用 SQL 分析。"
-        },
-        "en": {
-          "name": "OpenTelemetry",
-          "description": "Receive OTLP traces, metrics and logs, then browse span waterfalls and analyze them with SQL through DBX's built-in DuckDB."
         }
       }
     },
@@ -4394,14 +4200,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "DouDB · 斗地主",
-          "description": "三人/四人斗地主，支持电脑补位、局域网对战、经典与数据库主题切换，以及独立皮肤、音效和背景音乐。"
-        },
-        "en": {
-          "name": "DouDB",
-          "description": "Dou Dizhu card game with 3- and 4-player modes, computer opponents, LAN rooms, and switchable classic/database themes."
-        },
-        "zh": {
           "name": "DouDB · 斗地主",
           "description": "三人/四人斗地主，支持电脑补位、局域网对战、经典与数据库主题切换，以及独立皮肤、音效和背景音乐。"
         }
@@ -4444,14 +4242,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "麻了DB",
-          "description": "写麻了？摸两张。青瓷牌桌、三位电脑牌友，支持吃碰杠胡、番型计分、音效动效、提示托管与本地续局。"
-        },
-        "en": {
-          "name": "MaLeDB · Mahjong",
-          "description": "Four-player Chinese Mahjong with local computer opponents, fan scoring, a celadon table, sounds, hints and saved games."
-        },
-        "zh": {
           "name": "麻了DB",
           "description": "写麻了？摸两张。青瓷牌桌、三位电脑牌友，支持吃碰杠胡、番型计分、音效动效、提示托管与本地续局。"
         }
@@ -4508,14 +4298,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "MyBatis SQL 生成器",
-          "description": "粘贴 MyBatis mapper XML 与入参，渲染出可直接执行的 SQL（支持 Oracle / SQL Server 方言字面量）。"
-        },
-        "en": {
-          "name": "MyBatis SQL Generator",
-          "description": "Render directly executable SQL from MyBatis mapper XML and input parameters, producing Oracle / SQL Server dialect literals."
-        },
-        "zh": {
           "name": "MyBatis SQL 生成器",
           "description": "粘贴 MyBatis mapper XML 与入参，渲染出可直接执行的 SQL（支持 Oracle / SQL Server 方言字面量）。"
         }
@@ -4585,14 +4367,6 @@
         "zh-CN": {
           "name": "Apollo 配置工作台",
           "description": "管理 Apollo 应用、集群、命名空间、配置、发布和灰度"
-        },
-        "en": {
-          "name": "Apollo Config Workbench",
-          "description": "Manage Apollo apps, clusters, namespaces, configs, releases and gray releases"
-        },
-        "zh": {
-          "name": "Apollo 配置工作台",
-          "description": "管理 Apollo 应用、集群、命名空间、配置、发布和灰度"
         }
       }
     },
@@ -4637,14 +4411,6 @@
         "zh-CN": {
           "name": "忙碌终端",
           "description": "在工作台或桌面浮动窗里播放假忙碌日志。仅供娱乐，不是真实终端。"
-        },
-        "en": {
-          "name": "Busy Terminal",
-          "description": "Fake busy terminal scenes in a workbench or floating desktop widget. Entertainment only — not a real shell."
-        },
-        "zh": {
-          "name": "忙碌终端",
-          "description": "在工作台或桌面浮动窗里播放假忙碌日志。仅供娱乐，不是真实终端。"
         }
       }
     },
@@ -4654,7 +4420,7 @@
       "description": "Browse, search, and reuse local clipboard history (text, images, and file lists).",
       "publisher": "alan",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/icon.svg",
       "tags": [
         "clipboard",
         "productivity",
@@ -4663,11 +4429,53 @@
       "permissions": [
         "host.events"
       ],
-      "source": "https://github.com/allran/dbx-plugin-clipboard/tree/v0.1.1",
+      "source": "https://github.com/allran/dbx-plugin-clipboard/tree/v0.1.2",
       "homepage": "https://github.com/allran/dbx-plugin-clipboard",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-11-05T12:39:08.593Z",
+          "releaseNotes": "性能与稳定性优化：列表缩略图懒加载、剪贴板变更探测与增量同步；修复清空后无法重新收录、持久化失败回滚，以及图片指纹去重等问题。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-darwin-arm64.dbxp",
+              "sha256": "37bf74220378461047410697739e19c44ab2c8f73292c3da4f6746279e63ebbe",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 755557
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-darwin-x64.dbxp",
+              "sha256": "5b43fe37e6ca8b4b71112025de6a621ac908ab0a2033e73567fadbee0db644e3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 803517
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-linux-arm64.dbxp",
+              "sha256": "ccef9a8b0f534c29372db11b7c6242a2a1a59530d3f7bebe25cadb5ebe492c22",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 704963
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-linux-x64.dbxp",
+              "sha256": "d79959c4eb9f25e28e30f8493f43be50bcde543d73618af55b20b60c51c086fd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 739648
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-windows-x64.dbxp",
+              "sha256": "3814880b9e7d758ce89097fb4771540fc25956bcfa908891249402f60aa71764",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 602470
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-10-08T02:26:31.345Z",
@@ -4755,14 +4563,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "剪贴板历史",
-          "description": "浏览、搜索并复用本机剪贴板记录（文本、图片、文件列表）。"
-        },
-        "en": {
-          "name": "Clipboard History",
-          "description": "Browse, search, and reuse local clipboard history (text, images, and file lists)."
-        },
-        "zh": {
           "name": "剪贴板历史",
           "description": "浏览、搜索并复用本机剪贴板记录（文本、图片、文件列表）。"
         }
@@ -4972,14 +4772,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "田园斗地主",
-          "description": "本地局域网三人联机斗地主小游戏，支持公开房、密码房和动态角色互动。"
-        },
-        "en": {
-          "name": "Garden Dou Dizhu",
-          "description": "A three-player Dou Dizhu mini-game for your local LAN, with public/password rooms and animated characters."
-        },
-        "zh": {
           "name": "田园斗地主",
           "description": "本地局域网三人联机斗地主小游戏，支持公开房、密码房和动态角色互动。"
         }
@@ -5349,14 +5141,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Excalidraw Studio",
-          "description": "内嵌于 DBX 的本地优先画图工作台：Excalidraw 画布与 SQL 工作流打通，结果集和执行计划可以直接铺到画布上批注，也能一键交给内置 AI 解读；图表以 .excalidraw 文件保存在本地。"
-        },
-        "en": {
-          "name": "Excalidraw Studio",
-          "description": "A local-first Excalidraw workspace built into DBX: sketch diagrams and flowcharts, drop SQL result grids or estimated execution plans onto the canvas to annotate, and hand any canvas to the built-in AI panel; everything is stored as .excalidraw files on your machine."
-        },
-        "zh": {
           "name": "Excalidraw Studio",
           "description": "内嵌于 DBX 的本地优先画图工作台：Excalidraw 画布与 SQL 工作流打通，结果集和执行计划可以直接铺到画布上批注，也能一键交给内置 AI 解读；图表以 .excalidraw 文件保存在本地。"
         }
@@ -6232,14 +6016,6 @@
         "zh-CN": {
           "name": "Files Studio",
           "description": "统一管理本地文件夹、S3 兼容存储、Azure Blob、Google Cloud Storage、华为 OBS、WebDAV、FTP、SFTP、SMB/CIFS 等 OpenDAL 服务的文件工作台：传输任务、归档与受控运维集中在一个界面。"
-        },
-        "en": {
-          "name": "Files Studio",
-          "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services."
-        },
-        "zh": {
-          "name": "Files Studio",
-          "description": "统一管理本地文件夹、S3 兼容存储、Azure Blob、Google Cloud Storage、华为 OBS、WebDAV、FTP、SFTP、SMB/CIFS 等 OpenDAL 服务的文件工作台：传输任务、归档与受控运维集中在一个界面。"
         }
       }
     },
@@ -6308,14 +6084,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "GraphQL",
-          "description": "GraphQL 客户端：查询编辑器、Schema 文档与历史。"
-        },
-        "en": {
-          "name": "GraphQL",
-          "description": "GraphQL client for DBX: query editor, schema docs, and history."
-        },
-        "zh": {
           "name": "GraphQL",
           "description": "GraphQL 客户端：查询编辑器、Schema 文档与历史。"
         }
@@ -8199,14 +7967,6 @@
         "zh-CN": {
           "name": "LDAP Studio",
           "description": "DBX 的 LDAP 目录工作台：DN 树浏览、RFC 4515 搜索与保存预设、Schema 检查、LDIF/CSV 导出，以及受护栏保护的条目编辑——企业级认证从匿名到 Kerberos/GSSAPI、NTLM、DIGEST-MD5，支持 LDAP/StartTLS/LDAPS 与 mTLS，并提供 8 个 MCP 工具供 AI 自动化。"
-        },
-        "en": {
-          "name": "LDAP Studio",
-          "description": "LDAP directory workbench for DBX: DN tree browsing, RFC 4515 search with saved presets, schema inspection, LDIF/CSV export, and guarded entry editing — enterprise auth from anonymous to Kerberos/GSSAPI, NTLM and DIGEST-MD5, over LDAP/StartTLS/LDAPS with mTLS, plus 8 MCP tools for AI automation."
-        },
-        "zh": {
-          "name": "LDAP Studio",
-          "description": "DBX 的 LDAP 目录工作台：DN 树浏览、RFC 4515 搜索与保存预设、Schema 检查、LDIF/CSV 导出，以及受护栏保护的条目编辑——企业级认证从匿名到 Kerberos/GSSAPI、NTLM、DIGEST-MD5，支持 LDAP/StartTLS/LDAPS 与 mTLS，并提供 8 个 MCP 工具供 AI 自动化。"
         }
       }
     },
@@ -8321,21 +8081,13 @@
         "zh-CN": {
           "name": "lolPing 轻量版",
           "description": "在桌面及其他软件窗口上打 LOL 信号和表情，基于 darrenprx/lolPing 改造。"
-        },
-        "en": {
-          "name": "lolPing Lite",
-          "description": "Send LOL pings and emotes over your desktop and other app windows, adapted from darrenprx/lolPing."
-        },
-        "zh": {
-          "name": "lolPing 轻量版",
-          "description": "在桌面及其他软件窗口上打 LOL 信号和表情，基于 darrenprx/lolPing 改造。"
         }
       }
     },
     {
       "id": "io.dbx.nintyapi",
       "name": "NintyAPI",
-      "description": "Debug HTTP APIs inside DBX: an API collection tree, full request history (parameters and responses retained), two-way cURL conversion, code generation, draggable split panes, and working clipboard and context menus.",
+      "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、文件上传（form-data 多文件、拖拽或选择文件、分片流式发送）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
       "publisher": "nintycat",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.13/icon.svg",
@@ -8846,14 +8598,6 @@
         "zh-CN": {
           "name": "密码管理",
           "description": "按多层分组管理本地密码；密码库始终加密，可选主密码解锁。"
-        },
-        "en": {
-          "name": "Password Manager",
-          "description": "Organize local passwords in nested groups. Vault always AES-GCM encrypted; optional Argon2id master password."
-        },
-        "zh": {
-          "name": "密码管理",
-          "description": "按多层分组管理本地密码；密码库始终加密，可选主密码解锁。"
         }
       }
     },
@@ -8926,21 +8670,13 @@
         "zh-CN": {
           "name": "进程管理",
           "description": "浏览、搜索并结束本机与远程主机上的操作系统进程。"
-        },
-        "en": {
-          "name": "Process Manager",
-          "description": "Browse, search, and terminate local and remote OS processes."
-        },
-        "zh": {
-          "name": "进程管理",
-          "description": "浏览、搜索并结束本机与远程主机上的操作系统进程。"
         }
       }
     },
     {
       "id": "io.dbx.rocketmq-dashboard-console",
       "name": "dbx-rocketmq-dashboard",
-      "description": "A RocketMQ dashboard similar to apache/rocketmq-dashboard, replicating its native UI and interactions, with a Go backend for managing clusters, topics, consumer groups, messages and ACLs in DBX.",
+      "description": "一个类似于 apache/rocketmq-dashboard 的 RocketMQ 驾驶舱，复刻其原生 UI 与业务交互，通过 Go 后端在 DBX 中管理集群、Topic、消费组、消息和 ACL。",
       "publisher": "ezreal-byte",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/io.dbx.rocketmq-dashboard-console/0.3.2/icon.svg",
@@ -8999,21 +8735,7 @@
             }
           ]
         }
-      ],
-      "localizations": {
-        "en": {
-          "name": "dbx-rocketmq-dashboard",
-          "description": "A RocketMQ dashboard similar to apache/rocketmq-dashboard, replicating its native UI and interactions, with a Go backend for managing clusters, topics, consumer groups, messages and ACLs in DBX."
-        },
-        "zh-CN": {
-          "name": "dbx-rocketmq-dashboard",
-          "description": "一个类似于 apache/rocketmq-dashboard 的 RocketMQ 驾驶舱，复刻其原生 UI 与业务交互，通过 Go 后端在 DBX 中管理集群、Topic、消费组、消息和 ACL。"
-        },
-        "zh": {
-          "name": "dbx-rocketmq-dashboard",
-          "description": "一个类似于 apache/rocketmq-dashboard 的 RocketMQ 驾驶舱，复刻其原生 UI 与业务交互，通过 Go 后端在 DBX 中管理集群、Topic、消费组、消息和 ACL。"
-        }
-      }
+      ]
     },
     {
       "id": "io.dbx.screenshot",
@@ -9123,14 +8845,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "截图",
-          "description": "截取屏幕并在 DBX 中保存本机截图历史。保存后可复制到剪贴板（会覆盖当前剪贴板内容，可在设置中关闭）。Linux 区域截图需系统已安装 gnome-screenshot、spectacle 或 scrot。"
-        },
-        "en": {
-          "name": "Screenshot",
-          "description": "Capture the screen and keep a local screenshot history in DBX. Saving can copy the image to the clipboard (overwrites current clipboard contents; toggle in settings). On Linux, region capture needs gnome-screenshot, spectacle, or scrot on PATH."
-        },
-        "zh": {
           "name": "截图",
           "description": "截取屏幕并在 DBX 中保存本机截图历史。保存后可复制到剪贴板（会覆盖当前剪贴板内容，可在设置中关闭）。Linux 区域截图需系统已安装 gnome-screenshot、spectacle 或 scrot。"
         }
@@ -10054,10 +9768,6 @@
         "zh-TW": {
           "name": "終端",
           "description": "為 DBX 提供終端、SFTP 檔案傳輸與受控遠端維運工作流程。"
-        },
-        "en": {
-          "name": "Terminal",
-          "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations."
         }
       }
     },
@@ -10518,14 +10228,6 @@
         "zh-CN": {
           "name": "DBX Plan Detective",
           "description": "分析 DBX Estimated Plan，提供结构化解析、执行计划树可视化、确定性诊断与热点定位。"
-        },
-        "en": {
-          "name": "DBX Plan Detective",
-          "description": "Analyze DBX Estimated Plans with structured parsing, plan-tree visualization, deterministic findings, and hotspot detection."
-        },
-        "zh": {
-          "name": "DBX Plan Detective",
-          "description": "分析 DBX Estimated Plan，提供结构化解析、执行计划树可视化、确定性诊断与热点定位。"
         }
       }
     },
@@ -10652,14 +10354,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "SchemaSeed",
-          "description": "根据数据库表结构快速生成确定性的测试数据，支持预览与 CSV / JSON / INSERT SQL 导出。"
-        },
-        "en": {
-          "name": "SchemaSeed",
-          "description": "Generate deterministic synthetic test data from the current DBX table schema, with preview and CSV / JSON / INSERT SQL export."
-        },
-        "zh": {
           "name": "SchemaSeed",
           "description": "根据数据库表结构快速生成确定性的测试数据，支持预览与 CSV / JSON / INSERT SQL 导出。"
         }
@@ -11018,10 +10712,6 @@
         "az": {
           "name": "DBX Alətlər Qutusu",
           "description": "Məlumat çevirmə, kodlaşdırma, formatlama, mətn və şəkil emalı, kriptoqrafiya və şifrəli açar anbarı üçün yerli tərtibatçı alətləri."
-        },
-        "en": {
-          "name": "DBX Toolbox",
-          "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally."
         }
       }
     },
@@ -11174,14 +10864,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Apollo Portal 控制台",
-          "description": "独立编写 Apollo 2.x 管理页面，支持普通账号密码登录。全量页面及弹窗 1:1 对照仍有差距。"
-        },
-        "en": {
-          "name": "Apollo Portal Console",
-          "description": "Manage Apollo 2.x configuration with independently authored pages and password login. Known visual parity gaps remain."
-        },
-        "zh": {
           "name": "Apollo Portal 控制台",
           "description": "独立编写 Apollo 2.x 管理页面，支持普通账号密码登录。全量页面及弹窗 1:1 对照仍有差距。"
         }
@@ -11506,7 +11188,7 @@
       "description": "Open Windows remote desktops inside DBX with a native Rust (IronRDP) sidecar.",
       "publisher": "caizong10",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.7/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/icon.svg",
       "tags": [
         "rdp",
         "remote-desktop",
@@ -11517,11 +11199,46 @@
         "host.events",
         "host.binary"
       ],
-      "source": "https://github.com/caizong10/dbx-plugin-rdp/tree/v0.2.7",
+      "source": "https://github.com/caizong10/dbx-plugin-rdp/tree/v0.2.8",
       "homepage": "https://github.com/caizong10/dbx-plugin-rdp",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.7",
+      "latestVersion": "0.2.8",
       "versions": [
+        {
+          "version": "0.2.8",
+          "releasedAt": "2026-11-05T12:50:08.834Z",
+          "releaseNotes": "改进远程键鼠输入、焦点及输入法处理；改进连接提示、重连和分辨率调整；优化画面适配与清晰度，默认请求 32 位色深；剪贴板诊断日志默认关闭。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-darwin-arm64.dbxp",
+              "sha256": "58a7c036f2cdbf7213c6d4e20fe06b902be3616dd4cd9b5bf6d11520d1ef405a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3077602
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-darwin-x64.dbxp",
+              "sha256": "215c4b8f5819c95756a0299e07f3cbe169dea2676279aaa0e305994b0fdd0fe1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3318707
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-linux-x64.dbxp",
+              "sha256": "9dccf35ea98e092b708781fea773501f0fbaafffd944be2f9403a12417ef80ae",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3445763
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-windows-x64.dbxp",
+              "sha256": "bf2e48346768e2b48fc03872262e267ef926e4e51cf92a5e3ce2044c62efe47b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3430118
+            }
+          ]
+        },
         {
           "version": "0.2.7",
           "releasedAt": "2026-10-26T06:44:06.005Z",
@@ -11596,15 +11313,7 @@
       "localizations": {
         "zh-CN": {
           "name": "RDP 远程桌面",
-          "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本剪贴板双向同步、中文输入法，以及断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
-        },
-        "en": {
-          "name": "RDP Remote Desktop",
-          "description": "Open Windows remote desktops inside DBX with a native Rust (IronRDP) sidecar."
-        },
-        "zh": {
-          "name": "RDP 远程桌面",
-          "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本剪贴板双向同步、中文输入法，以及断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
+          "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本与文件剪贴板双向同步（Windows 文件/文件夹复制）、断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
         }
       }
     },
@@ -11705,14 +11414,6 @@
         "zh-CN": {
           "name": "ExcelX",
           "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
-        },
-        "en": {
-          "name": "ExcelX",
-          "description": "Convert spreadsheets (xlsx/xls/csv) into SQLite databases and export them back, so anyone can query their data with SQL or the DBX AI assistant."
-        },
-        "zh": {
-          "name": "ExcelX",
-          "description": "把 Excel / CSV 表格转换成 SQLite 数据库，随时导出回表格——让不懂数据库的人也能用 SQL 或 AI 助手直接查询、分析自己的数据。"
         }
       }
     },
@@ -11752,14 +11453,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Redis BSON 编解码",
-          "description": "将 Redis BSON 二进制解码为保留类型的 Extended JSON，并支持自定义外部程序。"
-        },
-        "en": {
-          "name": "Redis BSON Codec",
-          "description": "Decode Redis BSON values into type-preserving Extended JSON, with an optional custom external-program codec."
-        },
-        "zh": {
           "name": "Redis BSON 编解码",
           "description": "将 Redis BSON 二进制解码为保留类型的 Extended JSON，并支持自定义外部程序。"
         }
@@ -11829,14 +11522,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Cosmos DB NoSQL",
-          "description": "查询和编辑 Azure Cosmos DB for NoSQL 文档，支持分区键选择、JSON 与字段编辑及带版本条件的单文档增删改。"
-        },
-        "en": {
-          "name": "Cosmos DB NoSQL",
-          "description": "Query and edit Azure Cosmos DB for NoSQL documents with partition-aware queries, JSON and field editors, and conditional single-document writes."
-        },
-        "zh": {
           "name": "Cosmos DB NoSQL",
           "description": "查询和编辑 Azure Cosmos DB for NoSQL 文档，支持分区键选择、JSON 与字段编辑及带版本条件的单文档增删改。"
         }
@@ -11912,10 +11597,6 @@
         "en": {
           "name": "aes tools",
           "description": "AES-128-ECB encryption/decryption plugin based on the DBX platform, compatible with Hutool's default AES configuration. (AES-128-ECB is deterministic encryption and not semantically secure)"
-        },
-        "zh": {
-          "name": "aes工具",
-          "description": "基于 DBX 平台的 AES-128-ECB 加解密插件，兼容 Hutool 默认 AES 配置。（AES-128-ECB 为确定性加密、非语义安全）"
         }
       }
     },
@@ -12227,14 +11908,6 @@
         "zh-CN": {
           "name": "TOTP",
           "description": "在 DBX 中管理 TOTP 账号并生成动态验证码。"
-        },
-        "en": {
-          "name": "TOTP",
-          "description": "Manage TOTP accounts and generate one-time codes inside DBX."
-        },
-        "zh": {
-          "name": "TOTP",
-          "description": "在 DBX 中管理 TOTP 账号并生成动态验证码。"
         }
       }
     },
@@ -12312,14 +11985,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "MySQL Mock 数据生成",
-          "description": "根据 MySQL 表结构和已有数据生成、预览模拟 INSERT SQL；支持内置生成器，并提供外部 CLI 工具的安装和使用指引。"
-        },
-        "en": {
-          "name": "MySQL Mock Data",
-          "description": "Generate and preview MySQL mock INSERT SQL from table schemas and sampled existing rows, with a built-in generator or installation and usage guidance for external CLI tools."
-        },
-        "zh": {
           "name": "MySQL Mock 数据生成",
           "description": "根据 MySQL 表结构和已有数据生成、预览模拟 INSERT SQL；支持内置生成器，并提供外部 CLI 工具的安装和使用指引。"
         }
@@ -12406,14 +12071,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "棋牌小馆",
-          "description": "一间线上棋牌小馆：对弈中国象棋与五子棋，可开房、观战。"
-        },
-        "en": {
-          "name": "DBX Mini Games",
-          "description": "A quiet online parlour for Chinese chess and Gomoku, with rooms, spectators, and match clocks."
-        },
-        "zh": {
           "name": "棋牌小馆",
           "description": "一间线上棋牌小馆：对弈中国象棋与五子棋，可开房、观战。"
         }
@@ -12576,10 +12233,6 @@
         "en": {
           "name": "Embedded Terminal",
           "description": "Run an interactive local shell directly inside a DBX workbench."
-        },
-        "zh": {
-          "name": "内嵌终端",
-          "description": "直接在 DBX 工作台内运行本机交互式终端。"
         }
       }
     },
@@ -12652,14 +12305,6 @@
         "zh-CN": {
           "name": "my2sql Binlog 工具",
           "description": "MySQL binlog 查看、SQL/回滚生成与闪回执行工具。"
-        },
-        "en": {
-          "name": "my2sql Binlog Toolkit",
-          "description": "MySQL binlog viewer, SQL/rollback generator and flashback executor for DBX."
-        },
-        "zh": {
-          "name": "my2sql Binlog 工具",
-          "description": "MySQL binlog 查看、SQL/回滚生成与闪回执行工具。"
         }
       }
     },
@@ -12718,14 +12363,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "GitLab 管理台",
-          "description": "在 DBX 内浏览 GitLab 项目与代码、评审合并请求、查看流水线并处理 Issue。"
-        },
-        "en": {
-          "name": "GitLab Console",
-          "description": "Browse projects and code, review merge requests, watch pipelines and handle issues inside DBX."
-        },
-        "zh": {
           "name": "GitLab 管理台",
           "description": "在 DBX 内浏览 GitLab 项目与代码、评审合并请求、查看流水线并处理 Issue。"
         }
@@ -12842,14 +12479,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Jenkins 管理台",
-          "description": "在 DBX 内管理 Jenkins 任务、构建、控制台日志、队列与节点，支持阶段视图与面向 AI 客户端的 MCP 工具。"
-        },
-        "en": {
-          "name": "Jenkins Console",
-          "description": "Manage Jenkins jobs, builds, console output, queue and nodes inside DBX, with stage view and MCP tools for AI clients."
-        },
-        "zh": {
           "name": "Jenkins 管理台",
           "description": "在 DBX 内管理 Jenkins 任务、构建、控制台日志、队列与节点，支持阶段视图与面向 AI 客户端的 MCP 工具。"
         }
@@ -13010,14 +12639,6 @@
         "zh-CN": {
           "name": "Hertz Studio Standard",
           "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。"
-        },
-        "en": {
-          "name": "Hertz Studio Standard",
-          "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine."
-        },
-        "zh": {
-          "name": "Hertz Studio Standard",
-          "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。"
         }
       }
     },
@@ -13088,14 +12709,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Loki",
-          "description": "在 DBX 中用 LogQL 查询、浏览和实时跟踪 Grafana Loki 日志，并为 AI 助手提供只读工具。"
-        },
-        "en": {
-          "name": "Loki",
-          "description": "Query, browse and live-tail Grafana Loki logs with LogQL inside DBX, with read-only AI tools."
-        },
-        "zh": {
           "name": "Loki",
           "description": "在 DBX 中用 LogQL 查询、浏览和实时跟踪 Grafana Loki 日志，并为 AI 助手提供只读工具。"
         }
@@ -13173,14 +12786,6 @@
         "zh-CN": {
           "name": "Agent Hub",
           "description": "Agent 工具中心：扫描 Claude Code、Codex、Qoder、Trae、WorkBuddy、Pi，支持 Skills 导入、多端同步、漂移检测、更新检查和 MCP 配置管理。"
-        },
-        "en": {
-          "name": "Agent Hub",
-          "description": "Cross-agent local Skills and MCP manager: scan Claude Code, Codex, Qoder, Trae, WorkBuddy and Pi; install skills from GitHub or archives; manage MCP server configs."
-        },
-        "zh": {
-          "name": "Agent Hub",
-          "description": "Agent 工具中心：扫描 Claude Code、Codex、Qoder、Trae、WorkBuddy、Pi，支持 Skills 导入、多端同步、漂移检测、更新检查和 MCP 配置管理。"
         }
       }
     },
@@ -13252,14 +12857,6 @@
         "zh-CN": {
           "name": "AlertManage",
           "description": "Alertmanager 告警管理插件：告警查看与处理、静默规则、通知与路由、状态与配置。"
-        },
-        "en": {
-          "name": "AlertManage",
-          "description": "Alertmanager operations workbench: alert triage, silences, notification routing, status and configuration."
-        },
-        "zh": {
-          "name": "AlertManage",
-          "description": "Alertmanager 告警管理插件：告警查看与处理、静默规则、通知与路由、状态与配置。"
         }
       }
     },
@@ -13328,14 +12925,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Eureka",
-          "description": "Eureka 运维工作台：运行概览、集群与变更、近期注册注销日志、跨 Region 发现查询、实例及 AWS ASG 管理。"
-        },
-        "en": {
-          "name": "Eureka",
-          "description": "Eureka operations workbench: registry overview, clusters and changes, recent registration events, cross-region discovery, instance and AWS ASG management."
-        },
-        "zh": {
           "name": "Eureka",
           "description": "Eureka 运维工作台：运行概览、集群与变更、近期注册注销日志、跨 Region 发现查询、实例及 AWS ASG 管理。"
         }
@@ -14529,14 +14118,6 @@
         "zh-CN": {
           "name": "Code Editor",
           "description": "在 DBX 中浏览、搜索和编辑本地项目文件。"
-        },
-        "en": {
-          "name": "Code Editor",
-          "description": "Browse, search, and edit local project files inside DBX."
-        },
-        "zh": {
-          "name": "Code Editor",
-          "description": "在 DBX 中浏览、搜索和编辑本地项目文件。"
         }
       }
     },
@@ -14692,14 +14273,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Modbus TCP",
-          "description": "读写 PLC、网关与远程 IO 上的 Modbus TCP 寄存器，连接你填写的 host:port（默认 502），可查看每次读写的原始 TX/RX 报文。"
-        },
-        "en": {
-          "name": "Modbus TCP",
-          "description": "Read and write Modbus TCP registers on PLCs, gateways and remote IO at the host and port you enter (502 by default), down to the raw TX/RX frames of every request."
-        },
-        "zh": {
           "name": "Modbus TCP",
           "description": "读写 PLC、网关与远程 IO 上的 Modbus TCP 寄存器，连接你填写的 host:port（默认 502），可查看每次读写的原始 TX/RX 报文。"
         }
@@ -14860,21 +14433,13 @@
         "zh-CN": {
           "name": "OPC UA",
           "description": "浏览 OPC UA 服务器的地址空间并读写节点值，直连你填写的 opc.tcp:// 端点（默认 4840）；证书默认校验，写入需点「写入」按钮才下发。"
-        },
-        "en": {
-          "name": "OPC UA",
-          "description": "Browse the OPC UA address space and read or write node values on the endpoint you enter (4840 by default); certificates verified by default, writes sent only by the Write button."
-        },
-        "zh": {
-          "name": "OPC UA",
-          "description": "浏览 OPC UA 服务器的地址空间并读写节点值，直连你填写的 opc.tcp:// 端点（默认 4840）；证书默认校验，写入需点「写入」按钮才下发。"
         }
       }
     },
     {
       "id": "io.github.yxlonger.logviewer",
       "name": "Log Viewer",
-      "description": "View server .log files with scrollable queries, fuzzy search, real-time monitoring and chunked downloads.",
+      "description": "查看服务器 .log 日志，支持滚动查询、模糊搜索、实时监控、分块下载。",
       "publisher": "yxlonger",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/io.github.yxlonger.logviewer/0.2.1/icon.svg",
@@ -15022,14 +14587,6 @@
         "zh-CN": {
           "name": "日志查看器",
           "description": "查看服务器 .log 日志，支持滚动查询与模糊搜索"
-        },
-        "en": {
-          "name": "Log Viewer",
-          "description": "View server .log files with scrollable queries, fuzzy search, real-time monitoring and chunked downloads."
-        },
-        "zh": {
-          "name": "日志查看器",
-          "description": "查看服务器 .log 日志，支持滚动查询与模糊搜索"
         }
       }
     },
@@ -15082,14 +14639,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "空碗 · 十五分钟",
-          "description": "十五分钟的记忆叙事短篇。你替一个正在失忆的 AI 决定记住什么——抽掉一张纸片，它后面说的话就变。一个结局，打完继续干活。"
-        },
-        "en": {
-          "name": "Empty Bowl",
-          "description": "A 15-minute narrative short: you decide what a fading AI keeps, and what it lets go. Set one card aside and the next page changes. One ending. Then back to work."
-        },
-        "zh": {
           "name": "空碗 · 十五分钟",
           "description": "十五分钟的记忆叙事短篇。你替一个正在失忆的 AI 决定记住什么——抽掉一张纸片，它后面说的话就变。一个结局，打完继续干活。"
         }
@@ -15208,14 +14757,6 @@
         "zh-CN": {
           "name": "DBX SQL Guard",
           "description": "为 DBX 提供 SQL 风险评审与审批留痕。"
-        },
-        "en": {
-          "name": "DBX SQL Guard",
-          "description": "SQL risk review and approval trail for DBX."
-        },
-        "zh": {
-          "name": "DBX SQL Guard",
-          "description": "为 DBX 提供 SQL 风险评审与审批留痕。"
         }
       }
     },
@@ -15292,14 +14833,6 @@
         "zh-CN": {
           "name": "SQL Notebook",
           "description": "类似 Jupyter Notebook 的 DBX SQL 笔记本，文件为纯文本 .sqlnb（YAML）。"
-        },
-        "en": {
-          "name": "SQL Notebook",
-          "description": "Notebook-style SQL workbench for DBX."
-        },
-        "zh": {
-          "name": "SQL Notebook",
-          "description": "类似 Jupyter Notebook 的 DBX SQL 笔记本，文件为纯文本 .sqlnb（YAML）。"
         }
       }
     },
@@ -15361,14 +14894,49 @@
         "zh-CN": {
           "name": "ApiMan",
           "description": "在 DBX 中浏览 Protobuf，并用 gRPC / HTTP / SSE / WebSocket 调试接口。需要本机已安装 Node.js ≥ 18 且在 PATH 中。"
-        },
-        "en": {
-          "name": "ApiMan",
-          "description": "Browse Protobuf and debug gRPC / HTTP / SSE / WebSocket APIs inside DBX. Requires Node.js >= 18 on PATH (Go launcher runs runtime/sidecar.js via node; host.binary)."
-        },
-        "zh": {
-          "name": "ApiMan",
-          "description": "在 DBX 中浏览 Protobuf，并用 gRPC / HTTP / SSE / WebSocket 调试接口。需要本机已安装 Node.js ≥ 18 且在 PATH 中。"
+        }
+      }
+    },
+    {
+      "id": "io.github.ztoooooo.print-tools",
+      "name": "Local Print Tools",
+      "description": "Local-only WYSIWYG workbench for laying out invoices, tickets and ID cards on A4, with perspective correction, watermark and PDF export. Nothing leaves the machine.",
+      "publisher": "ztoooooo",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.ztoooooo.print-tools/1.5.0/icon.svg",
+      "tags": [
+        "print",
+        "pdf",
+        "productivity",
+        "image"
+      ],
+      "permissions": [
+        "host.storage"
+      ],
+      "source": "https://github.com/ztoooooo/print-tools/tree/v1.5.0",
+      "homepage": "https://ztoooooo.github.io/print-tools/",
+      "license": "MIT",
+      "latestVersion": "1.5.0",
+      "versions": [
+        {
+          "version": "1.5.0",
+          "releasedAt": "2026-11-05T13:01:22.185Z",
+          "releaseNotes": "首个 DBX 插件版本：发票/车票/证件三工作区排版、OpenCV 透视矫正、自定义水印、PDF 导出，全程本地处理、零上传。",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.ztoooooo.print-tools/1.5.0/io.github.ztoooooo.print-tools-1.5.0-universal.dbxp",
+              "sha256": "8429dc7c6bfdb8473bf6856f7408f19c9b1ca782581b370273fd8694fd882f33",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5085320
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "票据打印",
+          "description": "纯前端本地票据打印工作台：发票 / 车票 / 证件排版、透视矫正、水印与 PDF 导出，文件不出本机。"
         }
       }
     },
@@ -15412,14 +14980,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "HTML To Link",
-          "description": "把查询结果，或表的字段、索引、外键和注释，发成一条只读的 htmlto.link 链接。数据库连接留在 DBX。"
-        },
-        "en": {
-          "name": "HTML To Link",
-          "description": "Publish a query result, or a table's columns, indexes, foreign keys, and comments, as a read-only htmlto.link page. Database credentials stay in DBX."
-        },
-        "zh": {
           "name": "HTML To Link",
           "description": "把查询结果，或表的字段、索引、外键和注释，发成一条只读的 htmlto.link 链接。数据库连接留在 DBX。"
         }
@@ -15656,14 +15216,6 @@
         "zh-CN": {
           "name": "MyBatis SQL 还原",
           "description": "粘贴 MyBatis 日志，自动把参数回填到 SQL 中，得到可直接执行的 SQL。"
-        },
-        "en": {
-          "name": "MyBatis SQL Fill",
-          "description": "Paste MyBatis DEBUG logs and fill parameters back into SQL to get executable SQL."
-        },
-        "zh": {
-          "name": "MyBatis SQL 还原",
-          "description": "粘贴 MyBatis 日志，自动把参数回填到 SQL 中，得到可直接执行的 SQL。"
         }
       }
     },
@@ -15894,14 +15446,6 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "Dev 工具集",
-          "description": "不到 200KB 的轻量开发者工具集，即开即用。沙箱离线运行，零网络权限。涵盖加解密、编解码、文本处理、数据转换、格式化、时间计算、网络运维、图像生成等众多高频工具；参数自动记忆，配置可随 DBX 跨端无缝同步。"
-        },
-        "en": {
-          "name": "Dev Tools",
-          "description": "A lightweight dev toolset under 200KB — instant to use. Sandboxed and offline with zero network access. High-frequency tools for crypto, encoding, text, data conversion, formatting, time, networking and image generation; inputs and options are remembered and sync seamlessly across devices via DBX."
-        },
-        "zh": {
           "name": "Dev 工具集",
           "description": "不到 200KB 的轻量开发者工具集，即开即用。沙箱离线运行，零网络权限。涵盖加解密、编解码、文本处理、数据转换、格式化、时间计算、网络运维、图像生成等众多高频工具；参数自动记忆，配置可随 DBX 跨端无缝同步。"
         }

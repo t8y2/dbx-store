@@ -1,7 +1,7 @@
 {
   "id": "com.lwai.mdnotes",
-  "name": "AI.MD Notes",
-  "description": "Markdown notes with a connection type: create an AI.MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory configured on the connection and can be browsed and edited as an mdnotes:// virtual filesystem. A built-in AI assistant in the persistent right sidebar can connect to any OpenAI-compatible / Anthropic / Ollama model to analyze, polish, continue and answer questions about notes.",
+  "name": "AI.MD 笔记",
+  "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。内置 AI 助手（右侧常驻栏），可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型对笔记做分析、润色、续写与问答。",
   "publisher": "lwai",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/0.8.11/assets/plugin.svg",
@@ -219,14 +219,6 @@
   ],
   "localizations": {
     "zh-CN": {
-      "name": "AI.MD 笔记",
-      "description": "Markdown 笔记：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记是真实 .md 文件，文件夹是真实子目录，也可作为 mdnotes:// 虚拟文件系统浏览。支持直接粘贴/拖入图片、导入已有 .md 与整个文件夹、导出与整库备份恢复；右侧常驻 AI 助手可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型做分析、润色、续写与问答。"
-    },
-    "en": {
-      "name": "AI.MD Notes",
-      "description": "Markdown notes with a connection type: create an AI.MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory configured on the connection and can be browsed and edited as an mdnotes:// virtual filesystem. A built-in AI assistant in the persistent right sidebar can connect to any OpenAI-compatible / Anthropic / Ollama model to analyze, polish, continue and answer questions about notes."
-    },
-    "zh": {
       "name": "AI.MD 笔记",
       "description": "Markdown 笔记：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记是真实 .md 文件，文件夹是真实子目录，也可作为 mdnotes:// 虚拟文件系统浏览。支持直接粘贴/拖入图片、导入已有 .md 与整个文件夹、导出与整库备份恢复；右侧常驻 AI 助手可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型做分析、润色、续写与问答。"
     }

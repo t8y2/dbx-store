@@ -74,14 +74,6 @@
     "zh-CN": {
       "name": "MySQL Mock 数据生成",
       "description": "根据 MySQL 表结构和已有数据生成、预览模拟 INSERT SQL；支持内置生成器，并提供外部 CLI 工具的安装和使用指引。"
-    },
-    "en": {
-      "name": "MySQL Mock Data",
-      "description": "Generate and preview MySQL mock INSERT SQL from table schemas and sampled existing rows, with a built-in generator or installation and usage guidance for external CLI tools."
-    },
-    "zh": {
-      "name": "MySQL Mock 数据生成",
-      "description": "根据 MySQL 表结构和已有数据生成、预览模拟 INSERT SQL；支持内置生成器，并提供外部 CLI 工具的安装和使用指引。"
     }
   }
 }

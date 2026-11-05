@@ -916,10 +916,6 @@
     "zh-TW": {
       "name": "終端",
       "description": "為 DBX 提供終端、SFTP 檔案傳輸與受控遠端維運工作流程。"
-    },
-    "en": {
-      "name": "Terminal",
-      "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations."
     }
   }
 }

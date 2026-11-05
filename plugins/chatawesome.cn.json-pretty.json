@@ -1,7 +1,7 @@
 {
   "id": "chatawesome.cn.json-pretty",
-  "name": "JSON Formatter",
-  "description": "Format, minify, collapse, escape, import and export JSON, and use the workspace tree on the left to create folders and JSON files.",
+  "name": "JSON 格式化",
+  "description": "格式化、压缩、折叠、转义、导入、导出 JSON，左侧工作区树可新建文件夹/JSON 文件。",
   "publisher": "acornlive",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/acornlive/dbx-plugin-json-pretty/v0.1.4/assets/json-pretty.svg",
@@ -163,14 +163,6 @@
   ],
   "localizations": {
     "zh-CN": {
-      "name": "JSON 格式化工具",
-      "description": "格式化、压缩、折叠、转义、导入、导出 JSON。纯前端、数据不出本机。"
-    },
-    "en": {
-      "name": "JSON Formatter",
-      "description": "Format, minify, collapse, escape, import and export JSON, and use the workspace tree on the left to create folders and JSON files."
-    },
-    "zh": {
       "name": "JSON 格式化工具",
       "description": "格式化、压缩、折叠、转义、导入、导出 JSON。纯前端、数据不出本机。"
     }

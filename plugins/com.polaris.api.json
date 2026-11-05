@@ -82,14 +82,6 @@
     "zh-CN": {
       "name": "polaris-api",
       "description": "API 请求客户端（sidecar 版）：多 tab、环境变量、cURL 导入导出、Params/Headers/Body 编辑；响应支持表格 / 对象树 / 路径下钻 / 字段筛选。请求经原生 sidecar（reqwest）发送，无 CORS/混合内容/禁发头限制，等效 cURL。"
-    },
-    "en": {
-      "name": "polaris-api",
-      "description": "API request client (sidecar): multi-tab, environment variables, cURL import/export, Params/Headers/Body editing; response views for table / object tree / path drill-down / field filtering. Requests are sent via a native Rust sidecar (reqwest) with no CORS / mixed-content / forbidden-header limits, equivalent to cURL."
-    },
-    "zh": {
-      "name": "polaris-api",
-      "description": "API 请求客户端（sidecar 版）：多 tab、环境变量、cURL 导入导出、Params/Headers/Body 编辑；响应支持表格 / 对象树 / 路径下钻 / 字段筛选。请求经原生 sidecar（reqwest）发送，无 CORS/混合内容/禁发头限制，等效 cURL。"
     }
   }
 }

@@ -83,14 +83,6 @@
     "zh-CN": {
       "name": "WSL 管理器",
       "description": "在 DBX 中可视化管理 WSL 发行版（wsl）与 WSL 容器（wslc），支持注册表凭据与镜像管理。"
-    },
-    "en": {
-      "name": "WSL Manager",
-      "description": "Visual manager for WSL distributions (wsl) and WSL containers (wslc) on Windows."
-    },
-    "zh": {
-      "name": "WSL 管理器",
-      "description": "在 DBX 中可视化管理 WSL 发行版（wsl）与 WSL 容器（wslc），支持注册表凭据与镜像管理。"
     }
   }
 }

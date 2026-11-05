@@ -153,14 +153,6 @@
     "zh-CN": {
       "name": "OPC UA",
       "description": "浏览 OPC UA 服务器的地址空间并读写节点值，直连你填写的 opc.tcp:// 端点（默认 4840）；证书默认校验，写入需点「写入」按钮才下发。"
-    },
-    "en": {
-      "name": "OPC UA",
-      "description": "Browse the OPC UA address space and read or write node values on the endpoint you enter (4840 by default); certificates verified by default, writes sent only by the Write button."
-    },
-    "zh": {
-      "name": "OPC UA",
-      "description": "浏览 OPC UA 服务器的地址空间并读写节点值，直连你填写的 opc.tcp:// 端点（默认 4840）；证书默认校验，写入需点「写入」按钮才下发。"
     }
   }
 }

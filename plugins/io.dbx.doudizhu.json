@@ -80,14 +80,6 @@
     "zh-CN": {
       "name": "田园斗地主",
       "description": "本地局域网三人联机斗地主小游戏，支持公开房、密码房和动态角色互动。"
-    },
-    "en": {
-      "name": "Garden Dou Dizhu",
-      "description": "A three-player Dou Dizhu mini-game for your local LAN, with public/password rooms and animated characters."
-    },
-    "zh": {
-      "name": "田园斗地主",
-      "description": "本地局域网三人联机斗地主小游戏，支持公开房、密码房和动态角色互动。"
     }
   }
 }

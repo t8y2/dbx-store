@@ -40,14 +40,6 @@
     "zh-CN": {
       "name": "HTML To Link",
       "description": "把查询结果，或表的字段、索引、外键和注释，发成一条只读的 htmlto.link 链接。数据库连接留在 DBX。"
-    },
-    "en": {
-      "name": "HTML To Link",
-      "description": "Publish a query result, or a table's columns, indexes, foreign keys, and comments, as a read-only htmlto.link page. Database credentials stay in DBX."
-    },
-    "zh": {
-      "name": "HTML To Link",
-      "description": "把查询结果，或表的字段、索引、外键和注释，发成一条只读的 htmlto.link 链接。数据库连接留在 DBX。"
     }
   }
 }

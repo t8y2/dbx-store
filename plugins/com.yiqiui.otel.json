@@ -158,10 +158,6 @@
     "zh": {
       "name": "OpenTelemetry 遥测",
       "description": "接收 OTLP 链路、指标与日志，查看 span 瀑布图，并通过 DBX 内置 DuckDB 用 SQL 分析。"
-    },
-    "en": {
-      "name": "OpenTelemetry",
-      "description": "Receive OTLP traces, metrics and logs, then browse span waterfalls and analyze them with SQL through DBX's built-in DuckDB."
     }
   }
 }

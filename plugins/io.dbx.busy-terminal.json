@@ -39,14 +39,6 @@
     "zh-CN": {
       "name": "忙碌终端",
       "description": "在工作台或桌面浮动窗里播放假忙碌日志。仅供娱乐，不是真实终端。"
-    },
-    "en": {
-      "name": "Busy Terminal",
-      "description": "Fake busy terminal scenes in a workbench or floating desktop widget. Entertainment only — not a real shell."
-    },
-    "zh": {
-      "name": "忙碌终端",
-      "description": "在工作台或桌面浮动窗里播放假忙碌日志。仅供娱乐，不是真实终端。"
     }
   }
 }

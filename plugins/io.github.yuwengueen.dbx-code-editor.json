@@ -150,14 +150,6 @@
     "zh-CN": {
       "name": "Code Editor",
       "description": "在 DBX 中浏览、搜索和编辑本地项目文件。"
-    },
-    "en": {
-      "name": "Code Editor",
-      "description": "Browse, search, and edit local project files inside DBX."
-    },
-    "zh": {
-      "name": "Code Editor",
-      "description": "在 DBX 中浏览、搜索和编辑本地项目文件。"
     }
   }
 }

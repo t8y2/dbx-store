@@ -62,14 +62,6 @@
     "zh-CN": {
       "name": "Apollo 配置工作台",
       "description": "管理 Apollo 应用、集群、命名空间、配置、发布和灰度"
-    },
-    "en": {
-      "name": "Apollo Config Workbench",
-      "description": "Manage Apollo apps, clusters, namespaces, configs, releases and gray releases"
-    },
-    "zh": {
-      "name": "Apollo 配置工作台",
-      "description": "管理 Apollo 应用、集群、命名空间、配置、发布和灰度"
     }
   }
 }

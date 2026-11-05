@@ -67,14 +67,6 @@
     "zh-CN": {
       "name": "进程管理",
       "description": "浏览、搜索并结束本机与远程主机上的操作系统进程。"
-    },
-    "en": {
-      "name": "Process Manager",
-      "description": "Browse, search, and terminate local and remote OS processes."
-    },
-    "zh": {
-      "name": "进程管理",
-      "description": "浏览、搜索并结束本机与远程主机上的操作系统进程。"
     }
   }
 }

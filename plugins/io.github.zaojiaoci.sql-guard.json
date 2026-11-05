@@ -111,14 +111,6 @@
     "zh-CN": {
       "name": "DBX SQL Guard",
       "description": "为 DBX 提供 SQL 风险评审与审批留痕。"
-    },
-    "en": {
-      "name": "DBX SQL Guard",
-      "description": "SQL risk review and approval trail for DBX."
-    },
-    "zh": {
-      "name": "DBX SQL Guard",
-      "description": "为 DBX 提供 SQL 风险评审与审批留痕。"
     }
   }
 }

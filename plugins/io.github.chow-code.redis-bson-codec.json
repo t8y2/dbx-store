@@ -36,14 +36,6 @@
     "zh-CN": {
       "name": "Redis BSON 编解码",
       "description": "将 Redis BSON 二进制解码为保留类型的 Extended JSON，并支持自定义外部程序。"
-    },
-    "en": {
-      "name": "Redis BSON Codec",
-      "description": "Decode Redis BSON values into type-preserving Extended JSON, with an optional custom external-program codec."
-    },
-    "zh": {
-      "name": "Redis BSON 编解码",
-      "description": "将 Redis BSON 二进制解码为保留类型的 Extended JSON，并支持自定义外部程序。"
     }
   }
 }

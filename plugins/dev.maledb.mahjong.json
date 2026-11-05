@@ -37,14 +37,6 @@
     "zh-CN": {
       "name": "麻了DB",
       "description": "写麻了？摸两张。青瓷牌桌、三位电脑牌友，支持吃碰杠胡、番型计分、音效动效、提示托管与本地续局。"
-    },
-    "en": {
-      "name": "MaLeDB · Mahjong",
-      "description": "Four-player Chinese Mahjong with local computer opponents, fan scoring, a celadon table, sounds, hints and saved games."
-    },
-    "zh": {
-      "name": "麻了DB",
-      "description": "写麻了？摸两张。青瓷牌桌、三位电脑牌友，支持吃碰杠胡、番型计分、音效动效、提示托管与本地续局。"
     }
   }
 }

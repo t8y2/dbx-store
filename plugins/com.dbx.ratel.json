@@ -1,7 +1,7 @@
 {
   "id": "com.dbx.ratel",
-  "name": "Ratel Slack-Off Console",
-  "description": "A slack-off client for Ratel online card games (Dou Dizhu / Pao De Kuai / Texas Hold'em / Mass Mahjong / Liar's Tavern), with WebSocket/TCP long connections, a room list, and a command panel that switches automatically by game.",
+  "name": "Ratel 摸鱼台",
+  "description": "连接 Ratel 在线棋牌（斗地主 / 跑得快 / 德州 / 大众麻将 / 骗子酒馆）的摸鱼客户端：WebSocket/TCP 长连接、房间列表、按游戏自动切换的命令面板。",
   "publisher": "dbx-ratel",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/mikodream/ratel-dbx/v0.1.4/assets/plugin.svg",
@@ -108,14 +108,6 @@
   ],
   "localizations": {
     "zh-CN": {
-      "name": "Ratel 摸鱼台",
-      "description": "连接 Ratel 在线棋牌（斗地主 / 跑得快 / 德州 / 大众麻将 / 骗子酒馆）的摸鱼客户端：WebSocket/TCP 长连接、房间列表、按游戏自动切换的命令面板。"
-    },
-    "en": {
-      "name": "Ratel Slack-Off Console",
-      "description": "A slack-off client for Ratel online card games (Dou Dizhu / Pao De Kuai / Texas Hold'em / Mass Mahjong / Liar's Tavern), with WebSocket/TCP long connections, a room list, and a command panel that switches automatically by game."
-    },
-    "zh": {
       "name": "Ratel 摸鱼台",
       "description": "连接 Ratel 在线棋牌（斗地主 / 跑得快 / 德州 / 大众麻将 / 骗子酒馆）的摸鱼客户端：WebSocket/TCP 长连接、房间列表、按游戏自动切换的命令面板。"
     }

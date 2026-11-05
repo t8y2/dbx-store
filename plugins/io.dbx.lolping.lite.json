@@ -109,14 +109,6 @@
     "zh-CN": {
       "name": "lolPing 轻量版",
       "description": "在桌面及其他软件窗口上打 LOL 信号和表情，基于 darrenprx/lolPing 改造。"
-    },
-    "en": {
-      "name": "lolPing Lite",
-      "description": "Send LOL pings and emotes over your desktop and other app windows, adapted from darrenprx/lolPing."
-    },
-    "zh": {
-      "name": "lolPing 轻量版",
-      "description": "在桌面及其他软件窗口上打 LOL 信号和表情，基于 darrenprx/lolPing 改造。"
     }
   }
 }

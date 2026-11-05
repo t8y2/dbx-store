@@ -67,14 +67,6 @@
     "zh-CN": {
       "name": "my2sql Binlog 工具",
       "description": "MySQL binlog 查看、SQL/回滚生成与闪回执行工具。"
-    },
-    "en": {
-      "name": "my2sql Binlog Toolkit",
-      "description": "MySQL binlog viewer, SQL/rollback generator and flashback executor for DBX."
-    },
-    "zh": {
-      "name": "my2sql Binlog 工具",
-      "description": "MySQL binlog 查看、SQL/回滚生成与闪回执行工具。"
     }
   }
 }
