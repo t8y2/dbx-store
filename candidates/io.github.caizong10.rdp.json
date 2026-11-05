@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.caizong10.rdp",
+  "publisher": "caizong10",
+  "version": "0.2.8",
+  "name": "RDP Remote Desktop",
+  "description": "Open Windows remote desktops inside DBX with a native Rust (IronRDP) sidecar.",
+  "icon": "https://raw.githubusercontent.com/caizong10/dbx-plugin-rdp/v0.2.8/assets/plugin.svg",
+  "tags": [
+    "rdp",
+    "remote-desktop",
+    "windows"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.events",
+    "host.binary"
+  ],
+  "source": "https://github.com/caizong10/dbx-plugin-rdp/tree/v0.2.8",
+  "homepage": "https://github.com/caizong10/dbx-plugin-rdp",
+  "license": "Apache-2.0",
+  "releaseNotes": "改进远程键鼠输入、焦点及输入法处理；改进连接提示、重连和分辨率调整；优化画面适配与清晰度，默认请求 32 位色深；剪贴板诊断日志默认关闭。",
+  "localizations": {
+    "zh-CN": {
+      "name": "RDP 远程桌面",
+      "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本与文件剪贴板双向同步（Windows 文件/文件夹复制）、断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/caizong10/dbx-plugin-rdp/releases/download/v0.2.8/io.github.caizong10.rdp-0.2.8-windows-x64.dbxp",
+      "sha256": "be6fd449f88381ab9ac421d5314b990202c3ecf46d60ad2660d4f2e637c751a0",
+      "size": 3429372
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/caizong10/dbx-plugin-rdp/releases/download/v0.2.8/io.github.caizong10.rdp-0.2.8-linux-x64.dbxp",
+      "sha256": "b569ff479c0455ab6217b3ae95c5d493ee254984ccce1b3a4217f09ba2601d2d",
+      "size": 3445026
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/caizong10/dbx-plugin-rdp/releases/download/v0.2.8/io.github.caizong10.rdp-0.2.8-darwin-x64.dbxp",
+      "sha256": "f7103b36050ee770b179f2035f7af4cb950e68e4a10b9268bf4d2ae4850d27d8",
+      "size": 3317969
+    },
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/caizong10/dbx-plugin-rdp/releases/download/v0.2.8/io.github.caizong10.rdp-0.2.8-darwin-arm64.dbxp",
+      "sha256": "c926bb4cbf97658a21efdae52845f06e8dca93eb4d427d780ce3754cd875def1",
+      "size": 3076863
+    }
+  ]
+}
