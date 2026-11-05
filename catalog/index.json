@@ -2954,10 +2954,10 @@
     {
       "id": "com.object.browser",
       "name": "Object Storage",
-      "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), and multi-select batch delete / download.",
+      "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), transfer task center with failed-download retry, and multi-select batch delete / download / copy / move.",
       "publisher": "huangqiang",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.2.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.4.0/icon.svg",
       "tags": [
         "storage",
         "oss",
@@ -2972,11 +2972,25 @@
         "host.storage",
         "host.workbench"
       ],
-      "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.1.2",
+      "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.4.0",
       "homepage": "https://github.com/huangqiang008/dbx-object-storage",
       "license": "MIT",
-      "latestVersion": "1.2.0",
+      "latestVersion": "1.4.0",
       "versions": [
+        {
+          "version": "1.4.0",
+          "releasedAt": "2026-11-05T12:44:28.819Z",
+          "releaseNotes": "传输任务中心：批量下载/上传/删除/移动/复制结果统一记录并落盘本机（跨重启留存），失败任务展开逐 key 错误明细，下载类失败项一键重试并复刻原始落盘位置；分页只加载部分时可「扫描全部并排序」（上限 2 万条）保证排序结果完整；连接表单对齐宿主「新建连接」风格（双 tab、9 厂商预设、胶囊开关）；键盘快捷键（↑/↓ 移动高亮、Shift 连选、Ctrl+C/X/V、空格预览）；路径书签与最近访问；预览失败时面板内直接下载兜底；新云朵应用图标；修复快捷图标新开标签页复刻其他标签页连接内容、详情弹窗遮挡元数据编辑器两个问题。",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.object.browser/1.4.0/com.object.browser-1.4.0-windows-x64.dbxp",
+              "sha256": "9e3c7bcda66b4d257cc520f85bb55ad7e15ac43d68e378ad699b196239b71826",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9727064
+            }
+          ]
+        },
         {
           "version": "1.2.0",
           "releasedAt": "2026-10-27T16:23:48.903Z",
@@ -3037,7 +3051,7 @@
       "localizations": {
         "zh-CN": {
           "name": "对象存储",
-          "description": "通用对象存储浏览器：支持阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）。大目录服务端分页、分片上传、预签名分享、文件预览（Office / 3D / HTML / Markdown）、多选批量删除 / 下载。"
+          "description": "阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）通用对象存储浏览器。服务端分页 + 列表虚拟化、分片上传、预签名链接分享、文件预览（Office / 3D / HTML / Markdown）、传输任务中心（失败下载一键重试）、多选批量删除/下载/复制/移动。"
         }
       }
     },
@@ -3427,6 +3441,78 @@
         "zh": {
           "name": "日历笔记",
           "description": "极简的月视图日历，用于逐日记录笔记。"
+        }
+      }
+    },
+    {
+      "id": "com.vyrnax.datasweep",
+      "name": "Minesweeper",
+      "description": "Minesweeper: a classic puzzle game.",
+      "publisher": "vyrnax",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/icon.svg",
+      "tags": [],
+      "permissions": [],
+      "source": "https://github.com/vyrnax/dbx-plugin-datasweep",
+      "homepage": "",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.1",
+      "versions": [
+        {
+          "version": "0.1.1",
+          "releasedAt": "2026-11-05T13:23:04.720Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/com.vyrnax.datasweep-0.1.1-darwin-arm64.dbxp",
+              "sha256": "f23bb61a9da907f3fd905ffb9e69bd68bca17c4ee744a1146788482722a83f36",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 349093
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/com.vyrnax.datasweep-0.1.1-darwin-x64.dbxp",
+              "sha256": "dade099daa7729660469f54c4bebf0a3fb54ec2c152cd47d6b23beb523eb8671",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 363702
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/com.vyrnax.datasweep-0.1.1-linux-arm64.dbxp",
+              "sha256": "6cce12f4b13d10109f44d99bf361a765b3bcf7b50717102c14e9cf98f4f915b4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 371503
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/com.vyrnax.datasweep-0.1.1-linux-x64.dbxp",
+              "sha256": "2028612960aded2eb91c0aac22d8b3c6e9bc3ac89b6c61c719499d0f647d0282",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 389331
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/com.vyrnax.datasweep-0.1.1-windows-x64.dbxp",
+              "sha256": "222392dd0df33290f693df886672a600727703d5406bea72e647cd43a941ed31",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 291030
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "en": {
+          "name": "Minesweeper",
+          "description": "Minesweeper: a classic puzzle game."
+        },
+        "zh-CN": {
+          "name": "扫雷",
+          "description": "扫雷-经典益智小游戏"
+        },
+        "zh": {
+          "name": "扫雷",
+          "description": "扫雷-经典益智小游戏"
         }
       }
     },
@@ -4406,7 +4492,7 @@
       "description": "Browse, search, and reuse local clipboard history (text, images, and file lists).",
       "publisher": "alan",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/icon.svg",
       "tags": [
         "clipboard",
         "productivity",
@@ -4415,11 +4501,53 @@
       "permissions": [
         "host.events"
       ],
-      "source": "https://github.com/allran/dbx-plugin-clipboard/tree/v0.1.1",
+      "source": "https://github.com/allran/dbx-plugin-clipboard/tree/v0.1.2",
       "homepage": "https://github.com/allran/dbx-plugin-clipboard",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-11-05T12:39:08.593Z",
+          "releaseNotes": "性能与稳定性优化：列表缩略图懒加载、剪贴板变更探测与增量同步；修复清空后无法重新收录、持久化失败回滚，以及图片指纹去重等问题。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-darwin-arm64.dbxp",
+              "sha256": "37bf74220378461047410697739e19c44ab2c8f73292c3da4f6746279e63ebbe",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 755557
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-darwin-x64.dbxp",
+              "sha256": "5b43fe37e6ca8b4b71112025de6a621ac908ab0a2033e73567fadbee0db644e3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 803517
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-linux-arm64.dbxp",
+              "sha256": "ccef9a8b0f534c29372db11b7c6242a2a1a59530d3f7bebe25cadb5ebe492c22",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 704963
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-linux-x64.dbxp",
+              "sha256": "d79959c4eb9f25e28e30f8493f43be50bcde543d73618af55b20b60c51c086fd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 739648
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-windows-x64.dbxp",
+              "sha256": "3814880b9e7d758ce89097fb4771540fc25956bcfa908891249402f60aa71764",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 602470
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-10-08T02:26:31.345Z",
@@ -11132,7 +11260,7 @@
       "description": "Open Windows remote desktops inside DBX with a native Rust (IronRDP) sidecar.",
       "publisher": "caizong10",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.7/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/icon.svg",
       "tags": [
         "rdp",
         "remote-desktop",
@@ -11143,11 +11271,46 @@
         "host.events",
         "host.binary"
       ],
-      "source": "https://github.com/caizong10/dbx-plugin-rdp/tree/v0.2.7",
+      "source": "https://github.com/caizong10/dbx-plugin-rdp/tree/v0.2.8",
       "homepage": "https://github.com/caizong10/dbx-plugin-rdp",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.7",
+      "latestVersion": "0.2.8",
       "versions": [
+        {
+          "version": "0.2.8",
+          "releasedAt": "2026-11-05T12:50:08.834Z",
+          "releaseNotes": "改进远程键鼠输入、焦点及输入法处理；改进连接提示、重连和分辨率调整；优化画面适配与清晰度，默认请求 32 位色深；剪贴板诊断日志默认关闭。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-darwin-arm64.dbxp",
+              "sha256": "58a7c036f2cdbf7213c6d4e20fe06b902be3616dd4cd9b5bf6d11520d1ef405a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3077602
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-darwin-x64.dbxp",
+              "sha256": "215c4b8f5819c95756a0299e07f3cbe169dea2676279aaa0e305994b0fdd0fe1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3318707
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-linux-x64.dbxp",
+              "sha256": "9dccf35ea98e092b708781fea773501f0fbaafffd944be2f9403a12417ef80ae",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3445763
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-windows-x64.dbxp",
+              "sha256": "bf2e48346768e2b48fc03872262e267ef926e4e51cf92a5e3ce2044c62efe47b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3430118
+            }
+          ]
+        },
         {
           "version": "0.2.7",
           "releasedAt": "2026-10-26T06:44:06.005Z",
@@ -11222,7 +11385,7 @@
       "localizations": {
         "zh-CN": {
           "name": "RDP 远程桌面",
-          "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本剪贴板双向同步、中文输入法，以及断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
+          "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本与文件剪贴板双向同步（Windows 文件/文件夹复制）、断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
         }
       }
     },
@@ -14803,6 +14966,49 @@
         "zh-CN": {
           "name": "ApiMan",
           "description": "在 DBX 中浏览 Protobuf，并用 gRPC / HTTP / SSE / WebSocket 调试接口。需要本机已安装 Node.js ≥ 18 且在 PATH 中。"
+        }
+      }
+    },
+    {
+      "id": "io.github.ztoooooo.print-tools",
+      "name": "Local Print Tools",
+      "description": "Local-only WYSIWYG workbench for laying out invoices, tickets and ID cards on A4, with perspective correction, watermark and PDF export. Nothing leaves the machine.",
+      "publisher": "ztoooooo",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.ztoooooo.print-tools/1.5.0/icon.svg",
+      "tags": [
+        "print",
+        "pdf",
+        "productivity",
+        "image"
+      ],
+      "permissions": [
+        "host.storage"
+      ],
+      "source": "https://github.com/ztoooooo/print-tools/tree/v1.5.0",
+      "homepage": "https://ztoooooo.github.io/print-tools/",
+      "license": "MIT",
+      "latestVersion": "1.5.0",
+      "versions": [
+        {
+          "version": "1.5.0",
+          "releasedAt": "2026-11-05T13:01:22.185Z",
+          "releaseNotes": "首个 DBX 插件版本：发票/车票/证件三工作区排版、OpenCV 透视矫正、自定义水印、PDF 导出，全程本地处理、零上传。",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.ztoooooo.print-tools/1.5.0/io.github.ztoooooo.print-tools-1.5.0-universal.dbxp",
+              "sha256": "8429dc7c6bfdb8473bf6856f7408f19c9b1ca782581b370273fd8694fd882f33",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5085320
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "票据打印",
+          "description": "纯前端本地票据打印工作台：发票 / 车票 / 证件排版、透视矫正、水印与 PDF 导出，文件不出本机。"
         }
       }
     },
