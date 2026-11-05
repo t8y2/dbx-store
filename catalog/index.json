@@ -127,7 +127,7 @@
       "description": "Back up and restore PostgreSQL databases with pg_dump / pg_restore / psql: custom, tar, directory and plain SQL dumps, schema/table selection, role backup, version checks, progress, backup history and an optional full schema reset before restore.",
       "publisher": "alvinades98",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.3.0/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.4.2/icon.png",
       "tags": [
         "postgresql",
         "backup",
@@ -136,13 +136,56 @@
         "pg_restore"
       ],
       "permissions": [
+        "host.binary",
         "host.storage"
       ],
       "source": "https://github.com/alvinades98/dbx-pg-restore",
       "homepage": "https://github.com/alvinades98/dbx-pg-restore",
       "license": "Apache-2.0",
-      "latestVersion": "0.3.0",
+      "latestVersion": "0.4.2",
       "versions": [
+        {
+          "version": "0.4.2",
+          "releasedAt": "2026-11-01T16:37:11.869Z",
+          "releaseNotes": "SSL mode (PGSSLMODE) for cloud servers; the database list now falls back to postgres / template1; optional single-transaction restore that stops on the first error; ANALYZE after restore; a clear message when the dump file is compressed (.gz, .zst, .zip, …). Windows: pg_dump / pg_restore are found in C:\\Program Files\\PostgreSQL\\<version>\\bin when they are not on PATH (newest installed version) and no console window flashes; errors are also now shown in the Output panel. Declares host.binary, since the native backend runs the user's PostgreSQL client tools.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.4.2/alvinades98.pg-backup-restore-0.4.2-darwin-arm64.dbxp",
+              "sha256": "70b25ef52ecffe5f2d274a6e3c36fbdd246ba1636079198ad6536a7d84163cfa",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 419571
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.4.2/alvinades98.pg-backup-restore-0.4.2-darwin-x64.dbxp",
+              "sha256": "bdc9819b51f94ff5dce58ad695fe63a3add89463c0481fa6a1e35aa9aac76d33",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 446141
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.4.2/alvinades98.pg-backup-restore-0.4.2-linux-arm64.dbxp",
+              "sha256": "13446c7244e7303376345a2e26cc5f935f9776e385877fea4ab8cd04c8a65c35",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 446945
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.4.2/alvinades98.pg-backup-restore-0.4.2-linux-x64.dbxp",
+              "sha256": "8c5a04de32aad9a9e208f4ba530d64385b548f15748c9c934e7ddf2e0e8badd1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 472338
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/alvinades98.pg-backup-restore/0.4.2/alvinades98.pg-backup-restore-0.4.2-windows-x64.dbxp",
+              "sha256": "cf49d4b1f795b98f7307a5c529054fb4bdbc381839bf5209cff36fed73cc83cf",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 403897
+            }
+          ]
+        },
         {
           "version": "0.3.0",
           "releasedAt": "2026-10-18T19:14:52.749Z",
@@ -1175,7 +1218,7 @@
       "description": "Visual manager for WSL distributions (wsl) and WSL containers (wslc) on Windows.",
       "publisher": "w89588",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.3/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.4/icon.svg",
       "tags": [
         "wsl",
         "containers",
@@ -1188,11 +1231,25 @@
         "host.storage",
         "host.binary"
       ],
-      "source": "https://github.com/w89588/dbx-plugin-wsl/tree/25fd71b01ccc7597ef3e3005b9f587efd6eb2d88",
+      "source": "https://github.com/w89588/dbx-plugin-wsl/tree/v0.1.4",
       "homepage": "https://github.com/w89588/dbx-plugin-wsl",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.3",
+      "latestVersion": "0.1.4",
       "versions": [
+        {
+          "version": "0.1.4",
+          "releasedAt": "2026-11-02T02:54:31.346Z",
+          "releaseNotes": "# WSL 管理器 v0.1.4\r\n\r\n本版本为外部 MCP 工具声明明确的访问级别，支持在 DBX 中按需授权。\r\n\r\n## 变更\r\n\r\n- `wsl_connections`、`wsl_describe`、`wsl_read` 声明为只读；新增 `wsl_manage`，通过白名单提供常规发行版和容器管理以及诊断；原 `wsl_write` 声明为完全权限，用于任意命令、删除、配置修改及任务取消等操作。\r\n- `wsl_describe` 返回各方法所需权限及推荐工具。查询发行版详情和 `wsl.conf` 可能启动发行版，现需读写权限；日志跟随、事件订阅和任务取消仍需完全权限。\r\n- 常规写入入口拒绝白名单之外的方法及可能被命令行解释为选项的目标名称；只读入口继续拒绝有副作用的操作。启停可能中断服务，诊断可能探测指定主机或端口，应先确认具体操作。\r\n\r\n## 兼容性与授权\r\n\r\n- 新增权限声明需要 **DBX 0.6.59 或更新版本**。桌面端与独立 MCP 服务应使用匹配版本；旧客户端调用 `wsl_write` 需要完全权限。\r\n- 在 DBX「设置 → MCP Server → 能力」中启用插件并按需选择授权上限、启用工具。资源权限和客户端限制仍然适用；高风险调用可按宿主设置要求人工确认。\r\n- 仅支持 Windows x64；宿主权限仍为 `host.workbench`、`host.events`、`host.storage` 和 `host.binary`。原生 Sidecar 以当前用户身份运行，可执行命令、访问文件和网络。凭据及诊断边界见 [MCP 指南](https://github.com/w89588/dbx-plugin-wsl/blob/v0.1.4/docs/mcp.md)。\r\n\r\n## 验证与发布\r\n\r\n使用 Go 1.24.13 和插件 CLI 0.1.9 从干净标签构建，检查包的身份、版本、VCS 信息、大小与 SHA-256。GitHub Release 资产为未签名候选包，官方商店版本需由维护者审核签名。未在真实 DBX 桌面端完成安装、授权界面及外部 MCP 端到端验证。\r\n\r\n**完整变更：** [v0.1.3...v0.1.4](https://github.com/w89588/dbx-plugin-wsl/compare/v0.1.3...v0.1.4)",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.4/com.dbx.wsl-0.1.4-windows-x64.dbxp",
+              "sha256": "83da2e350f7555494f64c65f4ca0ce3b9453cbec6bc707df9b6261e101efcb88",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5826864
+            }
+          ]
+        },
         {
           "version": "0.1.3",
           "releasedAt": "2026-10-27T02:10:27.389Z",
@@ -2126,7 +2183,7 @@
       "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。内置 AI 助手（右侧常驻栏），可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型对笔记做分析、润色、续写与问答。",
       "publisher": "lwai",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.10/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.11/icon.svg",
       "tags": [
         "md",
         "notes",
@@ -2140,8 +2197,43 @@
       "source": "https://github.com/lukelwai/dbx-md-notes",
       "homepage": "https://github.com/lukelwai/dbx-md-notes",
       "license": "Apache-2.0",
-      "latestVersion": "0.8.10",
+      "latestVersion": "0.8.11",
       "versions": [
+        {
+          "version": "0.8.11",
+          "releasedAt": "2026-11-04T19:01:25.509Z",
+          "releaseNotes": "增加自动索引功能：打开应用时自动扫描存储目录，把磁盘上已有但索引里没有的 .md 笔记登记进来（只增不删）。说明：本版的 linux-x64 安装包未能上传到 release，因此本次只发布 darwin-arm64、darwin-x64、linux-arm64 和 windows-x64；Linux x64 用户会继续停留在 0.8.10，等补传资产后的下一版再恢复。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.11/com.lwai.mdnotes-0.8.11-darwin-arm64.dbxp",
+              "sha256": "4bcb612f4f94b4b3d6b0c0901723b993da43b33624f11cbdc8a6b05bc57f698c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5231592
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.11/com.lwai.mdnotes-0.8.11-darwin-x64.dbxp",
+              "sha256": "1e253b8c3f9d38762bc31d2b60412dd16588b0a126c7254130b25224a2ce89bf",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5561278
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.11/com.lwai.mdnotes-0.8.11-linux-arm64.dbxp",
+              "sha256": "fa92f61c7387acd24e3124e6f865b651f043df9a6b126c7d53e437ee86f64c8b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4971766
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.11/com.lwai.mdnotes-0.8.11-windows-x64.dbxp",
+              "sha256": "1cf0b3ac493f915d6e261074e9e5d7d32cab75b2fe1a360d44dae29040c49da2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5471811
+            }
+          ]
+        },
         {
           "version": "0.8.10",
           "releasedAt": "2026-10-23T03:26:54.549Z",
@@ -2317,7 +2409,7 @@
       "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。",
       "publisher": "lwai",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.19/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/icon.svg",
       "tags": [
         "todo",
         "task",
@@ -2329,8 +2421,50 @@
       "source": "https://github.com/lukelwai/dbx-todo",
       "homepage": "https://github.com/lukelwai/dbx-todo",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.19",
+      "latestVersion": "0.1.20",
       "versions": [
+        {
+          "version": "0.1.20",
+          "releasedAt": "2026-11-02T12:14:39.832Z",
+          "releaseNotes": "修复记录模式无法滚动查看问题，重构列表模式和记录模式的查看方式增加分页。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-darwin-arm64.dbxp",
+              "sha256": "d26931c9f91b8eb3155f2f5f260693131df8f460d288f535d7bb49cd20b62f50",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5600653
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-darwin-x64.dbxp",
+              "sha256": "cd67ce457d173914948c4b68ef62766f1431a42d9c8dd62529b0d7f5174b3f3c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5800326
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-linux-arm64.dbxp",
+              "sha256": "84a80811e33007379978448e6604db7cdb006828428dfbf0f56fa7a3582c684c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5288997
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-linux-x64.dbxp",
+              "sha256": "e979ae0fa386a5494144ddee0f96ee2efe40af9649ced6b7d57d873dee6bbeb9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5650138
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/com.lwai.todo-0.1.20-windows-x64.dbxp",
+              "sha256": "9dc2af77381b5ab5d49accad5fe4f765d7c462d88565241fc3af52bf28675a55",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5719866
+            }
+          ]
+        },
         {
           "version": "0.1.19",
           "releasedAt": "2026-10-21T05:07:53.275Z",
@@ -2434,6 +2568,188 @@
         "zh-CN": {
           "name": "待办 Todo",
           "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。"
+        }
+      }
+    },
+    {
+      "id": "com.mjj3610.ebook",
+      "name": "E-book Reader",
+      "description": "Read 18 e-book formats — EPUB, PDF, TXT, MOBI, AZW3, DOCX, comics and more — with paged, double-page or scrolling layouts, text-to-speech, translation, highlights and notes. Books and notes are written to a real folder on your disk through a bundled native sidecar.",
+      "publisher": "mjj3610",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.7/icon.svg",
+      "tags": [
+        "ebook",
+        "reader",
+        "epub",
+        "pdf",
+        "workbench"
+      ],
+      "permissions": [],
+      "source": "https://github.com/mjj3610/dbx-ebook/tree/v1.2.7",
+      "homepage": "https://github.com/mjj3610/dbx-ebook",
+      "license": "GPL-3.0-or-later",
+      "latestVersion": "1.2.7",
+      "versions": [
+        {
+          "version": "1.2.7",
+          "releasedAt": "2026-11-02T12:14:51.023Z",
+          "releaseNotes": "18 book formats, paged/double-page/scrolling layouts, text-to-speech, translation, highlights and notes, real on-disk library via native sidecar, in-app folder picker. v1.2.2: visible previous/next page buttons in every paged layout, working double-page spread, swipe-to-turn on touch screens, and imported PDFs now keep the file name on disk instead of the stale embedded title. v1.2.3: PDFs whose embedded fonts cannot be mapped are detected automatically and re-rendered with system fonts, so Chinese text is readable instead of showing the wrong characters. v1.2.4: paged layouts no longer push the paper off-screen — text now paginates inside a fixed page while the sheet stays put, so single and double page both show complete, readable pages for TXT and every other text format; double page actually splits the screen in two; code and command lines are no longer stretched by justification; the page adds proper inner margins. v1.2.5: Chinese PDFs whose embedded fonts cannot be mapped now recover both the page text and the document metadata (title/author) instead of showing mojibake; detection samples several pages so files with a clean cover no longer slip through. Translation and WebDAV backup now go through the bundled native sidecar, because the host sandbox blocks page-level fetch — so any OpenAI-compatible endpoint or self-hosted WebDAV server works, not just a hard-coded allow-list. The folder picker gains a real address bar (paste D://Books and press Enter), an \"open in file manager\" button, and a narrow-panel layout that no longer truncates folder names to a single character. The .dbxp now ships LICENSE, THIRD-PARTY-NOTICES.md and every third-party licence text, and all book HTML is sanitised by one strict allow-list before it is mounted. v1.2.6: selecting text in a PDF now works. The PDF text layer *is* the book container, so the old lookup (which searched for a child with that class) always came back empty: the selection toolbar never appeared, and neither highlights nor notes could be added to any PDF. Highlights also get their own style sheet for the transparent text layer, so the colour is actually visible over the rendered page, and saved highlights are redrawn when the document is reopened. v1.2.7: EPUB, TXT, FB2 and RTF get the same treatment. Their text lives in a Shadow DOM tree, and Chrome reports a selection made inside one as collapsed onto the host element, so the toolbar stayed hidden there as well. The reader now asks the shadow root for the real selection and takes the toolbar position from that same range, so selecting text works in every format.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.7/com.mjj3610.ebook-1.2.7-darwin-arm64.dbxp",
+              "sha256": "58695cb915098bb921bdaa4fbb8977d23498995d0aadbc60ba217983be4801bb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6116175
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.7/com.mjj3610.ebook-1.2.7-darwin-x64.dbxp",
+              "sha256": "852a8bcd02c2d894098a69231bbd276d58e995b42b8bc3bec7f16ad4f7db0767",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6323502
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.7/com.mjj3610.ebook-1.2.7-linux-arm64.dbxp",
+              "sha256": "206c9e0a44b0def624820ce2cbfa33ada2602669960cd7b3066edd6fd8e8d723",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6105729
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.7/com.mjj3610.ebook-1.2.7-linux-x64.dbxp",
+              "sha256": "55b87b8b1ec45e27c076785236e19e79dea091db4e4cb9feaedff096654d7593",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6388604
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.7/com.mjj3610.ebook-1.2.7-windows-x64.dbxp",
+              "sha256": "1340a0b17f1e93c961b7ceb0f5e8b87008fa62b2846b4ec946d5ac82cc9ad001",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6415474
+            }
+          ]
+        },
+        {
+          "version": "1.2.5",
+          "releasedAt": "2026-11-01T16:37:34.100Z",
+          "releaseNotes": "18 book formats, paged/double-page/scrolling layouts, text-to-speech, translation, highlights and notes, real on-disk library via native sidecar, in-app folder picker. v1.2.2: visible previous/next page buttons in every paged layout, working double-page spread, swipe-to-turn on touch screens, and imported PDFs now keep the file name on disk instead of the stale embedded title. v1.2.3: PDFs whose embedded fonts cannot be mapped are detected automatically and re-rendered with system fonts, so Chinese text is readable instead of showing the wrong characters. v1.2.4: paged layouts no longer push the paper off-screen — text now paginates inside a fixed page while the sheet stays put, so single and double page both show complete, readable pages for TXT and every other text format; double page actually splits the screen in two; code and command lines are no longer stretched by justification; the page adds proper inner margins. v1.2.5: Chinese PDFs whose embedded fonts cannot be mapped now recover both the page text and the document metadata (title/author) instead of showing mojibake; detection samples several pages so files with a clean cover no longer slip through. Translation and WebDAV backup now go through the bundled native sidecar, because the host sandbox blocks page-level fetch — so any OpenAI-compatible endpoint or self-hosted WebDAV server works, not just a hard-coded allow-list. The folder picker gains a real address bar (paste D://Books and press Enter), an \"open in file manager\" button, and a narrow-panel layout that no longer truncates folder names to a single character. The .dbxp now ships LICENSE, THIRD-PARTY-NOTICES.md and every third-party licence text, and all book HTML is sanitised by one strict allow-list before it is mounted.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.5/com.mjj3610.ebook-1.2.5-darwin-arm64.dbxp",
+              "sha256": "9a26ea5ed629e32238533bb4629156de43c1f069a73c02661c8b4cc4bf2210ed",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6116079
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.5/com.mjj3610.ebook-1.2.5-darwin-x64.dbxp",
+              "sha256": "d87d9368ed2608bbbf183828a0f39dcfba76b225e6f57dcab80716db90a4076f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6323403
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.5/com.mjj3610.ebook-1.2.5-linux-arm64.dbxp",
+              "sha256": "a8a7c3ecfae5f2891f8a8307e70dc9faf4fe42bc97ee19323fafe0423fdfd93d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6105627
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.5/com.mjj3610.ebook-1.2.5-linux-x64.dbxp",
+              "sha256": "9337a7dbc7362552c54dc5b009c44e4a21930cdd3b91e1e10996cb9701d007a5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6388513
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.ebook/1.2.5/com.mjj3610.ebook-1.2.5-windows-x64.dbxp",
+              "sha256": "b54f4ac73924b5ce6257f97f437ad019af221e1e97ddb447820cac7c706532e2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6415369
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "电子书阅读器",
+          "description": "支持 EPUB、PDF、TXT、MOBI、AZW3、DOCX、漫画等 18 种格式，单页 / 双页 / 滚动三种排版，可听书、翻译、划线与记笔记；通过随包提供的原生后端把书籍与笔记真正写入本机磁盘目录。"
+        }
+      }
+    },
+    {
+      "id": "com.mjj3610.mail",
+      "name": "DBX Mail",
+      "description": "Local-first mail workbench: multiple IMAP accounts, cached conversations, a rich composer, offline outbox and attachments kept on disk.",
+      "publisher": "mjj3610",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.mjj3610.mail/0.1.5/icon.svg",
+      "tags": [
+        "mail",
+        "email",
+        "imap",
+        "smtp",
+        "workbench"
+      ],
+      "permissions": [],
+      "source": "https://github.com/mjj3610/dbx-mail/tree/v0.1.5",
+      "homepage": "https://github.com/mjj3610/dbx-mail",
+      "license": "GPL-3.0-or-later",
+      "latestVersion": "0.1.5",
+      "versions": [
+        {
+          "version": "0.1.5",
+          "releasedAt": "2026-11-04T05:45:57.998Z",
+          "releaseNotes": "Local-first multi-account mail workbench that runs as a DBX plugin: IMAP sync, conversation view, rich composer, attachments written to a real folder on disk and an offline outbox. Filesystem work (saving attachments, .eml import/export, folder browsing, raw message cache) is done by the bundled Rust sidecar, so the plugin page itself has no file or network access. v0.1.5: native packages for four more targets. The sidecar is a prebuilt Rust binary, so every target has to be compiled on its own machine; releases are now built by CI on each platform's own runner (windows-x64, linux-x64, linux-arm64, darwin-x64, darwin-arm64) and this catalogue entry lists all five. There are no functional changes — the sources are identical to 0.1.4 apart from the version string. v0.1.4 is a security and licensing release. Quoted reply/forward bodies are now sanitised before they reach the composer — previously a malicious HTML mail could run inline handlers through the reply quote, which could then call the sidecar API; draft bodies and the final innerHTML assignment go through the same allow-list, and quoting replaces remote images with a text placeholder. The image proxy now re-validates every redirect hop instead of only the first URL, and the blocked ranges cover 100.64/10, 240/4, 198.18/15 and IPv4-mapped IPv6. Remote images and CSS background urls are neutralised before the HTML is attached, so opening a message issues no request at all until you press 显示图片. On the licensing side, LICENSE is restored to the verbatim FSF text (copyright belongs in NOTICE), and THIRD-PARTY-NOTICES now lists every dependency licence — including CDLA-Permissive-2.0 for webpki-roots, Unicode-3.0 for the ICU4X crates and Zlib for zlib-rs — with full texts under licenses/. v0.1.3: long messages scroll again — the workbench grid left its implicit row height to the content, so a tall body pushed the reader pane past the window; page-level styles that newsletters ship are no longer applied to the message container, so wide mails are no longer clipped horizontally; non-primary folders sync on open, and the empty state plus the header refresh button sync only the folder you are looking at. v0.1.0–v0.1.2: IMAP folder names are encoded as modified UTF-7 (RFC 3501) and an RFC 2971 ID is sent when the server advertises it, which fixes 163/126 answering SELECT with 'Unsafe Login'; remote images are blocked by default and fetched through the local sidecar as data URLs on request; mail <style> blocks are extracted and scoped to the message container so they cannot restyle the app; Tailwind preflight resets inside message bodies are undone element by element; dark mode strips hard-coded colours.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.mail/0.1.5/com.mjj3610.mail-0.1.5-darwin-arm64.dbxp",
+              "sha256": "5cb8784bb4cb4ad382cf20c354adc0ae2ca0e12fade64566c4731ac39ee3a866",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2422267
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.mail/0.1.5/com.mjj3610.mail-0.1.5-darwin-x64.dbxp",
+              "sha256": "62180c0dbbf980b7f9e2fdc82f77e688b1834028801caa9d35f6229429c055a0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2556994
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.mail/0.1.5/com.mjj3610.mail-0.1.5-linux-arm64.dbxp",
+              "sha256": "1d2beed16febf49c6ef561d11dcc84110a7e52087a82ce400f3bb4e5a6a747e4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2625332
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.mail/0.1.5/com.mjj3610.mail-0.1.5-linux-x64.dbxp",
+              "sha256": "c806685e35f29fd29d9378d6c192558314f2d28954db37ac914a086a26d03eba",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2688314
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.mail/0.1.5/com.mjj3610.mail-0.1.5-windows-x64.dbxp",
+              "sha256": "d80f587bb0b379bafe33694d37adcd96c6e885608e4576d2129ac9e70ae2cca9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2459776
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "DBX 邮件",
+          "description": "本地优先的多账户邮件工作台：IMAP 同步、会话归档、富文本撰写、附件与离线发件箱，邮件副本保存在本机。"
         }
       }
     },
@@ -2638,10 +2954,10 @@
     {
       "id": "com.object.browser",
       "name": "Object Storage",
-      "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), and multi-select batch delete / download.",
+      "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), transfer task center with failed-download retry, and multi-select batch delete / download / copy / move.",
       "publisher": "huangqiang",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.2.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.4.0/icon.svg",
       "tags": [
         "storage",
         "oss",
@@ -2656,11 +2972,25 @@
         "host.storage",
         "host.workbench"
       ],
-      "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.1.2",
+      "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.4.0",
       "homepage": "https://github.com/huangqiang008/dbx-object-storage",
       "license": "MIT",
-      "latestVersion": "1.2.0",
+      "latestVersion": "1.4.0",
       "versions": [
+        {
+          "version": "1.4.0",
+          "releasedAt": "2026-11-05T12:44:28.819Z",
+          "releaseNotes": "传输任务中心：批量下载/上传/删除/移动/复制结果统一记录并落盘本机（跨重启留存），失败任务展开逐 key 错误明细，下载类失败项一键重试并复刻原始落盘位置；分页只加载部分时可「扫描全部并排序」（上限 2 万条）保证排序结果完整；连接表单对齐宿主「新建连接」风格（双 tab、9 厂商预设、胶囊开关）；键盘快捷键（↑/↓ 移动高亮、Shift 连选、Ctrl+C/X/V、空格预览）；路径书签与最近访问；预览失败时面板内直接下载兜底；新云朵应用图标；修复快捷图标新开标签页复刻其他标签页连接内容、详情弹窗遮挡元数据编辑器两个问题。",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.object.browser/1.4.0/com.object.browser-1.4.0-windows-x64.dbxp",
+              "sha256": "9e3c7bcda66b4d257cc520f85bb55ad7e15ac43d68e378ad699b196239b71826",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9727064
+            }
+          ]
+        },
         {
           "version": "1.2.0",
           "releasedAt": "2026-10-27T16:23:48.903Z",
@@ -2721,7 +3051,7 @@
       "localizations": {
         "zh-CN": {
           "name": "对象存储",
-          "description": "通用对象存储浏览器：支持阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）。大目录服务端分页、分片上传、预签名分享、文件预览（Office / 3D / HTML / Markdown）、多选批量删除 / 下载。"
+          "description": "阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）通用对象存储浏览器。服务端分页 + 列表虚拟化、分片上传、预签名链接分享、文件预览（Office / 3D / HTML / Markdown）、传输任务中心（失败下载一键重试）、多选批量删除/下载/复制/移动。"
         }
       }
     },
@@ -2798,26 +3128,68 @@
     {
       "id": "com.polaris.api",
       "name": "polaris-api",
-      "description": "API asset library: import OpenAPI/Swagger and Postman Collections into a searchable catalog tree; browse method, path, parameters, request body and response schemas per endpoint; one-click cURL copy and Markdown export.",
+      "description": "API request client (sidecar): multi-tab, environment variables, cURL import/export, Params/Headers/Body editing; response views for table / object tree / path drill-down / field filtering. Requests are sent via a native Rust sidecar (reqwest) with no CORS / mixed-content / forbidden-header limits, equivalent to cURL.",
       "publisher": "misxzaiz",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.polaris.api/0.1.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.polaris.api/0.2.0/icon.svg",
       "tags": [
         "api",
-        "openapi",
-        "swagger",
-        "postman",
-        "documentation",
-        "debugging"
+        "http",
+        "request",
+        "curl",
+        "debugging",
+        "rest"
       ],
       "permissions": [
         "host.storage"
       ],
-      "source": "https://github.com/misxzaiz/polaris-api",
+      "source": "https://github.com/misxzaiz/polaris-api/tree/v0.2.0",
       "homepage": "https://github.com/misxzaiz/polaris-api",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.2",
+      "latestVersion": "0.2.0",
       "versions": [
+        {
+          "version": "0.2.0",
+          "releasedAt": "2026-11-01T04:28:31.296Z",
+          "releaseNotes": "Rebuild as a Rust sidecar HTTP client. v0.1.x was a universal frontend plugin positioned as an OpenAPI/Postman asset library — wrong direction, broken import modal (modalBg outside #root scope), mismatched styling, and cross-domain requests blocked by the sandbox CSP/CORS.\n\nv0.2.0 ports the relay-devkit api module to a Rust sidecar architecture: backend uses reqwest to send requests natively (no CORS/mixed-content/forbidden-header limits, equivalent to cURL); ui is a full HTTP client with multi-tab, env vars, cURL import/export, Params/Headers/Body editors, and response table/object-tree/path-drilldown/field-filter views.\n\nVerified: 44 smoke assertions, sidecar end-to-end (jsonplaceholder 200, httpbin POST with Cookie/Authorization forbidden headers preserved), browser integration (cancel button, cURL import, response views).",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.polaris.api/0.2.0/com.polaris.api-0.2.0-darwin-arm64.dbxp",
+              "sha256": "c07ac46b36623b8981ae341d16f2e22467001a25040a0144ed2d9523401a34bf",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1390113
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.polaris.api/0.2.0/com.polaris.api-0.2.0-darwin-x64.dbxp",
+              "sha256": "d4b469350f3c936bdb692bedafd5ee14b47d98288f726b0f5821ad7d99a1f9f0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1469983
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.polaris.api/0.2.0/com.polaris.api-0.2.0-linux-arm64.dbxp",
+              "sha256": "97d44407a3ddf5d971bcbdf7e3cb3b1817019aa6d1103c3c172e9d0850afbe31",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1477513
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.polaris.api/0.2.0/com.polaris.api-0.2.0-linux-x64.dbxp",
+              "sha256": "afc4ccac4befe6258109c79b7089390cd1635f785792601bfd082d8cccec4846",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1545133
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.polaris.api/0.2.0/com.polaris.api-0.2.0-windows-x64.dbxp",
+              "sha256": "f487ecef4a11c1995b61791a77e399abc7bcdf6dca8f06532e70b65d1ed5ead3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1505374
+            }
+          ]
+        },
         {
           "version": "0.1.2",
           "releasedAt": "2026-10-30T05:18:30.723Z",
@@ -2836,7 +3208,7 @@
       "localizations": {
         "zh-CN": {
           "name": "polaris-api",
-          "description": "API 资产库：从 OpenAPI/Swagger 与 Postman Collection 导入接口，整理为可搜索的目录树；浏览每个接口的方法、路径、参数、请求体与响应 Schema，一键复制 cURL、导出 Markdown。"
+          "description": "API 请求客户端（sidecar 版）：多 tab、环境变量、cURL 导入导出、Params/Headers/Body 编辑；响应支持表格 / 对象树 / 路径下钻 / 字段筛选。请求经原生 sidecar（reqwest）发送，无 CORS/混合内容/禁发头限制，等效 cURL。"
         }
       }
     },
@@ -3269,6 +3641,140 @@
         "en": {
           "name": "Translation",
           "description": "Translation — a multi-engine translation plugin with 9 engine types: an out-of-the-box free translation service (Bilibili's publicly deployed Index-Translate model, no signup and no API key), OpenAI-compatible LLMs (DeepSeek, Qwen, Zhipu, Kimi, Ollama, vLLM, …), local CLI proxies (claude / codex / custom), DeepL, Google, Baidu, Youdao, Alibaba Cloud and Tencent Cloud; with streaming output, translate-as-you-type, engine management and translation history."
+        }
+      }
+    },
+    {
+      "id": "com.xiaomao49.sql-dojo",
+      "name": "SQL Dojo",
+      "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 18.6 engine (PGlite 0.5.13) running locally. No server, no setup, works offline. Per-question hints, result-set based grading, and importable custom question banks validated by execution.",
+      "publisher": "xiaomao49",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.4/icon.svg",
+      "tags": [
+        "sql",
+        "postgresql",
+        "learning",
+        "leetcode",
+        "practice"
+      ],
+      "permissions": [
+        "host.storage"
+      ],
+      "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.4.4",
+      "homepage": "https://github.com/xiaomao49/dbx-sql-dojo",
+      "license": "MIT",
+      "latestVersion": "0.4.4",
+      "versions": [
+        {
+          "version": "0.4.4",
+          "releasedAt": "2026-11-04T05:33:33.843Z",
+          "releaseNotes": "0.4.4: question bank export (single bank or all), cancellable imports with per-question failure reasons, per-question SQL drafts, continuous list numbering with preserved scroll position, full PostgreSQL error detail/hint/position, screen-reader announcements and a keyboard-navigable question list, a 20000-row result cap, per-bank storage with automatic migration from the legacy single key, DML detection by result set with table and column comparison, and background engine startup. Local-only: no database connection, no network.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.4/com.xiaomao49.sql-dojo-0.4.4-universal.dbxp",
+              "sha256": "0dbd2458cebfed876566321cc111d32f8a1296d5847d493016a80990c6e90e8a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5352086
+            }
+          ]
+        },
+        {
+          "version": "0.4.3",
+          "releasedAt": "2026-11-03T14:41:57.145Z",
+          "releaseNotes": "0.4.3: custom question banks. Download a template from Question Bank Management, write your own questions, and import them as a file or pasted JSON. Every question is executed against the local PostgreSQL engine on import; statements that fail or return no rows are rejected with a per-question reason. The header gains a Custom filter for imported questions, and an empty Custom category shows a short guide with a button to the bank manager. Switching categories now also switches the question shown on the right, and the interface copy has been rewritten in formal wording. Local-only: no database connection, no network.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.3/com.xiaomao49.sql-dojo-0.4.3-universal.dbxp",
+              "sha256": "353a5aa4b6d6f2cc0073484f031f03d9d33dedae39b77b6da7ac54bfd937855e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5348445
+            }
+          ]
+        },
+        {
+          "version": "0.3.2",
+          "releasedAt": "2026-11-03T02:42:54.312Z",
+          "releaseNotes": "0.3.2: the bundled engine is PostgreSQL 18.6 (PGlite 0.5.13), not 16 — the workbench now shows the version the engine reports. Progress is stored through the host plugin storage (host.storage) instead of localStorage, which throws in the sandbox's opaque origin, with a visible session-only fallback. The package now ships LICENSE and THIRD_PARTY_NOTICES.md (PGlite Apache-2.0, PostgreSQL License, MIT question bank); engines.dbx is 0.6.19, the first host release with host.storage. A WebAssembly preflight explains in Chinese when the host sandbox blocks wasm. Local-only: no connection, no network.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.3.2/com.xiaomao49.sql-dojo-0.3.2-universal.dbxp",
+              "sha256": "69822a932d203db8a8e7376aef602b22510736020bbe5b3f98daf6e5026e48c5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5343581
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "SQL 练习场",
+          "description": "在 DBX 里练习力扣高频 SQL 50 题。内置真正的 PostgreSQL 18.6 引擎（PGlite 0.5.13），离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题；支持导入自定义题库，导入前逐题实际执行验证。"
+        }
+      }
+    },
+    {
+      "id": "com.xingxi.game",
+      "name": "AggressiveWar",
+      "description": "在 DBX 里征服了 SQL，为什么不来这里征服世界？27 个国家、随机地图、AI 对手，打开即见。局域网开房时会在本机监听端口（仅在你点「启动中继」后）。",
+      "publisher": "xingxi",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.xingxi.game/0.6.1/icon.svg",
+      "tags": [
+        "game",
+        "strategy",
+        "turn-based",
+        "conquest",
+        "lan"
+      ],
+      "permissions": [
+        "host.storage"
+      ],
+      "source": "https://github.com/chenjie1024/DBX-AggressiveWar/tree/v0.6.1",
+      "homepage": "https://github.com/chenjie1024/DBX-AggressiveWar",
+      "license": "MIT",
+      "latestVersion": "0.6.1",
+      "versions": [
+        {
+          "version": "0.6.1",
+          "releasedAt": "2026-11-03T14:43:01.908Z",
+          "releaseNotes": "0.6.1：伪装只在老板键下切换（修「失焦闪一下又变回游戏」「点一下就解锁」，并移除设置里的「进入游戏」按钮和「切回 DBX 时也保持伪装」）；SQL 编辑器软换行 + 光标对齐；联机消息积压改为断开重连、加入尝试每分钟限 5 次；面板显示房间码；防火墙自检降级为参考值；sidecar 改名 dbx-plugin-xingxi-game、包内附 LICENSE；新图标。若装过旧 id com.gongfawar.game，请先卸载再装本版。",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.xingxi.game/0.6.1/com.xingxi.game-0.6.1-windows-x64.dbxp",
+              "sha256": "f99527e25b2fe51379e48a0aef9504cd8317e867bd9caa4b5de46871a944b347",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 493583
+            }
+          ]
+        },
+        {
+          "version": "0.5.2",
+          "releasedAt": "2026-11-03T02:55:38.610Z",
+          "releaseNotes": "首个公开版本：27 国回合制征服、随机地图与 AI；伪装成 SQL 工作台（老板键 / 失焦自动切换）；本地局域网联机（内置中继 + 手机扫码加入）；存档自动保存。",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.xingxi.game/0.5.2/com.xingxi.game-0.5.2-windows-x64.dbxp",
+              "sha256": "716e7bdc784598fad546e717eae3206e226bd4b33e70a8ea29e5454414e32985",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 528446
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "AggressiveWar",
+          "description": "在 DBX 里征服了 SQL，为什么不来这里征服世界？27 个国家、随机地图、AI 对手，打开即见。局域网开房时会在本机监听端口（仅在你点「启动中继」后）。"
+        },
+        "en": {
+          "name": "AggressiveWar",
+          "description": "You've conquered SQL in DBX — why not conquer the world here? 27 nations, procedural maps, AI rivals. Opening a LAN room listens on a local port (only after you press \"Start relay\")."
         }
       }
     },
@@ -3914,7 +4420,7 @@
       "description": "Browse, search, and reuse local clipboard history (text, images, and file lists).",
       "publisher": "alan",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/icon.svg",
       "tags": [
         "clipboard",
         "productivity",
@@ -3923,11 +4429,53 @@
       "permissions": [
         "host.events"
       ],
-      "source": "https://github.com/allran/dbx-plugin-clipboard/tree/v0.1.1",
+      "source": "https://github.com/allran/dbx-plugin-clipboard/tree/v0.1.2",
       "homepage": "https://github.com/allran/dbx-plugin-clipboard",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-11-05T12:39:08.593Z",
+          "releaseNotes": "性能与稳定性优化：列表缩略图懒加载、剪贴板变更探测与增量同步；修复清空后无法重新收录、持久化失败回滚，以及图片指纹去重等问题。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-darwin-arm64.dbxp",
+              "sha256": "37bf74220378461047410697739e19c44ab2c8f73292c3da4f6746279e63ebbe",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 755557
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-darwin-x64.dbxp",
+              "sha256": "5b43fe37e6ca8b4b71112025de6a621ac908ab0a2033e73567fadbee0db644e3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 803517
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-linux-arm64.dbxp",
+              "sha256": "ccef9a8b0f534c29372db11b7c6242a2a1a59530d3f7bebe25cadb5ebe492c22",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 704963
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-linux-x64.dbxp",
+              "sha256": "d79959c4eb9f25e28e30f8493f43be50bcde543d73618af55b20b60c51c086fd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 739648
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-windows-x64.dbxp",
+              "sha256": "3814880b9e7d758ce89097fb4771540fc25956bcfa908891249402f60aa71764",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 602470
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-10-08T02:26:31.345Z",
@@ -4604,7 +5152,7 @@
       "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.91/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/icon.svg",
       "tags": [
         "files",
         "storage",
@@ -4621,8 +5169,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-files",
       "homepage": "https://github.com/jinpy666/dbx-plugin-files",
       "license": "MIT",
-      "latestVersion": "0.1.91",
+      "latestVersion": "0.1.92",
       "versions": [
+        {
+          "version": "0.1.92",
+          "releasedAt": "2026-11-02T03:06:11Z",
+          "releaseNotes": "Files Studio v0.1.92 正式版。相对 v0.1.91：多选与批量下载增强（表头全选三态复选框、行点击 Ctrl/Shift 多选、空白区框选多选、下载选中项支持目录/混选）；预览头部文件类型图标与打开方式下拉；目录树侧栏超长名撑开修复并支持拖拽宽度；内置 rclone 引擎升级 v1.75.2-dbx.1（上游安全修复为主）；stdio MCP 兼容 2026-07-28 与 2024-11-05 协议修订版（initialize 版本协商、server/discover 能力发现、成功结果 resultType，并补齐 schedule_create 参数说明）。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-darwin-arm64.dbxp",
+              "sha256": "cae102b45d27cb8251943e8de09bbf122892f44bdbf2c642765f1d9f8d7212e1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 39884940
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-darwin-x64.dbxp",
+              "sha256": "896d6cd4551372a3a3f9af5ddf5ea9b994123bc6c8d118da5ce360ff60835b1f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 42397291
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-linux-arm64.dbxp",
+              "sha256": "83f00a636f04f79a0aa25303a188c7962d553a720a21333ecfc9c86535012a0c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 36248670
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-linux-x64.dbxp",
+              "sha256": "339dc35c23db3b2f9bcaa8c0fa1409de5bc67a4db9244855c2017d605e93bf61",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 39193237
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.92/io.dbx.files-0.1.92-windows-x64.dbxp",
+              "sha256": "324099c02843331e211b6377961f0e1ce90f26c77354d7de6efb23e5c7f693e7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 38557665
+            }
+          ]
+        },
         {
           "version": "0.1.91",
           "releasedAt": "2026-10-18T00:47:41.800Z",
@@ -6082,7 +6672,7 @@
       "description": "Operate Apache Kafka from one DBX workspace: inspect topics, brokers, and consumer lag; search, stream, and produce messages with multi-channel filters and payload decoding; manage offsets, ACLs, and Schema Registry. Read-only by default, with guarded writes and 11 MCP tools for AI automation.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.54/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/icon.svg",
       "tags": [
         "kafka",
         "streaming",
@@ -6097,8 +6687,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-kafka",
       "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
       "license": "MIT",
-      "latestVersion": "0.1.54",
+      "latestVersion": "0.1.55",
       "versions": [
+        {
+          "version": "0.1.55",
+          "releasedAt": "2026-11-02T03:06:11Z",
+          "releaseNotes": "Kafka Studio v0.1.55 正式版。相对 v0.1.54：断网/断链自愈看守（web/docker 部署）——online/offline 即时信号 + connections/statuses 有界探测兜底、恢复后自动重开连接并重拉集群状态、控制面调用 15s 页面超时、boot 恢复窗过半主动重开连接；暗色主题 topic 树行底色修复；stdio MCP 兼容 2026-07-28 与 2024-11-05 协议修订版（initialize 版本协商、server/discover 能力发现、成功结果 resultType）。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-darwin-arm64.dbxp",
+              "sha256": "7b30f50d4b357ef61eaa85860352816b00e3d544b0e904012dd5492abf86a0f3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14366871
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-darwin-x64.dbxp",
+              "sha256": "721282f51e8faf61b374ced30dbf4655eecb4dcb6e0589516bea9509c4da9f23",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15255115
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-linux-arm64.dbxp",
+              "sha256": "fda4666dcbaa1b1a626c1b57aa9ddd7744faee0ca88c0998dd36c7b0d6622cec",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13544671
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-linux-x64.dbxp",
+              "sha256": "b3952b3cb5b76798eac13d47b92249334b45cba0b66682a38edafd2fdc493f0d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14750854
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.55/io.dbx.kafka-0.1.55-windows-x64.dbxp",
+              "sha256": "0966bf6d7474a5df28d8f1518eb2ec6e3ee6c2f85ea9729873ba988596fdbf33",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14857302
+            }
+          ]
+        },
         {
           "version": "0.1.54",
           "releasedAt": "2026-10-12T07:28:25.238Z",
@@ -6725,7 +7357,7 @@
       "description": "LDAP directory workbench for DBX: DN tree browsing, RFC 4515 search with saved presets, schema inspection, LDIF/CSV export, and guarded entry editing — enterprise auth from anonymous to Kerberos/GSSAPI, NTLM and DIGEST-MD5, over LDAP/StartTLS/LDAPS with mTLS, plus 8 MCP tools for AI automation.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.99/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/icon.svg",
       "tags": [
         "ldap",
         "directory",
@@ -6740,8 +7372,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ldap",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
       "license": "MIT",
-      "latestVersion": "0.1.99",
+      "latestVersion": "0.1.100",
       "versions": [
+        {
+          "version": "0.1.100",
+          "releasedAt": "2026-11-02T03:06:11Z",
+          "releaseNotes": "LDAP Studio v0.1.100 正式版。相对 v0.1.99：断网/断链自愈看守（web/docker 部署）——online/offline 即时信号 + whoami 有界探测兜底、恢复动作单飞（有界 reopen → 刷新目录树 → 重解 Base DN）、全部调用 15s 页面看门狗与 searchNext 分页挂起死锁有界化、sidecar not-connected 七语指引与树根重试按钮；目录树瞬时根加载失败自动重试；三轮代码审查修复（tls_verify fail-closed、分页护栏、向导双击防重、批量移动冲突预检/进度中止等）；stdio MCP 兼容 2026-07-28 与 2024-11-05 协议修订版（initialize 版本协商、server/discover 能力发现、成功结果 resultType）。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-darwin-arm64.dbxp",
+              "sha256": "60706959218328fcdc4cbb09b358d34ef33eb66850b2ae1af72619e192894faa",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6523082
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-darwin-x64.dbxp",
+              "sha256": "0671a264c36c6c1040dd5f1aeab7b628f7e46a139fcecbd165936b6ad277b7f8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6853874
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-linux-arm64.dbxp",
+              "sha256": "4aee4a3727916936d3ee73367d2f0f4a7dba4c0b9a1e4dd83f227332c0947b0d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6507637
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-linux-x64.dbxp",
+              "sha256": "4ca42c910de4157b95adc3cffaad6af6916fa36f4c511398caec2dda471b8fce",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6948551
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.100/io.dbx.ldap-0.1.100-windows-x64.dbxp",
+              "sha256": "7493914a85ddf732dc5844264bf45cce61513ff2d5e8ed773ed9993bbe502ee7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6993573
+            }
+          ]
+        },
         {
           "version": "0.1.99",
           "releasedAt": "2026-10-04T15:38:44.610Z",
@@ -8066,10 +8740,10 @@
     {
       "id": "io.dbx.screenshot",
       "name": "Screenshot",
-      "description": "Capture the screen and keep a local screenshot history in DBX. Saving can copy the image to the clipboard (overwrites current clipboard contents; toggle in settings).",
+      "description": "Capture the screen and keep a local screenshot history in DBX. Saving can copy the image to the clipboard (overwrites current clipboard contents; toggle in settings). On Linux, region capture needs gnome-screenshot, spectacle, or scrot on PATH.",
       "publisher": "alan",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/icon.svg",
       "tags": [
         "screenshot",
         "productivity",
@@ -8079,11 +8753,53 @@
         "host.binary",
         "host.events"
       ],
-      "source": "https://github.com/allran/dbx-plugin-screenshot/tree/v0.1.1",
+      "source": "https://github.com/allran/dbx-plugin-screenshot/tree/v0.1.2",
       "homepage": "https://github.com/allran/dbx-plugin-screenshot",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-11-03T14:44:03.582Z",
+          "releaseNotes": "0.1.2: multi-display picker; crop aspect ratios (free/16:9/4:3/1:1/custom) with in-bounds handles; fix crop undo losing the image; clearer Linux region-tool missing error; listing notes for Linux region CLI deps.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-darwin-arm64.dbxp",
+              "sha256": "d6400bc49102470884ddb07ce1f9fdad75060d20d0c22bba4952c17a79042a40",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 907770
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-darwin-x64.dbxp",
+              "sha256": "c92938bda1f3a8c1b7c6d00e755d4c1c1899bdf26789fa26379801eb9599772b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 966435
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-linux-arm64.dbxp",
+              "sha256": "21d51f7e65695894ba3088fb1fab6953a92b36dbe69aa7c74d16308469a70259",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1881638
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-linux-x64.dbxp",
+              "sha256": "022eb3290531117da1fc2f191deae07619d688e849f2ff745f86036e404cf862",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1957859
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/io.dbx.screenshot-0.1.2-windows-x64.dbxp",
+              "sha256": "49dcf2bc939f92a89fd36ff396db52b7a61857e3b954b1f6206f703e06bb3958",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 767448
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-10-29T17:05:01.767Z",
@@ -8130,7 +8846,7 @@
       "localizations": {
         "zh-CN": {
           "name": "截图",
-          "description": "截取屏幕并在 DBX 中保存本机截图历史。保存后可复制到剪贴板（会覆盖当前剪贴板内容，可在设置中关闭）。"
+          "description": "截取屏幕并在 DBX 中保存本机截图历史。保存后可复制到剪贴板（会覆盖当前剪贴板内容，可在设置中关闭）。Linux 区域截图需系统已安装 gnome-screenshot、spectacle 或 scrot。"
         }
       }
     },
@@ -10472,7 +11188,7 @@
       "description": "Open Windows remote desktops inside DBX with a native Rust (IronRDP) sidecar.",
       "publisher": "caizong10",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.7/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/icon.svg",
       "tags": [
         "rdp",
         "remote-desktop",
@@ -10483,11 +11199,46 @@
         "host.events",
         "host.binary"
       ],
-      "source": "https://github.com/caizong10/dbx-plugin-rdp/tree/v0.2.7",
+      "source": "https://github.com/caizong10/dbx-plugin-rdp/tree/v0.2.8",
       "homepage": "https://github.com/caizong10/dbx-plugin-rdp",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.7",
+      "latestVersion": "0.2.8",
       "versions": [
+        {
+          "version": "0.2.8",
+          "releasedAt": "2026-11-05T12:50:08.834Z",
+          "releaseNotes": "改进远程键鼠输入、焦点及输入法处理；改进连接提示、重连和分辨率调整；优化画面适配与清晰度，默认请求 32 位色深；剪贴板诊断日志默认关闭。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-darwin-arm64.dbxp",
+              "sha256": "58a7c036f2cdbf7213c6d4e20fe06b902be3616dd4cd9b5bf6d11520d1ef405a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3077602
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-darwin-x64.dbxp",
+              "sha256": "215c4b8f5819c95756a0299e07f3cbe169dea2676279aaa0e305994b0fdd0fe1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3318707
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-linux-x64.dbxp",
+              "sha256": "9dccf35ea98e092b708781fea773501f0fbaafffd944be2f9403a12417ef80ae",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3445763
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-windows-x64.dbxp",
+              "sha256": "bf2e48346768e2b48fc03872262e267ef926e4e51cf92a5e3ce2044c62efe47b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3430118
+            }
+          ]
+        },
         {
           "version": "0.2.7",
           "releasedAt": "2026-10-26T06:44:06.005Z",
@@ -10562,7 +11313,7 @@
       "localizations": {
         "zh-CN": {
           "name": "RDP 远程桌面",
-          "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本剪贴板双向同步、中文输入法，以及断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
+          "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本与文件剪贴板双向同步（Windows 文件/文件夹复制）、断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
         }
       }
     },
@@ -10852,10 +11603,10 @@
     {
       "id": "io.github.icefoxs.data-convert",
       "name": "Data Converter",
-      "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601 and relative) one value per line, with foldable results and copies that carry results only. A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG, a Data Stats page turns delimited text into count / sum / mean / max / min / distinct / standard deviation, optionally grouped by another column, with source line numbers in the preview and two-way caret syncing, click a cell to copy it, hide the columns you don't need, and big tables lazy-load in batches. A SQL Analysis page queries a pasted table in place through its own plain-JS offline engine (SELECT / WHERE / GROUP BY + HAVING / ORDER BY / DISTINCT / LIMIT, six aggregates and twelve scalar functions); Chinese column names complete as you type, clicking a preview header inserts the column, right-clicking a selection runs it, several statements run one at a time in their own tabs with a failing one never stopping the rest, and nothing ever runs on its own — data comes in as .csv / .tsv / .txt / .xlsx and statements as .sql, and a QR code page turns any text into a batch of codes (size, error correction, margin and colours adjustable, an icon in the middle, PNG or SVG export) or decodes pictures back into text. The navigation bar is yours to arrange: drag the thirteen entries into your own order, pin the ones you use most (they are the last to fall into More when the window narrows), keep the bar sticky, or move the whole thing into a left-hand column that folds away with one click; the setup is remembered along with the layout. Press Ctrl/Cmd + K to search the panel by Chinese, English, synonyms, full pinyin or initials — formats, conversion directions and the tabs inside each page included. Pure frontend, no backend, works offline.",
+      "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT — ideographic commas, full-width commas and pipes all split, whitespace cleaned up afterwards), select anything in any editor and right-click to encode, clean up, build SQL or copy it as a QR image — results go straight to the clipboard, .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601 and relative) one value per line, with foldable results and copies that carry results only. A CSV Editor page puts a CodeMirror source pane next to an editable grid: 100k rows without freezing, two-way cursor sync, in-cell editing plus a CodeMirror popup for long values, editable headers, row/column insert-delete-sort with undo, find & replace one at a time, the matching cell highlighted in the source, and a Markdown preview rendered as a real table; A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG, a Data Stats page turns delimited text into count / sum / mean / max / min / distinct / standard deviation, optionally grouped by another column, with source line numbers in the preview and two-way caret syncing, click a cell to copy it, hide the columns you don't need, and big tables lazy-load in batches, A SQL Analysis page queries a pasted table in place through its own plain-JS offline engine (SELECT / WHERE / GROUP BY + HAVING / ORDER BY / DISTINCT / LIMIT, six aggregates and twelve scalar functions); Chinese column names complete as you type, clicking a preview header inserts the column, right-clicking a selection runs it, several statements run one at a time in their own tabs with a failing one never stopping the rest, and nothing ever runs on its own — data comes in as .csv / .tsv / .txt / .xlsx and statements as .sql. and a QR code page turns any text into a batch of codes (size, error correction, margin and colours adjustable, an icon in the middle, PNG or SVG export) or decodes pictures back into text. The navigation bar is yours to arrange: drag the fourteen entries into your own order, pin the ones you use most (they are the last to fall into More when the window narrows), keep the bar sticky, or move the whole thing into a left-hand column that folds away with one click; the setup is remembered along with the layout. Press Ctrl/Cmd + K to search the panel by Chinese, English, synonyms, full pinyin or initials — formats, conversion directions and the tabs inside each page included. Pure frontend, no backend, works offline.",
       "publisher": "icefoxs",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.2.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.2.1/icon.svg",
       "tags": [
         "data-convert",
         "json",
@@ -10874,11 +11625,25 @@
         "host.storage",
         "host.workbench"
       ],
-      "source": "https://github.com/IceFoxs/dbx-plugin-data-convert/tree/v0.2.0",
+      "source": "https://github.com/IceFoxs/dbx-plugin-data-convert/tree/v0.2.1",
       "homepage": "https://github.com/IceFoxs/dbx-plugin-data-convert",
       "license": "MIT",
-      "latestVersion": "0.2.0",
+      "latestVersion": "0.2.1",
       "versions": [
+        {
+          "version": "0.2.1",
+          "releasedAt": "2026-11-01T04:52:45.129Z",
+          "releaseNotes": "**新增「CSV 编辑」页**：左边 CodeMirror 源码、右边可编辑表格，两块互相定位——点表格某行源码就跳到那条记录，源码里一挪光标表格跟着选中。十万行不卡（分块解析 + 只渲染视口内的行），单元格双击行内改、点右上角那枚铅笔开放大弹窗改（CodeMirror），表头也能改；行 / 列增删、按列升 / 降序、撤销重做都在工具栏上；支持搜索定位与「一个一个替换」；选中哪一格，源码里那颗格子就精确高亮、行号槽同时打一道竖条；Markdown 页签直接把结果渲染成表格。复制 / 下载改成右下角提示，不再靠工具栏末尾那行小字。\n\n**每个编辑器都有选区右键菜单**：在任一页的编辑器里选中一段、右键，就地转义（Base64 / URL / JSON / 换行，另有 HTML / Unicode / Hex / SQL / 正则）、整理（去空白、按行去重、排序、反转、JSON 美化 / 压缩、加行号、拼接成一行、大小写、包引号）、生成 SQL（`IN` / `NOT IN` / `INSERT`）或转成二维码图片；结果直接进剪贴板，**不改动你原本的内容**。剪贴板里的图片也能直接贴成 Base64 / Data URI / `<img>` 标签。JSON 美化走词法重排，18 位 ID 不会被 `Number` 改掉末位；菜单支持上下键、子菜单与 Esc，在菜单里滚动不会把它关掉。「SQL 分析」页维持原本的菜单，行为不变。\n\n写不进图片剪贴板的环境（DBX 宿主就是）里，二维码那一项会自动改叫「保存为 PNG 图片」并真的存文件，不会假装复制；能写位图的浏览器 / 预览里就是「复制为二维码图片」。\n\n**「SQL 转换」吃得下中文列表**：顿号「、」、全角逗号「，」、全角分号「；」、竖线（`|` / `｜`）都当分隔符，引号里的不拆；拆完每个值再清一遍空白——零宽字符、Excel 带来的不间断空格、全角空格、连续空白一并规整，去重才合得掉，值中间的普通空格保留（`New York` 不会变成 `NewYork`）。18~19 位长 ID 全程按字符串走，不丢精度。\n\n修掉二维码页卡片上「复制图片」按了完全没反应的问题：它调了一个不存在的函数，错误落在 async 里没人接，既不复制也不存盘、连提示都没有；现在与右键菜单共用同一条链路，真的复制或存文件。",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.icefoxs.data-convert/0.2.1/io.github.icefoxs.data-convert-0.2.1-universal.dbxp",
+              "sha256": "615385a6b7caa33a4fb11afd7029ede54054d33e426e702b464db33c907be9c7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1235596
+            }
+          ]
+        },
         {
           "version": "0.2.0",
           "releasedAt": "2026-10-30T05:24:42.752Z",
@@ -10981,15 +11746,15 @@
       "localizations": {
         "zh-CN": {
           "name": "数据转换",
-          "description": "在 DBX 工作台里一次转完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 种格式任意互转、JSONPath / jq 查询与 JSON Schema 校验（含从样例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正则 8 种转义互转、字节换算（B / KB / MB / GB / TB / PB，1000 与 1024 两套进制，精确值 ⇄ 人类可读，批量求和，以及 hex dump / 字节数组 / 二进制串）、批量文本生成 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 转 JSON，以及图片 ↔ Base64；「代码生成」页把一段 JSON 示例或一条 CREATE TABLE 直接变成 TypeScript / Go / Java / Python 模型；「JSON 转图表」页把一段 ECharts option（或一组数字）直接画成图，默认 700 × 400、宽高可改，可导出 PNG / SVG；「时间转换」页把时间戳与日期批量互转（本地时间 / `T` 分隔 / UTC / ISO 8601 / 相对时间任选，结果可折叠、可单个复制）；「数据统计」页把一段分隔符文本直接变成统计结果（计数 / 求和 / 均值 / 最值 / 去重 / 标准差，可再按某一列分组，预览表带原文行号、和光标双向定位，点单元格即复制，也能只显示想看的几列，大表按批懒加载）；「SQL 分析」页把一张表贴进来直接用 SQL 查它（自带纯 JS 离线引擎：`SELECT` / `WHERE` / `GROUP BY` + `HAVING` / `ORDER BY` / `DISTINCT` / `LIMIT`，6 个聚合与 12 个标量函数；中文列名自动补全、点预览表头即插列、选中右键即执行；多条语句逐条跑、各占一个页签、单条失败不影响其它，行号边点一下只跑那一条，`--` / `//` 注释都认（注释不算语句），结果上面写着跑的是哪一句，写过的语句关掉再回来还在，任何情况下都不会自己执行），数据可导入 .csv / .tsv / .txt / .json / .xlsx（JSON 数组直接摊成表，只取一级、嵌套值当一个单元格），语句可导入 .sql；「二维码转换」页把一段文本批量生成二维码（尺寸 / 纠错 / 边距 / 配色可调，中心可放图标，导出 PNG / SVG），也能把图片里的二维码解回文本。导航栏可以自己排：拖动调整十三个入口的顺序、把常用项置顶（窗口变窄时最后才被收进「更多」）、导航条吸顶，还能整列挪到左侧、用完一键收起，设置连同布局一起记住；`Ctrl/⌘ + K` 搜功能，中文 / 英文 / 近义词 / 全拼 / 首字母都能命中，各页的格式、转换方向与页内 tab（转图片 / INSERT / Schema 校验 / Go …）也搜得到。关掉再打开会回到上次用的那一项（某个功能页，或某一对转换格式）。纯前端、无后端、可离线运行。"
+          "description": "在 DBX 工作台里一次转完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 种格式任意互转、JSONPath / jq 查询与 JSON Schema 校验（含从样例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正则 8 种转义互转、字节换算（B / KB / MB / GB / TB / PB，1000 与 1024 两套进制，精确值 ⇄ 人类可读，批量求和，以及 hex dump / 字节数组 / 二进制串）、批量文本生成 SQL（IN / NOT IN / INSERT，顿号 / 全角逗号 / 竖线都当分隔符、拆完自动清空白）、每个编辑器里选中一段右键就能就地编码解码 / 整理 / 生成 SQL / 转成二维码图片（结果直接进剪贴板，不改原文）、.xlsx / .csv / .tsv 转 JSON，以及图片 ↔ Base64；「CSV 编辑」页把 CSV 摆成左边源码 + 右边可编辑表格：十万行不卡、两边互相定位，单元格能行内改也能放大弹窗改（CodeMirror），表头可改，行 / 列可增删排序、可撤销，搜索定位与「一个一个替换」，选中哪一格源码里那颗格子就亮起来，Markdown 页签直接渲染成表格；「代码生成」页把一段 JSON 示例或一条 CREATE TABLE 直接变成 TypeScript / Go / Java / Python 模型；「JSON 转图表」页把一段 ECharts option（或一组数字）直接画成图，默认 700 × 400、宽高可改，可导出 PNG / SVG；「时间转换」页把时间戳与日期批量互转（本地时间 / `T` 分隔 / UTC / ISO 8601 / 相对时间任选，结果可折叠、可单个复制）；「数据统计」页把一段分隔符文本直接变成统计结果（计数 / 求和 / 均值 / 最值 / 去重 / 标准差，可再按某一列分组，预览表带原文行号、和光标双向定位，点单元格即复制，也能只显示想看的几列，大表按批懒加载）；「SQL 分析」页把一张表贴进来直接用 SQL 查它（自带纯 JS 离线引擎：`SELECT` / `WHERE` / `GROUP BY` + `HAVING` / `ORDER BY` / `DISTINCT` / `LIMIT`，6 个聚合与 12 个标量函数；中文列名自动补全、点预览表头即插列、选中右键即执行；多条语句逐条跑、各占一个页签、单条失败不影响其它，行号边点一下只跑那一条，`--` / `//` 注释都认（注释不算语句），结果上面写着跑的是哪一句，写过的语句关掉再回来还在，任何情况下都不会自己执行），数据可导入 .csv / .tsv / .txt / .json / .xlsx（JSON 数组直接摊成表，只取一级、嵌套值当一个单元格），语句可导入 .sql；「二维码转换」页把一段文本批量生成二维码（尺寸 / 纠错 / 边距 / 配色可调，中心可放图标，导出 PNG / SVG），也能把图片里的二维码解回文本。导航栏可以自己排：拖动调整十四个入口的顺序、把常用项置顶（窗口变窄时最后才被收进「更多」）、导航条吸顶，还能整列挪到左侧、用完一键收起，设置连同布局一起记住；`Ctrl/⌘ + K` 搜功能，中文 / 英文 / 近义词 / 全拼 / 首字母都能命中，各页的格式、转换方向与页内 tab（转图片 / INSERT / Schema 校验 / Go …）也搜得到。关掉再打开会回到上次用的那一项（某个功能页，或某一对转换格式）。纯前端、无后端、可离线运行。"
         },
         "zh-TW": {
           "name": "資料轉換",
-          "description": "在 DBX 工作台裡一次轉完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 種格式任意互轉、JSONPath / jq 查詢與 JSON Schema 校驗（含從範例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正則 8 種轉義互轉、位元組換算（B / KB / MB / GB / TB / PB，1000 與 1024 兩套進位，精確值 ⇄ 人類可讀，批次加總，以及 hex dump / 位元組陣列 / 二進位字串）、批次文字產生 SQL（IN / NOT IN / INSERT）、.xlsx / .csv / .tsv 轉 JSON，以及圖片 ↔ Base64；「程式碼產生」頁把一段 JSON 範例或一條 CREATE TABLE 直接變成 TypeScript / Go / Java / Python 模型；「JSON 轉圖表」頁把一段 ECharts option（或一組數字）直接畫成圖，預設 700 × 400、寬高可改，可匯出 PNG / SVG；「時間轉換」頁把時間戳與日期批次互轉（本地時間 / `T` 分隔 / UTC / ISO 8601 / 相對時間任選，結果可摺疊、可單獨複製）；「資料統計」頁把一段分隔符文字直接變成統計結果（計數 / 求和 / 平均 / 最值 / 去重 / 標準差，可再按某一欄分組，預覽表帶原文行號、和游標雙向定位，點儲存格即複製，也能只顯示想看的幾欄，大表分批載入）；「SQL 分析」頁把一張表貼進來直接用 SQL 查它（自帶純 JS 離線引擎：`SELECT` / `WHERE` / `GROUP BY` + `HAVING` / `ORDER BY` / `DISTINCT` / `LIMIT`，6 個聚合與 12 個純量函式；中文欄名自動補全、點預覽表頭即插欄、選取後按右鍵即執行；多條語句逐條執行、各佔一個頁籤、單條失敗不影響其它，行號邊點一下只跑那一條，`--` / `//` 註解都認（註解不算語句），結果上面寫著跑的是哪一句，寫過的語句關掉再回來還在，任何情況下都不會自己執行），資料可匯入 .csv / .tsv / .txt / .json / .xlsx（JSON 陣列直接攤成表，只取一級、巢狀值當一個儲存格），語句可匯入 .sql；「二維碼轉換」頁把一段文字批次產生二維碼（尺寸 / 糾錯 / 邊距 / 配色可調，中心可放圖示，匯出 PNG / SVG），也能把圖片裡的二維碼解回文字。導覽列可以自己排：拖曳調整十三個入口的順序、把常用項置頂（視窗變窄時最後才會被收進「更多」）、導覽列吸頂，還能整列挪到左側、用完一鍵收起，設定連同版面一起記住；`Ctrl/⌘ + K` 搜功能，中文 / 英文 / 近義詞 / 全拼 / 首字母都能命中，各頁的格式、轉換方向與頁內 tab（轉圖片 / INSERT / Schema 校驗 / Go …）也搜得到。關掉再開啟會回到上次用的那一項（某個功能頁，或某一對轉換格式）。純前端、無後端、可離線執行。"
+          "description": "在 DBX 工作台裡一次轉完：JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML 共 13 種格式任意互轉、JSONPath / jq 查詢與 JSON Schema 校驗（含從範例反推 Schema）、URL / Base64 / HTML / JSON / Unicode / Hex / SQL / 正則 8 種轉義互轉、位元組換算（B / KB / MB / GB / TB / PB，1000 與 1024 兩套進位，精確值 ⇄ 人類可讀，批次加總，以及 hex dump / 位元組陣列 / 二進位字串）、批次文字產生 SQL（IN / NOT IN / INSERT，頓號 / 全形逗號 / 豎線都當分隔符、拆完自動清空白）、每個編輯器裡選取一段按右鍵就能就地編碼解碼 / 整理 / 產生 SQL / 轉成 QR 圖片（結果直接進剪貼簿，不改原文）、.xlsx / .csv / .tsv 轉 JSON，以及圖片 ↔ Base64；「CSV 編輯」頁把 CSV 擺成左邊原始碼 + 右邊可編輯表格：十萬行不卡、兩邊互相定位，儲存格能行內改也能放大彈窗改（CodeMirror），表頭可改，列 / 列可增刪排序、可復原，搜尋定位與「一個一個取代」，選中哪一格原始碼裡那顆格子就亮起來，Markdown 頁籤直接渲染成表格；「程式碼產生」頁把一段 JSON 範例或一條 CREATE TABLE 直接變成 TypeScript / Go / Java / Python 模型；「JSON 轉圖表」頁把一段 ECharts option（或一組數字）直接畫成圖，預設 700 × 400、寬高可改，可匯出 PNG / SVG；「時間轉換」頁把時間戳與日期批次互轉（本地時間 / `T` 分隔 / UTC / ISO 8601 / 相對時間任選，結果可摺疊、可單獨複製）；「資料統計」頁把一段分隔符文字直接變成統計結果（計數 / 求和 / 平均 / 最值 / 去重 / 標準差，可再按某一欄分組，預覽表帶原文行號、和游標雙向定位，點儲存格即複製，也能只顯示想看的幾欄，大表分批載入）；「SQL 分析」頁把一張表貼進來直接用 SQL 查它（自帶純 JS 離線引擎：`SELECT` / `WHERE` / `GROUP BY` + `HAVING` / `ORDER BY` / `DISTINCT` / `LIMIT`，6 個聚合與 12 個純量函式；中文欄名自動補全、點預覽表頭即插欄、選取後按右鍵即執行；多條語句逐條執行、各佔一個頁籤、單條失敗不影響其它，行號邊點一下只跑那一條，`--` / `//` 註解都認（註解不算語句），結果上面寫著跑的是哪一句，寫過的語句關掉再回來還在，任何情況下都不會自己執行），資料可匯入 .csv / .tsv / .txt / .json / .xlsx（JSON 陣列直接攤成表，只取一級、巢狀值當一個儲存格），語句可匯入 .sql；「二維碼轉換」頁把一段文字批次產生二維碼（尺寸 / 糾錯 / 邊距 / 配色可調，中心可放圖示，匯出 PNG / SVG），也能把圖片裡的二維碼解回文字。導覽列可以自己排：拖曳調整十四個入口的順序、把常用項置頂（視窗變窄時最後才會被收進「更多」）、導覽列吸頂，還能整列挪到左側、用完一鍵收起，設定連同版面一起記住；`Ctrl/⌘ + K` 搜功能，中文 / 英文 / 近義詞 / 全拼 / 首字母都能命中，各頁的格式、轉換方向與頁內 tab（轉圖片 / INSERT / Schema 校驗 / Go …）也搜得到。關掉再開啟會回到上次用的那一項（某個功能頁，或某一對轉換格式）。純前端、無後端、可離線執行。"
         },
         "en": {
           "name": "Data Converter",
-          "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT), .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG. A Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601, relative) one value per line with foldable results. A Data Stats page turns delimited text into count / sum / mean / max / min / distinct / standard deviation, optionally grouped by another column, with source line numbers in the preview and two-way caret syncing, click a cell to copy it, hide the columns you don't need, and big tables lazy-load in batches. A SQL Analysis page queries a pasted table in place through its own plain-JS offline engine (SELECT / WHERE / GROUP BY + HAVING / ORDER BY / DISTINCT / LIMIT, six aggregates and twelve scalar functions); Chinese column names complete as you type, clicking a preview header inserts the column, right-clicking a selection runs it, the gutter triangle re-runs a single statement, `--` and `//` comments are both understood (a comment is not a statement), the result says which statement produced it, and the statement you wrote is still there next time, several statements run one at a time in their own tabs with a failing one never stopping the rest, and nothing ever runs on its own — data comes in as .csv / .tsv / .txt / .xlsx and as .json (an array is flattened into a table, top level only, nested values become one cell) and statements as .sql. A QR code page turns any text into a batch of codes (size, error correction, margin and colours adjustable, an icon in the middle, PNG or SVG export) or decodes pictures back into text. The navigation bar is yours to arrange: drag the thirteen entries into your own order, pin the ones you use most (they are the last to fall into More when the window narrows), and keep the bar sticky; the setup is remembered along with the layout. Reopening lands on whatever you used last — a page, or a specific pair of formats. Pure frontend, no backend, works offline."
+          "description": "Convert anything in one DBX workbench panel: 13 formats (JSON / YAML / XML / Properties / TOML / INI / .env / CSV / TSV / Query / Headers / Cookie / HTML) in any combination, JSONPath / jq queries with JSON Schema validation, eight escape tools (URL / Base64 / HTML / JSON / Unicode / Hex / SQL / Regex), batch text to SQL (IN / NOT IN / INSERT — ideographic commas, full-width commas and pipes all split, whitespace cleaned up afterwards), select anything in any editor and right-click to encode, clean up, build SQL or copy it as a QR image — results go straight to the clipboard, .xlsx / .csv / .tsv to JSON, Image ⇄ Base64, and a Byte Converter (B/KB/MB/GB/TB/PB on both the 1000 and 1024 scales, exact ⇄ human readable, batch totals, plus hex dump / byte array / binary string). A CSV Editor page puts a CodeMirror source pane next to an editable grid: 100k rows without freezing, two-way cursor sync, in-cell editing plus a CodeMirror popup for long values, editable headers, row/column insert-delete-sort with undo, find & replace one at a time, the matching cell highlighted in the source, and a Markdown preview rendered as a real table; A Code Gen page turns a JSON sample or a CREATE TABLE into TypeScript / Go / Java / Python models, and a Chart page renders an ECharts option (or bare numbers) as a real chart, 700 x 400 by default with custom width and height, exported as PNG or SVG. A Time Converter turns timestamps and dates into each other (local, T-separated, UTC, ISO 8601, relative) one value per line with foldable results. A Data Stats page turns delimited text into count / sum / mean / max / min / distinct / standard deviation, optionally grouped by another column, with source line numbers in the preview and two-way caret syncing, click a cell to copy it, hide the columns you don't need, and big tables lazy-load in batches. A SQL Analysis page queries a pasted table in place through its own plain-JS offline engine (SELECT / WHERE / GROUP BY + HAVING / ORDER BY / DISTINCT / LIMIT, six aggregates and twelve scalar functions); Chinese column names complete as you type, clicking a preview header inserts the column, right-clicking a selection runs it, the gutter triangle re-runs a single statement, `--` and `//` comments are both understood (a comment is not a statement), the result says which statement produced it, and the statement you wrote is still there next time, several statements run one at a time in their own tabs with a failing one never stopping the rest, and nothing ever runs on its own — data comes in as .csv / .tsv / .txt / .xlsx and as .json (an array is flattened into a table, top level only, nested values become one cell) and statements as .sql. A QR code page turns any text into a batch of codes (size, error correction, margin and colours adjustable, an icon in the middle, PNG or SVG export) or decodes pictures back into text. The navigation bar is yours to arrange: drag the fourteen entries into your own order, pin the ones you use most (they are the last to fall into More when the window narrows), and keep the bar sticky; the setup is remembered along with the layout. Reopening lands on whatever you used last — a page, or a specific pair of formats. Pure frontend, no backend, works offline."
         }
       }
     },
@@ -11609,7 +12374,7 @@
       "description": "Manage Jenkins jobs, builds, console output, queue and nodes inside DBX, with stage view and MCP tools for AI clients.",
       "publisher": "nixing178",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.10.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.11.2/icon.svg",
       "tags": [
         "jenkins",
         "ci",
@@ -11622,11 +12387,53 @@
         "host.workbench",
         "host.events"
       ],
-      "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.3.0",
+      "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.11.2",
       "homepage": "https://github.com/nixing178/dbx-plugin-jenkins",
       "license": "Apache-2.0",
-      "latestVersion": "0.10.0",
+      "latestVersion": "0.11.2",
       "versions": [
+        {
+          "version": "0.11.2",
+          "releasedAt": "2026-11-02T12:08:14.315Z",
+          "releaseNotes": "Adds username and password sign-in as an alternative to API tokens: a new Authentication choice on the Jenkins connection (API token or username and password), password mode validated before contacting Jenkins, and a clearer 401 hint when the instance enforces two-factor authentication or token-only login. Also since 0.10.0: artifact downloads from the build detail page with per-file size, live progress and ETA, cancel, download-all and open-folder/copy-path (files are written by the sidecar with a 512 MiB cache and atomic replace), a configurable download directory, artifact archiving for freestyle jobs, full console log export streamed to disk instead of the 2 MB buffer, and a UI version badge; Active Choices parameters (static option list read from the job config.xml) render as checkbox groups or dropdowns with fallback to a text field; release builds now produce five targets (Windows x64, macOS Intel, macOS Apple Silicon, Linux x64, Linux ARM64). Connections without an authentication method keep using the API token. Password login does not work when Jenkins enforces 2FA, token-only login or SSO — use an API token instead.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.11.2/io.github.nixing178.jenkins-0.11.2-darwin-arm64.dbxp",
+              "sha256": "b6fd2df0b7f71d4080aa78f0d68ec6d944cb762758b2def57a1c80e4bc3b0c3a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4840928
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.11.2/io.github.nixing178.jenkins-0.11.2-darwin-x64.dbxp",
+              "sha256": "96b8dee84e11a130cce2af55c94b5e1e7b77ad2c9a582fd078a3daaeb7d98de7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5082915
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.11.2/io.github.nixing178.jenkins-0.11.2-linux-arm64.dbxp",
+              "sha256": "c5816f5dd402eeb8b6cfceedd04b068aa6a9544fe4cd30c180fde5d452499448",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4818774
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.11.2/io.github.nixing178.jenkins-0.11.2-linux-x64.dbxp",
+              "sha256": "38a2b4cebf8e47c78ce84ee8bcce7f38a948fb55e65d2e2d5f88b7dfe40ca548",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5146938
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.11.2/io.github.nixing178.jenkins-0.11.2-windows-x64.dbxp",
+              "sha256": "89803e5a6cc2491b89c48799bc92ac63eb45d80614b5f052ce8a2664bdb93446",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5184837
+            }
+          ]
+        },
         {
           "version": "0.10.0",
           "releasedAt": "2026-10-26T06:42:49.366Z",
@@ -11683,7 +12490,7 @@
       "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine.",
       "publisher": "oncemisery",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.1/icon.svg",
       "tags": [
         "music",
         "player",
@@ -11696,11 +12503,53 @@
         "host.storage",
         "host.workbench"
       ],
-      "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.0",
+      "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.1",
       "homepage": "https://github.com/onceMisery/hertz-studio",
       "license": "MIT",
-      "latestVersion": "0.3.0",
+      "latestVersion": "0.3.1",
       "versions": [
+        {
+          "version": "0.3.1",
+          "releasedAt": "2026-11-01T04:50:25Z",
+          "releaseNotes": "0.3.1：逐字歌词舞台改成连续弧线表演、活动字染色与换句星芒，三维舞台的歌词改用透明层不再盖住场景；局域网一起听的点播、头像与封面传输收口；星轨侧栏断点对齐 900px、主题前景对比度修正，队列存歌单即时回写。Standard 不编译商业音乐平台协议与账号，保留本地/WebDAV、Jamendo、ccMixter 与公开播客；桌面歌词/壁纸的原生组件不随本包分发，插件也不下载、不启动它。\n\n网络监听说明：插件默认不监听任何端口；仅当用户在“一起听”里主动开房且本机为房主时，sidecar 才在用户选定的那张本机网卡地址上绑定一个 TLS + WebSocket 端口（/v1/room，自签证书 + SHA-256 指纹钉扎，入房需邀请/审批），并在用户勾选“可被发现”时用 mDNS（_hertz-listen._tcp）广播房间元数据；独立二进制的 HTTP + token 层只绑 127.0.0.1。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.1/io.github.oncemisery.hertz-studio-0.3.1-darwin-arm64.dbxp",
+              "sha256": "f83e98c75c075bd24bdd959d98ae598d333593e679570320dd02b369df8289b4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13120264
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.1/io.github.oncemisery.hertz-studio-0.3.1-darwin-x64.dbxp",
+              "sha256": "a96705b2dcbe6cdcc9b21514f591adbc08319681f22562b4c725282d4034dff4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14202654
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.1/io.github.oncemisery.hertz-studio-0.3.1-linux-arm64.dbxp",
+              "sha256": "bae06efe2fd0a9363927118e9e91740a7568bb60168370bc5620064a442641e0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14706467
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.1/io.github.oncemisery.hertz-studio-0.3.1-linux-x64.dbxp",
+              "sha256": "a0ddf34a493147ee94a0c6d21fef1b62fb1ec853c5b418dd4d59fedba97ee37a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14976671
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.1/io.github.oncemisery.hertz-studio-0.3.1-windows-x64.dbxp",
+              "sha256": "f6d131752267487ff98c50377684e3846fabdc3dabe792b8a1da21fbba1bb5fa",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13173620
+            }
+          ]
+        },
         {
           "version": "0.3.0",
           "releasedAt": "2026-10-28T09:47:56.195Z",
@@ -14049,6 +14898,49 @@
       }
     },
     {
+      "id": "io.github.ztoooooo.print-tools",
+      "name": "Local Print Tools",
+      "description": "Local-only WYSIWYG workbench for laying out invoices, tickets and ID cards on A4, with perspective correction, watermark and PDF export. Nothing leaves the machine.",
+      "publisher": "ztoooooo",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.ztoooooo.print-tools/1.5.0/icon.svg",
+      "tags": [
+        "print",
+        "pdf",
+        "productivity",
+        "image"
+      ],
+      "permissions": [
+        "host.storage"
+      ],
+      "source": "https://github.com/ztoooooo/print-tools/tree/v1.5.0",
+      "homepage": "https://ztoooooo.github.io/print-tools/",
+      "license": "MIT",
+      "latestVersion": "1.5.0",
+      "versions": [
+        {
+          "version": "1.5.0",
+          "releasedAt": "2026-11-05T13:01:22.185Z",
+          "releaseNotes": "首个 DBX 插件版本：发票/车票/证件三工作区排版、OpenCV 透视矫正、自定义水印、PDF 导出，全程本地处理、零上传。",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.ztoooooo.print-tools/1.5.0/io.github.ztoooooo.print-tools-1.5.0-universal.dbxp",
+              "sha256": "8429dc7c6bfdb8473bf6856f7408f19c9b1ca782581b370273fd8694fd882f33",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5085320
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "票据打印",
+          "description": "纯前端本地票据打印工作台：发票 / 车票 / 证件排版、透视矫正、水印与 PDF 导出，文件不出本机。"
+        }
+      }
+    },
+    {
       "id": "link.htmlto.query-share",
       "name": "HTML To Link",
       "description": "Publish a query result, or a table's columns, indexes, foreign keys, and comments, as a read-only htmlto.link page. Database credentials stay in DBX.",
@@ -14279,18 +15171,32 @@
       "description": "Paste MyBatis DEBUG logs and fill parameters back into SQL to get executable SQL.",
       "publisher": "sunsugary",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/mybatis-sql-fill/0.1.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/mybatis-sql-fill/0.1.3/icon.svg",
       "tags": [
         "mybatis",
         "sql",
         "log"
       ],
       "permissions": [],
-      "source": "https://github.com/sunsugary/dbx-plugin-mybatis-sql-fill/tree/v0.1.2",
+      "source": "https://github.com/sunsugary/dbx-plugin-mybatis-sql-fill/tree/v0.1.3",
       "homepage": "https://github.com/sunsugary/dbx-plugin-mybatis-sql-fill",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.2",
+      "latestVersion": "0.1.3",
       "versions": [
+        {
+          "version": "0.1.3",
+          "releasedAt": "2026-11-02T12:06:41.490Z",
+          "releaseNotes": "v0.1.3: drop engines.dbx floor so beta/prerelease DBX builds can install; compatibility is declared via engines.host_api only.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/mybatis-sql-fill/0.1.3/mybatis-sql-fill-0.1.3-universal.dbxp",
+              "sha256": "38243e64c0ef5a36abbec92377e1bf32ba4bb1a076dc5d0f3f14b23269a718b0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9956
+            }
+          ]
+        },
         {
           "version": "0.1.2",
           "releasedAt": "2026-10-14T06:31:22.303Z",
