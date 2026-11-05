@@ -12831,6 +12831,76 @@
       }
     },
     {
+      "id": "io.github.seaways1015-afk.sqldecoder",
+      "name": "SQL Decoder",
+      "description": "Decrypt encrypted columns in DBX result grids with rules you keep on this computer: AES, SM4, Base64, or your own script.",
+      "publisher": "seaways1015-afk",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.seaways1015-afk.sqldecoder/0.1.0/icon.svg",
+      "tags": [
+        "decrypt",
+        "encryption",
+        "aes",
+        "sm4",
+        "sql"
+      ],
+      "permissions": [],
+      "source": "https://github.com/seaways1015-afk/dbx-plugin-sql-decoder/tree/v0.1.0",
+      "homepage": "https://github.com/seaways1015-afk/dbx-plugin-sql-decoder",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-11-05T16:33:58.737Z",
+          "releaseNotes": "Initial release.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.seaways1015-afk.sqldecoder/0.1.0/io.github.seaways1015-afk.sqldecoder-0.1.0-darwin-arm64.dbxp",
+              "sha256": "5fa2970dd93f0c6931c26e2c683e940fdc62a72d006cb2038560df72955383e3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2066447
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.seaways1015-afk.sqldecoder/0.1.0/io.github.seaways1015-afk.sqldecoder-0.1.0-darwin-x64.dbxp",
+              "sha256": "38c6a541776b4ae0e3e9f5ce6bf3e941e6747c0bdb8a80d8090e91a93059e3ca",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2162304
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.seaways1015-afk.sqldecoder/0.1.0/io.github.seaways1015-afk.sqldecoder-0.1.0-linux-arm64.dbxp",
+              "sha256": "48376d69f0cf3c96f3dc44ebccced04281a1db03a2c4d292f9a1e53fa3d32e03",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2083896
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.seaways1015-afk.sqldecoder/0.1.0/io.github.seaways1015-afk.sqldecoder-0.1.0-linux-x64.dbxp",
+              "sha256": "335cd8f5586a4b3fe1e7eb15ab65d5550abbc23dbd3b119700f4dac58c448bd3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2212630
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.seaways1015-afk.sqldecoder/0.1.0/io.github.seaways1015-afk.sqldecoder-0.1.0-windows-x64.dbxp",
+              "sha256": "3e861431abf99f1671042ad9fbc0243d5b2a307c9abd8271eb15f0f81ca341be",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2273739
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "SQL 解码器",
+          "description": "按你保存在本机的规则，解密 DBX 结果表格里的加密字段：AES、SM4、Base64，或你自己的脚本。"
+        }
+      }
+    },
+    {
       "id": "io.github.shi1993911119.kingbase-debugger",
       "name": "Kingbase PL/SQL Debugger",
       "description": "Debug KingbaseES routines in Oracle compatibility mode with breakpoints, stepping, variables, call stacks and OUT cursors. Chinese workbench UI; requires local Java 11+ and a user-provided Kingbase JDBC driver.",
