@@ -255,6 +255,11 @@
       "repository": "huangqiang008/dbx-markdown-editor",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "vyrnax/dbx-plugin-datasweep",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
