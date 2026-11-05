@@ -19,7 +19,7 @@
   "source": "https://github.com/xyun2028/dbx-eyecare/tree/v0.1.8",
   "homepage": "https://github.com/xyun2028/dbx-eyecare",
   "license": "MIT",
-  "releaseNotes": "支持 macOS 与 Linux，Intel、Apple Silicon、ARM64 都覆盖：Windows 走 GDI，macOS 走 CoreGraphics，Linux 走 X11/RandR。Wayland 会话下会明确说明不支持，不再让开关看起来生效了其实没改到屏幕。",
+  "releaseNotes": "当前商店包仅提供 Windows x64（macOS/Linux 的 Gamma 实现已编译通过但尚未实机验证，待验证后随版本补充）。Wayland 会话下会明确说明不支持，不再让开关看起来生效了其实没改到屏幕。",
   "localizations": {
     "zh-CN": {
       "name": "Eye眼",
