@@ -172,6 +172,11 @@
       "autoUpdate": true
     },
     {
+      "repository": "shi1993911119/dbx-kingbase-debugger",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
       "repository": "summery-yk/dbx-plugin-portainer",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
