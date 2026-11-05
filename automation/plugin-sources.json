@@ -260,6 +260,11 @@
       "repository": "vyrnax/dbx-plugin-datasweep",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "shi1993911119/dbx-kingbase-debugger",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
