@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "com.mjj3610.note",
+  "publisher": "mjj3610",
+  "version": "0.5.0",
+  "name": "Note Studio",
+  "description": "Local-first Markdown notes and quick records with AI assistance: file workspace, WYSIWYG editor, tags, full-text search and streaming chat.",
+  "icon": "https://raw.githubusercontent.com/mjj3610/dbx-note/v0.5.0/assets/plugin.svg",
+  "tags": [
+    "notes",
+    "markdown",
+    "editor",
+    "local-first",
+    "ai"
+  ],
+  "permissions": [],
+  "source": "https://github.com/mjj3610/dbx-note/tree/v0.5.0",
+  "homepage": "https://github.com/mjj3610/dbx-note",
+  "license": "GPL-3.0-or-later",
+  "releaseNotes": "First listing. Local-first Markdown workbench shipped as a DBX plugin: the workspace is a plain folder of .md files, edited WYSIWYG or in source mode. Records, tags, chats and settings live in the plugin's own SQLite database. The Rust sidecar owns every privileged operation (files, SQLite, AI HTTP/SSE, GDI screen capture with a native 1:1 region selector and in-place annotation, clipboard bitmaps, microphone recording), so the plugin page itself has no file or network access. v0.4.0 hardens the editor: in-note search and replace (Ctrl+F, match counter, replace all, match case), GitHub alert callouts (NOTE/TIP/IMPORTANT/WARNING/CAUTION) that round-trip through Markdown, a rebuilt table toolbar (row/column/align/delete groups, disabled states, active alignment) with tooltips that no longer cover the header, and a full shortcut set for tables, math, Mermaid and heading collapse. v0.5.0 rebuilds AI configuration around providers and models: several providers can coexist (presets for OpenAI, Gemini, DeepSeek, Qwen, Zhipu, Moonshot, SiliconFlow, OpenRouter, Groq, Together, xAI, Ollama, LM Studio), models are fetched from the provider with one click, each model carries its own type, temperature, top_p, max_tokens and streaming flag, and chat / image recognition / speech transcription can each point at a different model. Existing single-model settings are migrated automatically, and a chat-model fallback keeps recognition working for users who only configured one multimodal model. It also fixes cloud sync treating a workspace that merely sits inside another repository as an initialized repo, which could have committed notes into the parent repository.",
+  "localizations": {
+    "zh-CN": {
+      "name": "DBX 笔记",
+      "description": "本地优先的 Markdown 笔记与碎片记录工作台：文件工作区、可视化编辑器、标签、全文搜索与流式 AI 对话。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/mjj3610/dbx-note/releases/download/v0.5.0/com.mjj3610.note-0.5.0-darwin-arm64.dbxp",
+      "sha256": "1f51f6c98eda9b5e73d2cf6373b7b7e9a0353ed656a4a65ad547bb659049cb8a",
+      "size": 3541320
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/mjj3610/dbx-note/releases/download/v0.5.0/com.mjj3610.note-0.5.0-darwin-x64.dbxp",
+      "sha256": "599d3c2347daebf372d3584707a47bc6be879c17dc6221147b8614de3c014496",
+      "size": 3676895
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/mjj3610/dbx-note/releases/download/v0.5.0/com.mjj3610.note-0.5.0-linux-arm64.dbxp",
+      "sha256": "cbf2e55f1c6d5375912b70ea9fed47c74d2763e569ad0939df2329e243f44335",
+      "size": 3612345
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/mjj3610/dbx-note/releases/download/v0.5.0/com.mjj3610.note-0.5.0-linux-x64.dbxp",
+      "sha256": "adc194a40a5e93988a20df40982b9eea9ad3910286e2a784e48cacc3bf6f20f2",
+      "size": 3677408
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/mjj3610/dbx-note/releases/download/v0.5.0/com.mjj3610.note-0.5.0-windows-x64.dbxp",
+      "sha256": "acafb488fdfc2526df9c369286a7f4b48d485551baa655f2e642c37708742b8a",
+      "size": 3732593
+    }
+  ]
+}
