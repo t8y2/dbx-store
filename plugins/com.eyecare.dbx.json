@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "com.eyecare.dbx",
+  "publisher": "xyun2028",
+  "version": "0.1.6",
+  "name": "Eye眼",
+  "source": "https://github.com/xyun2028/dbx-eyecare/tree/v0.1.6",
+  "license": "MIT",
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/xyun2028/dbx-eyecare/releases/download/v0.1.6/com.eyecare.dbx-0.1.6-windows-x64.dbxp",
+      "sha256": "210c3b42115e612e5487b62b5df2aa6562cd229c0a68fa9f7610d28b5f011193",
+      "size": 743789
+    }
+  ]
+}
