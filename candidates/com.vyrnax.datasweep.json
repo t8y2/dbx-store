@@ -1,40 +1,41 @@
 {
-  "plugin": {
-    "id": "com.vyrnax.datasweep",
-    "name": "扫雷",
-    "description": "扫雷-经典益智小游戏",
-    "publisher": "vyrnax",
-    "version": "0.1.1",
-    "permissions": []
-  },
-  "artifacts": [
+  "schemaVersion": 1,
+  "id": "com.vyrnax.datasweep",
+  "publisher": "vyrnax",
+  "version": "0.1.1",
+  "name": "扫雷",
+  "description": "扫雷-经典益智小游戏",
+  "source": "https://github.com/vyrnax/dbx-plugin-datasweep",
+  "license": "Apache-2.0",
+  "icon": "https://raw.githubusercontent.com/vyrnax/dbx-plugin-datasweep/v0.1.1/assets/plugin.svg",
+  "targets": [
     {
       "target": "darwin-arm64",
-      "url": "com.vyrnax.datasweep-0.1.1-darwin-arm64.dbxp",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.1/com.vyrnax.datasweep-0.1.1-darwin-arm64.dbxp",
       "sha256": "1d348f7b15c27494f515d5ae6b9d328613154c30a22bb664966cdf3ff292e0b8",
       "size": 347967
     },
     {
       "target": "darwin-x64",
-      "url": "com.vyrnax.datasweep-0.1.1-darwin-x64.dbxp",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.1/com.vyrnax.datasweep-0.1.1-darwin-x64.dbxp",
       "sha256": "fa6b0beb75c4617c0c833a91f17bee50755398ee29a4fc1e684954bb97a9ac10",
       "size": 362581
     },
     {
       "target": "linux-arm64",
-      "url": "com.vyrnax.datasweep-0.1.1-linux-arm64.dbxp",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.1/com.vyrnax.datasweep-0.1.1-linux-arm64.dbxp",
       "sha256": "113dd601748af2930fab07bb7eae100b167ebdc5a93472181815b22849eff2b4",
       "size": 370380
     },
     {
       "target": "linux-x64",
-      "url": "com.vyrnax.datasweep-0.1.1-linux-x64.dbxp",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.1/com.vyrnax.datasweep-0.1.1-linux-x64.dbxp",
       "sha256": "e606ebc8183f4114f10d2d388be59b7cf4fcc5a3dcbafcc4373fc14c40310aba",
       "size": 388208
     },
     {
       "target": "windows-x64",
-      "url": "com.vyrnax.datasweep-0.1.1-windows-x64.dbxp",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.1/com.vyrnax.datasweep-0.1.1-windows-x64.dbxp",
       "sha256": "3ccd63c2ac613ffe15d4ff941281d763aa60a177b05fbd1568afe1fb3f06d03c",
       "size": 289901
     }
