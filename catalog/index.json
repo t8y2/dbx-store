@@ -2954,10 +2954,10 @@
     {
       "id": "com.object.browser",
       "name": "Object Storage",
-      "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), and multi-select batch delete / download.",
+      "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), transfer task center with failed-download retry, and multi-select batch delete / download / copy / move.",
       "publisher": "huangqiang",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.2.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.4.0/icon.svg",
       "tags": [
         "storage",
         "oss",
@@ -2972,11 +2972,25 @@
         "host.storage",
         "host.workbench"
       ],
-      "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.1.2",
+      "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.4.0",
       "homepage": "https://github.com/huangqiang008/dbx-object-storage",
       "license": "MIT",
-      "latestVersion": "1.2.0",
+      "latestVersion": "1.4.0",
       "versions": [
+        {
+          "version": "1.4.0",
+          "releasedAt": "2026-11-05T12:44:28.819Z",
+          "releaseNotes": "传输任务中心：批量下载/上传/删除/移动/复制结果统一记录并落盘本机（跨重启留存），失败任务展开逐 key 错误明细，下载类失败项一键重试并复刻原始落盘位置；分页只加载部分时可「扫描全部并排序」（上限 2 万条）保证排序结果完整；连接表单对齐宿主「新建连接」风格（双 tab、9 厂商预设、胶囊开关）；键盘快捷键（↑/↓ 移动高亮、Shift 连选、Ctrl+C/X/V、空格预览）；路径书签与最近访问；预览失败时面板内直接下载兜底；新云朵应用图标；修复快捷图标新开标签页复刻其他标签页连接内容、详情弹窗遮挡元数据编辑器两个问题。",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.object.browser/1.4.0/com.object.browser-1.4.0-windows-x64.dbxp",
+              "sha256": "9e3c7bcda66b4d257cc520f85bb55ad7e15ac43d68e378ad699b196239b71826",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9727064
+            }
+          ]
+        },
         {
           "version": "1.2.0",
           "releasedAt": "2026-10-27T16:23:48.903Z",
@@ -3037,7 +3051,7 @@
       "localizations": {
         "zh-CN": {
           "name": "对象存储",
-          "description": "通用对象存储浏览器：支持阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）。大目录服务端分页、分片上传、预签名分享、文件预览（Office / 3D / HTML / Markdown）、多选批量删除 / 下载。"
+          "description": "阿里云 OSS 与 S3 兼容服务（MinIO、AWS S3、R2、COS、OBS、B2 等）通用对象存储浏览器。服务端分页 + 列表虚拟化、分片上传、预签名链接分享、文件预览（Office / 3D / HTML / Markdown）、传输任务中心（失败下载一键重试）、多选批量删除/下载/复制/移动。"
         }
       }
     },
@@ -4406,7 +4420,7 @@
       "description": "Browse, search, and reuse local clipboard history (text, images, and file lists).",
       "publisher": "alan",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/icon.svg",
       "tags": [
         "clipboard",
         "productivity",
@@ -4415,11 +4429,53 @@
       "permissions": [
         "host.events"
       ],
-      "source": "https://github.com/allran/dbx-plugin-clipboard/tree/v0.1.1",
+      "source": "https://github.com/allran/dbx-plugin-clipboard/tree/v0.1.2",
       "homepage": "https://github.com/allran/dbx-plugin-clipboard",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-11-05T12:39:08.593Z",
+          "releaseNotes": "性能与稳定性优化：列表缩略图懒加载、剪贴板变更探测与增量同步；修复清空后无法重新收录、持久化失败回滚，以及图片指纹去重等问题。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-darwin-arm64.dbxp",
+              "sha256": "37bf74220378461047410697739e19c44ab2c8f73292c3da4f6746279e63ebbe",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 755557
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-darwin-x64.dbxp",
+              "sha256": "5b43fe37e6ca8b4b71112025de6a621ac908ab0a2033e73567fadbee0db644e3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 803517
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-linux-arm64.dbxp",
+              "sha256": "ccef9a8b0f534c29372db11b7c6242a2a1a59530d3f7bebe25cadb5ebe492c22",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 704963
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-linux-x64.dbxp",
+              "sha256": "d79959c4eb9f25e28e30f8493f43be50bcde543d73618af55b20b60c51c086fd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 739648
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.clipboard/0.1.2/io.dbx.clipboard-0.1.2-windows-x64.dbxp",
+              "sha256": "3814880b9e7d758ce89097fb4771540fc25956bcfa908891249402f60aa71764",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 602470
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-10-08T02:26:31.345Z",
