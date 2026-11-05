@@ -14898,6 +14898,49 @@
       }
     },
     {
+      "id": "io.github.ztoooooo.print-tools",
+      "name": "Local Print Tools",
+      "description": "Local-only WYSIWYG workbench for laying out invoices, tickets and ID cards on A4, with perspective correction, watermark and PDF export. Nothing leaves the machine.",
+      "publisher": "ztoooooo",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.ztoooooo.print-tools/1.5.0/icon.svg",
+      "tags": [
+        "print",
+        "pdf",
+        "productivity",
+        "image"
+      ],
+      "permissions": [
+        "host.storage"
+      ],
+      "source": "https://github.com/ztoooooo/print-tools/tree/v1.5.0",
+      "homepage": "https://ztoooooo.github.io/print-tools/",
+      "license": "MIT",
+      "latestVersion": "1.5.0",
+      "versions": [
+        {
+          "version": "1.5.0",
+          "releasedAt": "2026-11-05T13:01:22.185Z",
+          "releaseNotes": "首个 DBX 插件版本：发票/车票/证件三工作区排版、OpenCV 透视矫正、自定义水印、PDF 导出，全程本地处理、零上传。",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.ztoooooo.print-tools/1.5.0/io.github.ztoooooo.print-tools-1.5.0-universal.dbxp",
+              "sha256": "8429dc7c6bfdb8473bf6856f7408f19c9b1ca782581b370273fd8694fd882f33",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5085320
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "票据打印",
+          "description": "纯前端本地票据打印工作台：发票 / 车票 / 证件排版、透视矫正、水印与 PDF 导出，文件不出本机。"
+        }
+      }
+    },
+    {
       "id": "link.htmlto.query-share",
       "name": "HTML To Link",
       "description": "Publish a query result, or a table's columns, indexes, foreign keys, and comments, as a read-only htmlto.link page. Database credentials stay in DBX.",
