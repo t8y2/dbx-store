@@ -123,6 +123,14 @@
     "zh-CN": {
       "name": "SchemaSeed",
       "description": "根据数据库表结构快速生成确定性的测试数据，支持预览与 CSV / JSON / INSERT SQL 导出。"
+    },
+    "en": {
+      "name": "SchemaSeed",
+      "description": "Generate deterministic synthetic test data from the current DBX table schema, with preview and CSV / JSON / INSERT SQL export."
+    },
+    "zh": {
+      "name": "SchemaSeed",
+      "description": "根据数据库表结构快速生成确定性的测试数据，支持预览与 CSV / JSON / INSERT SQL 导出。"
     }
   }
 }

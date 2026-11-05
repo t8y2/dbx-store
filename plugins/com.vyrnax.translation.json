@@ -1,7 +1,7 @@
 {
   "id": "com.vyrnax.translation",
-  "name": "Translation 即时翻译",
-  "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 9 类引擎：开箱即用的免费翻译服务、OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。",
+  "name": "Translation",
+  "description": "Translation — a multi-engine translation plugin with 9 engine types: an out-of-the-box free translation service (Bilibili's publicly deployed Index-Translate model, no signup and no API key), OpenAI-compatible LLMs (DeepSeek, Qwen, Zhipu, Kimi, Ollama, vLLM, …), local CLI proxies (claude / codex / custom), DeepL, Google, Baidu, Youdao, Alibaba Cloud and Tencent Cloud; with streaming output, translate-as-you-type, engine management and translation history.",
   "publisher": "vyrnax",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/vyrnax/dbx-plugin-translation/v0.2.5/assets/plugin.svg",
@@ -195,6 +195,14 @@
     "en": {
       "name": "Translation",
       "description": "Translation — a multi-engine translation plugin with 9 engine types: an out-of-the-box free translation service (Bilibili's publicly deployed Index-Translate model, no signup and no API key), OpenAI-compatible LLMs (DeepSeek, Qwen, Zhipu, Kimi, Ollama, vLLM, …), local CLI proxies (claude / codex / custom), DeepL, Google, Baidu, Youdao, Alibaba Cloud and Tencent Cloud; with streaming output, translate-as-you-type, engine management and translation history."
+    },
+    "zh-CN": {
+      "name": "Translation 即时翻译",
+      "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 9 类引擎：开箱即用的免费翻译服务、OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。"
+    },
+    "zh": {
+      "name": "Translation 即时翻译",
+      "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 9 类引擎：开箱即用的免费翻译服务、OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。"
     }
   }
 }

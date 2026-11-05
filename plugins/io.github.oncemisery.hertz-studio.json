@@ -153,6 +153,14 @@
     "zh-CN": {
       "name": "Hertz Studio Standard",
       "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。"
+    },
+    "en": {
+      "name": "Hertz Studio Standard",
+      "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine."
+    },
+    "zh": {
+      "name": "Hertz Studio Standard",
+      "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。"
     }
   }
 }

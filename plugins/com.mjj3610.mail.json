@@ -65,6 +65,14 @@
     "zh-CN": {
       "name": "DBX 邮件",
       "description": "本地优先的多账户邮件工作台：IMAP 同步、会话归档、富文本撰写、附件与离线发件箱，邮件副本保存在本机。"
+    },
+    "en": {
+      "name": "DBX Mail",
+      "description": "Local-first mail workbench: multiple IMAP accounts, cached conversations, a rich composer, offline outbox and attachments kept on disk."
+    },
+    "zh": {
+      "name": "DBX 邮件",
+      "description": "本地优先的多账户邮件工作台：IMAP 同步、会话归档、富文本撰写、附件与离线发件箱，邮件副本保存在本机。"
     }
   }
 }

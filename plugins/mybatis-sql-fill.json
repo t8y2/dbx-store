@@ -49,6 +49,14 @@
     "zh-CN": {
       "name": "MyBatis SQL 还原",
       "description": "粘贴 MyBatis 日志，自动把参数回填到 SQL 中，得到可直接执行的 SQL。"
+    },
+    "en": {
+      "name": "MyBatis SQL Fill",
+      "description": "Paste MyBatis DEBUG logs and fill parameters back into SQL to get executable SQL."
+    },
+    "zh": {
+      "name": "MyBatis SQL 还原",
+      "description": "粘贴 MyBatis 日志，自动把参数回填到 SQL 中，得到可直接执行的 SQL。"
     }
   }
 }

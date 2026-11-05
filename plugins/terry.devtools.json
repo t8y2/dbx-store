@@ -227,6 +227,14 @@
     "zh-CN": {
       "name": "Dev 工具集",
       "description": "不到 200KB 的轻量开发者工具集，即开即用。沙箱离线运行，零网络权限。涵盖加解密、编解码、文本处理、数据转换、格式化、时间计算、网络运维、图像生成等众多高频工具；参数自动记忆，配置可随 DBX 跨端无缝同步。"
+    },
+    "en": {
+      "name": "Dev Tools",
+      "description": "A lightweight dev toolset under 200KB — instant to use. Sandboxed and offline with zero network access. High-frequency tools for crypto, encoding, text, data conversion, formatting, time, networking and image generation; inputs and options are remembered and sync seamlessly across devices via DBX."
+    },
+    "zh": {
+      "name": "Dev 工具集",
+      "description": "不到 200KB 的轻量开发者工具集，即开即用。沙箱离线运行，零网络权限。涵盖加解密、编解码、文本处理、数据转换、格式化、时间计算、网络运维、图像生成等众多高频工具；参数自动记忆，配置可随 DBX 跨端无缝同步。"
     }
   }
 }

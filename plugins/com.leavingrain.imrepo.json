@@ -416,6 +416,14 @@
     "zh-CN": {
       "name": "IMREPO",
       "description": "在同一个工作台里浏览、管理和检查 OCI / Harbor 容器镜像仓库：项目与命名空间导航、Tag 重命名与删除、镜像层逐层解析、Trivy 漏洞报告、总览图表与多架构结构展示。"
+    },
+    "en": {
+      "name": "IMREPO",
+      "description": "Browse, manage and inspect OCI / Harbor container registries from a single workbench: project and namespace navigation, tag rename and delete, per-layer size analysis, Trivy CVE reports, registry-wide charts and multi-arch breakdowns."
+    },
+    "zh": {
+      "name": "IMREPO",
+      "description": "在同一个工作台里浏览、管理和检查 OCI / Harbor 容器镜像仓库：项目与命名空间导航、Tag 重命名与删除、镜像层逐层解析、Trivy 漏洞报告、总览图表与多架构结构展示。"
     }
   }
 }

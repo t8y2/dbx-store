@@ -152,6 +152,14 @@
     "zh-CN": {
       "name": "Modbus TCP",
       "description": "读写 PLC、网关与远程 IO 上的 Modbus TCP 寄存器，连接你填写的 host:port（默认 502），可查看每次读写的原始 TX/RX 报文。"
+    },
+    "en": {
+      "name": "Modbus TCP",
+      "description": "Read and write Modbus TCP registers on PLCs, gateways and remote IO at the host and port you enter (502 by default), down to the raw TX/RX frames of every request."
+    },
+    "zh": {
+      "name": "Modbus TCP",
+      "description": "读写 PLC、网关与远程 IO 上的 Modbus TCP 寄存器，连接你填写的 host:port（默认 502），可查看每次读写的原始 TX/RX 报文。"
     }
   }
 }

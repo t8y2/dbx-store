@@ -122,6 +122,14 @@
     "zh-CN": {
       "name": "DBX Plan Detective",
       "description": "分析 DBX Estimated Plan，提供结构化解析、执行计划树可视化、确定性诊断与热点定位。"
+    },
+    "en": {
+      "name": "DBX Plan Detective",
+      "description": "Analyze DBX Estimated Plans with structured parsing, plan-tree visualization, deterministic findings, and hotspot detection."
+    },
+    "zh": {
+      "name": "DBX Plan Detective",
+      "description": "分析 DBX Estimated Plan，提供结构化解析、执行计划树可视化、确定性诊断与热点定位。"
     }
   }
 }

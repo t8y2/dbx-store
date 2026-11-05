@@ -36,6 +36,14 @@
     "zh-CN": {
       "name": "DouDB · 斗地主",
       "description": "三人/四人斗地主，支持电脑补位、局域网对战、经典与数据库主题切换，以及独立皮肤、音效和背景音乐。"
+    },
+    "en": {
+      "name": "DouDB",
+      "description": "Dou Dizhu card game with 3- and 4-player modes, computer opponents, LAN rooms, and switchable classic/database themes."
+    },
+    "zh": {
+      "name": "DouDB · 斗地主",
+      "description": "三人/四人斗地主，支持电脑补位、局域网对战、经典与数据库主题切换，以及独立皮肤、音效和背景音乐。"
     }
   }
 }

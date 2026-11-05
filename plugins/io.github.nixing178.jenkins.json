@@ -111,6 +111,14 @@
     "zh-CN": {
       "name": "Jenkins 管理台",
       "description": "在 DBX 内管理 Jenkins 任务、构建、控制台日志、队列与节点，支持阶段视图与面向 AI 客户端的 MCP 工具。"
+    },
+    "en": {
+      "name": "Jenkins Console",
+      "description": "Manage Jenkins jobs, builds, console output, queue and nodes inside DBX, with stage view and MCP tools for AI clients."
+    },
+    "zh": {
+      "name": "Jenkins 管理台",
+      "description": "在 DBX 内管理 Jenkins 任务、构建、控制台日志、队列与节点，支持阶段视图与面向 AI 客户端的 MCP 工具。"
     }
   }
 }

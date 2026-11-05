@@ -70,6 +70,14 @@
     "zh-CN": {
       "name": "Agent Hub",
       "description": "Agent 工具中心：扫描 Claude Code、Codex、Qoder、Trae、WorkBuddy、Pi，支持 Skills 导入、多端同步、漂移检测、更新检查和 MCP 配置管理。"
+    },
+    "en": {
+      "name": "Agent Hub",
+      "description": "Cross-agent local Skills and MCP manager: scan Claude Code, Codex, Qoder, Trae, WorkBuddy and Pi; install skills from GitHub or archives; manage MCP server configs."
+    },
+    "zh": {
+      "name": "Agent Hub",
+      "description": "Agent 工具中心：扫描 Claude Code、Codex、Qoder、Trae、WorkBuddy、Pi，支持 Skills 导入、多端同步、漂移检测、更新检查和 MCP 配置管理。"
     }
   }
 }

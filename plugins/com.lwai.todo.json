@@ -1,7 +1,7 @@
 {
   "id": "com.lwai.todo",
-  "name": "待办 Todo",
-  "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。",
+  "name": "Todo",
+  "description": "A lightweight Todo plugin for grouping and managing tasks, with priorities, start and end times, subtasks and milestones, completion progress bars, and list and calendar views.",
   "publisher": "lwai",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/lukelwai/dbx-todo/0.1.20/assets/plugin.svg",
@@ -161,6 +161,14 @@
   ],
   "localizations": {
     "zh-CN": {
+      "name": "待办 Todo",
+      "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。"
+    },
+    "en": {
+      "name": "Todo",
+      "description": "A lightweight Todo plugin for grouping and managing tasks, with priorities, start and end times, subtasks and milestones, completion progress bars, and list and calendar views."
+    },
+    "zh": {
       "name": "待办 Todo",
       "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。"
     }

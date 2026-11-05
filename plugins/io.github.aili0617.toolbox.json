@@ -351,6 +351,10 @@
     "az": {
       "name": "DBX Alətlər Qutusu",
       "description": "Məlumat çevirmə, kodlaşdırma, formatlama, mətn və şəkil emalı, kriptoqrafiya və şifrəli açar anbarı üçün yerli tərtibatçı alətləri."
+    },
+    "en": {
+      "name": "DBX Toolbox",
+      "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally."
     }
   }
 }

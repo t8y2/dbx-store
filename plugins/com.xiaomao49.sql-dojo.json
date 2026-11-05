@@ -67,6 +67,14 @@
     "zh-CN": {
       "name": "SQL 练习场",
       "description": "在 DBX 里练习力扣高频 SQL 50 题。内置真正的 PostgreSQL 18.6 引擎（PGlite 0.5.13），离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题；支持导入自定义题库，导入前逐题实际执行验证。"
+    },
+    "en": {
+      "name": "SQL Dojo",
+      "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 18.6 engine (PGlite 0.5.13) running locally. No server, no setup, works offline. Per-question hints, result-set based grading, and importable custom question banks validated by execution."
+    },
+    "zh": {
+      "name": "SQL 练习场",
+      "description": "在 DBX 里练习力扣高频 SQL 50 题。内置真正的 PostgreSQL 18.6 引擎（PGlite 0.5.13），离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题；支持导入自定义题库，导入前逐题实际执行验证。"
     }
   }
 }

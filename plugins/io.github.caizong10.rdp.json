@@ -95,6 +95,14 @@
     "zh-CN": {
       "name": "RDP 远程桌面",
       "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本剪贴板双向同步、中文输入法，以及断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
+    },
+    "en": {
+      "name": "RDP Remote Desktop",
+      "description": "Open Windows remote desktops inside DBX with a native Rust (IronRDP) sidecar."
+    },
+    "zh": {
+      "name": "RDP 远程桌面",
+      "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本剪贴板双向同步、中文输入法，以及断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
     }
   }
 }

@@ -66,6 +66,14 @@
     "zh-CN": {
       "name": "AlertManage",
       "description": "Alertmanager 告警管理插件：告警查看与处理、静默规则、通知与路由、状态与配置。"
+    },
+    "en": {
+      "name": "AlertManage",
+      "description": "Alertmanager operations workbench: alert triage, silences, notification routing, status and configuration."
+    },
+    "zh": {
+      "name": "AlertManage",
+      "description": "Alertmanager 告警管理插件：告警查看与处理、静默规则、通知与路由、状态与配置。"
     }
   }
 }

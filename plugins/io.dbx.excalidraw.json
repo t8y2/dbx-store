@@ -364,6 +364,14 @@
     "zh-CN": {
       "name": "Excalidraw Studio",
       "description": "内嵌于 DBX 的本地优先画图工作台：Excalidraw 画布与 SQL 工作流打通，结果集和执行计划可以直接铺到画布上批注，也能一键交给内置 AI 解读；图表以 .excalidraw 文件保存在本地。"
+    },
+    "en": {
+      "name": "Excalidraw Studio",
+      "description": "A local-first Excalidraw workspace built into DBX: sketch diagrams and flowcharts, drop SQL result grids or estimated execution plans onto the canvas to annotate, and hand any canvas to the built-in AI panel; everything is stored as .excalidraw files on your machine."
+    },
+    "zh": {
+      "name": "Excalidraw Studio",
+      "description": "内嵌于 DBX 的本地优先画图工作台：Excalidraw 画布与 SQL 工作流打通，结果集和执行计划可以直接铺到画布上批注，也能一键交给内置 AI 解读；图表以 .excalidraw 文件保存在本地。"
     }
   }
 }

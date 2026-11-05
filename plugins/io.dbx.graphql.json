@@ -65,6 +65,14 @@
     "zh-CN": {
       "name": "GraphQL",
       "description": "GraphQL 客户端：查询编辑器、Schema 文档与历史。"
+    },
+    "en": {
+      "name": "GraphQL",
+      "description": "GraphQL client for DBX: query editor, schema docs, and history."
+    },
+    "zh": {
+      "name": "GraphQL",
+      "description": "GraphQL 客户端：查询编辑器、Schema 文档与历史。"
     }
   }
 }

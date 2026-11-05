@@ -55,6 +55,14 @@
     "zh-CN": {
       "name": "GitLab 管理台",
       "description": "在 DBX 内浏览 GitLab 项目与代码、评审合并请求、查看流水线并处理 Issue。"
+    },
+    "en": {
+      "name": "GitLab Console",
+      "description": "Browse projects and code, review merge requests, watch pipelines and handle issues inside DBX."
+    },
+    "zh": {
+      "name": "GitLab 管理台",
+      "description": "在 DBX 内浏览 GitLab 项目与代码、评审合并请求、查看流水线并处理 Issue。"
     }
   }
 }

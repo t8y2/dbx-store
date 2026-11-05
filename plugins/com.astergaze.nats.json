@@ -68,6 +68,14 @@
     "zh-CN": {
       "name": "NATS",
       "description": "管理 NATS 服务器：JetStream 流、消费者与消息、键值存储、对象存储、服务、发布、请求-响应和实时订阅。"
+    },
+    "en": {
+      "name": "NATS",
+      "description": "Manage NATS servers: JetStream streams, consumers and messages, key-value buckets, object stores, services, publish, request-reply and live subscriptions."
+    },
+    "zh": {
+      "name": "NATS",
+      "description": "管理 NATS 服务器：JetStream 流、消费者与消息、键值存储、对象存储、服务、发布、请求-响应和实时订阅。"
     }
   }
 }

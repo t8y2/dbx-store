@@ -74,6 +74,14 @@
     "zh-CN": {
       "name": "DocLite 文档转换",
       "description": "文档转换 + 数据字典：把 Word、PDF、PPT、Excel、CSV、EPUB 等文档转为 Markdown 与结构化 JSON，转换结果可另存为 Word 文档；也可从 DBX 已连接数据库只读导出表结构为 Markdown 或 Word；扫描版 PDF 可选接入 MinerU 或百度 OCR。"
+    },
+    "en": {
+      "name": "DocLite",
+      "description": "Convert Word, PDF, PowerPoint, Excel, CSV, EPUB and more into clean Markdown and structured Document Model JSON, save the result as a Word document, and export Markdown data dictionaries from databases already connected in DBX. Optional cloud OCR for scanned PDFs."
+    },
+    "zh": {
+      "name": "DocLite 文档转换",
+      "description": "文档转换 + 数据字典：把 Word、PDF、PPT、Excel、CSV、EPUB 等文档转为 Markdown 与结构化 JSON，转换结果可另存为 Word 文档；也可从 DBX 已连接数据库只读导出表结构为 Markdown 或 Word；扫描版 PDF 可选接入 MinerU 或百度 OCR。"
     }
   }
 }

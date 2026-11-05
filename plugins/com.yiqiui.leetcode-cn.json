@@ -1,7 +1,7 @@
 {
   "id": "com.yiqiui.leetcode-cn",
-  "name": "LeetCode 刷题",
-  "description": "在 DBX 插件中心登录力扣（leetcode.cn）账号，按官方分类与标签浏览题库、排序与筛选、收藏题目、查看每日一题与学习计划，并选择语言编写代码运行 / 提交判题。",
+  "name": "LeetCode Practice",
+  "description": "Sign in to leetcode.cn inside the DBX plugin center, browse the problemset with the official category tabs and topic tags, sort and filter, favourite questions, see the daily question and study plans, then write code and run or submit it.",
   "publisher": "yiqiui",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/yiqiui/dbx-plugin-leetcode-cn/v0.3.10/assets/plugin.svg",

@@ -81,6 +81,14 @@
     "zh-CN": {
       "name": "棋牌小馆",
       "description": "一间线上棋牌小馆：对弈中国象棋与五子棋，可开房、观战。"
+    },
+    "en": {
+      "name": "DBX Mini Games",
+      "description": "A quiet online parlour for Chinese chess and Gomoku, with rooms, spectators, and match clocks."
+    },
+    "zh": {
+      "name": "棋牌小馆",
+      "description": "一间线上棋牌小馆：对弈中国象棋与五子棋，可开房、观战。"
     }
   }
 }

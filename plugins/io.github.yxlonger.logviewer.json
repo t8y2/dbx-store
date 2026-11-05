@@ -1,7 +1,7 @@
 {
   "id": "io.github.yxlonger.logviewer",
   "name": "Log Viewer",
-  "description": "查看服务器 .log 日志，支持滚动查询、模糊搜索、实时监控、分块下载。",
+  "description": "View server .log files with scrollable queries, fuzzy search, real-time monitoring and chunked downloads.",
   "publisher": "yxlonger",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/yxlongery/dbx-logviewer/v0.2.1/assets/plugin.svg",
@@ -147,6 +147,14 @@
   ],
   "localizations": {
     "zh-CN": {
+      "name": "日志查看器",
+      "description": "查看服务器 .log 日志，支持滚动查询与模糊搜索"
+    },
+    "en": {
+      "name": "Log Viewer",
+      "description": "View server .log files with scrollable queries, fuzzy search, real-time monitoring and chunked downloads."
+    },
+    "zh": {
       "name": "日志查看器",
       "description": "查看服务器 .log 日志，支持滚动查询与模糊搜索"
     }

@@ -67,6 +67,14 @@
     "zh-CN": {
       "name": "Loki",
       "description": "在 DBX 中用 LogQL 查询、浏览和实时跟踪 Grafana Loki 日志，并为 AI 助手提供只读工具。"
+    },
+    "en": {
+      "name": "Loki",
+      "description": "Query, browse and live-tail Grafana Loki logs with LogQL inside DBX, with read-only AI tools."
+    },
+    "zh": {
+      "name": "Loki",
+      "description": "在 DBX 中用 LogQL 查询、浏览和实时跟踪 Grafana Loki 日志，并为 AI 助手提供只读工具。"
     }
   }
 }

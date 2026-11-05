@@ -281,6 +281,14 @@
     "zh-CN": {
       "name": "HTTP 客户端",
       "description": "类似 Postman 的 HTTP/gRPC 接口调试工作台：构造请求、导入 OpenAPI、经 WebDAV 同步，并通过原生 Sidecar 发送并查看响应。"
+    },
+    "en": {
+      "name": "HTTP Client",
+      "description": "A Postman-style HTTP/gRPC workbench: compose requests, import OpenAPI, sync via WebDAV, and inspect responses through a native sidecar."
+    },
+    "zh": {
+      "name": "HTTP 客户端",
+      "description": "类似 Postman 的 HTTP/gRPC 接口调试工作台：构造请求、导入 OpenAPI、经 WebDAV 同步，并通过原生 Sidecar 发送并查看响应。"
     }
   }
 }

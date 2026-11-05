@@ -65,6 +65,14 @@
     "zh-CN": {
       "name": "PawSQL SQL 优化器",
       "description": "粘贴 SQL，获取 PawSQL 优化建议：规则违规、推荐索引、SQL 重写与 What-If 校验报告。"
+    },
+    "en": {
+      "name": "PawSQL SQL Optimizer",
+      "description": "Paste SQL and get PawSQL optimization recommendations: rule violations, index DDLs, rewrites and a What-If validation report."
+    },
+    "zh": {
+      "name": "PawSQL SQL 优化器",
+      "description": "粘贴 SQL，获取 PawSQL 优化建议：规则违规、推荐索引、SQL 重写与 What-If 校验报告。"
     }
   }
 }

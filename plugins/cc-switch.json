@@ -231,6 +231,14 @@
     "zh-CN": {
       "name": "AI 配置导入",
       "description": "从 CC-SWITCH 或 Magpie 导入 AI 提供商配置到 DBX。"
+    },
+    "en": {
+      "name": "AI Config Importer",
+      "description": "Import AI provider configurations from CC-SWITCH or Magpie into DBX."
+    },
+    "zh": {
+      "name": "AI 配置导入",
+      "description": "从 CC-SWITCH 或 Magpie 导入 AI 提供商配置到 DBX。"
     }
   }
 }

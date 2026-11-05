@@ -3,8 +3,8 @@
   "id": "com.vyrnax.datasweep",
   "publisher": "vyrnax",
   "version": "0.1.1",
-  "name": "扫雷",
-  "description": "扫雷-经典益智小游戏",
+  "name": "Minesweeper",
+  "description": "Minesweeper: a classic puzzle game.",
   "source": "https://github.com/vyrnax/dbx-plugin-datasweep",
   "license": "Apache-2.0",
   "icon": "https://raw.githubusercontent.com/vyrnax/dbx-plugin-datasweep/v0.1.1/assets/plugin.svg",
@@ -39,5 +39,19 @@
       "sha256": "3ccd63c2ac613ffe15d4ff941281d763aa60a177b05fbd1568afe1fb3f06d03c",
       "size": 289901
     }
-  ]
+  ],
+  "localizations": {
+    "en": {
+      "name": "Minesweeper",
+      "description": "Minesweeper: a classic puzzle game."
+    },
+    "zh-CN": {
+      "name": "扫雷",
+      "description": "扫雷-经典益智小游戏"
+    },
+    "zh": {
+      "name": "扫雷",
+      "description": "扫雷-经典益智小游戏"
+    }
+  }
 }

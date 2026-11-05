@@ -109,6 +109,14 @@
     "zh-CN": {
       "name": "XXL-JOB 任务调度",
       "description": "在 DBX 内管理 XXL-JOB 分布式任务调度：执行器分组、任务管理、手动触发、启停、调度日志、GLUE 源码与触发报表。"
+    },
+    "en": {
+      "name": "XXL-JOB",
+      "description": "XXL-JOB distributed task scheduler console inside DBX: executor groups, job management, manual trigger, start/stop, scheduling logs, GLUE source, and trigger reports."
+    },
+    "zh": {
+      "name": "XXL-JOB 任务调度",
+      "description": "在 DBX 内管理 XXL-JOB 分布式任务调度：执行器分组、任务管理、手动触发、启停、调度日志、GLUE 源码与触发报表。"
     }
   }
 }

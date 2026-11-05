@@ -71,6 +71,14 @@
     "zh-CN": {
       "name": "SQL Notebook",
       "description": "类似 Jupyter Notebook 的 DBX SQL 笔记本，文件为纯文本 .sqlnb（YAML）。"
+    },
+    "en": {
+      "name": "SQL Notebook",
+      "description": "Notebook-style SQL workbench for DBX."
+    },
+    "zh": {
+      "name": "SQL Notebook",
+      "description": "类似 Jupyter Notebook 的 DBX SQL 笔记本，文件为纯文本 .sqlnb（YAML）。"
     }
   }
 }

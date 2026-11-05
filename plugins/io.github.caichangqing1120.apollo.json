@@ -149,6 +149,14 @@
     "zh-CN": {
       "name": "Apollo Portal 控制台",
       "description": "独立编写 Apollo 2.x 管理页面，支持普通账号密码登录。全量页面及弹窗 1:1 对照仍有差距。"
+    },
+    "en": {
+      "name": "Apollo Portal Console",
+      "description": "Manage Apollo 2.x configuration with independently authored pages and password login. Known visual parity gaps remain."
+    },
+    "zh": {
+      "name": "Apollo Portal 控制台",
+      "description": "独立编写 Apollo 2.x 管理页面，支持普通账号密码登录。全量页面及弹窗 1:1 对照仍有差距。"
     }
   }
 }
