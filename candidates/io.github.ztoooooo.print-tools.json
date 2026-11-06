@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.ztoooooo.print-tools",
+  "publisher": "ztoooooo",
+  "version": "1.5.1",
+  "name": "Local Print Tools",
+  "description": "Local-only WYSIWYG workbench for laying out invoices, tickets and ID cards on A4, with perspective correction, watermark and PDF export. Nothing leaves the machine.",
+  "icon": "https://raw.githubusercontent.com/ztoooooo/print-tools/v1.5.1/assets/plugin.svg",
+  "tags": [
+    "print",
+    "pdf",
+    "productivity",
+    "image"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/ztoooooo/print-tools/tree/v1.5.1",
+  "homepage": "https://ztoooooo.github.io/print-tools/",
+  "license": "MIT",
+  "releaseNotes": "修复 DBX 插件内打印失效（沙箱无 allow-modals 时改走另存 PDF）；新增 Ctrl+滚轮缩放与 Ctrl+P/Ctrl+S 快捷键；连续滚动模式翻页修复；每页新增文件序号书签；工具条固定底部；关于页重排。",
+  "localizations": {
+    "zh-CN": {
+      "name": "票据打印",
+      "description": "纯前端本地票据打印工作台：发票 / 车票 / 证件排版、透视矫正、水印与 PDF 导出，文件不出本机。"
+    }
+  },
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/ztoooooo/print-tools/releases/download/v1.5.1/io.github.ztoooooo.print-tools-1.5.1-universal.dbxp",
+      "sha256": "66fb418497327206dd41d3c319866b977365fcd64bbaa1ec87a5d3fd971615e2",
+      "size": 5085470
+    }
+  ]
+}
