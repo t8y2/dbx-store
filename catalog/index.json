@@ -3575,18 +3575,60 @@
     },
     {
       "id": "com.vyrnax.datasweep",
-      "name": "Minesweeper",
-      "description": "Minesweeper: a classic puzzle game.",
+      "name": "扫雷",
+      "description": "扫雷-经典益智小游戏",
       "publisher": "vyrnax",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.2/icon.svg",
       "tags": [],
       "permissions": [],
       "source": "https://github.com/vyrnax/dbx-plugin-datasweep",
       "homepage": "",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-11-07T12:48:35.827Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.2/com.vyrnax.datasweep-0.1.2-darwin-arm64.dbxp",
+              "sha256": "77db67e02df9044f141406728d2e8e0c419d2b6626dee2df2a40840441c167ce",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 348415
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.2/com.vyrnax.datasweep-0.1.2-darwin-x64.dbxp",
+              "sha256": "f11d9cc0bca32549e2f6559d3d7b0742854b141bd42d8b16a746877fc1b5405f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 363120
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.2/com.vyrnax.datasweep-0.1.2-linux-arm64.dbxp",
+              "sha256": "a5820457bb40b93df09781088796d194e59ffac9a49e29371d875663dbd094f3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 370918
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.2/com.vyrnax.datasweep-0.1.2-linux-x64.dbxp",
+              "sha256": "7124b3d3ff874c0b273a1dc298103d22c426b48819edc49a372cbc81e186d7f8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 388644
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.2/com.vyrnax.datasweep-0.1.2-windows-x64.dbxp",
+              "sha256": "28489cc4a91eef731a21a566dd62ebb27485439a82300992511b0f571cc18b9b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 290348
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-11-05T13:23:04.720Z",
