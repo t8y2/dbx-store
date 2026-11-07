@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "com.tenltrs.dbx-calendar",
+  "publisher": "tenltrs",
+  "version": "0.2.1",
+  "name": "Calendar Notes",
+  "description": "A minimal month-view calendar for keeping day-by-day notes.",
+  "icon": "https://raw.githubusercontent.com/tenltrs/dbx-calendar/v0.2.1/assets/icon.svg",
+  "tags": [
+    "calendar",
+    "memo",
+    "notes",
+    "workflow",
+    "to-do"
+  ],
+  "permissions": [],
+  "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.2.1",
+  "homepage": "https://github.com/tenltrs/dbx-calendar/",
+  "license": "Apache-2.0",
+  "releaseNotes": "Public-holiday and makeup-workday arrangements now extend through 2027, so next year's Spring Festival, National Day and every 调休 day already show their 休 / 班 markers. Years the library does not carry keep showing lunar dates and solar terms without holiday badges.",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.2.1/com.tenltrs.dbx-calendar-0.2.1-darwin-arm64.dbxp",
+      "sha256": "eebceeb5e33d4cd3c6b31367fc4c999822a85d1ed4107f8c4e4804c199499df0",
+      "size": 2081242
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.2.1/com.tenltrs.dbx-calendar-0.2.1-darwin-x64.dbxp",
+      "sha256": "eb149f9ce6635528b11a0ebe0c318089968fa6e5b63ded14382e21e052f00ce5",
+      "size": 2155421
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.2.1/com.tenltrs.dbx-calendar-0.2.1-linux-arm64.dbxp",
+      "sha256": "61b801cffce2a12a7efe0944777374687da299a77e4a88d8093f166798892e44",
+      "size": 2069978
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.2.1/com.tenltrs.dbx-calendar-0.2.1-linux-x64.dbxp",
+      "sha256": "e8be982b58880aad69341da65dda81a482098edd6ef4903fd26d65a47a8f8ca3",
+      "size": 2170539
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.2.1/com.tenltrs.dbx-calendar-0.2.1-windows-arm64.dbxp",
+      "sha256": "49896a474e4c167a7f38305c7478a1f074e29cf00c42b5cbb3fcb870b575e458",
+      "size": 2226617
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/tenltrs/dbx-calendar/releases/download/v0.2.1/com.tenltrs.dbx-calendar-0.2.1-windows-x64.dbxp",
+      "sha256": "7e6200d84b4c7412dd853fad8bcaf578d4fe3913c308b11ae18eda6a8dc9414d",
+      "size": 2359008
+    }
+  ]
+}
