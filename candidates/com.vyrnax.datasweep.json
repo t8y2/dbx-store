@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "com.vyrnax.datasweep",
+  "publisher": "vyrnax",
+  "version": "0.1.2",
+  "name": "扫雷",
+  "description": "扫雷-经典益智小游戏",
+  "source": "https://github.com/vyrnax/dbx-plugin-datasweep",
+  "license": "Apache-2.0",
+  "icon": "https://raw.githubusercontent.com/vyrnax/dbx-plugin-datasweep/v0.1.2/assets/plugin.svg",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-darwin-arm64.dbxp",
+      "sha256": "b11be8929ea03fdd4e9d3b025ac31f59c144b8dccc3b0fc4222743828db69311",
+      "size": 347136
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-darwin-x64.dbxp",
+      "sha256": "9c6df91775b42f7840acd1a5b9b71f0e32f20e2854408e0c2bcb2744081f2422",
+      "size": 362496
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-linux-arm64.dbxp",
+      "sha256": "e8c51f17b2f9c63a3b0e277ee00925e33ac5b03f90c01f2d671e7e4a2d4c6e8f",
+      "size": 369664
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-linux-x64.dbxp",
+      "sha256": "4f9e9528964d017b7bb12d1b56f71ef5527c0016a21f9b6e6036f6a5f2c5c2a0",
+      "size": 387072
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-windows-x64.dbxp",
+      "sha256": "8d7c23b7a5a4de6f2f7a8e1c8e6a2c1d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b",
+      "size": 288768
+    }
+  ]
+}
