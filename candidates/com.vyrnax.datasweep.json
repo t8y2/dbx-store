@@ -12,32 +12,32 @@
     {
       "target": "darwin-arm64",
       "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-darwin-arm64.dbxp",
-      "sha256": "b11be8929ea03fdd4e9d3b025ac31f59c144b8dccc3b0fc4222743828db69311",
-      "size": 347136
+      "sha256": "0bdab7d0ee7213ffb2965bdffb964ce51f6339466bf0a9f43244f42129d6fc3b",
+      "size": 347286
     },
     {
       "target": "darwin-x64",
       "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-darwin-x64.dbxp",
-      "sha256": "9c6df91775b42f7840acd1a5b9b71f0e32f20e2854408e0c2bcb2744081f2422",
-      "size": 362496
+      "sha256": "3a22e1df0b121e234b1182d1a90d0855e88ae0ac4bce9b1aa85136fdcb85376a",
+      "size": 361992
     },
     {
       "target": "linux-arm64",
       "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-linux-arm64.dbxp",
-      "sha256": "e8c51f17b2f9c63a3b0e277ee00925e33ac5b03f90c01f2d671e7e4a2d4c6e8f",
-      "size": 369664
+      "sha256": "5c24f2a729732a1eb272231f53368c06bef26f990e5ac81a7c6ac4fb700adc5e",
+      "size": 369790
     },
     {
       "target": "linux-x64",
       "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-linux-x64.dbxp",
-      "sha256": "4f9e9528964d017b7bb12d1b56f71ef5527c0016a21f9b6e6036f6a5f2c5c2a0",
-      "size": 387072
+      "sha256": "35fb301cbd901dea0806197da8b2dc682c592e1b146e65d06ab9eeb402333916",
+      "size": 387517
     },
     {
       "target": "windows-x64",
       "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-windows-x64.dbxp",
-      "sha256": "8d7c23b7a5a4de6f2f7a8e1c8e6a2c1d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b",
-      "size": 288768
+      "sha256": "493fe3502c6e3276a44a9df6a4cdae81f41a5cc0cbbb6ba694e284f2061c3a5d",
+      "size": 289214
     }
   ]
 }
