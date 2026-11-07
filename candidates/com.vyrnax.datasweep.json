@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "com.vyrnax.datasweep",
+  "publisher": "vyrnax",
+  "version": "0.1.2",
+  "name": "扫雷",
+  "description": "扫雷-经典益智小游戏",
+  "tags": [
+    "minesweeper",
+    "game",
+    "puzzle",
+    "casual",
+    "entertainment"
+  ],
+  "icon": "https://raw.githubusercontent.com/vyrnax/dbx-plugin-datasweep/v0.1.2/assets/plugin.svg",
+  "permissions": [],
+  "source": "https://github.com/vyrnax/dbx-plugin-datasweep",
+  "homepage": "https://github.com/vyrnax/dbx-plugin-datasweep",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.1.2：玩法不变，界面三处调整。\n1、踩雷后计数器条中间的笑脸变哭脸（F2 或点它重开即恢复）\n2、深色主题下踩雷格的背景改为与浅色一致的正红，不再发粉、更醒目\n3、移除插件内顶部的「扫雷」标题与图标，插件名由宿主侧栏与工作台标签承载\n4、自定义雷数区间仍为格数的 10%–35%，行列 5–50，越界自动夹取",
+  "localizations": {
+    "en": {
+      "name": "DataSweep",
+      "description": "Minesweeper - Classic Puzzle Game"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-darwin-arm64.dbxp",
+      "sha256": "0bdab7d0ee7213ffb2965bdffb964ce51f6339466bf0a9f43244f42129d6fc3b",
+      "size": 347286
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-darwin-x64.dbxp",
+      "sha256": "3a22e1df0b121e234b1182d1a90d0855e88ae0ac4bce9b1aa85136fdcb85376a",
+      "size": 361992
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-linux-arm64.dbxp",
+      "sha256": "5c24f2a729732a1eb272231f53368c06bef26f990e5ac81a7c6ac4fb700adc5e",
+      "size": 369790
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-linux-x64.dbxp",
+      "sha256": "35fb301cbd901dea0806197da8b2dc682c592e1b146e65d06ab9eeb402333916",
+      "size": 387517
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/vyrnax/dbx-plugin-datasweep/releases/download/v0.1.2/com.vyrnax.datasweep-0.1.2-windows-x64.dbxp",
+      "sha256": "493fe3502c6e3276a44a9df6a4cdae81f41a5cc0cbbb6ba694e284f2061c3a5d",
+      "size": 289214
+    }
+  ]
+}
