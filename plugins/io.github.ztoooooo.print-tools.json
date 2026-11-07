@@ -4,7 +4,7 @@
   "description": "Local-only WYSIWYG workbench for laying out invoices, tickets and ID cards on A4, with perspective correction, watermark and PDF export. Nothing leaves the machine.",
   "publisher": "ztoooooo",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/ztoooooo/print-tools/v1.5.0/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/ztoooooo/print-tools/v1.5.1/assets/plugin.svg",
   "tags": [
     "print",
     "pdf",
@@ -14,10 +14,10 @@
   "permissions": [
     "host.storage"
   ],
-  "source": "https://github.com/ztoooooo/print-tools/tree/v1.5.0",
+  "source": "https://github.com/ztoooooo/print-tools/tree/v1.5.1",
   "homepage": "https://ztoooooo.github.io/print-tools/",
   "license": "MIT",
-  "latestVersion": "1.5.0",
+  "latestVersion": "1.5.1",
   "versions": [
     {
       "version": "1.5.0",
@@ -30,6 +30,20 @@
           "sha256": "8429dc7c6bfdb8473bf6856f7408f19c9b1ca782581b370273fd8694fd882f33",
           "signingKeyId": "dbx-store-release-2026",
           "size": 5085320
+        }
+      ]
+    },
+    {
+      "version": "1.5.1",
+      "releasedAt": "2026-11-07T10:58:40.874Z",
+      "releaseNotes": "修复 DBX 插件内打印失效（沙箱无 allow-modals 时改走另存 PDF）；新增 Ctrl+滚轮缩放与 Ctrl+P/Ctrl+S 快捷键；连续滚动模式翻页修复；每页新增文件序号书签；工具条固定底部；关于页重排。",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/io.github.ztoooooo.print-tools/1.5.1/io.github.ztoooooo.print-tools-1.5.1-universal.dbxp",
+          "sha256": "4a28fc5cfd6f81bd98f31b621c26cf925c1f96771c3301317a30a60e136420e4",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5086434
         }
       ]
     }
