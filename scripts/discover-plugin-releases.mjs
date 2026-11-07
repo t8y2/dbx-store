@@ -9,7 +9,15 @@ const discovered = [];
 for (const source of registry.plugins) {
   if (source.autoUpdate !== true) continue;
   assertRepository(source.repository);
-  const releases = await fetchJson(`https://api.github.com/repos/${source.repository}/releases?per_page=30`);
+  let releases;
+  try {
+    releases = await fetchJson(`https://api.github.com/repos/${source.repository}/releases?per_page=30`);
+  } catch (error) {
+    // A deleted/private/renamed upstream repo must not take down discovery
+    // for every other plugin; report it and keep going.
+    console.warn(`::warning::skipping ${source.repository}: ${error.message}`);
+    continue;
+  }
   const release = releases.find((entry) => !entry.draft && !entry.prerelease && entry.assets.some((asset) => asset.name === "release-candidates.json"));
   if (!release) {
     console.log(`No published candidate release found for ${source.repository}`);
