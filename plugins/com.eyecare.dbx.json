@@ -1,24 +1,25 @@
 {
   "id": "com.eyecare.dbx",
   "name": "Eye眼",
-  "description": "Screen color temperature inside DBX: presets, scheduled day/night shifting, and 20-20-20 break reminders. It adjusts the display gamma table instead of overlaying a translucent tint, and works per monitor.",
+  "description": "Screen color temperature and tint inside DBX: a draggable 24-hour warmth curve whose anchors you can add or remove, sunrise/sunset scheduling computed locally, per-monitor settings so each display follows the global curve or keeps its own warmth or tint, 20-20-20 break reminders that briefly dim the screen, pausing after two minutes without keyboard or mouse input, and on-device eye-strain insights. It adjusts the display gamma table instead of overlaying a translucent tint.",
   "publisher": "xyun2028",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/xyun2028/dbx-eyecare/v0.1.8/ui/icon.png",
+  "icon": "https://raw.githubusercontent.com/xyun2028/dbx-eyecare/v0.2.2/ui/icon.png",
   "tags": [
     "eyecare",
     "color-temperature",
     "gamma",
-    "health"
+    "health",
+    "presets"
   ],
   "permissions": [
     "host.workbench",
     "host.events"
   ],
-  "source": "https://github.com/xyun2028/dbx-eyecare/tree/v0.1.8",
+  "source": "https://github.com/xyun2028/dbx-eyecare/tree/v0.2.2",
   "homepage": "https://github.com/xyun2028/dbx-eyecare",
-  "license": "MIT",
-  "latestVersion": "0.1.8",
+  "license": "Apache-2.0",
+  "latestVersion": "0.2.2",
   "versions": [
     {
       "version": "0.1.8",
@@ -33,12 +34,26 @@
           "size": 774373
         }
       ]
+    },
+    {
+      "version": "0.2.2",
+      "releasedAt": "2026-11-07T11:57:17.216Z",
+      "releaseNotes": "0.2.2 replaces the old day/night pair with a 24-hour curve: add, remove and drag anchors (up to 12), keep your own presets, and let sunrise and sunset scheduling follow the sun from coordinates computed offline. Weekday and weekend curves are separate. Each monitor can follow the global curve, keep its own color temperature, or keep its own tint. Break reminders briefly dim the screen and can be turned off. The scene pauses after two minutes without keyboard or mouse input, yields to fullscreen content, and steps aside when another gamma tool takes over. Screen-time statistics and off-by-default eye-strain suggestions stay on the machine. Display writes are throttled and the log rotates. The project is licensed under Apache-2.0. Schedules from earlier versions are migrated automatically.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.eyecare.dbx/0.2.2/com.eyecare.dbx-0.2.2-windows-x64.dbxp",
+          "sha256": "50211dbe891c0e3cc187e41ca5da6361e774330d1ebdb3bb72595a07c361d1ec",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 901795
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "Eye眼",
-      "description": "在 DBX 里调屏幕色温：预设、按时段自动切换、20-20-20 休息提醒。直接改显示器的 Gamma 表，不盖半透明遮罩，多块屏可以各调各的。"
+      "description": "在 DBX 里调屏幕色温与滤色：一条可以自己增减锚点、直接拖动的 24 小时曲线，按当地日出日落自动切换，每块屏可以各自选跟随全局、自己的色温或自己的滤色，20-20-20 休息提醒到点把屏幕短暂压暗。超过两分钟没碰键鼠就暂停提醒和计时，全屏内容时让位，别的调色软件抢桌时不硬碰。用眼记录和用眼建议都在本地，用眼建议默认关闭。直接改显示器的 Gamma 表，不盖半透明遮罩。"
     }
   }
 }
