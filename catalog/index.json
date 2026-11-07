@@ -1303,25 +1303,40 @@
     {
       "id": "com.eyecare.dbx",
       "name": "Eye眼",
-      "description": "Screen color temperature inside DBX: presets, scheduled day/night shifting, and 20-20-20 break reminders. It adjusts the display gamma table instead of overlaying a translucent tint, and works per monitor.",
+      "description": "Screen color temperature and tint inside DBX: a draggable 24-hour warmth curve whose anchors you can add or remove, sunrise/sunset scheduling computed locally, per-monitor settings so each display follows the global curve or keeps its own warmth or tint, 20-20-20 break reminders that briefly dim the screen, pausing after two minutes without keyboard or mouse input, and on-device eye-strain insights. It adjusts the display gamma table instead of overlaying a translucent tint.",
       "publisher": "xyun2028",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.eyecare.dbx/0.1.8/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/com.eyecare.dbx/0.2.2/icon.png",
       "tags": [
         "eyecare",
         "color-temperature",
         "gamma",
-        "health"
+        "health",
+        "presets"
       ],
       "permissions": [
         "host.workbench",
         "host.events"
       ],
-      "source": "https://github.com/xyun2028/dbx-eyecare/tree/v0.1.8",
+      "source": "https://github.com/xyun2028/dbx-eyecare/tree/v0.2.2",
       "homepage": "https://github.com/xyun2028/dbx-eyecare",
-      "license": "MIT",
-      "latestVersion": "0.1.8",
+      "license": "Apache-2.0",
+      "latestVersion": "0.2.2",
       "versions": [
+        {
+          "version": "0.2.2",
+          "releasedAt": "2026-11-07T11:57:17.216Z",
+          "releaseNotes": "0.2.2 replaces the old day/night pair with a 24-hour curve: add, remove and drag anchors (up to 12), keep your own presets, and let sunrise and sunset scheduling follow the sun from coordinates computed offline. Weekday and weekend curves are separate. Each monitor can follow the global curve, keep its own color temperature, or keep its own tint. Break reminders briefly dim the screen and can be turned off. The scene pauses after two minutes without keyboard or mouse input, yields to fullscreen content, and steps aside when another gamma tool takes over. Screen-time statistics and off-by-default eye-strain suggestions stay on the machine. Display writes are throttled and the log rotates. The project is licensed under Apache-2.0. Schedules from earlier versions are migrated automatically.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.eyecare.dbx/0.2.2/com.eyecare.dbx-0.2.2-windows-x64.dbxp",
+              "sha256": "50211dbe891c0e3cc187e41ca5da6361e774330d1ebdb3bb72595a07c361d1ec",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 901795
+            }
+          ]
+        },
         {
           "version": "0.1.8",
           "releasedAt": "2026-11-05T16:27:22.242Z",
@@ -1340,7 +1355,7 @@
       "localizations": {
         "zh-CN": {
           "name": "Eye眼",
-          "description": "在 DBX 里调屏幕色温：预设、按时段自动切换、20-20-20 休息提醒。直接改显示器的 Gamma 表，不盖半透明遮罩，多块屏可以各调各的。"
+          "description": "在 DBX 里调屏幕色温与滤色：一条可以自己增减锚点、直接拖动的 24 小时曲线，按当地日出日落自动切换，每块屏可以各自选跟随全局、自己的色温或自己的滤色，20-20-20 休息提醒到点把屏幕短暂压暗。超过两分钟没碰键鼠就暂停提醒和计时，全屏内容时让位，别的调色软件抢桌时不硬碰。用眼记录和用眼建议都在本地，用眼建议默认关闭。直接改显示器的 Gamma 表，不盖半透明遮罩。"
         }
       }
     },
@@ -2798,6 +2813,76 @@
       }
     },
     {
+      "id": "com.mjj3610.note",
+      "name": "Note Studio",
+      "description": "Local-first Markdown notes and quick records with AI assistance: file workspace, WYSIWYG editor, tags, full-text search and streaming chat.",
+      "publisher": "mjj3610",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.0/icon.svg",
+      "tags": [
+        "notes",
+        "markdown",
+        "editor",
+        "local-first",
+        "ai"
+      ],
+      "permissions": [],
+      "source": "https://github.com/mjj3610/dbx-note/tree/v0.5.0",
+      "homepage": "https://github.com/mjj3610/dbx-note",
+      "license": "GPL-3.0-or-later",
+      "latestVersion": "0.5.0",
+      "versions": [
+        {
+          "version": "0.5.0",
+          "releasedAt": "2026-11-07T12:11:46.165Z",
+          "releaseNotes": "First listing. Local-first Markdown workbench shipped as a DBX plugin: the workspace is a plain folder of .md files, edited WYSIWYG or in source mode. Records, tags, chats and settings live in the plugin's own SQLite database. The Rust sidecar owns every privileged operation (files, SQLite, AI HTTP/SSE, GDI screen capture with a native 1:1 region selector and in-place annotation, clipboard bitmaps, microphone recording), so the plugin page itself has no file or network access. v0.4.0 hardens the editor: in-note search and replace (Ctrl+F, match counter, replace all, match case), GitHub alert callouts (NOTE/TIP/IMPORTANT/WARNING/CAUTION) that round-trip through Markdown, a rebuilt table toolbar (row/column/align/delete groups, disabled states, active alignment) with tooltips that no longer cover the header, and a full shortcut set for tables, math, Mermaid and heading collapse. v0.5.0 rebuilds AI configuration around providers and models: several providers can coexist (presets for OpenAI, Gemini, DeepSeek, Qwen, Zhipu, Moonshot, SiliconFlow, OpenRouter, Groq, Together, xAI, Ollama, LM Studio), models are fetched from the provider with one click, each model carries its own type, temperature, top_p, max_tokens and streaming flag, and chat / image recognition / speech transcription can each point at a different model. Existing single-model settings are migrated automatically, and a chat-model fallback keeps recognition working for users who only configured one multimodal model. It also fixes cloud sync treating a workspace that merely sits inside another repository as an initialized repo, which could have committed notes into the parent repository.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.0/com.mjj3610.note-0.5.0-darwin-arm64.dbxp",
+              "sha256": "6e13709d50aa4e92e2d7dbd6764832d1a3076b6ded76151972e04cf65a8c3c18",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3542423
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.0/com.mjj3610.note-0.5.0-darwin-x64.dbxp",
+              "sha256": "f9be1385762875e10f219c491e580e9a40bd304ce22e6ec14b20d32513a9246a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3677997
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.0/com.mjj3610.note-0.5.0-linux-arm64.dbxp",
+              "sha256": "75ee3999f1787ffc54111fb4561f18c142418f6f79c1397bddc9985ffc06d78c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3613448
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.0/com.mjj3610.note-0.5.0-linux-x64.dbxp",
+              "sha256": "4c2e459f4f6515f7f9d3c37723ce0894736e26533bf2198279da9db54f6916e8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3678508
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.0/com.mjj3610.note-0.5.0-windows-x64.dbxp",
+              "sha256": "4844059a2dda1a00950cab9d79287684e2b0699ed5900c50245554c642dfc5b1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3733699
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "DBX 笔记",
+          "description": "本地优先的 Markdown 笔记与碎片记录工作台：文件工作区、可视化编辑器、标签、全文搜索与流式 AI 对话。"
+        }
+      }
+    },
+    {
       "id": "com.nintycat.shell",
       "name": "NintyShell",
       "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files.",
@@ -3490,18 +3575,60 @@
     },
     {
       "id": "com.vyrnax.datasweep",
-      "name": "Minesweeper",
-      "description": "Minesweeper: a classic puzzle game.",
+      "name": "扫雷",
+      "description": "扫雷-经典益智小游戏",
       "publisher": "vyrnax",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.2/icon.svg",
       "tags": [],
       "permissions": [],
       "source": "https://github.com/vyrnax/dbx-plugin-datasweep",
       "homepage": "",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-11-07T12:48:35.827Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.2/com.vyrnax.datasweep-0.1.2-darwin-arm64.dbxp",
+              "sha256": "77db67e02df9044f141406728d2e8e0c419d2b6626dee2df2a40840441c167ce",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 348415
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.2/com.vyrnax.datasweep-0.1.2-darwin-x64.dbxp",
+              "sha256": "f11d9cc0bca32549e2f6559d3d7b0742854b141bd42d8b16a746877fc1b5405f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 363120
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.2/com.vyrnax.datasweep-0.1.2-linux-arm64.dbxp",
+              "sha256": "a5820457bb40b93df09781088796d194e59ffac9a49e29371d875663dbd094f3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 370918
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.2/com.vyrnax.datasweep-0.1.2-linux-x64.dbxp",
+              "sha256": "7124b3d3ff874c0b273a1dc298103d22c426b48819edc49a372cbc81e186d7f8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 388644
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.vyrnax.datasweep/0.1.2/com.vyrnax.datasweep-0.1.2-windows-x64.dbxp",
+              "sha256": "28489cc4a91eef731a21a566dd62ebb27485439a82300992511b0f571cc18b9b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 290348
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-11-05T13:23:04.720Z",
@@ -3766,7 +3893,7 @@
       "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 18.6 engine (PGlite 0.5.13) running locally. No server, no setup, works offline. Per-question hints, result-set based grading, and importable custom question banks validated by execution.",
       "publisher": "xiaomao49",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.4/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.5/icon.svg",
       "tags": [
         "sql",
         "postgresql",
@@ -3777,11 +3904,25 @@
       "permissions": [
         "host.storage"
       ],
-      "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.4.4",
+      "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.4.5",
       "homepage": "https://github.com/xiaomao49/dbx-sql-dojo",
       "license": "MIT",
-      "latestVersion": "0.4.4",
+      "latestVersion": "0.4.5",
       "versions": [
+        {
+          "version": "0.4.5",
+          "releasedAt": "2026-11-07T12:11:46.174Z",
+          "releaseNotes": "0.4.5: custom question banks now live in a dropdown that filters the list by bank, a persistent Reset Progress button clears all progress and drafts with a two-step confirmation, SQL drafts are stored through host.storage so they survive restarts, cancelling an export no longer reports success, and the workbench gets a redesigned header with light and dark themes, sticky result table headers, zebra rows, narrow-screen layout and reduced-motion support. Local-only: no database connection, no network.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.5/com.xiaomao49.sql-dojo-0.4.5-universal.dbxp",
+              "sha256": "48b329db089cc15be9e81d7fac8a723a5d8c3ea83a5fa27dd9136ec0134a8dfc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5355256
+            }
+          ]
+        },
         {
           "version": "0.4.4",
           "releasedAt": "2026-11-04T05:33:33.843Z",
@@ -6211,7 +6352,7 @@
       "description": "Manage Kubernetes clusters, workloads and resources from DBX.",
       "publisher": "eryajf",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.35/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.36/icon.png",
       "tags": [
         "kubernetes",
         "containers",
@@ -6225,8 +6366,57 @@
       "source": "https://github.com/eryajf/dbx-plugin-k8s/tree/82240b2d6d32c8fb8890a2a0415630a466d0faef",
       "homepage": "https://github.com/eryajf/dbx-plugin-k8s",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.35",
+      "latestVersion": "0.1.36",
       "versions": [
+        {
+          "version": "0.1.36",
+          "releasedAt": "2026-11-07T12:59:32.260Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.36/io.dbx.k8s-0.1.36-darwin-arm64.dbxp",
+              "sha256": "2279917c001c9908c19a71922fc329ea099cb063144357efca03bfc190308955",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32454933
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.36/io.dbx.k8s-0.1.36-darwin-x64.dbxp",
+              "sha256": "7e69c4b0aa991e82637a465ba10da92c29e8f69c54361af8a389b91a11a1d46f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 34049652
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.36/io.dbx.k8s-0.1.36-linux-arm64.dbxp",
+              "sha256": "3f7a814858f64433b3bf2b9463872b7b18605e01d35ad3f4972788a807a65bb5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 30606289
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.36/io.dbx.k8s-0.1.36-linux-x64.dbxp",
+              "sha256": "b8092932edb17e278ece9ecf36244f6ffb7d6140c04d33b0d0d16de8c227d88e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32663671
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.36/io.dbx.k8s-0.1.36-windows-arm64.dbxp",
+              "sha256": "840a572db392aa0dce45f578577a6e5bc92c369d88ddd532fd01fbf89f3ca0b1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 30672729
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.k8s/0.1.36/io.dbx.k8s-0.1.36-windows-x64.dbxp",
+              "sha256": "dc4446e9e398b617385c7bae95cb69260bc2075e9c1b9513250812c3401351cd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 32980367
+            }
+          ]
+        },
         {
           "version": "0.1.35",
           "releasedAt": "2026-10-21T05:22:09.214Z",
@@ -8972,7 +9162,7 @@
       "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.12/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.13/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -8991,8 +9181,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.7.12",
+      "latestVersion": "0.7.13",
       "versions": [
+        {
+          "version": "0.7.13",
+          "releasedAt": "2026-11-07T13:03:59.722Z",
+          "releaseNotes": "First official store release: interactive terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.13/io.dbx.ssh-0.7.13-darwin-arm64.dbxp",
+              "sha256": "1205364491953abe260df1dfe98eec9210ba32d6bc988dd12d14fb0cf7a1bef9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 19457527
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.13/io.dbx.ssh-0.7.13-darwin-x64.dbxp",
+              "sha256": "d27912fca391eec73e28a034b2cc780e49bedc6937a3a9d29b02b59b8dfd2c04",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 20104121
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.13/io.dbx.ssh-0.7.13-linux-arm64.dbxp",
+              "sha256": "009695ad5897ce6c2fa73f43b129008c2c7fae72d3eea94b62dc13a3895e5c03",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 20671088
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.13/io.dbx.ssh-0.7.13-linux-x64.dbxp",
+              "sha256": "968e57262a29deef73039f677122289a7fc920016128a7bdfb7a5348b7205849",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 21156793
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.13/io.dbx.ssh-0.7.13-windows-x64.dbxp",
+              "sha256": "b93010ad9f1f65281e28cd21a490912788203206dc92041e2490193a1247a1bb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18887769
+            }
+          ]
+        },
         {
           "version": "0.7.12",
           "releasedAt": "2026-10-30T09:58:12.991Z",

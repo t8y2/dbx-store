@@ -1,0 +1,70 @@
+{
+  "id": "com.mjj3610.note",
+  "name": "Note Studio",
+  "description": "Local-first Markdown notes and quick records with AI assistance: file workspace, WYSIWYG editor, tags, full-text search and streaming chat.",
+  "publisher": "mjj3610",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/mjj3610/dbx-note/v0.5.0/assets/plugin.svg",
+  "tags": [
+    "notes",
+    "markdown",
+    "editor",
+    "local-first",
+    "ai"
+  ],
+  "permissions": [],
+  "source": "https://github.com/mjj3610/dbx-note/tree/v0.5.0",
+  "homepage": "https://github.com/mjj3610/dbx-note",
+  "license": "GPL-3.0-or-later",
+  "latestVersion": "0.5.0",
+  "versions": [
+    {
+      "version": "0.5.0",
+      "releasedAt": "2026-11-07T12:11:46.165Z",
+      "releaseNotes": "First listing. Local-first Markdown workbench shipped as a DBX plugin: the workspace is a plain folder of .md files, edited WYSIWYG or in source mode. Records, tags, chats and settings live in the plugin's own SQLite database. The Rust sidecar owns every privileged operation (files, SQLite, AI HTTP/SSE, GDI screen capture with a native 1:1 region selector and in-place annotation, clipboard bitmaps, microphone recording), so the plugin page itself has no file or network access. v0.4.0 hardens the editor: in-note search and replace (Ctrl+F, match counter, replace all, match case), GitHub alert callouts (NOTE/TIP/IMPORTANT/WARNING/CAUTION) that round-trip through Markdown, a rebuilt table toolbar (row/column/align/delete groups, disabled states, active alignment) with tooltips that no longer cover the header, and a full shortcut set for tables, math, Mermaid and heading collapse. v0.5.0 rebuilds AI configuration around providers and models: several providers can coexist (presets for OpenAI, Gemini, DeepSeek, Qwen, Zhipu, Moonshot, SiliconFlow, OpenRouter, Groq, Together, xAI, Ollama, LM Studio), models are fetched from the provider with one click, each model carries its own type, temperature, top_p, max_tokens and streaming flag, and chat / image recognition / speech transcription can each point at a different model. Existing single-model settings are migrated automatically, and a chat-model fallback keeps recognition working for users who only configured one multimodal model. It also fixes cloud sync treating a workspace that merely sits inside another repository as an initialized repo, which could have committed notes into the parent repository.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.0/com.mjj3610.note-0.5.0-darwin-arm64.dbxp",
+          "sha256": "6e13709d50aa4e92e2d7dbd6764832d1a3076b6ded76151972e04cf65a8c3c18",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3542423
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.0/com.mjj3610.note-0.5.0-darwin-x64.dbxp",
+          "sha256": "f9be1385762875e10f219c491e580e9a40bd304ce22e6ec14b20d32513a9246a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3677997
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.0/com.mjj3610.note-0.5.0-linux-arm64.dbxp",
+          "sha256": "75ee3999f1787ffc54111fb4561f18c142418f6f79c1397bddc9985ffc06d78c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3613448
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.0/com.mjj3610.note-0.5.0-linux-x64.dbxp",
+          "sha256": "4c2e459f4f6515f7f9d3c37723ce0894736e26533bf2198279da9db54f6916e8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3678508
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.0/com.mjj3610.note-0.5.0-windows-x64.dbxp",
+          "sha256": "4844059a2dda1a00950cab9d79287684e2b0699ed5900c50245554c642dfc5b1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3733699
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "DBX 笔记",
+      "description": "本地优先的 Markdown 笔记与碎片记录工作台：文件工作区、可视化编辑器、标签、全文搜索与流式 AI 对话。"
+    }
+  }
+}
