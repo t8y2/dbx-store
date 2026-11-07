@@ -4,7 +4,7 @@
   "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。内置 AI 助手（右侧常驻栏），可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型对笔记做分析、润色、续写与问答。",
   "publisher": "lwai",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/0.8.11/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/0.8.12/assets/plugin.svg",
   "tags": [
     "md",
     "notes",
@@ -18,7 +18,7 @@
   "source": "https://github.com/lukelwai/dbx-md-notes",
   "homepage": "https://github.com/lukelwai/dbx-md-notes",
   "license": "Apache-2.0",
-  "latestVersion": "0.8.11",
+  "latestVersion": "0.8.12",
   "versions": [
     {
       "version": "0.7.1",
@@ -213,6 +213,48 @@
           "sha256": "1cf0b3ac493f915d6e261074e9e5d7d32cab75b2fe1a360d44dae29040c49da2",
           "signingKeyId": "dbx-store-release-2026",
           "size": 5471811
+        }
+      ]
+    },
+    {
+      "version": "0.8.12",
+      "releasedAt": "2026-11-07T13:08:10.810Z",
+      "releaseNotes": "增加自动索引功能：打开应用自动扫描存储目录，将未登记到索引的 .md 笔记按所在目录层级自动归位到笔记中。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.12/com.lwai.mdnotes-0.8.12-darwin-arm64.dbxp",
+          "sha256": "ced6de8f7dcd4eb890e19394689e2a916d2f6d5a7f9e54e6275b46607e8816d6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5235696
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.12/com.lwai.mdnotes-0.8.12-darwin-x64.dbxp",
+          "sha256": "28351cfebcca1e1f83382e66fecfdaacecfdf090b6ddd90a45f9ce83ce3c165e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5565393
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.12/com.lwai.mdnotes-0.8.12-linux-arm64.dbxp",
+          "sha256": "6afd5a8af4bcc4f26d617c4ae78c832800819d04c50bddc0600fe38f90f4db10",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4975877
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.12/com.lwai.mdnotes-0.8.12-linux-x64.dbxp",
+          "sha256": "244b87726b112febf488c07339f9ede04e258c0904fcadd4dbe132f9e13d1d49",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5409906
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.12/com.lwai.mdnotes-0.8.12-windows-x64.dbxp",
+          "sha256": "c6a515b5f5717455bc8c3f72527338a8ec0c128905b1ad69cec830fb7f99a095",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5475849
         }
       ]
     }
