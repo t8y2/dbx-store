@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.fwrq41251.cosmosdb",
+  "publisher": "fwrq41251",
+  "version": "0.26.0",
+  "name": "Cosmos DB NoSQL",
+  "description": "Query and edit Azure Cosmos DB for NoSQL documents with partition-aware queries, JSON and field editors, and conditional single-document writes.",
+  "homepage": "https://github.com/fwrq41251/dbx-plugin-cosmosdb",
+  "license": "MIT",
+  "icon": "https://raw.githubusercontent.com/fwrq41251/dbx-plugin-cosmosdb/v0.26.0/assets/plugin.svg",
+  "tags": [
+    "database",
+    "azure",
+    "cosmosdb",
+    "nosql"
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Cosmos DB NoSQL",
+      "description": "查询和编辑 Azure Cosmos DB for NoSQL 文档，支持分区键选择、JSON 与字段编辑及带版本条件的单文档增删改。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/fwrq41251/dbx-plugin-cosmosdb/releases/download/v0.26.0/io.github.fwrq41251.cosmosdb-0.26.0-darwin-arm64.dbxp",
+      "sha256": "29b4d64e5f025b66de885ee949fbd0abbeaa5f58f1f7b48ca4605f882ef5fc6d",
+      "size": 5025848
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/fwrq41251/dbx-plugin-cosmosdb/releases/download/v0.26.0/io.github.fwrq41251.cosmosdb-0.26.0-windows-x64.dbxp",
+      "sha256": "42c7f2586b23ca3f3ad1a2c1637cadbffc64a4389a9241d9f3215ffef9dc489c",
+      "size": 5358604
+    }
+  ]
+}
