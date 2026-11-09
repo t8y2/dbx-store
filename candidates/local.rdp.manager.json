@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "local.rdp.manager",
+  "publisher": "xihonglei",
+  "version": "1.0.0",
+  "name": "Windows 原生远程桌面 (mstsc)",
+  "description": "在 DBX 连接树中管理 Windows 远程桌面，双击条目发起连接。",
+  "icon": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop/releases/download/v1.0.0/plugin.svg",
+  "tags": [
+    "windows",
+    "rdp",
+    "mstsc",
+    "remote-desktop"
+  ],
+  "permissions": [
+    "host.workbench"
+  ],
+  "source": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop/releases/tag/v1.0.0",
+  "homepage": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop",
+  "license": "MIT",
+  "releaseNotes": "1.0.0: initial release; RDP hosts are managed in the DBX connection tree.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Windows 原生远程桌面 (mstsc)",
+      "description": "在 DBX 连接树中管理 Windows 远程桌面，双击条目发起连接。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop/releases/download/v1.0.0/local.rdp.manager-1.0.0-windows-x64.dbxp",
+      "sha256": "dbb242208fce915e96530c80d6a365787a1ea1597b1a4127cc7d23a5d12edea8",
+      "size": 2798095
+    }
+  ]
+}
