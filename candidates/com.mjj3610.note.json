@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "com.mjj3610.note",
+  "publisher": "mjj3610",
+  "version": "0.5.2",
+  "name": "Note Studio",
+  "description": "Local-first Markdown notes and quick records with AI assistance: file workspace, WYSIWYG editor, tags, full-text search and streaming chat.",
+  "icon": "https://raw.githubusercontent.com/mjj3610/dbx-note/v0.5.2/assets/plugin.svg",
+  "tags": [
+    "notes",
+    "markdown",
+    "editor",
+    "local-first",
+    "ai"
+  ],
+  "permissions": [],
+  "source": "https://github.com/mjj3610/dbx-note/tree/v0.5.2",
+  "homepage": "https://github.com/mjj3610/dbx-note",
+  "license": "GPL-3.0-or-later",
+  "releaseNotes": "First listing. Local-first Markdown workbench shipped as a DBX plugin: the workspace is a plain folder of .md files, edited WYSIWYG or in source mode. Records, tags, chats and settings live in the plugin's own SQLite database. The Rust sidecar owns every privileged operation (files, SQLite, AI HTTP/SSE, GDI screen capture with a native 1:1 region selector and in-place annotation, clipboard bitmaps, microphone recording), so the plugin page itself has no file or network access. v0.4.0 hardens the editor: in-note search and replace (Ctrl+F, match counter, replace all, match case), GitHub alert callouts (NOTE/TIP/IMPORTANT/WARNING/CAUTION) that round-trip through Markdown, a rebuilt table toolbar (row/column/align/delete groups, disabled states, active alignment) with tooltips that no longer cover the header, and a full shortcut set for tables, math, Mermaid and heading collapse. v0.5.0 rebuilds AI configuration around providers and models: several providers can coexist (presets for OpenAI, Gemini, DeepSeek, Qwen, Zhipu, Moonshot, SiliconFlow, OpenRouter, Groq, Together, xAI, Ollama, LM Studio), models are fetched from the provider with one click, each model carries its own type, temperature, top_p, max_tokens and streaming flag, and chat / image recognition / speech transcription can each point at a different model. Existing single-model settings are migrated automatically, and a chat-model fallback keeps recognition working for users who only configured one multimodal model. It also fixes cloud sync treating a workspace that merely sits inside another repository as an initialized repo, which could have committed notes into the parent repository. v0.5.1 makes Git sync compare files individually on open, pull one note at a time, surface real conflicts and refresh the editor after a pull. v0.5.2 completes that alignment with the reference implementation: entering the file tree or returning to the app fetches a remote directory listing, remote-only notes show up in the sidebar with a cloud icon and their content is downloaded only when opened; the auto-sync interval now controls pushing only, so it no longer disables pull-on-open. The global screenshot selector gains eight resize handles with native double-arrow cursors, and in-place annotations, toolbar and final output all follow the resized region. Also included: throttled remote listing refresh, serialized settings persistence, and a guard against a nested workspace reading its parent Git repository.",
+  "localizations": {
+    "zh-CN": {
+      "name": "DBX 笔记",
+      "description": "本地优先的 Markdown 笔记与碎片记录工作台：文件工作区、可视化编辑器、标签、全文搜索与流式 AI 对话。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/mjj3610/dbx-note/releases/download/v0.5.2/com.mjj3610.note-0.5.2-darwin-arm64.dbxp",
+      "sha256": "37b892ed43e8dcefaca4a1e698102879594cce9cc4ac5d32546820f2ce7629cc",
+      "size": 3567991
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/mjj3610/dbx-note/releases/download/v0.5.2/com.mjj3610.note-0.5.2-darwin-x64.dbxp",
+      "sha256": "6aa1837c24438b37db895c6cd8e93a58c0bc54adfc475895b09518e9a77a5dc9",
+      "size": 3707979
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/mjj3610/dbx-note/releases/download/v0.5.2/com.mjj3610.note-0.5.2-linux-arm64.dbxp",
+      "sha256": "4c525e9aad444a60b761ed567e46a8ab6dbee60c1228feea08423079554190b8",
+      "size": 3642258
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/mjj3610/dbx-note/releases/download/v0.5.2/com.mjj3610.note-0.5.2-linux-x64.dbxp",
+      "sha256": "4e9547acaea48bb880b4758ab74a369b17caefc78c4aea6cbb46bc2df9f7ad4d",
+      "size": 3707948
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/mjj3610/dbx-note/releases/download/v0.5.2/com.mjj3610.note-0.5.2-windows-x64.dbxp",
+      "sha256": "0e6311e96907c4f4209e0167b16082da98c5f140136dbc1f4c6030778cf3d759",
+      "size": 3765956
+    }
+  ]
+}
