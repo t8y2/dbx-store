@@ -11903,7 +11903,7 @@
       "description": "Query and edit Azure Cosmos DB for NoSQL documents with partition-aware queries, JSON and field editors, and conditional single-document writes.",
       "publisher": "fwrq41251",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.fwrq41251.cosmosdb/0.24.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.fwrq41251.cosmosdb/0.26.0/icon.svg",
       "tags": [
         "database",
         "azure",
@@ -11914,8 +11914,29 @@
       "source": "https://github.com/fwrq41251/dbx-plugin-cosmosdb/tree/v0.24.0",
       "homepage": "https://github.com/fwrq41251/dbx-plugin-cosmosdb",
       "license": "MIT",
-      "latestVersion": "0.24.0",
+      "latestVersion": "0.26.0",
       "versions": [
+        {
+          "version": "0.26.0",
+          "releasedAt": "2026-11-09T06:29:06.677Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.fwrq41251.cosmosdb/0.26.0/io.github.fwrq41251.cosmosdb-0.26.0-darwin-arm64.dbxp",
+              "sha256": "c847fa4b9a74e5f9e4b463cd9d90a75f36565b75ab34364fc56771d14a4235a7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5028377
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.fwrq41251.cosmosdb/0.26.0/io.github.fwrq41251.cosmosdb-0.26.0-windows-x64.dbxp",
+              "sha256": "346304e33cdf62b7c23115cd2cf0f2353a1879054efd34e1d074e3c6a8eec3cc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5361135
+            }
+          ]
+        },
         {
           "version": "0.24.0",
           "releasedAt": "2026-10-29T06:53:51.223Z",
