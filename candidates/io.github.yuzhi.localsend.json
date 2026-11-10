@@ -18,7 +18,7 @@
   "source": "https://github.com/bobocha214/dbx-plugin-localsend/tree/v0.2.0",
   "homepage": "https://github.com/bobocha214/dbx-plugin-localsend",
   "license": "Apache-2.0",
-  "releaseNotes": "First store listing of 邻间 (Neighbor), a login-free LAN IM for DBX: guest lobby, direct and group chat, images and chunked file transfers, and trusted node-to-node transfers on six x64/ARM64 packages for Windows, macOS and Linux. 0.2.0 removes the legacy LocalSend v2 channel service entirely - the backend localsend package, ui/legacy.html, and the old config/*, channel/*, localsend/*, system/*, folder/pick and share/all-addresses RPC entries are gone, leaving only im/*, connection/* and industrial/ping; the plugin now focuses on the IM workbench and no longer listens on TCP 53317 or multicasts 224.0.0.167. Old channel data is left untouched on disk but is not read by the new version. Six unsigned packages are built by this repo's release workflow (native tests on Windows/macOS/Linux runners, GOOS/GOARCH cross-compilation); every .dbxp carries the Apache-2.0 LICENSE and a checksums.json. Earlier 0.1.x tags are source-repository history only and were never submitted to the store. 首次上架：0.2.0 移除旧版频道服务，插件聚焦局域网 IM。",
+  "releaseNotes": "0.2.0: login-free LAN chat with a guest lobby, direct and group conversations, images and chunked file transfers, and Ed25519-signed transfers between trusted nodes. Removes the legacy LocalSend v2 channel service and focuses on the IM workbench. Six unsigned x64/ARM64 packages for Windows, macOS and Linux.",
   "localizations": {
     "zh-CN": {
       "name": "邻间",
