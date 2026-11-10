@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.nixing178.archery",
+  "publisher": "nixing178",
+  "version": "0.1.0",
+  "name": "Archery SQL Audit & Query",
+  "description": "Browse Archery instances, run SQL queries, submit and review SQL release tickets, handle to-dos, and inspect query history and table structures inside DBX.",
+  "icon": "https://raw.githubusercontent.com/nixing178/dbx-plugin-archery/v0.1.0/assets/plugin.svg",
+  "tags": ["archery", "sql", "audit", "query", "mysql", "database"],
+  "permissions": ["host.workbench"],
+  "source": "https://github.com/nixing178/dbx-plugin-archery/tree/v0.1.0",
+  "homepage": "https://github.com/nixing178/dbx-plugin-archery",
+  "license": "Apache-2.0",
+  "releaseNotes": "First public release: instance tree, SQL query with result grid export, data dictionary, query history, privileges, SQL release submit/review/rollback, to-dos, and dashboard, with session reuse and keep-alive.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Archery 审核查询",
+      "description": "在 DBX 内浏览 Archery 实例、执行 SQL 查询、提交与审核 SQL 上线工单、处理待办、查看历史与表结构。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-archery/releases/download/v0.1.0/io.github.nixing178.archery-0.1.0-windows-x64.dbxp",
+      "sha256": "35b1dc32baab57cc751327b2e199ab48587132718ae64bafa747fd8e9a93b79f",
+      "size": 5312885
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-archery/releases/download/v0.1.0/io.github.nixing178.archery-0.1.0-darwin-x64.dbxp",
+      "sha256": "8ec8faeb7a843a0796983fdb6ee7423f3bf0df652da6df544c1a26a68913c0b3",
+      "size": 5229858
+    },
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/nixing178/dbx-plugin-archery/releases/download/v0.1.0/io.github.nixing178.archery-0.1.0-darwin-arm64.dbxp",
+      "sha256": "89be267ac655b5eb4b2e40e1cdd7c65cff435287d0f1d565fedf10be46a5342a",
+      "size": 4991639
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-archery/releases/download/v0.1.0/io.github.nixing178.archery-0.1.0-linux-x64.dbxp",
+      "sha256": "443a70f86bbc462aa8b744ed3bdf9c98199615381ee96fd667c6fa6ac3c88352",
+      "size": 5287871
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/nixing178/dbx-plugin-archery/releases/download/v0.1.0/io.github.nixing178.archery-0.1.0-linux-arm64.dbxp",
+      "sha256": "4b57b6e6aa50166fd01d856597922de6ddd9e180497bdd23bb49f0a4286cfc74",
+      "size": 4972037
+    }
+  ]
+}
