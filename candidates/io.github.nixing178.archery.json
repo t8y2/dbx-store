@@ -22,32 +22,32 @@
     {
       "target": "windows-x64",
       "url": "https://github.com/nixing178/dbx-plugin-archery/releases/download/v0.1.0/io.github.nixing178.archery-0.1.0-windows-x64.dbxp",
-      "sha256": "35b1dc32baab57cc751327b2e199ab48587132718ae64bafa747fd8e9a93b79f",
-      "size": 5312885
+      "sha256": "a1dca333e0be6eb68f7d6a0ded044339c29ec5739502d44c84e8306e65fe39ba",
+      "size": 5312886
     },
     {
       "target": "darwin-x64",
       "url": "https://github.com/nixing178/dbx-plugin-archery/releases/download/v0.1.0/io.github.nixing178.archery-0.1.0-darwin-x64.dbxp",
-      "sha256": "8ec8faeb7a843a0796983fdb6ee7423f3bf0df652da6df544c1a26a68913c0b3",
+      "sha256": "0e9a3483efa55ca7d1573894c3274fc1e196ffa83ed6e3a96b13effb48414249",
       "size": 5229858
     },
     {
       "target": "darwin-arm64",
       "url": "https://github.com/nixing178/dbx-plugin-archery/releases/download/v0.1.0/io.github.nixing178.archery-0.1.0-darwin-arm64.dbxp",
-      "sha256": "89be267ac655b5eb4b2e40e1cdd7c65cff435287d0f1d565fedf10be46a5342a",
+      "sha256": "c80c6a6f120018fdfbfbbeb911b070f1be3d362fb44f4a8f1c84cb9e0636b3f6",
       "size": 4991639
     },
     {
       "target": "linux-x64",
       "url": "https://github.com/nixing178/dbx-plugin-archery/releases/download/v0.1.0/io.github.nixing178.archery-0.1.0-linux-x64.dbxp",
-      "sha256": "443a70f86bbc462aa8b744ed3bdf9c98199615381ee96fd667c6fa6ac3c88352",
-      "size": 5287871
+      "sha256": "a09c53a5aac62731f5a1516329f2211293a250c52e48f72eed304e99f9d13f37",
+      "size": 5287866
     },
     {
       "target": "linux-arm64",
       "url": "https://github.com/nixing178/dbx-plugin-archery/releases/download/v0.1.0/io.github.nixing178.archery-0.1.0-linux-arm64.dbxp",
-      "sha256": "4b57b6e6aa50166fd01d856597922de6ddd9e180497bdd23bb49f0a4286cfc74",
-      "size": 4972037
+      "sha256": "7fbc72324e2d14b8550332885ef669af32ec3c9dbf6046d4ea6906301c4505dd",
+      "size": 4972039
     }
   ]
 }
