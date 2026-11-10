@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.0verme.plan-detective",
+  "publisher": "0verme",
+  "version": "0.7.2",
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/0verme/dbx-plugin-plan-detective/releases/download/v0.7.2/io.github.0verme.plan-detective-0.7.2-universal.dbxp",
+      "sha256": "c2a7ea85866a580633f39542d9ad9f34714e730fe0fc439b85d5402d7bb31310",
+      "size": 115166
+    }
+  ],
+  "permissions": [
+    "host.plans:read"
+  ]
+}
