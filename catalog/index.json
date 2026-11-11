@@ -16050,6 +16050,49 @@
       }
     },
     {
+      "id": "local.rdp.manager",
+      "name": "Windows 原生远程桌面 (mstsc)",
+      "description": "在 DBX 连接树中管理 Windows 远程桌面，双击条目发起连接。",
+      "publisher": "xihonglei",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/local.rdp.manager/1.0.0/icon.svg",
+      "tags": [
+        "windows",
+        "rdp",
+        "mstsc",
+        "remote-desktop"
+      ],
+      "permissions": [
+        "host.workbench"
+      ],
+      "source": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop/releases/tag/v1.0.0",
+      "homepage": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop",
+      "license": "MIT",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "releasedAt": "2026-11-11T04:47:17.881Z",
+          "releaseNotes": "1.0.0: initial release; RDP hosts are managed in the DBX connection tree.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/local.rdp.manager/1.0.0/local.rdp.manager-1.0.0-windows-x64.dbxp",
+              "sha256": "46a0f3d3261c88a43fd777b0b6b069c3dd94361f638e96f230d26b32c9560a29",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2798679
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "Windows 原生远程桌面 (mstsc)",
+          "description": "在 DBX 连接树中管理 Windows 远程桌面，双击条目发起连接。"
+        }
+      }
+    },
+    {
       "id": "monstercat.waitwork",
       "name": "Wait Work",
       "description": "Work a while, rest a while. Read local TXT, EPUB and MOBI books or online books from custom sources, with chapter caching and autosave. Customize and save the SQL cover, result table and labels; reading folds away automatically when switching pages.",
