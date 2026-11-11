@@ -15021,6 +15021,84 @@
       }
     },
     {
+      "id": "io.github.yuzhi.localsend",
+      "name": "邻间 (Neighbor)",
+      "description": "Login-free LAN chat and file sharing for DBX: a guest lobby, direct and group conversations, images and chunked file transfers, and Ed25519-signed transfers between trusted nodes. Hosts a local HTTP node on port 53318 by default and can join another private-IP node.",
+      "publisher": "yuzhi",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.0/icon.svg",
+      "tags": [
+        "lan",
+        "im",
+        "chat",
+        "file-transfer",
+        "localsend",
+        "p2p"
+      ],
+      "permissions": [],
+      "source": "https://github.com/bobocha214/dbx-plugin-localsend/tree/v0.2.0",
+      "homepage": "https://github.com/bobocha214/dbx-plugin-localsend",
+      "license": "Apache-2.0",
+      "latestVersion": "0.2.0",
+      "versions": [
+        {
+          "version": "0.2.0",
+          "releasedAt": "2026-11-11T04:33:48.340Z",
+          "releaseNotes": "0.2.0: login-free LAN chat with a guest lobby, direct and group conversations, images and chunked file transfers, and Ed25519-signed transfers between trusted nodes. Removes the legacy LocalSend v2 channel service and focuses on the IM workbench. Six unsigned x64/ARM64 packages for Windows, macOS and Linux.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.0/io.github.yuzhi.localsend-0.2.0-darwin-arm64.dbxp",
+              "sha256": "8bb3c38e1f1eacc0c029f341def207f752361ea48b1d76658a39ada958b2d24d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3199684
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.0/io.github.yuzhi.localsend-0.2.0-darwin-x64.dbxp",
+              "sha256": "3eb4826517c0734759581a4dc7902d316e508bf3fce641263aa615290176f4e1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3485193
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.0/io.github.yuzhi.localsend-0.2.0-linux-arm64.dbxp",
+              "sha256": "a914c862285710c07cbdbbbcc7e813d9ffe91caf6c885b8f4a4554bfa5785f4a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3101941
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.0/io.github.yuzhi.localsend-0.2.0-linux-x64.dbxp",
+              "sha256": "64bc075a3c81a4fdd7be1e0d204af42be973c3b3e89fa74c203d48d50fc8f504",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3448580
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.0/io.github.yuzhi.localsend-0.2.0-windows-arm64.dbxp",
+              "sha256": "3a3b1d57cc88bc00549f21af47af8f467adfef231138480fb6021fd45a7759c7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3229543
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.0/io.github.yuzhi.localsend-0.2.0-windows-x64.dbxp",
+              "sha256": "f3c15586858c5a66ad83f9ee563f6fd04b479fc3215a2ac0d272b38af7ba14c1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3600090
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "邻间",
+          "description": "免登录局域网通讯：游客大厅、单聊群聊、图片文件与可信节点直连，支持网页访问。"
+        }
+      }
+    },
+    {
       "id": "io.github.yuzhi.modbus",
       "name": "Modbus TCP",
       "description": "Read and write Modbus TCP registers on PLCs, gateways and remote IO at the host and port you enter (502 by default), down to the raw TX/RX frames of every request.",
