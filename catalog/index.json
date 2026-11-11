@@ -12174,6 +12174,86 @@
       }
     },
     {
+      "id": "io.github.crayon-hua.xxljob-console",
+      "name": "XXL-JOB Console (Crayon)",
+      "description": "Manage XXL-JOB tasks, logs and executors with DBX built-in AI and MCP, scoped permissions and confirmed operation previews.",
+      "publisher": "crayon-hua",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.4/icon.svg",
+      "tags": [
+        "xxl-job",
+        "scheduler",
+        "jobs",
+        "ai",
+        "mcp"
+      ],
+      "permissions": [
+        "host.workbench",
+        "host.ai"
+      ],
+      "source": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console/tree/v0.4.4",
+      "homepage": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console",
+      "license": "MIT",
+      "latestVersion": "0.4.4",
+      "versions": [
+        {
+          "version": "0.4.4",
+          "releasedAt": "2026-11-11T05:08:22.343Z",
+          "releaseNotes": "Independent Crayon-maintained fork. Fixes external MCP tool visibility with 22 explicit access declarations; uses a distinct plugin identity and matching backend handshake version. Retains upstream preview confirmations and connection-scoped permissions.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.4/io.github.crayon-hua.xxljob-console-0.4.4-darwin-arm64.dbxp",
+              "sha256": "ff83c32dfbdb5f3080c4a77c33ae9e6a2900315df0dd3410e31a83ae9c25f660",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4995790
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.4/io.github.crayon-hua.xxljob-console-0.4.4-darwin-x64.dbxp",
+              "sha256": "0edc7e7d1c38c45da42818c4ca2017c7391b1e1f1eea2b20814765379e3633a7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5229487
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.4/io.github.crayon-hua.xxljob-console-0.4.4-linux-arm64.dbxp",
+              "sha256": "00ce734fc94ea4386f08202bea3b4270513e49178622593924ee62916c8084c7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5014758
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.4/io.github.crayon-hua.xxljob-console-0.4.4-linux-x64.dbxp",
+              "sha256": "ee1dd38d00b1d2f932f26123658c941f5b2ec4f62bc7f24c90ffc2393fd527b5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5330300
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.4/io.github.crayon-hua.xxljob-console-0.4.4-windows-arm64.dbxp",
+              "sha256": "c62fc97ce8ac34d5392daccd2ffdd9d2ef9adf12770d69a6fa464c38bbcee370",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5101518
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.4/io.github.crayon-hua.xxljob-console-0.4.4-windows-x64.dbxp",
+              "sha256": "bdded954d9d6e4fd89fcd8001b463b8b47d96d25ee5787f88e02ac655fd682a3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5461923
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "XXL-JOB 控制台 (Crayon)",
+          "description": "独立维护版：XXL-JOB 任务、日志、执行器与 22 个 AI/MCP 工具，补齐外部 MCP 权限声明。"
+        }
+      }
+    },
+    {
       "id": "io.github.fwrq41251.cosmosdb",
       "name": "Cosmos DB NoSQL",
       "description": "Query and edit Azure Cosmos DB for NoSQL documents with partition-aware queries, JSON and field editors, and conditional single-document writes.",
