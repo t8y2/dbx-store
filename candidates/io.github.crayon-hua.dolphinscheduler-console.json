@@ -2,17 +2,17 @@
   "schemaVersion": 1,
   "id": "io.github.crayon-hua.dolphinscheduler-console",
   "publisher": "crayon-hua",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "DolphinScheduler",
   "description": "DolphinScheduler workflow, instance, schedule and log console with 31 MCP tools.",
-  "icon": "https://github.com/Crayon-hua/dbx-plugin-dolphinScheduler-console/raw/refs/tags/v0.1.0/assets/plugin.svg",
+  "icon": "https://github.com/Crayon-hua/dbx-plugin-dolphinScheduler-console/raw/refs/tags/v0.1.1/assets/plugin.svg",
   "tags": [
     "dolphinscheduler",
     "workflow",
     "mcp"
   ],
   "permissions": [],
-  "source": "https://github.com/Crayon-hua/dbx-plugin-dolphinScheduler-console/tree/v0.1.0",
+  "source": "https://github.com/Crayon-hua/dbx-plugin-dolphinScheduler-console/tree/v0.1.1",
   "homepage": "https://github.com/Crayon-hua/dbx-plugin-dolphinScheduler-console",
   "license": "Apache-2.0",
   "localizations": {
@@ -24,9 +24,10 @@
   "targets": [
     {
       "target": "windows-x64",
-      "url": "https://github.com/Crayon-hua/dbx-plugin-dolphinScheduler-console/releases/download/v0.1.0/io.github.crayon-hua.dolphinscheduler-console-0.1.0-windows-x64.dbxp",
-      "sha256": "46722ac839431f77289740d2a8d404d55ff0b668d65842433572e9024a8e2358",
-      "size": 4574473
+      "url": "https://github.com/Crayon-hua/dbx-plugin-dolphinScheduler-console/releases/download/v0.1.1/io.github.crayon-hua.dolphinscheduler-console-0.1.1-windows-x64.dbxp",
+      "sha256": "56fb987dd819ea903811236fbe824f2dd97f47718d40104df6de6ab288d5dc7b",
+      "size": 4574376
     }
-  ]
+  ],
+  "releaseNotes": "Fix duplicate MCP contributions; verified installation and 31-tool discovery in DBX Desktop."
 }
