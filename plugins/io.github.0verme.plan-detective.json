@@ -17,7 +17,7 @@
   "source": "https://github.com/0verme/dbx-plugin-plan-detective/tree/v0.5.4",
   "homepage": "https://github.com/0verme/dbx-plugin-plan-detective",
   "license": "Apache-2.0",
-  "latestVersion": "0.7.1",
+  "latestVersion": "0.7.2",
   "versions": [
     {
       "version": "0.5.4",
@@ -114,6 +114,20 @@
           "sha256": "48fd3fb511c2c5288d38ab4876e88e695988431c8866ed43089d411cdcab2991",
           "signingKeyId": "dbx-store-release-2026",
           "size": 108005
+        }
+      ]
+    },
+    {
+      "version": "0.7.2",
+      "releasedAt": "2026-11-11T03:30:38.088Z",
+      "releaseNotes": "",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/io.github.0verme.plan-detective/0.7.2/io.github.0verme.plan-detective-0.7.2-universal.dbxp",
+          "sha256": "5fab59eb65f756c3659d4ec7893537aed887e058d01ced333ed484b5f42fdc71",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 115818
         }
       ]
     }
