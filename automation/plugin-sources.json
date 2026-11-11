@@ -270,6 +270,11 @@
       "repository": "shi1993911119/dbx-kingbase-debugger",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "Crayon-hua/dbx-plugin-xxl-job-console",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
