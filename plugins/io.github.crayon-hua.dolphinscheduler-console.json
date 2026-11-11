@@ -1,0 +1,40 @@
+{
+  "id": "io.github.crayon-hua.dolphinscheduler-console",
+  "name": "DolphinScheduler",
+  "description": "DolphinScheduler workflow, instance, schedule and log console with 31 MCP tools.",
+  "publisher": "crayon-hua",
+  "verified": false,
+  "icon": "https://github.com/Crayon-hua/dbx-plugin-dolphinScheduler-console/raw/refs/tags/v0.1.1/assets/plugin.svg",
+  "tags": [
+    "dolphinscheduler",
+    "workflow",
+    "mcp"
+  ],
+  "permissions": [],
+  "source": "https://github.com/Crayon-hua/dbx-plugin-dolphinScheduler-console/tree/v0.1.1",
+  "homepage": "https://github.com/Crayon-hua/dbx-plugin-dolphinScheduler-console",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.1",
+  "versions": [
+    {
+      "version": "0.1.1",
+      "releasedAt": "2026-11-11T03:52:15.666Z",
+      "releaseNotes": "Fix duplicate MCP contributions; verified installation and 31-tool discovery in DBX Desktop.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.dolphinscheduler-console/0.1.1/io.github.crayon-hua.dolphinscheduler-console-0.1.1-windows-x64.dbxp",
+          "sha256": "e29391565ad244b30d00cafca7dca160312528b24a7b2fdfdc317dbef8c2717a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4575235
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "DolphinScheduler 工作台",
+      "description": "DolphinScheduler 项目、工作流、实例、调度与日志；连接由用户自行配置。"
+    }
+  }
+}
