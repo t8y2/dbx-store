@@ -62,6 +62,11 @@
       "autoUpdate": true
     },
     {
+      "repository": "caiyq925-cell/dbx-plugin-qrcode",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
       "repository": "eryajf/dbx-plugin-k8s",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
