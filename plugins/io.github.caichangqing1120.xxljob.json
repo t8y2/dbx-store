@@ -4,17 +4,17 @@
   "description": "Manage official XXL-JOB Admin 2.3.x and 3.4.x jobs, executors and logs in DBX.",
   "publisher": "caichangqing1120",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/caichangqing1120/dbx-plugin-xxl-job/v0.1.1/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/caichangqing1120/dbx-plugin-xxl-job/v0.2.2/assets/plugin.svg",
   "tags": [
     "xxl-job",
     "scheduler",
     "jobs"
   ],
   "permissions": [],
-  "source": "https://github.com/caichangqing1120/dbx-plugin-xxl-job/tree/v0.1.1",
+  "source": "https://github.com/caichangqing1120/dbx-plugin-xxl-job/tree/v0.2.2",
   "homepage": "https://github.com/caichangqing1120/dbx-plugin-xxl-job",
   "license": "MIT",
-  "latestVersion": "0.1.1",
+  "latestVersion": "0.2.2",
   "versions": [
     {
       "version": "0.1.1",
@@ -62,6 +62,55 @@
           "sha256": "9a9d760ab3061018cbd97012765b4efd60f2679b4d1efcba8fb3b48ac69cac64",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4662895
+        }
+      ]
+    },
+    {
+      "version": "0.2.2",
+      "releasedAt": "2026-10-29T17:14:09.404Z",
+      "releaseNotes": "0.2.2 is the first Store update since 0.1.1. It exposes 13 lifecycle-bound MCP tools over the existing XXL-JOB Admin API: read (xxljob_info, xxljob_groups, xxljob_jobs, xxljob_jobs_by_group, xxljob_logs, xxljob_log_content), write (xxljob_start, xxljob_stop) and full-access administration (xxljob_trigger, xxljob_save_job, xxljob_remove_job, xxljob_save_group, xxljob_remove_group), keeping the existing confirmation and read-only guards; manifest permissions remain empty and upgrading grants no access. It also corrects the author release metadata so DBX Store can import the release, and removes the unsupported mcpTools field. UI behavior is unchanged. A matching updated DBX Desktop and standalone MCP are required.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/io.github.caichangqing1120.xxljob-0.2.2-darwin-arm64.dbxp",
+          "sha256": "35887e6e898fd9662d0a776166649f667f07cea58fde6ef5546000392229f892",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2752186
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/io.github.caichangqing1120.xxljob-0.2.2-darwin-x64.dbxp",
+          "sha256": "518ac1fd0de728623b22b0462df1a9c2c5feb7d65b4c4bceca6913b694c66e8e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2980023
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/io.github.caichangqing1120.xxljob-0.2.2-linux-arm64.dbxp",
+          "sha256": "77a59b906e83942865004cb8e2e3d79d4d85b20a5f7fe607a08183b0dc06b55e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2667426
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/io.github.caichangqing1120.xxljob-0.2.2-linux-x64.dbxp",
+          "sha256": "d11e972e8b336bcd32984db93ab349b70c82f7a9c18479ad2bc5ca61b8dbf966",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2949320
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/io.github.caichangqing1120.xxljob-0.2.2-windows-arm64.dbxp",
+          "sha256": "393cd76c1dadc795d3e4754e7a3afac43d806864a87ee4dc29a0b5d98a500f29",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2683356
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.xxljob/0.2.2/io.github.caichangqing1120.xxljob-0.2.2-windows-x64.dbxp",
+          "sha256": "21f5a98dc88f09e2a7ee44d506d131b408abddd0266347b800b9794de33090e0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2995316
         }
       ]
     }

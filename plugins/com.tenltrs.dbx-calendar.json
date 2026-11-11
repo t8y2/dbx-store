@@ -4,7 +4,7 @@
   "description": "A minimal month-view calendar for keeping day-by-day notes.",
   "publisher": "tenltrs",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/tenltrs/dbx-calendar/v0.1.8/assets/icon.svg",
+  "icon": "https://raw.githubusercontent.com/tenltrs/dbx-calendar/v0.2.1/assets/icon.svg",
   "tags": [
     "calendar",
     "memo",
@@ -13,10 +13,10 @@
     "to-do"
   ],
   "permissions": [],
-  "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.1.8",
+  "source": "https://github.com/tenltrs/dbx-calendar/tree/v0.2.1",
   "homepage": "https://github.com/tenltrs/dbx-calendar/",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.8",
+  "latestVersion": "0.2.1",
   "versions": [
     {
       "version": "0.1.1",
@@ -162,6 +162,104 @@
           "sha256": "b264c4289b6a272306cc617c7e81e64c411b0f8e4691372c38d3fc5709bd45bc",
           "signingKeyId": "dbx-store-release-2026",
           "size": 2339018
+        }
+      ]
+    },
+    {
+      "version": "0.2.0",
+      "releasedAt": "2026-10-29T17:46:56.212Z",
+      "releaseNotes": "A full settings panel arrives: calendar styles (a classic full month or a floating five-week strip), cell styles (per-line numbering or bullets), fonts, sizes, and colors for the calendar, today ring, selection, festivals and solar terms — all persisted through the plugin's sidecar and preserved across upgrades. Notes gain instant search with highlighted matches and a date picker in the month title for jumping straight to any day.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.2.0/com.tenltrs.dbx-calendar-0.2.0-darwin-arm64.dbxp",
+          "sha256": "0e22d76a8da34f57a489203901d16476a885a1d18906c825c551e49721540ae1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2082635
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.2.0/com.tenltrs.dbx-calendar-0.2.0-darwin-x64.dbxp",
+          "sha256": "6233df58b9d9a8aa4d10a7dbc384b5287fe458a0aeee2ce73be3431cbbcdd4f8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2156820
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.2.0/com.tenltrs.dbx-calendar-0.2.0-linux-arm64.dbxp",
+          "sha256": "3c9ae764d3280f9d261f182f2bce896807e87df64a6abb90981e06cda252e7cb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2071381
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.2.0/com.tenltrs.dbx-calendar-0.2.0-linux-x64.dbxp",
+          "sha256": "57c9541bc37ee0a0808ecccd8c133b5143e7cc808cc7e9e2bc7fcbfdda0cd69a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2171937
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.2.0/com.tenltrs.dbx-calendar-0.2.0-windows-arm64.dbxp",
+          "sha256": "98dad90146036522eca94d871083d36f97ca739b5db0bcc19339b02ddbcd938d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2228029
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.2.0/com.tenltrs.dbx-calendar-0.2.0-windows-x64.dbxp",
+          "sha256": "12c797d0f81db4de9222ccfba901b2aa1149b7fe46bb01c19943537df608db5f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2360398
+        }
+      ]
+    },
+    {
+      "version": "0.2.1",
+      "releasedAt": "2026-11-07T13:17:21.676Z",
+      "releaseNotes": "Public-holiday and makeup-workday arrangements now extend through 2027, so next year's Spring Festival, National Day and every 调休 day already show their 休 / 班 markers. Years the library does not carry keep showing lunar dates and solar terms without holiday badges.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.2.1/com.tenltrs.dbx-calendar-0.2.1-darwin-arm64.dbxp",
+          "sha256": "d2fdeaa5fc772d20547efff30486b20577c9be77c2e1138c1badaf71e7e3409f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2082667
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.2.1/com.tenltrs.dbx-calendar-0.2.1-darwin-x64.dbxp",
+          "sha256": "23e46bf37baab4c4b5400a664efc657d24d5aa14cf2ac11b2dc9c345faa926e8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2156846
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.2.1/com.tenltrs.dbx-calendar-0.2.1-linux-arm64.dbxp",
+          "sha256": "c6636a93c5eb58bb41f36ed02ca8f8b61aa76b0f9d12e4bc33ca6f8f3cdd6700",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2071405
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.2.1/com.tenltrs.dbx-calendar-0.2.1-linux-x64.dbxp",
+          "sha256": "22b73b1c322ce2ce7a5e42b9349b50505672289e6378d399b60885bd1e0dfd76",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2171962
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.2.1/com.tenltrs.dbx-calendar-0.2.1-windows-arm64.dbxp",
+          "sha256": "351928282ec886a674dc157ad36de0b534f200d95b63181bd2cf8b8b8ef9d61c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2228048
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.tenltrs.dbx-calendar/0.2.1/com.tenltrs.dbx-calendar-0.2.1-windows-x64.dbxp",
+          "sha256": "4a9871c522bc2718b41c496a866af95138509952caa05e325fb043c7098fbb70",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2360438
         }
       ]
     }

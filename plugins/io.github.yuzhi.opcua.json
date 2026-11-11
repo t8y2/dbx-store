@@ -1,10 +1,10 @@
 {
   "id": "io.github.yuzhi.opcua",
   "name": "OPC UA",
-  "description": "Browse the OPC UA address space of PLCs and servers, then read and write node values with data type aware decoding. Connects directly to the opc.tcp://host:port you enter (default 4840); server certificates are verified by default.",
+  "description": "Browse the OPC UA address space and read or write node values on the endpoint you enter (4840 by default); certificates verified by default, writes sent only by the Write button.",
   "publisher": "yuzhi",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-opcua/v0.2.1/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-opcua/v0.2.2/assets/plugin.svg",
   "tags": [
     "opcua",
     "opc-ua",
@@ -17,10 +17,10 @@
     "host.connections:read",
     "host.workbench"
   ],
-  "source": "https://github.com/bobocha214/dbx-plugin-opcua/tree/v0.2.1",
+  "source": "https://github.com/bobocha214/dbx-plugin-opcua/tree/v0.2.2",
   "homepage": "https://github.com/bobocha214/dbx-plugin-opcua",
   "license": "MIT",
-  "latestVersion": "0.2.1",
+  "latestVersion": "0.2.2",
   "versions": [
     {
       "version": "0.1.0",
@@ -105,12 +105,54 @@
           "size": 2669389
         }
       ]
+    },
+    {
+      "version": "0.2.2",
+      "releasedAt": "2026-10-29T17:47:28.879Z",
+      "releaseNotes": "v0.2.2 更新说明：\n- 更换图标为矢量 SVG（assets/plugin.svg），插件列表与连接表单直接渲染，任意 DPI 下都清晰；工作台标题栏使用同一 SVG 的紧凑裁剪版，以 96×22 宽幅显示，不再挤在方形小框里。\n- 修复点位拖不进点位区：禁用原生 HTML5 拖拽（它在 WebView2 里会先发 pointercancel 取消拖拽，且 drop 常常不送达），改为 pointer 单通道拖拽 + 面板矩形命中判定；没有 PointerEvent 的环境自动退回 mousedown/mousemove/mouseup。\n- 加入点位区的其他方式：树上 Variable 行的「＋」常驻可见，双击行即可加入，详情面板也有「加入点位区」。\n- 顶部栏精简为状态条：只显示当前连接名、短 ID 与连接状态，连接切换折叠进「切换」面板（手动填写连接 ID 仍可用），点外部或 Esc 收起。\n- 写入改为显式触发：点位区卡片内点数值或 ✎ 就地展开整行编辑（类型下拉 + 值输入），只有点「写入」按钮才下发（回车等同按钮，Esc 取消）；失焦不再自动写入，避免轮询或点击抢焦点时误下发。\n- 写入过程可见：按钮变「写入中…」并禁用，成功后自动回读、单元格绿色闪烁；失败保留已填内容、红色闪烁并提示服务器返回的状态码与原因。\n- 详情面板写入表单改为整行布局，值输入框加高到 36px。\n- 后端身份版本号改为读取 Cargo.toml（env!(\"CARGO_PKG_VERSION\")），不再硬编码，避免升级后启动报 “backend identity does not match manifest”。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.2.2/io.github.yuzhi.opcua-0.2.2-darwin-arm64.dbxp",
+          "sha256": "38a86995373938cb1d6dbd621c2c13be1f750a441dac3813213540d0aada9045",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2464560
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.2.2/io.github.yuzhi.opcua-0.2.2-darwin-x64.dbxp",
+          "sha256": "96a3593b6e9eb4436cc15fdb116e246b6a7c5816f6763b1074faeacdd7f42fc2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2592898
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.2.2/io.github.yuzhi.opcua-0.2.2-linux-arm64.dbxp",
+          "sha256": "3bf1ba449d62f79a1ca7049288d372203c396a501e21c915ba7823f0e32a2929",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2601356
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.2.2/io.github.yuzhi.opcua-0.2.2-linux-x64.dbxp",
+          "sha256": "127db9f07ce7eaa8d5e44a30601fe08285f45bc3037a3fa0d1d8928dcc36edc1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2717473
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.opcua/0.2.2/io.github.yuzhi.opcua-0.2.2-windows-x64.dbxp",
+          "sha256": "fa1c06722625c6015e5da579d47dd7f10e4af324738f4cc046d75780f066513e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2730766
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "OPC UA",
-      "description": "浏览 PLC 和 OPC UA 服务器的地址空间，按数据类型读取并写入节点值。"
+      "description": "浏览 OPC UA 服务器的地址空间并读写节点值，直连你填写的 opc.tcp:// 端点（默认 4840）；证书默认校验，写入需点「写入」按钮才下发。"
     }
   }
 }

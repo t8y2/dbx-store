@@ -1,0 +1,87 @@
+{
+  "id": "com.polaris.api",
+  "name": "polaris-api",
+  "description": "API request client (sidecar): multi-tab, environment variables, cURL import/export, Params/Headers/Body editing; response views for table / object tree / path drill-down / field filtering. Requests are sent via a native Rust sidecar (reqwest) with no CORS / mixed-content / forbidden-header limits, equivalent to cURL.",
+  "publisher": "misxzaiz",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/misxzaiz/polaris-api/v0.2.0/assets/plugin.svg",
+  "tags": [
+    "api",
+    "http",
+    "request",
+    "curl",
+    "debugging",
+    "rest"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/misxzaiz/polaris-api/tree/v0.2.0",
+  "homepage": "https://github.com/misxzaiz/polaris-api",
+  "license": "Apache-2.0",
+  "latestVersion": "0.2.0",
+  "versions": [
+    {
+      "version": "0.1.2",
+      "releasedAt": "2026-10-30T05:18:30.723Z",
+      "releaseNotes": "Initial release: import OpenAPI/Swagger and Postman Collection v2.1 into a searchable endpoint catalog tree with per-endpoint parameter/body/schema browsing, cURL copy and Markdown export.\n\n0.1.1: declare host.storage (persistence previously failed silently in the sandbox), add LICENSE, fix manifest $schema branch.\n\n0.1.2: fix checksums.json top-level key hash → algorithm so the store signing packager recognizes the sha256 algorithm.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/com.polaris.api/0.1.2/com.polaris.api-0.1.2-universal.dbxp",
+          "sha256": "2fb762fd315a1f0927464acd35bfdba008fa4479126fbc1051eda5e1ee3fbf7e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 49679
+        }
+      ]
+    },
+    {
+      "version": "0.2.0",
+      "releasedAt": "2026-11-01T04:28:31.296Z",
+      "releaseNotes": "Rebuild as a Rust sidecar HTTP client. v0.1.x was a universal frontend plugin positioned as an OpenAPI/Postman asset library — wrong direction, broken import modal (modalBg outside #root scope), mismatched styling, and cross-domain requests blocked by the sandbox CSP/CORS.\n\nv0.2.0 ports the relay-devkit api module to a Rust sidecar architecture: backend uses reqwest to send requests natively (no CORS/mixed-content/forbidden-header limits, equivalent to cURL); ui is a full HTTP client with multi-tab, env vars, cURL import/export, Params/Headers/Body editors, and response table/object-tree/path-drilldown/field-filter views.\n\nVerified: 44 smoke assertions, sidecar end-to-end (jsonplaceholder 200, httpbin POST with Cookie/Authorization forbidden headers preserved), browser integration (cancel button, cURL import, response views).",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.polaris.api/0.2.0/com.polaris.api-0.2.0-darwin-arm64.dbxp",
+          "sha256": "c07ac46b36623b8981ae341d16f2e22467001a25040a0144ed2d9523401a34bf",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1390113
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.polaris.api/0.2.0/com.polaris.api-0.2.0-darwin-x64.dbxp",
+          "sha256": "d4b469350f3c936bdb692bedafd5ee14b47d98288f726b0f5821ad7d99a1f9f0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1469983
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.polaris.api/0.2.0/com.polaris.api-0.2.0-linux-arm64.dbxp",
+          "sha256": "97d44407a3ddf5d971bcbdf7e3cb3b1817019aa6d1103c3c172e9d0850afbe31",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1477513
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.polaris.api/0.2.0/com.polaris.api-0.2.0-linux-x64.dbxp",
+          "sha256": "afc4ccac4befe6258109c79b7089390cd1635f785792601bfd082d8cccec4846",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1545133
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.polaris.api/0.2.0/com.polaris.api-0.2.0-windows-x64.dbxp",
+          "sha256": "f487ecef4a11c1995b61791a77e399abc7bcdf6dca8f06532e70b65d1ed5ead3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1505374
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "polaris-api",
+      "description": "API 请求客户端（sidecar 版）：多 tab、环境变量、cURL 导入导出、Params/Headers/Body 编辑；响应支持表格 / 对象树 / 路径下钻 / 字段筛选。请求经原生 sidecar（reqwest）发送，无 CORS/混合内容/禁发头限制，等效 cURL。"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "com.huangqiang.mdeditor",
+  "name": "Markdown",
+  "description": "A WYSIWYG Markdown editor for local files, powered by Typedown and Muya.",
+  "publisher": "huangqiang",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/huangqiang008/dbx-markdown-editor/v1.0.0/assets/plugin.svg",
+  "tags": [
+    "markdown",
+    "editor",
+    "notes",
+    "wysiwyg"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.storage"
+  ],
+  "source": "https://github.com/huangqiang008/dbx-markdown-editor",
+  "homepage": "https://github.com/huangqiang008/dbx-markdown-editor",
+  "license": "MIT",
+  "latestVersion": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "releasedAt": "2026-10-31T11:05:57.389Z",
+      "releaseNotes": "Initial release: Typora-style WYSIWYG Markdown editor with local file support (open/save via native dialogs), outline, folder browsing, recent files, task lists, tables, and HTML export.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.huangqiang.mdeditor/1.0.0/com.huangqiang.mdeditor-1.0.0-windows-x64.dbxp",
+          "sha256": "dc99c964714341cc1f3b538b501f2612e7597281c320cc351e834ab9027b1153",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9052953
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Markdown 编辑器",
+      "description": "所见即所得的 Markdown 编辑器，支持本地文件打开/保存、大纲、文件夹浏览、任务列表、表格与 HTML 导出。"
+    }
+  }
+}

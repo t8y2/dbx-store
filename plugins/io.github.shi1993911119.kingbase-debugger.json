@@ -1,0 +1,51 @@
+{
+  "id": "io.github.shi1993911119.kingbase-debugger",
+  "name": "Kingbase PL/SQL Debugger",
+  "description": "Debug KingbaseES routines in Oracle compatibility mode with breakpoints, stepping, variables, call stacks and OUT cursors. Chinese workbench UI; requires local Java 11+ and a user-provided Kingbase JDBC driver.",
+  "publisher": "shi1993911119",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/shi1993911119/dbx-kingbase-debugger/v0.9.3/assets/debugger.svg",
+  "tags": [
+    "database",
+    "kingbase",
+    "debugger",
+    "plsql"
+  ],
+  "permissions": [
+    "host.events",
+    "host.workbench"
+  ],
+  "source": "https://github.com/shi1993911119/dbx-kingbase-debugger/tree/v0.9.3",
+  "homepage": "https://github.com/shi1993911119/dbx-kingbase-debugger",
+  "license": "MIT",
+  "latestVersion": "0.9.3",
+  "versions": [
+    {
+      "version": "0.9.3",
+      "releasedAt": "2026-11-05T13:33:46.385Z",
+      "releaseNotes": "First public marketplace candidate. Establishes a stable publisher identity, rebuilds macOS ARM64 and Windows x64 candidates from sanitized source, includes dependency licenses and package verification. Legacy local development connections must be configured again under the new plugin ID.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.shi1993911119.kingbase-debugger/0.9.3/io.github.shi1993911119.kingbase-debugger-0.9.3-darwin-arm64.dbxp",
+          "sha256": "94e8884e58258ac55a8b791e65deb6ea1ec4dc6a4b577dfb13ca44afa19d921b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2275833
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.shi1993911119.kingbase-debugger/0.9.3/io.github.shi1993911119.kingbase-debugger-0.9.3-windows-x64.dbxp",
+          "sha256": "8f7efd44cf3e8aa1af9c8f6caf7f7c4f64ab5e985c49d7fa44ab0506257d078c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3779597
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "金仓 PL/SQL 调试器",
+      "description": "在 KingbaseES Oracle 兼容模式下调试过程与函数：断点、单步、变量、调用栈和 OUT 游标。需本机 Java 11+ 与用户自备的金仓 JDBC 驱动。"
+    }
+  }
+}

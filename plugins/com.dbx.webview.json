@@ -1,10 +1,10 @@
 {
   "id": "com.dbx.webview",
   "name": "Browser",
-  "description": "在 DBX 内打开任意网站：抓取正文并按站点规则重排；小红书、抖音等前端渲染站点可直接在插件内实时浏览、登录、评论。",
+  "description": "一个工作台解决三件事：干净读文章、实时逛小红书抖音、离线看小说——全在 DBX 内完成。",
   "publisher": "xingxi",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/chenjie1024/DBX-Browser/v0.7.8/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/chenjie1024/DBX-Browser/v0.7.10/assets/plugin.svg",
   "tags": [
     "web",
     "reader",
@@ -13,12 +13,13 @@
   ],
   "permissions": [
     "host.storage",
-    "host.events"
+    "host.events",
+    "host.binary"
   ],
-  "source": "https://github.com/chenjie1024/DBX-Browser/tree/v0.7.8",
+  "source": "https://github.com/chenjie1024/DBX-Browser/tree/v0.7.10",
   "homepage": "https://github.com/chenjie1024/DBX-Browser",
   "license": "MIT",
-  "latestVersion": "0.7.8",
+  "latestVersion": "0.7.10",
   "versions": [
     {
       "version": "0.7.8",
@@ -33,12 +34,26 @@
           "size": 2784108
         }
       ]
+    },
+    {
+      "version": "0.7.10",
+      "releasedAt": "2026-10-28T15:12:52.945Z",
+      "releaseNotes": "Live view rebuilt for speed and clarity. The backend now streams raw JPEG frames over the new stdio-framed transport with the host.binary permission, so frames skip base64 (~25% smaller) and JSON encode/decode; decoding and painting happen in a Worker OffscreenCanvas, so the main thread does zero decodes; JPEG quality drops to 60 while scrolling and returns to 85 after 350 ms idle; capture is now 1:1 with the panel at the system DPR, so the picture is no longer upscaled and text stays sharp. Fixes the Worker adopting queued frames after the first one, which left only the first frame drawn. Test tooling (protocol smoke test, preset check) now supports the framed transport. Measured on the dev host: 38.3 fps received, 30.3 fps painted, 0 main-thread decodes. Windows only (WebView2).",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.webview/0.7.10/com.dbx.webview-0.7.10-windows-x64.dbxp",
+          "sha256": "b1a5de7914b7d8e6c42e3a4583248f3a080376fb3b77d4f11905f64f2f27e16c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2794972
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "Browser",
-      "description": "在 DBX 内打开任意网站：抓取正文并按站点规则重排；小红书、抖音等前端渲染站点可直接在插件内实时浏览、登录、评论。"
+      "description": "一个工作台解决三件事：干净读文章、实时逛小红书抖音、离线看小说——全在 DBX 内完成。"
     }
   }
 }

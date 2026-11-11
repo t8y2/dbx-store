@@ -62,6 +62,11 @@
       "autoUpdate": true
     },
     {
+      "repository": "caiyq925-cell/dbx-plugin-qrcode",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
       "repository": "eryajf/dbx-plugin-k8s",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
@@ -212,6 +217,11 @@
       "autoUpdate": true
     },
     {
+      "repository": "zaojiaoci/dbx-empty-bowl",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
       "repository": "zaojiaoci/dbx-sql-guard",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
@@ -233,6 +243,31 @@
     },
     {
       "repository": "fwrq41251/dbx-plugin-cosmosdb",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "vyrnax/dbx-plugin-translation",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "allran/dbx-plugin-screenshot",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "huangqiang008/dbx-markdown-editor",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "vyrnax/dbx-plugin-datasweep",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "shi1993911119/dbx-kingbase-debugger",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     }
