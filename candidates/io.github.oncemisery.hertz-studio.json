@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.oncemisery.hertz-studio",
+  "publisher": "oncemisery",
+  "version": "0.3.3-preview",
+  "name": "Hertz Studio Standard",
+  "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine.",
+  "tags": [
+    "music",
+    "player",
+    "lyrics",
+    "audio",
+    "local-first"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage",
+    "host.workbench"
+  ],
+  "homepage": "https://github.com/onceMisery/hertz-studio",
+  "license": "MIT",
+  "localizations": {
+    "zh-CN": {
+      "name": "Hertz Studio Standard",
+      "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。"
+    }
+  },
+  "icon": "https://raw.githubusercontent.com/onceMisery/hertz-studio/hertz-plugin-standard-v0.3.3-preview/plugin/assets/plugin.svg",
+  "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.3-preview",
+  "releaseNotes": "## Hertz Studio Standard 插件 0.3.3-preview\r\n\r\n补丁预览版，源码基线为 `ad8ab8d8afd5ba395e87707a682a4d7a5fb4dd37`。\r\n\r\n- 加固壁纸 ZIP 导入与复验：在读取元数据和解压前限制原始条目数、分配量、物理范围与实际压缩比，拒绝隐藏重复项和伪造目录声明。\r\n- 加强 GLB/KTX2 容器及模型结构校验，收口资源准备、取消和预算预约的生命周期；完整原生模型渲染链路仍在开发中。\r\n- 改善凤凰舞台的光影、色彩、节奏和性能，并支持内置场景与二维图层组合。\r\n- 修复歌词校准请求在无新帧时的回收；固定 Windows 舞台构建输入的换行字节，确保发布资源哈希一致。\r\n\r\nStandard 保留本地/WebDAV、Jamendo、ccMixter 和公开播客；Jamendo 需要用户配置自己的 client_id。\r\n\r\nRequires DBX >= 0.6.35。插件自带 `bin/dbx-plugin-hertz`，通过 stdio JSON-RPC 与宿主通信。浮动胶囊需要宿主支持 floating surface；宿主缺少该能力时使用页内最小化。Windows 桌面歌词/壁纸组件由用户单独启动和授权，不随本次商店插件包安装；完整跨平台桌面验收仍待完成。\r\n\r\n本 Release 提供五个平台的未签名候选及 `release-candidates.json`。DBX Store 上架还需要维护者审核和签名。\r\n\r\n验证：前端默认 86 步、发行 UI、Standard/Full 身份与依赖隔离、Rust 1.88 ZIP 与 canonical 身份 28 项回归通过；远端 CI 见 [42972366616](https://github.com/onceMisery/hertz-studio/actions/runs/42972366616)。",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.3-preview/io.github.oncemisery.hertz-studio-0.3.3-preview-darwin-arm64.dbxp",
+      "sha256": "9656952fe0535724bec546ad562e004146cbe62521924b5ead0588f6627828d6",
+      "size": 14367588
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.3-preview/io.github.oncemisery.hertz-studio-0.3.3-preview-darwin-x64.dbxp",
+      "sha256": "ebec8c11a4d899db9c306b7f1414e6ca9797ab248960d8291722b68490fb8910",
+      "size": 15498215
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.3-preview/io.github.oncemisery.hertz-studio-0.3.3-preview-linux-arm64.dbxp",
+      "sha256": "eff2902f5c7b01eb914917c1b5573c687abb5217028ce54073a9c291ccb499f7",
+      "size": 16110178
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.3-preview/io.github.oncemisery.hertz-studio-0.3.3-preview-linux-x64.dbxp",
+      "sha256": "c8ebd508801f12455cff48b0837aef49ba1aecc3d9258e384ef1414d6906944f",
+      "size": 16359025
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.3-preview/io.github.oncemisery.hertz-studio-0.3.3-preview-windows-x64.dbxp",
+      "sha256": "d08254246cffc3e9d68495ca63e460df8eb46e625baee53b6c3df9d0fa741853",
+      "size": 20349611
+    }
+  ]
+}
