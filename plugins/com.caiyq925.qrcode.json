@@ -1,7 +1,7 @@
 {
   "id": "com.caiyq925.qrcode",
   "name": "QR Code Generator",
-  "description": "Generate QR codes from text, Wi-Fi networks or contact cards, with custom colors, module shapes and a centered logo. Export PNG, copy to clipboard, and keep a history of recent codes.",
+  "description": "Generate QR codes from text, Wi-Fi networks or contact cards, with custom colors, module shapes and a centered logo. Decode QR images locally (paste/drop/upload), export PNG or SVG, copy to clipboard, keep a history and named style presets.",
   "publisher": "caiyq925",
   "verified": false,
   "icon": "https://raw.githubusercontent.com/caiyq925-cell/dbx-plugin-qrcode/v0.1.0/assets/plugin.svg",
@@ -18,7 +18,7 @@
   "source": "https://github.com/caiyq925-cell/dbx-plugin-qrcode/tree/v0.1.0",
   "homepage": "https://github.com/caiyq925-cell/dbx-plugin-qrcode",
   "license": "MIT",
-  "latestVersion": "0.1.0",
+  "latestVersion": "0.2.0",
   "versions": [
     {
       "version": "0.1.0",
@@ -33,12 +33,26 @@
           "size": 28215
         }
       ]
+    },
+    {
+      "version": "0.2.0",
+      "releasedAt": "2026-11-11T02:37:09.874Z",
+      "releaseNotes": "Two-pane generator layout with unified capacity counters and contextual empty/error recovery; named style presets; SVG vector export; semantic file names; batch mode (default 10 rows, up to 50) with combined sheet export; Wi-Fi share card; scan-verification badge; new Decode tab — paste/drop/upload a QR image and decode it locally, then copy or fill it back into the generator; accessibility pass.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/com.caiyq925.qrcode/0.2.0/com.caiyq925.qrcode-0.2.0-universal.dbxp",
+          "sha256": "95439f4198f34efb5dba19654f46f5085dba8493be290b7406ee35ac4c6b45a7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 90139
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "二维码工具",
-      "description": "文本、Wi-Fi、名片一键生成二维码：自定义颜色、码点形状与中心 Logo，导出 PNG、复制到剪贴板，并保留历史记录。"
+      "description": "文本、Wi-Fi、名片一键生成二维码：自定义颜色、码点形状与中心 Logo，本地解码识别二维码图片（粘贴/拖拽/上传），导出 PNG/SVG、复制到剪贴板，支持历史记录与样式预设。"
     }
   }
 }
