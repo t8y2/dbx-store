@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.nixing178.gitlab",
+  "publisher": "nixing178",
+  "version": "0.3.2",
+  "name": "GitLab Console",
+  "description": "Browse projects and code, review merge requests, watch pipelines and handle issues inside DBX.",
+  "icon": "https://raw.githubusercontent.com/nixing178/dbx-plugin-gitlab/v0.3.2/assets/plugin.svg",
+  "tags": ["gitlab", "code-review", "merge-requests", "pipelines", "issues"],
+  "permissions": ["host.workbench", "host.events", "host.storage"],
+  "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.3.2",
+  "homepage": "https://github.com/nixing178/dbx-plugin-gitlab",
+  "license": "Apache-2.0",
+  "releaseNotes": "Fixes blank merge request detail pages on GitLab instances that omit optional arrays, and includes the 0.3.1 external MCP toolset: 35 tools across 4 toolsets with read / write / full access levels. Adds packages for Windows x64, macOS (Intel and Apple Silicon) and Linux (x64 and ARM64).",
+  "localizations": {
+    "zh-CN": {
+      "name": "GitLab 管理台",
+      "description": "在 DBX 内浏览 GitLab 项目与代码、评审合并请求、查看流水线并处理 Issue。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-gitlab/releases/download/v0.3.2/io.github.nixing178.gitlab-0.3.2-windows-x64.dbxp",
+      "sha256": "53e3b3d67998b06364364b0c45d202250192a834d7f5fa451b9e5ed4906704f1",
+      "size": 4707349
+    },
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/nixing178/dbx-plugin-gitlab/releases/download/v0.3.2/io.github.nixing178.gitlab-0.3.2-darwin-arm64.dbxp",
+      "sha256": "6569fe59804bd42f0a8e0f7b50383ff646557be0c0ad16286aa02c3f9030779e",
+      "size": 4426760
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-gitlab/releases/download/v0.3.2/io.github.nixing178.gitlab-0.3.2-darwin-x64.dbxp",
+      "sha256": "a2591a47c92c5930850d9a0cf68528b51fad71349a587821068cffa6b7160ac1",
+      "size": 4649704
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-gitlab/releases/download/v0.3.2/io.github.nixing178.gitlab-0.3.2-linux-x64.dbxp",
+      "sha256": "295e616c59058f669b6f857af9efef5ab1d1eb4da8eadb6c76ec632076dd018b",
+      "size": 4715904
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/nixing178/dbx-plugin-gitlab/releases/download/v0.3.2/io.github.nixing178.gitlab-0.3.2-linux-arm64.dbxp",
+      "sha256": "d38765427cda6bc108fd5e9470edfa74dd9420d55b5253c8a094d617f1df77c8",
+      "size": 4423672
+    }
+  ]
+}
