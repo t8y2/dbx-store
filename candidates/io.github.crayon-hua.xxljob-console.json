@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.crayon-hua.xxljob-console",
+  "publisher": "crayon-hua",
+  "version": "0.4.5",
+  "name": "XXL-JOB",
+  "description": "XXL-JOB Admin console with MCP support for jobs, logs, and executors. Open a GitHub Issue if anything breaks—we respond quickly.",
+  "icon": "https://raw.githubusercontent.com/Crayon-hua/dbx-plugin-xxl-job-console/v0.4.5/assets/plugin.svg",
+  "tags": [
+    "xxl-job",
+    "scheduler",
+    "jobs",
+    "ai",
+    "mcp"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.ai"
+  ],
+  "source": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console/tree/v0.4.5",
+  "homepage": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console",
+  "license": "MIT",
+  "releaseNotes": "0.4.5 advertises the mcp sidecar capability so DBX lists MCP tools again (fixes 0/0). Renames the listing to XXL-JOB and highlights MCP support with fast Issue response.",
+  "localizations": {
+    "zh-CN": {
+      "name": "XXL-JOB",
+      "description": "支持 MCP 的 XXL-JOB 控制台，覆盖任务、日志与执行器。遇到问题可提 Issues，我们会尽快响应。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console/releases/download/v0.4.5/io.github.crayon-hua.xxljob-console-0.4.5-darwin-arm64.dbxp",
+      "sha256": "6221a475f40947c4b231723052293afecf123ab69d69a58719adfc819029bd60",
+      "size": 4994737
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console/releases/download/v0.4.5/io.github.crayon-hua.xxljob-console-0.4.5-darwin-x64.dbxp",
+      "sha256": "2efa873d3a74158b84d67b745cf0be786a6e5eba8b27f72ca942e8a8b85b91fb",
+      "size": 5227895
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console/releases/download/v0.4.5/io.github.crayon-hua.xxljob-console-0.4.5-windows-arm64.dbxp",
+      "sha256": "4debe8cda7c9982b24103e86c6a302d3932c479cc4a7d40a2545e1a4ace1d0da",
+      "size": 5099981
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console/releases/download/v0.4.5/io.github.crayon-hua.xxljob-console-0.4.5-windows-x64.dbxp",
+      "sha256": "5a979c31eafd8f88e86e21ac67810f89c80f7291e473ca9528e2a74f0be6732f",
+      "size": 5460179
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console/releases/download/v0.4.5/io.github.crayon-hua.xxljob-console-0.4.5-linux-arm64.dbxp",
+      "sha256": "adcd4f79a03bdad24ff3e724e9f21c010f1b802af55a9f15b76cc2ef1a7895d8",
+      "size": 5013326
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console/releases/download/v0.4.5/io.github.crayon-hua.xxljob-console-0.4.5-linux-x64.dbxp",
+      "sha256": "7a73b97ee6c592b8797aab3b7d8232315a138100e005525b1a32a91355781489",
+      "size": 5328895
+    }
+  ]
+}
