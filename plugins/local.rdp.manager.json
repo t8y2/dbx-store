@@ -4,7 +4,7 @@
   "description": "在 DBX 连接树中管理 Windows 远程桌面，双击条目发起连接。",
   "publisher": "xihonglei",
   "verified": false,
-  "icon": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop/releases/download/v1.0.0/plugin.svg",
+  "icon": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop/releases/download/v1.0.1/plugin.svg",
   "tags": [
     "windows",
     "rdp",
@@ -14,10 +14,10 @@
   "permissions": [
     "host.workbench"
   ],
-  "source": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop/releases/tag/v1.0.0",
+  "source": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop/releases/tag/v1.0.1",
   "homepage": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop",
   "license": "MIT",
-  "latestVersion": "1.0.0",
+  "latestVersion": "1.0.1",
   "versions": [
     {
       "version": "1.0.0",
@@ -30,6 +30,20 @@
           "sha256": "46a0f3d3261c88a43fd777b0b6b069c3dd94361f638e96f230d26b32c9560a29",
           "signingKeyId": "dbx-store-release-2026",
           "size": 2798679
+        }
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "releasedAt": "2026-11-13T03:04:27.853Z",
+      "releaseNotes": "1.0.1: New connections start full screen; the workbench shows only the current connection; temporary .rdp files go to the system temp directory and are removed after use.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/local.rdp.manager/1.0.1/local.rdp.manager-1.0.1-windows-x64.dbxp",
+          "sha256": "47185d049b7f347058546d5cec704c3868decc2f8abf62db2036f9957d256ce0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1949554
         }
       ]
     }

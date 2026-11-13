@@ -13263,7 +13263,7 @@
       "description": "Manage Jenkins jobs, builds, console output, queue and nodes inside DBX, with stage view and MCP tools for AI clients.",
       "publisher": "nixing178",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.12.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/icon.svg",
       "tags": [
         "jenkins",
         "ci",
@@ -13279,8 +13279,50 @@
       "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.12.0",
       "homepage": "https://github.com/nixing178/dbx-plugin-jenkins",
       "license": "Apache-2.0",
-      "latestVersion": "0.12.0",
+      "latestVersion": "0.13.1",
       "versions": [
+        {
+          "version": "0.13.1",
+          "releasedAt": "2026-11-13T02:50:36.930Z",
+          "releaseNotes": "External MCP support: the 10 Jenkins tools can now be exposed on the host dbx-mcp server with per-tool access levels (7 read, trigger/cancel write, stop full), and tool discovery works without an open connection. Fixes the MCP capabilities page failing with 'invalid_params: missing connectionId'.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-darwin-arm64.dbxp",
+              "sha256": "b992876e53720765cb4fd2da2ebc8135f9e8cd98c219f7619f067881a6ed6cda",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4844045
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-darwin-x64.dbxp",
+              "sha256": "a7915818048aba1a1608fc80c28ef48387e5042b194aba4cf70d4169228364de",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5085744
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-linux-arm64.dbxp",
+              "sha256": "fdda9c581e552bce7ecb0d5bd9e2aeb6c65115c919199f55b90f10ba052d2573",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4824564
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-linux-x64.dbxp",
+              "sha256": "f7518696c3ca9efdce1cb8a93edbce36e9b3eaad34455c0a0071c92d8dd361e2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5150811
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-windows-x64.dbxp",
+              "sha256": "a590edd687c6573afedaa6f410c76054770a39ba9c81949f79bc29d80f4fac57",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5184866
+            }
+          ]
+        },
         {
           "version": "0.12.0",
           "releasedAt": "2026-11-11T03:18:52.651Z",
@@ -16177,7 +16219,7 @@
       "description": "在 DBX 连接树中管理 Windows 远程桌面，双击条目发起连接。",
       "publisher": "xihonglei",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/local.rdp.manager/1.0.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/local.rdp.manager/1.0.1/icon.svg",
       "tags": [
         "windows",
         "rdp",
@@ -16187,11 +16229,25 @@
       "permissions": [
         "host.workbench"
       ],
-      "source": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop/releases/tag/v1.0.0",
+      "source": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop/releases/tag/v1.0.1",
       "homepage": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop",
       "license": "MIT",
-      "latestVersion": "1.0.0",
+      "latestVersion": "1.0.1",
       "versions": [
+        {
+          "version": "1.0.1",
+          "releasedAt": "2026-11-13T03:04:27.853Z",
+          "releaseNotes": "1.0.1: New connections start full screen; the workbench shows only the current connection; temporary .rdp files go to the system temp directory and are removed after use.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/local.rdp.manager/1.0.1/local.rdp.manager-1.0.1-windows-x64.dbxp",
+              "sha256": "47185d049b7f347058546d5cec704c3868decc2f8abf62db2036f9957d256ce0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1949554
+            }
+          ]
+        },
         {
           "version": "1.0.0",
           "releasedAt": "2026-11-11T04:47:17.881Z",
