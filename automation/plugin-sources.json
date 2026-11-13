@@ -275,6 +275,11 @@
       "repository": "Crayon-hua/dbx-plugin-xxl-job-console",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "vyrnax/dbx-plugin-cronpulse",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
