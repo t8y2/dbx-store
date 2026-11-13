@@ -15,5 +15,8 @@
       "sha256": "2b94e01081df7f04a496d49493a4f394ba8d2b69c9b7cfa79446e6ce4cc2f3fa",
       "size": 61993
     }
+  ],
+  "permissions": [
+    "host.storage"
   ]
 }
