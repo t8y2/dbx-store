@@ -16692,7 +16692,7 @@
       "description": "A lightweight dev toolset under 200KB — instant to use. Sandboxed and offline with zero network access. High-frequency tools for crypto, encoding, text, data conversion, formatting, time, networking and image generation; inputs and options are remembered and sync seamlessly across devices via DBX.",
       "publisher": "terry",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.10/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.11/icon.svg",
       "tags": [
         "devtools",
         "utilities",
@@ -16712,8 +16712,22 @@
       "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "license": "MIT",
-      "latestVersion": "0.6.10",
+      "latestVersion": "0.6.11",
       "versions": [
+        {
+          "version": "0.6.11",
+          "releasedAt": "2026-11-13T03:45:47.823Z",
+          "releaseNotes": "新增：图像工具一键复制图片到剪贴板（需 DBX ≥ 0.7.0）——二维码、条码生成器、占位图、图片转 Base64（解码侧）新增「复制图片」按钮，非 PNG 格式自动转码；旧版宿主自动隐藏按钮。 | New: one-click copy-to-clipboard in image tools (requires DBX ≥ 0.7.0) — QR code, barcode generator, placeholder image and Base64-to-image gain a Copy Image button, with automatic PNG re-encoding for other formats; the button is hidden on older hosts.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.11/terry.devtools-0.6.11-universal.dbxp",
+              "sha256": "15ee3c2b006ce1855cbdfa9a6352b4380a200fc5f02860f7196c23becefe0701",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 192676
+            }
+          ]
+        },
         {
           "version": "0.6.10",
           "releasedAt": "2026-10-30T05:24:53.023Z",
