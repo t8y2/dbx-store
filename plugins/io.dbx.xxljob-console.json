@@ -1,10 +1,10 @@
 {
   "id": "io.dbx.xxljob-console",
   "name": "XXL-JOB Console",
-  "description": "Manage XXL-JOB tasks, logs and executors with DBX built-in AI and MCP, scoped permissions and confirmed operation previews.",
+  "description": "Manage XXL-JOB tasks, logs and executors with DBX built-in AI and MCP, DBX-managed tool access and confirmed operation previews.",
   "publisher": "ezreal-byte",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-plugin-xxl-job-console/v0.4.2/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-plugin-xxl-job-console/v0.4.4/assets/plugin.svg",
   "tags": [
     "xxl-job",
     "scheduler",
@@ -19,7 +19,7 @@
   "source": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
   "homepage": "https://github.com/Ezreal-byte/dbx-plugin-xxl-job-console",
   "license": "MIT",
-  "latestVersion": "0.4.2",
+  "latestVersion": "0.4.4",
   "versions": [
     {
       "version": "0.3.1",
@@ -312,6 +312,55 @@
           "sha256": "3aff2f4c45f154fbb9ddb0807bb96c91904c57c8319c9642e88ba28ec036c8c6",
           "signingKeyId": "dbx-store-release-2026",
           "size": 5450757
+        }
+      ]
+    },
+    {
+      "version": "0.4.4",
+      "releasedAt": "2026-11-13T17:10:31.746Z",
+      "releaseNotes": "0.4.4 makes DBX the single source of MCP authorization: the plugin-side AI/MCP switch and per-connection tool allowlist are removed, while manifest-declared tools and preview-confirmed writes remain. External MCP grants, access ceilings, tool opt-outs and connection scope are managed in DBX Settings → MCP → Capabilities. Also includes declared access for all 22 tools, keyboard-searchable executor dropdowns, and inherited executor filters. Requires DBX 0.6.60+ and Host API ^1.4.0.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.4/io.dbx.xxljob-console-0.4.4-darwin-arm64.dbxp",
+          "sha256": "0dbc79f68cdd44c786dc81e1e9928e9114095dfcf1d70a7042df3d9ba5dc99cd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4972726
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.4/io.dbx.xxljob-console-0.4.4-darwin-x64.dbxp",
+          "sha256": "574a5cfe0bb63dfcc99f0fe371fbcdc17ef477482577f3e2c4a283f51e5af3e0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5205143
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.4/io.dbx.xxljob-console-0.4.4-linux-arm64.dbxp",
+          "sha256": "0d2a48a77947270b5554840e24b21fbb7288d5f1fe499d502e09e80669a45c2a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4990349
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.4/io.dbx.xxljob-console-0.4.4-linux-x64.dbxp",
+          "sha256": "5952600147722242bf4b7cfe020053b0db680ace643218a7c08b0c802189630d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5306906
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.4/io.dbx.xxljob-console-0.4.4-windows-arm64.dbxp",
+          "sha256": "0f4d1e103cf75046818b376682fd98ca5ab8e2cc6f884d3192829216ac3ff7db",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5083247
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.xxljob-console/0.4.4/io.dbx.xxljob-console-0.4.4-windows-x64.dbxp",
+          "sha256": "b21f3a55033f93a1c912d5b55deb410f1c8ff7299dc2f52679e913ae4ab13a64",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5438749
         }
       ]
     }
