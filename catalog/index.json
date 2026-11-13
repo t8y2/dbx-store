@@ -2874,7 +2874,7 @@
       "description": "Local-first Markdown notes and quick records with AI assistance: file workspace, WYSIWYG editor, tags, full-text search and streaming chat.",
       "publisher": "mjj3610",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.8/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.9/icon.svg",
       "tags": [
         "notes",
         "markdown",
@@ -2883,11 +2883,53 @@
         "ai"
       ],
       "permissions": [],
-      "source": "https://github.com/mjj3610/dbx-note/tree/v0.5.8",
+      "source": "https://github.com/mjj3610/dbx-note/tree/v0.5.9",
       "homepage": "https://github.com/mjj3610/dbx-note",
       "license": "GPL-3.0-or-later",
-      "latestVersion": "0.5.8",
+      "latestVersion": "0.5.9",
       "versions": [
+        {
+          "version": "0.5.9",
+          "releasedAt": "2026-11-13T03:12:46.490Z",
+          "releaseNotes": "First listing. Local-first Markdown workbench shipped as a DBX plugin: the workspace is a plain folder of .md files, edited WYSIWYG or in source mode. Records, tags, chats and settings live in the plugin's own SQLite database. The Rust sidecar owns every privileged operation (files, SQLite, AI HTTP/SSE, GDI screen capture with a native 1:1 region selector and in-place annotation, clipboard bitmaps, microphone recording), so the plugin page itself has no file or network access. v0.4.0 hardens the editor: in-note search and replace (Ctrl+F, match counter, replace all, match case), GitHub alert callouts (NOTE/TIP/IMPORTANT/WARNING/CAUTION) that round-trip through Markdown, a rebuilt table toolbar (row/column/align/delete groups, disabled states, active alignment) with tooltips that no longer cover the header, and a full shortcut set for tables, math, Mermaid and heading collapse. v0.5.0 rebuilds AI configuration around providers and models: several providers can coexist (presets for OpenAI, Gemini, DeepSeek, Qwen, Zhipu, Moonshot, SiliconFlow, OpenRouter, Groq, Together, xAI, Ollama, LM Studio), models are fetched from the provider with one click, each model carries its own type, temperature, top_p, max_tokens and streaming flag, and chat / image recognition / speech transcription can each point at a different model. Existing single-model settings are migrated automatically, and a chat-model fallback keeps recognition working for users who only configured one multimodal model. It also fixes cloud sync treating a workspace that merely sits inside another repository as an initialized repo, which could have committed notes into the parent repository. v0.5.1 makes Git sync compare files individually on open, pull one note at a time, surface real conflicts and refresh the editor after a pull. v0.5.2 completes that alignment with the reference implementation: entering the file tree or returning to the app fetches a remote directory listing, remote-only notes show up in the sidebar with a cloud icon and their content is downloaded only when opened; the auto-sync interval now controls pushing only, so it no longer disables pull-on-open. The global screenshot selector gains eight resize handles with native double-arrow cursors, and in-place annotations, toolbar and final output all follow the resized region. Also included: throttled remote listing refresh, serialized settings persistence, and a guard against a nested workspace reading its parent Git repository. v0.5.3 adds the editor footer bar from the reference implementation: copy the current note as Markdown, HTML, JSON or plain text; export it as Markdown, HTML, JSON or PDF (system print dialog, with an HTML fallback when printing is blocked); an outline toggle and a live character count. A new local version history is written to SQLite on every save (deduplicated, at most one automatic snapshot per minute, 50 per note), with manual checkpoints, full-text preview and a two-step restore that first saves the current draft so the operation stays reversible. History works offline and needs no cloud sync. Clipboard writes also get a longer retry window on Windows. v0.5.4 corrects both footer features to match the reference implementation exactly. Exports now open a native Save As dialog, write to the path the user picks and report that path back in the UI; cancelling writes nothing and shows no success message (browser download is only a fallback on platforms without a native dialog). JSON export is a Tiptap JSON document and HTML exports inline workspace images as data URLs so files stay self-contained. Version history is no longer a local snapshot list: it shows the last ten commits for the current note from the configured GitHub / Gitee / GitLab / Gitea remote, with short SHA links, commit message, author, date, an open-in-repository link and restore-by-commit; the entry is hidden entirely when no Git remote is configured. v0.5.5 fixes two export defects: all four formats now keep their own extension (the Save As dialog no longer reuses the previous .html filter, and the target path is normalized from the requested format), and the native Save As dialog is forced to the foreground by binding the host window as owner plus a topmost hook. PDF printing now uses a top-level window so the plugin iframe sandbox cannot swallow it, and falls back to a clearly named .print.html file instead of a silent ordinary HTML export. It also completes the file-tree note operations from the reference implementation: a More menu with sorting by name / modified time / size, collapse all, toggles for asset folders, knowledge-base status and remote files, local / Markdown / Notion .zip imports, remote file upload and download, and knowledge-base index rebuild and snapshot export / import; plus a context menu with new file / folder, expand / collapse, reveal in file manager, create from template, knowledge-base actions, cut / copy / duplicate / paste with Ctrl+X/C/V, folder upload / download, rename (F2) and delete (Del). Sorting and view toggles persist in settings, shortcuts only fire while the file tree has focus, and the knowledge-base actions map to a workspace .dbx-note/kb-index.json index snapshot that travels with cloud sync. v0.5.6 replaces the placeholder knowledge-base index with a real RAG pipeline: Markdown is split into heading-aware chunks (code blocks and tables stay atomic), embedded through the configured embedding model in batches of 16, stored in SQLite vector_documents / knowledge_sources, and searched with cosine similarity plus BM25 fused by reciprocal rank fusion. AI chat injects the resulting context and shows cited sources; a workspace .dbx-note/rag-snapshot.json snapshot travels with cloud sync, and a full settings page exposes chunk size, overlap, topK, threshold, auto-vectorize, auto-inject, rebuild, clear and retrieval diagnostics. When no embedding model is configured, the index falls back to lexical-only chunks so keyword search still works. Folder and file context menus are now two distinct sets matching the reference implementation: folders get new file / folder, expand / collapse, duplicate, batch vector actions and folder upload / download; files get open in a new window, open read-only, reveal, export to Markdown / HTML / JSON / PDF, upload file, per-note vector actions and include / auto-compute switches. PDF export no longer writes a *.print.html file: the sidecar opens a print preview in the default browser so the user picks Save as PDF. The global screenshot selection border and its eight resize handles are now red, and the AI model settings expose the embedding model purpose. v0.5.7 fixes four editor defects reported against the reference implementation: math formulas no longer disappear after cloud sync or when a note is reopened (the inline and block math nodes now declare markdownTokenName so the Markdown tokenizer tokens resolve to their parseMarkdown handlers, and the atom nodes no longer carry illegal content); typing / inside an existing line or list item opens the block command palette (the trigger now accepts a slash at block start or after whitespace / punctuation, and only deletes the /query range); the block + handle stays clickable while the mouse crosses the editor gutter (delayed hide plus a transparent hover bridge); and closing one tab no longer makes the remaining tabs blink out while the neighbour note is loaded (the tab bar stays mounted and the active tab is switched optimistically in the same state update). v0.5.8 fixes Git/Gitee synchronization after the v0.5.7 install: auto-sync no longer swallows push failures, the commit dialog distinguishes a clean tree from unpushed commits and ignored notes, tokens are URL-encoded with Gitee-specific username candidates, a Test Connection button verifies the credential, and remote listing failures are surfaced with a retry action in both the file tree and sync settings. Remote file listings now follow the reference implementation with no 15-second throttle, single-flight queued refreshes, and triggers on folder expand, sidebar search, file operations and successful connection tests. The outline is rebuilt on the editor's ProseMirror document with an incremental heading index: it no longer re-parses the whole Markdown on every keystroke, and clicking any heading level (H1-H6) scrolls to the exact block using stable positions instead of text matching; source mode falls back to line-based navigation. v0.5.9 adds a knowledge graph built as a read-only view of the existing RAG vector store. A new Graph tab shows the graph in the main workspace while the editor stays mounted but hidden, so undo history, unsaved content, the outline index and scroll position survive switching. Two new sidecar RPCs (kb/graph and kb/graph/neighbors) derive nodes and edges from vector_documents without re-embedding or writing tables: source granularity mean-pools chunk embeddings, chunk granularity maps one node per chunk, similarity edges use cosine with per-node relative top-k and optional absolute threshold, and adjacency edges connect neighbouring chunks of the same document. When no embedding model is configured, a symmetric BM25 lexical fallback keeps the graph usable. Snapshots are cached behind a vector-store watermark and bounded by node/edge caps with inverted-index candidate pruning above 900 chunks, so embeddings never leave the sidecar. The canvas is a dependency-free inline SVG with fixed-step force layout, zoom/pan, search, one-hop selection highlighting and discovery of related nodes; a knowledge-chunk detail panel links back to the exact paragraph in the original note. No new permissions, database tables, npm dependencies or persisted settings are introduced. Regression: cargo test 27/0, typecheck 0 errors, sidecar-check 214/0, smoke 34/0, e2e 351 passed with 1 environment-only screenshot failure.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.9/com.mjj3610.note-0.5.9-darwin-arm64.dbxp",
+              "sha256": "802dcea30afbfc0dad90748bf371a0ed10ebb9d381a74f5f5895d965c230d131",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3747408
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.9/com.mjj3610.note-0.5.9-darwin-x64.dbxp",
+              "sha256": "f9686b7340f9532a827c32fe8df131e846317ca1be711e6eaea16691f6c0f519",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3901772
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.9/com.mjj3610.note-0.5.9-linux-arm64.dbxp",
+              "sha256": "c40ae8bb9c5e8dc07c63ca29388fb3fb940ee385fc65116db79cd67036f505a1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3827023
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.9/com.mjj3610.note-0.5.9-linux-x64.dbxp",
+              "sha256": "a948a4646b6f4ad0093d457622ed244a65a384f698d02ba9953f919d82413379",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3904137
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.mjj3610.note/0.5.9/com.mjj3610.note-0.5.9-windows-x64.dbxp",
+              "sha256": "598ab1b75fb332bfa87b1b06e918a48ac86202f71af688a904bbe446a32508c8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3956664
+            }
+          ]
+        },
         {
           "version": "0.5.8",
           "releasedAt": "2026-11-11T04:56:52.890Z",
@@ -7249,7 +7291,7 @@
       "description": "Operate Apache Kafka from one DBX workspace: inspect topics, brokers, and consumer lag; search, stream, and produce messages with multi-channel filters and payload decoding; manage offsets, ACLs, and Schema Registry. Read-only by default, with guarded writes and 11 MCP tools for AI automation.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.56/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/icon.svg",
       "tags": [
         "kafka",
         "streaming",
@@ -7264,8 +7306,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-kafka",
       "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
       "license": "MIT",
-      "latestVersion": "0.1.56",
+      "latestVersion": "0.1.57",
       "versions": [
+        {
+          "version": "0.1.57",
+          "releasedAt": "2026-11-13T03:52:43.773Z",
+          "releaseNotes": "Kafka Studio v0.1.57 正式版。相对 v0.1.56：修复 Confluent SR 7.x 下 PROTOBUF 消息值仍解码失败的问题（issue #76 跟进）——?format=serialized 实际返回 base64(FileDescriptorProto)（单个 .proto 文件），此前按 FileDescriptorSet 校验会否掉重取结果并回退到 .proto 文本；现统一归一化为 FDSet，bySubject 编码与 byID 解码均生效，schema 面板仍显示可读 .proto 文本。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/io.dbx.kafka-0.1.57-darwin-arm64.dbxp",
+              "sha256": "c034f242c26d47f1dda00f48c79df6a18d58d2f744b797a460ce6cdcb97ec90b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14402046
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/io.dbx.kafka-0.1.57-darwin-x64.dbxp",
+              "sha256": "c1764ca4b7ddc2f9b359be0475a34afa26398051adec1945778060da1c1c9d50",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15296634
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/io.dbx.kafka-0.1.57-linux-arm64.dbxp",
+              "sha256": "506dc3b9b6ba8fb8206ee22f9ec5a4e810000561120473ddaf3e7746da6c6c19",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13573537
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/io.dbx.kafka-0.1.57-linux-x64.dbxp",
+              "sha256": "12e655fff8f7e125f49272ce57bc09ad24aefae9ff030c619ceb714045f7195c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14782901
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/io.dbx.kafka-0.1.57-windows-x64.dbxp",
+              "sha256": "20cf8226b16548d1afef73892fd403c4ff5dfe0f357677fad8f80cb101356c48",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14897348
+            }
+          ]
+        },
         {
           "version": "0.1.56",
           "releasedAt": "2026-11-09T06:52:05.913Z",
@@ -12175,11 +12259,11 @@
     },
     {
       "id": "io.github.crayon-hua.xxljob-console",
-      "name": "XXL-JOB Console (Crayon)",
-      "description": "Manage XXL-JOB tasks, logs and executors with DBX built-in AI and MCP, scoped permissions and confirmed operation previews.",
+      "name": "XXL-JOB",
+      "description": "XXL-JOB Admin console with MCP support for jobs, logs, and executors. Open a GitHub Issue if anything breaks—we respond quickly.",
       "publisher": "crayon-hua",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.4/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.5/icon.svg",
       "tags": [
         "xxl-job",
         "scheduler",
@@ -12188,14 +12272,63 @@
         "mcp"
       ],
       "permissions": [
-        "host.workbench",
-        "host.ai"
+        "host.ai",
+        "host.workbench"
       ],
-      "source": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console/tree/v0.4.4",
+      "source": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console",
       "homepage": "https://github.com/Crayon-hua/dbx-plugin-xxl-job-console",
       "license": "MIT",
-      "latestVersion": "0.4.4",
+      "latestVersion": "0.4.5",
       "versions": [
+        {
+          "version": "0.4.5",
+          "releasedAt": "2026-11-13T03:37:04.748Z",
+          "releaseNotes": "0.4.5 advertises the mcp sidecar capability so DBX lists MCP tools again (fixes 0/0). Renames the listing to XXL-JOB and highlights MCP support with fast Issue response.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.5/io.github.crayon-hua.xxljob-console-0.4.5-darwin-arm64.dbxp",
+              "sha256": "7c841f54e734ff81033ed45ab4ea36868ee7a37fc61db1ca06555394f9f916c7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4996250
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.5/io.github.crayon-hua.xxljob-console-0.4.5-darwin-x64.dbxp",
+              "sha256": "42caf6936a586e381fad69f226d608b72de8b50e7118418fb9cd6ed26572babe",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5229407
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.5/io.github.crayon-hua.xxljob-console-0.4.5-linux-arm64.dbxp",
+              "sha256": "a9b9136b6801542ce89a3d159113dde0c222082f0c3e37bbb361bc0dd48c5ecf",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5014840
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.5/io.github.crayon-hua.xxljob-console-0.4.5-linux-x64.dbxp",
+              "sha256": "e1de588168ffb4f596c6fc46c4d033e32c663cf4262d6aa50fa5b36036c5874d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5330405
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.5/io.github.crayon-hua.xxljob-console-0.4.5-windows-arm64.dbxp",
+              "sha256": "50bad62869c3769c2651dda76db26798d6ecdfb3c5d534916955496374c5214f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5101498
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.crayon-hua.xxljob-console/0.4.5/io.github.crayon-hua.xxljob-console-0.4.5-windows-x64.dbxp",
+              "sha256": "6937ad62b53a1b530db850298cc023272f3d92fdc5593b4781aa6a8b04b0fce0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5461695
+            }
+          ]
+        },
         {
           "version": "0.4.4",
           "releasedAt": "2026-11-11T05:08:22.343Z",
@@ -12248,8 +12381,8 @@
       ],
       "localizations": {
         "zh-CN": {
-          "name": "XXL-JOB 控制台 (Crayon)",
-          "description": "独立维护版：XXL-JOB 任务、日志、执行器与 22 个 AI/MCP 工具，补齐外部 MCP 权限声明。"
+          "name": "XXL-JOB",
+          "description": "支持 MCP 的 XXL-JOB 控制台，覆盖任务、日志与执行器。遇到问题可提 Issues，我们会尽快响应。"
         }
       }
     },
@@ -13203,7 +13336,7 @@
       "description": "Browse projects and code, review merge requests, watch pipelines and handle issues inside DBX.",
       "publisher": "nixing178",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.2.4/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/icon.svg",
       "tags": [
         "gitlab",
         "code-review",
@@ -13216,11 +13349,53 @@
         "host.events",
         "host.storage"
       ],
-      "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.2.4",
+      "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.3.2",
       "homepage": "https://github.com/nixing178/dbx-plugin-gitlab",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.4",
+      "latestVersion": "0.3.2",
       "versions": [
+        {
+          "version": "0.3.2",
+          "releasedAt": "2026-11-13T03:41:40.483Z",
+          "releaseNotes": "Fixes blank merge request detail pages on GitLab instances that omit optional arrays, and includes the 0.3.1 external MCP toolset: 35 tools across 4 toolsets with read / write / full access levels. Adds packages for Windows x64, macOS (Intel and Apple Silicon) and Linux (x64 and ARM64).",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/io.github.nixing178.gitlab-0.3.2-darwin-arm64.dbxp",
+              "sha256": "864eb1e60b961709a7f83af0e0dd55221532d051fbf7174c4aa618fce3a6af90",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4427412
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/io.github.nixing178.gitlab-0.3.2-darwin-x64.dbxp",
+              "sha256": "18f25ea3298e384d127a10cb3bf0b75a65fac4b00bc04c49062620ccfec52dec",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4650355
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/io.github.nixing178.gitlab-0.3.2-linux-arm64.dbxp",
+              "sha256": "92658293c6354b72f4308b441f8b714a01cf8f401ccf70496be4e0ecd88bd8a9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4424324
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/io.github.nixing178.gitlab-0.3.2-linux-x64.dbxp",
+              "sha256": "69cc3966a17d7e2cbd0ccee29bb22e7fbe92462fafd6dfb7a2c6c904f556a4a6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4716553
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/io.github.nixing178.gitlab-0.3.2-windows-x64.dbxp",
+              "sha256": "deb3b6d8ed22fef06f6219880391459a995e06184a07df3b26e7ba4d511807ec",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4708004
+            }
+          ]
+        },
         {
           "version": "0.2.4",
           "releasedAt": "2026-10-30T10:23:08.648Z",
@@ -13263,7 +13438,7 @@
       "description": "Manage Jenkins jobs, builds, console output, queue and nodes inside DBX, with stage view and MCP tools for AI clients.",
       "publisher": "nixing178",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.12.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/icon.svg",
       "tags": [
         "jenkins",
         "ci",
@@ -13279,8 +13454,50 @@
       "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.12.0",
       "homepage": "https://github.com/nixing178/dbx-plugin-jenkins",
       "license": "Apache-2.0",
-      "latestVersion": "0.12.0",
+      "latestVersion": "0.13.1",
       "versions": [
+        {
+          "version": "0.13.1",
+          "releasedAt": "2026-11-13T02:50:36.930Z",
+          "releaseNotes": "External MCP support: the 10 Jenkins tools can now be exposed on the host dbx-mcp server with per-tool access levels (7 read, trigger/cancel write, stop full), and tool discovery works without an open connection. Fixes the MCP capabilities page failing with 'invalid_params: missing connectionId'.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-darwin-arm64.dbxp",
+              "sha256": "b992876e53720765cb4fd2da2ebc8135f9e8cd98c219f7619f067881a6ed6cda",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4844045
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-darwin-x64.dbxp",
+              "sha256": "a7915818048aba1a1608fc80c28ef48387e5042b194aba4cf70d4169228364de",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5085744
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-linux-arm64.dbxp",
+              "sha256": "fdda9c581e552bce7ecb0d5bd9e2aeb6c65115c919199f55b90f10ba052d2573",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4824564
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-linux-x64.dbxp",
+              "sha256": "f7518696c3ca9efdce1cb8a93edbce36e9b3eaad34455c0a0071c92d8dd361e2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5150811
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-windows-x64.dbxp",
+              "sha256": "a590edd687c6573afedaa6f410c76054770a39ba9c81949f79bc29d80f4fac57",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5184866
+            }
+          ]
+        },
         {
           "version": "0.12.0",
           "releasedAt": "2026-11-11T03:18:52.651Z",
@@ -15221,7 +15438,7 @@
       "description": "Login-free LAN chat and file sharing for DBX: a guest lobby, direct and group conversations, images and chunked file transfers, and Ed25519-signed transfers between trusted nodes. Hosts a local HTTP node on port 53318 by default and can join another private-IP node.",
       "publisher": "yuzhi",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/icon.svg",
       "tags": [
         "lan",
         "im",
@@ -15231,11 +15448,60 @@
         "p2p"
       ],
       "permissions": [],
-      "source": "https://github.com/bobocha214/dbx-plugin-localsend/tree/v0.2.0",
+      "source": "https://github.com/bobocha214/dbx-plugin-localsend/tree/v0.2.1",
       "homepage": "https://github.com/bobocha214/dbx-plugin-localsend",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.0",
+      "latestVersion": "0.2.1",
       "versions": [
+        {
+          "version": "0.2.1",
+          "releasedAt": "2026-11-13T03:29:20.863Z",
+          "releaseNotes": "0.2.1: unified lobby Chat/Files/Members tabs, a searchable lobby file library with real download records, member presence, and confirmed file deletion with sender/owner/admin permission checks. Rebuilt all six x64/ARM64 packages for Windows, macOS and Linux.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/io.github.yuzhi.localsend-0.2.1-darwin-arm64.dbxp",
+              "sha256": "e923a0ef1e12d9c5848d672ca287e393978a55dd7ba51b9c6ecb83b57186dd3e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3380407
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/io.github.yuzhi.localsend-0.2.1-darwin-x64.dbxp",
+              "sha256": "4998e4a2e1094924779fd037a09d80136caa44d35f396eb3dc3d4cbc1f68b616",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3679860
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/io.github.yuzhi.localsend-0.2.1-linux-arm64.dbxp",
+              "sha256": "1b258289e7c6c18b1e53c32dfaa9e3f53b9098e30e176ab54120915f2048d73d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3276695
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/io.github.yuzhi.localsend-0.2.1-linux-x64.dbxp",
+              "sha256": "d418b329893c3c3cd0d22ca8e498f9750d497607728a78d3aae1e1a74c37e68f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3640055
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/io.github.yuzhi.localsend-0.2.1-windows-arm64.dbxp",
+              "sha256": "a962e28738efb42e8cb3a4c8377a20fb142299655b97b2132cf8bb015098dc70",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3409785
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/io.github.yuzhi.localsend-0.2.1-windows-x64.dbxp",
+              "sha256": "d9d742151665540161fec337b00c6cc1695b4734e146568a6ad5b70798c1673d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 3803952
+            }
+          ]
+        },
         {
           "version": "0.2.0",
           "releasedAt": "2026-11-11T04:33:48.340Z",
@@ -16177,7 +16443,7 @@
       "description": "在 DBX 连接树中管理 Windows 远程桌面，双击条目发起连接。",
       "publisher": "xihonglei",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/local.rdp.manager/1.0.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/local.rdp.manager/1.0.1/icon.svg",
       "tags": [
         "windows",
         "rdp",
@@ -16187,11 +16453,25 @@
       "permissions": [
         "host.workbench"
       ],
-      "source": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop/releases/tag/v1.0.0",
+      "source": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop/releases/tag/v1.0.1",
       "homepage": "https://gitee.com/leihx11/dbx-plugins-windows-remote-desktop",
       "license": "MIT",
-      "latestVersion": "1.0.0",
+      "latestVersion": "1.0.1",
       "versions": [
+        {
+          "version": "1.0.1",
+          "releasedAt": "2026-11-13T03:04:27.853Z",
+          "releaseNotes": "1.0.1: New connections start full screen; the workbench shows only the current connection; temporary .rdp files go to the system temp directory and are removed after use.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/local.rdp.manager/1.0.1/local.rdp.manager-1.0.1-windows-x64.dbxp",
+              "sha256": "47185d049b7f347058546d5cec704c3868decc2f8abf62db2036f9957d256ce0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1949554
+            }
+          ]
+        },
         {
           "version": "1.0.0",
           "releasedAt": "2026-11-11T04:47:17.881Z",
@@ -16454,7 +16734,7 @@
       "description": "A lightweight dev toolset under 200KB — instant to use. Sandboxed and offline with zero network access. High-frequency tools for crypto, encoding, text, data conversion, formatting, time, networking and image generation; inputs and options are remembered and sync seamlessly across devices via DBX.",
       "publisher": "terry",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.10/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.6.11/icon.svg",
       "tags": [
         "devtools",
         "utilities",
@@ -16474,8 +16754,22 @@
       "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "license": "MIT",
-      "latestVersion": "0.6.10",
+      "latestVersion": "0.6.11",
       "versions": [
+        {
+          "version": "0.6.11",
+          "releasedAt": "2026-11-13T03:45:47.823Z",
+          "releaseNotes": "新增：图像工具一键复制图片到剪贴板（需 DBX ≥ 0.7.0）——二维码、条码生成器、占位图、图片转 Base64（解码侧）新增「复制图片」按钮，非 PNG 格式自动转码；旧版宿主自动隐藏按钮。 | New: one-click copy-to-clipboard in image tools (requires DBX ≥ 0.7.0) — QR code, barcode generator, placeholder image and Base64-to-image gain a Copy Image button, with automatic PNG re-encoding for other formats; the button is hidden on older hosts.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.11/terry.devtools-0.6.11-universal.dbxp",
+              "sha256": "15ee3c2b006ce1855cbdfa9a6352b4380a200fc5f02860f7196c23becefe0701",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 192676
+            }
+          ]
+        },
         {
           "version": "0.6.10",
           "releasedAt": "2026-10-30T05:24:53.023Z",
