@@ -4,7 +4,7 @@
   "description": "Operate Apache Kafka from one DBX workspace: inspect topics, brokers, and consumer lag; search, stream, and produce messages with multi-channel filters and payload decoding; manage offsets, ACLs, and Schema Registry. Read-only by default, with guarded writes and 11 MCP tools for AI automation.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.56/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.57/assets/plugin.svg",
   "tags": [
     "kafka",
     "streaming",
@@ -19,7 +19,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-kafka",
   "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
   "license": "MIT",
-  "latestVersion": "0.1.56",
+  "latestVersion": "0.1.57",
   "versions": [
     {
       "version": "0.1.39",
@@ -690,6 +690,48 @@
           "sha256": "c21e5f1aedcf47c1885b7f25d410e68f1b218a9e2c7da42f8c2014513b15cc92",
           "signingKeyId": "dbx-store-release-2026",
           "size": 14895521
+        }
+      ]
+    },
+    {
+      "version": "0.1.57",
+      "releasedAt": "2026-11-13T03:52:43.773Z",
+      "releaseNotes": "Kafka Studio v0.1.57 正式版。相对 v0.1.56：修复 Confluent SR 7.x 下 PROTOBUF 消息值仍解码失败的问题（issue #76 跟进）——?format=serialized 实际返回 base64(FileDescriptorProto)（单个 .proto 文件），此前按 FileDescriptorSet 校验会否掉重取结果并回退到 .proto 文本；现统一归一化为 FDSet，bySubject 编码与 byID 解码均生效，schema 面板仍显示可读 .proto 文本。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/io.dbx.kafka-0.1.57-darwin-arm64.dbxp",
+          "sha256": "c034f242c26d47f1dda00f48c79df6a18d58d2f744b797a460ce6cdcb97ec90b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14402046
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/io.dbx.kafka-0.1.57-darwin-x64.dbxp",
+          "sha256": "c1764ca4b7ddc2f9b359be0475a34afa26398051adec1945778060da1c1c9d50",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 15296634
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/io.dbx.kafka-0.1.57-linux-arm64.dbxp",
+          "sha256": "506dc3b9b6ba8fb8206ee22f9ec5a4e810000561120473ddaf3e7746da6c6c19",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13573537
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/io.dbx.kafka-0.1.57-linux-x64.dbxp",
+          "sha256": "12e655fff8f7e125f49272ce57bc09ad24aefae9ff030c619ceb714045f7195c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14782901
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/io.dbx.kafka-0.1.57-windows-x64.dbxp",
+          "sha256": "20cf8226b16548d1afef73892fd403c4ff5dfe0f357677fad8f80cb101356c48",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14897348
         }
       ]
     }
