@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "terry.devtools",
+  "publisher": "terry",
+  "version": "0.6.11",
+  "name": "Dev Tools",
+  "description": "A lightweight dev toolset under 200KB — instant to use. Sandboxed and offline with zero network access. High-frequency tools for crypto, encoding, text, data conversion, formatting, time, networking and image generation; inputs and options are remembered and sync seamlessly across devices via DBX.",
+  "icon": "https://raw.githubusercontent.com/yaoxinghuo/dbx-dev-tools/v0.6.11/assets/plugin.svg",
+  "tags": [
+    "devtools",
+    "utilities",
+    "encoding",
+    "generator",
+    "qrcode",
+    "barcode",
+    "jwt",
+    "json",
+    "diff",
+    "color"
+  ],
+  "permissions": [
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
+  "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
+  "license": "MIT",
+  "releaseNotes": "新增：图像工具一键复制图片到剪贴板（需 DBX ≥ 0.7.0）——二维码、条码生成器、占位图、图片转 Base64（解码侧）新增「复制图片」按钮，非 PNG 格式自动转码；旧版宿主自动隐藏按钮。 | New: one-click copy-to-clipboard in image tools (requires DBX ≥ 0.7.0) — QR code, barcode generator, placeholder image and Base64-to-image gain a Copy Image button, with automatic PNG re-encoding for other formats; the button is hidden on older hosts.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Dev 工具集",
+      "description": "不到 200KB 的轻量开发者工具集，即开即用。沙箱离线运行，零网络权限。涵盖加解密、编解码、文本处理、数据转换、格式化、时间计算、网络运维、图像生成等众多高频工具；参数自动记忆，配置可随 DBX 跨端无缝同步。"
+    }
+  },
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/yaoxinghuo/dbx-dev-tools/releases/download/v0.6.11/terry.devtools-0.6.11-universal.dbxp",
+      "sha256": "ba1650d09cdad6c460f98eecfa32c1d2ef70f5436f894a301c817f9ce935feb5",
+      "size": 192023
+    }
+  ]
+}
