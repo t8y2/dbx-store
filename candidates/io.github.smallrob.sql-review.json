@@ -21,6 +21,10 @@
   "license": "Apache-2.0",
   "releaseNotes": "修复上架版本在 DBX 中完全不可用的两个阻塞缺陷：（1）sidecar 初始化在 capabilities 为空时返回 null，宿主按数组解码导致整个插件初始化失败，现已统一归一化为空数组并补了回归测试；（2）工作台「评审 / 批量目录 / 规则 / 记录」四个标签页同时渲染——[hidden] 被 .page 的 display:grid 覆盖，现已恢复互斥切换。同时修正本地候选打包脚本未按平台重写 sidecar 路径的问题；「规则」页改为横竖都撑满可用区域，规则行主体弹性伸展、严重度与启用开关贴右，列表在卡片内部滚动，窄面板（≤720px）自动收起文字标签。规则能力不变：61 条规则，支持 MySQL、SQLite、SQL Server 与 PostgreSQL，全程不连接数据库、不执行 SQL、不发起网络请求。",
   "localizations": {
+    "en": {
+      "name": "SQL Review",
+      "description": "Static SQL review workbench: rule-based checks for destructive changes, migration hygiene, performance and schema quality. Never connects to a database and never executes the SQL under review."
+    },
     "zh-CN": {
       "name": "SQL 评审台",
       "description": "静态 SQL 评审台：规则化检查破坏性变更、迁移规范、性能与结构质量，不连接数据库、不执行被评审的 SQL。"
