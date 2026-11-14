@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "cando.gameisland",
+  "publisher": "cando",
+  "version": "0.1.0",
+  "name": "游戏岛 Game Island",
+  "description": "十款纯离线小游戏：掼蛋 / 牛牛 / 德州扑克 / 麻将四张牌桌（1 人 + 3 AI 同屏），打地鼠 / 小猫钓鱼 / 扫雷 / 跳棋 / 飞行棋 / 五子棋六款亲子游戏。零网络权限，存档保存在本机。",
+  "icon": "https://github.com/CDThings/gameisland/raw/v0.1.0/assets/plugin.svg",
+  "tags": ["game", "offline", "workbench"],
+  "permissions": ["host.storage"],
+  "source": "https://github.com/CDThings/gameisland",
+  "license": "MIT",
+  "releaseNotes": "v0.1.0 首发：十款纯离线游戏（掼蛋/牛牛/德州/麻将 + 亲子六款），仅 host.storage 权限，零网络权限。",
+  "localizations": {
+    "zh-CN": {
+      "name": "游戏岛",
+      "description": "十款纯离线小游戏：掼蛋 / 牛牛 / 德州扑克 / 麻将四张牌桌（人机同屏），打地鼠 / 小猫钓鱼 / 扫雷 / 跳棋 / 飞行棋 / 五子棋六款亲子游戏。零网络权限，存档保存在本机。"
+    }
+  },
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/CDThings/gameisland/releases/download/v0.1.0/cando.gameisland-0.1.0-universal.dbxp",
+      "sha256": "fe596e88e766e4ebcf5b0c44ad672b1e575cc9737bcc53198e3fdf6d9ffdcdf0",
+      "size": 115128
+    }
+  ]
+}
