@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.remotex",
+  "publisher": "apolloqi",
+  "version": "0.0.1-beta",
+  "name": "RemoteX",
+  "description": "One DBX workbench for SSH, Telnet, VNC, RDP, serial and local shell connections.",
+  "icon": "https://raw.githubusercontent.com/apolloqi123/dbx-plugin-remotex/remotex-v0.0.1-beta/assets/plugin.svg",
+  "tags": [
+    "ssh",
+    "terminal",
+    "sftp",
+    "remote"
+  ],
+  "permissions": [
+    "host.events",
+    "host.binary",
+    "host.filesystem",
+    "host.workbench",
+    "host.storage",
+    "host.clipboard:read",
+    "host.ai"
+  ],
+  "source": "https://github.com/apolloqi123/dbx-plugin-remotex/tree/remotex-v0.0.1-beta",
+  "homepage": "https://github.com/apolloqi123/dbx-plugin-remotex",
+  "license": "MIT",
+  "releaseNotes": "First RemoteX release: one workbench for SSH, Telnet, VNC, RDP, serial and local shell, with PTY terminal, SFTP, port forwarding, containers, metrics, recording, and MCP automation.",
+  "localizations": {
+    "zh-CN": {
+      "name": "RemoteX",
+      "description": "SSH、Telnet、VNC、RDP、串口与本地 Shell 的统一 DBX 终端与远程桌面工作台。"
+    },
+    "zh-TW": {
+      "name": "RemoteX",
+      "description": "SSH、Telnet、VNC、RDP、序列埠與本機 Shell 的統一 DBX 終端與遠端桌面工作台。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/apolloqi123/dbx-plugin-remotex/releases/download/remotex-v0.0.1-beta/io.dbx.remotex-0.0.1-beta-darwin-arm64.dbxp",
+      "sha256": "99f08dcdcd88411358835101119e82fbaac1461f62a42debe065ce4a5b8f3a27",
+      "size": 15972760
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/apolloqi123/dbx-plugin-remotex/releases/download/remotex-v0.0.1-beta/io.dbx.remotex-0.0.1-beta-darwin-x64.dbxp",
+      "sha256": "16f58a1516b758aecd017939a9c6db09737f78f709511cf3e6e582e6e714f177",
+      "size": 16637226
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/apolloqi123/dbx-plugin-remotex/releases/download/remotex-v0.0.1-beta/io.dbx.remotex-0.0.1-beta-linux-arm64.dbxp",
+      "sha256": "a5be96af00eb90de98d784f86bf78238f6d194c35cd6aa98f6bb34a11bb978a7",
+      "size": 17330134
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/apolloqi123/dbx-plugin-remotex/releases/download/remotex-v0.0.1-beta/io.dbx.remotex-0.0.1-beta-linux-x64.dbxp",
+      "sha256": "eb89918a460301f42b41d7a9f2a732b4061aab8d8f4623b4e340ad6c0cd99be6",
+      "size": 17813507
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/apolloqi123/dbx-plugin-remotex/releases/download/remotex-v0.0.1-beta/io.dbx.remotex-0.0.1-beta-windows-x64.dbxp",
+      "sha256": "224fda014ff11998093944d8a49fd110d76328eefcef9cd711a37958f0e1261e",
+      "size": 15464957
+    }
+  ]
+}
