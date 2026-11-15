@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.smallrob.sql-review",
+  "publisher": "smallrob",
+  "version": "0.1.30",
+  "name": "SQL Review",
+  "description": "静态 SQL 评审台：规则化检查破坏性变更、迁移规范、性能与结构质量，不连接数据库、不执行被评审的 SQL。",
+  "icon": "https://raw.githubusercontent.com/SmallRob/dbx-sql-review/v0.1.30/assets/plugin.svg",
+  "tags": [
+    "sql",
+    "review",
+    "lint",
+    "migration",
+    "security"
+  ],
+  "permissions": [
+    "host.workbench"
+  ],
+  "source": "https://github.com/SmallRob/dbx-sql-review/tree/v0.1.30",
+  "homepage": "https://github.com/SmallRob/dbx-sql-review",
+  "license": "Apache-2.0",
+  "releaseNotes": "新增质量评分卡：质量分环、等级/风险/结论、六维命中数与规模统计，首屏即可判断能否发布。命中列表支持按严重度筛选、证据折叠、复制修复建议、定位 SQL 行；结果区支持复制评审摘要与导出 Markdown。批量页增加紧凑评分环、等级分布，并让评分摘要与命中列表分区滚动，长报告不再顶走结论。批量页新增已选文件列表，显示行数与体积，支持单条移除和清空；按相对路径去重，重复选择的同名文件只保留一个。保留「从文件打开」、单文件拖拽与宽屏等高布局修复。规则与评审口径不变：61 条规则，支持 MySQL、SQLite、SQL Server 与 PostgreSQL，全程不连接数据库、不执行 SQL、不发起网络请求。",
+  "localizations": {
+    "zh-CN": {
+      "name": "SQL 评审台",
+      "description": "静态 SQL 评审台：规则化检查破坏性变更、迁移规范、性能与结构质量，不连接数据库、不执行被评审的 SQL。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/SmallRob/dbx-sql-review/releases/download/v0.1.30/io.github.smallrob.sql-review-0.1.30-darwin-arm64.dbxp",
+      "sha256": "93376befe48fcf9d1ce9c6171b726dc6ad4e9c25d0d857f79a4f3071e581974f",
+      "size": 2081665
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/SmallRob/dbx-sql-review/releases/download/v0.1.30/io.github.smallrob.sql-review-0.1.30-darwin-x64.dbxp",
+      "sha256": "946ba593afbd2c70d1394d6db8a7c4a68520759a434391dbe353383c3839d3da",
+      "size": 2180714
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/SmallRob/dbx-sql-review/releases/download/v0.1.30/io.github.smallrob.sql-review-0.1.30-linux-arm64.dbxp",
+      "sha256": "ac6be53e457f4e3c41055e8d363265e769744f09c96593f877b3429fba7faf1e",
+      "size": 2061220
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/SmallRob/dbx-sql-review/releases/download/v0.1.30/io.github.smallrob.sql-review-0.1.30-linux-x64.dbxp",
+      "sha256": "e1e46ae4aa6bce2bc9c192d03e5bef579aa66eb5d767425e49c9471543e19741",
+      "size": 2195213
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/SmallRob/dbx-sql-review/releases/download/v0.1.30/io.github.smallrob.sql-review-0.1.30-windows-x64.dbxp",
+      "sha256": "d241370e2db4f3631b2e2b07d48a530d7a0ec2c4184ba8978f20b3ec5a7e5ecf",
+      "size": 2254127
+    }
+  ]
+}
