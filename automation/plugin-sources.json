@@ -280,6 +280,16 @@
       "repository": "vyrnax/dbx-plugin-cronpulse",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "Zer0ON1/dbx-plugin-imrepo",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "SmallRob/dbx-sql-review",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
