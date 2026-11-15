@@ -227,7 +227,7 @@
       "autoUpdate": true
     },
     {
-      "repository": "Zer0ON1/dbx-plugin-imrepo",
+      "repository": "LeavingRain/dbx-plugin-imrepo",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
