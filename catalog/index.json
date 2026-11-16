@@ -9485,6 +9485,87 @@
       }
     },
     {
+      "id": "io.dbx.remotex",
+      "name": "RemoteX",
+      "description": "One DBX workbench for SSH, Telnet, VNC, RDP, serial and local shell connections.",
+      "publisher": "apolloqi",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.remotex/0.1.0/icon.svg",
+      "tags": [
+        "ssh",
+        "terminal",
+        "sftp",
+        "remote"
+      ],
+      "permissions": [
+        "host.events",
+        "host.binary",
+        "host.filesystem",
+        "host.workbench",
+        "host.storage",
+        "host.clipboard:read",
+        "host.ai"
+      ],
+      "source": "https://github.com/apolloqi123/dbx-plugin-remotex/tree/remotex-v0.1.0",
+      "homepage": "https://github.com/apolloqi123/dbx-plugin-remotex",
+      "license": "MIT",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-11-16T16:19:55.703Z",
+          "releaseNotes": "First stable RemoteX release: one workbench for SSH, Telnet, VNC, RDP, serial and local shell, with PTY terminal, SFTP, port forwarding, containers, metrics, recording, and MCP automation. Release builds are produced from the release tag itself, so the listed source and the shipped bytes are the same commit.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.remotex/0.1.0/io.dbx.remotex-0.1.0-darwin-arm64.dbxp",
+              "sha256": "7d64ede7f2ab044e23116ad3267ca85dcec1df9818f08d2e8f34095d61552dfd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15973341
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.remotex/0.1.0/io.dbx.remotex-0.1.0-darwin-x64.dbxp",
+              "sha256": "5ebc471273c117f23e700d7d8288c16a193f2bb1fb7f093049eac609f132f0f0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16636900
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.remotex/0.1.0/io.dbx.remotex-0.1.0-linux-arm64.dbxp",
+              "sha256": "124ad7c8b8f6ef5f48d385461031c96e5fed786e3ad27128121dff82b50f75b5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 17327343
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.remotex/0.1.0/io.dbx.remotex-0.1.0-linux-x64.dbxp",
+              "sha256": "96a36da41d6bc28841dd8fe67d7895d96c82f9a200ccbe407531caf4f84ca674",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 17815328
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.remotex/0.1.0/io.dbx.remotex-0.1.0-windows-x64.dbxp",
+              "sha256": "a47edec413ba687309476f4d11956423d35e16e6dee1c286f3bb31f322e511f7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15466832
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "RemoteX",
+          "description": "SSH、Telnet、VNC、RDP、串口与本地 Shell 的统一 DBX 终端与远程桌面工作台。"
+        },
+        "zh-TW": {
+          "name": "RemoteX",
+          "description": "SSH、Telnet、VNC、RDP、序列埠與本機 Shell 的統一 DBX 終端與遠端桌面工作台。"
+        }
+      }
+    },
+    {
       "id": "io.dbx.rocketmq-dashboard-console",
       "name": "dbx-rocketmq-dashboard",
       "description": "一个类似于 apache/rocketmq-dashboard 的 RocketMQ 驾驶舱，复刻其原生 UI 与业务交互，通过 Go 后端在 DBX 中管理集群、Topic、消费组、消息和 ACL。",
