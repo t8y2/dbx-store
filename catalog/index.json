@@ -17049,6 +17049,53 @@
       }
     },
     {
+      "id": "local.es.studio",
+      "name": "ES Studio",
+      "description": "Professional Elasticsearch management workbench for DBX.",
+      "publisher": "xihonglei",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/local.es.studio/0.5.1/icon.svg",
+      "tags": [
+        "elasticsearch",
+        "database",
+        "monitoring",
+        "cluster",
+        "developer-tools"
+      ],
+      "permissions": [
+        "host.workbench",
+        "host.storage",
+        "host.connections:read",
+        "host.events"
+      ],
+      "source": "https://github.com/Sanshi956/dbx-plugin-es-studio/tree/v0.5.1",
+      "homepage": "https://github.com/Sanshi956/dbx-plugin-es-studio",
+      "license": "MIT",
+      "latestVersion": "0.5.1",
+      "versions": [
+        {
+          "version": "0.5.1",
+          "releasedAt": "2026-11-16T16:33:00.526Z",
+          "releaseNotes": "0.5.1: standalone Shard Settings page; MCP contribution listed in DBX settings; localized allocation-explain results; fixed MCP table-header flex class collision and duplicate each-key crash on unassigned shards.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/local.es.studio/0.5.1/local.es.studio-0.5.1-windows-x64.dbxp",
+              "sha256": "44ac5dc072d60c6212491435189f2ca05c78ff8afca0d917d6ee8484d86d42f5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4761440
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "ES Studio",
+          "description": "DBX 内的 Elasticsearch 专业管理工作台。"
+        }
+      }
+    },
+    {
       "id": "local.rdp.manager",
       "name": "Windows 原生远程桌面 (mstsc)",
       "description": "在 DBX 连接树中管理 Windows 远程桌面，双击条目发起连接。",
