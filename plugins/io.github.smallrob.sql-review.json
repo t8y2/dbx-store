@@ -1,0 +1,156 @@
+{
+  "id": "io.github.smallrob.sql-review",
+  "name": "SQL Review",
+  "description": "静态 SQL 评审台：规则化检查破坏性变更、迁移规范、性能与结构质量，不连接数据库、不执行被评审的 SQL。",
+  "publisher": "smallrob",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/SmallRob/dbx-sql-review/v0.1.30/assets/plugin.svg",
+  "tags": [
+    "sql",
+    "review",
+    "lint",
+    "migration",
+    "security"
+  ],
+  "permissions": [
+    "host.workbench"
+  ],
+  "source": "https://github.com/SmallRob/dbx-sql-review/tree/v0.1.30",
+  "homepage": "https://github.com/SmallRob/dbx-sql-review",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.30",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-11-13T17:16:58.797Z",
+      "releaseNotes": "首个版本。45 条静态 SQL 规则，覆盖破坏性变更、迁移规范、性能、结构质量、敏感数据与目录一致性六类；支持单段 SQL 与整个迁移目录批量评审，输出逐条命中（行号/片段/建议）、风险分与六维质量画像，并可通过 MCP 暴露给 AI 客户端。全程不连接数据库、不执行被评审的 SQL。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.0/io.github.smallrob.sql-review-0.1.0-darwin-arm64.dbxp",
+          "sha256": "e844022ffc09fabb792c4f217c20d903ff985d513620164bb85cb9ebae39aecf",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2026712
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.0/io.github.smallrob.sql-review-0.1.0-darwin-x64.dbxp",
+          "sha256": "dd7af85f68a28695b45537e520048795377259f5fdc688a75c31909b0db1dcb5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2124496
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.0/io.github.smallrob.sql-review-0.1.0-linux-arm64.dbxp",
+          "sha256": "da43caaa7156da9156e51af885dee96ac55ed6c469713084af9b06a3617b5506",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2008105
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.0/io.github.smallrob.sql-review-0.1.0-linux-x64.dbxp",
+          "sha256": "b17ef1f148a48cbc64cdd7db4dc9bdcd17a14625d4f507891661e110bf8a8bd1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2139867
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.0/io.github.smallrob.sql-review-0.1.0-windows-x64.dbxp",
+          "sha256": "46088bd4e08ae8d69e592d3ee318dcb297d51f94479025c73c8ee8388d60b373",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2196154
+        }
+      ]
+    },
+    {
+      "version": "0.1.27",
+      "releasedAt": "2026-11-15T03:33:24.843Z",
+      "releaseNotes": "修复上架版本在 DBX 中完全不可用的两个阻塞缺陷：（1）sidecar 初始化在 capabilities 为空时返回 null，宿主按数组解码导致整个插件初始化失败，现已统一归一化为空数组并补了回归测试；（2）工作台「评审 / 批量目录 / 规则 / 记录」四个标签页同时渲染——[hidden] 被 .page 的 display:grid 覆盖，现已恢复互斥切换。同时修正本地候选打包脚本未按平台重写 sidecar 路径的问题；「规则」页改为横竖都撑满可用区域，规则行主体弹性伸展、严重度与启用开关贴右，列表在卡片内部滚动，窄面板（≤720px）自动收起文字标签。规则能力不变：61 条规则，支持 MySQL、SQLite、SQL Server 与 PostgreSQL，全程不连接数据库、不执行 SQL、不发起网络请求。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.27/io.github.smallrob.sql-review-0.1.27-darwin-arm64.dbxp",
+          "sha256": "c7c0b0948c70bf16d645846d260c4a2200d519437f80d8d83145ae5781f25158",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2075694
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.27/io.github.smallrob.sql-review-0.1.27-darwin-x64.dbxp",
+          "sha256": "868ba93d442b0d654a7d87c41ed4bd6ff53121617164c5c23b9b4216bec7feea",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2174748
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.27/io.github.smallrob.sql-review-0.1.27-linux-arm64.dbxp",
+          "sha256": "162e4292467f32361d6c0a4d9c272ef9f5d50bac380486558a10ad3d6df9569c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2055251
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.27/io.github.smallrob.sql-review-0.1.27-linux-x64.dbxp",
+          "sha256": "ae003fd5e63ede174399f1032dda0b8431a4a2c5198d955d1e4820a497da5962",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2189244
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.27/io.github.smallrob.sql-review-0.1.27-windows-x64.dbxp",
+          "sha256": "bf8245c1e506ab4ad9c6246a31d3fb2be7231d2241502e38f4a9edd9c4efff38",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2248164
+        }
+      ]
+    },
+    {
+      "version": "0.1.30",
+      "releasedAt": "2026-11-16T01:10:20.949Z",
+      "releaseNotes": "新增质量评分卡：质量分环、等级/风险/结论、六维命中数与规模统计，首屏即可判断能否发布。命中列表支持按严重度筛选、证据折叠、复制修复建议、定位 SQL 行；结果区支持复制评审摘要与导出 Markdown。批量页增加紧凑评分环、等级分布，并让评分摘要与命中列表分区滚动，长报告不再顶走结论。批量页新增已选文件列表，显示行数与体积，支持单条移除和清空；按相对路径去重，重复选择的同名文件只保留一个。保留「从文件打开」、单文件拖拽与宽屏等高布局修复。规则与评审口径不变：61 条规则，支持 MySQL、SQLite、SQL Server 与 PostgreSQL，全程不连接数据库、不执行 SQL、不发起网络请求。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.30/io.github.smallrob.sql-review-0.1.30-darwin-arm64.dbxp",
+          "sha256": "f18c2ad6835c99647c45249c571158dfe8c116e74a3797439edc9b2696368c92",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2082253
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.30/io.github.smallrob.sql-review-0.1.30-darwin-x64.dbxp",
+          "sha256": "c97a712debc1bc0dc09be7496105831919b293230e8616ddcb09cc359d45d9b1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2181302
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.30/io.github.smallrob.sql-review-0.1.30-linux-arm64.dbxp",
+          "sha256": "76c9d757dd5f205564393a256fc9f4c8c5f76400464c9ea43e3d7552988ef2ca",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2061808
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.30/io.github.smallrob.sql-review-0.1.30-linux-x64.dbxp",
+          "sha256": "038422f2c13b3a5fab003423c23c5d0e64902645a55148c2eb11ed6359514e67",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2195798
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.30/io.github.smallrob.sql-review-0.1.30-windows-x64.dbxp",
+          "sha256": "20336e025fd518bc561fb63f3bdbcc93907b2080951e1dde1a072808bff9fed6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2254721
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "SQL 评审台",
+      "description": "静态 SQL 评审台：规则化检查破坏性变更、迁移规范、性能与结构质量，不连接数据库、不执行被评审的 SQL。"
+    }
+  }
+}

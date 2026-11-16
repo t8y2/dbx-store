@@ -4,7 +4,7 @@
   "description": "Browse projects and code, review merge requests, watch pipelines and handle issues inside DBX.",
   "publisher": "nixing178",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/nixing178/dbx-plugin-gitlab/v0.2.4/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/nixing178/dbx-plugin-gitlab/v0.3.2/assets/plugin.svg",
   "tags": [
     "gitlab",
     "code-review",
@@ -17,10 +17,10 @@
     "host.events",
     "host.storage"
   ],
-  "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.2.4",
+  "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.3.2",
   "homepage": "https://github.com/nixing178/dbx-plugin-gitlab",
   "license": "Apache-2.0",
-  "latestVersion": "0.2.4",
+  "latestVersion": "0.3.2",
   "versions": [
     {
       "version": "0.1.0",
@@ -47,6 +47,48 @@
           "sha256": "c4634d916e61a9595e77c0582318fffcb7f4eeef21514f26ed514e20bcbf9617",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4709945
+        }
+      ]
+    },
+    {
+      "version": "0.3.2",
+      "releasedAt": "2026-11-13T03:41:40.483Z",
+      "releaseNotes": "Fixes blank merge request detail pages on GitLab instances that omit optional arrays, and includes the 0.3.1 external MCP toolset: 35 tools across 4 toolsets with read / write / full access levels. Adds packages for Windows x64, macOS (Intel and Apple Silicon) and Linux (x64 and ARM64).",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/io.github.nixing178.gitlab-0.3.2-windows-x64.dbxp",
+          "sha256": "deb3b6d8ed22fef06f6219880391459a995e06184a07df3b26e7ba4d511807ec",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4708004
+        },
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/io.github.nixing178.gitlab-0.3.2-darwin-arm64.dbxp",
+          "sha256": "864eb1e60b961709a7f83af0e0dd55221532d051fbf7174c4aa618fce3a6af90",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4427412
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/io.github.nixing178.gitlab-0.3.2-darwin-x64.dbxp",
+          "sha256": "18f25ea3298e384d127a10cb3bf0b75a65fac4b00bc04c49062620ccfec52dec",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4650355
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/io.github.nixing178.gitlab-0.3.2-linux-x64.dbxp",
+          "sha256": "69cc3966a17d7e2cbd0ccee29bb22e7fbe92462fafd6dfb7a2c6c904f556a4a6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4716553
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/io.github.nixing178.gitlab-0.3.2-linux-arm64.dbxp",
+          "sha256": "92658293c6354b72f4308b441f8b714a01cf8f401ccf70496be4e0ecd88bd8a9",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4424324
         }
       ]
     }
