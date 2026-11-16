@@ -14306,6 +14306,82 @@
       }
     },
     {
+      "id": "io.github.smallrob.sonar-quality",
+      "name": "SonarQube Quality Hub",
+      "description": "A modern read-only SonarQube workspace: projects, scan history, issue filtering, Markdown export and quality insights from PostgreSQL.",
+      "publisher": "smallrob",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.smallrob.sonar-quality/0.1.9/icon.svg",
+      "tags": [
+        "sonarqube",
+        "code-quality",
+        "postgresql",
+        "security",
+        "developer-tools"
+      ],
+      "permissions": [
+        "host.workbench"
+      ],
+      "source": "https://github.com/SmallRob/dbx-sonar-quality/tree/v0.1.9",
+      "homepage": "https://github.com/SmallRob/dbx-sonar-quality",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.9",
+      "versions": [
+        {
+          "version": "0.1.9",
+          "releasedAt": "2026-11-16T16:26:09.683Z",
+          "releaseNotes": "0.1.9 turns the top scan switcher and both scan comparison fields into searchable, 20-row single-select popovers; adds local issue snapshots with hasSnapshot guards, four-card comparison results, compact build-number labels, and a 390px mobile layout fix. The workspace remains read-only against SonarQube PostgreSQL, with project switching, scan history, rule and directory multi-select filters, Markdown issue export and global quality insights.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sonar-quality/0.1.9/io.github.smallrob.sonar-quality-0.1.9-darwin-arm64.dbxp",
+              "sha256": "fd110f51c84f87f5df6154182cd33ad0b2cf92b8d7268b26c2b83cf12cb03099",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6375665
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sonar-quality/0.1.9/io.github.smallrob.sonar-quality-0.1.9-darwin-x64.dbxp",
+              "sha256": "f0d17d26f74c64b97d8ccc504f2285457ec1ecf94c59be2f6f5fe4fbebbc75f0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6672213
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sonar-quality/0.1.9/io.github.smallrob.sonar-quality-0.1.9-linux-arm64.dbxp",
+              "sha256": "be9b84f45ed007cebb4eb08ebeaba83ea58845e5b5748ec9c7d38e196b93a3b3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6255966
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sonar-quality/0.1.9/io.github.smallrob.sonar-quality-0.1.9-linux-x64.dbxp",
+              "sha256": "eee8eec0f32c9a14bc89f404fc050fe5050ef7d108d5414a236a062def1409da",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6666750
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sonar-quality/0.1.9/io.github.smallrob.sonar-quality-0.1.9-windows-x64.dbxp",
+              "sha256": "c4b58efcfee1a5887411f900e21ea0f396975ea2e6963ad98df0bb5be2f0c01c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6771945
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "en": {
+          "name": "SonarQube Quality Hub",
+          "description": "A modern read-only SonarQube workspace: projects, scan history, issue filtering, Markdown export and quality insights from PostgreSQL."
+        },
+        "zh-CN": {
+          "name": "SonarQube 质量中心",
+          "description": "现代化 SonarQube 只读工作台：项目切换、扫描历史、分类筛选、中文问题详情与全局质量统计。"
+        }
+      }
+    },
+    {
       "id": "io.github.smallrob.sql-review",
       "name": "SQL Review",
       "description": "静态 SQL 评审台：规则化检查破坏性变更、迁移规范、性能与结构质量，不连接数据库、不执行被评审的 SQL。",
