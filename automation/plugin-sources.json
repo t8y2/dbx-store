@@ -157,6 +157,11 @@
       "autoUpdate": true
     },
     {
+      "repository": "naivemap/dbx-postgis-raster-viewer",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
       "repository": "NintyCat/dbx-plugin-NintyAPI",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
