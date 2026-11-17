@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.nixing178.gitlab",
+  "publisher": "nixing178",
+  "version": "0.3.3",
+  "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.3.3",
+  "releaseNotes": "Adds Copy HTTPS URL and Copy SSH URL entries to the project code dropdown, with an inline toast as copy feedback and disabled entries when the GitLab instance does not expose a clone URL.",
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-gitlab/releases/download/v0.3.3/io.github.nixing178.gitlab-0.3.3-windows-x64.dbxp",
+      "sha256": "71528e5b5b8d4a8c4a7bc89eaf6a63389aa5a1341488f4bcb07f4a3066d5d52d",
+      "size": 4707893
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-gitlab/releases/download/v0.3.3/io.github.nixing178.gitlab-0.3.3-darwin-x64.dbxp",
+      "sha256": "5315a07a950633f8c160ed7c5eb224b15f74420e2e02de9170aa17474419ae3a",
+      "size": 4649749
+    },
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/nixing178/dbx-plugin-gitlab/releases/download/v0.3.3/io.github.nixing178.gitlab-0.3.3-darwin-arm64.dbxp",
+      "sha256": "675301a2ef15daa1e6ac53b881f5d19d4e3c5ec75e8a20666a2c6052fee4fcf9",
+      "size": 4426631
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/nixing178/dbx-plugin-gitlab/releases/download/v0.3.3/io.github.nixing178.gitlab-0.3.3-linux-x64.dbxp",
+      "sha256": "2a4f2b230506714b428ada2117d578f3d84c7eb2b46d984c8fe943abd57629f5",
+      "size": 4716027
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/nixing178/dbx-plugin-gitlab/releases/download/v0.3.3/io.github.nixing178.gitlab-0.3.3-linux-arm64.dbxp",
+      "sha256": "136b17e38b09dbe75f59e469dc08566412b212c466704f7a03ee0f3e9e8484ae",
+      "size": 4423901
+    }
+  ]
+}
