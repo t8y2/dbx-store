@@ -1,0 +1,11 @@
+{
+  "id": "dbx-mybatis-tool",
+  "version": "1.0.0",
+  "publisher": "tycoon",
+  "artifact": {
+    "url": "https://github.com/Tycoon-HJ/dbx-mybatis-tool/releases/download/1.0.0/dbx-mybatis-tool-1.0.0-universal.dbxp",
+    "sha256": "b364032b59c0a9cfbe3fca6ce68b67e9aa814ca1b1624b6874a265fd54c32fd7",
+    "size": 20713
+  },
+  "prerelease": false
+}
