@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "org.story.dbx-json-editor",
+  "publisher": "story",
+  "version": "0.1.0",
+  "name": "JSON Editor",
+  "description": "A professional JSON editing workspace featuring Code, Tree and Table views, dual-pane editing, formatting, validation and diff.",
+  "icon": "https://raw.githubusercontent.com/any-stories/dbx-plugin-json-editor/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "json",
+    "editor",
+    "tools"
+  ],
+  "permissions": [
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/any-stories/dbx-plugin-json-editor",
+  "homepage": "https://github.com/any-stories/dbx-plugin-json-editor",
+  "license": "MIT",
+  "releaseNotes": "Initial release.",
+  "localizations": {
+    "zh-CN": {
+      "name": "JSON 编辑器",
+      "description": "专业 JSON 编辑工作台: Code / Tree / Table 三视图, 双面板编辑, 格式化, 校验与差异比较"
+    }
+  },
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/any-stories/dbx-plugin-json-editor/releases/download/v0.1.0/org.story.dbx-json-editor-0.1.0-universal.dbxp",
+      "sha256": "8f2a3cd3304e64e229fbf5c10f9c4f8855ac4bcec2cc407856856776c89645e7",
+      "size": 552085
+    }
+  ]
+}
