@@ -290,6 +290,11 @@
       "repository": "SmallRob/dbx-sql-review",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "any-stories/dbx-plugin-json-editor",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
