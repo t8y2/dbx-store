@@ -295,6 +295,11 @@
       "repository": "any-stories/dbx-plugin-json-editor",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "Ryn-Mic/dbx-json-grid",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
