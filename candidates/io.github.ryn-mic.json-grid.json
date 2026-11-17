@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "io.github.ryn-mic.json-grid",
   "publisher": "ryn-mic",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "JSON Grid",
   "description": "Explore and edit JSON as nested grids, DevTools-style trees and source. Copy JSONPath, search, filter and format locally.",
-  "icon": "https://raw.githubusercontent.com/Ryn-Mic/dbx-json-grid/v0.2.0/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/Ryn-Mic/dbx-json-grid/v0.2.1/assets/plugin.svg",
   "tags": [
     "json",
     "json-grid",
@@ -18,7 +18,7 @@
   ],
   "homepage": "https://github.com/Ryn-Mic/dbx-json-grid",
   "license": "MIT",
-  "releaseNotes": "Source block highlighting, inline field/column renaming, draggable split and every column, compact index, icon filters, and single-toggle nested grids that grow parent columns. Removed subtree focus.",
+  "releaseNotes": "Remember each grid/tree tab independently: expansion, selection, search, filters, widths, sorting, page and scroll position. Preserve state during temporary invalid input; reset on a new document.",
   "localizations": {
     "zh-CN": {
       "name": "JSON Grid",
@@ -28,10 +28,10 @@
   "targets": [
     {
       "target": "universal",
-      "url": "https://github.com/Ryn-Mic/dbx-json-grid/releases/download/v0.2.0/io.github.ryn-mic.json-grid-0.2.0-universal.dbxp",
-      "sha256": "43e86ef4878d5edd12ea025e76144f8506274994a7360307b2c8aacbd2386aac",
-      "size": 243083
+      "url": "https://github.com/Ryn-Mic/dbx-json-grid/releases/download/v0.2.1/io.github.ryn-mic.json-grid-0.2.1-universal.dbxp",
+      "sha256": "05c9c62522e51a15e9af1e009dd8d8eda6df333d907e294d961ac5f5f489372a",
+      "size": 243640
     }
   ],
-  "source": "https://github.com/Ryn-Mic/dbx-json-grid/tree/v0.2.0"
+  "source": "https://github.com/Ryn-Mic/dbx-json-grid/tree/v0.2.1"
 }
