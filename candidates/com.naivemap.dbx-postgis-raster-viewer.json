@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "com.naivemap.dbx-postgis-raster-viewer",
+  "publisher": "naivemap",
+  "version": "0.1.0",
+  "name": "PostGIS Raster Viewer",
+  "source": "https://github.com/naivemap/dbx-postgis-raster-viewer",
+  "license": "MIT",
+  "targets": [
+    {
+      "target": "universal",
+      "url": "com.naivemap.dbx-postgis-raster-viewer-0.1.0-universal.dbxp",
+      "sha256": "3e2c06b04ed49a25bec526b13f25da8b4f841ec30baa2c09b869c869cb60101b",
+      "size": 47267
+    }
+  ]
+}
