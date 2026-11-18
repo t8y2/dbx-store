@@ -4,7 +4,7 @@
   "description": "Login-free LAN chat and file sharing for DBX: a guest lobby, direct and group conversations, images and chunked file transfers, and Ed25519-signed transfers between trusted nodes. Hosts a local HTTP node on port 53318 by default and can join another private-IP node.",
   "publisher": "yuzhi",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-localsend/v0.2.0/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-localsend/v0.2.1/assets/plugin.svg",
   "tags": [
     "lan",
     "im",
@@ -14,10 +14,10 @@
     "p2p"
   ],
   "permissions": [],
-  "source": "https://github.com/bobocha214/dbx-plugin-localsend/tree/v0.2.0",
+  "source": "https://github.com/bobocha214/dbx-plugin-localsend/tree/v0.2.1",
   "homepage": "https://github.com/bobocha214/dbx-plugin-localsend",
   "license": "Apache-2.0",
-  "latestVersion": "0.2.0",
+  "latestVersion": "0.2.1",
   "versions": [
     {
       "version": "0.2.0",
@@ -65,6 +65,55 @@
           "sha256": "f3c15586858c5a66ad83f9ee563f6fd04b479fc3215a2ac0d272b38af7ba14c1",
           "signingKeyId": "dbx-store-release-2026",
           "size": 3600090
+        }
+      ]
+    },
+    {
+      "version": "0.2.1",
+      "releasedAt": "2026-11-13T03:29:20.863Z",
+      "releaseNotes": "0.2.1: unified lobby Chat/Files/Members tabs, a searchable lobby file library with real download records, member presence, and confirmed file deletion with sender/owner/admin permission checks. Rebuilt all six x64/ARM64 packages for Windows, macOS and Linux.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/io.github.yuzhi.localsend-0.2.1-darwin-arm64.dbxp",
+          "sha256": "e923a0ef1e12d9c5848d672ca287e393978a55dd7ba51b9c6ecb83b57186dd3e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3380407
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/io.github.yuzhi.localsend-0.2.1-darwin-x64.dbxp",
+          "sha256": "4998e4a2e1094924779fd037a09d80136caa44d35f396eb3dc3d4cbc1f68b616",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3679860
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/io.github.yuzhi.localsend-0.2.1-linux-arm64.dbxp",
+          "sha256": "1b258289e7c6c18b1e53c32dfaa9e3f53b9098e30e176ab54120915f2048d73d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3276695
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/io.github.yuzhi.localsend-0.2.1-linux-x64.dbxp",
+          "sha256": "d418b329893c3c3cd0d22ca8e498f9750d497607728a78d3aae1e1a74c37e68f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3640055
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/io.github.yuzhi.localsend-0.2.1-windows-arm64.dbxp",
+          "sha256": "a962e28738efb42e8cb3a4c8377a20fb142299655b97b2132cf8bb015098dc70",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3409785
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.localsend/0.2.1/io.github.yuzhi.localsend-0.2.1-windows-x64.dbxp",
+          "sha256": "d9d742151665540161fec337b00c6cc1695b4734e146568a6ad5b70798c1673d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3803952
         }
       ]
     }

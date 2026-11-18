@@ -20,7 +20,7 @@
   "source": "https://github.com/nixing178/dbx-plugin-jenkins/tree/v0.12.0",
   "homepage": "https://github.com/nixing178/dbx-plugin-jenkins",
   "license": "Apache-2.0",
-  "latestVersion": "0.12.0",
+  "latestVersion": "0.13.1",
   "versions": [
     {
       "version": "0.3.0",
@@ -145,6 +145,48 @@
           "sha256": "2a635b2ac298ac83284b860e820c37db62886ce158e0240f6575c4f4d3653cc0",
           "signingKeyId": "dbx-store-release-2026",
           "size": 5184652
+        }
+      ]
+    },
+    {
+      "version": "0.13.1",
+      "releasedAt": "2026-11-13T02:50:36.930Z",
+      "releaseNotes": "External MCP support: the 10 Jenkins tools can now be exposed on the host dbx-mcp server with per-tool access levels (7 read, trigger/cancel write, stop full), and tool discovery works without an open connection. Fixes the MCP capabilities page failing with 'invalid_params: missing connectionId'.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-darwin-arm64.dbxp",
+          "sha256": "b992876e53720765cb4fd2da2ebc8135f9e8cd98c219f7619f067881a6ed6cda",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4844045
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-darwin-x64.dbxp",
+          "sha256": "a7915818048aba1a1608fc80c28ef48387e5042b194aba4cf70d4169228364de",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5085744
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-linux-arm64.dbxp",
+          "sha256": "fdda9c581e552bce7ecb0d5bd9e2aeb6c65115c919199f55b90f10ba052d2573",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4824564
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-linux-x64.dbxp",
+          "sha256": "f7518696c3ca9efdce1cb8a93edbce36e9b3eaad34455c0a0071c92d8dd361e2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5150811
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.nixing178.jenkins/0.13.1/io.github.nixing178.jenkins-0.13.1-windows-x64.dbxp",
+          "sha256": "a590edd687c6573afedaa6f410c76054770a39ba9c81949f79bc29d80f4fac57",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5184866
         }
       ]
     }

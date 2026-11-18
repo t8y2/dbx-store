@@ -4,7 +4,7 @@
   "description": "A unified file workspace for local folders, S3-compatible storage, Azure Blob, Google Cloud Storage, Huawei OBS, WebDAV, FTP, SFTP, SMB/CIFS, and other OpenDAL services.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-files/files-v0.1.92/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-files/files-v0.1.93/assets/plugin.svg",
   "tags": [
     "files",
     "storage",
@@ -21,7 +21,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-files",
   "homepage": "https://github.com/jinpy666/dbx-plugin-files",
   "license": "MIT",
-  "latestVersion": "0.1.92",
+  "latestVersion": "0.1.93",
   "versions": [
     {
       "version": "0.1.57",
@@ -860,6 +860,48 @@
           "sha256": "324099c02843331e211b6377961f0e1ce90f26c77354d7de6efb23e5c7f693e7",
           "signingKeyId": "dbx-store-release-2026",
           "size": 38557665
+        }
+      ]
+    },
+    {
+      "version": "0.1.93",
+      "releasedAt": "2026-11-17T02:56:19.966Z",
+      "releaseNotes": "正式版（0.1.93）。S3 家族连接支持跳过 TLS 证书校验（证书过期/自签名的测试端点可直连，独立引擎进程承载、其他连接保持完整校验）并开放「高级选项 (JSON)」（如 {\"acl\": \"bucket-owner-full-control\"} 控制上传 ACL，未知名拒绝并列出合法选项）；presign 连接新增「复制限时链接…」：预签名 URL 可自定义过期时长（1h/24h/7d 等）；MCP connect 同步开放 noCheckCertificate 内联参数。（#96、#98）",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.93/io.dbx.files-0.1.93-darwin-arm64.dbxp",
+          "sha256": "2c548180f0cbc4c5598a5e98bd6472fcf65f9437d220742e887e4c3bc661520c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 39982197
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.93/io.dbx.files-0.1.93-darwin-x64.dbxp",
+          "sha256": "1151f42a168842f1acf31ed8caa7544e0a958dc26c27afd8713ea72316181f0c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 42507949
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.93/io.dbx.files-0.1.93-linux-arm64.dbxp",
+          "sha256": "50d8734e562cfa673123e1fbcbe4d72b4bfd76a831f1827223ff7dce7abb3bd8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 36352185
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.93/io.dbx.files-0.1.93-linux-x64.dbxp",
+          "sha256": "5a75accb5f85367f88a1ce97c623aae40b405ea96e7f2a2b4fa34d4a3c41b638",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 39287948
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.files/0.1.93/io.dbx.files-0.1.93-windows-x64.dbxp",
+          "sha256": "94f418394145f0b47453bd8ca156c1f67b8f45d33b1d2f65512007ccff122c07",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 38656276
         }
       ]
     }
