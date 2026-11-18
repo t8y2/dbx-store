@@ -2573,7 +2573,7 @@
       "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。",
       "publisher": "lwai",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/icon.svg",
       "tags": [
         "todo",
         "task",
@@ -2585,8 +2585,50 @@
       "source": "https://github.com/lukelwai/dbx-todo",
       "homepage": "https://github.com/lukelwai/dbx-todo",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.20",
+      "latestVersion": "0.1.21",
       "versions": [
+        {
+          "version": "0.1.21",
+          "releasedAt": "2026-11-18T14:49:59.740Z",
+          "releaseNotes": "修复新建分组无响应问题，修正文件夹描述为分组。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-darwin-arm64.dbxp",
+              "sha256": "b565524d776850ea3135bf3b22515a6836db1cc6a59107edfdb4f2d832721d7c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5600632
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-darwin-x64.dbxp",
+              "sha256": "37c5c529f79c6f5803b95cdd9215f4bdc45d17e862d8a6bf84aba632d53e8e7b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5800324
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-linux-arm64.dbxp",
+              "sha256": "761c6bd95b51fef9a7af9260e4e621864fc08d9b7a1ff90e506d40fa972b94fe",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5288976
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-linux-x64.dbxp",
+              "sha256": "705bcd56eb378cef11d782045ebfef2fe5b4f9869895f8f9d3d30d87942a411d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5650127
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-windows-x64.dbxp",
+              "sha256": "7fb6d1f9ac30acbd0e685e2be2f75c3921a751ab508419eff475ce494c93ffa7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5719843
+            }
+          ]
+        },
         {
           "version": "0.1.20",
           "releasedAt": "2026-11-02T12:14:39.832Z",
@@ -14426,25 +14468,69 @@
     {
       "id": "io.github.smallrob.sql-review",
       "name": "SQL Review",
-      "description": "静态 SQL 评审台：规则化检查破坏性变更、迁移规范、性能与结构质量，不连接数据库、不执行被评审的 SQL。",
+      "description": "静态 SQL 评审台：规则化评审破坏性变更、迁移规范、性能与结构质量；附按方言组织的最佳实践库，评审时联动推荐优化建议。不连库、不执行 SQL。",
       "publisher": "smallrob",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.30/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/icon.svg",
       "tags": [
         "sql",
         "review",
         "lint",
         "migration",
-        "security"
+        "security",
+        "best-practices",
+        "performance"
       ],
       "permissions": [
         "host.workbench"
       ],
-      "source": "https://github.com/SmallRob/dbx-sql-review/tree/v0.1.30",
+      "source": "https://github.com/SmallRob/dbx-sql-review/tree/v0.1.33",
       "homepage": "https://github.com/SmallRob/dbx-sql-review",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.30",
+      "latestVersion": "0.1.33",
       "versions": [
+        {
+          "version": "0.1.33",
+          "releasedAt": "2026-11-18T14:43:35.511Z",
+          "releaseNotes": "修复评审结果布局：风险命中列表不再被「相关最佳实践」挤压裁切，命中项按内容完整显示并在列表内滚动；相关最佳实践改为默认折叠、独立滚动的详情块。保留 v0.1.32 评分修复与 v0.1.31 最佳实践库。全程不连库、不执行 SQL。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/io.github.smallrob.sql-review-0.1.33-darwin-arm64.dbxp",
+              "sha256": "7bb80135fe8c611c6bd6628682d5529d6f0539812047f597b80a18c5e362f295",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2109644
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/io.github.smallrob.sql-review-0.1.33-darwin-x64.dbxp",
+              "sha256": "34a56193af584afd9f92a055e5828628d5fe6081257628f6179a1cb334de2eac",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2212654
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/io.github.smallrob.sql-review-0.1.33-linux-arm64.dbxp",
+              "sha256": "114c9df60afe410813da4729e041b7a773896b34e77ca2036ba069aae38df7f5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2088288
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/io.github.smallrob.sql-review-0.1.33-linux-x64.dbxp",
+              "sha256": "76eaa229346eb7ca0255a3d840319a88cfc9b164085222618837176fde2f9c4c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2224735
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/io.github.smallrob.sql-review-0.1.33-windows-x64.dbxp",
+              "sha256": "1c20106abddb57ad60a8f3264ee400b6f100086ec57db65a0e7551dead3f119e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2283715
+            }
+          ]
+        },
         {
           "version": "0.1.30",
           "releasedAt": "2026-11-16T01:10:20.949Z",
@@ -14573,9 +14659,13 @@
         }
       ],
       "localizations": {
+        "en": {
+          "name": "SQL Review",
+          "description": "Static SQL review workbench: rule-based checks for destructive changes, migration hygiene, performance and schema quality, plus a dialect-aware best-practice catalog surfaced during review. Never connects to a database and never executes the SQL under review."
+        },
         "zh-CN": {
           "name": "SQL 评审台",
-          "description": "静态 SQL 评审台：规则化检查破坏性变更、迁移规范、性能与结构质量，不连接数据库、不执行被评审的 SQL。"
+          "description": "静态 SQL 评审台：规则化评审破坏性变更、迁移规范、性能与结构质量；附按方言组织的最佳实践库，评审时联动推荐优化建议。不连库、不执行 SQL。"
         }
       }
     },
