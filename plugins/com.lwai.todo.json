@@ -4,7 +4,7 @@
   "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。",
   "publisher": "lwai",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-todo/0.1.20/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-todo/0.1.21/assets/plugin.svg",
   "tags": [
     "todo",
     "task",
@@ -16,7 +16,7 @@
   "source": "https://github.com/lukelwai/dbx-todo",
   "homepage": "https://github.com/lukelwai/dbx-todo",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.20",
+  "latestVersion": "0.1.21",
   "versions": [
     {
       "version": "0.1.5",
@@ -155,6 +155,48 @@
           "sha256": "9dc2af77381b5ab5d49accad5fe4f765d7c462d88565241fc3af52bf28675a55",
           "signingKeyId": "dbx-store-release-2026",
           "size": 5719866
+        }
+      ]
+    },
+    {
+      "version": "0.1.21",
+      "releasedAt": "2026-11-18T14:49:59.740Z",
+      "releaseNotes": "修复新建分组无响应问题，修正文件夹描述为分组。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-darwin-arm64.dbxp",
+          "sha256": "b565524d776850ea3135bf3b22515a6836db1cc6a59107edfdb4f2d832721d7c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5600632
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-darwin-x64.dbxp",
+          "sha256": "37c5c529f79c6f5803b95cdd9215f4bdc45d17e862d8a6bf84aba632d53e8e7b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5800324
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-linux-arm64.dbxp",
+          "sha256": "761c6bd95b51fef9a7af9260e4e621864fc08d9b7a1ff90e506d40fa972b94fe",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5288976
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-linux-x64.dbxp",
+          "sha256": "705bcd56eb378cef11d782045ebfef2fe5b4f9869895f8f9d3d30d87942a411d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5650127
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-windows-x64.dbxp",
+          "sha256": "7fb6d1f9ac30acbd0e685e2be2f75c3921a751ab508419eff475ce494c93ffa7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5719843
         }
       ]
     }

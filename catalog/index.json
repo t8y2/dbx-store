@@ -1502,7 +1502,7 @@
       "description": "A Postman-style HTTP/gRPC workbench: compose requests, import OpenAPI, sync via WebDAV, and inspect responses through a native sidecar.",
       "publisher": "jettech",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.3/icon.svg",
       "tags": [
         "http",
         "grpc",
@@ -1520,8 +1520,50 @@
       "source": "https://github.com/renpengkai/dbx-plugin-http-client",
       "homepage": "https://github.com/renpengkai/dbx-plugin-http-client",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.1",
+      "latestVersion": "0.2.3",
       "versions": [
+        {
+          "version": "0.2.3",
+          "releasedAt": "2026-11-18T15:09:01.158Z",
+          "releaseNotes": "0.2.1：修正 Manifest 兼容性（命令 ID 改为全小写 open-tab；菜单 group 改用 primary/secondary）。0.2.0：gRPC、OpenAPI/Swagger 导入、WebDAV 同步、Dock 快捷入口。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.3/com.jettech.httpclient-0.2.3-darwin-arm64.dbxp",
+              "sha256": "dd3e7e3d1256a08e649cdfc0d6b5054a5e39b7ecd4ae80b1f7fe250047e4f68d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9478714
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.3/com.jettech.httpclient-0.2.3-darwin-x64.dbxp",
+              "sha256": "0583a066c264f7498a37433b3064b941aeff8d2aba5e935683dfbddd5e386428",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9908609
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.3/com.jettech.httpclient-0.2.3-linux-arm64.dbxp",
+              "sha256": "0f81c5c3feb8ffb3a2fd82ccef627c0438679bbe9cc1aab53ac5613e60da50f4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9399460
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.3/com.jettech.httpclient-0.2.3-linux-x64.dbxp",
+              "sha256": "9200910351f119476145fe3f5eb4ce230ea560929650119e9bbdeb67cb7d9e5a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 10003559
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.3/com.jettech.httpclient-0.2.3-windows-x64.dbxp",
+              "sha256": "5914e2c5890db21fff1dfc1b926b49bb5301589d19b2a272bf0ff42e3f1405f1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 10147495
+            }
+          ]
+        },
         {
           "version": "0.2.1",
           "releasedAt": "2026-10-30T10:08:53.100Z",
@@ -1788,7 +1830,7 @@
       "description": "Browse, manage and inspect OCI / Harbor container registries from a single workbench: project and namespace navigation, tag rename and delete, per-layer size analysis, Trivy CVE reports, registry-wide charts and multi-arch breakdowns.",
       "publisher": "leavingrain",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.3/icon.svg",
       "tags": [
         "registry",
         "harbor",
@@ -1801,8 +1843,57 @@
       "source": "https://github.com/LeavingRain/dbx-plugin-imrepo",
       "homepage": "https://github.com/LeavingRain/dbx-plugin-imrepo",
       "license": "Apache-2.0",
-      "latestVersion": "1.0.2",
+      "latestVersion": "1.0.3",
       "versions": [
+        {
+          "version": "1.0.3",
+          "releasedAt": "2026-11-18T14:55:50.003Z",
+          "releaseNotes": "Fixes the region-dropdown install error (issue #5). Private AWS ECR repository browsing with DescribeRepositories and the AWS credential chain, image archive upload/download (.tar/.tar.gz), Docker Registry v2 projects, registry overview charts, and one badge per architecture. Repository moved to github.com/LeavingRain/dbx-plugin-imrepo. Security note: the last connection password / CLI secret is cached base64-encoded (encoding, not encryption) in credentials.json under the plugin data directory; prefer least-privilege robot accounts or read-only tokens and delete the file when no longer needed.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.3/com.leavingrain.imrepo-1.0.3-darwin-arm64.dbxp",
+              "sha256": "f8647d78bd90e7c17b46208c41279219a3c75dcd3af364f54f1cee1f59f7b9a7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4961814
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.3/com.leavingrain.imrepo-1.0.3-darwin-x64.dbxp",
+              "sha256": "079f2eb2d5254ffba5a275391ac0f2ee42926c2b6cd196a591fb5d9ac89e0f01",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5228639
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.3/com.leavingrain.imrepo-1.0.3-linux-arm64.dbxp",
+              "sha256": "ce5a26cd85310ba5f322e6ec5a20c61e52a204e39a94861c048aae8008a2d984",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4908004
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.3/com.leavingrain.imrepo-1.0.3-linux-x64.dbxp",
+              "sha256": "82b9cfb49b459475cd60c9e990d52fee9d2570f93b2e6d501b0109253f430bb5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5259079
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.3/com.leavingrain.imrepo-1.0.3-windows-arm64.dbxp",
+              "sha256": "7ce221b6c2b91932d5457e283e419009337f30553acb87d126e71d3c32fbfc37",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4918657
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.leavingrain.imrepo/1.0.3/com.leavingrain.imrepo-1.0.3-windows-x64.dbxp",
+              "sha256": "20c33483177fd5fea29465393f8a9f8ecb8fe9602b4436272fdf27b6c17a013e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5300452
+            }
+          ]
+        },
         {
           "version": "1.0.2",
           "releasedAt": "2026-11-15T03:39:27.411Z",
@@ -2573,7 +2664,7 @@
       "description": "轻量待办（Todo）插件：分组管理任务，支持优先级、起止时间、子任务与里程碑、完成度进度条，以及列表 / 日历双视图。",
       "publisher": "lwai",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.20/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/icon.svg",
       "tags": [
         "todo",
         "task",
@@ -2585,8 +2676,50 @@
       "source": "https://github.com/lukelwai/dbx-todo",
       "homepage": "https://github.com/lukelwai/dbx-todo",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.20",
+      "latestVersion": "0.1.21",
       "versions": [
+        {
+          "version": "0.1.21",
+          "releasedAt": "2026-11-18T14:49:59.740Z",
+          "releaseNotes": "修复新建分组无响应问题，修正文件夹描述为分组。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-darwin-arm64.dbxp",
+              "sha256": "b565524d776850ea3135bf3b22515a6836db1cc6a59107edfdb4f2d832721d7c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5600632
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-darwin-x64.dbxp",
+              "sha256": "37c5c529f79c6f5803b95cdd9215f4bdc45d17e862d8a6bf84aba632d53e8e7b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5800324
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-linux-arm64.dbxp",
+              "sha256": "761c6bd95b51fef9a7af9260e4e621864fc08d9b7a1ff90e506d40fa972b94fe",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5288976
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-linux-x64.dbxp",
+              "sha256": "705bcd56eb378cef11d782045ebfef2fe5b4f9869895f8f9d3d30d87942a411d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5650127
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.lwai.todo/0.1.21/com.lwai.todo-0.1.21-windows-x64.dbxp",
+              "sha256": "7fb6d1f9ac30acbd0e685e2be2f75c3921a751ab508419eff475ce494c93ffa7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5719843
+            }
+          ]
+        },
         {
           "version": "0.1.20",
           "releasedAt": "2026-11-02T12:14:39.832Z",
@@ -13658,7 +13791,7 @@
       "description": "Browse projects and code, review merge requests, watch pipelines and handle issues inside DBX.",
       "publisher": "nixing178",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.3/icon.svg",
       "tags": [
         "gitlab",
         "code-review",
@@ -13671,11 +13804,53 @@
         "host.events",
         "host.storage"
       ],
-      "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.3.2",
+      "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.3.3",
       "homepage": "https://github.com/nixing178/dbx-plugin-gitlab",
       "license": "Apache-2.0",
-      "latestVersion": "0.3.2",
+      "latestVersion": "0.3.3",
       "versions": [
+        {
+          "version": "0.3.3",
+          "releasedAt": "2026-11-18T15:03:10.576Z",
+          "releaseNotes": "Adds Copy HTTPS URL and Copy SSH URL entries to the project code dropdown, with an inline toast as copy feedback and disabled entries when the GitLab instance does not expose a clone URL.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.3/io.github.nixing178.gitlab-0.3.3-darwin-arm64.dbxp",
+              "sha256": "263ddee6a00ad9bce4a77956b9570d898e4d569664b90d8d8ed556de50fdfa53",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4427283
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.3/io.github.nixing178.gitlab-0.3.3-darwin-x64.dbxp",
+              "sha256": "364d5508eee583d3d19b865d1105e77de03628f9ffc67921743762239b54ecb3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4650400
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.3/io.github.nixing178.gitlab-0.3.3-linux-arm64.dbxp",
+              "sha256": "ee7bb27e0f15e12d2ccc4f5f8eeeb8fd25e49707abd9591476f27c2ec0b0cb3c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4424554
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.3/io.github.nixing178.gitlab-0.3.3-linux-x64.dbxp",
+              "sha256": "506e5df2d6eab4efa8196bbebe48d3a818006926cdbeaa06e04a3572030c0ddb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4716676
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.3/io.github.nixing178.gitlab-0.3.3-windows-x64.dbxp",
+              "sha256": "4c857198a405567ec702c15d153f8e1581bcb918c35f2b16ff5ecb6cf39aad79",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4708549
+            }
+          ]
+        },
         {
           "version": "0.3.2",
           "releasedAt": "2026-11-13T03:41:40.483Z",
@@ -14426,25 +14601,69 @@
     {
       "id": "io.github.smallrob.sql-review",
       "name": "SQL Review",
-      "description": "静态 SQL 评审台：规则化检查破坏性变更、迁移规范、性能与结构质量，不连接数据库、不执行被评审的 SQL。",
+      "description": "静态 SQL 评审台：规则化评审破坏性变更、迁移规范、性能与结构质量；附按方言组织的最佳实践库，评审时联动推荐优化建议。不连库、不执行 SQL。",
       "publisher": "smallrob",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.30/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/icon.svg",
       "tags": [
         "sql",
         "review",
         "lint",
         "migration",
-        "security"
+        "security",
+        "best-practices",
+        "performance"
       ],
       "permissions": [
         "host.workbench"
       ],
-      "source": "https://github.com/SmallRob/dbx-sql-review/tree/v0.1.30",
+      "source": "https://github.com/SmallRob/dbx-sql-review/tree/v0.1.33",
       "homepage": "https://github.com/SmallRob/dbx-sql-review",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.30",
+      "latestVersion": "0.1.33",
       "versions": [
+        {
+          "version": "0.1.33",
+          "releasedAt": "2026-11-18T14:43:35.511Z",
+          "releaseNotes": "修复评审结果布局：风险命中列表不再被「相关最佳实践」挤压裁切，命中项按内容完整显示并在列表内滚动；相关最佳实践改为默认折叠、独立滚动的详情块。保留 v0.1.32 评分修复与 v0.1.31 最佳实践库。全程不连库、不执行 SQL。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/io.github.smallrob.sql-review-0.1.33-darwin-arm64.dbxp",
+              "sha256": "7bb80135fe8c611c6bd6628682d5529d6f0539812047f597b80a18c5e362f295",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2109644
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/io.github.smallrob.sql-review-0.1.33-darwin-x64.dbxp",
+              "sha256": "34a56193af584afd9f92a055e5828628d5fe6081257628f6179a1cb334de2eac",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2212654
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/io.github.smallrob.sql-review-0.1.33-linux-arm64.dbxp",
+              "sha256": "114c9df60afe410813da4729e041b7a773896b34e77ca2036ba069aae38df7f5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2088288
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/io.github.smallrob.sql-review-0.1.33-linux-x64.dbxp",
+              "sha256": "76eaa229346eb7ca0255a3d840319a88cfc9b164085222618837176fde2f9c4c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2224735
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/io.github.smallrob.sql-review-0.1.33-windows-x64.dbxp",
+              "sha256": "1c20106abddb57ad60a8f3264ee400b6f100086ec57db65a0e7551dead3f119e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2283715
+            }
+          ]
+        },
         {
           "version": "0.1.30",
           "releasedAt": "2026-11-16T01:10:20.949Z",
@@ -14573,9 +14792,13 @@
         }
       ],
       "localizations": {
+        "en": {
+          "name": "SQL Review",
+          "description": "Static SQL review workbench: rule-based checks for destructive changes, migration hygiene, performance and schema quality, plus a dialect-aware best-practice catalog surfaced during review. Never connects to a database and never executes the SQL under review."
+        },
         "zh-CN": {
           "name": "SQL 评审台",
-          "description": "静态 SQL 评审台：规则化检查破坏性变更、迁移规范、性能与结构质量，不连接数据库、不执行被评审的 SQL。"
+          "description": "静态 SQL 评审台：规则化评审破坏性变更、迁移规范、性能与结构质量；附按方言组织的最佳实践库，评审时联动推荐优化建议。不连库、不执行 SQL。"
         }
       }
     },
@@ -17096,7 +17319,7 @@
       "description": "Professional Elasticsearch management workbench for DBX.",
       "publisher": "xihonglei",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/local.es.studio/0.5.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/local.es.studio/0.5.2/icon.svg",
       "tags": [
         "elasticsearch",
         "database",
@@ -17110,11 +17333,25 @@
         "host.connections:read",
         "host.events"
       ],
-      "source": "https://github.com/Sanshi956/dbx-plugin-es-studio/tree/v0.5.1",
+      "source": "https://github.com/Sanshi956/dbx-plugin-es-studio/tree/v0.5.2",
       "homepage": "https://github.com/Sanshi956/dbx-plugin-es-studio",
       "license": "MIT",
-      "latestVersion": "0.5.1",
+      "latestVersion": "0.5.2",
       "versions": [
+        {
+          "version": "0.5.2",
+          "releasedAt": "2026-11-18T15:15:32.367Z",
+          "releaseNotes": "0.5.2: query profiler no longer reports all-zero rows on Elasticsearch 6.x/7.x (compound shard ids are now parsed); query results render one column per mapping field with per-row detail; large clusters (6k+ shards) load through paginated shards/index tables, a leaner overview batch and 60s request timeouts; all form controls share one chrome and focus ring.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/local.es.studio/0.5.2/local.es.studio-0.5.2-windows-x64.dbxp",
+              "sha256": "b968ae7ba7ed67a77baa0daaf8157fa1eefe9124f3d98af8f95f408a99d3cb31",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4765730
+            }
+          ]
+        },
         {
           "version": "0.5.1",
           "releasedAt": "2026-11-16T16:33:00.526Z",
