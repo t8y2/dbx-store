@@ -227,7 +227,7 @@
       "autoUpdate": true
     },
     {
-      "repository": "Zer0ON1/dbx-plugin-imrepo",
+      "repository": "LeavingRain/dbx-plugin-imrepo",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
@@ -273,6 +273,26 @@
     },
     {
       "repository": "Crayon-hua/dbx-plugin-xxl-job-console",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "vyrnax/dbx-plugin-cronpulse",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "Zer0ON1/dbx-plugin-imrepo",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "SmallRob/dbx-sql-review",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "any-stories/dbx-plugin-json-editor",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     }
