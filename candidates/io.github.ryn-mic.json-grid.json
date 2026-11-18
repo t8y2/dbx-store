@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "io.github.ryn-mic.json-grid",
   "publisher": "ryn-mic",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "name": "JSON Grid",
   "description": "Explore and edit JSON as nested grids, DevTools-style trees and source. Copy JSONPath, search, filter and format locally.",
-  "icon": "https://raw.githubusercontent.com/Ryn-Mic/dbx-json-grid/v0.2.2/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/Ryn-Mic/dbx-json-grid/v0.2.3/assets/plugin.svg",
   "tags": [
     "json",
     "json-grid",
@@ -18,7 +18,7 @@
   ],
   "homepage": "https://github.com/Ryn-Mic/dbx-json-grid",
   "license": "MIT",
-  "releaseNotes": "Cancel inline key/value drafts on confirmed clicks or focus transfers elsewhere inside the plugin. Preserve the editor and draft when the window loses focus, then resume on return. Enter commits; Escape cancels. No host integration required.",
+  "releaseNotes": "Align source fold chevrons with line numbers. Simplify object tables to key/value rows, use one-based row numbers for arrays, share header and row-number colors, and remove table caption and summary rows.",
   "localizations": {
     "zh-CN": {
       "name": "JSON Grid",
@@ -28,10 +28,10 @@
   "targets": [
     {
       "target": "universal",
-      "url": "https://github.com/Ryn-Mic/dbx-json-grid/releases/download/v0.2.2/io.github.ryn-mic.json-grid-0.2.2-universal.dbxp",
-      "sha256": "2c8a4e7864364b4dcb1872c4c4ee799fd4e490ff74958072ec7f49a57bd24544",
-      "size": 243812
+      "url": "https://github.com/Ryn-Mic/dbx-json-grid/releases/download/v0.2.3/io.github.ryn-mic.json-grid-0.2.3-universal.dbxp",
+      "sha256": "ce2006419420cf7e214980ffeb626c361390f1dfebc91e791ca895fb60bbca17",
+      "size": 244092
     }
   ],
-  "source": "https://github.com/Ryn-Mic/dbx-json-grid/tree/v0.2.2"
+  "source": "https://github.com/Ryn-Mic/dbx-json-grid/tree/v0.2.3"
 }
