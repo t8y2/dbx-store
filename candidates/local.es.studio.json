@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "local.es.studio",
+  "publisher": "xihonglei",
+  "version": "0.5.3",
+  "name": "ES Studio",
+  "description": "Professional Elasticsearch management workbench for DBX.",
+  "icon": "https://raw.githubusercontent.com/Sanshi956/dbx-plugin-es-studio/v0.5.3/assets/plugin.svg",
+  "tags": [
+    "elasticsearch",
+    "database",
+    "monitoring",
+    "cluster",
+    "developer-tools"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.storage",
+    "host.connections:read",
+    "host.events"
+  ],
+  "source": "https://github.com/Sanshi956/dbx-plugin-es-studio/tree/v0.5.3",
+  "homepage": "https://github.com/Sanshi956/dbx-plugin-es-studio",
+  "license": "MIT",
+  "releaseNotes": "0.5.3: see https://github.com/Sanshi956/dbx-plugin-es-studio/releases/tag/v0.5.3.",
+  "localizations": {
+    "zh-CN": {
+      "name": "ES Studio",
+      "description": "DBX 内的 Elasticsearch 专业管理工作台。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/Sanshi956/dbx-plugin-es-studio/releases/download/v0.5.3/local.es.studio-0.5.3-windows-x64.dbxp",
+      "sha256": "d98fe965ba4a950c2b6e49c9f1c7fa8ca3957d2159e06a8de5001e2b1ec11284",
+      "size": 4766100
+    }
+  ]
+}
