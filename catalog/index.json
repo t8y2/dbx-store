@@ -11972,6 +11972,39 @@
       }
     },
     {
+      "id": "io.github.biendo27.plan-viewer",
+      "name": "SQL Plan Viewer",
+      "description": "Offline SQL Server ShowPlan XML viewer with an interactive operator graph and estimated cost percentages.",
+      "publisher": "biendo27",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.biendo27.plan-viewer/0.1.1/icon.svg",
+      "tags": [
+        "sqlserver",
+        "execution-plan"
+      ],
+      "permissions": [],
+      "source": "https://github.com/biendo27/dbx-plan-viewer/tree/v0.1.1",
+      "homepage": "https://github.com/biendo27/dbx-plan-viewer",
+      "license": "MIT",
+      "latestVersion": "0.1.1",
+      "versions": [
+        {
+          "version": "0.1.1",
+          "releasedAt": "2026-11-18T15:51:41.182Z",
+          "releaseNotes": "Initial public release: Studio interface, result-grid/paste/file inputs, multiple statements, source properties and estimated operator cost percentages.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/io.github.biendo27.plan-viewer/0.1.1/io.github.biendo27.plan-viewer-0.1.1-universal.dbxp",
+              "sha256": "97c76a824482f6fe928dff3e6a7e57fbb5bdc99058ce7b31b95d09794c7dc570",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16682
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "io.github.caichangqing1120.apollo",
       "name": "Apollo Portal Console",
       "description": "Manage Apollo 2.x configuration with independently authored pages and password login. Known visual parity gaps remain.",
