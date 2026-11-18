@@ -4,7 +4,7 @@
   "description": "Professional Elasticsearch management workbench for DBX.",
   "publisher": "xihonglei",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/Sanshi956/dbx-plugin-es-studio/v0.5.1/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/Sanshi956/dbx-plugin-es-studio/v0.5.3/assets/plugin.svg",
   "tags": [
     "elasticsearch",
     "database",
@@ -18,10 +18,10 @@
     "host.connections:read",
     "host.events"
   ],
-  "source": "https://github.com/Sanshi956/dbx-plugin-es-studio/tree/v0.5.1",
+  "source": "https://github.com/Sanshi956/dbx-plugin-es-studio/tree/v0.5.3",
   "homepage": "https://github.com/Sanshi956/dbx-plugin-es-studio",
   "license": "MIT",
-  "latestVersion": "0.5.1",
+  "latestVersion": "0.5.3",
   "versions": [
     {
       "version": "0.5.1",
@@ -34,6 +34,34 @@
           "sha256": "44ac5dc072d60c6212491435189f2ca05c78ff8afca0d917d6ee8484d86d42f5",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4761440
+        }
+      ]
+    },
+    {
+      "version": "0.5.2",
+      "releasedAt": "2026-11-18T15:15:32.367Z",
+      "releaseNotes": "0.5.2: query profiler no longer reports all-zero rows on Elasticsearch 6.x/7.x (compound shard ids are now parsed); query results render one column per mapping field with per-row detail; large clusters (6k+ shards) load through paginated shards/index tables, a leaner overview batch and 60s request timeouts; all form controls share one chrome and focus ring.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/local.es.studio/0.5.2/local.es.studio-0.5.2-windows-x64.dbxp",
+          "sha256": "b968ae7ba7ed67a77baa0daaf8157fa1eefe9124f3d98af8f95f408a99d3cb31",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4765730
+        }
+      ]
+    },
+    {
+      "version": "0.5.3",
+      "releasedAt": "2026-11-18T16:03:53.859Z",
+      "releaseNotes": "0.5.3: see https://github.com/Sanshi956/dbx-plugin-es-studio/releases/tag/v0.5.3.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/local.es.studio/0.5.3/local.es.studio-0.5.3-windows-x64.dbxp",
+          "sha256": "1b3bbb6d6b1e93cbc5290b98930d60ae5e1a73474b76d47e7cabea27983030cc",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4766756
         }
       ]
     }
