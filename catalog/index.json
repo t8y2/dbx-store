@@ -1502,7 +1502,7 @@
       "description": "A Postman-style HTTP/gRPC workbench: compose requests, import OpenAPI, sync via WebDAV, and inspect responses through a native sidecar.",
       "publisher": "jettech",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.3/icon.svg",
       "tags": [
         "http",
         "grpc",
@@ -1520,8 +1520,50 @@
       "source": "https://github.com/renpengkai/dbx-plugin-http-client",
       "homepage": "https://github.com/renpengkai/dbx-plugin-http-client",
       "license": "Apache-2.0",
-      "latestVersion": "0.2.1",
+      "latestVersion": "0.2.3",
       "versions": [
+        {
+          "version": "0.2.3",
+          "releasedAt": "2026-11-18T15:09:01.158Z",
+          "releaseNotes": "0.2.1：修正 Manifest 兼容性（命令 ID 改为全小写 open-tab；菜单 group 改用 primary/secondary）。0.2.0：gRPC、OpenAPI/Swagger 导入、WebDAV 同步、Dock 快捷入口。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.3/com.jettech.httpclient-0.2.3-darwin-arm64.dbxp",
+              "sha256": "dd3e7e3d1256a08e649cdfc0d6b5054a5e39b7ecd4ae80b1f7fe250047e4f68d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9478714
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.3/com.jettech.httpclient-0.2.3-darwin-x64.dbxp",
+              "sha256": "0583a066c264f7498a37433b3064b941aeff8d2aba5e935683dfbddd5e386428",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9908609
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.3/com.jettech.httpclient-0.2.3-linux-arm64.dbxp",
+              "sha256": "0f81c5c3feb8ffb3a2fd82ccef627c0438679bbe9cc1aab53ac5613e60da50f4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9399460
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.3/com.jettech.httpclient-0.2.3-linux-x64.dbxp",
+              "sha256": "9200910351f119476145fe3f5eb4ce230ea560929650119e9bbdeb67cb7d9e5a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 10003559
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jettech.httpclient/0.2.3/com.jettech.httpclient-0.2.3-windows-x64.dbxp",
+              "sha256": "5914e2c5890db21fff1dfc1b926b49bb5301589d19b2a272bf0ff42e3f1405f1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 10147495
+            }
+          ]
+        },
         {
           "version": "0.2.1",
           "releasedAt": "2026-10-30T10:08:53.100Z",
