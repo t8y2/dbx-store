@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.misaka10091.jumpserver",
+  "publisher": "dbx-jumpserver",
+  "version": "0.1.0",
+  "releaseNotes": "Initial release with multi-profile credential management and automatic JumpServer database endpoint discovery.",
+  "name": "JumpServer",
+  "description": "Fetch JumpServer temporary database credentials and fill DBX connection forms with multi-profile support.",
+  "icon": "https://raw.githubusercontent.com/Misaka10091/dbx-jumpserver/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "jumpserver",
+    "database",
+    "credentials",
+    "mysql",
+    "postgresql",
+    "sqlserver"
+  ],
+  "permissions": [
+    "host.connections:read",
+    "host.storage"
+  ],
+  "source": "https://github.com/Misaka10091/dbx-jumpserver/tree/v0.1.0",
+  "homepage": "https://github.com/Misaka10091/dbx-jumpserver",
+  "license": "Apache-2.0",
+  "localizations": {
+    "zh-CN": {
+      "name": "JumpServer",
+      "description": "获取 JumpServer 数据库临时凭证并填入 DBX 连接表单，支持多凭证配置。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/Misaka10091/dbx-jumpserver/releases/download/v0.1.0/io.github.misaka10091.jumpserver-0.1.0-darwin-arm64.dbxp",
+      "sha256": "df7dd63aa6b4a22d05c7f3e729ff62ade8a0c035822433af297241bba519df8d",
+      "size": 4618047
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/Misaka10091/dbx-jumpserver/releases/download/v0.1.0/io.github.misaka10091.jumpserver-0.1.0-darwin-x64.dbxp",
+      "sha256": "3f5b9c9801fadf37e9640f74fa523684e235cd70841b52b4b2f9c9410f1b41dc",
+      "size": 4849394
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/Misaka10091/dbx-jumpserver/releases/download/v0.1.0/io.github.misaka10091.jumpserver-0.1.0-linux-arm64.dbxp",
+      "sha256": "1e2159185c619f8418e77ca00437ba7b71b02f658047ec2f03987d33cc7ba65c",
+      "size": 4651926
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/Misaka10091/dbx-jumpserver/releases/download/v0.1.0/io.github.misaka10091.jumpserver-0.1.0-linux-x64.dbxp",
+      "sha256": "081524dfa655968b1916dd0db8e01ea7418e63d282adba246d1d1419d86dd2c9",
+      "size": 4957472
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/Misaka10091/dbx-jumpserver/releases/download/v0.1.0/io.github.misaka10091.jumpserver-0.1.0-windows-x64.dbxp",
+      "sha256": "b4576209dbd2fc71265670fbf4ce384490062ac8bf2c528665686fb7b468c4b5",
+      "size": 4875851
+    }
+  ]
+}
