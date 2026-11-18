@@ -13749,7 +13749,7 @@
       "description": "Browse projects and code, review merge requests, watch pipelines and handle issues inside DBX.",
       "publisher": "nixing178",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.3/icon.svg",
       "tags": [
         "gitlab",
         "code-review",
@@ -13762,11 +13762,53 @@
         "host.events",
         "host.storage"
       ],
-      "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.3.2",
+      "source": "https://github.com/nixing178/dbx-plugin-gitlab/tree/v0.3.3",
       "homepage": "https://github.com/nixing178/dbx-plugin-gitlab",
       "license": "Apache-2.0",
-      "latestVersion": "0.3.2",
+      "latestVersion": "0.3.3",
       "versions": [
+        {
+          "version": "0.3.3",
+          "releasedAt": "2026-11-18T15:03:10.576Z",
+          "releaseNotes": "Adds Copy HTTPS URL and Copy SSH URL entries to the project code dropdown, with an inline toast as copy feedback and disabled entries when the GitLab instance does not expose a clone URL.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.3/io.github.nixing178.gitlab-0.3.3-darwin-arm64.dbxp",
+              "sha256": "263ddee6a00ad9bce4a77956b9570d898e4d569664b90d8d8ed556de50fdfa53",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4427283
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.3/io.github.nixing178.gitlab-0.3.3-darwin-x64.dbxp",
+              "sha256": "364d5508eee583d3d19b865d1105e77de03628f9ffc67921743762239b54ecb3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4650400
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.3/io.github.nixing178.gitlab-0.3.3-linux-arm64.dbxp",
+              "sha256": "ee7bb27e0f15e12d2ccc4f5f8eeeb8fd25e49707abd9591476f27c2ec0b0cb3c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4424554
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.3/io.github.nixing178.gitlab-0.3.3-linux-x64.dbxp",
+              "sha256": "506e5df2d6eab4efa8196bbebe48d3a818006926cdbeaa06e04a3572030c0ddb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4716676
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.nixing178.gitlab/0.3.3/io.github.nixing178.gitlab-0.3.3-windows-x64.dbxp",
+              "sha256": "4c857198a405567ec702c15d153f8e1581bcb918c35f2b16ff5ecb6cf39aad79",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4708549
+            }
+          ]
+        },
         {
           "version": "0.3.2",
           "releasedAt": "2026-11-13T03:41:40.483Z",
