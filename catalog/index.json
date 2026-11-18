@@ -17319,7 +17319,7 @@
       "description": "Professional Elasticsearch management workbench for DBX.",
       "publisher": "xihonglei",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/local.es.studio/0.5.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/local.es.studio/0.5.2/icon.svg",
       "tags": [
         "elasticsearch",
         "database",
@@ -17333,11 +17333,25 @@
         "host.connections:read",
         "host.events"
       ],
-      "source": "https://github.com/Sanshi956/dbx-plugin-es-studio/tree/v0.5.1",
+      "source": "https://github.com/Sanshi956/dbx-plugin-es-studio/tree/v0.5.2",
       "homepage": "https://github.com/Sanshi956/dbx-plugin-es-studio",
       "license": "MIT",
-      "latestVersion": "0.5.1",
+      "latestVersion": "0.5.2",
       "versions": [
+        {
+          "version": "0.5.2",
+          "releasedAt": "2026-11-18T15:15:32.367Z",
+          "releaseNotes": "0.5.2: query profiler no longer reports all-zero rows on Elasticsearch 6.x/7.x (compound shard ids are now parsed); query results render one column per mapping field with per-row detail; large clusters (6k+ shards) load through paginated shards/index tables, a leaner overview batch and 60s request timeouts; all form controls share one chrome and focus ring.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/local.es.studio/0.5.2/local.es.studio-0.5.2-windows-x64.dbxp",
+              "sha256": "b968ae7ba7ed67a77baa0daaf8157fa1eefe9124f3d98af8f95f408a99d3cb31",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4765730
+            }
+          ]
+        },
         {
           "version": "0.5.1",
           "releasedAt": "2026-11-16T16:33:00.526Z",
