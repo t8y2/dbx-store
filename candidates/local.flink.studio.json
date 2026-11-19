@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "local.flink.studio",
+  "publisher": "smallrob",
+  "version": "0.1.0",
+  "name": "Flink Studio",
+  "description": "通用 Flink 客户端工作台：连接 JobManager REST API，实时查看集群概览、运行中作业与算子、TaskManager 指标与日志、集群配置；独家的「消费内容」页直接从 print-sink 日志解析 Kafka 消费记录，以表格呈现每条消息的操作类型与各字段。全链路只读，无需 SSH、无需数据库。",
+  "icon": "https://github.com/SmallRob/dbx-plugin-flink-studio/raw/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "flink",
+    "streaming",
+    "kafka",
+    "monitoring",
+    "consumer",
+    "developer-tools"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.storage",
+    "host.connections:read",
+    "host.events"
+  ],
+  "source": "https://github.com/SmallRob/dbx-plugin-flink-studio/tree/v0.1.0",
+  "homepage": "https://github.com/SmallRob/dbx-plugin-flink-studio",
+  "license": "MIT",
+  "releaseNotes": "0.1.0: initial release. Read-only Flink client with cluster overview, jobs/operators, TaskManagers, config, and consumed-messages view parsed from print-sink logs.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Flink Studio",
+      "description": "通用 Flink 客户端工作台：连接 JobManager REST API，实时查看集群概览、运行中作业与算子、TaskManager 指标与日志、集群配置；独家的「消费内容」页直接从 print-sink 日志解析 Kafka 消费记录，以表格呈现每条消息的操作类型与各字段。全链路只读，无需 SSH、无需数据库。",
+      "contributions": {
+        "local.flink.studio.connection": {
+          "label": "Flink Studio（JobManager REST）",
+          "description": "连接 Flink JobManager REST API（默认 8081），只读查看作业与消费内容。"
+        },
+        "local.flink.studio.workbench": {
+          "label": "Flink Studio",
+          "description": "Flink 集群与消费内容工作台。"
+        }
+      }
+    },
+    "en": {
+      "name": "Flink Studio",
+      "description": "A general-purpose Flink client workbench: connect to the JobManager REST API and inspect cluster overview, running jobs and operators, TaskManager metrics and logs, and cluster configuration. The unique \"Consumed Messages\" tab parses Kafka records straight from print-sink logs into a table with change type and every field. Fully read-only — no SSH, no database required.",
+      "contributions": {
+        "local.flink.studio.connection": {
+          "label": "Flink Studio (JobManager REST)",
+          "description": "Connect to a Flink JobManager REST API (port 8081 by default) to read jobs and consumed messages."
+        },
+        "local.flink.studio.workbench": {
+          "label": "Flink Studio",
+          "description": "Flink cluster and consumed-messages workbench."
+        }
+      }
+    }
+  },
+  "targets": [
+    {
+      "target": "linux-x64",
+      "url": "local.flink.studio-0.1.0-linux-x64.dbxp",
+      "sha256": "94024d77ce3f3136dce7beefaca5dde0d2ccf37b173aaa341665c00d91e2b27b",
+      "size": 2325535
+    },
+    {
+      "target": "linux-arm64",
+      "url": "local.flink.studio-0.1.0-linux-arm64.dbxp",
+      "sha256": "735f901d1321bd2d6cb66601b30663086d641dfd9021f9455c2741aacb1213af",
+      "size": 2130032
+    },
+    {
+      "target": "darwin-x64",
+      "url": "local.flink.studio-0.1.0-darwin-x64.dbxp",
+      "sha256": "09055855fbe2c1be660502a4379991fa630510af6c1625eaccc3739b633c461a",
+      "size": 2359797
+    },
+    {
+      "target": "darwin-arm64",
+      "url": "local.flink.studio-0.1.0-darwin-arm64.dbxp",
+      "sha256": "f6f30747dde4d87c546f7ee0548525033cf1803a19d989ae8bbaf1eeb3cf80f6",
+      "size": 2207563
+    },
+    {
+      "target": "windows-x64",
+      "url": "local.flink.studio-0.1.0-windows-x64.dbxp",
+      "sha256": "ed15373ca92787bb0fd0b8abd1a846157d9490c04b6f4ccc569b44fb7e80986c",
+      "size": 2372121
+    }
+  ]
+}
