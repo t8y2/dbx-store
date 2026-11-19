@@ -1,0 +1,71 @@
+{
+  "id": "io.github.song782360037.alertmanage",
+  "name": "AlertManage",
+  "description": "Alertmanager operations workbench: alert triage, silences, notification routing, status and configuration.",
+  "publisher": "song782360037",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/song782360037/dbx-plugin-alertmanage/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "alertmanager",
+    "prometheus",
+    "alerts",
+    "silencing",
+    "monitoring",
+    "ops"
+  ],
+  "permissions": [],
+  "source": "https://github.com/song782360037/dbx-plugin-alertmanage/tree/v0.1.0",
+  "homepage": "https://github.com/song782360037/dbx-plugin-alertmanage",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-19T10:22:20.906Z",
+      "releaseNotes": "0.1.0: first release. Alert overview and filtering, silence creation/edit/expiry, notification routing and receivers, status/config views, and a connection-level management toggle.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.alertmanage/0.1.0/io.github.song782360037.alertmanage-0.1.0-darwin-arm64.dbxp",
+          "sha256": "3e6ee59e56d5f92e3ebe44156200ae6e6082ddba63e81bee6716a20dbc74468f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5154995
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.alertmanage/0.1.0/io.github.song782360037.alertmanage-0.1.0-darwin-x64.dbxp",
+          "sha256": "e60379b4ce1e6e1a15dac4fba3e7cf194974da11888af11bf0ea758296cc7483",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5494000
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.alertmanage/0.1.0/io.github.song782360037.alertmanage-0.1.0-linux-arm64.dbxp",
+          "sha256": "a9fe6a7188d3e7b57dec100fedd544534d95f248718b70b8470aeb75ae867e6d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4933766
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.alertmanage/0.1.0/io.github.song782360037.alertmanage-0.1.0-linux-x64.dbxp",
+          "sha256": "6bcab7b0090b079437a822b1ee92d20e2de864f2d1a4af0acc22431fcc38dd9b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5379067
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.song782360037.alertmanage/0.1.0/io.github.song782360037.alertmanage-0.1.0-windows-x64.dbxp",
+          "sha256": "8632d61bc68dc02e0a6110f5eb18cb7c067b8180d478d82edd8f5e5a4ed83225",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5376635
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "AlertManage",
+      "description": "Alertmanager 告警管理插件：告警查看与处理、静默规则、通知与路由、状态与配置。"
+    }
+  }
+}

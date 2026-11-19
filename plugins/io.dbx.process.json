@@ -1,0 +1,72 @@
+{
+  "id": "io.dbx.process",
+  "name": "Process Manager",
+  "description": "Browse, search, and terminate local and remote OS processes.",
+  "publisher": "alan",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/allran/dbx-plugin-process/v0.1.1/assets/plugin.svg",
+  "tags": [
+    "process",
+    "system",
+    "workbench"
+  ],
+  "permissions": [
+    "host.binary",
+    "host.events",
+    "host.workbench"
+  ],
+  "source": "https://github.com/allran/dbx-plugin-process/tree/v0.1.1",
+  "homepage": "https://github.com/allran/dbx-plugin-process",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.1",
+  "versions": [
+    {
+      "version": "0.1.1",
+      "releasedAt": "2026-10-26T06:39:22.759Z",
+      "releaseNotes": "Declare host.binary for process kill, local helper spawn (lsof/plutil), and remote SSH command execution.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.process/0.1.1/io.dbx.process-0.1.1-darwin-arm64.dbxp",
+          "sha256": "038b0b691cb61f0aa093a0c1ad346fedd926bf434627ba6b2f90a078cef676ba",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1423620
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.process/0.1.1/io.dbx.process-0.1.1-darwin-x64.dbxp",
+          "sha256": "369be60e5dfe4d14259a276a02667504fb9addf02c8da29b7e590ef52311d1ea",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1531772
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.process/0.1.1/io.dbx.process-0.1.1-linux-arm64.dbxp",
+          "sha256": "cc6d634f067e15adf5e08c3360afdd1f3577a18cd2a3df93e15321789a11082e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1828354
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.process/0.1.1/io.dbx.process-0.1.1-linux-x64.dbxp",
+          "sha256": "d4f3de1bd39a0a0411b04aa6170639a220e5e57ffba81f72dd286f1a6dee1eea",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1906788
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.process/0.1.1/io.dbx.process-0.1.1-windows-x64.dbxp",
+          "sha256": "9d323aaf4eb89f126a85ab07d17466ffd87ad93d09ff9dfd84e126d8090729a2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1869597
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "进程管理",
+      "description": "浏览、搜索并结束本机与远程主机上的操作系统进程。"
+    }
+  }
+}

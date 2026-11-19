@@ -1,23 +1,24 @@
 {
   "id": "com.lwai.mdnotes",
-  "name": "MD Notes",
-  "description": "Markdown notes with a connection type: create an MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory from the connection configuration and can be browsed and edited as an mdnotes:// virtual file system.",
+  "name": "AI.MD 笔记",
+  "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。内置 AI 助手（右侧常驻栏），可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型对笔记做分析、润色、续写与问答。",
   "publisher": "lwai",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/v0.7.1/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/lukelwai/dbx-md-notes/0.8.12/assets/plugin.svg",
   "tags": [
     "md",
     "notes",
     "files",
-    "storage"
+    "storage",
+    "ai"
   ],
   "permissions": [
     "host.filesystem"
   ],
-  "source": "https://github.com/lukelwai/dbx-md-notes/tree/v0.7.1",
+  "source": "https://github.com/lukelwai/dbx-md-notes",
   "homepage": "https://github.com/lukelwai/dbx-md-notes",
   "license": "Apache-2.0",
-  "latestVersion": "0.7.1",
+  "latestVersion": "0.8.12",
   "versions": [
     {
       "version": "0.7.1",
@@ -46,20 +47,222 @@
           "size": 2393529
         }
       ]
+    },
+    {
+      "version": "0.8.6",
+      "releasedAt": "2026-10-12T07:22:24.322Z",
+      "releaseNotes": "工具栏瘦身：「插入 SQL 块」和「AI 助手」常驻，导出 / 备份 / 恢复 / 为表新建笔记收进「更多」下拉 —— 窄窗口下不再被挤成两行；点空白处或按 Esc 收起，点任一项执行后自动收起。所有动作的 id 与行为都没变，只是换了位置。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.6/com.lwai.mdnotes-0.8.6-darwin-arm64.dbxp",
+          "sha256": "f8853cbd1d40614edadd0d97aa18bb038bd40c87cf9ad61cb7a3b0cc5f925c46",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5024609
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.6/com.lwai.mdnotes-0.8.6-linux-x64.dbxp",
+          "sha256": "c5ce3394ab2a198df63c192ece66aea8d2e8a5294a77bb62ce284bedfaaff88e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5195898
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.6/com.lwai.mdnotes-0.8.6-windows-x64.dbxp",
+          "sha256": "cf7f8e03a64aac48cbcc0006059813549d2deb8cb227bbcdc5af3e9af41fdc9e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5258161
+        }
+      ]
+    },
+    {
+      "version": "0.8.8",
+      "releasedAt": "2026-10-15T01:45:11.867Z",
+      "releaseNotes": "工具栏瘦身：「插入 SQL 块」和「AI 助手」常驻，导出 / 备份 / 恢复 / 为表新建笔记收进「更多」下拉 —— 窄窗口下不再被挤成两行；点空白处或按 Esc 收起，点任一项执行后自动收起。所有动作的 id 与行为都没变，只是换了位置。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.8/com.lwai.mdnotes-0.8.8-darwin-arm64.dbxp",
+          "sha256": "a7eb03762ab4b8a5cc48aa82d6c806c2913e15aa39b835f1d4bee33007d9492e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5218529
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.8/com.lwai.mdnotes-0.8.8-linux-x64.dbxp",
+          "sha256": "f08154969b6e91050dc626bbd4f412e611c6c7f1eef135e8770e89d920205866",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5394939
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.8/com.lwai.mdnotes-0.8.8-windows-x64.dbxp",
+          "sha256": "0cb3907cc2e328894be9f1d241d3714442c97ab960a2564ed771a3d39fda47e3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5459051
+        }
+      ]
+    },
+    {
+      "version": "0.8.9",
+      "releasedAt": "2026-10-19T10:03:32.911Z",
+      "releaseNotes": "",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/com.lwai.mdnotes-0.8.9-darwin-arm64.dbxp",
+          "sha256": "6e64967c6ebd7e62055418f8b1da5bb5a4a211ea88571faa465be57e2965ba23",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5218533
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/com.lwai.mdnotes-0.8.9-darwin-x64.dbxp",
+          "sha256": "4597ef4bcca8867828950f823b8dacf534b066e8a32e8582c286256ff29fb0a7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5549254
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/com.lwai.mdnotes-0.8.9-linux-x64.dbxp",
+          "sha256": "2d06253bc0a7f781c0502778bf63bdbde0d7844fd1e8e858c9d8984ca771fa20",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5394944
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.9/com.lwai.mdnotes-0.8.9-windows-x64.dbxp",
+          "sha256": "06d2304f66c0a67d88cec3a351c6fff966d5b3e15c0afc93c0a55dfafb359bbd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5459057
+        }
+      ]
+    },
+    {
+      "version": "0.8.10",
+      "releasedAt": "2026-10-23T03:26:54.549Z",
+      "releaseNotes": "工具栏瘦身：「插入 SQL 块」和「AI 助手」常驻，导出 / 备份 / 恢复 / 为表新建笔记收进「更多」下拉 —— 窄窗口下不再被挤成两行；点空白处或按 Esc 收起，点任一项执行后自动收起。所有动作的 id 与行为都没变，只是换了位置。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.10/com.lwai.mdnotes-0.8.10-darwin-arm64.dbxp",
+          "sha256": "b786588bfb766b54a455af3c1677177636b48de7b9ebb37ea8bd1142c176c5f3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5218506
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.10/com.lwai.mdnotes-0.8.10-darwin-x64.dbxp",
+          "sha256": "6c907096d49bf94b2d6dfb2731ab22efbc7b91a19f4c7bd579bb95a9816c9059",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5549339
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.10/com.lwai.mdnotes-0.8.10-linux-arm64.dbxp",
+          "sha256": "99711478f968f43d447ccec0fe9672f3af24c00eab3418184af6aa79c2d335d3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4960796
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.10/com.lwai.mdnotes-0.8.10-linux-x64.dbxp",
+          "sha256": "ee20f9c54df7b430b223bad2fa9b6cea55df568d854ffd0c1082a683162aa60f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5394951
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.10/com.lwai.mdnotes-0.8.10-windows-x64.dbxp",
+          "sha256": "bc6d0ec014249c7a491078e2caece7021c2353a2ae338013573011c7115b04f7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5459073
+        }
+      ]
+    },
+    {
+      "version": "0.8.11",
+      "releasedAt": "2026-11-04T19:01:25.509Z",
+      "releaseNotes": "增加自动索引功能：打开应用时自动扫描存储目录，把磁盘上已有但索引里没有的 .md 笔记登记进来（只增不删）。说明：本版的 linux-x64 安装包未能上传到 release，因此本次只发布 darwin-arm64、darwin-x64、linux-arm64 和 windows-x64；Linux x64 用户会继续停留在 0.8.10，等补传资产后的下一版再恢复。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.11/com.lwai.mdnotes-0.8.11-darwin-arm64.dbxp",
+          "sha256": "4bcb612f4f94b4b3d6b0c0901723b993da43b33624f11cbdc8a6b05bc57f698c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5231592
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.11/com.lwai.mdnotes-0.8.11-darwin-x64.dbxp",
+          "sha256": "1e253b8c3f9d38762bc31d2b60412dd16588b0a126c7254130b25224a2ce89bf",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5561278
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.11/com.lwai.mdnotes-0.8.11-linux-arm64.dbxp",
+          "sha256": "fa92f61c7387acd24e3124e6f865b651f043df9a6b126c7d53e437ee86f64c8b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4971766
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.11/com.lwai.mdnotes-0.8.11-windows-x64.dbxp",
+          "sha256": "1cf0b3ac493f915d6e261074e9e5d7d32cab75b2fe1a360d44dae29040c49da2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5471811
+        }
+      ]
+    },
+    {
+      "version": "0.8.12",
+      "releasedAt": "2026-11-07T13:08:10.810Z",
+      "releaseNotes": "增加自动索引功能：打开应用自动扫描存储目录，将未登记到索引的 .md 笔记按所在目录层级自动归位到笔记中。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.12/com.lwai.mdnotes-0.8.12-darwin-arm64.dbxp",
+          "sha256": "ced6de8f7dcd4eb890e19394689e2a916d2f6d5a7f9e54e6275b46607e8816d6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5235696
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.12/com.lwai.mdnotes-0.8.12-darwin-x64.dbxp",
+          "sha256": "28351cfebcca1e1f83382e66fecfdaacecfdf090b6ddd90a45f9ce83ce3c165e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5565393
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.12/com.lwai.mdnotes-0.8.12-linux-arm64.dbxp",
+          "sha256": "6afd5a8af4bcc4f26d617c4ae78c832800819d04c50bddc0600fe38f90f4db10",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4975877
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.12/com.lwai.mdnotes-0.8.12-linux-x64.dbxp",
+          "sha256": "244b87726b112febf488c07339f9ede04e258c0904fcadd4dbe132f9e13d1d49",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5409906
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.lwai.mdnotes/0.8.12/com.lwai.mdnotes-0.8.12-windows-x64.dbxp",
+          "sha256": "c6a515b5f5717455bc8c3f72527338a8ec0c128905b1ad69cec830fb7f99a095",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5475849
+        }
+      ]
     }
   ],
   "localizations": {
-    "en": {
-      "name": "MD Notes",
-      "description": "Markdown notes with a connection type: create an MD Notes connection in DBX to open the notes workbench. Notes are persisted to the storage directory from the connection configuration and can be browsed and edited as an mdnotes:// virtual file system."
-    },
     "zh-CN": {
-      "name": "MD 笔记",
-      "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。"
-    },
-    "zh": {
-      "name": "MD 笔记",
-      "description": "Markdown 笔记，支持连接类型：在 DBX 中新建「MD 笔记」连接即可打开笔记工作台。笔记落盘到连接配置里的存储目录，并可作为 mdnotes:// 虚拟文件系统浏览编辑。"
+      "name": "AI.MD 笔记",
+      "description": "Markdown 笔记：在 DBX 中新建「AI.MD 笔记」连接即可打开笔记工作台。笔记是真实 .md 文件，文件夹是真实子目录，也可作为 mdnotes:// 虚拟文件系统浏览。支持直接粘贴/拖入图片、导入已有 .md 与整个文件夹、导出与整库备份恢复；右侧常驻 AI 助手可接入任意 OpenAI 兼容 / Anthropic / Ollama 模型做分析、润色、续写与问答。"
     }
   }
 }

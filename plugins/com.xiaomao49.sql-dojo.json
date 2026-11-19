@@ -1,0 +1,86 @@
+{
+  "id": "com.xiaomao49.sql-dojo",
+  "name": "SQL Dojo",
+  "description": "Practice the LeetCode SQL 50 inside DBX with a real PostgreSQL 18.6 engine (PGlite 0.5.13) running locally. No server, no setup, works offline. Per-question hints, result-set based grading, and importable custom question banks validated by execution.",
+  "publisher": "xiaomao49",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/xiaomao49/dbx-sql-dojo/v0.4.3/assets/plugin.svg",
+  "tags": [
+    "sql",
+    "postgresql",
+    "learning",
+    "leetcode",
+    "practice"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/xiaomao49/dbx-sql-dojo/tree/v0.4.5",
+  "homepage": "https://github.com/xiaomao49/dbx-sql-dojo",
+  "license": "MIT",
+  "latestVersion": "0.4.5",
+  "versions": [
+    {
+      "version": "0.3.2",
+      "releasedAt": "2026-11-03T02:42:54.312Z",
+      "releaseNotes": "0.3.2: the bundled engine is PostgreSQL 18.6 (PGlite 0.5.13), not 16 — the workbench now shows the version the engine reports. Progress is stored through the host plugin storage (host.storage) instead of localStorage, which throws in the sandbox's opaque origin, with a visible session-only fallback. The package now ships LICENSE and THIRD_PARTY_NOTICES.md (PGlite Apache-2.0, PostgreSQL License, MIT question bank); engines.dbx is 0.6.19, the first host release with host.storage. A WebAssembly preflight explains in Chinese when the host sandbox blocks wasm. Local-only: no connection, no network.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.3.2/com.xiaomao49.sql-dojo-0.3.2-universal.dbxp",
+          "sha256": "69822a932d203db8a8e7376aef602b22510736020bbe5b3f98daf6e5026e48c5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5343581
+        }
+      ]
+    },
+    {
+      "version": "0.4.3",
+      "releasedAt": "2026-11-03T14:41:57.145Z",
+      "releaseNotes": "0.4.3: custom question banks. Download a template from Question Bank Management, write your own questions, and import them as a file or pasted JSON. Every question is executed against the local PostgreSQL engine on import; statements that fail or return no rows are rejected with a per-question reason. The header gains a Custom filter for imported questions, and an empty Custom category shows a short guide with a button to the bank manager. Switching categories now also switches the question shown on the right, and the interface copy has been rewritten in formal wording. Local-only: no database connection, no network.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.3/com.xiaomao49.sql-dojo-0.4.3-universal.dbxp",
+          "sha256": "353a5aa4b6d6f2cc0073484f031f03d9d33dedae39b77b6da7ac54bfd937855e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5348445
+        }
+      ]
+    },
+    {
+      "version": "0.4.4",
+      "releasedAt": "2026-11-04T05:33:33.843Z",
+      "releaseNotes": "0.4.4: question bank export (single bank or all), cancellable imports with per-question failure reasons, per-question SQL drafts, continuous list numbering with preserved scroll position, full PostgreSQL error detail/hint/position, screen-reader announcements and a keyboard-navigable question list, a 20000-row result cap, per-bank storage with automatic migration from the legacy single key, DML detection by result set with table and column comparison, and background engine startup. Local-only: no database connection, no network.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.4/com.xiaomao49.sql-dojo-0.4.4-universal.dbxp",
+          "sha256": "0dbd2458cebfed876566321cc111d32f8a1296d5847d493016a80990c6e90e8a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5352086
+        }
+      ]
+    },
+    {
+      "version": "0.4.5",
+      "releasedAt": "2026-11-07T12:11:46.174Z",
+      "releaseNotes": "0.4.5: custom question banks now live in a dropdown that filters the list by bank, a persistent Reset Progress button clears all progress and drafts with a two-step confirmation, SQL drafts are stored through host.storage so they survive restarts, cancelling an export no longer reports success, and the workbench gets a redesigned header with light and dark themes, sticky result table headers, zebra rows, narrow-screen layout and reduced-motion support. Local-only: no database connection, no network.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/com.xiaomao49.sql-dojo/0.4.5/com.xiaomao49.sql-dojo-0.4.5-universal.dbxp",
+          "sha256": "48b329db089cc15be9e81d7fac8a723a5d8c3ea83a5fa27dd9136ec0134a8dfc",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5355256
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "SQL 练习场",
+      "description": "在 DBX 里练习力扣高频 SQL 50 题。内置真正的 PostgreSQL 18.6 引擎（PGlite 0.5.13），离线可用、无需配置数据库。每题带考察点标签和思路提示，按结果集判题；支持导入自定义题库，导入前逐题实际执行验证。"
+    }
+  }
+}

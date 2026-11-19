@@ -1,0 +1,135 @@
+{
+  "id": "io.github.caizong10.rdp",
+  "name": "RDP Remote Desktop",
+  "description": "Open Windows remote desktops inside DBX with a native Rust (IronRDP) sidecar.",
+  "publisher": "caizong10",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/caizong10/dbx-plugin-rdp/v0.2.8/assets/plugin.svg",
+  "tags": [
+    "rdp",
+    "remote-desktop",
+    "windows"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.events",
+    "host.binary"
+  ],
+  "source": "https://github.com/caizong10/dbx-plugin-rdp/tree/v0.2.8",
+  "homepage": "https://github.com/caizong10/dbx-plugin-rdp",
+  "license": "Apache-2.0",
+  "latestVersion": "0.2.8",
+  "versions": [
+    {
+      "version": "0.2.4",
+      "releasedAt": "2026-10-23T12:51:33.708Z",
+      "releaseNotes": "Initial submission. Connect to Windows remote desktops over RDP with a Rust (IronRDP) sidecar: live canvas rendering, keyboard/mouse input with shortcuts, bidirectional text clipboard, Chinese IME support, and automatic reconnect. Builds for windows-x64, linux-x64, darwin-x64 and darwin-arm64.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/io.github.caizong10.rdp-0.2.4-windows-x64.dbxp",
+          "sha256": "f55b7c2f75f8622f5326605789f9cbb808a0b99fc41d2ed5edd08a9b96c52245",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3237096
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/io.github.caizong10.rdp-0.2.4-linux-x64.dbxp",
+          "sha256": "c2a07fae1851aadb4170d3ec96ac890d88c6853bfc4c9c02d8f6c6cea28e9014",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3314070
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/io.github.caizong10.rdp-0.2.4-darwin-x64.dbxp",
+          "sha256": "835c20be9bb2f382e20dcdca5e05ddfc949acb29bd57e00fb90810ee1ef9bb02",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3189838
+        },
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.4/io.github.caizong10.rdp-0.2.4-darwin-arm64.dbxp",
+          "sha256": "7b3226ae2877b0382639e5cd17ddfd62a6e23e2cd08eae9ab370776fa332f8e9",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2972146
+        }
+      ]
+    },
+    {
+      "version": "0.2.7",
+      "releasedAt": "2026-10-26T06:44:06.005Z",
+      "releaseNotes": "解决Windows远程后复制文件和文件夹到本地问题",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.7/io.github.caizong10.rdp-0.2.7-windows-x64.dbxp",
+          "sha256": "22c87fbca959ca28c8139897cc7de332d8f8ff85a57b13d0c4e136cf8df1b572",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3387371
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.7/io.github.caizong10.rdp-0.2.7-linux-x64.dbxp",
+          "sha256": "ee4e036ad51dc282fb867501f42e331cb9945fbe82c742ed39d5dd4dc397ba00",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3406009
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.7/io.github.caizong10.rdp-0.2.7-darwin-x64.dbxp",
+          "sha256": "956d52162f6a4ce774d1758335191b565a5aab759719872db3518e8fda2bc912",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3276987
+        },
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.7/io.github.caizong10.rdp-0.2.7-darwin-arm64.dbxp",
+          "sha256": "7c121bc977ceda0d2b19316ce1d221bd3667dbeb228b8f9b345a2f139c8b2e6e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3058418
+        }
+      ]
+    },
+    {
+      "version": "0.2.8",
+      "releasedAt": "2026-11-05T12:50:08.834Z",
+      "releaseNotes": "改进远程键鼠输入、焦点及输入法处理；改进连接提示、重连和分辨率调整；优化画面适配与清晰度，默认请求 32 位色深；剪贴板诊断日志默认关闭。",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-windows-x64.dbxp",
+          "sha256": "bf2e48346768e2b48fc03872262e267ef926e4e51cf92a5e3ce2044c62efe47b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3430118
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-linux-x64.dbxp",
+          "sha256": "9dccf35ea98e092b708781fea773501f0fbaafffd944be2f9403a12417ef80ae",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3445763
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-darwin-x64.dbxp",
+          "sha256": "215c4b8f5819c95756a0299e07f3cbe169dea2676279aaa0e305994b0fdd0fe1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3318707
+        },
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caizong10.rdp/0.2.8/io.github.caizong10.rdp-0.2.8-darwin-arm64.dbxp",
+          "sha256": "58a7c036f2cdbf7213c6d4e20fe06b902be3616dd4cd9b5bf6d11520d1ef405a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3077602
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "RDP 远程桌面",
+      "description": "在 DBX 工作台内打开 Windows 远程桌面，由原生 Rust（IronRDP）sidecar 驱动：实时画面、键鼠与快捷键、文本与文件剪贴板双向同步（Windows 文件/文件夹复制）、断线自动重连。提供 windows-x64 / linux-x64 / darwin-x64 / darwin-arm64 四个构建。"
+    }
+  }
+}

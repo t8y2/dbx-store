@@ -1,0 +1,70 @@
+{
+  "id": "io.dbx.graphql",
+  "name": "GraphQL",
+  "description": "GraphQL client for DBX: query editor, schema docs, and history.",
+  "publisher": "alan",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/allran/dbx-plugin-graphql/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "graphql",
+    "api",
+    "query"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/allran/dbx-plugin-graphql/tree/v0.1.0",
+  "homepage": "https://github.com/allran/dbx-plugin-graphql",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-21T05:49:58.740Z",
+      "releaseNotes": "Initial release: query editor, schema Docs Explorer, response tree, and history.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.graphql/0.1.0/io.dbx.graphql-0.1.0-darwin-arm64.dbxp",
+          "sha256": "05f01170f970a1df5daba737d67f604dcf6181eee8265a511227e954e78fd851",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1350991
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.graphql/0.1.0/io.dbx.graphql-0.1.0-darwin-x64.dbxp",
+          "sha256": "2ea6c71b9c13358454266915be00e839eed3055cac410a9a4668959ab499d3d4",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1428931
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.graphql/0.1.0/io.dbx.graphql-0.1.0-linux-arm64.dbxp",
+          "sha256": "609f6eb737c4c91529291c2548248a926edc67befa65a380c620caacf61570a6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1430347
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.graphql/0.1.0/io.dbx.graphql-0.1.0-linux-x64.dbxp",
+          "sha256": "683e4e78f001e9f2327500db996a132ac630830eefc1e3349acd0af6f3836130",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1495820
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.graphql/0.1.0/io.dbx.graphql-0.1.0-windows-x64.dbxp",
+          "sha256": "4a34e52c3b3bd55f0b90fec742c0148dcacc22c7bdb2c0c0fc4b9bb17652a8fd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1380468
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "GraphQL",
+      "description": "GraphQL 客户端：查询编辑器、Schema 文档与历史。"
+    }
+  }
+}

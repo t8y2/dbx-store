@@ -4,18 +4,21 @@
   "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally.",
   "publisher": "aili0617",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/aiLi0617/dbx-plugin-toolbox/v0.1.0/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/aiLi0617/dbx-plugin-toolbox/v0.1.6/assets/plugin.svg",
   "tags": [
     "developer-tools",
     "utilities",
     "encoding",
     "cryptography"
   ],
-  "permissions": [],
-  "source": "https://github.com/aiLi0617/dbx-plugin-toolbox/tree/v0.1.1",
+  "permissions": [
+    "host.binary",
+    "host.events"
+  ],
+  "source": "https://github.com/aiLi0617/dbx-plugin-toolbox",
   "homepage": "https://github.com/aiLi0617/dbx-plugin-toolbox",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.1",
+  "latestVersion": "0.1.6",
   "versions": [
     {
       "version": "0.1.0",
@@ -100,12 +103,254 @@
           "size": 2460011
         }
       ]
+    },
+    {
+      "version": "0.1.2",
+      "releasedAt": "2026-10-10T06:08:09.067Z",
+      "releaseNotes": "首次发布，包含 38 个本地开发工具、图片处理、密码学工具和使用 Argon2id + AES-GCM 保护的加密密钥库。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.2/io.github.aili0617.toolbox-0.1.2-darwin-arm64.dbxp",
+          "sha256": "e06007ca6c9dbeda65429eddcf29d74c65454c659c1e658a6aea2fd89ef16fcf",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2550726
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.2/io.github.aili0617.toolbox-0.1.2-darwin-x64.dbxp",
+          "sha256": "0ce8ebb51014051fa52de1fcaa80e11a33ec83bfa884f3dda85bc3029cd56720",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2619602
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.2/io.github.aili0617.toolbox-0.1.2-linux-arm64.dbxp",
+          "sha256": "933aefd93e7d7e2c98dd5c4ac0353323f192c7a7e45c61f467b1181d948b033d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3572701
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.2/io.github.aili0617.toolbox-0.1.2-linux-x64.dbxp",
+          "sha256": "ed9ffec5e4f417aec62903fd2803545e0028cb7275e2e73f200cb3f7608f63e8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3673783
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.2/io.github.aili0617.toolbox-0.1.2-windows-x64.dbxp",
+          "sha256": "fa4fe08c0cd78d0fa239931e48b2cd9d228001d3a56ddc7c6ef1277f79c922e5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2608998
+        }
+      ]
+    },
+    {
+      "version": "0.1.3",
+      "releasedAt": "2026-10-13T00:57:15.201Z",
+      "releaseNotes": "0.1.3：工具目录扩展到 64 个入口，新增离线原生 OCR、图片拼接与 GIF 生成、图表/假数据/开发辅助工具，并增强颜色对比度、JSON、文本、网络与密钥生成能力。0.1.3: Expands the catalog to 64 entries with native offline OCR, image stitching and GIF creation, chart/fake-data/developer utilities, plus improvements to color contrast, JSON, text, networking, and key generation.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.3/io.github.aili0617.toolbox-0.1.3-darwin-arm64.dbxp",
+          "sha256": "b2b3cac293546413c4c9d24e7e5bf527c5d40c84d89093d53900accaa352ce0c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4576320
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.3/io.github.aili0617.toolbox-0.1.3-darwin-x64.dbxp",
+          "sha256": "55d2d4600907e5a039ea0488dd9f7adaba61d37ef90748ac59562eedca135163",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4901144
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.3/io.github.aili0617.toolbox-0.1.3-linux-arm64.dbxp",
+          "sha256": "117fc750f5a204eef3284d927c990664d61e430cbbb03f0b7310bd8f1ad39c5b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5635523
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.3/io.github.aili0617.toolbox-0.1.3-linux-x64.dbxp",
+          "sha256": "cc8c2fa6b25b6d9295e32bd30d623bd4d1748bbc48020980e6ec1355ddc96336",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6050210
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.3/io.github.aili0617.toolbox-0.1.3-windows-x64.dbxp",
+          "sha256": "1537d7a2349d23708b57d5fb9fe3b3eea1ff6d854b5c871ac759882648489d7d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5092966
+        }
+      ]
+    },
+    {
+      "version": "0.1.4",
+      "releasedAt": "2026-10-13T05:13:57.024Z",
+      "releaseNotes": "0.1.4：空闲端口推荐改为独立探测，一次返回 5 个经系统绑定验证的 TCP/UDP 候选；修复 OCR 模型在发布包中的拉取与完整性校验；优化范围滑块进度、焦点状态及多处主题阴影样式。0.1.4: Makes free-port recommendations independent and returns five TCP/UDP candidates verified by system binding; fixes OCR model hydration and validation during release packaging; improves range-slider progress, focus states, and theme-aware shadow styling.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.4/io.github.aili0617.toolbox-0.1.4-darwin-arm64.dbxp",
+          "sha256": "a5421ecce7f08b255fd053cbec8711054125adbbe592a0094b7771229a91246e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 100029314
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.4/io.github.aili0617.toolbox-0.1.4-darwin-x64.dbxp",
+          "sha256": "5d6087c36340c3f0eb72cfb2f5048f1e97149c9e6b15e72d40254585d621d3e2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 99535403
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.4/io.github.aili0617.toolbox-0.1.4-linux-arm64.dbxp",
+          "sha256": "85216b774c612e93fa63059e53a7e60b7e73a49bdba0145b79585b0cf7a59147",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 100262899
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.4/io.github.aili0617.toolbox-0.1.4-linux-x64.dbxp",
+          "sha256": "261d3921eb33ab9f237e946c040d356967d95737a0c1589c321f5fd471c1fb3f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 100672584
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.4/io.github.aili0617.toolbox-0.1.4-windows-x64.dbxp",
+          "sha256": "c9d712bace4fbd5a36d8f9e9c918291a1716ed34908a26fc3f5f35ea90b2fa27",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 99726935
+        }
+      ]
+    },
+    {
+      "version": "0.1.5",
+      "releasedAt": "2026-10-21T05:32:56.870Z",
+      "releaseNotes": "0.1.5：优化首页搜索、意图示例和多语言支持；改进密钥库布局、筛选、新建与主密码交互，修复用途保存与 XOR 默认用途；OCR 模型改为用户触发的分层按需下载，缩小安装包，并深化多项工具能力。0.1.5: Improves home search, intent examples, and localization; refines vault layout, filtering, key creation, and master-password workflows; fixes usage saving and XOR defaults; moves OCR models to user-triggered tiered downloads to reduce package size and expands tool capabilities.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.5/io.github.aili0617.toolbox-0.1.5-darwin-arm64.dbxp",
+          "sha256": "15d6da60a7f6a4ed5da051db34de35c72e41e3b54986f652e5753d4685773215",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5717889
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.5/io.github.aili0617.toolbox-0.1.5-darwin-x64.dbxp",
+          "sha256": "e78adffa83bc5d8783f0d3d5b92b5abf01df1cca9e65876eaa571e8532d4e8c7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6115888
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.5/io.github.aili0617.toolbox-0.1.5-linux-arm64.dbxp",
+          "sha256": "f0cc882ea7fe509b2c5054d90eb521e56b8f185d9f37d5b10209e4b5e8225707",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6758551
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.5/io.github.aili0617.toolbox-0.1.5-linux-x64.dbxp",
+          "sha256": "e18d012b8d003f4480aa2c5ae362b9a6960d8784bc5e3fc6e59b1cc49cf366b6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 7180804
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.5/io.github.aili0617.toolbox-0.1.5-windows-x64.dbxp",
+          "sha256": "32a124f55b48865ee65722b9ed617c3a1fa045c3eb97fb1a2613dd992287d191",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6337612
+        }
+      ]
+    },
+    {
+      "version": "0.1.6",
+      "releasedAt": "2026-10-27T16:30:42.189Z",
+      "releaseNotes": "0.1.5：优化首页搜索、意图示例和多语言支持；改进密钥库布局、筛选、新建与主密码交互，修复用途保存与 XOR 默认用途；OCR 模型改为用户触发的分层按需下载，缩小安装包，并深化多项工具能力。0.1.5: Improves home search, intent examples, and localization; refines vault layout, filtering, key creation, and master-password workflows; fixes usage saving and XOR defaults; moves OCR models to user-triggered tiered downloads to reduce package size and expands tool capabilities.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.6/io.github.aili0617.toolbox-0.1.6-darwin-arm64.dbxp",
+          "sha256": "2fb7abe733fdcb152106714d59a79595b7a08f322da146996694038c8f79eebe",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9011135
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.6/io.github.aili0617.toolbox-0.1.6-darwin-x64.dbxp",
+          "sha256": "3e02c2db2e966f032db6b14e4c8dd4629ff684c1f720d9a7a43d26f0f2cf4a6b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9457191
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.6/io.github.aili0617.toolbox-0.1.6-linux-arm64.dbxp",
+          "sha256": "dd5cdee51f6198d34bce0f9a6ab1b9e20aa20a76a33278c03ac1a0ad202a95e2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 10068806
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.6/io.github.aili0617.toolbox-0.1.6-linux-x64.dbxp",
+          "sha256": "d537869f5cc82f35e6392a421ff24fc69828d8132cc056bdd38f6bdd894737ef",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 10543397
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.6/io.github.aili0617.toolbox-0.1.6-windows-x64.dbxp",
+          "sha256": "6ded5f9c22213f49eafd00521ca2f9453aafdd9ba5a05908d93cde9af35a0574",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 9730911
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "DBX 工具箱",
       "description": "一站式、注重隐私的本地开发工具箱，涵盖数据转换、编解码、格式化、文本与图片处理、实用生成器、密码学工具及加密密钥库；所有数据均在本机处理。"
+    },
+    "zh-TW": {
+      "name": "DBX 工具箱",
+      "description": "一站式、注重隱私的本機開發工具箱，涵蓋資料轉換、編解碼、格式化、文字與圖片處理、實用產生器、密碼學工具及加密金鑰庫；所有資料均在本機處理。"
+    },
+    "es": {
+      "name": "Herramientas DBX",
+      "description": "Una caja de herramientas local y centrada en la privacidad para desarrollo, con conversión de datos, codificación y decodificación, formato, procesamiento de texto e imágenes, generadores, criptografía y un almacén cifrado de claves; todos los datos se procesan localmente."
+    },
+    "it": {
+      "name": "Strumenti DBX",
+      "description": "Una raccolta completa di strumenti locali per sviluppatori, attenta alla privacy, con conversione dei dati, codifica e decodifica, formattazione, elaborazione di testo e immagini, generatori, crittografia e archivio cifrato delle chiavi; tutti i dati vengono elaborati in locale."
+    },
+    "ja": {
+      "name": "DBX ツールボックス",
+      "description": "データ変換、エンコード／デコード、整形、テキスト・画像処理、各種ジェネレーター、暗号化ツール、暗号化鍵保管庫を備えた、プライバシー重視のオールインワン開発ツールボックス。すべてのデータをローカルで処理します。"
+    },
+    "pt-BR": {
+      "name": "Ferramentas DBX",
+      "description": "Uma caixa de ferramentas local completa e focada em privacidade para desenvolvimento, com conversão de dados, codificação e decodificação, formatação, processamento de texto e imagens, geradores, criptografia e um cofre de chaves criptografado; todos os dados são processados localmente."
+    },
+    "ko": {
+      "name": "DBX 도구 상자",
+      "description": "데이터 변환, 인코딩, 서식 지정, 텍스트 및 이미지 처리, 암호화와 암호화된 키 보관함을 제공하는 로컬 개발 도구입니다."
+    },
+    "tr": {
+      "name": "DBX Araç Kutusu",
+      "description": "Veri dönüştürme, kodlama, biçimlendirme, metin ve görüntü işleme, şifreleme ve şifreli anahtar kasası için yerel geliştirici araçları."
+    },
+    "az": {
+      "name": "DBX Alətlər Qutusu",
+      "description": "Məlumat çevirmə, kodlaşdırma, formatlama, mətn və şəkil emalı, kriptoqrafiya və şifrəli açar anbarı üçün yerli tərtibatçı alətləri."
     }
   }
 }

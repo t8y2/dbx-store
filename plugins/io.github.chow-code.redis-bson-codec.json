@@ -1,0 +1,41 @@
+{
+  "id": "io.github.chow-code.redis-bson-codec",
+  "name": "Redis BSON Codec",
+  "description": "Decode Redis BSON values into type-preserving Extended JSON, with an optional custom external-program codec.",
+  "publisher": "chow-code",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/Chow-Code/dbx-bson-codec/v0.1.0/assets/icon.svg",
+  "tags": [
+    "redis",
+    "bson",
+    "codec",
+    "developer-tools"
+  ],
+  "permissions": [],
+  "source": "https://github.com/Chow-Code/dbx-bson-codec/tree/v0.1.0",
+  "homepage": "https://github.com/Chow-Code/dbx-bson-codec",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-27T06:55:23.168Z",
+      "releaseNotes": "Initial Windows x64 candidate: bundled BSON to Canonical Extended JSON, workbench reverse encoding and byte-level round-trip checks, plus an optional custom external-program codec. Requires a DBX build with redis-value-codec-v1 (confirmed in v0.6.55 and later source).",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.chow-code.redis-bson-codec/0.1.0/io.github.chow-code.redis-bson-codec-0.1.0-windows-x64.dbxp",
+          "sha256": "e68b842e9e0fdd5f428a7d34bd84cfc57b8ff6cfeaff0ce0b0831bbb68f30414",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1676151
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Redis BSON 编解码",
+      "description": "将 Redis BSON 二进制解码为保留类型的 Extended JSON，并支持自定义外部程序。"
+    }
+  }
+}

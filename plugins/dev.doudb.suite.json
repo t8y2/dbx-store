@@ -1,0 +1,41 @@
+{
+  "id": "dev.doudb.suite",
+  "name": "DouDB",
+  "description": "Dou Dizhu card game with 3- and 4-player modes, computer opponents, LAN rooms, and switchable classic/database themes.",
+  "publisher": "doudb",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/yuwenGueen/dbx-doudb/v0.1.4/assets/plugin.svg",
+  "tags": [
+    "games",
+    "cards",
+    "dou-dizhu",
+    "lan"
+  ],
+  "permissions": [],
+  "source": "https://github.com/yuwenGueen/dbx-doudb/tree/v0.1.4",
+  "homepage": "https://github.com/yuwenGueen/dbx-doudb",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.4",
+  "versions": [
+    {
+      "version": "0.1.4",
+      "releasedAt": "2026-10-17T05:24:35.952Z",
+      "releaseNotes": "Initial store submission: three/four-player Dou Dizhu, local AI and LAN rooms, modular skins, audio/effects, and responsive DBX panel layout. macOS Apple Silicon; Chinese UI.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/dev.doudb.suite/0.1.4/dev.doudb.suite-0.1.4-darwin-arm64.dbxp",
+          "sha256": "7a58a75aa7795fe6253e7e7b1df59f4f099e917a909a48f7da9d2a6c9dc2b1cb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4980422
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "DouDB · 斗地主",
+      "description": "三人/四人斗地主，支持电脑补位、局域网对战、经典与数据库主题切换，以及独立皮肤、音效和背景音乐。"
+    }
+  }
+}

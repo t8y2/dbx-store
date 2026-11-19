@@ -1,0 +1,67 @@
+{
+  "id": "io.dbx.apollo",
+  "name": "Apollo Config Workbench",
+  "description": "Manage Apollo apps, clusters, namespaces, configs, releases and gray releases",
+  "publisher": "zzhao5726",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/zzhao5726/dbx-apollo/05c43f9b5ea3c521c1d0481d874abfd206f60263/assets/plugin.svg",
+  "tags": [
+    "apollo",
+    "configuration"
+  ],
+  "permissions": [],
+  "source": "https://github.com/zzhao5726/dbx-apollo/tree/05c43f9b5ea3c521c1d0481d874abfd206f60263",
+  "homepage": "https://github.com/zzhao5726/dbx-apollo",
+  "license": "Apache-2.0",
+  "latestVersion": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "releasedAt": "2026-10-23T03:48:36.722Z",
+      "releaseNotes": "- 应用、集群和命名空间管理，支持应用搜索与多环境切换。\n- 配置增删改、搜索，以及 properties、YAML、JSON、XML、TXT 多格式编辑。\n- 配置导入预览、同名配置跳过或覆盖、文件导出。\n- 发布差异预览、普通与紧急发布、发布历史及回滚。\n- 灰度规则管理、灰度发布、合并全量及放弃灰度。\n- 支持 Token、账号密码、SSO Cookie 登录，并可选择 Apollo 1.x / 2.x 或 3.x 接口。\n- 中文界面、深浅主题和操作异常详情查看。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.apollo/1.0.0/io.dbx.apollo-1.0.0-darwin-arm64.dbxp",
+          "sha256": "b52ad47dacaa8e6cf13f9cab4153250c83a2d208893adbb00195f1f8abc38e84",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4173937
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.apollo/1.0.0/io.dbx.apollo-1.0.0-darwin-x64.dbxp",
+          "sha256": "6f137177e24bda29a2c8a5f8477652b7155ad4e9aca6b5e3f12f292f66b342d3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4382914
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.apollo/1.0.0/io.dbx.apollo-1.0.0-linux-arm64.dbxp",
+          "sha256": "fbdde13fd37dc61727aad61271b4ae49a5484aeafe5453896f32dd2a25988f0d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4167461
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.apollo/1.0.0/io.dbx.apollo-1.0.0-linux-x64.dbxp",
+          "sha256": "7a5c80a3b6b145448ac0ac2664055ba900b7586e04076daf987c1c3e1af07f2d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4447535
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.apollo/1.0.0/io.dbx.apollo-1.0.0-windows-x64.dbxp",
+          "sha256": "3b037463f99886665f983b96d33b23854e34e4882f91f3e5a68e4c8c4ec0fec1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4438395
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Apollo 配置工作台",
+      "description": "管理 Apollo 应用、集群、命名空间、配置、发布和灰度"
+    }
+  }
+}

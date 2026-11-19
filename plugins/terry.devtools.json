@@ -1,10 +1,10 @@
 {
   "id": "terry.devtools",
   "name": "Dev Tools",
-  "description": "Runs offline in a sandbox with zero network calls and just a single local permission. 44 developer utilities in under 200KB: an all-in-one toolkit covering crypto & security, encoding, text & regex, time & Cron, network & DevOps, and frontend assets — built for everyday development needs.",
+  "description": "A lightweight dev toolset under 200KB — instant to use. Sandboxed and offline with zero network access. High-frequency tools for crypto, encoding, text, data conversion, formatting, time, networking and image generation; inputs and options are remembered and sync seamlessly across devices via DBX.",
   "publisher": "terry",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/yaoxinghuo/dbx-dev-tools/v0.6.4/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/yaoxinghuo/dbx-dev-tools/v0.6.12/assets/plugin.svg",
   "tags": [
     "devtools",
     "utilities",
@@ -18,12 +18,13 @@
     "color"
   ],
   "permissions": [
-    "host.storage"
+    "host.storage",
+    "host.workbench"
   ],
   "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
   "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
   "license": "MIT",
-  "latestVersion": "0.6.4",
+  "latestVersion": "0.6.12",
   "versions": [
     {
       "version": "0.3.3",
@@ -150,12 +151,110 @@
           "size": 178671
         }
       ]
+    },
+    {
+      "version": "0.6.5",
+      "releasedAt": "2026-10-20T02:28:28.904Z",
+      "releaseNotes": "Bug fix: JSON formatter, JWT inspector and header converter no longer corrupt integers beyond 2^53-1 (e.g. snowflake IDs) — number literals round-trip exactly as written. New: collapsed icon rail opens floating panels — favorites (drag-reorderable), recents, and an all-tools grid with its own search box (autofocus, Enter jumps to the first hit). Home header shows the plugin version badge; typewriter pill adopts the accent color; star hover colors now match between sidebar and home.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.5/terry.devtools-0.6.5-universal.dbxp",
+          "sha256": "c2b7b913563092fc2969f87d6a7376328eed5e8fdc60feaf18f0a21b36ab93e5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 179232
+        }
+      ]
+    },
+    {
+      "version": "0.6.7",
+      "releasedAt": "2026-10-23T03:12:12.329Z",
+      "releaseNotes": "新增：Nginx / XML / YAML 三个格式化工具（语法高亮、输出可另存为文件），首页「格式化」分类，搜索与分类筛选状态在返回首页后保留。修复：身份证工具「指定日期」改为定宽 YYYY-MM-DD 输入并内联校验。 | New: Nginx, XML and YAML formatters with syntax highlighting and save-to-file; a Formatter category; the home search query and category filter now persist when returning from a tool. Fix: CN ID Card exact-date input is a fixed-width YYYY-MM-DD field with inline validation.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.7/terry.devtools-0.6.7-universal.dbxp",
+          "sha256": "68d01f1f4b9f14d6f65f45e1031f587f7d8b28dbe746ead833fba380c88de694",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 189062
+        }
+      ]
+    },
+    {
+      "version": "0.6.8",
+      "releasedAt": "2026-10-24T17:28:05.098Z",
+      "releaseNotes": "修复：Cron 的 N/step 步长解析（如 0/2 不再退化为整点），非法 ?/N 会被拒绝。新增：下次执行条数可自定义并记忆；首页 GitHub 图标加入动画（空闲微摆 + 悬停变色），页脚新增开源反馈入口，复制链接改为跟随点击位置的浮层提示。 | Fix: cron N/step atoms (e.g. 0/2) no longer degrade to the bare start value, and invalid ?/N is rejected. New: configurable next-runs count (persisted); animated GitHub icon with idle tail-flick and brand-teal hover, plus a footer invite for issues/PRs/stars; copy confirmation is now a floating chip at the click point.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.8/terry.devtools-0.6.8-universal.dbxp",
+          "sha256": "f8dc2dc68c96721a4e4801bff348ed3e0dbb5b1afe3b4868009732e09c513a7c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 190488
+        }
+      ]
+    },
+    {
+      "version": "0.6.9",
+      "releasedAt": "2026-10-26T06:39:25.072Z",
+      "releaseNotes": "修复：部分机器首页工具网格只显示 2 列且右侧留白（布局回归问题）；页脚 GitHub 入口点击后没有复制提示——浮层在空间不足时改为显示在控件上方，沙箱内复制失败时直接展示链接。视觉：收藏星标与收藏空状态图标改用主题色。 | Fix: on some machines the home grid shrank to 2 columns with dead space on the right (layout regression); the footer GitHub link gave no copy feedback — the chip now flips above the control when space is tight and shows the URL itself when copying is unavailable in the sandbox. Visual: favorite stars and the favorites empty-state now use the theme color.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.9/terry.devtools-0.6.9-universal.dbxp",
+          "sha256": "9fc5b4606138f04662ecb9210be986bbd70d63343d35584dc587cad6920713d5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 190628
+        }
+      ]
+    },
+    {
+      "version": "0.6.10",
+      "releasedAt": "2026-10-30T05:24:53.023Z",
+      "releaseNotes": "新增：Unicode 编解码面板——支持 \\uXXXX、\\u{4-6位}、\\u{X}、U+XXXX、HTML 实体（十/十六进制）六种格式互转，编码可忽略 ASCII 字符，解码自动识别全部格式；原「Unicode 检查」更名为「Unicode 编解码」，保留逐码位分析。 | New: Unicode encode/decode panel — six formats (\\uNNNN surrogate pairs, \\uNNNNNN wide, \\u{NNNNNN}, U+NNNN, HTML entities dec/hex) with a skip-ASCII toggle and an auto-detecting decoder; the former Unicode Inspector is now Unicode Codec, keeping the per-code-point breakdown.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.10/terry.devtools-0.6.10-universal.dbxp",
+          "sha256": "db47ae04e8c58e1d79dff7742fe2f5d8e1c23944ce87d4609e9fcbb88c3ad083",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 191900
+        }
+      ]
+    },
+    {
+      "version": "0.6.11",
+      "releasedAt": "2026-11-13T03:45:47.823Z",
+      "releaseNotes": "新增：图像工具一键复制图片到剪贴板（需 DBX ≥ 0.7.0）——二维码、条码生成器、占位图、图片转 Base64（解码侧）新增「复制图片」按钮，非 PNG 格式自动转码；旧版宿主自动隐藏按钮。 | New: one-click copy-to-clipboard in image tools (requires DBX ≥ 0.7.0) — QR code, barcode generator, placeholder image and Base64-to-image gain a Copy Image button, with automatic PNG re-encoding for other formats; the button is hidden on older hosts.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.11/terry.devtools-0.6.11-universal.dbxp",
+          "sha256": "15ee3c2b006ce1855cbdfa9a6352b4380a200fc5f02860f7196c23becefe0701",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 192676
+        }
+      ]
+    },
+    {
+      "version": "0.6.12",
+      "releasedAt": "2026-11-15T03:44:48.584Z",
+      "releaseNotes": "新增：时间工具的「时间详情」卡片支持选择显示时区，墙钟时间、星期、年积日、ISO 周等全部跟随所选时区；时区选择器优化——聚焦展开完整列表、选项标注当前偏移、支持直接输入数字（如 8）匹配 ±N 小时时区、聚焦自动全选便于替换；「时间戳」模式更名「日期时间」并补充输入格式提示。 | New: the time tool's details card now has a display-timezone picker — wall clock, weekday, day-of-year and ISO week all follow the chosen zone; the timezone picker got a usability pass — full list on focus, per-option current offsets, bare-digit queries like 8 matching ±N-hour zones, and select-all on focus for quick replacement; the Timestamp mode is renamed Date & time with an input-format hint.",
+      "artifacts": [
+        {
+          "target": "universal",
+          "url": "https://dl.dbxio.com/plugins/terry.devtools/0.6.12/terry.devtools-0.6.12-universal.dbxp",
+          "sha256": "2f588594fa94ce6e4de24bf78ca31a519ff90c23d887c3847567159df95280e0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 193292
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "Dev 工具集",
-      "description": "沙箱离线运行，零联网、仅1项本地权限。44 款开发工具小于 200KB：集安全加解密、编解码与转义、文本与正则排版、时间与 Cron 计算、网络与系统运维、前端图像与标识生成等全场景工具于一体，满足日常开发高频需求。"
+      "description": "不到 200KB 的轻量开发者工具集，即开即用。沙箱离线运行，零网络权限。涵盖加解密、编解码、文本处理、数据转换、格式化、时间计算、网络运维、图像生成等众多高频工具；参数自动记忆，配置可随 DBX 跨端无缝同步。"
     }
   }
 }

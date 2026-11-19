@@ -1,0 +1,236 @@
+{
+  "id": "cc-switch",
+  "name": "AI Config Importer",
+  "description": "Import AI provider configurations from CC-SWITCH or Magpie into DBX.",
+  "publisher": "ma123456mai",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/ma123456mai/ai-config-importer/v0.2.12/assets/plugin.svg",
+  "tags": [
+    "ai",
+    "configuration",
+    "cc-switch"
+  ],
+  "permissions": [],
+  "source": "https://github.com/ma123456mai/ai-config-importer/tree/v0.2.12",
+  "homepage": "https://github.com/ma123456mai/ai-config-importer",
+  "license": "Apache-2.0",
+  "latestVersion": "0.2.12",
+  "versions": [
+    {
+      "version": "0.1.3",
+      "releasedAt": "2026-10-13T08:07:15.457Z",
+      "releaseNotes": "根据维护者反馈补充 CC-SWITCH 官方图标，并注册 DBX Store 自动同步信息。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.1.3/cc-switch-0.1.3-darwin-arm64.dbxp",
+          "sha256": "0f3590bb91f8b7da1668b161b75cf8fafcc7fdf3faae4c24c743a05f73c5fa70",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1306035
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.1.3/cc-switch-0.1.3-darwin-x64.dbxp",
+          "sha256": "2695e7b8bc421493b92fac71045985f2b65dc5f1c4cdb1dbc307201ed9e404e7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1378459
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.1.3/cc-switch-0.1.3-linux-arm64.dbxp",
+          "sha256": "6b118575ac9d50791f25e08ceb4bcd5d7a2f7cd351e391e2edfea80415fc8bcb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1444532
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.1.3/cc-switch-0.1.3-linux-x64.dbxp",
+          "sha256": "4120d91931ac644577924012f7e658921b4e6fa5e017f9120f3714f6e7659831",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1479457
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.1.3/cc-switch-0.1.3-windows-x64.dbxp",
+          "sha256": "1653ed4d4f38b905077979d5a5f92ed30d7894e962107a0811edeac3d0e92919",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1269329
+        }
+      ]
+    },
+    {
+      "version": "0.1.5",
+      "releasedAt": "2026-10-16T09:39:19.812Z",
+      "releaseNotes": "Hide source entries hidden in CC-SWITCH and Magpie. Import Magpie's live Codex model catalog with distinct model labels.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.1.5/cc-switch-0.1.5-darwin-arm64.dbxp",
+          "sha256": "7508239aac18c5c0784dc7f96a9032ea25c9c650b20314b43a81b688e30f04da",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1439679
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.1.5/cc-switch-0.1.5-darwin-x64.dbxp",
+          "sha256": "d96484b1a750a3ef0a23f9bcf9b06bab85b1fa14727a193e5ba3c49936290dd5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1516649
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.1.5/cc-switch-0.1.5-linux-arm64.dbxp",
+          "sha256": "c2054f7314329f726336fc928ff664539cf6cc25691e3bcae12703853152f130",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1578960
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.1.5/cc-switch-0.1.5-linux-x64.dbxp",
+          "sha256": "d9a6524886dc1f6e55846dad82ffa14b550494bda2d40114da80381931e257a7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1617315
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.1.5/cc-switch-0.1.5-windows-x64.dbxp",
+          "sha256": "6029c0e19fce36aece4ee9168c432a81c0884f575eeb0aa911f980e6bd912f93",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1417927
+        }
+      ]
+    },
+    {
+      "version": "0.2.10",
+      "releasedAt": "2026-10-17T02:18:15.050Z",
+      "releaseNotes": "Hide source entries hidden in CC-SWITCH and Magpie. Import Magpie's live Codex model catalog with distinct model labels.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.10/cc-switch-0.2.10-darwin-arm64.dbxp",
+          "sha256": "332ce58d5e64f83716c29f56317b9b25c9cff486f18ac79559fd0bea251d76b7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1439787
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.10/cc-switch-0.2.10-darwin-x64.dbxp",
+          "sha256": "5dbb442b2f44160be7598262e765b831d7d4469b1983876df5935a9e14e1c071",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1516508
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.10/cc-switch-0.2.10-linux-arm64.dbxp",
+          "sha256": "4009478782b46d62fe3f80e9d9f57162c1fcd517d81840a144579ab676d1b931",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1578850
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.10/cc-switch-0.2.10-linux-x64.dbxp",
+          "sha256": "1d8d0bf4711e4f71eafa82960bcb961991f3f934714cfe24f63c636b35a88ba3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1617317
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.10/cc-switch-0.2.10-windows-x64.dbxp",
+          "sha256": "281bdf21efd12ad52ed881a53729b4fcc4c097da6334d7e60bd54c1cb0f42aba",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1417929
+        }
+      ]
+    },
+    {
+      "version": "0.2.11",
+      "releasedAt": "2026-10-19T10:09:01.921Z",
+      "releaseNotes": "Use Claude-style endpoint and model defaults for CC-SWITCH Codex profiles while requiring an API key.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.11/cc-switch-0.2.11-darwin-arm64.dbxp",
+          "sha256": "968ab3e068b3fe23bffee6f279293ea0549510153d42eda7efd3b56118edadc1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1207469
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.11/cc-switch-0.2.11-darwin-x64.dbxp",
+          "sha256": "95358326f68624abca310d76be77ea183b05d5955e9621e2c1a3b41289f3a3fc",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1284125
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.11/cc-switch-0.2.11-linux-arm64.dbxp",
+          "sha256": "d039e93c698a52421cc154582640c16cc2c12e3e19d9041ab782b5fa8a97c7f6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1346438
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.11/cc-switch-0.2.11-linux-x64.dbxp",
+          "sha256": "eb0d17c3a4b98f202f930877ace297df592aff092ecab0d90763254e23d6e3b5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1384599
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.11/cc-switch-0.2.11-windows-x64.dbxp",
+          "sha256": "8d88fc250a44ec12a6ffc2d8c777c075f8259060bb6f2f65beb20e0a11c8231f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1185841
+        }
+      ]
+    },
+    {
+      "version": "0.2.12",
+      "releasedAt": "2026-10-21T05:13:28.797Z",
+      "releaseNotes": "Use a consistent black mark on a white rounded-square background across DBX.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.12/cc-switch-0.2.12-darwin-arm64.dbxp",
+          "sha256": "a0eace421d4f1187c39fff7e2dea2f5e6546bd5079422082b324721b182a5ae2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1207249
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.12/cc-switch-0.2.12-darwin-x64.dbxp",
+          "sha256": "5d74f44aa499b4af31a6332aad3cf18103db6db42412bfb79a1739ace9725070",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1284072
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.12/cc-switch-0.2.12-linux-arm64.dbxp",
+          "sha256": "e0ce4f0f8df302126c35ef31889524eb57dc734cea66f885aa5c58c2006a65b5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1346389
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.12/cc-switch-0.2.12-linux-x64.dbxp",
+          "sha256": "8fba918cc52f7b2c506601f26c39bb92e930da950d797f2efe513d3d722b2dfa",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1384644
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/cc-switch/0.2.12/cc-switch-0.2.12-windows-x64.dbxp",
+          "sha256": "1d56c6fcf65386aa8a9fc7e2496337b6b271f74ddac912eef6a1c968191d1b3b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1185798
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "AI 配置导入",
+      "description": "从 CC-SWITCH 或 Magpie 导入 AI 提供商配置到 DBX。"
+    }
+  }
+}

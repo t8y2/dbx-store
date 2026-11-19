@@ -1,0 +1,72 @@
+{
+  "id": "io.github.seaways1015-afk.loki",
+  "name": "Loki",
+  "description": "Query, browse and live-tail Grafana Loki logs with LogQL inside DBX, with read-only AI tools.",
+  "publisher": "seaways1015-afk",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/seaways1015-afk/dbx-plugin-loki/v0.1.1/assets/plugin.svg",
+  "tags": [
+    "loki",
+    "logs",
+    "logql",
+    "observability"
+  ],
+  "permissions": [
+    "host.ai",
+    "host.storage"
+  ],
+  "source": "https://github.com/seaways1015-afk/dbx-plugin-loki/tree/v0.1.1",
+  "homepage": "https://github.com/seaways1015-afk/dbx-plugin-loki",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.1",
+  "versions": [
+    {
+      "version": "0.1.1",
+      "releasedAt": "2026-10-29T06:52:48.787Z",
+      "releaseNotes": "Initial release.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.seaways1015-afk.loki/0.1.1/io.github.seaways1015-afk.loki-0.1.1-darwin-arm64.dbxp",
+          "sha256": "7cc6111d28e5af76f98f7f022df389c57443571f02bd865b2f8e46d2c184a091",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4454666
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.seaways1015-afk.loki/0.1.1/io.github.seaways1015-afk.loki-0.1.1-darwin-x64.dbxp",
+          "sha256": "986f5fa1dd9fbc4189862e23e3d949ba5b76adcb5a9da0f03c033b5d2bd47571",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4670251
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.seaways1015-afk.loki/0.1.1/io.github.seaways1015-afk.loki-0.1.1-linux-arm64.dbxp",
+          "sha256": "4fa8e2185ef2a9a629f5fae1e18529716cdbccee5bfe66cdc2e8e6b8278f2bfd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4444728
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.seaways1015-afk.loki/0.1.1/io.github.seaways1015-afk.loki-0.1.1-linux-x64.dbxp",
+          "sha256": "a0ff70171f8616d78234106350874ede3f8df76273647f0cb25b1dcb6aaacedf",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4739142
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.seaways1015-afk.loki/0.1.1/io.github.seaways1015-afk.loki-0.1.1-windows-x64.dbxp",
+          "sha256": "99ac09fc8f73f4f82d67af72126e9779818752919a50feb90ed73a1e534a4db5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4733066
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Loki",
+      "description": "在 DBX 中用 LogQL 查询、浏览和实时跟踪 Grafana Loki 日志，并为 AI 助手提供只读工具。"
+    }
+  }
+}

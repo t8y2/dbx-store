@@ -4,17 +4,17 @@
   "description": "Read-only PromQL editor, targets, alerts, rules and runtime status in a DBX workbench.",
   "publisher": "caichangqing1120",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/caichangqing1120/dbx-plugin-prometheus/v0.1.7/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/caichangqing1120/dbx-plugin-prometheus/v0.2.2/assets/plugin.svg",
   "tags": [
     "prometheus",
     "monitoring",
     "observability"
   ],
   "permissions": [],
-  "source": "https://github.com/caichangqing1120/dbx-plugin-prometheus/tree/v0.1.7",
+  "source": "https://github.com/caichangqing1120/dbx-plugin-prometheus/tree/v0.2.2",
   "homepage": "https://github.com/caichangqing1120/dbx-plugin-prometheus",
   "license": "MIT",
-  "latestVersion": "0.1.7",
+  "latestVersion": "0.2.2",
   "versions": [
     {
       "version": "0.1.6",
@@ -111,6 +111,55 @@
           "sha256": "66d50f23d3aa8b5ee751a7eec921011315bed57673250a70fa924ac350f67d75",
           "signingKeyId": "dbx-store-release-2026",
           "size": 4757059
+        }
+      ]
+    },
+    {
+      "version": "0.2.2",
+      "releasedAt": "2026-10-29T17:14:07.870Z",
+      "releaseNotes": "0.2.2 is the first Store update since 0.1.7. It exposes 15 read-only MCP tools over the existing Prometheus API (PromQL instant and range queries, metric/label discovery, targets and service discovery, alerts, rules, and runtime/TSDB/flags/config status) with explicit access declarations, host-bound lifecycle identity and redacted output; manifest permissions remain empty and upgrading grants no access. It also corrects the author release metadata so DBX Store can import the release, and removes the unsupported mcpTools field. UI and service behavior are unchanged. A matching updated DBX Desktop and standalone MCP are required.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/io.github.caichangqing1120.prometheus-0.2.2-darwin-arm64.dbxp",
+          "sha256": "3d006a90546f8142daf41271be3ae5aa6119b5eb706b572c625443348d162c71",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2881995
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/io.github.caichangqing1120.prometheus-0.2.2-darwin-x64.dbxp",
+          "sha256": "f6e39bccc2f494b9869154815374f98bcd1b7425f9a359c47f664246b6e2f179",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3121566
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/io.github.caichangqing1120.prometheus-0.2.2-linux-arm64.dbxp",
+          "sha256": "445472740c2ca0a6e582110eb18cb98adc37ee7f9d3af01cac6754a9c03195d9",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2798073
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/io.github.caichangqing1120.prometheus-0.2.2-linux-x64.dbxp",
+          "sha256": "ee9e12f8da33d48d178f4b309897fbae159cb6aa10023b134c2f11b6e684a61d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3091266
+        },
+        {
+          "target": "windows-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/io.github.caichangqing1120.prometheus-0.2.2-windows-arm64.dbxp",
+          "sha256": "fdc9c334b88417e2c111caffb8375cb309c068e76c0ad46d1d342f95a667e7c7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2811477
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.caichangqing1120.prometheus/0.2.2/io.github.caichangqing1120.prometheus-0.2.2-windows-x64.dbxp",
+          "sha256": "5633cdcb65f5af47742e4957fd1f24f22becb02ad8d30c4aae7a6551bdba0db8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3135579
         }
       ]
     }

@@ -1,0 +1,88 @@
+{
+  "id": "com.dbx.wsl",
+  "name": "WSL Manager",
+  "description": "Visual manager for WSL distributions (wsl) and WSL containers (wslc) on Windows.",
+  "publisher": "w89588",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/w89588/dbx-plugin-wsl/v0.1.1/assets/plugin.svg",
+  "tags": [
+    "wsl",
+    "containers",
+    "windows",
+    "devops"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.events",
+    "host.storage",
+    "host.binary"
+  ],
+  "source": "https://github.com/w89588/dbx-plugin-wsl/tree/v0.1.4",
+  "homepage": "https://github.com/w89588/dbx-plugin-wsl",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.4",
+  "versions": [
+    {
+      "version": "0.1.1",
+      "releasedAt": "2026-10-23T12:52:58.156Z",
+      "releaseNotes": "# WSL Manager v0.1.1\r\n\r\nPermission declaration fix for the DBX Store review. Adds `host.binary` to the package manifest and candidate metadata to disclose the existing native process execution capability. Runtime behavior is unchanged; v0.1.0 remains available unchanged.\r\n\r\n## Highlights\r\n\r\n- **WSL distributions (`wsl`)**: list with live state/disk usage, start/stop, default distro, version switching, default user, sparse/compact/resize, export/import, unregister, distro info (OS release, kernel, disk, IP, `/etc/wsl.conf`), open terminal/Explorer, run commands inside a distro.\r\n- **WSL containers (`wslc`)**: container list/lifecycle, run, logs (follow), exec, live stats, prune; image list/pull/build/tag/save/load/remove/prune; volumes and networks management; live event stream.\r\n- **Registry credentials**: sign in/out to container registries (`docker login` equivalent) so private images and Docker Hub rate limits are handled; pull/build/run failures are classified and the UI offers a one-click \"go to sign in\" action with the registry prefilled.\r\n- **Command console**: run arbitrary `wsl` / `wslc` commands as argv (no shell), with stdout/stderr/exit code.\r\n- **Settings**: visual editors for `.wslconfig` and wslc `settings.yaml` with automatic backups.\r\n- UI: overview dashboard, dark/light theme, Chinese/English localization, task panel with live logs and cancellation.\r\n\r\n## Requirements\r\n\r\n- Windows 11 with WSL (`wsl --version` works; verified with WSL 3.0.3/3.0.4).\r\n- DBX desktop `>= 0.5.68` (verified on 0.6.49).\r\n- `wslc` is optional; without it the distribution pages still work.\r\n\r\n## Permissions\r\n\r\n`host.workbench`, `host.events`, `host.storage`, `host.binary` — no network, filesystem, clipboard, data or AI permissions are requested. The native sidecar runs with the current user and invokes `wsl.exe` / `wslc.exe`, `wt.exe` (or `cmd.exe` as a terminal fallback), `explorer.exe`, and `taskkill` for process-tree cancellation.\r\n\r\n## Install\r\n\r\n1. Download `com.dbx.wsl-0.1.1-windows-x64.dbxp` from this release.\r\n2. Open DBX → Plugin Center → install the local package (enable unsigned development packages if the store build is not signed yet).\r\n3. Open **WSL Manager** from the plugin shortcut / command palette.\r\n\r\n## Notes and limitations\r\n\r\n- Windows-only (`windows-x64`).\r\n- Registry credentials are stored by `wslc` on the local machine; the plugin never persists passwords and passes them to `wslc` over stdin.\r\n- `wslc` 3.0.3/3.0.4 has no command to list signed-in registries, so sign-in state is confirmed by pull results.\r\n- Export/import/build path fields require a Windows path (no native file picker yet).",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.1/com.dbx.wsl-0.1.1-windows-x64.dbxp",
+          "sha256": "c4d0f42266527762ce6e81f93bd0adb801e5f917e7fa1893dcb1b169d8c0e184",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2737484
+        }
+      ]
+    },
+    {
+      "version": "0.1.2",
+      "releasedAt": "2026-10-26T06:43:09.185Z",
+      "releaseNotes": "新增发行版空闲退出与保活策略；保存配置前备份并检测外部修改及未保存编辑冲突，保存不会自动关闭 WSL。修复默认浏览器打开项目链接及键盘焦点行为，简化反馈入口。仅支持 Windows x64；保活不阻止 Windows 休眠，也不在登录时自动启动 WSL。虚拟机设置不适用于 WSL 1 或 wslc 容器。",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.2/com.dbx.wsl-0.1.2-windows-x64.dbxp",
+          "sha256": "2092ddb19b1ee6776534e883f9a29feae1f370de396433e8bc44978cecc4277f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 3449954
+        }
+      ]
+    },
+    {
+      "version": "0.1.3",
+      "releasedAt": "2026-10-27T02:10:27.389Z",
+      "releaseNotes": "# WSL 管理器 v0.1.3\r\n\r\n相较 v0.1.2，本版本新增外部 MCP 管理、备份恢复与诊断配置工作流，并改善资源实时更新、任务一致性和配置保存体验。\r\n\r\n## 新增功能\r\n\r\n- **外部 MCP 接入**：新增 `wsl_connections`、`wsl_describe`、`wsl_read`、`wsl_write` 四个工具，覆盖 85 个管理接口，包括发行版与容器生命周期、命令执行、文件读写、镜像、卷、网络、配置、注册表和任务。写操作遵循宿主/客户端授权；会访问网络或检测端口的 `diagnostics/run` 统一要求 `wsl_write`，只读入口拒绝所有参数组合。\r\n- **备份与恢复**：提供 Windows 原生目录选择器、备份记录和 SHA-256 校验。运行中的发行版需明确停止后备份；恢复仅导入到新名称、新目录，并启动新发行版验证 `/bin/sh` 可用。失败时保留新资源供排查，不删除原发行版。\r\n- **诊断中心**：检查 WSL/WSLC、磁盘空间、指定回环端口和可选注册表 HTTPS 连通性，生成可复制的脱敏报告与建议，不自动修复。\r\n- **资源配置助手**：预览并调整内存、CPU 和交换空间，保留其他配置、注释与换行；保存后需自行重启 WSL 生效。\r\n- **后台开发环境模板**：RPC/MCP 提供 PostgreSQL、Redis 模板，支持计划、创建及状态查询，使用回环端口、密码认证、命名卷和健康检查；不提供模板页面，不自动创建 DBX 数据库连接。\r\n\r\n## 体验与可靠性\r\n\r\n- 资源变化通过现有宿主事件桥持续推送，页面原位更新列表、状态和统计，保留焦点、滚动位置与草稿，避免周期性整页刷新；隐藏时暂停，重连后同步快照。\r\n- 补偿任务终态事件丢失和乱序，当前 Sidecar 保留最多 32 个已结束任务、最长 24 小时，避免任务历史无限增长。\r\n- 配置保存增加修订号冲突检查，外部修改时保留草稿并拒绝覆盖；保留备份及 BOM。\r\n\r\n## 兼容性与权限\r\n\r\n- 不设置 DBX 产品版本安装门槛，保留 Host API 1。官方历史清单解析器验证边界为 DBX 0.6.27；0.6.26 不识别 MCP 声明。该结果不代表已在所有历史 DBX 客户端完成安装验证。\r\n- 仍仅支持 Windows x64，四项宿主权限不变。原生 Sidecar 以当前用户权限调用 WSL/WSLC，可执行命令、读写文件和访问网络；目录选择器运行固定 PowerShell 脚本。注册表登录由 WSLC 保存凭据；模板创建使用临时凭据文件，异常终止可能遗留文件，容器配置可能包含凭据。\r\n\r\n## 构建与发布\r\n\r\n使用固定 Go 1.24.13 与插件 CLI 0.1.9，从干净的发布标签提交构建。发布校验要求包内 EXE 的 `vcs.revision` 等于标签提交、`vcs.modified=false`，并核对包身份、SHA-256 与大小。GitHub 资产为未签名候选包，官方商店签名由维护者完成。\r\n\r\n**完整变更：** [v0.1.2...v0.1.3](https://github.com/w89588/dbx-plugin-wsl/compare/v0.1.2...v0.1.3)",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.3/com.dbx.wsl-0.1.3-windows-x64.dbxp",
+          "sha256": "7ffb402068cad0605f41d1e5367f0b8bf50ba7e503d30b35b4732963337e88c6",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5819775
+        }
+      ]
+    },
+    {
+      "version": "0.1.4",
+      "releasedAt": "2026-11-02T02:54:31.346Z",
+      "releaseNotes": "# WSL 管理器 v0.1.4\r\n\r\n本版本为外部 MCP 工具声明明确的访问级别，支持在 DBX 中按需授权。\r\n\r\n## 变更\r\n\r\n- `wsl_connections`、`wsl_describe`、`wsl_read` 声明为只读；新增 `wsl_manage`，通过白名单提供常规发行版和容器管理以及诊断；原 `wsl_write` 声明为完全权限，用于任意命令、删除、配置修改及任务取消等操作。\r\n- `wsl_describe` 返回各方法所需权限及推荐工具。查询发行版详情和 `wsl.conf` 可能启动发行版，现需读写权限；日志跟随、事件订阅和任务取消仍需完全权限。\r\n- 常规写入入口拒绝白名单之外的方法及可能被命令行解释为选项的目标名称；只读入口继续拒绝有副作用的操作。启停可能中断服务，诊断可能探测指定主机或端口，应先确认具体操作。\r\n\r\n## 兼容性与授权\r\n\r\n- 新增权限声明需要 **DBX 0.6.59 或更新版本**。桌面端与独立 MCP 服务应使用匹配版本；旧客户端调用 `wsl_write` 需要完全权限。\r\n- 在 DBX「设置 → MCP Server → 能力」中启用插件并按需选择授权上限、启用工具。资源权限和客户端限制仍然适用；高风险调用可按宿主设置要求人工确认。\r\n- 仅支持 Windows x64；宿主权限仍为 `host.workbench`、`host.events`、`host.storage` 和 `host.binary`。原生 Sidecar 以当前用户身份运行，可执行命令、访问文件和网络。凭据及诊断边界见 [MCP 指南](https://github.com/w89588/dbx-plugin-wsl/blob/v0.1.4/docs/mcp.md)。\r\n\r\n## 验证与发布\r\n\r\n使用 Go 1.24.13 和插件 CLI 0.1.9 从干净标签构建，检查包的身份、版本、VCS 信息、大小与 SHA-256。GitHub Release 资产为未签名候选包，官方商店版本需由维护者审核签名。未在真实 DBX 桌面端完成安装、授权界面及外部 MCP 端到端验证。\r\n\r\n**完整变更：** [v0.1.3...v0.1.4](https://github.com/w89588/dbx-plugin-wsl/compare/v0.1.3...v0.1.4)",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.wsl/0.1.4/com.dbx.wsl-0.1.4-windows-x64.dbxp",
+          "sha256": "83da2e350f7555494f64c65f4ca0ce3b9453cbec6bc707df9b6261e101efcb88",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5826864
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "WSL 管理器",
+      "description": "在 DBX 中可视化管理 WSL 发行版（wsl）与 WSL 容器（wslc），支持注册表凭据与镜像管理。"
+    }
+  }
+}

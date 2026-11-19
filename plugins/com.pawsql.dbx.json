@@ -1,0 +1,70 @@
+{
+  "id": "com.pawsql.dbx",
+  "name": "PawSQL SQL Optimizer",
+  "description": "Paste SQL and get PawSQL optimization recommendations: rule violations, index DDLs, rewrites and a What-If validation report.",
+  "publisher": "pawsql",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/PawSQL/dbx-plugin-pawsql/v1.0.0/assets/plugin.png",
+  "tags": [
+    "sql",
+    "optimization",
+    "database"
+  ],
+  "permissions": [
+    "host.events"
+  ],
+  "source": "https://github.com/PawSQL/dbx-plugin-pawsql/tree/v1.0.0",
+  "homepage": "https://github.com/PawSQL/dbx-plugin-pawsql",
+  "license": "Apache-2.0",
+  "latestVersion": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "releasedAt": "2026-10-19T10:34:28.057Z",
+      "releaseNotes": "1.0.0：首个版本。粘贴 SQL，选择数据库类型，即可获取 PawSQL 优化建议——规则违规、推荐索引、SQL 重写与 What-If 校验报告。支持匿名与账号登录两种模式，所有网络请求经 Go 原生 sidecar 完成。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.pawsql.dbx/1.0.0/com.pawsql.dbx-1.0.0-darwin-arm64.dbxp",
+          "sha256": "32fd22dbb1088428ca7a91c3ce48aca91eeaf5ab5e3268eabec21d4b7ba9d708",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4240630
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.pawsql.dbx/1.0.0/com.pawsql.dbx-1.0.0-darwin-x64.dbxp",
+          "sha256": "f4a114a516cb2ce95ab31579ac3eaa7e8cedf4673758a0e69810d08f1883cd4f",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4451663
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.pawsql.dbx/1.0.0/com.pawsql.dbx-1.0.0-linux-arm64.dbxp",
+          "sha256": "b42e787b0f710335c3d296db9ddd3b295bae1ed158285fb4565f87c0bf9899d9",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4241385
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.pawsql.dbx/1.0.0/com.pawsql.dbx-1.0.0-linux-x64.dbxp",
+          "sha256": "29723f42c9c8fbc755fb347218777a7ff137d167e476cd8d769f1e619543d949",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4523857
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.pawsql.dbx/1.0.0/com.pawsql.dbx-1.0.0-windows-x64.dbxp",
+          "sha256": "e0ab57ceb188129e894bed36c02645a1552623afafbe8cec19b353b9f1cede53",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4534890
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "PawSQL SQL 优化器",
+      "description": "粘贴 SQL，获取 PawSQL 优化建议：规则违规、推荐索引、SQL 重写与 What-If 校验报告。"
+    }
+  }
+}

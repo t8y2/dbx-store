@@ -1,0 +1,157 @@
+{
+  "id": "io.github.yuzhi.modbus",
+  "name": "Modbus TCP",
+  "description": "Read and write Modbus TCP registers on PLCs, gateways and remote IO at the host and port you enter (502 by default), down to the raw TX/RX frames of every request.",
+  "publisher": "yuzhi",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-modbus/v0.2.2/assets/plugin.svg",
+  "tags": [
+    "modbus",
+    "modbus-tcp",
+    "plc",
+    "industrial",
+    "iot",
+    "scada"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/bobocha214/dbx-plugin-modbus/tree/v0.2.2",
+  "homepage": "https://github.com/bobocha214/dbx-plugin-modbus",
+  "license": "MIT",
+  "latestVersion": "0.2.2",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-23T03:51:23.615Z",
+      "releaseNotes": "Initial release: Modbus TCP connection provider, register grid workbench with periodic polling, byte order and data type decoding, and guarded writes.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.1.0/io.github.yuzhi.modbus-0.1.0-darwin-arm64.dbxp",
+          "sha256": "dcb5da9280c150c0510b39a50e5fc046761cd4d7d0082bd9ba408a9559ed9707",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 316261
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.1.0/io.github.yuzhi.modbus-0.1.0-darwin-x64.dbxp",
+          "sha256": "da7c749eb20efb747eaf16f5814ee594210c5fa9611ee5a7335e022809582692",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 337564
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.1.0/io.github.yuzhi.modbus-0.1.0-linux-arm64.dbxp",
+          "sha256": "36dcc661d9938cf1e534e2a8ba1d8de7ce3abf1ee35e52fe6b2399de0b66ad35",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 339235
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.1.0/io.github.yuzhi.modbus-0.1.0-linux-x64.dbxp",
+          "sha256": "43e79856f7e5d0e0fa6f2b57e1e00b07b7aebd96e9360448f763af6b0d3bf62d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 360141
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.1.0/io.github.yuzhi.modbus-0.1.0-windows-x64.dbxp",
+          "sha256": "5e139c0803367f3f54366ec88b826ff90b02e24312414c95c068775b4d5a1501",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 261020
+        }
+      ]
+    },
+    {
+      "version": "0.2.1",
+      "releasedAt": "2026-10-27T16:12:43.583Z",
+      "releaseNotes": "0.2.1 更新：写入只在按下回车时才下发，Esc 或点开别处即取消；新建连接只需填工作区名称，设备与地址范围都在工作台里配置，不建连接也能直接打开工作台；新建地址范围默认读取 10 个地址，改完定义立刻重新读取，不必再点读取或轮询；数据类型变宽会自动补读缺少的寄存器；改设备地址或超时会自动重连；安装包内置 MIT LICENSE。\n\n0.2.1 is a version update of this listing. Creating a connection asks only for a workspace name: devices are configured and connected inside the workbench, and a workbench opened with no connection still works. A new range reads ten addresses, editing its definition reads again on the spot, and a value is written only by pressing Enter in the cell - Esc or leaving the field cancels. The package now ships the MIT LICENSE.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.1/io.github.yuzhi.modbus-0.2.1-darwin-arm64.dbxp",
+          "sha256": "fbec7abeb56fefbb39410b8fe86431a86f031620194565ff97b1e1f04bb6effb",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 319950
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.1/io.github.yuzhi.modbus-0.2.1-darwin-x64.dbxp",
+          "sha256": "3eca140e5131fcd53a18f356f60e0427d64578bdaa2581ec33e7c7e9cc41c100",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 341357
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.1/io.github.yuzhi.modbus-0.2.1-linux-arm64.dbxp",
+          "sha256": "b4f03653b5a632e00fff107c3800182114e9943f31fef1d2894ee7daaf876977",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 342789
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.1/io.github.yuzhi.modbus-0.2.1-linux-x64.dbxp",
+          "sha256": "544fd538946d6fcb0d3726dbd26de045c6fbc7b0ebef9c7cb15bc5dbb47bc954",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 363842
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.1/io.github.yuzhi.modbus-0.2.1-windows-x64.dbxp",
+          "sha256": "081b86ff29b2985e43ed50339be191577b99d8a7db9a98f47dc565cc03e1dada",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 264695
+        }
+      ]
+    },
+    {
+      "version": "0.2.2",
+      "releasedAt": "2026-10-29T17:47:11.880Z",
+      "releaseNotes": "v0.2.2 更新：地址表格改为 Modbus Poll 式布局——行数（Rows）是唯一的布局设置，列数自动 = 值数量 ÷ 行数，数值按列优先排布（第 i 个值在第 i%行数 行、第 ⌊i/行数⌋ 列），取消了翻页改为整表滚动，同一个地址永远待在同一个格子里；每个格子里左侧是该值的地址（00000 样式）、右侧是值，不必按偏移量心算，表头仍是各列基址；表格不再被拉伸到整个面板宽度。新增「通信报文」面板：每次读写的完整发送（TX）与接收（RX）报文都以十六进制原样显示，并标注从站号与功能码，设备返回异常时显示异常码。更换了新图标（矢量 SVG，深浅色主题下均清晰）。\n\nv0.2.2 is a version update of this listing. The register sheet now follows Modbus Poll: Rows is the only layout setting, columns follow as values / rows, values fill down each column and paging is gone, so an address never moves between cells. Every cell shows its address on the left and its value on the right, so no offset has to be counted, and the sheet sizes to its content instead of stretching across the pane. A new communication view shows the complete TX and RX bytes of every read and write, labelled with the slave id and function code, or the exception code when the device rejected the request. The icon has been replaced with a vector SVG that stays crisp at any DPI.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.2/io.github.yuzhi.modbus-0.2.2-darwin-arm64.dbxp",
+          "sha256": "a7427cf7f1c39872db5a9ff78ae9bec15d28a4614dec7120fb55b7df5350d3f4",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 399907
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.2/io.github.yuzhi.modbus-0.2.2-darwin-x64.dbxp",
+          "sha256": "d838d38435b0fcec769d954fedb7687f44801835c90272cff805a2ce9253f717",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 421210
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.2/io.github.yuzhi.modbus-0.2.2-linux-arm64.dbxp",
+          "sha256": "1e6bb72cc21e1accd49e67ce04a64ffe24bc5a14be7ad207a48516ea41a1cd61",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 422372
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.2/io.github.yuzhi.modbus-0.2.2-linux-x64.dbxp",
+          "sha256": "7e36b495d478dfb278bef8fd819d2901c5810d61ff889bd032683cf0bb24353c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 443407
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.2/io.github.yuzhi.modbus-0.2.2-windows-x64.dbxp",
+          "sha256": "88dfbf2d30e955574281b9b6dbbb5682903cb2b59993a3a01b62ae4c16d25611",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 344680
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Modbus TCP",
+      "description": "读写 PLC、网关与远程 IO 上的 Modbus TCP 寄存器，连接你填写的 host:port（默认 502），可查看每次读写的原始 TX/RX 报文。"
+    }
+  }
+}

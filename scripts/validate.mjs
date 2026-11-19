@@ -322,7 +322,12 @@ async function rejectCommittedPackages(directory) {
     if (entry.isFile()) {
       assert(!entry.name.endsWith(".dbxp"), `Binary plugin package must not be committed: ${path.relative(root, entryPath)}`);
       const metadata = await stat(entryPath);
-      assert(metadata.size <= 1024 * 1024, `Repository file exceeds 1 MiB: ${path.relative(root, entryPath)}`);
+      // catalog/index.json is machine-generated and only ever written via git
+      // commits (workflows push, never the Contents API), so it may exceed the
+      // 1 MiB Contents API limit that guards hand-editable files.
+      if (path.relative(root, entryPath) !== path.join("catalog", "index.json")) {
+        assert(metadata.size <= 1024 * 1024, `Repository file exceeds 1 MiB: ${path.relative(root, entryPath)}`);
+      }
     }
   }
 }

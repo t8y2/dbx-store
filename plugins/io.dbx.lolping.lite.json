@@ -1,0 +1,114 @@
+{
+  "id": "io.dbx.lolping.lite",
+  "name": "lolPing Lite",
+  "description": "Send LOL pings and emotes over your desktop and other app windows, adapted from darrenprx/lolPing.",
+  "publisher": "ezreal-byte",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/Ezreal-byte/dbx-lolping-plugin/v0.3.0/assets/plugin.png",
+  "tags": [
+    "pings",
+    "emotes",
+    "desktop",
+    "lolping"
+  ],
+  "permissions": [
+    "host.events",
+    "host.binary"
+  ],
+  "source": "https://github.com/Ezreal-byte/dbx-lolping-plugin/tree/v0.3.0",
+  "homepage": "https://github.com/Ezreal-byte/dbx-lolping-plugin",
+  "license": "MIT",
+  "latestVersion": "0.3.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-10-16T10:38:43.566Z",
+      "releaseNotes": "Initial release. Local desktop pings, emotes and settings; no rooms or network synchronization. Rust/WebView sidecar and the upstream C++ input helper replace Electron. Code is MIT licensed; Riot game assets and the upstream icon are excluded from that license.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.1.0/io.dbx.lolping.lite-0.1.0-darwin-arm64.dbxp",
+          "sha256": "a164fcfc29b5bbaeb59601e762980956c00cc434b570d6c6eac15ac2b7ef2359",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18273763
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.1.0/io.dbx.lolping.lite-0.1.0-windows-x64.dbxp",
+          "sha256": "f65d7084481a70adde9279f093541117f9b1304e42332f3f00ba2f0fc60fe9f1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18349450
+        }
+      ]
+    },
+    {
+      "version": "0.2.1",
+      "releasedAt": "2026-10-17T02:12:38.796Z",
+      "releaseNotes": "Replace overlay WebViews with native Rust rendering. Bound scene buffers, image caches and streamed animation frames; decode audio off the input/render thread. Windows single-desktop samples were 39–52 MiB for the plugin process tree (excluding DBX and settings UI; not a worst-case guarantee). Preserve upstream C++ gestures and pause/capture behavior. Fix Windows gray overlay frames, improve wheel text with Inter, add a GitHub Release download button for the optional emote ZIP, and use the yellow question-mark icon. Existing settings/assets remain compatible. Riot game assets are excluded from the MIT code license.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.2.1/io.dbx.lolping.lite-0.2.1-darwin-arm64.dbxp",
+          "sha256": "7780608f9dc52f160350dc3ab5a21966608456318966a3b910eed127a0768d04",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18761036
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.2.1/io.dbx.lolping.lite-0.2.1-windows-x64.dbxp",
+          "sha256": "78cedb65a6a0a43ba2e9724a93ed27b6c353561652cb02b2e589826710122d98",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18888773
+        }
+      ]
+    },
+    {
+      "version": "0.2.2",
+      "releasedAt": "2026-10-17T05:30:35.661Z",
+      "releaseNotes": "Fix a Windows overlay clipping bug: triggering a wheel at a screen edge could leave subsequent wheels partially visible or missing elsewhere. Update changed native window geometry before uploading the frame so the previous clipped region is not reused. Cursor position, wheel anchor, gesture thresholds and direction mapping remain unchanged. Existing settings and imported assets remain compatible. Windows desktop regression covers all four edges and corners, subsequent centered wheels and idle wake. macOS uses a separate surface path; hardware acceptance remains required.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.2.2/io.dbx.lolping.lite-0.2.2-darwin-arm64.dbxp",
+          "sha256": "32158b1aebc8cb7b6af97a8dbfe1a5346b1348b662c55bf5cd43595701f6caf2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18761298
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.2.2/io.dbx.lolping.lite-0.2.2-windows-x64.dbxp",
+          "sha256": "7ff1a3b93bc9123103e4fbbf615c538cdb95694f5dad0189926d4fa58fbcb8cf",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18888587
+        }
+      ]
+    },
+    {
+      "version": "0.3.0",
+      "releasedAt": "2026-10-18T00:41:18.132Z",
+      "releaseNotes": "Redesign settings with six horizontal categories, DBX theme colors and neutral buttons. Edit ping and emote wheels visually: select a direction, assign a resource and swap occupied slots; preview remains a separate action. Add emote search and retain image/audio imports and the offline pack download entry. Keep start, pause/resume and save status accessible, with responsive layouts and Chinese/English text. Only DBX plugin capabilities are shown; no autostart or tray settings. The overlay remains natively rendered; Windows now clears a remaining corner-clipping region after display, raise or geometry changes. Global gestures, the earlier screen-edge fix and existing user data remain compatible. Settings continue to use DBX's existing UI container; this update makes no new memory-reduction claim.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.3.0/io.dbx.lolping.lite-0.3.0-darwin-arm64.dbxp",
+          "sha256": "4f1eab2ea0e1bf6e1f416860175603cf6b8ee4576c190a830b7da6d002d01d25",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18787400
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.lolping.lite/0.3.0/io.dbx.lolping.lite-0.3.0-windows-x64.dbxp",
+          "sha256": "fbf540659a31270297d362fbd8a616fdfd551b1b0a36192aac0d544a4f717a67",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 18915468
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "lolPing 轻量版",
+      "description": "在桌面及其他软件窗口上打 LOL 信号和表情，基于 darrenprx/lolPing 改造。"
+    }
+  }
+}

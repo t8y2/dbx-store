@@ -1,0 +1,59 @@
+{
+  "id": "com.dbx.webview",
+  "name": "Browser",
+  "description": "一个工作台解决三件事：干净读文章、实时逛小红书抖音、离线看小说——全在 DBX 内完成。",
+  "publisher": "xingxi",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/chenjie1024/DBX-Browser/v0.7.10/assets/plugin.svg",
+  "tags": [
+    "web",
+    "reader",
+    "browser",
+    "novel"
+  ],
+  "permissions": [
+    "host.storage",
+    "host.events",
+    "host.binary"
+  ],
+  "source": "https://github.com/chenjie1024/DBX-Browser/tree/v0.7.10",
+  "homepage": "https://github.com/chenjie1024/DBX-Browser",
+  "license": "MIT",
+  "latestVersion": "0.7.10",
+  "versions": [
+    {
+      "version": "0.7.8",
+      "releasedAt": "2026-10-27T17:15:51.808Z",
+      "releaseNotes": "首个公开版本：网页正文抽取、站点预设（可自定义增删）、实时页面渲染与鼠标键盘转发、本地 txt 小说阅读。",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.webview/0.7.8/com.dbx.webview-0.7.8-windows-x64.dbxp",
+          "sha256": "111d2b1290ce1121f10dbc03a356a66b9854cbf0117503793fba02bbcddf4de3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2784108
+        }
+      ]
+    },
+    {
+      "version": "0.7.10",
+      "releasedAt": "2026-10-28T15:12:52.945Z",
+      "releaseNotes": "Live view rebuilt for speed and clarity. The backend now streams raw JPEG frames over the new stdio-framed transport with the host.binary permission, so frames skip base64 (~25% smaller) and JSON encode/decode; decoding and painting happen in a Worker OffscreenCanvas, so the main thread does zero decodes; JPEG quality drops to 60 while scrolling and returns to 85 after 350 ms idle; capture is now 1:1 with the panel at the system DPR, so the picture is no longer upscaled and text stays sharp. Fixes the Worker adopting queued frames after the first one, which left only the first frame drawn. Test tooling (protocol smoke test, preset check) now supports the framed transport. Measured on the dev host: 38.3 fps received, 30.3 fps painted, 0 main-thread decodes. Windows only (WebView2).",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dbx.webview/0.7.10/com.dbx.webview-0.7.10-windows-x64.dbxp",
+          "sha256": "b1a5de7914b7d8e6c42e3a4583248f3a080376fb3b77d4f11905f64f2f27e16c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2794972
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Browser",
+      "description": "一个工作台解决三件事：干净读文章、实时逛小红书抖音、离线看小说——全在 DBX 内完成。"
+    }
+  }
+}
