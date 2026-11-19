@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "com.astergaze.nats",
+  "publisher": "astergaze",
+  "version": "0.1.1",
+  "source": "https://github.com/astergaze-technologies/dbx-plugin-nats/tree/v0.1.1",
+  "releaseNotes": "Adds NKey authentication. Fixes int64 values (such as snowflake IDs) and stream sequences above 2^53 being rounded in the UI.",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/astergaze-technologies/dbx-plugin-nats/releases/download/v0.1.1/com.astergaze.nats-0.1.1-darwin-arm64.dbxp",
+      "sha256": "2003b320d34288a48bf2b518659d00678a13e83a5e263069e8b0f7b1bee29892",
+      "size": 5469121
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/astergaze-technologies/dbx-plugin-nats/releases/download/v0.1.1/com.astergaze.nats-0.1.1-darwin-x64.dbxp",
+      "sha256": "54d6b678043aee476a71d8008e250df90496692fc67e77e68ce96bcf6f4f9868",
+      "size": 5843027
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/astergaze-technologies/dbx-plugin-nats/releases/download/v0.1.1/com.astergaze.nats-0.1.1-linux-arm64.dbxp",
+      "sha256": "5bd08fea270f94d8cb05218216358cc206ab36047160ba977525d20c6cf4ae86",
+      "size": 5227678
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/astergaze-technologies/dbx-plugin-nats/releases/download/v0.1.1/com.astergaze.nats-0.1.1-linux-x64.dbxp",
+      "sha256": "268e5350c165c0e41470520af98c538b4e805325881d471f735f26ebdb332a5a",
+      "size": 5717792
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/astergaze-technologies/dbx-plugin-nats/releases/download/v0.1.1/com.astergaze.nats-0.1.1-windows-x64.dbxp",
+      "sha256": "e6812281d02c438d74bb3f8617cb1e400ba0028d3283a3f0fbc6350009db4f52",
+      "size": 5693784
+    }
+  ]
+}
