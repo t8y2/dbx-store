@@ -14876,10 +14876,10 @@
     {
       "id": "io.github.smallrob.sql-review",
       "name": "SQL Review",
-      "description": "静态 SQL 评审台：规则化评审破坏性变更、迁移规范、性能与结构质量；附按方言组织的最佳实践库，评审时联动推荐优化建议。不连库、不执行 SQL。",
+      "description": "静态 SQL 评审台：规则化评审破坏性变更、迁移规范、性能与结构质量；附按方言组织的最佳实践库，评审时联动推荐优化建议；v0.3.0 提供独立的跨文件架构评审页（虚拟数据字典 + ARCH 规则集，独立评分）。不连库、不执行 SQL。",
       "publisher": "smallrob",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.1.33/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.0/icon.svg",
       "tags": [
         "sql",
         "review",
@@ -14892,11 +14892,53 @@
       "permissions": [
         "host.workbench"
       ],
-      "source": "https://github.com/SmallRob/dbx-sql-review/tree/v0.1.33",
+      "source": "https://github.com/SmallRob/dbx-sql-review/tree/v0.3.0",
       "homepage": "https://github.com/SmallRob/dbx-sql-review",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.33",
+      "latestVersion": "0.3.0",
       "versions": [
+        {
+          "version": "0.3.0",
+          "releasedAt": "2026-11-19T13:33:10.298Z",
+          "releaseNotes": "v0.3.0：架构评审拆为独立标签页（粘贴/多文件直连，批量报告一键跳转）；VDD 建模补强——CHANGE COLUMN 重命名、RENAME TABLE/RENAME TO、多列外键完整列清单、列级 REFERENCES 接入关系规则、ARCH016 改按表唯一、ARCH023 别名映射归还真实表；ARCH 规则目录与宽表阈值进规则设置页。全程静态词法分析，不连库、不执行 SQL。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.0/io.github.smallrob.sql-review-0.3.0-darwin-arm64.dbxp",
+              "sha256": "027a1081a6864e6acce934296385d94b5014fbdccdd09a81ca847002fcfae931",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2226517
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.0/io.github.smallrob.sql-review-0.3.0-darwin-x64.dbxp",
+              "sha256": "8181306d48103d83c43195fda72b7fa96a4a97dc925c8ab95470c199543ad3d8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2335582
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.0/io.github.smallrob.sql-review-0.3.0-linux-arm64.dbxp",
+              "sha256": "d8f108b293081ed00ef51ef83a160fdff63e75b5016a5805261e25caaed0ba73",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2202792
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.0/io.github.smallrob.sql-review-0.3.0-linux-x64.dbxp",
+              "sha256": "eb103eb185d75edfbd0251320323c3d7706c59ded5958e04dd14182cb2fe8849",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2350236
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.0/io.github.smallrob.sql-review-0.3.0-windows-x64.dbxp",
+              "sha256": "44d4ac29b1e661a88ffd0a4b9d5926a11d393a23266428b6b9090718cd810040",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2410364
+            }
+          ]
+        },
         {
           "version": "0.1.33",
           "releasedAt": "2026-11-18T14:43:35.511Z",
@@ -15069,11 +15111,11 @@
       "localizations": {
         "en": {
           "name": "SQL Review",
-          "description": "Static SQL review workbench: rule-based checks for destructive changes, migration hygiene, performance and schema quality, plus a dialect-aware best-practice catalog surfaced during review. Never connects to a database and never executes the SQL under review."
+          "description": "Static SQL review workbench: rule-based checks for destructive changes, migration hygiene, performance and schema quality, plus a dialect-aware best-practice catalog surfaced during review. v0.3.0 ships a standalone cross-file architecture review page over a virtual data dictionary with ARCH rules; the architecture score is independent of the six-dimension SQL quality score. Never connects to a database and never executes the SQL under review."
         },
         "zh-CN": {
           "name": "SQL 评审台",
-          "description": "静态 SQL 评审台：规则化评审破坏性变更、迁移规范、性能与结构质量；附按方言组织的最佳实践库，评审时联动推荐优化建议。不连库、不执行 SQL。"
+          "description": "静态 SQL 评审台：规则化评审破坏性变更、迁移规范、性能与结构质量；附按方言组织的最佳实践库，评审时联动推荐优化建议；v0.3.0 提供独立的跨文件架构评审页（虚拟数据字典 + ARCH 规则集），架构分独立评分，不计入六维质量分。不连库、不执行 SQL。"
         }
       }
     },
