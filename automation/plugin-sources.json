@@ -157,6 +157,11 @@
       "autoUpdate": true
     },
     {
+      "repository": "nianshengmei/warren-polaris-api",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
       "repository": "NintyCat/dbx-plugin-NintyAPI",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true

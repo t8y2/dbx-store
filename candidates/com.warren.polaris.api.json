@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "com.warren.polaris.api",
+  "publisher": "warren",
+  "version": "0.6.3",
+  "name": "HTTP File Client (.http)",
+  "description": "Open and edit local IDEA .http / .rest files in place, then run any request with one click: results render in the normal response pane, edits auto-save back to the original file. Syntax highlighting, JSON folding, an interface outline, and a collapsible side panel. Requests are sent by a native Rust sidecar (reqwest), so there is no CORS or forbidden-header restriction.",
+  "icon": "https://raw.githubusercontent.com/nianshengmei/warren-polaris-api/v0.6.3/assets/plugin.svg",
+  "tags": [
+    "http",
+    "api",
+    "rest",
+    "http-file",
+    "ide",
+    "debugging",
+    "network"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/nianshengmei/warren-polaris-api/tree/v0.6.3",
+  "homepage": "https://github.com/nianshengmei/warren-polaris-api",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.6.3：打开 .http 后停在第一行。0.6.2：首次启动在默认目录生成一份可直接跑的 examples.http（GET / POST JSON / 表单 / multipart 上传 / SSE / 跨请求引用 / 动态变量，共 8 节），SSE 按流式读取（最多 10 秒 / 512 KiB，响应区标注已结束或已截断）；接口一览优先显示 ### 标题。0.6.1：顶栏「打开 .http」只弹系统文件对话框，选中确认后才展开浮层；启动只保留右缘入口箭头。0.6.0：.http 编辑器改为浮层，可收起为右缘灰色半透明箭头，上下拖动记住位置。",
+  "localizations": {
+    "zh-CN": {
+      "name": "HTTP 文件客户端（.http）",
+      "description": "直接以源码方式打开、编辑本地 IDEA .http / .rest 文件：每个请求左侧 ▶ 一点即发，结果显示在原响应框，改动自动保存回原文件。带语法高亮、JSON 折叠、接口一览和可收起的侧边浮层；请求由原生 Rust sidecar（reqwest）发出，无 CORS 与禁发头限制。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/nianshengmei/warren-polaris-api/releases/download/v0.6.3/com.warren.polaris.api-0.6.3-darwin-arm64.dbxp",
+      "sha256": "ea961a3e2a116b9a2142141a44f9d9ddce28eb57e0ca495bc7c5c6af9ed99213",
+      "size": 1529928
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/nianshengmei/warren-polaris-api/releases/download/v0.6.3/com.warren.polaris.api-0.6.3-darwin-x64.dbxp",
+      "sha256": "69ff6a042340c2e7a1fcfaad79694c255d47d39ae00a4ef24f464f9137b3404f",
+      "size": 1618323
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/nianshengmei/warren-polaris-api/releases/download/v0.6.3/com.warren.polaris.api-0.6.3-linux-arm64.dbxp",
+      "sha256": "7577ae4c1fd474346df64d431504ea1e1b9722216be80a29091548b97b3b4375",
+      "size": 1621016
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/nianshengmei/warren-polaris-api/releases/download/v0.6.3/com.warren.polaris.api-0.6.3-linux-x64.dbxp",
+      "sha256": "0816a0352b2659c03e7f493283ef78b1b2c1b59ccd2840e2247b5da7b3338600",
+      "size": 1698613
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/nianshengmei/warren-polaris-api/releases/download/v0.6.3/com.warren.polaris.api-0.6.3-windows-x64.dbxp",
+      "sha256": "40b5144e23b9b08354e6322ebd2f6cbcf420fe5cc674ccd0b8c82618d7be5967",
+      "size": 1683838
+    }
+  ]
+}
