@@ -4,7 +4,7 @@
   "publisher": "oncemisery",
   "version": "0.3.5",
   "name": "Hertz Studio Standard",
-  "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine.",
+  "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine. Users who need online music must download the DBX Full edition separately: https://github.com/onceMisery/hertz-studio/releases",
   "tags": [
     "music",
     "player",
@@ -22,7 +22,7 @@
   "localizations": {
     "zh-CN": {
       "name": "Hertz Studio Standard",
-      "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。"
+      "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。 需要在线音乐的需要自行下载 DBX Full 版本：https://github.com/onceMisery/hertz-studio/releases"
     }
   },
   "icon": "https://raw.githubusercontent.com/onceMisery/hertz-studio/hertz-plugin-standard-v0.3.5/plugin/assets/plugin.svg",
