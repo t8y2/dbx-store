@@ -808,7 +808,7 @@
       "description": "Manage NATS servers: JetStream streams, consumers and messages, key-value buckets, object stores, services, publish, request-reply and live subscriptions.",
       "publisher": "astergaze",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.1/icon.svg",
       "tags": [
         "nats",
         "jetstream",
@@ -820,11 +820,53 @@
         "host.events",
         "host.filesystem"
       ],
-      "source": "https://github.com/astergaze-technologies/dbx-plugin-nats/tree/v0.1.0",
+      "source": "https://github.com/astergaze-technologies/dbx-plugin-nats/tree/v0.1.1",
       "homepage": "https://github.com/astergaze-technologies/dbx-plugin-nats",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.0",
+      "latestVersion": "0.1.1",
       "versions": [
+        {
+          "version": "0.1.1",
+          "releasedAt": "2026-11-19T04:21:37.897Z",
+          "releaseNotes": "Adds NKey authentication. Fixes int64 values (such as snowflake IDs) and stream sequences above 2^53 being rounded in the UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.1/com.astergaze.nats-0.1.1-darwin-arm64.dbxp",
+              "sha256": "0062b00958cda91c045cdd236c184fdad2e93f4fbe4da1e52ab03558b7d5239f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5469815
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.1/com.astergaze.nats-0.1.1-darwin-x64.dbxp",
+              "sha256": "9f87f80f1126ab9f3e3c12c61a0c92495ee5d1e9acd6fa0ca81018006ccc1b04",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5843721
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.1/com.astergaze.nats-0.1.1-linux-arm64.dbxp",
+              "sha256": "9938b5b8c67b83eae72f81f37c82041c43cff5ed98ba4437c4fecf268d50ba4f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5228371
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.1/com.astergaze.nats-0.1.1-linux-x64.dbxp",
+              "sha256": "165312134e9876c485837325e298e87f2bf2eed48c65e950add7f62a9edbdea0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5718485
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.1/com.astergaze.nats-0.1.1-windows-x64.dbxp",
+              "sha256": "2c0a368ca5af46e51ee94bb6733a152d40088cb9e324e2ef2a0f4006f3026334",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5694484
+            }
+          ]
+        },
         {
           "version": "0.1.0",
           "releasedAt": "2026-09-26T06:43:34.511Z",
