@@ -242,8 +242,19 @@ jobs:
           aws s3api head-bucket --bucket "$R2_BUCKET" --endpoint-url "$R2_ENDPOINT"
           while IFS=$'\t' read -r key file; do
             if aws s3api head-object --bucket "$R2_BUCKET" --key "$key" --endpoint-url "$R2_ENDPOINT" >/dev/null 2>&1; then
-              echo "::error::R2 object already exists and cannot be overwritten: $key"
-              exit 1
+              if [[ "$file" == *.dbxp ]]; then
+                existing=$(aws s3api head-object --bucket "$R2_BUCKET" --key "$key" --endpoint-url "$R2_ENDPOINT" --query 'ETag' --output text | tr -d '"')
+                incoming=$(openssl dgst -md5 -hex "$signout/$file" | awk '{print $2}')
+                if [[ "$existing" != "$incoming" ]]; then
+                  echo "::error::R2 object already exists with DIFFERENT artifact bytes and cannot be overwritten: $key"
+                  exit 1
+                fi
+              fi
+              # Receipts embed signing timestamps, so identical-logic reruns
+              # produce different bytes; the already-uploaded receipt from the
+              # first (partially failed) run stays authoritative.
+              echo "R2 object already exists; keeping the published copy: $key"
+              continue
             fi
             content_type="application/octet-stream"
             [[ "$file" == *.json ]] && content_type="application/json"
