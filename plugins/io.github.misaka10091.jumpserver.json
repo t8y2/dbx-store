@@ -1,0 +1,74 @@
+{
+  "id": "io.github.misaka10091.jumpserver",
+  "name": "JumpServer",
+  "description": "Fetch JumpServer temporary database credentials and fill DBX connection forms with multi-profile support.",
+  "publisher": "dbx-jumpserver",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/Misaka10091/dbx-jumpserver/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "jumpserver",
+    "database",
+    "credentials",
+    "mysql",
+    "postgresql",
+    "sqlserver"
+  ],
+  "permissions": [
+    "host.connections:read",
+    "host.storage"
+  ],
+  "source": "https://github.com/Misaka10091/dbx-jumpserver/tree/v0.1.0",
+  "homepage": "https://github.com/Misaka10091/dbx-jumpserver",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-11-18T15:58:20.326Z",
+      "releaseNotes": "Initial release with multi-profile credential management and automatic JumpServer database endpoint discovery.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.misaka10091.jumpserver/0.1.0/io.github.misaka10091.jumpserver-0.1.0-darwin-arm64.dbxp",
+          "sha256": "ab56e470ec23c49c5ad512d0d659a2a3f02ae646d2b9ac5872777cebd51d63ae",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4618742
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.misaka10091.jumpserver/0.1.0/io.github.misaka10091.jumpserver-0.1.0-darwin-x64.dbxp",
+          "sha256": "773052468dbba29fbe80d3530511ffbc7b44162d452c2b5fd9c94469117214c7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4850088
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.misaka10091.jumpserver/0.1.0/io.github.misaka10091.jumpserver-0.1.0-linux-arm64.dbxp",
+          "sha256": "b28892a16d50ae505ddd2e65b6bbef61eb4fecef912f0e80acdc91a3a42cc26e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4652621
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.misaka10091.jumpserver/0.1.0/io.github.misaka10091.jumpserver-0.1.0-linux-x64.dbxp",
+          "sha256": "5ecefe2ea39254e7f11f75169561a40cfc3ef2b22dc871e0b81021d93e4113c7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4958165
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.misaka10091.jumpserver/0.1.0/io.github.misaka10091.jumpserver-0.1.0-windows-x64.dbxp",
+          "sha256": "790e99c19630dd0ec4f0ff3600f9e79ea2d16b16a4692cd9fabb0f34c21408b1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 4876551
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "JumpServer",
+      "description": "获取 JumpServer 数据库临时凭证并填入 DBX 连接表单，支持多凭证配置。"
+    }
+  }
+}
