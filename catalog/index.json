@@ -17468,7 +17468,7 @@
       "description": "Professional Elasticsearch management workbench for DBX.",
       "publisher": "xihonglei",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/local.es.studio/0.5.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/local.es.studio/0.5.4/icon.svg",
       "tags": [
         "elasticsearch",
         "database",
@@ -17482,11 +17482,67 @@
         "host.connections:read",
         "host.events"
       ],
-      "source": "https://github.com/Sanshi956/dbx-plugin-es-studio/tree/v0.5.2",
+      "source": "https://github.com/Sanshi956/dbx-plugin-es-studio/tree/v0.5.4",
       "homepage": "https://github.com/Sanshi956/dbx-plugin-es-studio",
       "license": "MIT",
-      "latestVersion": "0.5.2",
+      "latestVersion": "0.5.4",
       "versions": [
+        {
+          "version": "0.5.4",
+          "releasedAt": "2026-11-19T04:09:41.596Z",
+          "releaseNotes": "0.5.4: see https://github.com/Sanshi956/dbx-plugin-es-studio/releases/tag/v0.5.4.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/local.es.studio/0.5.4/local.es.studio-0.5.4-darwin-arm64.dbxp",
+              "sha256": "1b6da16147a6bea8af74c895b5ff41ad9eeec252418100cd20513a2653b9b870",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4475603
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/local.es.studio/0.5.4/local.es.studio-0.5.4-darwin-x64.dbxp",
+              "sha256": "b829a690b26de1f79062cfe4122a71e4f160a02775073ab967e422b96c32a9f2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4690159
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/local.es.studio/0.5.4/local.es.studio-0.5.4-linux-arm64.dbxp",
+              "sha256": "d77b04a240a3c8dca528575407ef9df72134983e4c4548791f0ac0360f92cb8c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4459782
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/local.es.studio/0.5.4/local.es.studio-0.5.4-linux-x64.dbxp",
+              "sha256": "9f8313ee43220149e48473ac6c24d5e1d1c53b641e6ac0a8167b3c4c6454ef9d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4752731
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/local.es.studio/0.5.4/local.es.studio-0.5.4-windows-x64.dbxp",
+              "sha256": "2599f2aa1b1c1d5ca5fa05313a7e1fdde3e0879c3ef79732e761fbc7c79e5106",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4766641
+            }
+          ]
+        },
+        {
+          "version": "0.5.3",
+          "releasedAt": "2026-11-18T16:03:53.859Z",
+          "releaseNotes": "0.5.3: see https://github.com/Sanshi956/dbx-plugin-es-studio/releases/tag/v0.5.3.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/local.es.studio/0.5.3/local.es.studio-0.5.3-windows-x64.dbxp",
+              "sha256": "1b3bbb6d6b1e93cbc5290b98930d60ae5e1a73474b76d47e7cabea27983030cc",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4766756
+            }
+          ]
+        },
         {
           "version": "0.5.2",
           "releasedAt": "2026-11-18T15:15:32.367Z",
@@ -17811,6 +17867,49 @@
         "zh-CN": {
           "name": "MyBatis SQL 还原",
           "description": "粘贴 MyBatis 日志，自动把参数回填到 SQL 中，得到可直接执行的 SQL。"
+        }
+      }
+    },
+    {
+      "id": "org.story.dbx-json-editor",
+      "name": "JSON Editor",
+      "description": "A professional JSON editing workspace featuring Code, Tree and Table views, dual-pane editing, formatting, validation and diff.",
+      "publisher": "story",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/org.story.dbx-json-editor/0.1.0/icon.svg",
+      "tags": [
+        "json",
+        "editor",
+        "tools"
+      ],
+      "permissions": [
+        "host.storage",
+        "host.workbench"
+      ],
+      "source": "https://github.com/any-stories/dbx-plugin-json-editor",
+      "homepage": "https://github.com/any-stories/dbx-plugin-json-editor",
+      "license": "MIT",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-11-18T16:18:41.332Z",
+          "releaseNotes": "Initial release.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/org.story.dbx-json-editor/0.1.0/org.story.dbx-json-editor-0.1.0-universal.dbxp",
+              "sha256": "b72bb51d16b8849b50d832648dc64c686234f6d846372744c31c367375a28f59",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 552881
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "JSON 编辑器",
+          "description": "专业 JSON 编辑工作台: Code / Tree / Table 三视图, 双面板编辑, 格式化, 校验与差异比较"
         }
       }
     },
