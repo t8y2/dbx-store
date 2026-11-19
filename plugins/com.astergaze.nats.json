@@ -16,10 +16,10 @@
     "host.events",
     "host.filesystem"
   ],
-  "source": "https://github.com/astergaze-technologies/dbx-plugin-nats/tree/v0.1.1",
+  "source": "https://github.com/astergaze-technologies/dbx-plugin-nats/tree/v0.1.2",
   "homepage": "https://github.com/astergaze-technologies/dbx-plugin-nats",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.1",
+  "latestVersion": "0.1.2",
   "versions": [
     {
       "version": "0.1.0",
@@ -102,6 +102,48 @@
           "sha256": "2c0a368ca5af46e51ee94bb6733a152d40088cb9e324e2ef2a0f4006f3026334",
           "signingKeyId": "dbx-store-release-2026",
           "size": 5694484
+        }
+      ]
+    },
+    {
+      "version": "0.1.2",
+      "releasedAt": "2026-11-19T13:22:46.511Z",
+      "releaseNotes": "Fixes the plugin failing to start because the 0.1.1 sidecar reported version 0.1.0.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.2/com.astergaze.nats-0.1.2-darwin-arm64.dbxp",
+          "sha256": "883869e205463893f7d889f1348bdc1c99fb70f91759569b363705cb31b7ba66",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5469825
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.2/com.astergaze.nats-0.1.2-darwin-x64.dbxp",
+          "sha256": "673b4ab702523a60b873eafe8ee62b83ccd890489bfb684f73bb338dad78f05a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5843727
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.2/com.astergaze.nats-0.1.2-linux-arm64.dbxp",
+          "sha256": "fbcb50dee32e1f7d13c1b476a810e4f04ab53ba4bfa92b0a8d136f8e54ae32d0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5228366
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.2/com.astergaze.nats-0.1.2-linux-x64.dbxp",
+          "sha256": "7ac4e629d5b4e763d010eda95fa2219c77ca6f7e8bcc2c4a84943183d861d467",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5718478
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.astergaze.nats/0.1.2/com.astergaze.nats-0.1.2-windows-x64.dbxp",
+          "sha256": "6dcb123bc4eecb09cbbbf381e36add27aedec6234287938f926c39ad30314f39",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 5694485
         }
       ]
     }
