@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "com.astergaze.nats",
+  "publisher": "astergaze",
+  "version": "0.1.2",
+  "source": "https://github.com/astergaze-technologies/dbx-plugin-nats/tree/v0.1.2",
+  "releaseNotes": "Fixes the plugin failing to start because the 0.1.1 sidecar reported version 0.1.0.",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/astergaze-technologies/dbx-plugin-nats/releases/download/v0.1.2/com.astergaze.nats-0.1.2-darwin-arm64.dbxp",
+      "sha256": "8ed49fe259959694342b839a6b33efbcf800c19f7fe60c983af9da685c92c250",
+      "size": 5469131
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/astergaze-technologies/dbx-plugin-nats/releases/download/v0.1.2/com.astergaze.nats-0.1.2-darwin-x64.dbxp",
+      "sha256": "ec266f17cfe04c352658e1c56f5896021802a1b295a2aad4d3183f323ef63f40",
+      "size": 5843033
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/astergaze-technologies/dbx-plugin-nats/releases/download/v0.1.2/com.astergaze.nats-0.1.2-linux-arm64.dbxp",
+      "sha256": "b0ff4a7a8feb11a132d5035c472c8a2bfc5bb1abc1453d9ac5e2ffcb639611cd",
+      "size": 5227671
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/astergaze-technologies/dbx-plugin-nats/releases/download/v0.1.2/com.astergaze.nats-0.1.2-linux-x64.dbxp",
+      "sha256": "2e77ac590f6a0dadc362ac956c3c45ab93b3adddd56e79c50f85dd851383354e",
+      "size": 5717786
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/astergaze-technologies/dbx-plugin-nats/releases/download/v0.1.2/com.astergaze.nats-0.1.2-windows-x64.dbxp",
+      "sha256": "a8dddb558a1286be4b11fbcacc8bbb51e0a83feac6b0bc0cd1e818b30ba6010f",
+      "size": 5693786
+    }
+  ]
+}
