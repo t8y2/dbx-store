@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "com.warren.polaris.api",
+  "publisher": "warren",
+  "version": "0.6.4",
+  "name": "HTTP File Client (.http)",
+  "description": "Community fork of polaris-api (com.polaris.api) that focuses on .http files: open a local IDEA .http / .rest file in place, edit the source with syntax highlighting, JSON folding and a request outline, then run any request with one click — the response renders in the normal pane and edits autosave back to the file. Adds an in-place .http editor, a bundled runnable examples.http, multipart upload bodies and streamed text/event-stream responses on top of upstream v0.2.0. Requests are sent by a native Rust sidecar (reqwest), so there is no CORS or forbidden-header restriction.",
+  "icon": "https://raw.githubusercontent.com/nianshengmei/warren-polaris-api/v0.6.4/assets/plugin.svg",
+  "tags": [
+    "http",
+    "api",
+    "rest",
+    "http-file",
+    "ide",
+    "debugging",
+    "network"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/nianshengmei/warren-polaris-api/tree/v0.6.4",
+  "homepage": "https://github.com/nianshengmei/warren-polaris-api",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.6.4 — 可辨识性调整（商店审核要求）：全新图标，与上游 polaris-api 明显区分；列表文案改写为「polaris-api 的社区 fork，专注 .http 文件编辑」并明示派生关系；包内补齐 LICENSE 与 NOTICE（Apache-2.0 §4 署名，派生自 misxzaiz/polaris-api v0.2.0）。sidecar 与 UI 代码与 0.6.3 完全一致。版本号沿用本 fork 自己的历史，与原作的 0.2.0 不可比。\n\n0.6.3：打开 .http 后停在第一行。0.6.2：首次启动生成可直接跑的 examples.http（8 节，含 SSE），SSE 按流式读取（10 秒 / 512 KiB 上限）。0.6.1：「打开 .http」只弹系统对话框，启动只保留右缘入口箭头。0.6.0：.http 编辑器改为可收起的浮层，右缘箭头可拖动。",
+  "localizations": {
+    "zh-CN": {
+      "name": "HTTP 文件客户端（.http）",
+      "description": "polaris-api（com.polaris.api）的社区 fork，专注 .http 文件：直接打开本地 IDEA .http / .rest 文件，带语法高亮、JSON 折叠与接口一览，每个请求一点即发，结果显示在原响应框，改动自动保存回文件。在上游 v0.2.0 基础上新增原位 .http 编辑、自带可运行示例、multipart 上传体与 SSE 流式响应；请求由原生 Rust sidecar（reqwest）发出，无 CORS 与禁发头限制。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/nianshengmei/warren-polaris-api/releases/download/v0.6.4/com.warren.polaris.api-0.6.4-darwin-arm64.dbxp",
+      "sha256": "6a17a41a33419969171f7ec6c17c4a5bac73a28c5dc8a18b95f3b818aa443451",
+      "size": 1534203
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/nianshengmei/warren-polaris-api/releases/download/v0.6.4/com.warren.polaris.api-0.6.4-darwin-x64.dbxp",
+      "sha256": "2cfc8b38397263b5346a9f77749eba2b85b7a3d81cafd00436d1703092215b34",
+      "size": 1623100
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/nianshengmei/warren-polaris-api/releases/download/v0.6.4/com.warren.polaris.api-0.6.4-linux-arm64.dbxp",
+      "sha256": "fa2d2689e6945689df3df1a23fff89645ceb6d6d5bb48b1ad06c4b7c8a483aad",
+      "size": 1625919
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/nianshengmei/warren-polaris-api/releases/download/v0.6.4/com.warren.polaris.api-0.6.4-linux-x64.dbxp",
+      "sha256": "55af901fcadf5b630b577094441c620699be7e6b170235c8c0dc2d6817fe9639",
+      "size": 1703683
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/nianshengmei/warren-polaris-api/releases/download/v0.6.4/com.warren.polaris.api-0.6.4-windows-x64.dbxp",
+      "sha256": "d766fdb786f74a447c050fc12814ebc191d497f899e5be7f5cdb9bacfd7f2acb",
+      "size": 1689066
+    }
+  ]
+}
