@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "com.object.browser",
+  "publisher": "huangqiang",
+  "version": "1.4.2",
+  "releaseNotes": "修复两个严重问题：① 多标签页凭证互串——后打开的连接会覆盖先打开的连接状态，切回旧标签页操作时使用错误凭证，同名桶的写操作可能落到错误存储；② 上传分片跨连接污染与断点续传失效——同名同大小文件上传到不同连接时会互相接管分片，且分片用随机文件名导致跨进程续传从未真正生效。另移除宿主 CSP 下无法加载的 CDN 回退死代码。",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/huangqiang008/dbx-object-storage/releases/download/v1.4.2/com.object.browser-1.4.2-darwin-arm64.dbxp",
+      "sha256": "78d5884e43c21d8332fc34a1d41ad25227a3499d7bcf1146a989b4e245afe6f7",
+      "size": 7916614
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/huangqiang008/dbx-object-storage/releases/download/v1.4.2/com.object.browser-1.4.2-windows-x64.dbxp",
+      "sha256": "22abb3a0901eb796db27dce4940e6ebc7ddd598b838904250e2ef70193d3a76a",
+      "size": 8403219
+    }
+  ]
+}
