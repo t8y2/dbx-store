@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.oncemisery.hertz-studio",
+  "publisher": "oncemisery",
+  "version": "0.3.6",
+  "name": "Hertz Studio Standard",
+  "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine. Users who need online music must download the DBX Full edition separately: https://github.com/onceMisery/hertz-studio/releases",
+  "tags": [
+    "music",
+    "player",
+    "lyrics",
+    "audio",
+    "local-first"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage",
+    "host.workbench"
+  ],
+  "homepage": "https://github.com/onceMisery/hertz-studio",
+  "license": "MIT",
+  "localizations": {
+    "zh-CN": {
+      "name": "Hertz Studio Standard",
+      "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。 需要在线音乐的需要自行下载 DBX Full 版本：https://github.com/onceMisery/hertz-studio/releases"
+    }
+  },
+  "icon": "https://raw.githubusercontent.com/onceMisery/hertz-studio/hertz-plugin-standard-v0.3.6/plugin/assets/plugin.svg",
+  "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.6",
+  "releaseNotes": "## Hertz Studio DBX Standard 0.3.6\n\n正式版本号 `0.3.6`，与独立版使用同一份 GitHub master 源码提交 `9da46de`。这是 DBX 商店的未签名候选，签名由 DBX 侧维护者完成。\n\n### 安装\n\n需要 DBX `>= 0.6.35`。下载对应平台的 `.dbxp`，从 DBX 插件管理中安装。插件 ID 为 `io.github.oncemisery.hertz-studio`。\n\n| 平台 | 文件 |\n| --- | --- |\n| Windows x64 | `io.github.oncemisery.hertz-studio-0.3.6-windows-x64.dbxp` |\n| Linux x64 | `io.github.oncemisery.hertz-studio-0.3.6-linux-x64.dbxp` |\n| Linux arm64 | `io.github.oncemisery.hertz-studio-0.3.6-linux-arm64.dbxp` |\n| macOS x64 | `io.github.oncemisery.hertz-studio-0.3.6-darwin-x64.dbxp` |\n| macOS Apple Silicon | `io.github.oncemisery.hertz-studio-0.3.6-darwin-arm64.dbxp` |\n\n`release-candidates.json` 汇总五个目标的下载地址、大小与 SHA-256，供商店审核逐项核对。Standard 不编译商业平台协议，只保留本地音乐、WebDAV、开放曲库与公开播客。\n\n### 本次更新\n\n- 修复 0.3.5 独立版打开壁纸/歌词设置即闪退的问题：刷新内嵌组合目录的 lock 身份，并在发布打包前新增堆预算资格门禁。\n- 壁纸编辑：图层分组与顺序编辑、增量歌单（最多 1000 项）、原生社区创作与举报流程。\n- 离线壁纸与舞台设计补全：动态组合、授权作品分支、合格组合镜像、舞台资源所有权、双重呈现与离线评估/创作工具。\n- 舞台性能：避免空闲重绘，运行时素材改为惰性加载。\n- 界面：原生闪屏；每日推荐、队列与收藏升入主导航；歌词/房间/设置对话框关闭按钮改为旋转 X 图标。\n- 桌面 AI 回通道仅在独立版 desktop-host 编译，插件形态不包含。\n\n### 验证与范围\n\n由 `release dbx plugin` 工作流构建五个目标，以该次运行为准。本次为未签名候选，不证明真实商店签名、净系统安装或全部宿主图形界面旅程。\n",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.6/io.github.oncemisery.hertz-studio-0.3.6-darwin-arm64.dbxp",
+      "sha256": "4a98256ae53fd71fac90892b592b6b8d4a53e6e64c62c761b550aa689bf80c52",
+      "size": 14744534
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.6/io.github.oncemisery.hertz-studio-0.3.6-darwin-x64.dbxp",
+      "sha256": "cf777f7b147e44d3f05868472e7d288c6479e5938be9ebf60e971c4036941cc9",
+      "size": 15844855
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.6/io.github.oncemisery.hertz-studio-0.3.6-linux-arm64.dbxp",
+      "sha256": "fd03bf6043e2f5db769c4404c980266cceee4680206fd773f946f437f517440f",
+      "size": 16478185
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.6/io.github.oncemisery.hertz-studio-0.3.6-linux-x64.dbxp",
+      "sha256": "43c6791989956741c9f7c5ff35e62df2e53fe60328a9f43ef743a1ed769e3840",
+      "size": 16727204
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.6/io.github.oncemisery.hertz-studio-0.3.6-windows-x64.dbxp",
+      "sha256": "1fb737d318531a4660c2ca6dab418338be429a68958172f0da068e5ddbf3e7b2",
+      "size": 14576378
+    }
+  ]
+}
