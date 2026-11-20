@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.docker",
+  "publisher": "ezreal-byte",
+  "version": "0.4.0",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/Ezreal-byte/dbx-docker-plugin/releases/download/v0.4.0/io.dbx.docker-0.4.0-darwin-arm64.dbxp",
+      "sha256": "c1ae1b63bb32741d23f780f9d6c302bcc89ccc66b263131125a956c00fa98ecb",
+      "size": 7514701
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/Ezreal-byte/dbx-docker-plugin/releases/download/v0.4.0/io.dbx.docker-0.4.0-darwin-x64.dbxp",
+      "sha256": "666e48c9423890007c3e68d30e151168530f536d58538b29b8e65ec2bf0b1e5f",
+      "size": 7969669
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/Ezreal-byte/dbx-docker-plugin/releases/download/v0.4.0/io.dbx.docker-0.4.0-linux-arm64.dbxp",
+      "sha256": "ec39e8add8d19f9d1f7163e4aae9a5f08262c5e14420a8324830b4e21738846d",
+      "size": 7254548
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/Ezreal-byte/dbx-docker-plugin/releases/download/v0.4.0/io.dbx.docker-0.4.0-linux-x64.dbxp",
+      "sha256": "185eac6178bba7fefaa345e0ae3afcf498a627117ba404f4539b46c5bcd8e9ad",
+      "size": 7864440
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/Ezreal-byte/dbx-docker-plugin/releases/download/v0.4.0/io.dbx.docker-0.4.0-windows-x64.dbxp",
+      "sha256": "5d05d0d4d991d38498b69e174db61bcd259e4bf48abdd1ee59f99813d6a7377f",
+      "size": 8007772
+    }
+  ],
+  "permissions": [
+    "host.ai",
+    "host.binary",
+    "host.workbench"
+  ]
+}
