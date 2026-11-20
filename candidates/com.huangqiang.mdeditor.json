@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "com.huangqiang.mdeditor",
+  "publisher": "huangqiang",
+  "version": "2.0.0",
+  "name": "Markdown",
+  "description": "A WYSIWYG Markdown editor for local files inside DBX, powered by iml-editor-lite (MIT) and Tiptap 2.",
+  "icon": "https://raw.githubusercontent.com/huangqiang008/dbx-markdown-editor/v2.0.0/assets/plugin.svg",
+  "tags": [
+    "markdown",
+    "editor",
+    "notes",
+    "wysiwyg"
+  ],
+  "permissions": [
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/huangqiang008/dbx-markdown-editor",
+  "homepage": "https://github.com/huangqiang008/dbx-markdown-editor",
+  "license": "MIT",
+  "releaseNotes": "2.0.0: new editing core (iml-editor-lite lite-v26.4.6, MIT) with rich-text / source dual mode, verbatim saving, Callout, [TOC], WikiLink, KaTeX, Mermaid, find & replace, slash menu, and export to HTML / Word / long image. Bundled third-party license texts now ship in assets/licenses/, and the About panel reports the upstream copyright and license correctly.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Markdown 编辑器",
+      "description": "DBX 工作台内的所见即所得 Markdown 编辑器：富文本 / 源码双模、原样保存、公式与图表、导出 HTML / Word / 长图。基于 iml-editor-lite（MIT）。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/huangqiang008/dbx-markdown-editor/releases/download/v2.0.0/com.huangqiang.mdeditor-2.0.0-windows-x64.dbxp",
+      "sha256": "de84dc74565c3f3dd07a2b5dfcc39a2269d76bd16829ccfaa9df2424dd3c3ba9",
+      "size": 5140021
+    }
+  ]
+}
