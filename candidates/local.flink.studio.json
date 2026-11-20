@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "local.flink.studio",
+  "publisher": "smallrob",
+  "version": "0.1.3",
+  "name": "Flink Studio",
+  "description": "通用 Flink 客户端工作台：连接 JobManager REST API，实时查看集群概览、运行中作业与算子、TaskManager 指标与日志、集群配置；独家的「消费内容」页直接从 print-sink 日志解析 Kafka 消费记录，以表格呈现每条消息的操作类型与各字段。全链路只读，无需 SSH、无需数据库。",
+  "icon": "https://github.com/SmallRob/dbx-plugin-flink-studio/raw/v0.1.3/assets/plugin.svg",
+  "tags": [
+    "flink",
+    "streaming",
+    "kafka",
+    "monitoring",
+    "consumer",
+    "developer-tools"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.storage",
+    "host.connections:read",
+    "host.events"
+  ],
+  "source": "https://github.com/SmallRob/dbx-plugin-flink-studio/tree/v0.1.3",
+  "homepage": "https://github.com/SmallRob/dbx-plugin-flink-studio",
+  "license": "MIT",
+  "releaseNotes": "0.1.3: Kafka consumption path — job pipeline visualization (Source→Calc→Sink flows), ingest metrics cards with topic/partition offsets from Flink REST metrics, and consumption lineage hints (broker/source tables/topics from TaskManager logs) on the Consumed Messages page.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Flink Studio",
+      "description": "通用 Flink 客户端工作台：连接 JobManager REST API，实时查看集群概览、运行中作业与算子、TaskManager 指标与日志、集群配置；独家的「消费内容」页直接从 print-sink 日志解析 Kafka 消费记录，以表格呈现每条消息的操作类型与各字段。全链路只读，无需 SSH、无需数据库。"
+    },
+    "en": {
+      "name": "Flink Studio",
+      "description": "A general-purpose Flink client workbench: connect to the JobManager REST API and inspect cluster overview, running jobs and operators, TaskManager metrics and logs, and cluster configuration. The unique \"Consumed Messages\" tab parses Kafka records straight from print-sink logs into a table with change type and every field. Fully read-only — no SSH, no database required."
+    }
+  },
+  "targets": [
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/SmallRob/dbx-plugin-flink-studio/releases/download/v0.1.3/local.flink.studio-0.1.3-linux-x64.dbxp",
+      "sha256": "e1babe1db9be0299dc8b8ff8253dd23c8577d856ddd5f04707a260592dbc77ab",
+      "size": 2330371
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/SmallRob/dbx-plugin-flink-studio/releases/download/v0.1.3/local.flink.studio-0.1.3-linux-arm64.dbxp",
+      "sha256": "902baa21302595dcc3a1d7d090c432cb0a8588803191b6d6b6f23be0e6a84e4d",
+      "size": 2134020
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/SmallRob/dbx-plugin-flink-studio/releases/download/v0.1.3/local.flink.studio-0.1.3-darwin-x64.dbxp",
+      "sha256": "deb52f436f81ce69fe929d01229de6c3c7960a48ee5417143324944eed2a530f",
+      "size": 2365140
+    },
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/SmallRob/dbx-plugin-flink-studio/releases/download/v0.1.3/local.flink.studio-0.1.3-darwin-arm64.dbxp",
+      "sha256": "b5779cd06adbfe4bbdacd4f866450230f6c971d60f6b3dd82233149e44402987",
+      "size": 2211043
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/SmallRob/dbx-plugin-flink-studio/releases/download/v0.1.3/local.flink.studio-0.1.3-windows-x64.dbxp",
+      "sha256": "e2a927684d6f5b34cf1b0c6cef1fd8dc1a100471f7869f9d5cc5fc3280d076c6",
+      "size": 2376046
+    }
+  ]
+}
