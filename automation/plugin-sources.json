@@ -291,8 +291,13 @@
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     },
-    {
+        {
       "repository": "any-stories/dbx-plugin-json-editor",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
+      "repository": "marvinwenyong/dbx-fs-plugin",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
     }
