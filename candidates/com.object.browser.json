@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "com.object.browser",
+  "publisher": "huangqiang",
+  "version": "1.4.2",
+  "name": "Object Storage",
+  "tags": [
+    "storage",
+    "oss",
+    "s3",
+    "minio",
+    "object-storage",
+    "browser"
+  ],
+  "license": "MIT",
+  "releaseNotes": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, R2, COS...). Driver abstraction, large-directory pagination, chunked upload, presigned sharing, file preview, multi-select batch delete/download.\n\nDisclaimer: this is an independent third-party plugin. It is not affiliated with, endorsed, authorized or sponsored by any of the storage vendors named above; vendor and service names are used solely to indicate protocol compatibility and remain the property of their respective owners. Credentials are used only between your machine and your own storage service and are never sent to third parties; the Secret is stored in plaintext on this machine only if you explicitly opt in. Presigned links grant access to anyone holding them until they expire.",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/huangqiang008/dbx-object-storage/releases/download/v1.4.2/com.object.browser-1.4.2-darwin-arm64.dbxp",
+      "sha256": "78d5884e43c21d8332fc34a1d41ad25227a3499d7bcf1146a989b4e245afe6f7",
+      "size": 7916614
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/huangqiang008/dbx-object-storage/releases/download/v1.4.2/com.object.browser-1.4.2-windows-x64.dbxp",
+      "sha256": "22abb3a0901eb796db27dce4940e6ebc7ddd598b838904250e2ef70193d3a76a",
+      "size": 8403219
+    }
+  ],
+  "permissions": [
+    "host.events",
+    "host.filesystem",
+    "host.storage",
+    "host.workbench"
+  ]
+}
