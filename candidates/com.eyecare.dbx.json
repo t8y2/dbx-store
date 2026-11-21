@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "com.eyecare.dbx",
+  "publisher": "xyun2028",
+  "version": "0.2.3",
+  "name": "Eye眼",
+  "description": "Screen color temperature and tint inside DBX: a draggable 24-hour warmth curve whose anchors you can add or remove, sunrise/sunset scheduling computed locally, per-monitor settings so each display follows the global curve or keeps its own warmth or tint, 20-20-20 break reminders that briefly dim the screen in a rest color you pick, pausing after two minutes without keyboard or mouse input, and on-device eye-strain insights. It adjusts the display gamma table instead of overlaying a translucent tint.",
+  "icon": "https://raw.githubusercontent.com/xyun2028/dbx-eyecare/v0.2.3/ui/icon.png",
+  "tags": [
+    "eyecare",
+    "color-temperature",
+    "gamma",
+    "health",
+    "presets"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.events"
+  ],
+  "source": "https://github.com/xyun2028/dbx-eyecare/tree/v0.2.3",
+  "homepage": "https://github.com/xyun2028/dbx-eyecare",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.2.3 lets you choose the color the screen fades to during a break: follow your current warmth, use a fixed preset (amber 1900K, warm orange 2400K, deep red 1200K), or pick any color with the picker. Brightness still dips for the break and comes back a few seconds later, and configurations from earlier versions keep the previous behavior. Everything from 0.2.2 is still here: a 24-hour curve with add, remove and drag anchors (up to 12), custom presets, offline sunrise and sunset scheduling, separate weekday and weekend curves, per-monitor colors so each display follows the global curve or keeps its own warmth or tint, break reminders that can be turned off, pausing after two minutes without input, yielding to fullscreen content, stepping aside when another gamma tool takes over, on-device screen-time statistics with off-by-default eye-strain suggestions, throttled display writes and log rotation. Apache-2.0. Schedules from earlier versions are migrated automatically.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Eye眼",
+      "description": "在 DBX 里调屏幕色温与滤色：一条可以自己增减锚点、直接拖动的 24 小时曲线，按当地日出日落自动切换，每块屏可以各自选跟随全局、自己的色温或自己的滤色，20-20-20 休息提醒到点把屏幕短暂压暗，压成什么颜色可以自己选。超过两分钟没碰键鼠就暂停提醒和计时，全屏内容时让位，别的调色软件抢桌时不硬碰。用眼记录和用眼建议都在本地，用眼建议默认关闭。直接改显示器的 Gamma 表，不盖半透明遮罩。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/xyun2028/dbx-eyecare/releases/download/v0.2.3/com.eyecare.dbx-0.2.3-darwin-arm64.dbxp",
+      "sha256": "b419bddf8aeb53681386dddc278ef7791158a8d6d460376ac859238315c1a633",
+      "size": 517387
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/xyun2028/dbx-eyecare/releases/download/v0.2.3/com.eyecare.dbx-0.2.3-linux-x64.dbxp",
+      "sha256": "47c24286a2ab5c100e92274a256b04d0fc65eea333af4e669360778f9c17829f",
+      "size": 636629
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/xyun2028/dbx-eyecare/releases/download/v0.2.3/com.eyecare.dbx-0.2.3-windows-x64.dbxp",
+      "sha256": "701b919ae371fe21d48e4005e32dc8ff8fbe281036ed5f57aca7ddddcbcdec3a",
+      "size": 905103
+    }
+  ]
+}
