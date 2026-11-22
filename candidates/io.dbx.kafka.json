@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.kafka",
+  "publisher": "jinpy",
+  "version": "0.1.58",
+  "name": "Kafka Studio",
+  "description": "Operate Apache Kafka from one DBX workspace: inspect topics, brokers, and consumer lag; search, stream, and produce messages with multi-channel filters and payload decoding; manage offsets, ACLs, and Schema Registry. Read-only by default, with guarded writes and 11 MCP tools for AI automation.",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.58/assets/plugin.svg",
+  "tags": [
+    "kafka",
+    "streaming",
+    "messaging",
+    "schema-registry"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/jinpy666/dbx-plugin-kafka",
+  "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
+  "license": "MIT",
+  "releaseNotes": "Kafka Studio v0.1.58 正式版。相对 v0.1.57：PROTOBUF SR 解码增强（issue #83 跟进，PR #85）——Confluent SR 连接默认勾选解码挂载，subject 可留空、按消息 wire 中的 schemaID 反查 subject/version 自动挂载；Confluent message index（消息封装内嵌套 message 选择）按规范解析与编码（zigzag 长度前缀 + zigzag 索引、[0] 单字节优化），修复非平凡 index（如 Map 字段内嵌套消息）解码错误与 produce 编码不合规，旧格式载荷保留回退兼容；兼容非 protoc 生成器描述符（map entry 小驼峰命名、type_name 短名、字段类型缺失），按词法作用域归一化补齐；SR 取数改挂会话根 context + 失败缓存，扫描窗口到点后不再满屏 context deadline exceeded。体验：消费结果默认最新在前；「最近」纯浏览（无过滤/聚合条件）回退窗口收窄到 limit 条，不再回退整个 maxScan 扫描面；显式挂载默认格式 avro→protobuf。",
+  "localizations": {
+    "zh-CN": {
+      "name": "Kafka Studio",
+      "description": "在 DBX 工作台中运维 Apache Kafka：巡检 topic、broker 与消费组 lag，多通道过滤检索与流式消费消息并解码 payload，管理 offset、ACL 与 Schema Registry。默认只读、写操作受确认门保护，并内置 11 个 MCP 工具交给 AI 自动化。"
+    },
+    "zh-TW": {
+      "name": "Kafka Studio",
+      "description": "在 DBX 工作台維運 Apache Kafka：巡檢 topic、broker 與消費組 lag，以多通道過濾檢索與串流消費訊息並解碼 payload，管理 offset、ACL 與 Schema Registry。預設唯讀、寫入操作受確認閘保護，並內建 11 個 MCP 工具交給 AI 自動化。"
+    },
+    "en": {
+      "name": "Kafka Studio",
+      "description": "Operate Apache Kafka from one DBX workspace: inspect topics, brokers, and consumer lag; search, stream, and produce messages with multi-channel filters and payload decoding; manage offsets, ACLs, and Schema Registry. Read-only by default, with guarded writes and 11 MCP tools for AI automation."
+    },
+    "es": {
+      "name": "Kafka Studio",
+      "description": "Opere Apache Kafka desde un único espacio de trabajo de DBX: inspeccione topics, brokers y el lag de los grupos de consumo; busque, consuma en streaming y produzca mensajes con filtros multicanal y decodificación de payloads; gestione offsets, ACL y Schema Registry. Solo lectura por defecto, escrituras con confirmación y 11 herramientas MCP para automatizar con IA."
+    },
+    "it": {
+      "name": "Kafka Studio",
+      "description": "Gestisci Apache Kafka da un unico workspace DBX: ispeziona topic, broker e lag dei gruppi di consumatori; cerca, consuma in streaming e produce messaggi con filtri multicanale e decodifica dei payload; gestisci offset, ACL e Schema Registry. Sola lettura per impostazione predefinita, scritture con conferma e 11 strumenti MCP per l'automazione con l'IA."
+    },
+    "ja": {
+      "name": "Kafka Studio",
+      "description": "DBX のワークスペースで Apache Kafka を運用：トピック・ブローカー・コンシューマーラグの巡検、マルチチャネルフィルタによるメッセージ検索、ストリーミング消費とプロデュース、payload のデコード、offset・ACL・Schema Registry の管理。デフォルトは読み取り専用、書き込みは確認ゲートで保護し、AI 自動化のための 11 個の MCP ツールを内蔵。"
+    },
+    "pt-BR": {
+      "name": "Kafka Studio",
+      "description": "Opere o Apache Kafka a partir de um único workspace do DBX: inspecione tópicos, brokers e o lag dos grupos de consumidores; pesquise, consuma em streaming e produza mensagens com filtros multicanal e decodificação de payloads; gerencie offsets, ACLs e Schema Registry. Somente leitura por padrão, gravações com confirmação e 11 ferramentas MCP para automação com IA."
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.58/io.dbx.kafka-0.1.58-darwin-arm64.dbxp",
+      "sha256": "7a2beb1d08997bf70692c5f796cd8571801307b980ca369820789c3e16c66cd3",
+      "size": 14423973
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.58/io.dbx.kafka-0.1.58-darwin-x64.dbxp",
+      "sha256": "1a928d0418314fda1a12ec08213ef8f28dd2a4e1a76aad4750a13d28b59bfe69",
+      "size": 15312584
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.58/io.dbx.kafka-0.1.58-linux-arm64.dbxp",
+      "sha256": "af1059a9a10d160dec778abc8d81e3a77963e680e981d0ffc3589b126bc601aa",
+      "size": 13592115
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.58/io.dbx.kafka-0.1.58-linux-x64.dbxp",
+      "sha256": "b6b598431507e37e299c616d938acd161628caf4edd3b1276cb3c5491a2db671",
+      "size": 14805753
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/jinpy666/dbx-plugin-kafka/releases/download/kafka-v0.1.58/io.dbx.kafka-0.1.58-windows-x64.dbxp",
+      "sha256": "16da0d261917872680df837475552e9ba133bb3cba207671deff42cd6fa315c6",
+      "size": 14917942
+    }
+  ]
+}
