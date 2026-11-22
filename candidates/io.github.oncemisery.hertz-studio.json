@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.oncemisery.hertz-studio",
+  "publisher": "oncemisery",
+  "version": "0.3.7",
+  "name": "Hertz Studio Standard",
+  "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine. Users who need online music must download the DBX Full edition separately: https://github.com/onceMisery/hertz-studio/releases",
+  "tags": [
+    "music",
+    "player",
+    "lyrics",
+    "audio",
+    "local-first"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage",
+    "host.workbench"
+  ],
+  "homepage": "https://github.com/onceMisery/hertz-studio",
+  "license": "MIT",
+  "localizations": {
+    "zh-CN": {
+      "name": "Hertz Studio Standard",
+      "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。 需要在线音乐的需要自行下载 DBX Full 版本：https://github.com/onceMisery/hertz-studio/releases"
+    }
+  },
+  "icon": "https://raw.githubusercontent.com/onceMisery/hertz-studio/hertz-plugin-standard-v0.3.7/plugin/assets/plugin.svg",
+  "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.7",
+  "releaseNotes": "## Hertz Studio DBX Standard 0.3.7\n\n正式版本号 `0.3.7`，与独立版使用同一份 GitHub master 源码提交 `92aabda`。本次为 Store 未签名候选，签名由 DBX 侧维护者完成。\n\n### 安装\n\n需要 DBX `>= 0.6.35`。下载对应平台的 `.dbxp`，从 DBX 插件管理中安装。插件 ID 为 `io.github.oncemisery.hertz-studio`。\n\n| 平台 | 文件 |\n| --- | --- |\n| Windows x64 | `io.github.oncemisery.hertz-studio-0.3.7-windows-x64.dbxp` |\n| Linux x64 | `io.github.oncemisery.hertz-studio-0.3.7-linux-x64.dbxp` |\n| Linux arm64 | `io.github.oncemisery.hertz-studio-0.3.7-linux-arm64.dbxp` |\n| macOS x64 | `io.github.oncemisery.hertz-studio-0.3.7-darwin-x64.dbxp` |\n| macOS Apple Silicon | `io.github.oncemisery.hertz-studio-0.3.7-darwin-arm64.dbxp` |\n\n### 本次更新\n\n- 桌面宠物：新增内置「橙团子 / 小黄鸭」形象，以及大小、不透明度、总在最前、贴边自动隐藏设置；窗口改用 SetWindowRgn 剪影裁剪，从宠物恢复主窗口走原生焦点握手。\n- 播放与歌词：播放页与歌词视图的音量并入中央播控，页脚一行让给歌词；桌面歌词缺少逐字时间时按整行进度扫过；收藏红心统一红色。\n- 沉浸舞台：封面球从封面颗粒采样取色；声场设置与队列统一为悬浮玻璃卡片，设置改为非模态侧栏。\n- 首页与播放栏：主操作移入封面浮层；指针离开应用时播放栏自动淡出；一起听大厅加入聆听脉冲；玻璃 tooltip 与播放栏图标簇精修。\n- 修复：在线播放历史不再降级为平台 ID；修复跨平台测试抖动（预算账本、交叉淡化、trust 池关闭）。\n- 同时包含 0.3.6 的独立版设置闪退修复（刷新内嵌组合目录 lock 身份并新增打包前堆预算门禁）与壁纸/舞台离线设计补全。\n\n### 验证与范围\n\n由 `release dbx plugin` 工作流构建五个目标，以该次运行为准。本次为未签名候选，不证明真实商店签名、净系统安装或全部宿主图形界面旅程。",
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.7/io.github.oncemisery.hertz-studio-0.3.7-darwin-arm64.dbxp",
+      "sha256": "acc93c3a01f1a35e503e4da1e2b041a5380fdbb8c1d0a604f7ff7f301edac68d",
+      "size": 14795226
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.7/io.github.oncemisery.hertz-studio-0.3.7-darwin-x64.dbxp",
+      "sha256": "586bc5f4ab05e39aece23718184924bb5f40fe4af7d81090d08226fcbb61115d",
+      "size": 15880972
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.7/io.github.oncemisery.hertz-studio-0.3.7-linux-arm64.dbxp",
+      "sha256": "e922358af52d9fe82992dabcf65a38e9a6c05d7525c610e6348440bc1efb584f",
+      "size": 16500587
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.7/io.github.oncemisery.hertz-studio-0.3.7-linux-x64.dbxp",
+      "sha256": "d8200e11b6921e4ea0f0c626cb7ca97f3175300bef5846274667faf017df97e0",
+      "size": 16746617
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.7/io.github.oncemisery.hertz-studio-0.3.7-windows-x64.dbxp",
+      "sha256": "429acf02fe9e9fb597d41a1d4e0bc66cc5b2a0cc505bd2d5cf736bab5f269c36",
+      "size": 14615061
+    }
+  ]
+}
