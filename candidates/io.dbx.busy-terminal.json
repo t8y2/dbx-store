@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "io.dbx.busy-terminal",
+  "publisher": "alan",
+  "version": "0.1.2",
+  "name": "Busy Terminal",
+  "description": "Fake busy terminal scenes in a workbench or floating desktop widget. Entertainment only \u2014 not a real shell.",
+  "icon": "https://raw.githubusercontent.com/allran/dbx-plugin-busy-terminal/v0.1.2/assets/plugin.svg",
+  "tags": [
+    "terminal",
+    "fun",
+    "workbench",
+    "widget"
+  ],
+  "permissions": [
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/allran/dbx-plugin-busy-terminal/tree/v0.1.2",
+  "homepage": "https://github.com/allran/dbx-plugin-busy-terminal",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.1.2: follow DBX light/dark theme via host design tokens and dbx-plugin-env updates.",
+  "localizations": {
+    "zh-CN": {
+      "name": "\u5fd9\u788c\u7ec8\u7aef",
+      "description": "\u5728\u5de5\u4f5c\u53f0\u6216\u684c\u9762\u6d6e\u52a8\u7a97\u91cc\u64ad\u653e\u5047\u5fd9\u788c\u65e5\u5fd7\u3002\u4ec5\u4f9b\u5a31\u4e50\uff0c\u4e0d\u662f\u771f\u5b9e\u7ec8\u7aef\u3002"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/allran/dbx-plugin-busy-terminal/releases/download/v0.1.2/io.dbx.busy-terminal-0.1.2-darwin-arm64.dbxp",
+      "sha256": "680ff61d6659719c584898df8d67854bd101b517101afbd33beeaca4725d3d18",
+      "size": 26493
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/allran/dbx-plugin-busy-terminal/releases/download/v0.1.2/io.dbx.busy-terminal-0.1.2-darwin-x64.dbxp",
+      "sha256": "680ff61d6659719c584898df8d67854bd101b517101afbd33beeaca4725d3d18",
+      "size": 26493
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/allran/dbx-plugin-busy-terminal/releases/download/v0.1.2/io.dbx.busy-terminal-0.1.2-linux-arm64.dbxp",
+      "sha256": "680ff61d6659719c584898df8d67854bd101b517101afbd33beeaca4725d3d18",
+      "size": 26493
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/allran/dbx-plugin-busy-terminal/releases/download/v0.1.2/io.dbx.busy-terminal-0.1.2-linux-x64.dbxp",
+      "sha256": "680ff61d6659719c584898df8d67854bd101b517101afbd33beeaca4725d3d18",
+      "size": 26493
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/allran/dbx-plugin-busy-terminal/releases/download/v0.1.2/io.dbx.busy-terminal-0.1.2-windows-x64.dbxp",
+      "sha256": "88d1f4b1474c0081a28c9b9a64e7ed06cf3f6cfdc010480161a88f698fca7580",
+      "size": 26502
+    }
+  ]
+}
