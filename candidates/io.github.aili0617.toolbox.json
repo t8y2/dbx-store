@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.aili0617.toolbox",
+  "publisher": "aili0617",
+  "version": "0.1.8",
+  "name": "DBX Toolbox",
+  "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally.",
+  "icon": "https://raw.githubusercontent.com/aiLi0617/dbx-plugin-toolbox/v0.1.8/assets/plugin.svg",
+  "tags": [
+    "developer-tools",
+    "utilities",
+    "encoding",
+    "cryptography"
+  ],
+  "permissions": [
+    "host.binary",
+    "host.events"
+  ],
+  "source": "https://github.com/aiLi0617/dbx-plugin-toolbox",
+  "homepage": "https://github.com/aiLi0617/dbx-plugin-toolbox",
+  "license": "Apache-2.0",
+  "releaseNotes": "0.1.8：修复插件清单与 Rust 后端版本不一致导致的初始化失败。新增 56 个只读 MCP 工具，改进高精度数据处理和模拟数据生成。需要 DBX 0.6.60 或更高版本。0.1.8: Fixes initialization failures caused by a version mismatch between the manifest and Rust backend. Adds 56 read-only MCP tools and improves exact data processing and test data generation. Requires DBX 0.6.60 or later.",
+  "localizations": {
+    "zh-CN": {
+      "name": "DBX 工具箱",
+      "description": "一站式、注重隐私的本地开发工具箱，涵盖数据转换、编解码、格式化、文本与图片处理、实用生成器、密码学工具及加密密钥库；所有数据均在本机处理。"
+    },
+    "zh-TW": {
+      "name": "DBX 工具箱",
+      "description": "一站式、注重隱私的本機開發工具箱，涵蓋資料轉換、編解碼、格式化、文字與圖片處理、實用產生器、密碼學工具及加密金鑰庫；所有資料均在本機處理。"
+    },
+    "es": {
+      "name": "Herramientas DBX",
+      "description": "Una caja de herramientas local y centrada en la privacidad para desarrollo, con conversión de datos, codificación y decodificación, formato, procesamiento de texto e imágenes, generadores, criptografía y un almacén cifrado de claves; todos los datos se procesan localmente."
+    },
+    "it": {
+      "name": "Strumenti DBX",
+      "description": "Una raccolta completa di strumenti locali per sviluppatori, attenta alla privacy, con conversione dei dati, codifica e decodifica, formattazione, elaborazione di testo e immagini, generatori, crittografia e archivio cifrato delle chiavi; tutti i dati vengono elaborati in locale."
+    },
+    "ja": {
+      "name": "DBX ツールボックス",
+      "description": "データ変換、エンコード／デコード、整形、テキスト・画像処理、各種ジェネレーター、暗号化ツール、暗号化鍵保管庫を備えた、プライバシー重視のオールインワン開発ツールボックス。すべてのデータをローカルで処理します。"
+    },
+    "pt-BR": {
+      "name": "Ferramentas DBX",
+      "description": "Uma caixa de ferramentas local completa e focada em privacidade para desenvolvimento, com conversão de dados, codificação e decodificação, formatação, processamento de texto e imagens, geradores, criptografia e um cofre de chaves criptografado; todos os dados são processados localmente."
+    },
+    "ko": {
+      "name": "DBX 도구 상자",
+      "description": "데이터 변환, 인코딩, 서식 지정, 텍스트 및 이미지 처리, 암호화와 암호화된 키 보관함을 제공하는 로컬 개발 도구입니다."
+    },
+    "tr": {
+      "name": "DBX Araç Kutusu",
+      "description": "Veri dönüştürme, kodlama, biçimlendirme, metin ve görüntü işleme, şifreleme ve şifreli anahtar kasası için yerel geliştirici araçları."
+    },
+    "az": {
+      "name": "DBX Alətlər Qutusu",
+      "description": "Məlumat çevirmə, kodlaşdırma, formatlama, mətn və şəkil emalı, kriptoqrafiya və şifrəli açar anbarı üçün yerli tərtibatçı alətləri."
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.8/io.github.aili0617.toolbox-0.1.8-darwin-arm64.dbxp",
+      "sha256": "f00549785baa3f01c5979343c09dd2de18cdb4f4e59d69abeaa47586eca4444f",
+      "size": 12602416
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.8/io.github.aili0617.toolbox-0.1.8-darwin-x64.dbxp",
+      "sha256": "ba9739397082a6f2f2726532f12a3b46bc6c0517de39b1de1be88ed7e462e1fd",
+      "size": 13230436
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.8/io.github.aili0617.toolbox-0.1.8-linux-arm64.dbxp",
+      "sha256": "683e23a301328caddc6cc022bc41cd6e9edb9e7fba3083114719e8f49ca72c5c",
+      "size": 13738852
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.8/io.github.aili0617.toolbox-0.1.8-linux-x64.dbxp",
+      "sha256": "cbc0d4ab737dd7bbc3592f8daa437c0b3746d0488ddd9ca943211376cc3125d2",
+      "size": 14368455
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/aiLi0617/dbx-plugin-toolbox/releases/download/v0.1.8/io.github.aili0617.toolbox-0.1.8-windows-x64.dbxp",
+      "sha256": "ab10751ad6dee372a11480116466601c55860e4b318f51e2be612da46e02a998",
+      "size": 13709873
+    }
+  ]
+}
