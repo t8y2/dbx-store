@@ -3618,7 +3618,7 @@
       "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), transfer task center with failed-download retry, and multi-select batch delete / download / copy / move.",
       "publisher": "huangqiang",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.4.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.4.2/icon.svg",
       "tags": [
         "storage",
         "oss",
@@ -3636,8 +3636,29 @@
       "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.4.0",
       "homepage": "https://github.com/huangqiang008/dbx-object-storage",
       "license": "MIT",
-      "latestVersion": "1.4.0",
+      "latestVersion": "1.4.2",
       "versions": [
+        {
+          "version": "1.4.2",
+          "releasedAt": "2026-11-23T05:17:40.732Z",
+          "releaseNotes": "修复两个严重问题：① 多标签页凭证互串——后打开的连接会覆盖先打开的连接状态，切回旧标签页操作时使用错误凭证，同名桶的写操作可能落到错误存储；② 上传分片跨连接污染与断点续传失效——同名同大小文件上传到不同连接时会互相接管分片，且分片用随机文件名导致跨进程续传从未真正生效。另移除宿主 CSP 下无法加载的 CDN 回退死代码。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.object.browser/1.4.2/com.object.browser-1.4.2-darwin-arm64.dbxp",
+              "sha256": "f8914cedeae58e78dcab2ae11ef9e26079592231ca7492ca25aa582148a2768d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7919338
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.object.browser/1.4.2/com.object.browser-1.4.2-windows-x64.dbxp",
+              "sha256": "8bad9a4409c8c396ec0a44d35eae77a540b8a15715369ab9679556106da2def4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 8405944
+            }
+          ]
+        },
         {
           "version": "1.4.0",
           "releasedAt": "2026-11-05T12:44:28.819Z",
@@ -5553,7 +5574,7 @@
       "description": "Manage Docker containers, images, volumes, networks and Compose, with built-in DBX AI and MCP tools for queries and permission-controlled operations.",
       "publisher": "ezreal-byte",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.docker/0.3.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.docker/0.4.0/icon.svg",
       "tags": [
         "docker",
         "containers",
@@ -5569,8 +5590,50 @@
       "source": "https://github.com/Ezreal-byte/dbx-docker-plugin/tree/v0.3.1",
       "homepage": "https://github.com/Ezreal-byte/dbx-docker-plugin",
       "license": "Apache-2.0",
-      "latestVersion": "0.3.1",
+      "latestVersion": "0.4.0",
       "versions": [
+        {
+          "version": "0.4.0",
+          "releasedAt": "2026-11-23T05:21:04.638Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.4.0/io.dbx.docker-0.4.0-darwin-arm64.dbxp",
+              "sha256": "0158ac78ee7f4d9bb0e3de3a2c778e99f7e9dfe6cd9836acafae62521a13aa4e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7515393
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.4.0/io.dbx.docker-0.4.0-darwin-x64.dbxp",
+              "sha256": "8ce26ec9d95537c50a0cb5c2968f682d29badd4369b5cf5e2a16df253068306d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7970358
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.4.0/io.dbx.docker-0.4.0-linux-arm64.dbxp",
+              "sha256": "c4d1b8e9cbae3a98d90bdca5c91d48a509affba1e4a83454c6ad2da257e1c963",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7255238
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.4.0/io.dbx.docker-0.4.0-linux-x64.dbxp",
+              "sha256": "fd622629ac13b9661a869303703a1d2a6a0febf40536acdd51f0b65e4deb1e56",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7865127
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.4.0/io.dbx.docker-0.4.0-windows-x64.dbxp",
+              "sha256": "6ebad4d62024b6cdc8bedc337de22cd284ee92b48823c5ee36932cfdebd62389",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 8008467
+            }
+          ]
+        },
         {
           "version": "0.3.1",
           "releasedAt": "2026-10-15T02:02:46.942Z",
