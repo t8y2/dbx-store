@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.zjay.notes",
+  "publisher": "zjay",
+  "version": "0.1.1",
+  "name": "DBX Notes",
+  "description": "Lightweight Notion-like notes with Markdown, page tree, search, tags, trash, WebDAV and Git sync.",
+  "icon": "https://raw.githubusercontent.com/ZhangJian002/dbx-notes-plugin/v0.1.1/assets/plugin.svg",
+  "tags": [
+    "notes",
+    "markdown",
+    "webdav",
+    "git",
+    "sync"
+  ],
+  "permissions": [
+    "host.events"
+  ],
+  "source": "https://github.com/ZhangJian002/dbx-notes-plugin/tree/v0.1.1",
+  "homepage": "https://github.com/ZhangJian002/dbx-notes-plugin",
+  "license": "Apache-2.0",
+  "releaseNotes": "Initial release.",
+  "localizations": {
+    "zh-CN": {
+      "name": "DBX Notes",
+      "description": "轻量 Notion 风格 Markdown 笔记：页面树、搜索、标签、回收站，支持 WebDAV 与 Git 同步。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/ZhangJian002/dbx-notes-plugin/releases/download/v0.1.1/io.github.zjay.notes-0.1.1-darwin-arm64.dbxp",
+      "sha256": "47e415534e669b3ca66560f161189125b89a73caf3b35fe575a69142a0b0a338",
+      "size": 1665376
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/ZhangJian002/dbx-notes-plugin/releases/download/v0.1.1/io.github.zjay.notes-0.1.1-darwin-x64.dbxp",
+      "sha256": "9925cc080313a9dea40083dd2d7ab0b84a25d911c13ce705e4b82dd5ca14e014",
+      "size": 1761416
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/ZhangJian002/dbx-notes-plugin/releases/download/v0.1.1/io.github.zjay.notes-0.1.1-linux-arm64.dbxp",
+      "sha256": "31dd43c3467a8108b3d51679cf253c7ff7ed93ad78cca332ab0690ab8ca50df6",
+      "size": 1759166
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/ZhangJian002/dbx-notes-plugin/releases/download/v0.1.1/io.github.zjay.notes-0.1.1-linux-x64.dbxp",
+      "sha256": "2af8236961df4db69292497aefd80c43b42c91832d181fbfd607e65df2aad2c2",
+      "size": 1846179
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/ZhangJian002/dbx-notes-plugin/releases/download/v0.1.1/io.github.zjay.notes-0.1.1-windows-x64.dbxp",
+      "sha256": "d5df2761cf9e08e24b8d7d1247d069d42a51f67af7fddf43973af65e66e4c1fd",
+      "size": 1840605
+    }
+  ]
+}
