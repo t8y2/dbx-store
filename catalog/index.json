@@ -14746,7 +14746,7 @@
       "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine. Users who need online music must download the DBX Full edition separately: https://github.com/onceMisery/hertz-studio/releases",
       "publisher": "oncemisery",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.5/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/icon.svg",
       "tags": [
         "music",
         "player",
@@ -14759,11 +14759,53 @@
         "host.storage",
         "host.workbench"
       ],
-      "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.5",
+      "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.7",
       "homepage": "https://github.com/onceMisery/hertz-studio",
       "license": "MIT",
-      "latestVersion": "0.3.5",
+      "latestVersion": "0.3.7",
       "versions": [
+        {
+          "version": "0.3.7",
+          "releasedAt": "2026-11-23T07:23:37.452Z",
+          "releaseNotes": "## Hertz Studio DBX Standard 0.3.7\n\n正式版本号 `0.3.7`，与独立版使用同一份 GitHub master 源码提交 `92aabda`。本次为 Store 未签名候选，签名由 DBX 侧维护者完成。\n\n### 安装\n\n需要 DBX `>= 0.6.35`。下载对应平台的 `.dbxp`，从 DBX 插件管理中安装。插件 ID 为 `io.github.oncemisery.hertz-studio`。\n\n| 平台 | 文件 |\n| --- | --- |\n| Windows x64 | `io.github.oncemisery.hertz-studio-0.3.7-windows-x64.dbxp` |\n| Linux x64 | `io.github.oncemisery.hertz-studio-0.3.7-linux-x64.dbxp` |\n| Linux arm64 | `io.github.oncemisery.hertz-studio-0.3.7-linux-arm64.dbxp` |\n| macOS x64 | `io.github.oncemisery.hertz-studio-0.3.7-darwin-x64.dbxp` |\n| macOS Apple Silicon | `io.github.oncemisery.hertz-studio-0.3.7-darwin-arm64.dbxp` |\n\n### 本次更新\n\n- 桌面宠物：新增内置「橙团子 / 小黄鸭」形象，以及大小、不透明度、总在最前、贴边自动隐藏设置；窗口改用 SetWindowRgn 剪影裁剪，从宠物恢复主窗口走原生焦点握手。\n- 播放与歌词：播放页与歌词视图的音量并入中央播控，页脚一行让给歌词；桌面歌词缺少逐字时间时按整行进度扫过；收藏红心统一红色。\n- 沉浸舞台：封面球从封面颗粒采样取色；声场设置与队列统一为悬浮玻璃卡片，设置改为非模态侧栏。\n- 首页与播放栏：主操作移入封面浮层；指针离开应用时播放栏自动淡出；一起听大厅加入聆听脉冲；玻璃 tooltip 与播放栏图标簇精修。\n- 修复：在线播放历史不再降级为平台 ID；修复跨平台测试抖动（预算账本、交叉淡化、trust 池关闭）。\n- 同时包含 0.3.6 的独立版设置闪退修复（刷新内嵌组合目录 lock 身份并新增打包前堆预算门禁）与壁纸/舞台离线设计补全。\n\n### 验证与范围\n\n由 `release dbx plugin` 工作流构建五个目标，以该次运行为准。本次为未签名候选，不证明真实商店签名、净系统安装或全部宿主图形界面旅程。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-darwin-arm64.dbxp",
+              "sha256": "520c6816d3dd86086ce946895171cc62a0611545a9103f46c2d799e4b9902ac1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14811176
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-darwin-x64.dbxp",
+              "sha256": "2727463ab9268e6f49e84cb3ce0cc3945dcde01fea67515dc4c6f3787aa86946",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15896922
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-linux-arm64.dbxp",
+              "sha256": "1344f53fe13bea27651c91f128218edaf946e85e499f5ec45fe2c57bf90c79b0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16516538
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-linux-x64.dbxp",
+              "sha256": "775c0bde29e6ebc5268639b8c6f82fc23adf092383ebfd430e810a7db9ea0d13",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16762565
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-windows-x64.dbxp",
+              "sha256": "b7b516e51799a91924a0ff5b3394c264710a96353736ab7d2e86f6e72f30b9ec",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14631015
+            }
+          ]
+        },
         {
           "version": "0.3.5",
           "releasedAt": "2026-11-19T13:28:05.767Z",
