@@ -4,7 +4,7 @@
   "description": "Operate Apache Kafka from one DBX workspace: inspect topics, brokers, and consumer lag; search, stream, and produce messages with multi-channel filters and payload decoding; manage offsets, ACLs, and Schema Registry. Read-only by default, with guarded writes and 11 MCP tools for AI automation.",
   "publisher": "jinpy",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.57/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/jinpy666/dbx-plugin-kafka/kafka-v0.1.58/assets/plugin.svg",
   "tags": [
     "kafka",
     "streaming",
@@ -19,7 +19,7 @@
   "source": "https://github.com/jinpy666/dbx-plugin-kafka",
   "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
   "license": "MIT",
-  "latestVersion": "0.1.57",
+  "latestVersion": "0.1.58",
   "versions": [
     {
       "version": "0.1.39",
@@ -732,6 +732,48 @@
           "sha256": "20cf8226b16548d1afef73892fd403c4ff5dfe0f357677fad8f80cb101356c48",
           "signingKeyId": "dbx-store-release-2026",
           "size": 14897348
+        }
+      ]
+    },
+    {
+      "version": "0.1.58",
+      "releasedAt": "2026-11-23T05:48:26.371Z",
+      "releaseNotes": "Kafka Studio v0.1.58 正式版。相对 v0.1.57：PROTOBUF SR 解码增强（issue #83 跟进，PR #85）——Confluent SR 连接默认勾选解码挂载，subject 可留空、按消息 wire 中的 schemaID 反查 subject/version 自动挂载；Confluent message index（消息封装内嵌套 message 选择）按规范解析与编码（zigzag 长度前缀 + zigzag 索引、[0] 单字节优化），修复非平凡 index（如 Map 字段内嵌套消息）解码错误与 produce 编码不合规，旧格式载荷保留回退兼容；兼容非 protoc 生成器描述符（map entry 小驼峰命名、type_name 短名、字段类型缺失），按词法作用域归一化补齐；SR 取数改挂会话根 context + 失败缓存，扫描窗口到点后不再满屏 context deadline exceeded。体验：消费结果默认最新在前；「最近」纯浏览（无过滤/聚合条件）回退窗口收窄到 limit 条，不再回退整个 maxScan 扫描面；显式挂载默认格式 avro→protobuf。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.58/io.dbx.kafka-0.1.58-darwin-arm64.dbxp",
+          "sha256": "8cac916604639bcd460fa2cf5082611aef9c2f333a934e9e6576abf61a454969",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14424558
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.58/io.dbx.kafka-0.1.58-darwin-x64.dbxp",
+          "sha256": "931008371b6ace330a3e11f633e7154e1063bb8f08859b724e7ccb77f3a82e45",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 15313167
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.58/io.dbx.kafka-0.1.58-linux-arm64.dbxp",
+          "sha256": "7d34727380ceadeb1510ca14f6aec7573cf868d24dd045110ff3e44ceedd8f4c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13592698
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.58/io.dbx.kafka-0.1.58-linux-x64.dbxp",
+          "sha256": "a1ffdda6b617458557c8dfbbc6abfe66794e50ba5132f8735e3840698d014874",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14806334
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.58/io.dbx.kafka-0.1.58-windows-x64.dbxp",
+          "sha256": "62089b9a8f104f83472ea3a43abe681851ee959e59ba447a507c6bd78e9f6e7a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14918529
         }
       ]
     }
