@@ -7854,7 +7854,7 @@
       "description": "Operate Apache Kafka from one DBX workspace: inspect topics, brokers, and consumer lag; search, stream, and produce messages with multi-channel filters and payload decoding; manage offsets, ACLs, and Schema Registry. Read-only by default, with guarded writes and 11 MCP tools for AI automation.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.59/icon.svg",
       "tags": [
         "kafka",
         "streaming",
@@ -7869,8 +7869,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-kafka",
       "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
       "license": "MIT",
-      "latestVersion": "0.1.57",
+      "latestVersion": "0.1.59",
       "versions": [
+        {
+          "version": "0.1.59",
+          "releasedAt": "2026-11-23T06:53:50.258Z",
+          "releaseNotes": "Kafka Studio v0.1.59 正式版。相对 v0.1.58：新增 Kafka Connect 原生管理面板（PR #86）——多 worker 集群发现、连接器配置校验/创建/更新、任务巡检与失败隔离、受控生命周期操作（pause/resume、connector/task 重启、stop、offset reset、delete），只读连接拦截全部写操作、删除与 offset 重置需 allow_delete + 精确名称确认，PASSWORD 元数据脱敏且上游错误体/trace 出 sidecar 前脱敏，凭据仅存宿主 Secret Store，协议新增 14 个 kafka/connect/* 方法（契约与协议文档同步）；TLS 证书支持 DBX 服务器侧文件路径（普通文件 ≤1MiB，私钥经 Secret Store）；Connect 文案七语全量、TLS 描述恢复本地化；Connect 验收 C1–C7（no skips）进入 CI 与 release 冒烟；依赖例行升级（aws-sdk-go-v2 config 1.33.16 / credentials 1.20.16、happy-dom 21.0.4、@vitejs/plugin-vue 6.0.10）。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.59/io.dbx.kafka-0.1.59-darwin-arm64.dbxp",
+              "sha256": "e00268b8a036ce4724743fc72e4c4b369e1ea59d06f7bdc3ad96e569f7bce7f0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14569510
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.59/io.dbx.kafka-0.1.59-darwin-x64.dbxp",
+              "sha256": "e20648738ec352d957a12b884e5ebbc185464d6de8b0dbb0491f30c775df6061",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15475824
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.59/io.dbx.kafka-0.1.59-linux-arm64.dbxp",
+              "sha256": "9176b0fb980136d3bb4a27338c74cee8ef08c3384913c309adf93a1a38a1da5d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13741727
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.59/io.dbx.kafka-0.1.59-linux-x64.dbxp",
+              "sha256": "913cf0d8aa875058fc398d7e104861c5e499cd4d4c54674d0f31e2cc2f64123f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14973756
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.59/io.dbx.kafka-0.1.59-windows-x64.dbxp",
+              "sha256": "b3fb320883d916fc897668984b37126d7dc04d1b8dc74d302dcf92abac02dc0f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15083541
+            }
+          ]
+        },
         {
           "version": "0.1.57",
           "releasedAt": "2026-11-13T03:52:43.773Z",
