@@ -1,0 +1,74 @@
+{
+  "id": "io.github.qiuyouyao.s3-sync",
+  "name": "S3 Sync",
+  "description": "Migrate and incrementally sync objects between S3-compatible storage services (MinIO, RustFS, AWS S3).",
+  "publisher": "qiuyouyao",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/qiuyouyao/dbx-plugins/v0.1.0/plugins/s3-sync/assets/plugin.svg",
+  "tags": [
+    "storage",
+    "s3",
+    "minio",
+    "sync"
+  ],
+  "permissions": [
+    "host.connections:read",
+    "host.events",
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/qiuyouyao/dbx-plugins/tree/v0.1.0",
+  "homepage": "https://github.com/qiuyouyao/dbx-plugins/tree/v0.1.0/plugins/s3-sync",
+  "license": "MIT",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-11-23T07:46:54.781Z",
+      "releaseNotes": "Initial release: S3-compatible connection provider, migration and incremental sync workbench, preview, retry and i18n.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.qiuyouyao.s3-sync/0.1.0/io.github.qiuyouyao.s3-sync-0.1.0-darwin-arm64.dbxp",
+          "sha256": "9c3876163ba1ba411e12aea6d47e57441f018ef8068c9227682b6ecf5d047173",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1103999
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.qiuyouyao.s3-sync/0.1.0/io.github.qiuyouyao.s3-sync-0.1.0-darwin-x64.dbxp",
+          "sha256": "633128ecc4d5acb856f17bc3a0a6323d7e130fd150e7a9c5fffcdb2dc7a964d3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1161114
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.qiuyouyao.s3-sync/0.1.0/io.github.qiuyouyao.s3-sync-0.1.0-linux-arm64.dbxp",
+          "sha256": "48e9b67b6e6a944b25253c6c9046ec8b9b73b10815503a191e9316b96c6187c2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1159491
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.qiuyouyao.s3-sync/0.1.0/io.github.qiuyouyao.s3-sync-0.1.0-linux-x64.dbxp",
+          "sha256": "3c6faf7a9065e050f6c09b39d14ca06062376228e3f3c16be60295d942ffe6c7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1213180
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.qiuyouyao.s3-sync/0.1.0/io.github.qiuyouyao.s3-sync-0.1.0-windows-x64.dbxp",
+          "sha256": "7b13d08950b85aa95d356821dff87ab3c20fb003872bdadf5237fce029abbca2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 1227772
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "S3 同步",
+      "description": "在 S3 兼容存储（MinIO、RustFS、AWS S3）之间迁移对象，支持预览、增量同步与失败重试。"
+    }
+  }
+}

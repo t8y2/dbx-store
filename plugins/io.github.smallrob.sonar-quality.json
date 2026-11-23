@@ -4,7 +4,7 @@
   "description": "A modern read-only SonarQube workspace: projects, scan history, issue filtering, Markdown export and quality insights from PostgreSQL.",
   "publisher": "smallrob",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/SmallRob/dbx-sonar-quality/v0.1.9/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/SmallRob/dbx-sonar-quality/v0.1.10/assets/plugin.svg",
   "tags": [
     "sonarqube",
     "code-quality",
@@ -15,10 +15,10 @@
   "permissions": [
     "host.workbench"
   ],
-  "source": "https://github.com/SmallRob/dbx-sonar-quality/tree/v0.1.9",
+  "source": "https://github.com/SmallRob/dbx-sonar-quality/tree/v0.1.10",
   "homepage": "https://github.com/SmallRob/dbx-sonar-quality",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.9",
+  "latestVersion": "0.1.10",
   "versions": [
     {
       "version": "0.1.9",
@@ -59,6 +59,48 @@
           "sha256": "c4b58efcfee1a5887411f900e21ea0f396975ea2e6963ad98df0bb5be2f0c01c",
           "signingKeyId": "dbx-store-release-2026",
           "size": 6771945
+        }
+      ]
+    },
+    {
+      "version": "0.1.10",
+      "releasedAt": "2026-11-23T07:39:19.596Z",
+      "releaseNotes": "0.1.10 fixes Markdown export on DBX: the UI now calls host.saveFile with the required {fileName, contentType} metadata plus a UTF-8 base64 payload, so the save dialog opens instead of failing with host.saveFile requires transferred binary data or dataBase64; a failed or missing host save falls back to the built-in Markdown preview. 0.1.9 had turned the top scan switcher and both scan comparison fields into searchable, 20-row single-select popovers; adds local issue snapshots with hasSnapshot guards, four-card comparison results, compact build-number labels, and a 390px mobile layout fix. The workspace remains read-only against SonarQube PostgreSQL, with project switching, scan history, rule and directory multi-select filters, Markdown issue export and global quality insights.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sonar-quality/0.1.10/io.github.smallrob.sonar-quality-0.1.10-darwin-arm64.dbxp",
+          "sha256": "d151cbf86878a19e1b3f3ad1ef09252121e18275355ff76273bd8196040b2b47",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6376249
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sonar-quality/0.1.10/io.github.smallrob.sonar-quality-0.1.10-darwin-x64.dbxp",
+          "sha256": "c6cabd377416ac07d45da145f555203a2ffac182ece95aea17ff5e98e8410383",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6672899
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sonar-quality/0.1.10/io.github.smallrob.sonar-quality-0.1.10-linux-arm64.dbxp",
+          "sha256": "99f4836a3953c799e71ce5d5649fb961c150ea7c41c9832ceeaf8b19665e71ac",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6256719
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sonar-quality/0.1.10/io.github.smallrob.sonar-quality-0.1.10-linux-x64.dbxp",
+          "sha256": "a4f7ab19ed09693f7de3d75ef3349507150d887031513930e6730c18890ff357",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6667519
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sonar-quality/0.1.10/io.github.smallrob.sonar-quality-0.1.10-windows-x64.dbxp",
+          "sha256": "3f5380159c661cece9c6f50feaf2a82e699c5d748797267f38771358684c3a5a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 6772661
         }
       ]
     }
