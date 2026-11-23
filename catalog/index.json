@@ -7854,7 +7854,7 @@
       "description": "Operate Apache Kafka from one DBX workspace: inspect topics, brokers, and consumer lag; search, stream, and produce messages with multi-channel filters and payload decoding; manage offsets, ACLs, and Schema Registry. Read-only by default, with guarded writes and 11 MCP tools for AI automation.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.57/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.59/icon.svg",
       "tags": [
         "kafka",
         "streaming",
@@ -7869,8 +7869,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-kafka",
       "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
       "license": "MIT",
-      "latestVersion": "0.1.57",
+      "latestVersion": "0.1.59",
       "versions": [
+        {
+          "version": "0.1.59",
+          "releasedAt": "2026-11-23T06:53:50.258Z",
+          "releaseNotes": "Kafka Studio v0.1.59 正式版。相对 v0.1.58：新增 Kafka Connect 原生管理面板（PR #86）——多 worker 集群发现、连接器配置校验/创建/更新、任务巡检与失败隔离、受控生命周期操作（pause/resume、connector/task 重启、stop、offset reset、delete），只读连接拦截全部写操作、删除与 offset 重置需 allow_delete + 精确名称确认，PASSWORD 元数据脱敏且上游错误体/trace 出 sidecar 前脱敏，凭据仅存宿主 Secret Store，协议新增 14 个 kafka/connect/* 方法（契约与协议文档同步）；TLS 证书支持 DBX 服务器侧文件路径（普通文件 ≤1MiB，私钥经 Secret Store）；Connect 文案七语全量、TLS 描述恢复本地化；Connect 验收 C1–C7（no skips）进入 CI 与 release 冒烟；依赖例行升级（aws-sdk-go-v2 config 1.33.16 / credentials 1.20.16、happy-dom 21.0.4、@vitejs/plugin-vue 6.0.10）。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.59/io.dbx.kafka-0.1.59-darwin-arm64.dbxp",
+              "sha256": "e00268b8a036ce4724743fc72e4c4b369e1ea59d06f7bdc3ad96e569f7bce7f0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14569510
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.59/io.dbx.kafka-0.1.59-darwin-x64.dbxp",
+              "sha256": "e20648738ec352d957a12b884e5ebbc185464d6de8b0dbb0491f30c775df6061",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15475824
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.59/io.dbx.kafka-0.1.59-linux-arm64.dbxp",
+              "sha256": "9176b0fb980136d3bb4a27338c74cee8ef08c3384913c309adf93a1a38a1da5d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13741727
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.59/io.dbx.kafka-0.1.59-linux-x64.dbxp",
+              "sha256": "913cf0d8aa875058fc398d7e104861c5e499cd4d4c54674d0f31e2cc2f64123f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14973756
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.59/io.dbx.kafka-0.1.59-windows-x64.dbxp",
+              "sha256": "b3fb320883d916fc897668984b37126d7dc04d1b8dc74d302dcf92abac02dc0f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15083541
+            }
+          ]
+        },
         {
           "version": "0.1.57",
           "releasedAt": "2026-11-13T03:52:43.773Z",
@@ -10127,24 +10169,67 @@
     {
       "id": "io.dbx.screenshot",
       "name": "Screenshot",
-      "description": "Capture the screen and keep a local screenshot history in DBX. Saving can copy the image to the clipboard (overwrites current clipboard contents; toggle in settings). On Linux, region capture needs gnome-screenshot, spectacle, or scrot on PATH.",
+      "description": "Capture the screen and keep a local screenshot history in DBX. Includes silent screen recording (MP4, no audio). Saving can copy images to the clipboard (overwrites current clipboard contents; toggle in settings). On Linux, region capture needs gnome-screenshot, spectacle, or scrot on PATH.",
       "publisher": "alan",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.2/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.3/icon.svg",
       "tags": [
         "screenshot",
         "productivity",
-        "workbench"
+        "workbench",
+        "recording"
       ],
       "permissions": [
         "host.binary",
         "host.events"
       ],
-      "source": "https://github.com/allran/dbx-plugin-screenshot/tree/v0.1.2",
+      "source": "https://github.com/allran/dbx-plugin-screenshot",
       "homepage": "https://github.com/allran/dbx-plugin-screenshot",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.2",
+      "latestVersion": "0.1.3",
       "versions": [
+        {
+          "version": "0.1.3",
+          "releasedAt": "2026-11-23T07:13:53.697Z",
+          "releaseNotes": "0.1.3: silent screen recording (MP4, no audio) with start/stop, FPS/clarity settings; ffmpeg recommended for muxing (OpenH264 fallback without it).",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.3/io.dbx.screenshot-0.1.3-darwin-arm64.dbxp",
+              "sha256": "96e9007b9597b6ec236000c2cadf9cde044ff101c64f8e2d60ba4f5ed7d13c0a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1266536
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.3/io.dbx.screenshot-0.1.3-darwin-x64.dbxp",
+              "sha256": "fdb3c9b22d14a4ed9ad79a664d04e7a0fadf33cdb70d2f9750b152f387fac2e3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1336121
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.3/io.dbx.screenshot-0.1.3-linux-arm64.dbxp",
+              "sha256": "e257adb4657320f47888b9e02fbb533bfecbcd81b52be1999a5460a0b6cae2f1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2397101
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.3/io.dbx.screenshot-0.1.3-linux-x64.dbxp",
+              "sha256": "a080a46d45419e85624140e9e1e370ca5b2e185e4a79453005b76409e0a3499b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2441883
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.screenshot/0.1.3/io.dbx.screenshot-0.1.3-windows-x64.dbxp",
+              "sha256": "2b6866a7ee4968dc924ce1fb7b944bf9c7f3637689cf7103d6d6a48e41a1fa7c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1076662
+            }
+          ]
+        },
         {
           "version": "0.1.2",
           "releasedAt": "2026-11-03T14:44:03.582Z",
@@ -10233,7 +10318,7 @@
       "localizations": {
         "zh-CN": {
           "name": "截图",
-          "description": "截取屏幕并在 DBX 中保存本机截图历史。保存后可复制到剪贴板（会覆盖当前剪贴板内容，可在设置中关闭）。Linux 区域截图需系统已安装 gnome-screenshot、spectacle 或 scrot。"
+          "description": "截取屏幕并在 DBX 中保存本机截图历史，支持无声屏幕录制（MP4）。保存后可复制图片到剪贴板（会覆盖当前剪贴板内容，可在设置中关闭）。Linux 区域截图需系统已安装 gnome-screenshot、spectacle 或 scrot。"
         }
       }
     },
@@ -10243,7 +10328,7 @@
       "description": "A secure terminal for interactive sessions, SFTP file transfer, remote commands, and guarded server operations.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.14/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.15/icon.svg",
       "tags": [
         "ssh",
         "terminal",
@@ -10262,8 +10347,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ssh",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ssh",
       "license": "MIT",
-      "latestVersion": "0.7.14",
+      "latestVersion": "0.7.15",
       "versions": [
+        {
+          "version": "0.7.15",
+          "releasedAt": "2026-11-23T07:06:47.370Z",
+          "releaseNotes": "First official store release: interactive terminal with PTY, SFTP file transfer, remote command execution, sudo with approval guards, host key management, and multi-language UI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.15/io.dbx.ssh-0.7.15-darwin-arm64.dbxp",
+              "sha256": "9a30c289e2a5ff88751cac95f263f0177f8a8fe66538339026c77a712d401c0a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 19576288
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.15/io.dbx.ssh-0.7.15-darwin-x64.dbxp",
+              "sha256": "690df44008c4874949cdd2aa0f4a5ffc0388e7532bd649f77ed25c20a9f3b394",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 20241607
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.15/io.dbx.ssh-0.7.15-linux-arm64.dbxp",
+              "sha256": "402d149ce34aaa240479aa52810ef6b80811807469abed3905d3f0abe35e3a9d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 20816621
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.15/io.dbx.ssh-0.7.15-linux-x64.dbxp",
+              "sha256": "7ad6075dbcdbcd4427f9a6735b300f4f5fb9b617e24abe808d16510e9170524e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 21313103
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ssh/0.7.15/io.dbx.ssh-0.7.15-windows-x64.dbxp",
+              "sha256": "d5119f2ca373a8f7ac16d87ecf21cde397037b943ccdea5d25aba030db6b63b3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 19043177
+            }
+          ]
+        },
         {
           "version": "0.7.14",
           "releasedAt": "2026-11-15T03:27:18.264Z",
@@ -11899,7 +12026,7 @@
       "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally.",
       "publisher": "aili0617",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.6/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.7/icon.svg",
       "tags": [
         "developer-tools",
         "utilities",
@@ -11913,8 +12040,50 @@
       "source": "https://github.com/aiLi0617/dbx-plugin-toolbox",
       "homepage": "https://github.com/aiLi0617/dbx-plugin-toolbox",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.6",
+      "latestVersion": "0.1.7",
       "versions": [
+        {
+          "version": "0.1.7",
+          "releasedAt": "2026-11-23T06:59:44.973Z",
+          "releaseNotes": "0.1.5：优化首页搜索、意图示例和多语言支持；改进密钥库布局、筛选、新建与主密码交互，修复用途保存与 XOR 默认用途；OCR 模型改为用户触发的分层按需下载，缩小安装包，并深化多项工具能力。0.1.5: Improves home search, intent examples, and localization; refines vault layout, filtering, key creation, and master-password workflows; fixes usage saving and XOR defaults; moves OCR models to user-triggered tiered downloads to reduce package size and expands tool capabilities.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.7/io.github.aili0617.toolbox-0.1.7-darwin-arm64.dbxp",
+              "sha256": "915d369561b77562e4609e58c8204c611cf17bab9143e7fa521bdcee592fec55",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9026611
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.7/io.github.aili0617.toolbox-0.1.7-darwin-x64.dbxp",
+              "sha256": "b50d4cbd89939bf85ff20149f4971f9b247c4e0e6f6051c915d14211f42559cd",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9466537
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.7/io.github.aili0617.toolbox-0.1.7-linux-arm64.dbxp",
+              "sha256": "a7f56d6e3a060910d5fb1d5deca1eac73668defd7d643dcf6c18d2d8540f74f1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 10088154
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.7/io.github.aili0617.toolbox-0.1.7-linux-x64.dbxp",
+              "sha256": "4841eb9a2b36680c0985602fc7ff73f139d22cf8a1305753952627454b42bc32",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 10549755
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.7/io.github.aili0617.toolbox-0.1.7-windows-x64.dbxp",
+              "sha256": "12cc229206e226ee388a83f54a98869e361093a8181249f0640b8f82fe68233b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9761938
+            }
+          ]
+        },
         {
           "version": "0.1.6",
           "releasedAt": "2026-10-27T16:30:42.189Z",
@@ -14577,7 +14746,7 @@
       "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine. Users who need online music must download the DBX Full edition separately: https://github.com/onceMisery/hertz-studio/releases",
       "publisher": "oncemisery",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.5/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/icon.svg",
       "tags": [
         "music",
         "player",
@@ -14590,11 +14759,53 @@
         "host.storage",
         "host.workbench"
       ],
-      "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.5",
+      "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.7",
       "homepage": "https://github.com/onceMisery/hertz-studio",
       "license": "MIT",
-      "latestVersion": "0.3.5",
+      "latestVersion": "0.3.7",
       "versions": [
+        {
+          "version": "0.3.7",
+          "releasedAt": "2026-11-23T07:23:37.452Z",
+          "releaseNotes": "## Hertz Studio DBX Standard 0.3.7\n\n正式版本号 `0.3.7`，与独立版使用同一份 GitHub master 源码提交 `92aabda`。本次为 Store 未签名候选，签名由 DBX 侧维护者完成。\n\n### 安装\n\n需要 DBX `>= 0.6.35`。下载对应平台的 `.dbxp`，从 DBX 插件管理中安装。插件 ID 为 `io.github.oncemisery.hertz-studio`。\n\n| 平台 | 文件 |\n| --- | --- |\n| Windows x64 | `io.github.oncemisery.hertz-studio-0.3.7-windows-x64.dbxp` |\n| Linux x64 | `io.github.oncemisery.hertz-studio-0.3.7-linux-x64.dbxp` |\n| Linux arm64 | `io.github.oncemisery.hertz-studio-0.3.7-linux-arm64.dbxp` |\n| macOS x64 | `io.github.oncemisery.hertz-studio-0.3.7-darwin-x64.dbxp` |\n| macOS Apple Silicon | `io.github.oncemisery.hertz-studio-0.3.7-darwin-arm64.dbxp` |\n\n### 本次更新\n\n- 桌面宠物：新增内置「橙团子 / 小黄鸭」形象，以及大小、不透明度、总在最前、贴边自动隐藏设置；窗口改用 SetWindowRgn 剪影裁剪，从宠物恢复主窗口走原生焦点握手。\n- 播放与歌词：播放页与歌词视图的音量并入中央播控，页脚一行让给歌词；桌面歌词缺少逐字时间时按整行进度扫过；收藏红心统一红色。\n- 沉浸舞台：封面球从封面颗粒采样取色；声场设置与队列统一为悬浮玻璃卡片，设置改为非模态侧栏。\n- 首页与播放栏：主操作移入封面浮层；指针离开应用时播放栏自动淡出；一起听大厅加入聆听脉冲；玻璃 tooltip 与播放栏图标簇精修。\n- 修复：在线播放历史不再降级为平台 ID；修复跨平台测试抖动（预算账本、交叉淡化、trust 池关闭）。\n- 同时包含 0.3.6 的独立版设置闪退修复（刷新内嵌组合目录 lock 身份并新增打包前堆预算门禁）与壁纸/舞台离线设计补全。\n\n### 验证与范围\n\n由 `release dbx plugin` 工作流构建五个目标，以该次运行为准。本次为未签名候选，不证明真实商店签名、净系统安装或全部宿主图形界面旅程。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-darwin-arm64.dbxp",
+              "sha256": "520c6816d3dd86086ce946895171cc62a0611545a9103f46c2d799e4b9902ac1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14811176
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-darwin-x64.dbxp",
+              "sha256": "2727463ab9268e6f49e84cb3ce0cc3945dcde01fea67515dc4c6f3787aa86946",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 15896922
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-linux-arm64.dbxp",
+              "sha256": "1344f53fe13bea27651c91f128218edaf946e85e499f5ec45fe2c57bf90c79b0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16516538
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-linux-x64.dbxp",
+              "sha256": "775c0bde29e6ebc5268639b8c6f82fc23adf092383ebfd430e810a7db9ea0d13",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 16762565
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-windows-x64.dbxp",
+              "sha256": "b7b516e51799a91924a0ff5b3394c264710a96353736ab7d2e86f6e72f30b9ec",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14631015
+            }
+          ]
+        },
         {
           "version": "0.3.5",
           "releasedAt": "2026-11-19T13:28:05.767Z",
@@ -17962,7 +18173,7 @@
       "description": "通用 Flink 客户端工作台：连接 JobManager REST API，实时查看集群概览、运行中作业与算子、TaskManager 指标与日志、集群配置；独家的「消费内容」页直接从 print-sink 日志解析 Kafka 消费记录，以表格呈现每条消息的操作类型与各字段。全链路只读，无需 SSH、无需数据库。",
       "publisher": "smallrob",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/icon.svg",
       "tags": [
         "flink",
         "streaming",
@@ -17977,11 +18188,53 @@
         "host.connections:read",
         "host.events"
       ],
-      "source": "https://github.com/SmallRob/dbx-plugin-flink-studio/tree/v0.1.0",
+      "source": "https://github.com/SmallRob/dbx-plugin-flink-studio/tree/v0.1.3",
       "homepage": "https://github.com/SmallRob/dbx-plugin-flink-studio",
       "license": "MIT",
-      "latestVersion": "0.1.0",
+      "latestVersion": "0.1.3",
       "versions": [
+        {
+          "version": "0.1.3",
+          "releasedAt": "2026-11-23T07:30:56.375Z",
+          "releaseNotes": "0.1.3: Kafka consumption path — job pipeline visualization (Source→Calc→Sink flows), ingest metrics cards with topic/partition offsets from Flink REST metrics, and consumption lineage hints (broker/source tables/topics from TaskManager logs) on the Consumed Messages page.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-darwin-arm64.dbxp",
+              "sha256": "a6f8fd1d8850b5585087c2d48703e735ae4d9c554e1c1fab83410427c74180a2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2211701
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-darwin-x64.dbxp",
+              "sha256": "852dbe134d7e081ae47281afc369fea3fb6b7a15d84a98c72d8182e427a24d8b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2365798
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-linux-arm64.dbxp",
+              "sha256": "1e92a27600f92fb48dfd4a6f8b62f4832705203fa2a2e3d71526e31695d77045",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2134678
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-linux-x64.dbxp",
+              "sha256": "38a25a41dd4c463f1a9273a0dd67d31e6e9cf1a21cfe4ba446cb4b7f7aa2231e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2331027
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-windows-x64.dbxp",
+              "sha256": "ef791028bf02ea3699356f7cbb2e24b8e4cc8303d696f6fecc6025210b3a916c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2376708
+            }
+          ]
+        },
         {
           "version": "0.1.0",
           "releasedAt": "2026-11-19T14:01:24.855Z",
