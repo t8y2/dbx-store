@@ -3618,7 +3618,7 @@
       "description": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, AWS S3, R2, COS, OBS, B2...). Server-side pagination with list virtualization, chunked upload, presigned URL sharing, file preview (Office / 3D / HTML / Markdown), transfer task center with failed-download retry, and multi-select batch delete / download / copy / move.",
       "publisher": "huangqiang",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.4.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.object.browser/1.4.2/icon.svg",
       "tags": [
         "storage",
         "oss",
@@ -3636,8 +3636,29 @@
       "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.4.0",
       "homepage": "https://github.com/huangqiang008/dbx-object-storage",
       "license": "MIT",
-      "latestVersion": "1.4.0",
+      "latestVersion": "1.4.2",
       "versions": [
+        {
+          "version": "1.4.2",
+          "releasedAt": "2026-11-23T05:17:40.732Z",
+          "releaseNotes": "修复两个严重问题：① 多标签页凭证互串——后打开的连接会覆盖先打开的连接状态，切回旧标签页操作时使用错误凭证，同名桶的写操作可能落到错误存储；② 上传分片跨连接污染与断点续传失效——同名同大小文件上传到不同连接时会互相接管分片，且分片用随机文件名导致跨进程续传从未真正生效。另移除宿主 CSP 下无法加载的 CDN 回退死代码。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.object.browser/1.4.2/com.object.browser-1.4.2-darwin-arm64.dbxp",
+              "sha256": "f8914cedeae58e78dcab2ae11ef9e26079592231ca7492ca25aa582148a2768d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 7919338
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.object.browser/1.4.2/com.object.browser-1.4.2-windows-x64.dbxp",
+              "sha256": "8bad9a4409c8c396ec0a44d35eae77a540b8a15715369ab9679556106da2def4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 8405944
+            }
+          ]
+        },
         {
           "version": "1.4.0",
           "releasedAt": "2026-11-05T12:44:28.819Z",
