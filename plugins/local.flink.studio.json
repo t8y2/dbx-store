@@ -4,7 +4,7 @@
   "description": "通用 Flink 客户端工作台：连接 JobManager REST API，实时查看集群概览、运行中作业与算子、TaskManager 指标与日志、集群配置；独家的「消费内容」页直接从 print-sink 日志解析 Kafka 消费记录，以表格呈现每条消息的操作类型与各字段。全链路只读，无需 SSH、无需数据库。",
   "publisher": "smallrob",
   "verified": false,
-  "icon": "https://github.com/SmallRob/dbx-plugin-flink-studio/raw/v0.1.0/assets/plugin.svg",
+  "icon": "https://github.com/SmallRob/dbx-plugin-flink-studio/raw/v0.1.3/assets/plugin.svg",
   "tags": [
     "flink",
     "streaming",
@@ -19,10 +19,10 @@
     "host.connections:read",
     "host.events"
   ],
-  "source": "https://github.com/SmallRob/dbx-plugin-flink-studio/tree/v0.1.0",
+  "source": "https://github.com/SmallRob/dbx-plugin-flink-studio/tree/v0.1.3",
   "homepage": "https://github.com/SmallRob/dbx-plugin-flink-studio",
   "license": "MIT",
-  "latestVersion": "0.1.0",
+  "latestVersion": "0.1.3",
   "versions": [
     {
       "version": "0.1.0",
@@ -63,6 +63,48 @@
           "sha256": "592e6fa40b77dfee12b56c8f40f6b1ca1f6dbd209e90b9e9c76bdb21c7692acf",
           "signingKeyId": "dbx-store-release-2026",
           "size": 2372783
+        }
+      ]
+    },
+    {
+      "version": "0.1.3",
+      "releasedAt": "2026-11-23T07:30:56.375Z",
+      "releaseNotes": "0.1.3: Kafka consumption path — job pipeline visualization (Source→Calc→Sink flows), ingest metrics cards with topic/partition offsets from Flink REST metrics, and consumption lineage hints (broker/source tables/topics from TaskManager logs) on the Consumed Messages page.",
+      "artifacts": [
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-linux-x64.dbxp",
+          "sha256": "38a25a41dd4c463f1a9273a0dd67d31e6e9cf1a21cfe4ba446cb4b7f7aa2231e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2331027
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-linux-arm64.dbxp",
+          "sha256": "1e92a27600f92fb48dfd4a6f8b62f4832705203fa2a2e3d71526e31695d77045",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2134678
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-darwin-x64.dbxp",
+          "sha256": "852dbe134d7e081ae47281afc369fea3fb6b7a15d84a98c72d8182e427a24d8b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2365798
+        },
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-darwin-arm64.dbxp",
+          "sha256": "a6f8fd1d8850b5585087c2d48703e735ae4d9c554e1c1fab83410427c74180a2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2211701
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-windows-x64.dbxp",
+          "sha256": "ef791028bf02ea3699356f7cbb2e24b8e4cc8303d696f6fecc6025210b3a916c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2376708
         }
       ]
     }
