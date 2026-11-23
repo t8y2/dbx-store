@@ -22,7 +22,7 @@
   "source": "https://github.com/huangqiang008/dbx-object-storage/tree/v1.4.0",
   "homepage": "https://github.com/huangqiang008/dbx-object-storage",
   "license": "MIT",
-  "latestVersion": "1.4.2",
+  "latestVersion": "1.4.4",
   "versions": [
     {
       "version": "0.4.0",
@@ -112,6 +112,27 @@
           "sha256": "8bad9a4409c8c396ec0a44d35eae77a540b8a15715369ab9679556106da2def4",
           "signingKeyId": "dbx-store-release-2026",
           "size": 8405944
+        }
+      ]
+    },
+    {
+      "version": "1.4.4",
+      "releasedAt": "2026-11-23T06:47:43.569Z",
+      "releaseNotes": "Generic object storage browser for Alibaba Cloud OSS and S3-compatible services (MinIO, R2, COS...). Driver abstraction, large-directory pagination, chunked upload, presigned sharing, file preview, multi-select batch delete/download.\n\nDisclaimer: this is an independent third-party plugin. It is not affiliated with, endorsed, authorized or sponsored by any of the storage vendors named above; vendor and service names are used solely to indicate protocol compatibility and remain the property of their respective owners. Credentials are used only between your machine and your own storage service and are never sent to third parties; the Secret is stored in plaintext on this machine only if you explicitly opt in. Presigned links grant access to anyone holding them until they expire.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.object.browser/1.4.4/com.object.browser-1.4.4-darwin-arm64.dbxp",
+          "sha256": "e84c45694be1d179277c53f69e4e4dc1c68b2bd8bb59aa8638d9549a1f9e2e75",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 7945696
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.object.browser/1.4.4/com.object.browser-1.4.4-windows-x64.dbxp",
+          "sha256": "772f37bd50c81d4ff7674b05b2e77b519361d600bf0eb9c89fdbfb233d94d9cc",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 8432272
         }
       ]
     }
