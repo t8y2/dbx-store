@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.ryn-mic.json-grid",
+  "publisher": "ryn-mic",
+  "version": "0.2.3",
+  "name": "JSON Grid",
+  "description": "Explore and edit JSON as nested grids, DevTools-style trees and source. Copy JSONPath, search, filter and format locally.",
+  "icon": "https://raw.githubusercontent.com/Ryn-Mic/dbx-json-grid/v0.2.3/assets/plugin.svg",
+  "tags": [
+    "json",
+    "json-grid",
+    "developer-tools",
+    "formatter"
+  ],
+  "permissions": [
+    "host.clipboard:read",
+    "host.storage"
+  ],
+  "homepage": "https://github.com/Ryn-Mic/dbx-json-grid",
+  "license": "MIT",
+  "releaseNotes": "Align source fold chevrons with line numbers. Simplify object tables to key/value rows, use one-based row numbers for arrays, share header and row-number colors, and remove table caption and summary rows.",
+  "localizations": {
+    "zh-CN": {
+      "name": "JSON Grid",
+      "description": "将 JSON 转为可编辑嵌套网格与 DevTools 风格树形，支持路径复制、搜索筛选、格式化和撤销；数据在本地处理。"
+    }
+  },
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/Ryn-Mic/dbx-json-grid/releases/download/v0.2.3/io.github.ryn-mic.json-grid-0.2.3-universal.dbxp",
+      "sha256": "ce2006419420cf7e214980ffeb626c361390f1dfebc91e791ca895fb60bbca17",
+      "size": 244092
+    }
+  ],
+  "source": "https://github.com/Ryn-Mic/dbx-json-grid/tree/v0.2.3"
+}
