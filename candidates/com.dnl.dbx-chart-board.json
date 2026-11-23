@@ -30,8 +30,8 @@
     {
       "target": "windows-x64",
       "url": "https://github.com/linCoder96/dbx-chart-board/releases/download/v0.1.0/com.dnl.dbx-chart-board-0.1.0-windows-x64.dbxp",
-      "sha256": "05eb85ae0733696c4c1d11639df214e1e1dfa98d5876b257c19049824d0b7174",
-      "size": 54818092
+      "sha256": "371645655dc153f9120021869ddc0cf68476f7f94652ce22e6389c9823bee29f",
+      "size": 54818083
     }
   ]
 }
