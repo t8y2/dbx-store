@@ -20,7 +20,7 @@
   "source": "https://github.com/Ezreal-byte/dbx-docker-plugin/tree/v0.3.1",
   "homepage": "https://github.com/Ezreal-byte/dbx-docker-plugin",
   "license": "Apache-2.0",
-  "latestVersion": "0.3.1",
+  "latestVersion": "0.4.0",
   "versions": [
     {
       "version": "0.1.4",
@@ -103,6 +103,48 @@
           "sha256": "1d41d0a9242638261dd4efd3b78691f943726f42365b4aed58a7dc9b158725e8",
           "signingKeyId": "dbx-store-release-2026",
           "size": 7949554
+        }
+      ]
+    },
+    {
+      "version": "0.4.0",
+      "releasedAt": "2026-11-23T05:21:04.638Z",
+      "releaseNotes": "",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.4.0/io.dbx.docker-0.4.0-darwin-arm64.dbxp",
+          "sha256": "0158ac78ee7f4d9bb0e3de3a2c778e99f7e9dfe6cd9836acafae62521a13aa4e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 7515393
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.4.0/io.dbx.docker-0.4.0-darwin-x64.dbxp",
+          "sha256": "8ce26ec9d95537c50a0cb5c2968f682d29badd4369b5cf5e2a16df253068306d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 7970358
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.4.0/io.dbx.docker-0.4.0-linux-arm64.dbxp",
+          "sha256": "c4d1b8e9cbae3a98d90bdca5c91d48a509affba1e4a83454c6ad2da257e1c963",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 7255238
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.4.0/io.dbx.docker-0.4.0-linux-x64.dbxp",
+          "sha256": "fd622629ac13b9661a869303703a1d2a6a0febf40536acdd51f0b65e4deb1e56",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 7865127
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.docker/0.4.0/io.dbx.docker-0.4.0-windows-x64.dbxp",
+          "sha256": "6ebad4d62024b6cdc8bedc337de22cd284ee92b48823c5ee36932cfdebd62389",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 8008467
         }
       ]
     }
