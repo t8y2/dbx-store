@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "com.mawen.dbxfs",
+  "publisher": "mawen",
+  "version": "0.1.2",
+  "name": "DBX File System",
+  "description": "Gives the DBX built-in AI assistant file capabilities inside an authorized directory: list directories, read files, search content, precise edits, delete. Three permission tiers, sensitive-file denylist, symlink escape protection, and an audit log.",
+  "icon": "https://raw.githubusercontent.com/marvinwenyong/dbx-fs-plugin/v0.1.2/assets/plugin.svg",
+  "tags": ["files", "developer-tools", "ai", "mcp", "productivity"],
+  "permissions": [],
+  "source": "https://github.com/marvinwenyong/dbx-fs-plugin/tree/v0.1.2",
+  "homepage": "https://github.com/marvinwenyong/dbx-fs-plugin",
+  "license": "MIT",
+  "releaseNotes": "首个公开候选版本。授权目录内的 8 个文件工具（列目录/属性/读取/搜索/写入/精确编辑/删除/授权状态查询），连接配置驱动权限，不读环境变量；realpath 校验防符号链接逃逸与 .. 穿越；敏感文件黑名单；只读工具免宿主确认，写删工具需人工确认。",
+  "localizations": {
+    "zh-CN": {
+      "name": "DBX 文件系统",
+      "description": "给 DBX 内置 AI 助手授予授权目录内的文件能力：列目录、读文件、内容搜索、精确编辑、删除。三档权限模式、敏感文件黑名单、符号链接逃逸防护与审计日志。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/marvinwenyong/dbx-fs-plugin/releases/download/v0.1.2/com.mawen.dbxfs-0.1.2-windows-x64.dbxp",
+      "sha256": "160bb601adc578dd15c4330c7a1e69538f99d7708e174b550e8e138abae3afd1",
+      "size": 34412391
+    }
+  ]
+}
