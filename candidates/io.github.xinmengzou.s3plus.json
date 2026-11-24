@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.xinmengzou.s3plus",
+  "publisher": "xinmengzou",
+  "version": "0.2.0",
+  "name": "S3 Browser Plus",
+  "description": "S3-compatible object storage plugin for DBX, a community fork of S3 Browser with upload, preview, and connection-form enhancements.",
+  "icon": "https://raw.githubusercontent.com/xinmengzou/dbx-plugin-s3plus/main/assets/plugin.svg",
+  "tags": ["s3", "storage", "files", "object-storage"],
+  "permissions": ["host.events", "host.binary", "host.clipboard:read", "host.storage"],
+  "source": "https://github.com/xinmengzou/dbx-plugin-s3plus/tree/v0.2.0",
+  "homepage": "https://github.com/xinmengzou/dbx-plugin-s3plus",
+  "license": "Apache-2.0",
+  "releaseNotes": "Initial release of S3 Browser Plus, a fork of S3 Browser (io.github.t8y2.s3, Apache-2.0): drag-and-drop uploads with target-directory picker, batch conflict strategies, 3-way concurrent upload queue panel, collapsible preview pane with persisted layout, server-side prefix search, and provider endpoint examples in the connection form.",
+  "localizations": {
+    "zh-CN": {
+      "name": "S3 Browser Plus",
+      "description": "S3 兼容对象存储插件，S3 Browser 社区增强版：上传体验、预览面板与连接表单增强。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/xinmengzou/dbx-plugin-s3plus/releases/download/v0.2.0/io.github.xinmengzou.s3plus-0.2.0-darwin-arm64.dbxp",
+      "sha256": "57297a90d9d3bc6bb7ef2637c6789358663006267864206da0f53a5267928feb",
+      "size": 6417599
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/xinmengzou/dbx-plugin-s3plus/releases/download/v0.2.0/io.github.xinmengzou.s3plus-0.2.0-darwin-x64.dbxp",
+      "sha256": "7f8ab995976f20a30b9c1bd4dd71a0f948efe92944a201de9177fc9ae2b19331",
+      "size": 6768026
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/xinmengzou/dbx-plugin-s3plus/releases/download/v0.2.0/io.github.xinmengzou.s3plus-0.2.0-linux-arm64.dbxp",
+      "sha256": "aa6a23520fc45ea10061a7cf07b4609aa806b9bac5e193370bc10d349e3f4155",
+      "size": 6328743
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/xinmengzou/dbx-plugin-s3plus/releases/download/v0.2.0/io.github.xinmengzou.s3plus-0.2.0-linux-x64.dbxp",
+      "sha256": "cc7c391be6991fe4bed7663eee5a48bf42d13c3167a205c232d4445b096823bc",
+      "size": 6777926
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/xinmengzou/dbx-plugin-s3plus/releases/download/v0.2.0/io.github.xinmengzou.s3plus-0.2.0-windows-arm64.dbxp",
+      "sha256": "0e46c5684a02ff587ceead7d26926adab6f401a1d17bbc6c88340798c544c5dd",
+      "size": 6297413
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/xinmengzou/dbx-plugin-s3plus/releases/download/v0.2.0/io.github.xinmengzou.s3plus-0.2.0-windows-x64.dbxp",
+      "sha256": "7b9fbd6a346e7ec8296267c210f00931360cf2daa0c03854647c52c52ff81772",
+      "size": 6783384
+    }
+  ]
+}
