@@ -1,0 +1,71 @@
+{
+  "id": "com.jlian.apitester",
+  "name": "API Tester",
+  "description": "HTTP and gRPC API testing workbench for DBX.",
+  "publisher": "jlian",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/MosaicAccount/dbx-plugin-api-tester/v0.0.1/assets/plugin.svg",
+  "tags": [
+    "api",
+    "http",
+    "grpc",
+    "testing"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/MosaicAccount/dbx-plugin-api-tester/tree/v0.0.1",
+  "homepage": "https://github.com/MosaicAccount/dbx-plugin-api-tester",
+  "license": "MIT",
+  "latestVersion": "0.0.1",
+  "versions": [
+    {
+      "version": "0.0.1",
+      "releasedAt": "2026-11-23T07:58:25.579Z",
+      "releaseNotes": "Initial release.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.jlian.apitester/0.0.1/com.jlian.apitester-0.0.1-darwin-arm64.dbxp",
+          "sha256": "ffcc5376dc9efb34ba49e0595fa8af14365d703f9d49fb100ab3f5f8c25f40c5",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 8189601
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/com.jlian.apitester/0.0.1/com.jlian.apitester-0.0.1-darwin-x64.dbxp",
+          "sha256": "5873483df7a8e4dda64d7e820b12a8af6b36f8c1f5a8cac1a6693acf79d876ba",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 8560611
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/com.jlian.apitester/0.0.1/com.jlian.apitester-0.0.1-linux-arm64.dbxp",
+          "sha256": "aa15606f8d36c89353f93255de38f55f451ab8de05aa1596a29a8c9f160ef212",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 8144115
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/com.jlian.apitester/0.0.1/com.jlian.apitester-0.0.1-linux-x64.dbxp",
+          "sha256": "5a289d3a0ac16bc7e509c75099f79602f1c9218f515f03486298b98f20707650",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 8667493
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.jlian.apitester/0.0.1/com.jlian.apitester-0.0.1-windows-x64.dbxp",
+          "sha256": "50f0ade8211b647e1d0025b5c2ce4bcfd3fb6ea754b018108fe44df796006e58",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 8780867
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "API 调试台",
+      "description": "在 DBX 工作台里调试 HTTP 接口、调用 gRPC 服务。"
+    }
+  }
+}
