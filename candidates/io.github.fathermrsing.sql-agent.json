@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.fathermrsing.sql-agent",
+  "publisher": "fathermrsing",
+  "version": "0.1.3",
+  "name": "SQL Server Agent Manager",
+  "description": "SQL Server Agent jobs, T-SQL steps, schedules and history using existing DBX connections via local MCP. macOS Apple Silicon preview.",
+  "icon": "https://raw.githubusercontent.com/fathermrsing/dbx-sql-agent/v0.1.3/assets/plugin.svg",
+  "tags": [
+    "sqlserver",
+    "sql-server-agent",
+    "jobs",
+    "administration"
+  ],
+  "permissions": [
+    "host.connections:read",
+    "host.events",
+    "host.storage"
+  ],
+  "source": "https://github.com/fathermrsing/dbx-sql-agent/tree/v0.1.3",
+  "homepage": "https://github.com/fathermrsing/dbx-sql-agent",
+  "license": "Apache-2.0",
+  "releaseNotes": "# Changelog\n\n## 0.1.3 — Initial store review candidate\n\n- Prepare the SQL Server Agent Manager source for public review and add source/homepage metadata.\n- Anonymize legacy-response fixtures; no production connection identifiers or login names are needed to reproduce the tests.\n- Document permissions, local MCP network access, Keychain behavior and remaining integration-test limitations.\n- Preserve the 0.1.2 features: Agent jobs, T-SQL steps, schedules, history, reviewed management operations, legacy DBX response compatibility and opt-in macOS Keychain token storage.\n\nSupported release target: **macOS Apple Silicon (`darwin-arm64`) only**.\n\nThis is a development preview submitted for review, not a claim of DBX Store approval. Automated tests use mock MCP and an in-memory credential vault. Real DBX installation, native Keychain consent/restart behavior and real SQL Server management operations still require integration validation. No real database or user keychain has been accessed by the tests.\n",
+  "localizations": {
+    "zh-CN": {
+      "name": "SQL Server Agent 管理器",
+      "description": "通过本机 MCP 复用 DBX 连接，管理 SQL Server Agent 作业、T-SQL 步骤、计划和历史。macOS Apple Silicon 开发预览。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/fathermrsing/dbx-sql-agent/releases/download/v0.1.3/io.github.fathermrsing.sql-agent-0.1.3-darwin-arm64.unsigned.dbxp",
+      "sha256": "2a0140b0450761d774a0348ae3aad78b82b61591b582d6ad160b029364c5c8de",
+      "size": 2628662
+    }
+  ]
+}
