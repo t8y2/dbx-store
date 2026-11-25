@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "miko.todo.tasks",
+  "publisher": "miko",
+  "version": "0.1.1",
+  "name": "MIKO.TODO 待办",
+  "description": "分组待办工作台：优先级、起止时间、子任务与里程碑、完成度进度条，列表与日历双视图，任务可设为不重复/每天/每周/每月/每年/自定义重复。",
+  "icon": "https://raw.githubusercontent.com/mikodream/miko-todo-dbx/v0.1.1/assets/plugin.svg",
+  "tags": [
+    "todo",
+    "tasks",
+    "calendar",
+    "productivity",
+    "offline"
+  ],
+  "permissions": [
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/mikodream/miko-todo-dbx",
+  "homepage": "https://github.com/mikodream/miko-todo-dbx#readme",
+  "license": "MIT",
+  "releaseNotes": "首次上架：分组管理、优先级与起止时间、子任务（用时/优先级/进度）与里程碑、完成度进度条、列表/日历双视图、六种重复规则。",
+  "localizations": {
+    "en": {
+      "name": "MIKO.TODO Tasks",
+      "description": "Grouped todos with priority, start and due dates, subtasks and milestones, progress bars, and list or calendar views; tasks can repeat daily, weekly, monthly, yearly or on a custom schedule."
+    }
+  },
+  "targets": [
+    {
+      "target": "universal",
+      "url": "https://github.com/mikodream/miko-todo-dbx/releases/download/v0.1.1/miko.todo.tasks-0.1.1-universal.dbxp",
+      "sha256": "575f7d00e5f95746d4c09032c224c9a962d6ae80d4f70b8a518eebe0a1956e5d",
+      "size": 41260
+    }
+  ]
+}
