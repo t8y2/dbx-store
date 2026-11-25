@@ -15486,7 +15486,7 @@
       "description": "静态 SQL 评审台：规则化评审破坏性变更、迁移规范、性能与结构质量；附按方言组织的最佳实践库，评审时联动推荐优化建议；v0.3.0 提供独立的跨文件架构评审页（虚拟数据字典 + ARCH 规则集，独立评分）。不连库、不执行 SQL。",
       "publisher": "smallrob",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.1/icon.svg",
       "tags": [
         "sql",
         "review",
@@ -15499,11 +15499,53 @@
       "permissions": [
         "host.workbench"
       ],
-      "source": "https://github.com/SmallRob/dbx-sql-review/tree/v0.3.0",
+      "source": "https://github.com/SmallRob/dbx-sql-review/tree/v0.3.1",
       "homepage": "https://github.com/SmallRob/dbx-sql-review",
       "license": "Apache-2.0",
-      "latestVersion": "0.3.0",
+      "latestVersion": "0.3.1",
       "versions": [
+        {
+          "version": "0.3.1",
+          "releasedAt": "2026-11-25T03:10:18.188Z",
+          "releaseNotes": "v0.3.1：新增慢查询静态规则族——深分页（大 OFFSET）、超大 IN 列表、多表连接扇出；命中计入性能维度罚分与慢查询统计，纳入 SQL 质量评分；阈值可在规则设置页调整。全程静态词法分析，不连库、不执行 SQL。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.1/io.github.smallrob.sql-review-0.3.1-darwin-arm64.dbxp",
+              "sha256": "ff33c7b4bcdd7332aa687875a907fb5be0dd7e458f98fa6b3ae989a2e5daa6b9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2231729
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.1/io.github.smallrob.sql-review-0.3.1-darwin-x64.dbxp",
+              "sha256": "26819ebf9d4ba026cad6a0bfd71012748cafa181b45777fa7b0eada9757c803c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2339304
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.1/io.github.smallrob.sql-review-0.3.1-linux-arm64.dbxp",
+              "sha256": "63fb45cd740922e090ac0ed158867f8ebefa213a12f9be529a160f8dccb7fc32",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2210923
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.1/io.github.smallrob.sql-review-0.3.1-linux-x64.dbxp",
+              "sha256": "ea1b8535140355c66a1d356be6dd90a716192bf6a4fb2732a410c4aa37d63de6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2355306
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.1/io.github.smallrob.sql-review-0.3.1-windows-x64.dbxp",
+              "sha256": "7992dffeca53aee2e8c5ec28c9eb0d789f8c5a28d1ded0919dedd1d0b7a723f0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2415188
+            }
+          ]
+        },
         {
           "version": "0.3.0",
           "releasedAt": "2026-11-19T13:33:10.298Z",
