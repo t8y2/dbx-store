@@ -4,7 +4,7 @@
   "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally.",
   "publisher": "aili0617",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/aiLi0617/dbx-plugin-toolbox/v0.1.7/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/aiLi0617/dbx-plugin-toolbox/v0.1.8/assets/plugin.svg",
   "tags": [
     "developer-tools",
     "utilities",
@@ -18,7 +18,7 @@
   "source": "https://github.com/aiLi0617/dbx-plugin-toolbox",
   "homepage": "https://github.com/aiLi0617/dbx-plugin-toolbox",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.7",
+  "latestVersion": "0.1.8",
   "versions": [
     {
       "version": "0.1.0",
@@ -353,6 +353,48 @@
           "sha256": "12cc229206e226ee388a83f54a98869e361093a8181249f0640b8f82fe68233b",
           "signingKeyId": "dbx-store-release-2026",
           "size": 9761938
+        }
+      ]
+    },
+    {
+      "version": "0.1.8",
+      "releasedAt": "2026-11-25T03:31:09.288Z",
+      "releaseNotes": "0.1.8：修复插件清单与 Rust 后端版本不一致导致的初始化失败。新增 56 个只读 MCP 工具，改进高精度数据处理和模拟数据生成。需要 DBX 0.6.60 或更高版本。0.1.8: Fixes initialization failures caused by a version mismatch between the manifest and Rust backend. Adds 56 read-only MCP tools and improves exact data processing and test data generation. Requires DBX 0.6.60 or later.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.8/io.github.aili0617.toolbox-0.1.8-darwin-arm64.dbxp",
+          "sha256": "90c620851a7a5549e7dd07cc19b6e6541437b38ab39d7c8cf797c63206e2a775",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 12604374
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.8/io.github.aili0617.toolbox-0.1.8-darwin-x64.dbxp",
+          "sha256": "61a9f0d1d383486c1068e0c3fe05c49f8e2af92c034394fbabfde2b2880041df",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13232393
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.8/io.github.aili0617.toolbox-0.1.8-linux-arm64.dbxp",
+          "sha256": "8e578d09e7d05024a0e7df528989a26d08e2433b0e42ddff904e8fe09fedbd5a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13740811
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.8/io.github.aili0617.toolbox-0.1.8-linux-x64.dbxp",
+          "sha256": "e09a114c97b928031456ca717ade89ed1782a4762564f9c4405ed60360bcec66",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14370410
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.8/io.github.aili0617.toolbox-0.1.8-windows-x64.dbxp",
+          "sha256": "f3ef7aaa9c12153ea7446a8a00e1313e906ba4baf36152cd3aed5b23519d3eac",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 13711835
         }
       ]
     }
