@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "name": "PostGIS Raster Viewer",
   "description": "Raster result view for PostGIS: client-side WKB decode, image rendering, pixel-value grid and per-band statistics.",
-  "icon": "assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/naivemap/dbx-postgis-raster-viewer/v0.1.0/assets/plugin.svg",
   "tags": ["raster", "postgis"],
   "permissions": ["host.workbench", "host.data:read", "host.connections:read"],
   "source": "https://github.com/naivemap/dbx-postgis-raster-viewer/tree/v0.1.0",
