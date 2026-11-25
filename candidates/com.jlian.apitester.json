@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "com.jlian.apitester",
+  "publisher": "jlian",
+  "version": "0.1.0",
+  "name": "API Tester",
+  "description": "HTTP and gRPC API testing workbench for DBX.",
+  "icon": "https://raw.githubusercontent.com/MosaicAccount/dbx-plugin-api-tester/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "api",
+    "http",
+    "grpc",
+    "testing"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/MosaicAccount/dbx-plugin-api-tester/tree/v0.1.0",
+  "homepage": "https://github.com/MosaicAccount/dbx-plugin-api-tester",
+  "license": "MIT",
+  "releaseNotes": "Workbench rebuilt on Svelte 5 with folder-based saved requests; clearer backend error kinds.",
+  "localizations": {
+    "zh-CN": {
+      "name": "API 调试台",
+      "description": "在 DBX 工作台里调试 HTTP 接口、调用 gRPC 服务。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/MosaicAccount/dbx-plugin-api-tester/releases/download/v0.1.0/com.jlian.apitester-0.1.0-darwin-arm64.dbxp",
+      "sha256": "29db27b869d3f2bc2ef607ec26c4967dc7ae2ec861a70a37eb7bd658211e5094",
+      "size": 8217923
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/MosaicAccount/dbx-plugin-api-tester/releases/download/v0.1.0/com.jlian.apitester-0.1.0-darwin-x64.dbxp",
+      "sha256": "018826265e17475df57e961adfb41e4278c5e89d1b818dc9d7975e6e706c50ec",
+      "size": 8594199
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/MosaicAccount/dbx-plugin-api-tester/releases/download/v0.1.0/com.jlian.apitester-0.1.0-linux-arm64.dbxp",
+      "sha256": "957622fd0ab9d43f8ff11942af2363383f211ca39f04ae463d5fd5a72abad5f8",
+      "size": 8184325
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/MosaicAccount/dbx-plugin-api-tester/releases/download/v0.1.0/com.jlian.apitester-0.1.0-linux-x64.dbxp",
+      "sha256": "7bc48a63a54b01ee3b5a833110c7097118f251d3481a29eee0ca1794a59425d3",
+      "size": 8709470
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/MosaicAccount/dbx-plugin-api-tester/releases/download/v0.1.0/com.jlian.apitester-0.1.0-windows-x64.dbxp",
+      "sha256": "593e7f7e58e711aba8c955d916d2c2c8a24dda95cb6043749d3de2dc9cc9e8fb",
+      "size": 8816707
+    }
+  ]
+}
