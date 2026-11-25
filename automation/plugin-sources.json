@@ -147,6 +147,11 @@
       "autoUpdate": true
     },
     {
+      "repository": "mikodream/miko-todo-dbx",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
+    },
+    {
       "repository": "mikodream/ratel-dbx",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
