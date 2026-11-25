@@ -1,0 +1,44 @@
+{
+  "id": "com.dnl.dbx-chart-board",
+  "name": "ChatBoard",
+  "description": "Conversation-driven chart dashboard for DBX: tell an AI agent what you want and it adds chart cards to a persistent board via MCP tools.",
+  "publisher": "dnl",
+  "verified": false,
+  "icon": "https://raw.githubusercontent.com/linCoder96/dbx-chart-board/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "dashboard",
+    "visualization",
+    "ai",
+    "mcp"
+  ],
+  "permissions": [
+    "host.data:read",
+    "host.storage"
+  ],
+  "source": "https://github.com/linCoder96/dbx-chart-board/tree/v0.1.0",
+  "homepage": "https://github.com/linCoder96/dbx-chart-board",
+  "license": "Apache-2.0",
+  "latestVersion": "0.1.0",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-11-25T04:11:59.417Z",
+      "releaseNotes": "Initial release of ChatBoard: persistent chart board with 5 chart types, shape-based auto inference, and MCP tools (list_boards/add_card/remove_card) so AI agents add cards through conversation. Windows-x64 native sidecar.",
+      "artifacts": [
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/com.dnl.dbx-chart-board/0.1.0/com.dnl.dbx-chart-board-0.1.0-windows-x64.dbxp",
+          "sha256": "94c6e3e60d8af8262ee984dde69a545e2bee06abc2f2ebeb8b98edbc1f73e51e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 54818802
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "对话图表看板",
+      "description": "用对话直接生成图表的 DBX 看板插件：对 Agent 说一句话，即通过 MCP 把查询结果变成可保存的数据卡片。"
+    }
+  }
+}

@@ -1399,6 +1399,50 @@
       }
     },
     {
+      "id": "com.dnl.dbx-chart-board",
+      "name": "ChatBoard",
+      "description": "Conversation-driven chart dashboard for DBX: tell an AI agent what you want and it adds chart cards to a persistent board via MCP tools.",
+      "publisher": "dnl",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.dnl.dbx-chart-board/0.1.0/icon.svg",
+      "tags": [
+        "dashboard",
+        "visualization",
+        "ai",
+        "mcp"
+      ],
+      "permissions": [
+        "host.data:read",
+        "host.storage"
+      ],
+      "source": "https://github.com/linCoder96/dbx-chart-board/tree/v0.1.0",
+      "homepage": "https://github.com/linCoder96/dbx-chart-board",
+      "license": "Apache-2.0",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-11-25T04:11:59.417Z",
+          "releaseNotes": "Initial release of ChatBoard: persistent chart board with 5 chart types, shape-based auto inference, and MCP tools (list_boards/add_card/remove_card) so AI agents add cards through conversation. Windows-x64 native sidecar.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.dnl.dbx-chart-board/0.1.0/com.dnl.dbx-chart-board-0.1.0-windows-x64.dbxp",
+              "sha256": "94c6e3e60d8af8262ee984dde69a545e2bee06abc2f2ebeb8b98edbc1f73e51e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 54818802
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "对话图表看板",
+          "description": "用对话直接生成图表的 DBX 看板插件：对 Agent 说一句话，即通过 MCP 把查询结果变成可保存的数据卡片。"
+        }
+      }
+    },
+    {
       "id": "com.eyecare.dbx",
       "name": "Eye眼",
       "description": "Screen color temperature and tint inside DBX: a draggable 24-hour warmth curve whose anchors you can add or remove, sunrise/sunset scheduling computed locally, per-monitor settings so each display follows the global curve or keeps its own warmth or tint, 20-20-20 break reminders that briefly dim the screen in a rest color you pick, pausing after two minutes without keyboard or mouse input, and on-device eye-strain insights. It adjusts the display gamma table instead of overlaying a translucent tint.",
@@ -1567,10 +1611,10 @@
     {
       "id": "com.huangqiang.mdeditor",
       "name": "Markdown",
-      "description": "A WYSIWYG Markdown editor for local files, powered by Typedown and Muya.",
+      "description": "A WYSIWYG Markdown editor for local files inside DBX, powered by iml-editor-lite (MIT) and Tiptap 2.",
       "publisher": "huangqiang",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.huangqiang.mdeditor/1.0.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.huangqiang.mdeditor/2.0.0/icon.svg",
       "tags": [
         "markdown",
         "editor",
@@ -1578,14 +1622,28 @@
         "wysiwyg"
       ],
       "permissions": [
-        "host.workbench",
-        "host.storage"
+        "host.storage",
+        "host.workbench"
       ],
       "source": "https://github.com/huangqiang008/dbx-markdown-editor",
       "homepage": "https://github.com/huangqiang008/dbx-markdown-editor",
       "license": "MIT",
-      "latestVersion": "1.0.0",
+      "latestVersion": "2.0.0",
       "versions": [
+        {
+          "version": "2.0.0",
+          "releasedAt": "2026-11-25T03:41:17.052Z",
+          "releaseNotes": "2.0.0: new editing core (iml-editor-lite lite-v26.4.6, MIT) with rich-text / source dual mode, verbatim saving, Callout, [TOC], WikiLink, KaTeX, Mermaid, find & replace, slash menu, and export to HTML / Word / long image. Bundled third-party license texts now ship in assets/licenses/, and the About panel reports the upstream copyright and license correctly.",
+          "artifacts": [
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.huangqiang.mdeditor/2.0.0/com.huangqiang.mdeditor-2.0.0-windows-x64.dbxp",
+              "sha256": "cb560a354b026c12db0c459144403d18f9ede68ff62c4642980134097d462e47",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 5141923
+            }
+          ]
+        },
         {
           "version": "1.0.0",
           "releasedAt": "2026-10-31T11:05:57.389Z",
@@ -1604,7 +1662,7 @@
       "localizations": {
         "zh-CN": {
           "name": "Markdown 编辑器",
-          "description": "所见即所得的 Markdown 编辑器，支持本地文件打开/保存、大纲、文件夹浏览、任务列表、表格与 HTML 导出。"
+          "description": "DBX 工作台内的所见即所得 Markdown 编辑器：富文本 / 源码双模、原样保存、公式与图表、导出 HTML / Word / 长图。基于 iml-editor-lite（MIT）。"
         }
       }
     },
@@ -5454,7 +5512,7 @@
       "description": "Fake busy terminal scenes in a workbench or floating desktop widget. Entertainment only — not a real shell.",
       "publisher": "alan",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.2/icon.svg",
       "tags": [
         "terminal",
         "fun",
@@ -5465,11 +5523,53 @@
         "host.storage",
         "host.workbench"
       ],
-      "source": "https://github.com/allran/dbx-plugin-busy-terminal/tree/v0.1.1",
+      "source": "https://github.com/allran/dbx-plugin-busy-terminal/tree/v0.1.2",
       "homepage": "https://github.com/allran/dbx-plugin-busy-terminal",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-11-25T03:17:20.101Z",
+          "releaseNotes": "0.1.2: follow DBX light/dark theme via host design tokens and dbx-plugin-env updates.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.2/io.dbx.busy-terminal-0.1.2-darwin-arm64.dbxp",
+              "sha256": "b996d371f3fb13428735a1a275dbf4b75360d6f7ca307fa35aef53fcf08bcd9d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 27145
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.2/io.dbx.busy-terminal-0.1.2-darwin-x64.dbxp",
+              "sha256": "b996d371f3fb13428735a1a275dbf4b75360d6f7ca307fa35aef53fcf08bcd9d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 27145
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.2/io.dbx.busy-terminal-0.1.2-linux-arm64.dbxp",
+              "sha256": "b996d371f3fb13428735a1a275dbf4b75360d6f7ca307fa35aef53fcf08bcd9d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 27145
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.2/io.dbx.busy-terminal-0.1.2-linux-x64.dbxp",
+              "sha256": "b996d371f3fb13428735a1a275dbf4b75360d6f7ca307fa35aef53fcf08bcd9d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 27145
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.2/io.dbx.busy-terminal-0.1.2-windows-x64.dbxp",
+              "sha256": "8eb29f612d6cc202a549f6a9ac7122fc0d2e3b20254e3e6fc41082209bff4da8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 27154
+            }
+          ]
+        },
         {
           "version": "0.1.1",
           "releasedAt": "2026-11-19T04:15:22.645Z",
@@ -12097,7 +12197,7 @@
       "description": "An all-in-one, privacy-focused developer toolbox for data conversion, encoding and decoding, formatting, text and image processing, generators, cryptographic tools, and an encrypted key vault—all processed locally.",
       "publisher": "aili0617",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.7/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.8/icon.svg",
       "tags": [
         "developer-tools",
         "utilities",
@@ -12111,8 +12211,50 @@
       "source": "https://github.com/aiLi0617/dbx-plugin-toolbox",
       "homepage": "https://github.com/aiLi0617/dbx-plugin-toolbox",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.7",
+      "latestVersion": "0.1.8",
       "versions": [
+        {
+          "version": "0.1.8",
+          "releasedAt": "2026-11-25T03:31:09.288Z",
+          "releaseNotes": "0.1.8：修复插件清单与 Rust 后端版本不一致导致的初始化失败。新增 56 个只读 MCP 工具，改进高精度数据处理和模拟数据生成。需要 DBX 0.6.60 或更高版本。0.1.8: Fixes initialization failures caused by a version mismatch between the manifest and Rust backend. Adds 56 read-only MCP tools and improves exact data processing and test data generation. Requires DBX 0.6.60 or later.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.8/io.github.aili0617.toolbox-0.1.8-darwin-arm64.dbxp",
+              "sha256": "90c620851a7a5549e7dd07cc19b6e6541437b38ab39d7c8cf797c63206e2a775",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 12604374
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.8/io.github.aili0617.toolbox-0.1.8-darwin-x64.dbxp",
+              "sha256": "61a9f0d1d383486c1068e0c3fe05c49f8e2af92c034394fbabfde2b2880041df",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13232393
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.8/io.github.aili0617.toolbox-0.1.8-linux-arm64.dbxp",
+              "sha256": "8e578d09e7d05024a0e7df528989a26d08e2433b0e42ddff904e8fe09fedbd5a",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13740811
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.8/io.github.aili0617.toolbox-0.1.8-linux-x64.dbxp",
+              "sha256": "e09a114c97b928031456ca717ade89ed1782a4762564f9c4405ed60360bcec66",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14370410
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.aili0617.toolbox/0.1.8/io.github.aili0617.toolbox-0.1.8-windows-x64.dbxp",
+              "sha256": "f3ef7aaa9c12153ea7446a8a00e1313e906ba4baf36152cd3aed5b23519d3eac",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13711835
+            }
+          ]
+        },
         {
           "version": "0.1.7",
           "releasedAt": "2026-11-23T06:59:44.973Z",
@@ -15101,7 +15243,7 @@
       "description": "Migrate and incrementally sync objects between S3-compatible storage services (MinIO, RustFS, AWS S3).",
       "publisher": "qiuyouyao",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.qiuyouyao.s3-sync/0.1.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.qiuyouyao.s3-sync/0.1.1/icon.svg",
       "tags": [
         "storage",
         "s3",
@@ -15114,11 +15256,53 @@
         "host.storage",
         "host.workbench"
       ],
-      "source": "https://github.com/qiuyouyao/dbx-plugins/tree/v0.1.0",
-      "homepage": "https://github.com/qiuyouyao/dbx-plugins/tree/v0.1.0/plugins/s3-sync",
+      "source": "https://github.com/qiuyouyao/dbx-plugins/tree/v0.1.1",
+      "homepage": "https://github.com/qiuyouyao/dbx-plugins/tree/v0.1.1/plugins/s3-sync",
       "license": "MIT",
-      "latestVersion": "0.1.0",
+      "latestVersion": "0.1.1",
       "versions": [
+        {
+          "version": "0.1.1",
+          "releasedAt": "2026-11-25T03:22:51.147Z",
+          "releaseNotes": "Patch release: mask access_key in the connection form, disclose sidecar local writes, and localize runtime errors consistently.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.qiuyouyao.s3-sync/0.1.1/io.github.qiuyouyao.s3-sync-0.1.1-darwin-arm64.dbxp",
+              "sha256": "48a75917e564abe06ab1927503e431fba38a07871138e05329cfa8b7a66b11eb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1104730
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.qiuyouyao.s3-sync/0.1.1/io.github.qiuyouyao.s3-sync-0.1.1-darwin-x64.dbxp",
+              "sha256": "b9d93573b8bfb7ec74976127291fc88f05c8550c7c62c8a267e514cda82940f2",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1161764
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.qiuyouyao.s3-sync/0.1.1/io.github.qiuyouyao.s3-sync-0.1.1-linux-arm64.dbxp",
+              "sha256": "ec1f96af790089625590601c1a862630a487435de0ccd78cc9ff001280c5e78b",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1160288
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.qiuyouyao.s3-sync/0.1.1/io.github.qiuyouyao.s3-sync-0.1.1-linux-x64.dbxp",
+              "sha256": "dc96686b11cefafa73e09db9d871e2794b13830ecb1b11a139de410c685e91ff",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1214079
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.qiuyouyao.s3-sync/0.1.1/io.github.qiuyouyao.s3-sync-0.1.1-windows-x64.dbxp",
+              "sha256": "edffa25a547955c92e68035d9e6cdc5aefb869d497461df30aafd9551c324b56",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 1228461
+            }
+          ]
+        },
         {
           "version": "0.1.0",
           "releasedAt": "2026-11-23T07:46:54.781Z",
@@ -15486,7 +15670,7 @@
       "description": "静态 SQL 评审台：规则化评审破坏性变更、迁移规范、性能与结构质量；附按方言组织的最佳实践库，评审时联动推荐优化建议；v0.3.0 提供独立的跨文件架构评审页（虚拟数据字典 + ARCH 规则集，独立评分）。不连库、不执行 SQL。",
       "publisher": "smallrob",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.0/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.1/icon.svg",
       "tags": [
         "sql",
         "review",
@@ -15499,11 +15683,53 @@
       "permissions": [
         "host.workbench"
       ],
-      "source": "https://github.com/SmallRob/dbx-sql-review/tree/v0.3.0",
+      "source": "https://github.com/SmallRob/dbx-sql-review/tree/v0.3.1",
       "homepage": "https://github.com/SmallRob/dbx-sql-review",
       "license": "Apache-2.0",
-      "latestVersion": "0.3.0",
+      "latestVersion": "0.3.1",
       "versions": [
+        {
+          "version": "0.3.1",
+          "releasedAt": "2026-11-25T03:10:18.188Z",
+          "releaseNotes": "v0.3.1：新增慢查询静态规则族——深分页（大 OFFSET）、超大 IN 列表、多表连接扇出；命中计入性能维度罚分与慢查询统计，纳入 SQL 质量评分；阈值可在规则设置页调整。全程静态词法分析，不连库、不执行 SQL。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.1/io.github.smallrob.sql-review-0.3.1-darwin-arm64.dbxp",
+              "sha256": "ff33c7b4bcdd7332aa687875a907fb5be0dd7e458f98fa6b3ae989a2e5daa6b9",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2231729
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.1/io.github.smallrob.sql-review-0.3.1-darwin-x64.dbxp",
+              "sha256": "26819ebf9d4ba026cad6a0bfd71012748cafa181b45777fa7b0eada9757c803c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2339304
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.1/io.github.smallrob.sql-review-0.3.1-linux-arm64.dbxp",
+              "sha256": "63fb45cd740922e090ac0ed158867f8ebefa213a12f9be529a160f8dccb7fc32",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2210923
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.1/io.github.smallrob.sql-review-0.3.1-linux-x64.dbxp",
+              "sha256": "ea1b8535140355c66a1d356be6dd90a716192bf6a4fb2732a410c4aa37d63de6",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2355306
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.smallrob.sql-review/0.3.1/io.github.smallrob.sql-review-0.3.1-windows-x64.dbxp",
+              "sha256": "7992dffeca53aee2e8c5ec28c9eb0d789f8c5a28d1ded0919dedd1d0b7a723f0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 2415188
+            }
+          ]
+        },
         {
           "version": "0.3.0",
           "releasedAt": "2026-11-19T13:33:10.298Z",
