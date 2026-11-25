@@ -4,7 +4,7 @@
   "description": "Fake busy terminal scenes in a workbench or floating desktop widget. Entertainment only — not a real shell.",
   "publisher": "alan",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/allran/dbx-plugin-busy-terminal/v0.1.1/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/allran/dbx-plugin-busy-terminal/v0.1.2/assets/plugin.svg",
   "tags": [
     "terminal",
     "fun",
@@ -15,10 +15,10 @@
     "host.storage",
     "host.workbench"
   ],
-  "source": "https://github.com/allran/dbx-plugin-busy-terminal/tree/v0.1.1",
+  "source": "https://github.com/allran/dbx-plugin-busy-terminal/tree/v0.1.2",
   "homepage": "https://github.com/allran/dbx-plugin-busy-terminal",
   "license": "Apache-2.0",
-  "latestVersion": "0.1.1",
+  "latestVersion": "0.1.2",
   "versions": [
     {
       "version": "0.1.0",
@@ -73,6 +73,48 @@
           "sha256": "50e49855bdfd1439d47a0c2ac87f5131fdc53e8c57ab9c7f781ec020e01e193a",
           "signingKeyId": "dbx-store-release-2026",
           "size": 26639
+        }
+      ]
+    },
+    {
+      "version": "0.1.2",
+      "releasedAt": "2026-11-25T03:17:20.101Z",
+      "releaseNotes": "0.1.2: follow DBX light/dark theme via host design tokens and dbx-plugin-env updates.",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.2/io.dbx.busy-terminal-0.1.2-darwin-arm64.dbxp",
+          "sha256": "b996d371f3fb13428735a1a275dbf4b75360d6f7ca307fa35aef53fcf08bcd9d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 27145
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.2/io.dbx.busy-terminal-0.1.2-darwin-x64.dbxp",
+          "sha256": "b996d371f3fb13428735a1a275dbf4b75360d6f7ca307fa35aef53fcf08bcd9d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 27145
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.2/io.dbx.busy-terminal-0.1.2-linux-arm64.dbxp",
+          "sha256": "b996d371f3fb13428735a1a275dbf4b75360d6f7ca307fa35aef53fcf08bcd9d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 27145
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.2/io.dbx.busy-terminal-0.1.2-linux-x64.dbxp",
+          "sha256": "b996d371f3fb13428735a1a275dbf4b75360d6f7ca307fa35aef53fcf08bcd9d",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 27145
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.dbx.busy-terminal/0.1.2/io.dbx.busy-terminal-0.1.2-windows-x64.dbxp",
+          "sha256": "8eb29f612d6cc202a549f6a9ac7122fc0d2e3b20254e3e6fc41082209bff4da8",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 27154
         }
       ]
     }
