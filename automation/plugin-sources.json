@@ -300,6 +300,11 @@
       "repository": "MosaicAccount/dbx-plugin-api-tester",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "nianshengmei/warren-polaris-api",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
