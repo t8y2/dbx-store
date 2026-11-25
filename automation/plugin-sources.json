@@ -305,6 +305,11 @@
       "repository": "nianshengmei/warren-polaris-api",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "mikodream/miko-md-dbx",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
