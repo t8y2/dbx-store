@@ -1,10 +1,10 @@
 {
   "id": "io.github.oncemisery.hertz-studio",
   "name": "Hertz Studio Standard",
-  "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine.",
+  "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine. Users who need online music must download the DBX Full edition separately: https://github.com/onceMisery/hertz-studio/releases",
   "publisher": "oncemisery",
   "verified": false,
-  "icon": "https://raw.githubusercontent.com/onceMisery/hertz-studio/hertz-plugin-standard-v0.3.4/plugin/assets/plugin.svg",
+  "icon": "https://raw.githubusercontent.com/onceMisery/hertz-studio/hertz-plugin-standard-v0.3.7/plugin/assets/plugin.svg",
   "tags": [
     "music",
     "player",
@@ -17,10 +17,10 @@
     "host.storage",
     "host.workbench"
   ],
-  "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.4",
+  "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.7",
   "homepage": "https://github.com/onceMisery/hertz-studio",
   "license": "MIT",
-  "latestVersion": "0.3.4",
+  "latestVersion": "0.3.7",
   "versions": [
     {
       "version": "0.2.1",
@@ -189,12 +189,96 @@
           "size": 20532390
         }
       ]
+    },
+    {
+      "version": "0.3.5",
+      "releasedAt": "2026-11-19T13:28:05.767Z",
+      "releaseNotes": "## Hertz Studio Standard 插件 0.3.5\r\n\r\n正式版本，源码基线为 `98a6876eadfda2c40cc956b15158c16435746c74`（与独立版同一份 GitHub master 提交）。\r\n\r\n- 壁纸社区分发上线：社区壁纸的认证与恢复路径加固，独立播放器接管桌面壁纸所有权。\r\n- 启动加入闪屏，音乐库并行预加载，缩短首屏等待。\r\n- 用户指南重写并刷新应用截图。\r\n- 独立包产物名去掉 `full` 段，安装器显示名统一为 Hertz Studio；插件身份与内部升级 ID 不变。\r\n\r\nStandard 保留本地/WebDAV、Jamendo、ccMixter 和公开播客；Jamendo 需要用户配置自己的 client_id。\r\n\r\nRequires DBX >= 0.6.35。插件自带 `bin/dbx-plugin-hertz`，通过 stdio JSON-RPC 与宿主通信。浮动胶囊需要宿主支持 floating surface；宿主缺少该能力时使用页内最小化。Windows 桌面歌词/壁纸组件由用户单独启动和授权，不随本次商店插件包安装；完整跨平台桌面验收仍待完成。\r\n\r\n本 Release 提供五个平台的未签名候选及 `release-candidates.json`。DBX Store 上架还需要维护者审核和签名。\r\n\r\n验证：由 release dbx plugin 工作流构建五个目标。本次为未签名候选，不证明真实商店签名、净系统安装或全部宿主图形界面旅程。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.5/io.github.oncemisery.hertz-studio-0.3.5-darwin-arm64.dbxp",
+          "sha256": "6e0bfc1d780d8e296f8c24f366f381ab6c10783b7d06e8f240c1ba5c511c2353",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 15383129
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.5/io.github.oncemisery.hertz-studio-0.3.5-darwin-x64.dbxp",
+          "sha256": "f74d352c6edcea68d7c998ebebfffd7d7a62e6a5e77899b37e105f85fdfb5766",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 16558062
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.5/io.github.oncemisery.hertz-studio-0.3.5-linux-arm64.dbxp",
+          "sha256": "69284959490dd38595ae6190c3860586d54db4279829af567728c2ef9080f442",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 17159062
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.5/io.github.oncemisery.hertz-studio-0.3.5-linux-x64.dbxp",
+          "sha256": "fba1e6084397db31321816a0b3fb07cc60fa8be6216dd709ad0aa8064acd15d7",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 17406991
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.5/io.github.oncemisery.hertz-studio-0.3.5-windows-x64.dbxp",
+          "sha256": "5812cc06588afe5664776a8420835e4517ceb3fc98edb3888413f3ebb093b2d3",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 15191496
+        }
+      ]
+    },
+    {
+      "version": "0.3.7",
+      "releasedAt": "2026-11-23T07:23:37.452Z",
+      "releaseNotes": "## Hertz Studio DBX Standard 0.3.7\n\n正式版本号 `0.3.7`，与独立版使用同一份 GitHub master 源码提交 `92aabda`。本次为 Store 未签名候选，签名由 DBX 侧维护者完成。\n\n### 安装\n\n需要 DBX `>= 0.6.35`。下载对应平台的 `.dbxp`，从 DBX 插件管理中安装。插件 ID 为 `io.github.oncemisery.hertz-studio`。\n\n| 平台 | 文件 |\n| --- | --- |\n| Windows x64 | `io.github.oncemisery.hertz-studio-0.3.7-windows-x64.dbxp` |\n| Linux x64 | `io.github.oncemisery.hertz-studio-0.3.7-linux-x64.dbxp` |\n| Linux arm64 | `io.github.oncemisery.hertz-studio-0.3.7-linux-arm64.dbxp` |\n| macOS x64 | `io.github.oncemisery.hertz-studio-0.3.7-darwin-x64.dbxp` |\n| macOS Apple Silicon | `io.github.oncemisery.hertz-studio-0.3.7-darwin-arm64.dbxp` |\n\n### 本次更新\n\n- 桌面宠物：新增内置「橙团子 / 小黄鸭」形象，以及大小、不透明度、总在最前、贴边自动隐藏设置；窗口改用 SetWindowRgn 剪影裁剪，从宠物恢复主窗口走原生焦点握手。\n- 播放与歌词：播放页与歌词视图的音量并入中央播控，页脚一行让给歌词；桌面歌词缺少逐字时间时按整行进度扫过；收藏红心统一红色。\n- 沉浸舞台：封面球从封面颗粒采样取色；声场设置与队列统一为悬浮玻璃卡片，设置改为非模态侧栏。\n- 首页与播放栏：主操作移入封面浮层；指针离开应用时播放栏自动淡出；一起听大厅加入聆听脉冲；玻璃 tooltip 与播放栏图标簇精修。\n- 修复：在线播放历史不再降级为平台 ID；修复跨平台测试抖动（预算账本、交叉淡化、trust 池关闭）。\n- 同时包含 0.3.6 的独立版设置闪退修复（刷新内嵌组合目录 lock 身份并新增打包前堆预算门禁）与壁纸/舞台离线设计补全。\n\n### 验证与范围\n\n由 `release dbx plugin` 工作流构建五个目标，以该次运行为准。本次为未签名候选，不证明真实商店签名、净系统安装或全部宿主图形界面旅程。",
+      "artifacts": [
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-darwin-arm64.dbxp",
+          "sha256": "520c6816d3dd86086ce946895171cc62a0611545a9103f46c2d799e4b9902ac1",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14811176
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-darwin-x64.dbxp",
+          "sha256": "2727463ab9268e6f49e84cb3ce0cc3945dcde01fea67515dc4c6f3787aa86946",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 15896922
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-linux-arm64.dbxp",
+          "sha256": "1344f53fe13bea27651c91f128218edaf946e85e499f5ec45fe2c57bf90c79b0",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 16516538
+        },
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-linux-x64.dbxp",
+          "sha256": "775c0bde29e6ebc5268639b8c6f82fc23adf092383ebfd430e810a7db9ea0d13",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 16762565
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/io.github.oncemisery.hertz-studio/0.3.7/io.github.oncemisery.hertz-studio-0.3.7-windows-x64.dbxp",
+          "sha256": "b7b516e51799a91924a0ff5b3394c264710a96353736ab7d2e86f6e72f30b9ec",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 14631015
+        }
+      ]
     }
   ],
   "localizations": {
     "zh-CN": {
       "name": "Hertz Studio Standard",
-      "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。"
+      "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。Standard 版不编译任何商业音乐平台的协议与账号。 需要在线音乐的需要自行下载 DBX Full 版本：https://github.com/onceMisery/hertz-studio/releases"
     }
   }
 }

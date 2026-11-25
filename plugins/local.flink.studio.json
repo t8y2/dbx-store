@@ -1,0 +1,122 @@
+{
+  "id": "local.flink.studio",
+  "name": "Flink Studio",
+  "description": "通用 Flink 客户端工作台：连接 JobManager REST API，实时查看集群概览、运行中作业与算子、TaskManager 指标与日志、集群配置；独家的「消费内容」页直接从 print-sink 日志解析 Kafka 消费记录，以表格呈现每条消息的操作类型与各字段。全链路只读，无需 SSH、无需数据库。",
+  "publisher": "smallrob",
+  "verified": false,
+  "icon": "https://github.com/SmallRob/dbx-plugin-flink-studio/raw/v0.1.3/assets/plugin.svg",
+  "tags": [
+    "flink",
+    "streaming",
+    "kafka",
+    "monitoring",
+    "consumer",
+    "developer-tools"
+  ],
+  "permissions": [
+    "host.workbench",
+    "host.storage",
+    "host.connections:read",
+    "host.events"
+  ],
+  "source": "https://github.com/SmallRob/dbx-plugin-flink-studio/tree/v0.1.3",
+  "homepage": "https://github.com/SmallRob/dbx-plugin-flink-studio",
+  "license": "MIT",
+  "latestVersion": "0.1.3",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releasedAt": "2026-11-19T14:01:24.855Z",
+      "releaseNotes": "0.1.0: initial release. Read-only Flink client with cluster overview, jobs/operators, TaskManagers, config, and consumed-messages view parsed from print-sink logs.",
+      "artifacts": [
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.0/local.flink.studio-0.1.0-linux-x64.dbxp",
+          "sha256": "045536277b2ef4ee1e350091fce25c996b7e523a68f6442144ba9cabaa2a3302",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2326194
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.0/local.flink.studio-0.1.0-linux-arm64.dbxp",
+          "sha256": "a63f09123689a506dbabd87ab562a9aa4f5b4bb93524a8a483dc1a37ffc341cd",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2130690
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.0/local.flink.studio-0.1.0-darwin-x64.dbxp",
+          "sha256": "84ef6893be5b28e2798b835923a85c91e641774a6e6045185c407ea855f81d0a",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2360455
+        },
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.0/local.flink.studio-0.1.0-darwin-arm64.dbxp",
+          "sha256": "c3ebb4a1f368a73a71d7e3745061811647f2ddca23cebcc840276f8e4b915ebc",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2208224
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.0/local.flink.studio-0.1.0-windows-x64.dbxp",
+          "sha256": "592e6fa40b77dfee12b56c8f40f6b1ca1f6dbd209e90b9e9c76bdb21c7692acf",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2372783
+        }
+      ]
+    },
+    {
+      "version": "0.1.3",
+      "releasedAt": "2026-11-23T07:30:56.375Z",
+      "releaseNotes": "0.1.3: Kafka consumption path — job pipeline visualization (Source→Calc→Sink flows), ingest metrics cards with topic/partition offsets from Flink REST metrics, and consumption lineage hints (broker/source tables/topics from TaskManager logs) on the Consumed Messages page.",
+      "artifacts": [
+        {
+          "target": "linux-x64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-linux-x64.dbxp",
+          "sha256": "38a25a41dd4c463f1a9273a0dd67d31e6e9cf1a21cfe4ba446cb4b7f7aa2231e",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2331027
+        },
+        {
+          "target": "linux-arm64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-linux-arm64.dbxp",
+          "sha256": "1e92a27600f92fb48dfd4a6f8b62f4832705203fa2a2e3d71526e31695d77045",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2134678
+        },
+        {
+          "target": "darwin-x64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-darwin-x64.dbxp",
+          "sha256": "852dbe134d7e081ae47281afc369fea3fb6b7a15d84a98c72d8182e427a24d8b",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2365798
+        },
+        {
+          "target": "darwin-arm64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-darwin-arm64.dbxp",
+          "sha256": "a6f8fd1d8850b5585087c2d48703e735ae4d9c554e1c1fab83410427c74180a2",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2211701
+        },
+        {
+          "target": "windows-x64",
+          "url": "https://dl.dbxio.com/plugins/local.flink.studio/0.1.3/local.flink.studio-0.1.3-windows-x64.dbxp",
+          "sha256": "ef791028bf02ea3699356f7cbb2e24b8e4cc8303d696f6fecc6025210b3a916c",
+          "signingKeyId": "dbx-store-release-2026",
+          "size": 2376708
+        }
+      ]
+    }
+  ],
+  "localizations": {
+    "zh-CN": {
+      "name": "Flink Studio",
+      "description": "通用 Flink 客户端工作台：连接 JobManager REST API，实时查看集群概览、运行中作业与算子、TaskManager 指标与日志、集群配置；独家的「消费内容」页直接从 print-sink 日志解析 Kafka 消费记录，以表格呈现每条消息的操作类型与各字段。全链路只读，无需 SSH、无需数据库。"
+    },
+    "en": {
+      "name": "Flink Studio",
+      "description": "A general-purpose Flink client workbench: connect to the JobManager REST API and inspect cluster overview, running jobs and operators, TaskManager metrics and logs, and cluster configuration. The unique \"Consumed Messages\" tab parses Kafka records straight from print-sink logs into a table with change type and every field. Fully read-only — no SSH, no database required."
+    }
+  }
+}
