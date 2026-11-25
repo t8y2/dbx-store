@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "miko.md.notes",
+  "publisher": "miko",
+  "version": "0.1.4",
+  "name": "MIKO.MD 笔记",
+  "description": "把一个本地目录当成 DBX 里的笔记库：笔记是真实的 .md 文件，文件夹是真实的子目录，同一份库还能以 mdnotes:// 虚拟文件系统在 DBX 文件浏览器里浏览。支持粘贴/拖入图片、导入已有 .md 与整个文件夹、整库 zip 备份与恢复。",
+  "icon": "https://raw.githubusercontent.com/mikodream/miko-md-dbx/v0.1.4/assets/plugin.svg",
+  "tags": [
+    "notes",
+    "markdown",
+    "filesystem",
+    "local-first",
+    "knowledge-base"
+  ],
+  "permissions": [
+    "host.filesystem",
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/mikodream/miko-md-dbx/tree/v0.1.4",
+  "homepage": "https://github.com/mikodream/miko-md-dbx#readme",
+  "license": "Apache-2.0",
+  "releaseNotes": "新建「MIKO.MD 笔记」连接即可打开笔记工作台：真实 .md 文件与真实子目录，目录树拖拽整理，编辑器 + 实时预览，截图直接粘贴进 _assets，可导入 .md 与整个文件夹，整库 zip 备份/恢复，并以 mdnotes:// 作为虚拟文件系统浏览。",
+  "localizations": {
+    "zh-CN": {
+      "name": "MIKO.MD 笔记",
+      "description": "把一个本地目录当成 DBX 里的笔记库：笔记是真实的 .md 文件，文件夹是真实的子目录，同一份库还能以 mdnotes:// 虚拟文件系统浏览。支持粘贴/拖入图片、导入已有 .md 与整个文件夹、整库 zip 备份与恢复。"
+    },
+    "en": {
+      "name": "MIKO.MD Notes",
+      "description": "Use a local folder as a notebook inside DBX: notes are real .md files, folders are real subdirectories, and the same vault is browsable as the mdnotes:// virtual filesystem. Supports pasting or dropping images, importing existing .md files and whole folders, plus full-vault zip backup and restore."
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/mikodream/miko-md-dbx/releases/download/v0.1.4/miko.md.notes-0.1.4-darwin-arm64.dbxp",
+      "sha256": "3b8cbd796091861f252f2175a0ec9d6c4475f24fd3d08f8443c8b1ec69f28e21",
+      "size": 2049039
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/mikodream/miko-md-dbx/releases/download/v0.1.4/miko.md.notes-0.1.4-darwin-x64.dbxp",
+      "sha256": "14080d43ca3c956771376b5add51698cc156236f4a2e0d33b182c1482ead1f33",
+      "size": 2144466
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/mikodream/miko-md-dbx/releases/download/v0.1.4/miko.md.notes-0.1.4-linux-arm64.dbxp",
+      "sha256": "69a30fea8a31861b2068dd8f665f2fcc3ab3b4bd937950dcd3fac41aac8e9d32",
+      "size": 2057180
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/mikodream/miko-md-dbx/releases/download/v0.1.4/miko.md.notes-0.1.4-linux-x64.dbxp",
+      "sha256": "477f471b280dfd626e0b798345ca302d1b14460d6e205047c695bea291a72b54",
+      "size": 2188195
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/mikodream/miko-md-dbx/releases/download/v0.1.4/miko.md.notes-0.1.4-windows-x64.dbxp",
+      "sha256": "3d326ec57a1a5a52100f396f20ae118dca230718f5cf931684f852a5c8d0581d",
+      "size": 2237487
+    }
+  ]
+}
