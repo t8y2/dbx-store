@@ -305,6 +305,11 @@
       "repository": "nianshengmei/warren-polaris-api",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "zsky1/apifox-polaris-api",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }

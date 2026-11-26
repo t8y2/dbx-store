@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "com.zsky1.apifox",
+  "publisher": "zsky1",
+  "version": "1.1.0",
+  "name": "apifox-polaris-api",
+  "description": "apifox (com.zsky1.apifox) — a community fork of an upstream polaris-api derivative with read-only pull of Apifox API tree and environments (never writes back to Apifox). It is not an update to the upstream plugin; version numbers are a separate line. It keeps upstream's native reqwest sidecar but drops the multi-tab workbench in favour of a file-first .http editor: the .http / .rest file on disk is the only source of truth (a wpa-workspace.json next to it decides which files are mounted), so the same file opened in IDEA, VS Code or DBX holds the same requests. In-place source editing with syntax highlighting, JSON folding, a request outline and autosave (atomic write, per-request paragraph replacement — the rest of the file is never rewritten, and a concurrent external edit aborts the save instead of clobbering it). One-click ▶ per request; per-interface call history in _history/ and full request/response snapshots in _results/ (10 per interface, older ones rotated); multipart/form-data bodies with byte-exact file parts; streamed text/event-stream (SSE) responses and WebSocket sessions in the same tab as HTTP.",
+  "icon": "https://raw.githubusercontent.com/zsky1/apifox-polaris-api/v1.1.0/assets/plugin.svg",
+  "tags": [
+    "http",
+    "api",
+    "rest",
+    "http-file",
+    "ide",
+    "debugging",
+    "network",
+    "websocket"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage"
+  ],
+  "source": "https://github.com/zsky1/apifox-polaris-api/tree/v1.1.0",
+  "homepage": "https://github.com/zsky1/apifox-polaris-api",
+  "license": "Apache-2.0",
+  "releaseNotes": "1.1.0 — 插件更名为 apifox（com.zsky1.apifox），与上游插件完全隔离：独立 ID、可执行文件、存储键、事件名与默认目录。Apifox 只读拉取：保留原项目全部 .http 编辑 / 历史 / SSE / WebSocket 能力，新增从 Apifox 拉取接口树与环境到本地，不回写 Apifox。\n\n1.0.0 — first stable release of this fork; feature freeze, fixes only afterwards.\n\nThis submission replaces the withdrawn 0.6.4 candidate: that one shipped the transitional 0.6.x data model (single-key JSON storage + results/*.json), which would have forced a migration on anyone who installed it. No version of this fork was ever listed or signed, so nothing has to be migrated now.\n\n- Listing text and icon are this fork's own: \"HTTP File Client (.http)\" vs upstream's \"polaris-api\", teal page + fold icon vs upstream's purple/blue plate, and the first sentence of the description says it is a community fork that is not an update to upstream. Version numbers are this fork's own history (0.1 -> 1.0.0) and cannot be compared with upstream 0.2.0; this is one release over three days, not a burst of version bumps.\n- Derivative of misxzaiz/polaris-api v0.2.0 (Apache-2.0): the package root now ships LICENSE and NOTICE; NOTICE keeps the upstream copyright, names v0.2.0 as the base, and lists the changes (Apache-2.0 section 4).\n- File-first workbench: the .http file is the only source of truth; wpa-workspace.json only maps what is mounted. Autosave writes atomically and replaces a single request paragraph, aborting when the file changed underneath.\n- Identity comments # @file_id / # @interface_id (plain comments, meaningless to other tools) drive per-interface history: _history/<file>/<interface>.jsonl keeps the last 10 calls, _results/ keeps the last 10 full snapshots per interface.\n- History and results panels: every recorded call can open the exact request/response of that call; entries whose snapshot was rotated away say so instead of failing.\n- WebSocket connect/send/frames in the same tab as HTTP; multipart/form-data with byte-exact file parts; streamed SSE responses.\n- Editor caret alignment: the highlight layer no longer changes glyph advance, so clicking and deleting act on the character you see.",
+  "localizations": {
+    "zh-CN": {
+      "name": "apifox-polaris-api",
+      "description": "apifox（com.zsky1.apifox）——在上游 fork 之上支持从 Apifox 只读拉取接口树与环境的 API 请求客户端（不回写 Apifox）；不是上游插件的新版本，版本号独立演进。保留上游的 Rust reqwest sidecar，但把多 tab 工作台换成「文件即真源」的 .http 编辑器：磁盘上的 .http / .rest 文件是唯一真源（同目录的 wpa-workspace.json 只决定挂载哪些文件），同一份文件在 IDEA、VS Code、DBX 里看到的是同一批请求。原位源码编辑：语法高亮、JSON 折叠、请求目录、自动保存（原子写、按请求段落替换，不整文件重写；外部改过就放弃本次保存而不是覆盖）。每个请求左侧 ▶ 一点即发；按接口记录调用历史（_history/，每接口最近 10 条）与完整请求/响应快照（_results/，每接口最近 10 份，更早的轮转）；multipart/form-data 支持原样字节的文件分片；SSE 流式响应与 WebSocket 会话和 HTTP 共用同一个 tab。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/zsky1/apifox-polaris-api/releases/download/v1.1.0/com.zsky1.apifox-1.1.0-darwin-arm64.dbxp",
+      "sha256": "59b3f5d4c1dcc33d7b18a9f1369d7414da51e5c3f6a655d0637050298e268d84",
+      "size": 1828017
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/zsky1/apifox-polaris-api/releases/download/v1.1.0/com.zsky1.apifox-1.1.0-darwin-x64.dbxp",
+      "sha256": "4631111a9108621c2dab58cbfb776eb0f70b22195ec675beb81341fa5dd21916",
+      "size": 1935703
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/zsky1/apifox-polaris-api/releases/download/v1.1.0/com.zsky1.apifox-1.1.0-linux-arm64.dbxp",
+      "sha256": "8676387ca2d60a0fa247b91e8c66c2c3fc2bf168f56e4741b0655c1ec4968bda",
+      "size": 1925448
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/zsky1/apifox-polaris-api/releases/download/v1.1.0/com.zsky1.apifox-1.1.0-linux-x64.dbxp",
+      "sha256": "c6392c803132d3d62af7a29fb3ccd905f494f586b2b2068813551939d22eccb4",
+      "size": 2019789
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/zsky1/apifox-polaris-api/releases/download/v1.1.0/com.zsky1.apifox-1.1.0-windows-x64.dbxp",
+      "sha256": "260535bcfe53a95308468d998d38dcd48e9d81e62cf17a48353ba86d52947475",
+      "size": 2025362
+    }
+  ]
+}
