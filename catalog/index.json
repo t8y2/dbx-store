@@ -17402,6 +17402,87 @@
       }
     },
     {
+      "id": "io.github.xinmengzou.s3plus",
+      "name": "S3 Browser Plus",
+      "description": "S3-compatible object storage plugin for DBX, a community fork of S3 Browser with upload, preview, and connection-form enhancements.",
+      "publisher": "xinmengzou",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.xinmengzou.s3plus/0.2.1/icon.svg",
+      "tags": [
+        "s3",
+        "storage",
+        "files",
+        "object-storage"
+      ],
+      "permissions": [
+        "host.events",
+        "host.binary",
+        "host.clipboard:read",
+        "host.storage"
+      ],
+      "source": "https://github.com/xinmengzou/dbx-plugin-s3plus/tree/v0.2.1",
+      "homepage": "https://github.com/xinmengzou/dbx-plugin-s3plus",
+      "license": "Apache-2.0",
+      "latestVersion": "0.2.1",
+      "versions": [
+        {
+          "version": "0.2.1",
+          "releasedAt": "2026-11-27T04:09:33.248Z",
+          "releaseNotes": "Initial release of S3 Browser Plus, a fork of S3 Browser (io.github.t8y2.s3, Apache-2.0): drag-and-drop uploads with target-directory picker, batch conflict strategies, 3-way concurrent upload queue panel, collapsible preview pane with persisted layout, server-side prefix search, and provider endpoint examples in the connection form. This release also bundles LICENSE and NOTICE files inside the package for Apache-2.0 attribution and distribution compliance.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.xinmengzou.s3plus/0.2.1/io.github.xinmengzou.s3plus-0.2.1-darwin-arm64.dbxp",
+              "sha256": "1b68356193d09a914a7e494903e6882db75098ddd737c05b0e6c9f546fb14f9f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6423695
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.xinmengzou.s3plus/0.2.1/io.github.xinmengzou.s3plus-0.2.1-darwin-x64.dbxp",
+              "sha256": "5004e44a61bb905cfe3fb38393c46cc7a7790b8acf5b6aa6dd2ad5fc2604771d",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6774134
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.xinmengzou.s3plus/0.2.1/io.github.xinmengzou.s3plus-0.2.1-linux-arm64.dbxp",
+              "sha256": "843b6bc1a7173900c08b5747f72ef2f6fc10973178b1372fabb8292b0ea0182e",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6334830
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.xinmengzou.s3plus/0.2.1/io.github.xinmengzou.s3plus-0.2.1-linux-x64.dbxp",
+              "sha256": "a4898275be2d00d2952e5477508071154b6aa38b8d1f1db1eddcc2e6685dd013",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6784016
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.xinmengzou.s3plus/0.2.1/io.github.xinmengzou.s3plus-0.2.1-windows-arm64.dbxp",
+              "sha256": "f3ea0eac5646a27081a283f0cfceb1b8f9a89094a69aed7ba79f91c8b3c41da3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6303528
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.xinmengzou.s3plus/0.2.1/io.github.xinmengzou.s3plus-0.2.1-windows-x64.dbxp",
+              "sha256": "7dc28c4b52341c90e9c457a6b79c4f474923c0a8e9109db24b92949fb042cfdb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6789499
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "S3 Browser Plus",
+          "description": "S3 兼容对象存储插件，S3 Browser 社区增强版：上传体验、预览面板与连接表单增强。"
+        }
+      }
+    },
+    {
       "id": "io.github.yuwengueen.dbx-code-editor",
       "name": "Code Editor",
       "description": "Browse, search, and edit local project files inside DBX.",
