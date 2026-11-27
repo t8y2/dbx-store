@@ -2000,7 +2000,7 @@
       "description": "HTTP and gRPC API testing workbench for DBX.",
       "publisher": "jlian",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/com.jlian.apitester/0.0.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/com.jlian.apitester/0.1.2/icon.svg",
       "tags": [
         "api",
         "http",
@@ -2010,11 +2010,53 @@
       "permissions": [
         "host.storage"
       ],
-      "source": "https://github.com/MosaicAccount/dbx-plugin-api-tester/tree/v0.0.1",
+      "source": "https://github.com/MosaicAccount/dbx-plugin-api-tester/tree/v0.1.2",
       "homepage": "https://github.com/MosaicAccount/dbx-plugin-api-tester",
       "license": "MIT",
-      "latestVersion": "0.0.1",
+      "latestVersion": "0.1.2",
       "versions": [
+        {
+          "version": "0.1.2",
+          "releasedAt": "2026-11-27T03:48:24.691Z",
+          "releaseNotes": "gRPC server, client and bidirectional streaming can now run as interactive sessions: connect, send messages one by one, finish sending and follow replies as they arrive. Streams end with an explicit status and the full error message, connections stay alive while idle, and sessions are released when you switch methods or close the tab.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jlian.apitester/0.1.2/com.jlian.apitester-0.1.2-darwin-arm64.dbxp",
+              "sha256": "211210c27475a18b8fd9b74e542aff90e637d26d4fbf5e6ca485c5c866e5419c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9266605
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jlian.apitester/0.1.2/com.jlian.apitester-0.1.2-darwin-x64.dbxp",
+              "sha256": "7cb8bb65219a957233c408a73de1d6e8bad2d32ecd63cbca09f151c01b8540db",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9691528
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/com.jlian.apitester/0.1.2/com.jlian.apitester-0.1.2-linux-arm64.dbxp",
+              "sha256": "a52d113364e5149639cbfe1ee1adaadd9806661024327b836f5570ce912face8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9209542
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jlian.apitester/0.1.2/com.jlian.apitester-0.1.2-linux-x64.dbxp",
+              "sha256": "5fe12be4ddeb52486a83ba6353e1dd9fd92a7b8da51b21bdc1c1cd848fd3c4b0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9798773
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/com.jlian.apitester/0.1.2/com.jlian.apitester-0.1.2-windows-x64.dbxp",
+              "sha256": "87411f574d2a9fdf8ca647eada1f7f46259af54883eed8bcf1f0d61a1a1cef4f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 9930649
+            }
+          ]
+        },
         {
           "version": "0.0.1",
           "releasedAt": "2026-11-23T07:58:25.579Z",
