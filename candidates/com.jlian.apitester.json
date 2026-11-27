@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "com.jlian.apitester",
+  "publisher": "jlian",
+  "version": "0.1.3",
+  "name": "API Tester",
+  "description": "HTTP and gRPC API testing workbench for DBX.",
+  "icon": "https://raw.githubusercontent.com/MosaicAccount/dbx-plugin-api-tester/v0.1.3/assets/plugin.svg",
+  "tags": [
+    "api",
+    "http",
+    "grpc",
+    "testing"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/MosaicAccount/dbx-plugin-api-tester/tree/v0.1.3",
+  "homepage": "https://github.com/MosaicAccount/dbx-plugin-api-tester",
+  "license": "MIT",
+  "releaseNotes": "Form and Multipart Form are now separate request body types sharing one text/file row editor: upload files directly, several per field name, streamed to the sidecar in chunks (1 GB per file, 5 GB total), with Content-Type and boundary generated when sending. Binary responses and Content-Disposition attachments download while they stream, unaffected by the display limit, with a real total size, a cancel action, and no save for non-2xx. A new Actual Request tab shows exactly what was sent; JSON bodies are validated before sending with line and column; text bodies default to charset=utf-8; binary responses render as a file card instead of base64.",
+  "localizations": {
+    "zh-CN": {
+      "name": "API 调试台",
+      "description": "在 DBX 工作台里调试 HTTP 接口、调用 gRPC 服务。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/MosaicAccount/dbx-plugin-api-tester/releases/download/v0.1.3/com.jlian.apitester-0.1.3-darwin-arm64.dbxp",
+      "sha256": "2bfe69088bdda9002e7cfd5ec46616e23459d51c0dfb69b11d10932e80eacd78",
+      "size": 9346188
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/MosaicAccount/dbx-plugin-api-tester/releases/download/v0.1.3/com.jlian.apitester-0.1.3-darwin-x64.dbxp",
+      "sha256": "4bda61e63bc9926dc8a707d1b6bc4aa88134a126267e08484e102c0516d9ac81",
+      "size": 9776693
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/MosaicAccount/dbx-plugin-api-tester/releases/download/v0.1.3/com.jlian.apitester-0.1.3-linux-arm64.dbxp",
+      "sha256": "0aa2385771f5b6c548ee663e915f0ec59fae3a3af91862c66af1d2e5b7a65936",
+      "size": 9279375
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/MosaicAccount/dbx-plugin-api-tester/releases/download/v0.1.3/com.jlian.apitester-0.1.3-linux-x64.dbxp",
+      "sha256": "c6c3c677b20fb7d071869533a2a5086a1809f68cd340b5a113a94d0168cb047d",
+      "size": 9877983
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/MosaicAccount/dbx-plugin-api-tester/releases/download/v0.1.3/com.jlian.apitester-0.1.3-windows-x64.dbxp",
+      "sha256": "ae7b6c35b49804bd1c1752a77534e9ad6802894d379b7ba5da6d61579948b488",
+      "size": 10019342
+    }
+  ]
+}
