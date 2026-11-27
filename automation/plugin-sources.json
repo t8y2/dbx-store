@@ -310,6 +310,11 @@
       "repository": "naivemap/dbx-postgis-raster-viewer",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "zsky1/apifox-polaris-api",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
