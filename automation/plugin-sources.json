@@ -305,6 +305,11 @@
       "repository": "nianshengmei/warren-polaris-api",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "naivemap/dbx-postgis-raster-viewer",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
