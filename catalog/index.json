@@ -3614,6 +3614,43 @@
       }
     },
     {
+      "id": "com.naivemap.dbx-postgis-raster-viewer",
+      "name": "PostGIS Raster Viewer",
+      "description": "Raster result view for PostGIS: client-side WKB decode, image rendering, pixel-value grid and per-band statistics.",
+      "publisher": "naivemap",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.naivemap.dbx-postgis-raster-viewer/0.1.0/icon.svg",
+      "tags": [
+        "raster",
+        "postgis"
+      ],
+      "permissions": [
+        "host.workbench",
+        "host.data:read",
+        "host.connections:read"
+      ],
+      "source": "https://github.com/naivemap/dbx-postgis-raster-viewer/tree/v0.1.0",
+      "homepage": "https://github.com/naivemap/dbx-postgis-raster-viewer",
+      "license": "MIT",
+      "latestVersion": "0.1.0",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "releasedAt": "2026-11-27T03:54:10.955Z",
+          "releaseNotes": "Initial release.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/com.naivemap.dbx-postgis-raster-viewer/0.1.0/com.naivemap.dbx-postgis-raster-viewer-0.1.0-universal.dbxp",
+              "sha256": "e63d6281019bcfff5ee6509d298183356652e7fddb69c44344d29380e42b2faa",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 48304
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "com.nintycat.shell",
       "name": "NintyShell",
       "description": "Local shell and SSH/SFTP terminals in the DBX workbench: run commands and manage remote files.",
