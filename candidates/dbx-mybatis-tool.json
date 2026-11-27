@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "dbx-mybatis-tool",
+  "publisher": "tycoon",
+  "version": "1.0.0",
+  "name": "dbx-mybatis-tool",
+  "description": "将sql日志或xml中的mapper内容转为可执行的sql",
+  "icon": "https://github.com/Tycoon-HJ/dbx-mybatis-tool/blob/main/assets/plugin.svg",
+  "tags": ["files"],
+  "permissions": ["host.events"],
+  "source": "https://github.com/Tycoon-HJ/dbx-mybatis-tool",
+  "homepage": "https://github.com/Tycoon-HJ/dbx-mybatis-tool",
+  "license": "Apache-2.0",
+  "releaseNotes": "Initial release.",
+  "localizations": {
+    "zh-CN": {
+      "name": "dbx-mybatis-tool",
+      "description": "将sql日志或xml中的mapper内容转为可执行的sql。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/Tycoon-HJ/dbx-mybatis-tool/releases/download/1.0.0/dbx-mybatis-tool-1.0.0-universal.dbxp",
+      "sha256": "ac53286b3e1e8b940fe70865fb22155fb1a6965fe2fe6d292e7e928b1c10ed55",
+      "size": 20712
+    }
+  ]
+}
